@@ -15,3 +15,9 @@ http://webcheatsheet.com/PHP/connect_mysql_database.php
 
 jquery ajax:
 http://www.w3schools.com/jquery/ajax_ajax.asp
+
+window resize:
+http://stackoverflow.com/questions/2758651/how-to-change-height-div-on-window-resize
+
+is JSON function:
+http://stackoverflow.com/questions/9804777/how-to-test-if-a-string-is-json-or-not

@@ -23,9 +23,15 @@ $(function() {
       url: "php/process_search_request.php",
       data: dataString,
 	success: function(data){
-	
 		
-		$("#search-results").html("Submitted successfully");
+		if(isJson(data)){
+			var JSONObject = eval("(" + data + ')');;
+			//$("#search-results").html(data);
+
+			var searchStr = "Dataset ID" + JSONObject.dataset[1].datasetIdentifier;
+			$("#search-results").html(searchStr);
+		}
+
 		
 		// switch tabs when the button is clicked
 		$("#map-tab").removeClass("active");
@@ -41,6 +47,16 @@ $(function() {
     return false;
   });
 });
+
+// Function for JSON validation
+function isJson(str) {
+    try {
+        JSON.parse(str);
+    } catch (e) {
+        return false;
+    }
+    return true;
+}
 
 // Function to make tabs active and display the content when tabs are clicked
 $(function() {
