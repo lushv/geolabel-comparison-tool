@@ -1,0 +1,17 @@
+star ratings:
+http://wbotelhos.com/raty
+
+autocomplete:
+
+list of countries:
+
+list of keywords:
+
+linear gradient:
+http://stackoverflow.com/questions/13760299/dynamic-svg-linear-gradient-when-using-javascript
+
+database connection:
+http://webcheatsheet.com/PHP/connect_mysql_database.php
+
+jquery ajax:
+http://www.w3schools.com/jquery/ajax_ajax.asp

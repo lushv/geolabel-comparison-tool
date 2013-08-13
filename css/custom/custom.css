@@ -1,0 +1,417 @@
+/*!
+ * Bootstrap v2.3.2
+ *
+ * Custom CSS file.
+ */
+
+/* ******************************   begin splitter styling   *************************************** */
+/*
+ *	PANES & CONTENT-DIVs
+ */
+.ui-layout-pane { /* all 'panes' */
+	background:	#FFF; 
+	border:		1px solid #BBB;
+	overflow:	auto;
+	/* DO NOT add scrolling (or padding) to 'panes' that have a content-div,
+	   otherwise you may get double-scrollbars - on the pane AND on the content-div
+	   - use ui-layout-wrapper class if pane has a content-div
+	   - use ui-layout-container if pane has an inner-layout
+	*/
+	}
+	/* (scrolling) content-div inside pane allows for fixed header(s) and/or footer(s) */
+	.ui-layout-content {
+		padding:	10px;
+		position:	relative; /* contain floated or positioned elements */
+		overflow:	auto; /* add scrolling to content-div */
+	}
+
+/*
+ *	UTILITY CLASSES
+ *	Must come AFTER pane-class above so will override
+ *	These classes are NOT auto-generated and are NOT used by Layout
+ */
+.layout-child-container,
+.layout-content-container {
+	padding:	0;
+	overflow:	hidden;
+}
+.layout-child-container {
+	border:		0; /* remove border because inner-layout-panes probably have borders */
+}
+.layout-scroll {
+	overflow:	auto;
+}
+.layout-hide {
+	display:	none;
+}
+
+/*
+ *	RESIZER-BARS
+ */
+.ui-layout-resizer	{ /* all 'resizer-bars' */
+	background:		#DDD;
+	border:			1px solid #BBB;
+	border-width:	0;
+	}
+	.ui-layout-resizer-drag {		/* REAL resizer while resize in progress */
+	}
+	.ui-layout-resizer-hover	{	/* affects both open and closed states */
+	}
+	/* NOTE: It looks best when 'hover' and 'dragging' are set to the same color,
+		otherwise color shifts while dragging when bar can't keep up with mouse */
+	.ui-layout-resizer-open-hover ,	/* hover-color to 'resize' */
+	.ui-layout-resizer-dragging {	/* resizer beging 'dragging' */
+		background: #A0A0A0;
+	}
+	.ui-layout-resizer-dragging {	/* CLONED resizer being dragged */
+		border: 	 1px solid #BBB;
+	}
+	.ui-layout-resizer-north-dragging,
+	.ui-layout-resizer-south-dragging {
+		border-width:	1px 0;
+	}
+	.ui-layout-resizer-west-dragging,
+	.ui-layout-resizer-east-dragging {
+		border-width:	0 1px;
+	}
+	/* NOTE: Add a 'dragging-limit' color to provide visual feedback when resizer hits min/max size limits */
+	.ui-layout-resizer-dragging-limit {	/* CLONED resizer at min or max size-limit */
+		background: #E1A4A4; /* red */
+	}
+
+	.ui-layout-resizer-closed-hover	{ /* hover-color to 'slide open' */
+		background: #EBD5AA;
+	}
+	.ui-layout-resizer-sliding {	/* resizer when pane is 'slid open' */
+		opacity: .10; /* show only a slight shadow */
+		filter:  alpha(opacity=10);
+		}
+		.ui-layout-resizer-sliding-hover {	/* sliding resizer - hover */
+			opacity: 1.00; /* on-hover, show the resizer-bar normally */
+			filter:  alpha(opacity=100);
+		}
+		/* sliding resizer - add 'outside-border' to resizer on-hover 
+		 * this sample illustrates how to target specific panes and states */
+		.ui-layout-resizer-north-sliding-hover	{ border-bottom-width:	1px; }
+		.ui-layout-resizer-south-sliding-hover	{ border-top-width:		1px; }
+		.ui-layout-resizer-west-sliding-hover	{ border-right-width:	1px; }
+		.ui-layout-resizer-east-sliding-hover	{ border-left-width:	1px; }
+
+/*
+ *	TOGGLER-BUTTONS
+ */
+.ui-layout-toggler {
+	border: 1px solid #888888  ; /* match pane-border */
+	background-color: #888888 ;
+	}
+	.ui-layout-resizer-hover .ui-layout-toggler {
+		opacity: .60;
+		filter:  alpha(opacity=60);
+	}
+	.ui-layout-toggler-hover , /* need when NOT resizable */
+	.ui-layout-resizer-hover .ui-layout-toggler-hover { /* need specificity when IS resizable */
+		background-color: #404040 ;
+		opacity: 1.00;
+		filter:  alpha(opacity=100);
+	}
+	.ui-layout-toggler-north ,
+	.ui-layout-toggler-south {
+		border-width: 0 1px; /* left/right borders */
+	}
+	.ui-layout-toggler-west ,
+	.ui-layout-toggler-east {
+		border-width: 1px 0; /* top/bottom borders */
+	}
+	/* hide the toggler-button when the pane is 'slid open' */
+	.ui-layout-resizer-sliding  .ui-layout-toggler {
+		display: none;
+	}
+	/*
+	 *	style the text we put INSIDE the togglers
+	 */
+	.ui-layout-toggler .content {
+		color:			#666;
+		font-size:		12px;
+		font-weight:	bold;
+		width:			100%;
+		padding-bottom:	0.35ex; /* to 'vertically center' text inside text-span */
+	}
+
+/*
+ *	PANE-MASKS
+ *	these styles are hard-coded on mask elems, but are also 
+ *	included here as !important to ensure will overrides any generic styles
+ */
+.ui-layout-mask {
+	border:		none !important;
+	padding:	0 !important;
+	margin:		0 !important;
+	overflow:	hidden !important;
+	position:	absolute !important;
+	opacity:	0 !important;
+	filter:		Alpha(Opacity="0") !important;
+}
+.ui-layout-mask-inside-pane { /* masks always inside pane EXCEPT when pane is an iframe */
+	top:		0 !important;
+	left:		0 !important;
+	width:		100% !important;
+	height:		100% !important;
+}
+div.ui-layout-mask {}		/* standard mask for iframes */
+iframe.ui-layout-mask {}	/* extra mask for objects/applets */
+
+/*
+ *	Default printing styles
+ */
+@media print {
+	/*
+	 *	Unless you want to print the layout as it appears onscreen,
+	 *	these html/body styles are needed to allow the content to 'flow'
+	 */
+	html {
+		height:		auto !important;
+		overflow:	visible !important;
+	}
+	body.ui-layout-container {
+		position:	static !important;
+		top:		auto !important;
+		bottom:		auto !important;
+		left:		auto !important;
+		right:		auto !important;
+		/* only IE6 has container width & height set by Layout */
+		_width:		auto !important;
+		_height:	auto !important;
+	}
+	.ui-layout-resizer, .ui-layout-toggler {
+		display:	none !important;
+	}
+	/*
+	 *	Default pane print styles disables positioning, borders and backgrounds.
+	 *	You can modify these styles however it suit your needs.
+	 */
+	.ui-layout-pane {
+		border:		none !important;
+		background:	 transparent !important;
+		position:	relative !important;
+		top:		auto !important;
+		bottom:		auto !important;
+		left:		auto !important;
+		right:		auto !important;
+		width:		auto !important;
+		height:		auto !important;
+		overflow:	visible !important;
+	}
+}
+/* *****************************   end of splitter   **************************************** */
+
+
+/* ******************************   begin tabs content styling   *************************************** */
+/*
+ *	TAB CONTENT
+ */
+ 
+.tabbable-inner-centre{
+  width: 97%;
+  padding: 2px 0px 2px 25px;
+}
+ 
+.inner-south {
+  padding: 0px 0px 0px 0px;
+}
+
+.tabbable-outer-east{
+  width: 380px;
+  padding: 2px 0px 2px 25px;
+}
+
+.query-constraints{
+  padding: 0px 2px 0px 10px;
+  width: 360px;
+}
+
+.input-select-area {
+  width: 60px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+.select-area {
+  position: relative;
+  text-align:center;
+}
+
+.small-print {
+  font-size: 10px;
+  font-style: italic;
+}
+
+/*  Border for Query constraints areas  */
+.select-date, .select-location, .select-constraints {
+  border-color: #B0B0B0;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+}
+
+/*******************************  Facets selection area  ***********************************/
+.facet-selection {
+  border-color: #B0B0B0;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0px 10px 10px 10px;
+  margin: 0px 10px 0px 0px;
+}
+
+.facet-section-label {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 0px 8px 0px;
+}
+
+.facet-filtering-accordion {
+  padding: 7px 0px 0px 0px;
+}
+/*  end of facet selection area  */
+
+.dropdown {
+  color: #000000;
+  background-color: #FFFFDC;
+  border: 1px solid #CCCCCC;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+}
+
+.dropdown:focus  {
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+.left-align {
+  position: absolute;
+  left: 15px;
+}
+.btn-clear-input {
+/* margin for the clear button */
+  margin: 0px 8px 8px 8px;
+}
+.start-date, .end-date {
+  width: 205px;
+}
+
+.geolabel-selection{
+  position: relative;
+  text-align:center;
+}
+ /* *****************************   end of tabs content   **************************************** */
+ 
+ /* *****************************   autocomplete   **************************************** */
+ .ui-menu .ui-menu-item a {
+  font-size: 11px;
+}
+ /* *****************************   sliders   **************************************** */
+#producer-slider  .ui-slider-range, #comments-slider .ui-slider-range, #lineage-slider .ui-slider-range {
+  background: #ED1E7F;
+}
+
+#compliance-slider  .ui-slider-range, #quality-slider .ui-slider-range {
+  background: #0F9B49;
+}
+
+#feedback-slider  .ui-slider-range {
+  background: #F58220;
+}
+
+#review-slider  .ui-slider-range, #citations-slider .ui-slider-range {
+  background: #4374B9;
+}
+
+/**************************************  Facet Sliders **********************************/
+ .facets-sliders {
+  margin: 10px 0px 0px 5px;
+  width: 375px;
+  height: 420px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+ .facet-img {
+  position: relative;
+  float: left;
+  margin: 0px 0px 0px 0px;
+}
+ .facet-slider{
+  position: relative;
+  float: left;
+  margin: 4px 0px 0px 22px;
+}
+.facet-slider-label {
+  float: left;
+  margin: -15px 0px 0px 50px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.not-available-label {
+  margin: 0px 15px 0px 0px;
+}
+ /* *****************************   accordion   **************************************** */
+.ui-accordion-header {
+  font-size: 11px;
+  color: #000000;
+}
+.ui-accordion-content{
+  font-size: 12px;
+  color: #000000;
+  height: auto;
+}
+.accordion-autocomplete {
+  width: 280px;
+  margin: 10px 0px 0px 0px;
+}
+
+.accordion-input{
+  width: 280px;
+  margin: 10px 0px 0px 0px;
+}
+
+.accordion-select {
+  margin: 10px 0px 0px 0px;
+}
+
+ /* *****************************   display GEO label svg always on top   **************************************** */
+.static-label {
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  top: 0px;
+  height: 200px;
+  width: 345px;
+  background: #FFFFFF;
+}
+.svg-label {
+  border-style: solid;
+  border-color: #40494D;
+  border-width: 1px;
+  padding: 5px 0px 0px 0px;
+  margin: 0px 0px 0px 3px;
+}
+
+
+ /* *****************************   Dataset Details section   **************************************** */
+.dataset-details-label {
+padding: 5px 0px 5px 0px;
+text-align: center;
+font: sans-serif;
+font-size: 14px;
+font-weight: bold;
+color: #FFFFFF;
+margin-left: auto;
+margin-right: auto;
+width:100%;
+background-color:#0044CC;
+}

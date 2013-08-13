@@ -1,0 +1,89 @@
+JSON format for GEO label output:
+
+Detailed response:
+{
+	"datasetIdentifier":"5262159C-D358-11D5-88C8-000102DCCF41",
+	"facets":
+	[
+		"producerProfile":
+		[
+			"availability": 1,
+			"organisationName": "Test organisation name"
+		]
+		"produerComments":
+		[
+			"availability": 1,
+			"type": "supplemental, problems"
+		]
+		"lineage":
+		[
+			"availability": 1,
+			"processSteps": 15
+		]
+		"standardsComplaince"
+		[
+			"availability": 1,
+			"standardName": "ISO"
+		]
+		"qualityInformation"
+		[
+			"availability": 1,
+			"level": "dataset"
+		]
+		"userFeedback":
+		[
+			"availability": 1,
+			"numberFeedbacks": 26,
+			"numberRatings" : 20,
+			"averageRating": 2.5
+		]
+		"expertReview":
+		[
+			"availability": 1,
+			"numberReviews": 26,
+			"numberRatings" : 20,
+			"averageRating": 2.5
+		]
+		"citations":
+		[
+			"availability": 1,
+			"numberCitations" : 20,
+		]
+	]
+}
+
+Simple response:
+{
+	"datasetIdentifier":"5262159C-D358-11D5-88C8-000102DCCF41",
+	"facets":
+	[
+		"producerProfile":1,
+		"lineage":1,
+		"produerComments":0,
+		"standardsComplaince":1,
+		"qualityInformation":1,
+		"userFeedback":1,
+		"expertReview":1,
+		"citations":0
+	]
+}
+
+List of datasets with simple response:
+{
+    "dataset": [
+		{
+			"datasetIdentifier":"5262159C-D358-11D5-88C8-000102DCCF41",
+			"facets":
+			[
+				"producerProfile":1,
+				"lineage":1,
+				"produerComments":0,
+				"standardsComplaince":1,
+				"qualityInformation":1,
+				"userFeedback":1,
+				"expertReview":1,
+				"citations":0
+			]
+		}
+	]
+}
