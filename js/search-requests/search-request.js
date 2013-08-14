@@ -23,15 +23,15 @@ $(function() {
       url: "php/process_search_request.php",
       data: dataString,
 	success: function(data){
-		
+		$("#search-results").html(data);
+		/*
 		if(isJson(data)){
-			var JSONObject = eval("(" + data + ')');;
-			//$("#search-results").html(data);
+			var JSONObject = eval("(" + data + ')');
 
-			var searchStr = "Dataset ID" + JSONObject.dataset[1].datasetIdentifier;
+			var searchStr = "Dataset ID: " + JSONObject.dataset[0].datasetIdentifier;
 			$("#search-results").html(searchStr);
 		}
-
+		*/
 		
 		// switch tabs when the button is clicked
 		$("#map-tab").removeClass("active");

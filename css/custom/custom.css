@@ -243,6 +243,7 @@ iframe.ui-layout-mask {}	/* extra mask for objects/applets */
 .small-print {
   font-size: 10px;
   font-style: italic;
+  text-align:left
 }
 
 /*  Border for Query constraints areas  */
@@ -397,7 +398,7 @@ iframe.ui-layout-mask {}	/* extra mask for objects/applets */
   border-style: solid;
   border-color: #40494D;
   border-width: 1px;
-  padding: 5px 0px 0px 0px;
+  padding: 5px 10px 0px 10px;
   margin: 0px 0px 0px 3px;
 }
 
