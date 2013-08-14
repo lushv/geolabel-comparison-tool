@@ -1,12 +1,57 @@
+/*
+* Make the GEO label interactive by changing the value of a slider when its facet is clicked.
+* Additionally, when a new facet is clicked, the slider's container will scroll to the relevant slider.
+*/
+$(function() {
+
+	var $lastClickedFacet = [];
+
+	$("#geo_label").on('click', function (event) {
+
+		// get the group object that the target is a child of
+		var $targetFacet = $(event.target).closest("g"),
+			id = $targetFacet.attr('id');
+
+		// get the slider for this facet
+		var $slider = $(".facet-slider[data-svg-group='" + id + "']");
+
+		if ($slider.length !== 0) {
+
+			// compare the DOM objects to see if the same group was clicked on
+			if ($targetFacet[0] !== $lastClickedFacet[0]) {
+
+				var $container = $("#facets-sliders"),
+					$sliderDiv = $slider.parent();
+
+				// scroll to the new slider
+				$container.animate({
+					scrollTop: ($container.scrollTop() + ($sliderDiv.position().top - $container.position().top) - parseInt($sliderDiv.css('padding-bottom'), 10))
+				}, "fast");
+			}
+
+			var min = $slider.slider("option", "min"),
+				max = $slider.slider("option", "max"),
+				step = $slider.slider("option", "step"),
+				currentValue = $slider.slider("value");
+
+			// adjust the slider's value
+			$slider.slider("value", ((currentValue < max) ? (currentValue + step) : min));
+		}
+
+		// keep track of the facet that was clicked on last
+		$lastClickedFacet = $targetFacet;
+	});
+});
+
 // ***************************************   PRODUCER PROFILE   ****************************************** //
- $(function() {
+$(function() {
 	$("#producer-slider").slider({
 		range: "min",
 		value:0,
 		min: 0,
 		max: 2,
 		step: 1,
-		slide: function( event, ui ) {
+		change: function( event, ui ) {
 			// get the SVG element node
 			var svg = document.getElementById("geo_label");
 		
@@ -27,14 +72,14 @@
 });
 
 // ***************************************   PRODUCER COMMENTS   ****************************************** //
- $(function() {
+$(function() {
 	$("#comments-slider").slider({
 		range: "min",
 		value:0,
 		min: 0,
 		max: 2,
 		step: 1,
-		slide: function( event, ui ) {
+		change: function( event, ui ) {
 			// get the SVG element node
 			var svg = document.getElementById("geo_label");
 			
@@ -55,14 +100,14 @@
 });
 
 // ***************************************   LINEAGE INFORMATION   ****************************************** //
- $(function() {
+$(function() {
 	$("#lineage-slider").slider({
 		range: "min",
 		value:0,
 		min: 0,
 		max: 2,
 		step: 1,
-		slide: function( event, ui ) {
+		change: function( event, ui ) {
 			var svg = document.getElementById("geo_label");
 
 			if(ui.value == "0"){
@@ -82,14 +127,14 @@
 });
 
 // ***************************************   STANDARDS COMPLIANCE   ****************************************** //
- $(function() {
+$(function() {
 	$("#compliance-slider").slider({
 		range: "min",
 		value:0,
 		min: 0,
 		max: 2,
 		step: 1,
-		slide: function( event, ui ) {
+		change: function( event, ui ) {
 			var svg = document.getElementById("geo_label");
 
 			if(ui.value == "0"){
@@ -109,14 +154,14 @@
 });
 
 // ***************************************  QUALITY INFORMATION   ****************************************** //
- $(function() {
+$(function() {
 	$("#quality-slider").slider({
 		range: "min",
 		value:0,
 		min: 0,
 		max: 2,
 		step: 1,
-		slide: function( event, ui ) {
+		change: function( event, ui ) {
 			var svg = document.getElementById("geo_label");
 
 			if(ui.value == "0"){
@@ -136,14 +181,14 @@
 });
 
 // ***************************************   USER FEEDBACK   ****************************************** //
- $(function() {
+$(function() {
 	$("#feedback-slider").slider({
 		range: "min",
 		value:0,
 		min: 0,
 		max: 2,
 		step: 1,
-		slide: function( event, ui ) {
+		change: function( event, ui ) {
 			var svg = document.getElementById("geo_label");
 
 			if(ui.value == "0"){
@@ -163,14 +208,14 @@
 });
 
 // ***************************************   EXPERT REVIEW   ****************************************** //
- $(function() {
+$(function() {
 	$("#review-slider").slider({
 		range: "min",
 		value:0,
 		min: 0,
 		max: 2,
 		step: 1,
-		slide: function( event, ui ) {
+		change: function( event, ui ) {
 			var svg = document.getElementById("geo_label");
 
 			if(ui.value == "0"){
@@ -190,14 +235,14 @@
 });
 
 // ***************************************   CITATIONS INFORMATION   ****************************************** //
- $(function() {
+$(function() {
 	$("#citations-slider").slider({
 		range: "min",
 		value:0,
 		min: 0,
 		max: 2,
 		step: 1,
-		slide: function( event, ui ) {
+		change: function( event, ui ) {
 			var svg = document.getElementById("geo_label");
 
 			if(ui.value == "0"){
