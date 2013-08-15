@@ -30,7 +30,7 @@ $sql = "SELECT * FROM query_constraints
 if(!empty($startDate)){
 	$sql .= " AND start_date <= DATE('$startDate')";
 }
-if(!empty($ENDDate)){
+if(!empty($endDate)){
 	$sql .= " AND end_date >= DATE('$endDate')";
 }
 

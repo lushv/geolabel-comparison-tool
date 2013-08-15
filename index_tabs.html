@@ -6,7 +6,8 @@
         <link rel="stylesheet" href="css/custom/bootstrap.css" type="text/css" media="screen" title="master" charset="utf-8">
         <link rel="stylesheet" href="js/jquery-ui-1.10.3/themes/base/jquery.ui.all.css" type="text/css" media="screen" title="master" charset="utf-8">
         <link rel="stylesheet" href="css/custom/custom.css" type="text/css" media="screen" title="master" charset="utf-8">
-
+		<link rel="stylesheet" href="js/OpenLayers-2.13.1/theme/default/style.css" type="text/css" media="screen" title="master" charset="utf-8">
+		
 		<!--[if lt IE 9]>
 			<script src="js/custom/html5shiv.js"></script>
 		<![endif]-->
@@ -19,7 +20,9 @@
 		<script type="text/javascript" src="js/jquery.layout.1.3.0/jquery.layout.1.3.0.js"></script>
 		<script type="text/javascript" src="js/jquery.layout.1.3.0/debug.js"></script>
 		
-
+		<!-- OpenLayers -->
+		<script type="text/javascript" src="js/OpenLayers-2.13.1/OpenLayers.js"></script>
+		<script type="text/javascript" src="js/custom/OpenLayers-setup.js"></script>
 		
 		<!-- Frames plugin styling and layout -->
 		<script type="text/javascript" src="js/custom/frames-layout.js"></script>
@@ -44,89 +47,7 @@
 		
 		<!-- Javascript for search requests -->
 		<script type="text/javascript" src="js/search-requests/search-request.js"></script>		
-
-		<script>
-		$(function() {
-			$( "#start-date" ).datepicker({
-				changeMonth: true,
-				changeYear: true,
-				dateFormat: 'yy-mm-dd'
-			});
-			$( "#end-date" ).datepicker({
-				changeMonth: true,
-				changeYear: true,
-				dateFormat: 'yy-mm-dd'
-			});
-			$( "#producer-accordion" ).accordion({
-				heightStyle: "content",
-				collapsible: true,
-				active: false
-			});
-			$( "#comments-accordion" ).accordion({
-				heightStyle: "content",
-				collapsible: true,
-				active: false,
-			});
-			$( "#lineage-accordion" ).accordion({
-				heightStyle: "content",
-				collapsible: true,
-				active: false,
-			});
-			$( "#compliance-accordion" ).accordion({
-				heightStyle: "content",
-				collapsible: true,
-				active: false,
-			});
-			$( "#quality-accordion" ).accordion({
-				heightStyle: "content",
-				collapsible: true,
-				active: false,
-			});
-			$( "#feedback-accordion" ).accordion({
-				heightStyle: "content",
-				collapsible: true,
-				active: false,
-			});
-			$( "#review-accordion" ).accordion({
-				heightStyle: "content",
-				collapsible: true,
-				active: false,
-			});
-			$( "#citations-accordion" ).accordion({
-				heightStyle: "content",
-				collapsible: true,
-				active: false,
-			});
-			$('#feedback-star').raty({
-				half: true,
-				starHalf: '/comparison_tool/img/star_rating/star-half-big.png',
-				starOff: '/comparison_tool/img/star_rating/star-off-big.png',
-				starOn : '/comparison_tool/img/star_rating/star-on-big.png',
-				hints: ['1 star', '2 stars', '3 stars', '4 stars', '5 stars'],
-				cancel: true,
-				cancelHint: 'Clear rating filtering',
-				cancelPlace: 'right',
-				cancelOff: '/comparison_tool/img/star_rating/cancel-off-big.png',
-				cancelOn : '/comparison_tool/img/star_rating/cancel-on-big.png',		
-				size: 16,
-				width: 150,			
-			});
-			$('#reviews-star').raty({
-				half: true,
-				starHalf: '/comparison_tool/img/star_rating/star-half-big.png',
-				starOff: '/comparison_tool/img/star_rating/star-off-big.png',
-				starOn : '/comparison_tool/img/star_rating/star-on-big.png',
-				hints: ['1 star', '2 stars', '3 stars', '4 stars', '5 stars'],
-				cancel: true,
-				cancelHint: 'Clear rating filtering',
-				cancelPlace: 'right',
-				cancelOff: '/comparison_tool/img/star_rating/cancel-off-big.png',
-				cancelOn : '/comparison_tool/img/star_rating/cancel-on-big.png',		
-				size: 16,
-				width: 150,			
-			});
-		});
-		</script>		
+	
     </head>
     <body>
 		<div class="container">
@@ -143,7 +64,7 @@
 							<div class="tab-content">
 								<!-- =================== TAB 1 MAP ========================== -->
 								<div id="tab-pane-map" class="tab-pane active">
-									<img src="img/world-view-total.jpg" alt="Inner Center Map"> 
+									<div id="map" class="smallmap olMap"></div> 
 								</div> <!-- end of tab-pane-map -->
 								<!-- =================== TAB 2 SEARCH RESULTS ========================== -->
 								<div id="tab-pane-search-results" class="tab-pane">
@@ -194,23 +115,23 @@
 												<input id="keyword-autocomplete" class="keyword-autocomplete" type="text" name="keyword"><br><br>
 												
 												<div id="select-location" class="select-location">
-													<input type="radio" name="location" value="location" checked="true">  - Location<br>
+													<input id="location-radio" type="radio" name="location-radios" value="location" checked="true">  - Location<br>
 													<input id="location-name-autocomplete" class="location-name-autocomplete" type="text" name="location-name"><br>
 													
-													<input type="radio" name="location" value="area-selection">  - Area Selection<br>
+													<input id="area-selection-radio" type="radio" name="location-radios" value="area-selection">  - Area Selection<br>
 													<!-- =================== centralised select area for location selection  ========================== -->
 													<div id="select-area" class="select-area">
-														<input id="select-area-latitude-min" class="input-select-area" type="text" disabled="disabled">
+														<input id="select-area-latitude-min" class="input-select-area" type="text" disabled="disabled" title="Latitude min">
 														<br>
-														<input id="select-area-longitude-min" class="input-select-area" type="text" disabled="disabled">
+														<input id="select-area-longitude-min" class="input-select-area" type="text" disabled="disabled" title="Longitude min">
 														
-														<button id="clear-input" class="btn btn-danger btn-clear-input" disabled="disabled">
+														<button id="clear-select-area-input" class="btn btn-danger btn-clear-input" disabled="disabled">
 															<i class="icon-remove icon-white"></i>
 														</button>
 														
-														<input id="select-area-longitude-max" class="input-select-area" type="text" disabled="disabled">
+														<input id="select-area-longitude-max" class="input-select-area" type="text" disabled="disabled" title="Longitude max">
 														<br>
-														<input id="select-area-latitude-max" class="input-select-area" type="text" disabled="disabled">
+														<input id="select-area-latitude-max" class="input-select-area" type="text" disabled="disabled" title="Latitude max">
 													</div>
 													<div class="small-print">Click and Drag on the map holding the Shift key to select an area</div>
 												</div>
@@ -267,7 +188,7 @@
 											</fieldset>
 										</form>
 									</div>
-								</div> <!-- end of tab-pane-map -->
+								</div> <!-- end of tab-pane-query-constraints -->
 								<!-- =================== TAB 2 GEO LABEL FILTERING ========================== -->
 								<div class="tab-pane" id="tab-pane-geo-label-filtering">
 									
