@@ -6,8 +6,33 @@ $endDate= $_POST['endDate'];
 $accessConstraints= $_POST['accessConstraints'];
 $useConstraints= $_POST['useConstraints'];
 
+echo "START DATE: $startDate";
 
+$hostname = "localhost"; 
+$user = "comparison_user";
+$password = "manhattan";
+$database = "geolabel_comparison_tool_db";
 
+$db = new mysqli($hostname, $user, $password, $database);
+if($db->connect_errno > 0){
+    die('Unable to connect to database [' . $db->connect_error . ']');
+}
+
+$sql = "SELECT * FROM query_constraints 
+		WHERE keywords LIKE '%$keyword%' 
+		AND location_name LIKE '%$locationName%' 
+		AND start_date >= DATE('$startDate')
+		AND end_date <= DATE('$endDate')";
+
+if(!$result = $db->query($sql)){
+    die('There was an error running the query [' . $db->error . ']');
+}
+
+while($row = $result->fetch_assoc()){
+    echo $row['keywords'] . '<br />';
+}
+
+/*
 echo '{
     "dataset": [
 			{"datasetIdentifier":"5262159C-D358-11D5-88C8-000102DCCF41",
@@ -23,30 +48,5 @@ echo '{
 			}
 	]
 	}';
-
-/*
-http://codular.com/php-mysqli
-
-$hostname = "localhost"; 
-$user = "comparison_user";
-$password = "manhattan";
-$database = "geolabel_comparison_tool_db"
-
-$db = new mysqli($hostname, $user, $password, $database);
-if($db->connect_errno > 0){
-    die('Unable to connect to database [' . $db->connect_error . ']');
-}
-
-$sql = <<<SQL
-    SELECT *
-    FROM `users`
-    WHERE `live` = 1 
-SQL;
-
-if(!$result = $db->query($sql)){
-    die('There was an error running the query [' . $db->error . ']');
-}
-
-
 */
 ?>
