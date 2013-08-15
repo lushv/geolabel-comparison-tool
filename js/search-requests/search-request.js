@@ -10,39 +10,39 @@ $(function() {
 	var longitudeMax = $("input#select-area-longitude-min").val();
 
 	var startDate = $("input#start-date").val();
-	var endDate = $("input#start-date").val();
+	var endDate = $("input#end-date").val();
  	
-	var accessConstraints = $("input#access-constraints").val();
-	var useConstraints = $("input#use-constraints").val();
+	var accessConstraints = $("select#access-constraints").val();
+	var useConstraints = $("select#use-constraints").val();
 	
 	
     var dataString = 'keyword='+ keyword + '&locationName=' + locationName + '&startDate=' + startDate + '&endDate=' + endDate + '&accessConstraints=' + accessConstraints + '&useConstraints=' + useConstraints;
     //alert (dataString);return false;
     $.ajax({
-      type: "POST",
-      url: "php/process_search_request.php",
-      data: dataString,
-	success: function(data){
-		$("#search-results").html(data);
-		/*
-		if(isJson(data)){
-			var JSONObject = eval("(" + data + ')');
+		  type: "POST",
+		  url: "php/process_search_request.php",
+		  data: dataString,
+		success: function(data){
+			$("#search-results").html(data);
+			/*
+			if(isJson(data)){
+				var JSONObject = eval("(" + data + ')');
 
-			var searchStr = "Dataset ID: " + JSONObject.dataset[0].datasetIdentifier;
-			$("#search-results").html(searchStr);
+				var searchStr = "Dataset ID: " + JSONObject.dataset[0].datasetIdentifier;
+				$("#search-results").html(searchStr);
+			}
+			*/
+			
+			// switch tabs when the button is clicked
+			$("#map-tab").removeClass("active");
+			$("#serach-results-tab").addClass("active");
+			$('.tab-content #tab-pane-map').hide();
+			$('.tab-content #tab-pane-search-results').show();
+		},
+		error:function(){
+			alert("failure");
+			$("#search-results").html('There is error while submit');
 		}
-		*/
-		
-		// switch tabs when the button is clicked
-		$("#map-tab").removeClass("active");
-		$("#serach-results-tab").addClass("active");
-		$('.tab-content #tab-pane-map').hide();
-		$('.tab-content #tab-pane-search-results').show();
-	},
-	error:function(){
-		alert("failure");
-		$("#search-results").html('There is error while submit');
-	}
     });
     return false;
   });

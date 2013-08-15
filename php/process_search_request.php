@@ -1,12 +1,15 @@
 <?php
 $keyword = $_POST['keyword'];
-$locationName= $_POST['locationName'];
-$startDate= $_POST['startDate'];
-$endDate= $_POST['endDate'];
-$accessConstraints= $_POST['accessConstraints'];
-$useConstraints= $_POST['useConstraints'];
+$locationName = $_POST['locationName'];
+$startDate = $_POST['startDate'];
+$endDate = $_POST['endDate'];
+$accessConstraints = $_POST['accessConstraints'];
+$useConstraints = $_POST['useConstraints'];
 
 echo "START DATE: $startDate";
+echo " END DATE: $endDate";
+echo " accessConstraints: $accessConstraints";
+echo " useConstraints: $useConstraints";
 
 $hostname = "localhost"; 
 $user = "comparison_user";
@@ -18,12 +21,20 @@ if($db->connect_errno > 0){
     die('Unable to connect to database [' . $db->connect_error . ']');
 }
 
+// SQL query
 $sql = "SELECT * FROM query_constraints 
 		WHERE keywords LIKE '%$keyword%' 
 		AND location_name LIKE '%$locationName%' 
-		AND start_date >= DATE('$startDate')
-		AND end_date <= DATE('$endDate')";
+		AND access_constraints LIKE '%$accessConstraints%'
+		AND use_constraints LIKE '%$useConstraints%'";
+if(!empty($startDate)){
+	$sql .= " AND start_date <= DATE('$startDate')";
+}
+if(!empty($ENDDate)){
+	$sql .= " AND end_date >= DATE('$endDate')";
+}
 
+// Make a query to database
 if(!$result = $db->query($sql)){
     die('There was an error running the query [' . $db->error . ']');
 }
