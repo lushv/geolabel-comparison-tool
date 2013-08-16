@@ -21,3 +21,7 @@ http://stackoverflow.com/questions/2758651/how-to-change-height-div-on-window-re
 
 is JSON function:
 http://stackoverflow.com/questions/9804777/how-to-test-if-a-string-is-json-or-not
+
+only numeric values:
+http://code.webmonkey.uk.com/plugins/
+https://github.com/SamWM/jQuery-Plugins/blob/master/numeric/test.html

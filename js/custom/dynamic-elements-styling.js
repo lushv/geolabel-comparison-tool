@@ -9,46 +9,9 @@ $(window).resize(function() {
 	$("#facets-sliders").height(height);
 });
 
-//************************  Location radio buttons  *****************************
-$(function() {
-	$("#location-radio").change(function() {
-		if($('#location-radio').is(':checked')){
-			$('#location-name-autocomplete').prop('disabled', false);
-			
-			$('#select-area-latitude-min').prop('disabled', true);
-			$('#select-area-longitude-min').prop('disabled', true);
-			$('#select-area-longitude-max').prop('disabled', true);
-			$('#select-area-latitude-max').prop('disabled', true);
-			$('#clear-select-area-input').prop('disabled', true);
-		}
-	})
-});
-
-$(function() {
-	$("#area-selection-radio").change(function() {
-		if($('#area-selection-radio').is(':checked')){
-			$('#location-name-autocomplete').prop('disabled', true);
-			
-			$('#select-area-latitude-min').prop('disabled', false);
-			$('#select-area-longitude-min').prop('disabled', false);
-			$('#select-area-longitude-max').prop('disabled', false);
-			$('#select-area-latitude-max').prop('disabled', false);
-			$('#clear-select-area-input').prop('disabled', false);
-		}
-	})
-});
-
-$(function() {
-	$("#clear-select-area-input").click(function() {
-		$('#select-area-latitude-min').prop('value', '');
-		$('#select-area-longitude-min').prop('value', '');
-		$('#select-area-longitude-max').prop('value', '');
-		$('#select-area-latitude-max').prop('value', '');
-	})
-});
-
 //************************  Set up jQuery elements  *****************************
 $(function() {
+	$(".numeric").numeric();
 	$( "#start-date" ).datepicker({
 		changeMonth: true,
 		changeYear: true,
@@ -128,3 +91,98 @@ $(function() {
 		width: 150,			
 	});
 });
+
+//************************  Location radio buttons  *****************************
+$(function() {
+	$("#location-radio").change(function() {
+		if($('#location-radio').is(':checked')){
+			$('#location-name-autocomplete').prop('disabled', false);
+			
+			$('#select-area-latitude-min').prop('disabled', true);
+			$('#select-area-longitude-min').prop('disabled', true);
+			$('#select-area-longitude-max').prop('disabled', true);
+			$('#select-area-latitude-max').prop('disabled', true);
+			$('#clear-select-area-input').prop('disabled', true);
+		}
+	})
+});
+$(function() {
+	$("#area-selection-radio").change(function() {
+		if($('#area-selection-radio').is(':checked')){
+			$('#location-name-autocomplete').prop('disabled', true);
+			
+			$('#select-area-latitude-min').prop('disabled', false);
+			$('#select-area-longitude-min').prop('disabled', false);
+			$('#select-area-longitude-max').prop('disabled', false);
+			$('#select-area-latitude-max').prop('disabled', false);
+			$('#clear-select-area-input').prop('disabled', false);
+		}
+	})
+});
+
+//************************  Area Input clear button  *****************************
+$(function() {
+	$("#clear-select-area-input").click(function() {
+		$('#select-area-latitude-min').prop('value', '');
+		$('#select-area-longitude-min').prop('value', '');
+		$('#select-area-longitude-max').prop('value', '');
+		$('#select-area-latitude-max').prop('value', '');
+	})
+});
+
+
+//************************  Date clear buttons  *****************************
+$(function() {
+	$("#clear-start-date-input").click(function() {
+		if($("input#start-date").val() != ""){
+			$("input#start-date").prop('value', '');
+			$('#clear-start-date-input').prop('disabled', true);
+		}
+	})
+});
+$(function() {
+	$("#clear-end-date-input").click(function() {
+		if($("input#end-date").val() != ""){
+			$("input#end-date").prop('value', '');
+			$('#clear-end-date-input').prop('disabled', true);
+		}
+	})
+});
+$(function() {
+	$("#start-date").change(function() {
+		if($("input#start-date").val() != ""){
+			$('#clear-start-date-input').prop('disabled', false);
+		}
+		else if($("input#start-date").val() == ""){
+			$('#clear-start-date-input').prop('disabled', true);
+		}
+	})
+});
+$(function() {
+	$("#end-date").change(function() {
+		if($("input#end-date").val() != ""){
+			$('#clear-end-date-input').prop('disabled', false);
+		}
+		else if($("input#end-date").val() == ""){
+			$('#clear-end-date-input').prop('disabled', true);
+		}
+	})
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -15,6 +15,9 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script src="js/bootstrap/bootstrap.js" type="text/javascript"></script>
 		
+		<!-- jQuery Plugins functionality -->
+		<script type="text/javascript" src="js/jquery-plugins/jquery.numeric.js"></script>
+		
 		<!-- Frames plugin from http://layout.jquery-dev.net/index.cfm -->
 		<script type="text/javascript" src="js/jquery-ui-1.10.3/ui/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/jquery.layout.1.3.0/jquery.layout.1.3.0.js"></script>
@@ -121,17 +124,17 @@
 													<input id="area-selection-radio" type="radio" name="location-radios" value="area-selection">  - Area Selection<br>
 													<!-- =================== centralised select area for location selection  ========================== -->
 													<div id="select-area" class="select-area">
-														<input id="select-area-latitude-min" class="input-select-area" type="text" disabled="disabled" title="Latitude min">
+														<input id="select-area-latitude-min" class="input-select-area numeric" type="text" disabled="disabled" title="Latitude min">
 														<br>
-														<input id="select-area-longitude-min" class="input-select-area" type="text" disabled="disabled" title="Longitude min">
+														<input id="select-area-longitude-min" class="input-select-area numeric" type="text" disabled="disabled" title="Longitude min">
 														
-														<button id="clear-select-area-input" class="btn btn-danger btn-clear-input" disabled="disabled">
+														<button id="clear-select-area-input" class="btn btn-danger btn-clear-input" type="button" disabled="disabled">
 															<i class="icon-remove icon-white"></i>
 														</button>
 														
-														<input id="select-area-longitude-max" class="input-select-area" type="text" disabled="disabled" title="Longitude max">
+														<input id="select-area-longitude-max" class="input-select-area numeric" type="text" disabled="disabled" title="Longitude max">
 														<br>
-														<input id="select-area-latitude-max" class="input-select-area" type="text" disabled="disabled" title="Latitude max">
+														<input id="select-area-latitude-max" class="input-select-area numeric" type="text" disabled="disabled" title="Latitude max">
 													</div>
 													<div class="small-print">Click and Drag on the map holding the Shift key to select an area</div>
 												</div>
@@ -139,12 +142,12 @@
 												<div id="select-date" class="select-date">
 													 - Start date <br>
 													 <input type="text" id="start-date" class="start-date">
-													<button id="clear-input" class="btn btn-danger btn-clear-input" disabled="disabled">
+													<button id="clear-start-date-input" class="btn btn-danger btn-clear-input" type="button" disabled="disabled">
 														<i class="icon-remove icon-white"></i>
 													</button><br>											 
 													 - End date  <br>
 													 <input type="text" id="end-date" class="end-date">
-													<button id="clear-input" class="btn btn-danger btn-clear-input" disabled="disabled">
+													<button id="clear-end-date-input" class="btn btn-danger btn-clear-input" type="button" disabled="disabled">
 														<i class="icon-remove icon-white"></i>
 													</button>
 												</div>
