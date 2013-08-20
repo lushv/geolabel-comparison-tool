@@ -684,6 +684,14 @@ function getExpertLinearGradient(svg, linearGradient){
 	return linearGradient;
 }
 // **************************************   HELPER FUNCTIONS   ***************************************** //
+
+function createTitle(titleText) {
+	var title = document.createElement("title");
+	var text = document.createTextNode(titleText);
+	title.appendChild(text);
+	return title;
+};
+
 // helper function to create a path
 function createPath(svg, fill, stroke, stroke_width, stroke_miterlimit, d) {
     var path = document.createElementNS(svg.namespaceURI, "path");

@@ -1,16 +1,51 @@
 <?php
 $keyword = $_POST['keyword'];
-$locationName = $_POST['locationName'];
 $startDate = $_POST['startDate'];
 $endDate = $_POST['endDate'];
 $accessConstraints = $_POST['accessConstraints'];
 $useConstraints = $_POST['useConstraints'];
+// variables to store geographic coordinates
+$north = "";
+$south = "";
+$west = "";
+$east = "";
 
-echo "START DATE: $startDate";
-echo " END DATE: $endDate";
-echo " accessConstraints: $accessConstraints";
-echo " useConstraints: $useConstraints";
+if(isset($_POST['countryCode'])){
+	$countryCode = $_POST['countryCode'];
+	
+	// If county was set to any then all the geo coordinates will be empty
+	if(!empty($countryCode)){
+		// Load XML file with countries details
+		$xml = new DOMDocument();
+		$xml->load('data/countryInfo.xml');
+		
+		$northXPath = '//country[countryCode=\''.$countryCode.'\']/north';
+		$southXPath = '//country[countryCode=\''.$countryCode.'\']/south';
+		$westXPath = '//country[countryCode=\''.$countryCode.'\']/west';
+		$eastXPath = '//country[countryCode=\''.$countryCode.'\']/east';
+		
+		$north = getXMLNode($xml, $northXPath);
+		$south = getXMLNode($xml, $southXPath);
+		$west = getXMLNode($xml, $westXPath);
+		$east = getXMLNode($xml, $eastXPath);
+	}
+}
+else{
+	if(isset($_POST['latitudeNorth'])){
+		$north = $_POST['latitudeNorth'];
+	}
+	if(isset($_POST['latitudeSouth'])){
+		$south = $_POST['latitudeSouth'];
+	}
+	if(isset($_POST['longitudeWest'])){
+		$west = $_POST['longitudeWest'];
+	}
+	if(isset($_POST['longitudeEast'])){
+		$east = $_POST['longitudeEast'];
+	}
+}
 
+// --------------------- Make a query to database ---------------------------
 $hostname = "localhost"; 
 $user = "comparison_user";
 $password = "manhattan";
@@ -22,25 +57,54 @@ if($db->connect_errno > 0){
 }
 
 // SQL query
-$sql = "SELECT * FROM query_constraints 
-		WHERE keywords LIKE '%$keyword%' 
-		AND location_name LIKE '%$locationName%' 
+$sql = "SELECT dataset_id FROM query_constraints 
+		WHERE keywords LIKE '%$keyword%'  
 		AND access_constraints LIKE '%$accessConstraints%'
-		AND use_constraints LIKE '%$useConstraints%'";
+		AND use_constraints LIKE '%$useConstraints%'";	
+// Add dates to query if not empty
 if(!empty($startDate)){
 	$sql .= " AND start_date <= DATE('$startDate')";
 }
 if(!empty($endDate)){
 	$sql .= " AND end_date >= DATE('$endDate')";
 }
-
+// Add geographic coordinates to query if not empty
+if(!empty($north)){
+	$sql .= " AND latitude_north >= $north";
+}
+if(!empty($south)){
+	$sql .= " AND latitude_south <= $south";
+}
+if(!empty($west)){
+	$sql .= " AND longitude_west <= $west";
+}
+if(!empty($east)){
+	$sql .= " AND longitude_east >= $east";
+}
 // Make a query to database
 if(!$result = $db->query($sql)){
     die('There was an error running the query [' . $db->error . ']');
 }
 
 while($row = $result->fetch_assoc()){
-    echo $row['keywords'] . '<br />';
+    echo $row['dataset_id'] . '<br />';
+}
+
+
+
+
+
+function getXMLNode($xml, $nodeXPath){
+	$xpath = new DOMXpath($xml);
+	$result = array();
+	$nodes = $xpath->query($nodeXPath);
+	$nodeValue = "";
+	if ($nodes->length > 0) {
+		foreach ($nodes as $node){
+			$nodeValue = $node->nodeValue;
+		}
+	}
+	return $nodeValue;
 }
 
 /*

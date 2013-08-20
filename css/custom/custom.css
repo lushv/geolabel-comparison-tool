@@ -275,6 +275,8 @@ iframe.ui-layout-mask {}	/* extra mask for objects/applets */
 /*  end of facet selection area  */
 
 .dropdown {
+  width: 300px;
+  vertical-align: middle;
   color: #000000;
   background-color: #FFFFDC;
   border: 1px solid #CCCCCC;
@@ -370,12 +372,12 @@ iframe.ui-layout-mask {}	/* extra mask for objects/applets */
   height: auto;
 }
 .accordion-autocomplete {
-  width: 280px;
+  width: 260px;
   margin: 10px 0px 0px 0px;
 }
 
 .accordion-input{
-  width: 280px;
+  width: 260px;
   margin: 10px 0px 0px 0px;
 }
 
