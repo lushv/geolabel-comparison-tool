@@ -31,15 +31,49 @@ $(function() {
 		  url: "php/process_search_request.php",
 		  data: dataString,
 		success: function(data){
-			$("#search-results").html(data);
-			/*
+			var searchStr = "";
 			if(isJson(data)){
-				var JSONObject = eval("(" + data + ')');
+				var JSONObject = JSON.parse(data);
 
-				var searchStr = "Dataset ID: " + JSONObject.dataset[0].datasetIdentifier;
-				$("#search-results").html(searchStr);
+				// Process all JSON datasets objects and build GEO label representations
+				for (var i = 1; i < JSONObject.dataset.length; i++) {
+					//searchStr += "Dataset ID: " + JSONObject.dataset[i].datasetIdentifier;
+					var producerProfileAvailability = JSONObject.dataset[i].facets.producerProfile.availability;
+					
+					var paper = new Raphael(document.getElementById('tab-pane-search-results'), 250, 250);
+					var c;
+					var d;
+					var r;
+
+					if(producerProfileAvailability == 1){
+						paper.setStart();
+						c = paper.path("M152.178,97.822l59.796-59.795 C187.958,14.008,156.478,2,125,2l0,84.563C134.837,86.563,144.674,90.316,152.178,97.822z");
+						c.attr({fill: "#f00"});
+						d = paper.path("M154.14,31.925 c2.306-0.358,5.972,1.384,5.972,1.384c-7.198,7.265-17.221,16.66-21.993,21.108c-1.67-0.165-3.921-0.971-3.979-2.51 c-0.066-1.755,2.612-3.657,4.608-5.616c4.082-4.008,6.06-6.125,10.018-10.091C150.775,34.184,152.558,32.167,154.14,31.925z");
+						var st = paper.setFinish();
+						paper.setStart();
+						r = paper.path("M163.437,124.843H248 c0-33.965-13.768-64.716-36.026-86.974l-59.795,59.794C159.135,104.619,163.437,114.229,163.437,124.843z");
+						var st2 = paper.setFinish();
+
+					}
+					
+					var st = paper.set();
+					st.push(
+					);
+					st.transform("s0.5...");
+					
+					
+					
+					
+					
+					
+				}
+				//$("#search-results").html(searchStr);
 			}
-			*/
+			else{
+				$("#search-results").html("ERROR");
+			}
+			
 			
 			// switch tabs when the button is clicked
 			$("#map-tab").removeClass("active");
