@@ -2,11 +2,23 @@
 $(document).ready(function() {
 	var height = $(window).height() - 290;
 	$("#facets-sliders").height(height);
+	
+	var mapHeight = $(window).height() - 230;
+	$("#map").height(mapHeight);
+
+	var mapWidth = $(window).width() - 475;
+	$("#map").width(mapWidth);
 });
 
 $(window).resize(function() {
 	var height = $(window).height() - 290;
 	$("#facets-sliders").height(height);
+	
+	var mapHeight = $(window).height() - 230;
+	$("#map").height(mapHeight);
+
+	var mapWidth = $(window).width() - 475;
+	$("#map").width(mapWidth);
 });
 
 //************************  Set up jQuery elements  *****************************
@@ -96,12 +108,12 @@ $(function() {
 $(function() {
 	$("#location-radio").change(function() {
 		if($('#location-radio').is(':checked')){
-			$('#location-name-autocomplete').prop('disabled', false);
+			$('#location-name-select').prop('disabled', false);
 			
-			$('#select-area-latitude-min').prop('disabled', true);
-			$('#select-area-longitude-min').prop('disabled', true);
-			$('#select-area-longitude-max').prop('disabled', true);
-			$('#select-area-latitude-max').prop('disabled', true);
+			$('#select-area-south').prop('disabled', true);
+			$('#select-area-west').prop('disabled', true);
+			$('#select-area-east').prop('disabled', true);
+			$('#select-area-north').prop('disabled', true);
 			$('#clear-select-area-input').prop('disabled', true);
 		}
 	})
@@ -109,12 +121,12 @@ $(function() {
 $(function() {
 	$("#area-selection-radio").change(function() {
 		if($('#area-selection-radio').is(':checked')){
-			$('#location-name-autocomplete').prop('disabled', true);
+			$('#location-name-select').prop('disabled', true);
 			
-			$('#select-area-latitude-min').prop('disabled', false);
-			$('#select-area-longitude-min').prop('disabled', false);
-			$('#select-area-longitude-max').prop('disabled', false);
-			$('#select-area-latitude-max').prop('disabled', false);
+			$('#select-area-south').prop('disabled', false);
+			$('#select-area-west').prop('disabled', false);
+			$('#select-area-east').prop('disabled', false);
+			$('#select-area-north').prop('disabled', false);
 			$('#clear-select-area-input').prop('disabled', false);
 		}
 	})
@@ -123,10 +135,10 @@ $(function() {
 //************************  Area Input clear button  *****************************
 $(function() {
 	$("#clear-select-area-input").click(function() {
-		$('#select-area-latitude-min').prop('value', '');
-		$('#select-area-longitude-min').prop('value', '');
-		$('#select-area-longitude-max').prop('value', '');
-		$('#select-area-latitude-max').prop('value', '');
+		$('#select-area-south').prop('value', '');
+		$('#select-area-west').prop('value', '');
+		$('#select-area-east').prop('value', '');
+		$('#select-area-north').prop('value', '');
 	})
 });
 

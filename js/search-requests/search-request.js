@@ -2,21 +2,29 @@ $(function() {
   $("#search-btn").click(function() {
 	// validate and process form here
 	var keyword = $("input#keyword-autocomplete").val();
-	var locationName = $("input#location-name-autocomplete").val();
-	
-	var latitudeMin = $("input#select-area-latitude-min").val();
-	var latitudeMax = $("input#select-area-latitude-max").val();
-	var longitudeMin = $("input#select-area-longitude-min").val();
-	var longitudeMax = $("input#select-area-longitude-min").val();
-
 	var startDate = $("input#start-date").val();
 	var endDate = $("input#end-date").val();
- 	
 	var accessConstraints = $("select#access-constraints").val();
 	var useConstraints = $("select#use-constraints").val();
 	
+    var dataString = 'keyword='+ keyword + '&startDate=' + startDate + '&endDate=' + endDate + '&accessConstraints=' + accessConstraints + '&useConstraints=' + useConstraints;	
 	
-    var dataString = 'keyword='+ keyword + '&locationName=' + locationName + '&startDate=' + startDate + '&endDate=' + endDate + '&accessConstraints=' + accessConstraints + '&useConstraints=' + useConstraints;
+	if($('#location-radio').is(':checked')){
+		var countryCode = $("#location-name-select").val();
+		
+		dataString += '&countryCode=' + countryCode;
+	}
+	
+	if($('#area-selection-radio').is(':checked')){
+		var latitudeNorth = $("input#select-area-north").val();
+		var latitudeSouth = $("input#select-area-south").val();
+		var longitudeWest = $("input#select-area-west").val();
+		var longitudeEast = $("input#select-area-east").val();
+		
+		dataString += '&latitudeNorth=' + latitudeNorth + '&latitudeSouth=' + latitudeSouth + '&longitudeWest=' + longitudeWest + '&longitudeEast=' + longitudeEast;
+	}
+
+
     //alert (dataString);return false;
     $.ajax({
 		  type: "POST",

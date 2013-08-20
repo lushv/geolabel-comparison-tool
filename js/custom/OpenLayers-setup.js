@@ -1,5 +1,5 @@
-var lon = 0;
-var lat = 0;
+var lon = 40;
+var lat = -20;
 var zoom = 2;
 var map, layer;
 
@@ -24,20 +24,20 @@ $(document).ready(function(){
 			var ur = map.getLonLatFromPixel(new OpenLayers.Pixel(bounds.right, bounds.top));
 			
 			$('#location-radio').prop('checked', false);
-			$('#location-name-autocomplete').prop('disabled', true);
+			$('#location-name-select').prop('disabled', true);
 			
 			$('#area-selection-radio').prop('checked', true);
 			$('#clear-select-area-input').prop('disabled', false);
 			
-			$('#select-area-latitude-min').prop('disabled', false);
-			$('#select-area-longitude-min').prop('disabled', false);
-			$('#select-area-longitude-max').prop('disabled', false);
-			$('#select-area-latitude-max').prop('disabled', false);
+			$('#select-area-south').prop('disabled', false);
+			$('#select-area-west').prop('disabled', false);
+			$('#select-area-east').prop('disabled', false);
+			$('#select-area-north').prop('disabled', false);
 
-			$('#select-area-latitude-min').prop('value', ll.lat.toFixed(4));
-			$('#select-area-longitude-min').prop('value', ll.lon.toFixed(4));
-			$('#select-area-longitude-max').prop('value', ur.lon.toFixed(4));
-			$('#select-area-latitude-max').prop('value', ur.lat.toFixed(4));
+			$('#select-area-south').prop('value', ll.lat.toFixed(4));
+			$('#select-area-west').prop('value', ll.lon.toFixed(4));
+			$('#select-area-east').prop('value', ur.lon.toFixed(4));
+			$('#select-area-north').prop('value', ur.lat.toFixed(4));
 		}
 	});
 
