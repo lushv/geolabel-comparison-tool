@@ -51,6 +51,21 @@ $(function() {
 					var expertReviewAvailability = JSONObject.dataset[i].facets.expertReview.availability;
 					var citationsAvailability = JSONObject.dataset[i].facets.citations.availability;
 					
+					var organisationName = JSONObject.dataset[i].facets.producerProfile.organisationName;
+					var supplementalInformation = JSONObject.dataset[i].facets.produerComments.supplementalInformation;
+					//var knownProblems = JSONObject.dataset[i].facets.produerComments.knownProblems;
+					var processStepCount = JSONObject.dataset[i].facets.lineage.processStepCount;
+					var standardName = JSONObject.dataset[i].facets.standardsComplaince.standardName;
+					var standardVersion = JSONObject.dataset[i].facets.standardsComplaince.standardVersion;
+					var scopeLevel = JSONObject.dataset[i].facets.qualityInformation.scopeLevel;
+					var feedbacksCount = JSONObject.dataset[i].facets.userFeedback.feedbacksCount;
+					var ratingsCount = JSONObject.dataset[i].facets.userFeedback.ratingsCount;
+					var feedbacksAverageRating = JSONObject.dataset[i].facets.userFeedback.feedbacksAverageRating;
+					var expertReviewsCount = JSONObject.dataset[i].facets.expertReview.expertReviewsCount;
+					var expertRatingsCount = JSONObject.dataset[i].facets.expertReview.expertRatingsCount;
+					var expertAverageRating = JSONObject.dataset[i].facets.expertReview.expertAverageRating;
+					var citationsCount = JSONObject.dataset[i].facets.citations.citationsCount;
+					
 					var resultsParentSVG = document.getElementById("results_svg");
 					
 					// Set GEO label svg
@@ -59,7 +74,13 @@ $(function() {
 					var transformGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
 					transformGroup.setAttributeNS(null, "id", "size_group_" + i);
 					transformGroup.setAttributeNS(null, "class", "size_group");
-					transformGroup.setAttributeNS(null, "transform", "scale(0.6) translate(" + x + " " + y + ")");
+					transformGroup.setAttributeNS(null, "transform", "scale(0.5) translate(" + x + " " + y + ")");
+					
+					// Create branding
+					var brandingGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+					brandingGroup.setAttributeNS(null, "id", "branding_group_" + i);
+					brandingGroup.setAttributeNS(null, "title", "Dataset ID: " + datasetID);
+					getBranding(brandingGroup);
 					
 					// Create producer profile facet
 					var producerProfileGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
@@ -105,7 +126,7 @@ $(function() {
 					
 					// Create standards compliance facet
 					var standardsComplianceGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
-					standardsComplianceGroup.setAttributeNS(null, "id", "standards_compliance" + i);
+					standardsComplianceGroup.setAttributeNS(null, "id", "standards_compliance_" + i);
 					// Check producer profile availability and generate appropriate facet
 					if(standardsComplianceAvailability == 0){
 						getStandardsComplianceNotAvailable(standardsComplianceGroup);
@@ -117,14 +138,71 @@ $(function() {
 						getStandardsComplianceHigherLevel(standardsComplianceGroup);
 					}
 					
+					// Create quality information facet
+					var qualityInformationGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+					qualityInformationGroup.setAttributeNS(null, "id", "quality_information_" + i);
+					// Check producer profile availability and generate appropriate facet
+					if(qualityInformationAvailability == 0){
+						getQualityInformationNotAvailable(qualityInformationGroup);
+					}
+					else if(qualityInformationAvailability == 1){
+						getQualityInformationAvailable(qualityInformationGroup);
+					}
+					else if(qualityInformationAvailability == 2){
+						getQualityInformationHigherLevel(qualityInformationGroup);
+					}
+					
+					// Create user feedback facet
+					var userFeedbackGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+					userFeedbackGroup.setAttributeNS(null, "id", "user_feedback_" + i);
+					// Check producer profile availability and generate appropriate facet
+					if(userFeedbackAvailability == 0){
+						getUserFeedbackNotAvailable(userFeedbackGroup);
+					}
+					else if(userFeedbackAvailability == 1){
+						getUserFeedbackAvailable(userFeedbackGroup);
+					}
+					else if(userFeedbackAvailability == 2){
+						getUserFeedbackHigherLevel(userFeedbackGroup);
+					}
+					
+					// Create expert review facet
+					var expertReviewGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+					expertReviewGroup.setAttributeNS(null, "id", "expert_review_" + i);
+					// Check producer profile availability and generate appropriate facet
+					if(expertReviewAvailability == 0){
+						getExpertReviewNotAvailable(expertReviewGroup);
+					}
+					else if(expertReviewAvailability == 1){
+						getExpertReviewAvailable(expertReviewGroup);
+					}
+					else if(expertReviewAvailability == 2){
+						getExpertReviewHigherLevel(expertReviewGroup);
+					}
+					
+					// Create citations facet
+					var citationsGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+					citationsGroup.setAttributeNS(null, "id", "citations_" + i);
+					// Check producer profile availability and generate appropriate facet
+					if(citationsAvailability == 0){
+						getCitationsInformationNotAvailable(citationsGroup);
+					}
+					else if(citationsAvailability == 1){
+						getCitationsInformationAvailable(citationsGroup);
+					}
+					else if(citationsAvailability == 2){
+						getCitationsInformationHigherLevel(citationsGroup);
+					}
+					
+					transformGroup.appendChild(brandingGroup);
 					transformGroup.appendChild(producerProfileGroup);
 					transformGroup.appendChild(producerCommentsGroup);
 					transformGroup.appendChild(lineageGroup);
 					transformGroup.appendChild(standardsComplianceGroup);
-					//transformGroup.appendChild(producerCommentsGroup);
-					//transformGroup.appendChild(producerCommentsGroup);
-					//transformGroup.appendChild(producerCommentsGroup);
-					//transformGroup.appendChild(producerCommentsGroup);
+					transformGroup.appendChild(qualityInformationGroup);
+					transformGroup.appendChild(userFeedbackGroup);
+					transformGroup.appendChild(expertReviewGroup);
+					transformGroup.appendChild(citationsGroup);
 
 					labelSVG.appendChild(transformGroup);
 					resultsParentSVG.appendChild(labelSVG);
