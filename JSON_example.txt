@@ -13,6 +13,7 @@ Detailed response:
 		"produerComments":
 		[
 			"availability": 1,
+			"supplementalInformation": "text",
 			"type": "supplemental, problems"
 		]
 		"lineage":
