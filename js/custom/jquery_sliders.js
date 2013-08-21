@@ -52,20 +52,19 @@ $(function() {
 		max: 2,
 		step: 1,
 		change: function( event, ui ) {
-			// get the SVG element node
-			var svg = document.getElementById("geo_label");
-		
+			// producer_profile group to append to
+			var producer_profile = document.getElementById("producer_profile");
 			if(ui.value == "0"){
 				document.getElementById("producer-facet-img").src = "img/facets/not_available/producer_not_available.png";
-				getProducerProfileNotAvailable(svg);
+				getProducerProfileNotAvailable(producer_profile);
 			}
 			else if(ui.value == "1"){
 				document.getElementById("producer-facet-img").src = "img/facets/higher_level/producer_higher_level.png";
-				getProducerProfileHigherLevel(svg);
+				getProducerProfileHigherLevel(producer_profile);
 			}
 			else if(ui.value == "2"){
 				document.getElementById("producer-facet-img").src = "img/facets/available/producer_available.png";
-				getProducerProfileAvailable(svg);
+				getProducerProfileAvailable(producer_profile);
 			}
 		}
 	});
@@ -80,20 +79,19 @@ $(function() {
 		max: 2,
 		step: 1,
 		change: function( event, ui ) {
-			// get the SVG element node
-			var svg = document.getElementById("geo_label");
-			
+			// producer_comments group to append to
+			var producer_comments = document.getElementById("producer_comments");	
 			if(ui.value == "0"){
 				document.getElementById("comments-facet-img").src = "img/facets/not_available/comments_not_available.png";
-				getProducerCommentsNotAvailable(svg);
+				getProducerCommentsNotAvailable(producer_comments);
 			}
 			else if(ui.value == "1"){
 				document.getElementById("comments-facet-img").src = "img/facets/higher_level/comments_higher_level.png";
-				getProducerCommentsHigherLevel(svg);
+				getProducerCommentsHigherLevel(producer_comments);
 			}
 			else if(ui.value == "2"){
 				document.getElementById("comments-facet-img").src = "img/facets/available/comments_available.png";
-				getProducerCommentsAvailable(svg);
+				getProducerCommentsAvailable(producer_comments);
 			}
 		}
 	});
@@ -108,19 +106,19 @@ $(function() {
 		max: 2,
 		step: 1,
 		change: function( event, ui ) {
-			var svg = document.getElementById("geo_label");
-
+			// lineage group to append to
+			var lineage = document.getElementById("lineage");
 			if(ui.value == "0"){
 				document.getElementById("lineage-facet-img").src = "img/facets/not_available/lineage_not_available.png";
-				getLineageNotAvailable(svg);
+				getLineageNotAvailable(lineage);
 			}
 			else if(ui.value == "1"){
 				document.getElementById("lineage-facet-img").src = "img/facets/higher_level/lineage_higher_level.png";
-				getLineageHigherLevel(svg);
+				getLineageHigherLevel(lineage);
 			}
 			else if(ui.value == "2"){
 				document.getElementById("lineage-facet-img").src = "img/facets/available/lineage_available.png";
-				getLineageAvailable(svg);
+				getLineageAvailable(lineage);
 			}
 		}
 	});
@@ -135,19 +133,19 @@ $(function() {
 		max: 2,
 		step: 1,
 		change: function( event, ui ) {
-			var svg = document.getElementById("geo_label");
-
+			// standards_compliance group to append to
+			var standards_compliance = document.getElementById("standards_compliance");
 			if(ui.value == "0"){
 				document.getElementById("compliance-facet-img").src = "img/facets/not_available/compliance_not_available.png";
-				getStandardsComplianceNotAvailable(svg);
+				getStandardsComplianceNotAvailable(standards_compliance);
 			}
 			else if(ui.value == "1"){
 				document.getElementById("compliance-facet-img").src = "img/facets/higher_level/compliance_higher_level.png";
-				getStandardsComplianceHigherLevel(svg);
+				getStandardsComplianceHigherLevel(standards_compliance);
 			}
 			else if(ui.value == "2"){
 				document.getElementById("compliance-facet-img").src = "img/facets/available/compliance_available.png";
-				getStandardsComplianceAvailable(svg);
+				getStandardsComplianceAvailable(standards_compliance);
 			}
 		}
 	});
@@ -162,19 +160,19 @@ $(function() {
 		max: 2,
 		step: 1,
 		change: function( event, ui ) {
-			var svg = document.getElementById("geo_label");
-
+			// quality_information group to append to
+			var quality_information = document.getElementById("quality_information");
 			if(ui.value == "0"){
 				document.getElementById("quality-facet-img").src = "img/facets/not_available/quality_not_available.png";
-				getQualityInformationNotAvailable(svg);
+				getQualityInformationNotAvailable(quality_information);
 			}
 			else if(ui.value == "1"){
 				document.getElementById("quality-facet-img").src = "img/facets/higher_level/quality_higher_level.png";
-				getQualityInformationHigherLevel(svg);
+				getQualityInformationHigherLevel(quality_information);
 			}
 			else if(ui.value == "2"){
 				document.getElementById("quality-facet-img").src = "img/facets/available/quality_available.png";
-				getQualityInformationAvailable(svg);
+				getQualityInformationAvailable(quality_information);
 			}	
 		}
 	});
@@ -189,19 +187,19 @@ $(function() {
 		max: 2,
 		step: 1,
 		change: function( event, ui ) {
-			var svg = document.getElementById("geo_label");
-
+			// user_feedback group to append to
+			var user_feedback = document.getElementById("user_feedback");
 			if(ui.value == "0"){
 				document.getElementById("feedback-facet-img").src = "img/facets/not_available/feedback_not_available.png";
-				getUserFeedbackNotAvailable(svg);
+				getUserFeedbackNotAvailable(user_feedback);
 			}
 			else if(ui.value == "1"){
 				document.getElementById("feedback-facet-img").src = "img/facets/higher_level/feedback_higher_level.png";
-				getUserFeedbackHigherLevel(svg);
+				getUserFeedbackHigherLevel(user_feedback);
 			}
 			else if(ui.value == "2"){
 				document.getElementById("feedback-facet-img").src = "img/facets/available/feedback_available.png";
-				getUserFeedbackAvailable(svg);
+				getUserFeedbackAvailable(user_feedback);
 			}
 		}
 	});
@@ -216,19 +214,19 @@ $(function() {
 		max: 2,
 		step: 1,
 		change: function( event, ui ) {
-			var svg = document.getElementById("geo_label");
-
+			// expert_review group to append to
+			var expert_review = document.getElementById("expert_review");
 			if(ui.value == "0"){
 				document.getElementById("review-facet-img").src = "img/facets/not_available/review_not_available.png";
-				getExpertReviewNotAvailable(svg);
+				getExpertReviewNotAvailable(expert_review);
 			}
 			else if(ui.value == "1"){
 				document.getElementById("review-facet-img").src = "img/facets/higher_level/review_higher_level.png";
-				getExpertReviewHigherLevel(svg);
+				getExpertReviewHigherLevel(expert_review);
 			}
 			else if(ui.value == "2"){
 				document.getElementById("review-facet-img").src = "img/facets/available/review_available.png";
-				getExpertReviewAvailable(svg);
+				getExpertReviewAvailable(expert_review);
 			}
 		}
 	});
@@ -243,19 +241,19 @@ $(function() {
 		max: 2,
 		step: 1,
 		change: function( event, ui ) {
-			var svg = document.getElementById("geo_label");
-
+			// citations_information group to append to
+			var citations_information = document.getElementById("citations_information");
 			if(ui.value == "0"){
 				document.getElementById("citations-facet-img").src = "img/facets/not_available/citations_not_available.png";
-				getCitationsInformationNotAvailable(svg);
+				getCitationsInformationNotAvailable(citations_information);
 			}
 			else if(ui.value == "1"){
 				document.getElementById("citations-facet-img").src = "img/facets/higher_level/citations_higher_level.png";
-				getCitationsInformationHigherLevel(svg);
+				getCitationsInformationHigherLevel(citations_information);
 			}
 			else if(ui.value == "2"){
 				document.getElementById("citations-facet-img").src = "img/facets/available/citations_available.png";
-				getCitationsInformationAvailable(svg);
+				getCitationsInformationAvailable(citations_information);
 			}
 		}
 	});

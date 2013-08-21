@@ -1,5 +1,8 @@
 $(function() {
   $("#search-btn").click(function() {
+	// First of all clear all the previous results
+	document.getElementById("results_svg").innerHTML = '';
+	
 	// validate and process form here
 	var keyword = $("input#keyword-autocomplete").val();
 	var startDate = $("input#start-date").val();
@@ -31,15 +34,108 @@ $(function() {
 		  url: "php/process_search_request.php",
 		  data: dataString,
 		success: function(data){
-			var searchStr = "";
 			if(isJson(data)){
+			
 				var JSONObject = JSON.parse(data);
-
+				var x = 0;
+				var y = 0;
 				// Process all JSON datasets objects and build GEO label representations
-				for (var i = 1; i < JSONObject.dataset.length; i++) {
-					//searchStr += "Dataset ID: " + JSONObject.dataset[i].datasetIdentifier;
+				for (var i = 0; i < JSONObject.dataset.length; i++) {
+					var datasetID = JSONObject.dataset[i].datasetIdentifier;
 					var producerProfileAvailability = JSONObject.dataset[i].facets.producerProfile.availability;
+					var producerCommentsAvailability = JSONObject.dataset[i].facets.produerComments.availability;
+					var lineageAvailability = JSONObject.dataset[i].facets.lineage.availability;
+					var standardsComplianceAvailability = JSONObject.dataset[i].facets.standardsComplaince.availability;
+					var qualityInformationAvailability = JSONObject.dataset[i].facets.qualityInformation.availability;
+					var userFeedbackAvailability = JSONObject.dataset[i].facets.userFeedback.availability;
+					var expertReviewAvailability = JSONObject.dataset[i].facets.expertReview.availability;
+					var citationsAvailability = JSONObject.dataset[i].facets.citations.availability;
 					
+					var resultsParentSVG = document.getElementById("results_svg");
+					
+					// Set GEO label svg
+					var labelSVG = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+					// Set a group element to group all GEO label facets
+					var transformGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+					transformGroup.setAttributeNS(null, "id", "size_group_" + i);
+					transformGroup.setAttributeNS(null, "class", "size_group");
+					transformGroup.setAttributeNS(null, "transform", "scale(0.6) translate(" + x + " " + y + ")");
+					
+					// Create producer profile facet
+					var producerProfileGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+					producerProfileGroup.setAttributeNS(null, "id", "producer_profile_" + i);
+					// Check producer profile availability and generate appropriate facet
+					if(producerProfileAvailability == 0){
+						getProducerProfileNotAvailable(producerProfileGroup);
+					}
+					else if(producerProfileAvailability == 1){
+						getProducerProfileAvailable(producerProfileGroup);
+					}
+					else if(producerProfileAvailability == 2){
+						getProducerProfileHigherLevel(producerProfileGroup);
+					}
+
+					// Create producer comments facet
+					var producerCommentsGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+					producerCommentsGroup.setAttributeNS(null, "id", "producer_comments_" + i);
+					// Check producer profile availability and generate appropriate facet
+					if(producerCommentsAvailability == 0){
+						getProducerCommentsNotAvailable(producerCommentsGroup);
+					}
+					else if(producerCommentsAvailability == 1){
+						getProducerCommentsAvailable(producerCommentsGroup);
+					}
+					else if(producerCommentsAvailability == 2){
+						getProducerCommentsHigherLevel(producerCommentsGroup);
+					}
+					
+					// Create lineage facet
+					var lineageGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+					lineageGroup.setAttributeNS(null, "id", "lineage_" + i);
+					// Check producer profile availability and generate appropriate facet
+					if(lineageAvailability == 0){
+						getLineageNotAvailable(lineageGroup);
+					}
+					else if(lineageAvailability == 1){
+						getLineageAvailable(lineageGroup);
+					}
+					else if(lineageAvailability == 2){
+						getLineageHigherLevel(lineageGroup);
+					}
+					
+					// Create standards compliance facet
+					var standardsComplianceGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+					standardsComplianceGroup.setAttributeNS(null, "id", "standards_compliance" + i);
+					// Check producer profile availability and generate appropriate facet
+					if(standardsComplianceAvailability == 0){
+						getStandardsComplianceNotAvailable(standardsComplianceGroup);
+					}
+					else if(standardsComplianceAvailability == 1){
+						getStandardsComplianceAvailable(standardsComplianceGroup);
+					}
+					else if(standardsComplianceAvailability == 2){
+						getStandardsComplianceHigherLevel(standardsComplianceGroup);
+					}
+					
+					transformGroup.appendChild(producerProfileGroup);
+					transformGroup.appendChild(producerCommentsGroup);
+					transformGroup.appendChild(lineageGroup);
+					transformGroup.appendChild(standardsComplianceGroup);
+					//transformGroup.appendChild(producerCommentsGroup);
+					//transformGroup.appendChild(producerCommentsGroup);
+					//transformGroup.appendChild(producerCommentsGroup);
+					//transformGroup.appendChild(producerCommentsGroup);
+
+					labelSVG.appendChild(transformGroup);
+					resultsParentSVG.appendChild(labelSVG);
+					
+					x += 250;
+					y += 0;
+					
+					
+					
+					
+					/*
 					var paper = new Raphael(document.getElementById('tab-pane-search-results'), 250, 250);
 					var c;
 					var d;
@@ -61,7 +157,7 @@ $(function() {
 					st.push(
 					);
 					st.transform("s0.5...");
-					
+					*/
 					
 					
 					
@@ -118,17 +214,3 @@ $(function() {
 	$('.tab-content #tab-pane-search-results').show();	
   });
 });
-/*
-window.onload = function() {  
-    var paper = new Raphael(document.getElementById('tab-pane-search-results'), 500, 500);
-	
-  jQuery.ajax({
-    type: "GET",
-    url: "img/coloredtoucan.svg",
-    dataType: "xml",
-    success: function(svgXML) {
-      var newSet = paper.importSVG(svgXML);
-    }
-  });
-}
-*/

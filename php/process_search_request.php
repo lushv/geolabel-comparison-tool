@@ -85,39 +85,42 @@ if(!empty($west)){
 if(!empty($east)){
 	$sql .= " AND longitude_east >= $east";
 }
-// Make a query to database
-if(!$result = $db->query($sql)){
-    die('There was an error running the query [' . $db->error . ']');
-}
 
 // --------------------- Process SQL query result ---------------------------
-$rowCount = $result->num_rows;
-$commaCount = 1;
 $jsonResponceString = '{"dataset": [';
 
-while($row = $result->fetch_assoc()){
-	// Get location of the metadata XML file
-	$metadataURL = 'metadata_records/' . $row['dataset_id'] . '.xml';
-	// Load metadata XML file
-	$metadataXML = new DOMDocument();
-	$metadataXML->load($metadataURL);
-	
-	$xmlProcessor = new xmlProcessor();
-	$json = $xmlProcessor->getJsonDatasetSummary($metadataXML, null);
-	
-	if(!empty($json)){
-		$jsonResponceString .=  $json;
-		if($rowCount > $commaCount){
-			// If not the last row in the query result, then add a comma after the returned JSON object
-			$jsonResponceString .=  ', ';
+// Make a query to database
+if($result = $db->query($sql)){
+	$rowCount = $result->num_rows;
+	$commaCount = 1;
+	while($row = $result->fetch_assoc()){
+		// Get location of the metadata XML file
+		$metadataURL = 'metadata_records/' . $row['dataset_id'] . '.xml';
+		// Load metadata XML file
+		$metadataXML = new DOMDocument();
+		$metadataXML->load($metadataURL);
+		
+		$xmlProcessor = new xmlProcessor();
+		$json = $xmlProcessor->getJsonDatasetSummary($metadataXML, null);
+		
+		if(!empty($json)){
+			$jsonResponceString .=  $json;
+			if($rowCount > $commaCount){
+				// If not the last row in the query result, then add a comma after the returned JSON object
+				$jsonResponceString .=  ', ';
+			}
+			$commaCount ++;
 		}
-		$commaCount ++;
 	}
+	/* free result set */
+	$result->free();
 }
-$jsonResponceString .= ' ]}';
 
+$jsonResponceString .= ' ]}';
 echo $jsonResponceString;
 
+/* close connection */
+$db->close();
 
 
 function getXMLNode($xml, $nodeXPath){
