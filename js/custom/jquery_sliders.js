@@ -45,6 +45,7 @@ $(function() {
 
 // ***************************************   PRODUCER PROFILE   ****************************************** //
 $(function() {
+// Varaible to keep the current value of the sliders
 	$("#producer-slider").slider({
 		range: "min",
 		value:0,
@@ -55,17 +56,22 @@ $(function() {
 			// producer_profile group to append to
 			var producer_profile = document.getElementById("producer_profile");
 			if(ui.value == "0"){
+				$slidersVal[0] = 0;
 				document.getElementById("producer-facet-img").src = "img/facets/not_available/producer_not_available.png";
 				getProducerProfileNotAvailable(producer_profile);
 			}
 			else if(ui.value == "1"){
+				$slidersVal[0] = 1;
 				document.getElementById("producer-facet-img").src = "img/facets/higher_level/producer_higher_level.png";
 				getProducerProfileHigherLevel(producer_profile);
 			}
 			else if(ui.value == "2"){
+				$slidersVal[0] = 2;
 				document.getElementById("producer-facet-img").src = "img/facets/available/producer_available.png";
 				getProducerProfileAvailable(producer_profile);
 			}
+			// Hide or show labels depending on the current state of all the sliders
+			setLabelsVisibility();
 		}
 	});
 });
@@ -82,17 +88,22 @@ $(function() {
 			// producer_comments group to append to
 			var producer_comments = document.getElementById("producer_comments");	
 			if(ui.value == "0"){
+				$slidersVal[1] = 0;
 				document.getElementById("comments-facet-img").src = "img/facets/not_available/comments_not_available.png";
 				getProducerCommentsNotAvailable(producer_comments);
 			}
 			else if(ui.value == "1"){
+				$slidersVal[1] = 1;
 				document.getElementById("comments-facet-img").src = "img/facets/higher_level/comments_higher_level.png";
 				getProducerCommentsHigherLevel(producer_comments);
 			}
 			else if(ui.value == "2"){
+				$slidersVal[1] = 2;
 				document.getElementById("comments-facet-img").src = "img/facets/available/comments_available.png";
 				getProducerCommentsAvailable(producer_comments);
 			}
+			// Hide or show labels depending on the current state of all the sliders
+			setLabelsVisibility();
 		}
 	});
 });
@@ -109,17 +120,22 @@ $(function() {
 			// lineage group to append to
 			var lineage = document.getElementById("lineage");
 			if(ui.value == "0"){
+				$slidersVal[2] = 0;
 				document.getElementById("lineage-facet-img").src = "img/facets/not_available/lineage_not_available.png";
 				getLineageNotAvailable(lineage);
 			}
 			else if(ui.value == "1"){
+				$slidersVal[2] = 1;
 				document.getElementById("lineage-facet-img").src = "img/facets/higher_level/lineage_higher_level.png";
 				getLineageHigherLevel(lineage);
 			}
 			else if(ui.value == "2"){
+				$slidersVal[2] = 2;
 				document.getElementById("lineage-facet-img").src = "img/facets/available/lineage_available.png";
 				getLineageAvailable(lineage);
 			}
+			// Hide or show labels depending on the current state of all the sliders
+			setLabelsVisibility();
 		}
 	});
 });
@@ -136,17 +152,22 @@ $(function() {
 			// standards_compliance group to append to
 			var standards_compliance = document.getElementById("standards_compliance");
 			if(ui.value == "0"){
+				$slidersVal[3] = 0;
 				document.getElementById("compliance-facet-img").src = "img/facets/not_available/compliance_not_available.png";
 				getStandardsComplianceNotAvailable(standards_compliance);
 			}
 			else if(ui.value == "1"){
+				$slidersVal[3] = 1;
 				document.getElementById("compliance-facet-img").src = "img/facets/higher_level/compliance_higher_level.png";
 				getStandardsComplianceHigherLevel(standards_compliance);
 			}
 			else if(ui.value == "2"){
+				$slidersVal[3] = 2;
 				document.getElementById("compliance-facet-img").src = "img/facets/available/compliance_available.png";
 				getStandardsComplianceAvailable(standards_compliance);
 			}
+			// Hide or show labels depending on the current state of all the sliders
+			setLabelsVisibility();
 		}
 	});
 });
@@ -163,17 +184,22 @@ $(function() {
 			// quality_information group to append to
 			var quality_information = document.getElementById("quality_information");
 			if(ui.value == "0"){
+				$slidersVal[4] = 0;
 				document.getElementById("quality-facet-img").src = "img/facets/not_available/quality_not_available.png";
 				getQualityInformationNotAvailable(quality_information);
 			}
 			else if(ui.value == "1"){
+				$slidersVal[4] = 1;
 				document.getElementById("quality-facet-img").src = "img/facets/higher_level/quality_higher_level.png";
 				getQualityInformationHigherLevel(quality_information);
 			}
 			else if(ui.value == "2"){
+				$slidersVal[4] = 2;
 				document.getElementById("quality-facet-img").src = "img/facets/available/quality_available.png";
 				getQualityInformationAvailable(quality_information);
-			}	
+			}
+			// Hide or show labels depending on the current state of all the sliders
+			setLabelsVisibility();
 		}
 	});
 });
@@ -190,17 +216,22 @@ $(function() {
 			// user_feedback group to append to
 			var user_feedback = document.getElementById("user_feedback");
 			if(ui.value == "0"){
+				$slidersVal[5] = 0;
 				document.getElementById("feedback-facet-img").src = "img/facets/not_available/feedback_not_available.png";
 				getUserFeedbackNotAvailable(user_feedback);
 			}
 			else if(ui.value == "1"){
+				$slidersVal[5] = 1;
 				document.getElementById("feedback-facet-img").src = "img/facets/higher_level/feedback_higher_level.png";
 				getUserFeedbackHigherLevel(user_feedback);
 			}
 			else if(ui.value == "2"){
+				$slidersVal[5] = 2;
 				document.getElementById("feedback-facet-img").src = "img/facets/available/feedback_available.png";
 				getUserFeedbackAvailable(user_feedback);
 			}
+			// Hide or show labels depending on the current state of all the sliders
+			setLabelsVisibility();
 		}
 	});
 });
@@ -217,17 +248,22 @@ $(function() {
 			// expert_review group to append to
 			var expert_review = document.getElementById("expert_review");
 			if(ui.value == "0"){
+				$slidersVal[6] = 0;
 				document.getElementById("review-facet-img").src = "img/facets/not_available/review_not_available.png";
 				getExpertReviewNotAvailable(expert_review);
 			}
 			else if(ui.value == "1"){
+				$slidersVal[6] = 1;
 				document.getElementById("review-facet-img").src = "img/facets/higher_level/review_higher_level.png";
 				getExpertReviewHigherLevel(expert_review);
 			}
 			else if(ui.value == "2"){
+				$slidersVal[6] = 2;
 				document.getElementById("review-facet-img").src = "img/facets/available/review_available.png";
 				getExpertReviewAvailable(expert_review);
 			}
+			// Hide or show labels depending on the current state of all the sliders
+			setLabelsVisibility();
 		}
 	});
 });
@@ -244,17 +280,71 @@ $(function() {
 			// citations_information group to append to
 			var citations_information = document.getElementById("citations_information");
 			if(ui.value == "0"){
+				$slidersVal[7] = 0;
 				document.getElementById("citations-facet-img").src = "img/facets/not_available/citations_not_available.png";
 				getCitationsInformationNotAvailable(citations_information);
 			}
 			else if(ui.value == "1"){
+				$slidersVal[7] = 1;
 				document.getElementById("citations-facet-img").src = "img/facets/higher_level/citations_higher_level.png";
 				getCitationsInformationHigherLevel(citations_information);
 			}
 			else if(ui.value == "2"){
+				$slidersVal[7] = 2;
 				document.getElementById("citations-facet-img").src = "img/facets/available/citations_available.png";
 				getCitationsInformationAvailable(citations_information);
 			}
+			// Hide or show labels depending on the current state of all the sliders
+			setLabelsVisibility();
 		}
 	});
 });
+
+// ************************************   Helper Functions   ***********************************
+
+// Varaible to keep the current value of the sliders
+var $slidersVal = [0, 0, 0, 0, 0, 0, 0, 0];
+
+function setLabelsVisibility(){
+	// Iterate through all GEO labels
+	var count = $("#results_svg").children().length;
+	for (var i = 0; i < count; i++) {				
+		var totalMatch = getMatch($slidersVal[0], $("#producer_profile_" + i).attr("availability")) +
+					getMatch($slidersVal[1], $("#producer_comments_" + i).attr("availability")) +
+					getMatch($slidersVal[2], $("#lineage_" + i).attr("availability")) +
+					getMatch($slidersVal[3], $("#standards_compliance_" + i).attr("availability")) +
+					getMatch($slidersVal[4], $("#quality_information_" + i).attr("availability")) +
+					getMatch($slidersVal[5], $("#user_feedback_" + i).attr("availability")) +
+					getMatch($slidersVal[6], $("#expert_review_" + i).attr("availability")) +
+					getMatch($slidersVal[7], $("#citations_" + i).attr("availability"));
+		if(totalMatch < 8){
+			$("#geolabel_" + i).hide();
+		}
+		else{
+			$("#geolabel_" + i).show();
+		}
+	}
+}
+
+// Returns 1 if availability matches, or 0 otherwise
+function getMatch(sliderVal, facetVal){
+	if(sliderVal == 0){
+		return 1;
+	}
+	else if(sliderVal == 1){
+		if(facetVal == 1 || facetVal == 2){
+			return 1;
+		}
+		else{
+			return 0;
+		}
+	}
+	else if(sliderVal == 2){
+		if(facetVal == 1){
+			return 1;
+		}
+		else{
+			return 0;
+		}
+	}
+}

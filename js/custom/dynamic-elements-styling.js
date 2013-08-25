@@ -181,20 +181,37 @@ $(function() {
 	})
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Function to make tabs active and display the content when tabs are clicked
+$(function() {
+  $("#map-tab").click(function() {
+	// make the clicked tab active
+	$("#serach-results-tab").removeClass("active");
+	$("#map-tab").addClass("active");
+	$('.tab-content #tab-pane-search-results').hide();
+	$('.tab-content #tab-pane-map').show();
+  });
+  
+  $("#serach-results-tab").click(function() {
+	// make the clicked tab active
+	$("#map-tab").removeClass("active");
+	$("#serach-results-tab").addClass("active");
+	$('.tab-content #tab-pane-map').hide();
+	$('.tab-content #tab-pane-search-results').show();	
+  });
+  
+  $("#query-constraints-tab").click(function() {
+	// make the clicked tab active
+	$("#geo-label-filtering-tab").removeClass("active");
+	$("#query-constraints-tab").addClass("active");
+	$('.tab-content #tab-pane-geo-label-filtering').hide();
+	$('.tab-content #tab-pane-query-constraints').show();
+  });
+  
+  $("#geo-label-filtering-tab").click(function() {
+	// make the clicked tab active
+	$("#query-constraints-tab").removeClass("active");
+	$("#geo-label-filtering-tab").addClass("active");
+	$('.tab-content #tab-pane-query-constraints').hide();
+	$('.tab-content #tab-pane-geo-label-filtering').show();
+  });
+});
