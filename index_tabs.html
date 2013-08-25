@@ -12,7 +12,7 @@
 			<script src="js/custom/html5shiv.js"></script>
 		<![endif]-->
 		<!-- Latest JQuery plugin and Bootsrap functionality -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="js/jquery-1.10.1/jquery.min.js" type="text/javascript"></script>
         <script src="js/bootstrap/bootstrap.js" type="text/javascript"></script>
 		
 		<!-- jQuery Plugins functionality -->
@@ -52,7 +52,8 @@
 		<script type="text/javascript" src="js/custom/jquery_sliders.js"></script>
 		
 		<!-- Javascript for search requests -->
-		<script type="text/javascript" src="js/search-requests/search-request.js"></script>		
+		<script type="text/javascript" src="js/search-requests/search-request.js"></script>
+		<script type="text/javascript" src="js/search-requests/filtering.js"></script>
 	
     </head>
     <body>
@@ -76,7 +77,7 @@
 								<div id="tab-pane-search-results" class="tab-pane">
 									<div id="search-results">
 										<!--  Search results will be automatically displayed here  -->
-										<svg version="1.1" id="results_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000px" height="1000px">
+										<svg version="1.1" id="results_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="900px" height="500px">
 										
 										</svg>
 									</div>
@@ -666,6 +667,13 @@
 												<div>
 													- Dataset source<br>
 													<input id="dataset-source-autocomplete" class="dataset-source-autocomplete accordion-autocomplete" type="text" name="dataset-source">
+													<br>
+													<button id="filter-producer-btn" class="btn btn-filter" type="button">
+														Apply filtering
+													</button>
+													<button id="reset-producer-btn" class="btn btn-reset" type="button">
+														Clear filtering
+													</button>
 												</div>
 											</div>
 										</div> <!-- end of producer profile -->
@@ -687,9 +695,18 @@
 												<div>
 													- Comments type<br>
 													<select name="quality-scope" class="quality-scope accordion-select dropdown">
+														<option value=""></option>
 														<option value="supplemental_information">Supplemental information</option>
-														<option value="known_problem">Known problem</option>
+														<option value="known_problem">Known problems</option>
+														<option value="both">Supplemental information and known problems</option>
 													</select>
+													<br>
+													<button id="filter-comments-btn" class="btn btn-filter" type="button">
+														Apply filtering
+													</button>
+													<button id="reset-comments-btn" class="btn btn-reset" type="button">
+														Clear filtering
+													</button>
 												</div>
 											</div>
 										</div> <!-- end of producer comments -->
@@ -711,6 +728,13 @@
 												<div>
 													- Maximum number of process steps<br>
 													<input id="process-steps" class="process-steps accordion-input" type="text" name="process-steps">
+													<br>
+													<button id="filter-lineage-btn" class="btn btn-filter" type="button">
+														Apply filtering
+													</button>
+													<button id="reset-lineage-btn" class="btn btn-reset" type="button">
+														Clear filtering
+													</button>
 												</div>
 											</div>
 										</div> <!-- end of lineage -->
@@ -732,6 +756,13 @@
 												<div>
 													- Metadata standard name<br>
 													<input id="standard-name-autocomplete" class="standard-name-autocomplete accordion-autocomplete" type="text" name="standard-name">
+													<br>
+													<button id="filter-standards-btn" class="btn btn-filter" type="button">
+														Apply filtering
+													</button>
+													<button id="reset-standards-btn" class="btn btn-reset" type="button">
+														Clear filtering
+													</button>
 												</div>
 											</div>
 										</div> <!-- end of compliance -->
@@ -753,9 +784,17 @@
 												<div>
 													- Scope<br>
 													<select name="quality-scope" class="quality-scope accordion-select dropdown">
+														<option value=""></option>
 														<option value="dataset">Dataset level</option>
 														<option value="pixel">Pixel level</option>
 													</select>
+													<br>
+													<button id="filter-quality-btn" class="btn btn-filter" type="button">
+														Apply filtering
+													</button>
+													<button id="reset-quality-btn" class="btn btn-reset" type="button">
+														Clear filtering
+													</button>
 												</div>
 											</div>
 										</div> <!-- end of quality -->
@@ -776,10 +815,17 @@
 												<h3>User feedback filtering options</h3>
 												<div>
 													- Average rating<br>
-													<div id="feedback-star"></div>
+													<div id="feedback-star" class="star"></div>
 													<br>
 													- Minimum number of feedbacks<br>
 													<input id="minimum-feedbacks" class="minimum-feedbacks accordion-input" type="text" name="minimum-feedbacks">
+													<br>
+													<button id="filter-feedback-btn" class="btn btn-filter" type="button">
+														Apply filtering
+													</button>
+													<button id="reset-feedback-btn" class="btn btn-reset" type="button">
+														Clear filtering
+													</button>
 												</div>
 											</div>
 										</div> <!-- end of feedback -->
@@ -800,10 +846,17 @@
 												<h3>Expert reviews filtering options</h3>
 												<div>
 													- Average rating<br>
-													<div id="reviews-star"></div>
+													<div id="reviews-star" class="star"></div>
 													<br>
 													- Minimum number of expert reviews<br>
 													<input id="minimum-reviews" class="minimum-reviews accordion-input" type="text" name="minimum-reviews">
+													<br>
+													<button id="filter-expert-btn" class="btn btn-filter" type="button">
+														Apply filtering
+													</button>
+													<button id="reset-expert-btn" class="btn btn-reset" type="button">
+														Clear filtering
+													</button>
 												</div>
 											</div>
 										</div> <!-- end of review -->
@@ -825,6 +878,13 @@
 												<div>
 													- Minimum number of citations<br>
 													<input id="minimum-citations" class="minimum-citations accordion-input" type="text" name="minimum-citations">
+													<br>
+													<button id="filter-citations-btn" class="btn btn-filter" type="button">
+														Apply filtering
+													</button>
+													<button id="reset-citations-btn" class="btn btn-reset" type="button">
+														Clear filtering
+													</button>
 												</div>
 											</div>
 										</div> <!-- end of citations -->
