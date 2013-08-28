@@ -37,9 +37,9 @@ $(function() {
 			if(isJson(data)){
 			
 				var JSONObject = JSON.parse(data);
-				var scale = 0.3;
-				var x = 0;
-				var y = 0;
+				var scale = 0.2;
+				var x = 30;
+				var y = 30;
 				// Process all JSON datasets objects and build GEO label representations
 				for (var i = 0; i < JSONObject.dataset.length; i++) {
 					var datasetID = JSONObject.dataset[i].datasetIdentifier;
@@ -54,6 +54,7 @@ $(function() {
 					
 					var organisationName = JSONObject.dataset[i].facets.producerProfile.organisationName;
 					var supplementalInformation = JSONObject.dataset[i].facets.produerComments.supplementalInformation;
+					var knownProblems = "";
 					//var knownProblems = JSONObject.dataset[i].facets.produerComments.knownProblems;
 					var processStepCount = JSONObject.dataset[i].facets.lineage.processStepCount;
 					var standardName = JSONObject.dataset[i].facets.standardsComplaince.standardName;
@@ -76,8 +77,10 @@ $(function() {
 					var transformGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
 					transformGroup.setAttributeNS(null, "id", "size_group_" + i);
 					transformGroup.setAttributeNS(null, "class", "size_group");
-					transformGroup.setAttributeNS(null, "transform", "scale(" + scale + ") translate(" + x + " " + y + ")");
+					transformGroup.setAttributeNS(null, "transform", "translate(" + x + " " + y + ") scale(" + scale + ") ");
 					transformGroup.setAttributeNS(null, "size_scale", scale);
+					transformGroup.setAttributeNS(null, "translate_x", x);
+					transformGroup.setAttributeNS(null, "translate_y", y);
 					//transformGroup.setAttributeNS(null, "scale", scale);
 					//transformGroup.setAttributeNS(null, "translate", x + " " + y);
 					
@@ -249,10 +252,10 @@ $(function() {
 					labelSVG.appendChild(transformGroup);
 					resultsParentSVG.appendChild(labelSVG);
 					
-					x += 300;
+					x += 100;
 					if(i == 9){
-						y += 300;
-						x = 0;
+						y += 100;
+						x = 30;
 					}
 					
 				}
