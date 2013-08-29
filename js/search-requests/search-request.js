@@ -112,7 +112,7 @@ $(function() {
 					var producerCommentsGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
 					producerCommentsGroup.setAttributeNS(null, "id", "producer_comments_" + i);
 					producerCommentsGroup.setAttributeNS(null, "supplemental_information", supplementalInformation);
-					//producerCommentsGroup.setAttributeNS(null, "known_problems", knownProblems);
+					producerCommentsGroup.setAttributeNS(null, "known_problems", knownProblems);
 					// Check producer profile availability and generate appropriate facet
 					if(producerCommentsAvailability == 0){
 						getProducerCommentsNotAvailable(producerCommentsGroup);
