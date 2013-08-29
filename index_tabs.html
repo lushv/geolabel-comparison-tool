@@ -694,7 +694,7 @@
 												<h3>Producer comments filtering options</h3>
 												<div>
 													- Comments type<br>
-													<select name="quality-scope" class="quality-scope accordion-select dropdown">
+													<select id="comments_type_select" class="quality-scope accordion-select dropdown" name="comments-type" >
 														<option value=""></option>
 														<option value="supplemental_information">Supplemental information</option>
 														<option value="known_problem">Known problems</option>
@@ -727,7 +727,7 @@
 												<h3>Lineage information filtering options</h3>
 												<div>
 													- Maximum number of process steps<br>
-													<input id="process-steps" class="process-steps accordion-input" type="text" name="process-steps">
+													<input id="process-steps-input" class="process-steps accordion-input numeric" type="text" name="process-steps">
 													<br>
 													<button id="filter-lineage-btn" class="btn btn-filter" type="button">
 														Apply filtering
@@ -783,7 +783,7 @@
 												<h3>Quality information filtering options</h3>
 												<div>
 													- Scope<br>
-													<select name="quality-scope" class="quality-scope accordion-select dropdown">
+													<select id="scope-level-select" class="quality-scope accordion-select dropdown"name="quality-scope" >
 														<option value=""></option>
 														<option value="dataset">Dataset level</option>
 														<option value="pixel">Pixel level</option>
@@ -818,7 +818,7 @@
 													<div id="feedback-star" class="star"></div>
 													<br>
 													- Minimum number of feedbacks<br>
-													<input id="minimum-feedbacks" class="minimum-feedbacks accordion-input" type="text" name="minimum-feedbacks">
+													<input id="minimum-feedbacks" class="minimum-feedbacks accordion-input numeric" type="text" name="minimum-feedbacks">
 													<br>
 													<button id="filter-feedback-btn" class="btn btn-filter" type="button">
 														Apply filtering
@@ -849,7 +849,7 @@
 													<div id="reviews-star" class="star"></div>
 													<br>
 													- Minimum number of expert reviews<br>
-													<input id="minimum-reviews" class="minimum-reviews accordion-input" type="text" name="minimum-reviews">
+													<input id="minimum-reviews" class="minimum-reviews accordion-input numeric" type="text" name="minimum-reviews">
 													<br>
 													<button id="filter-expert-btn" class="btn btn-filter" type="button">
 														Apply filtering
@@ -863,7 +863,7 @@
 										<br>
 										<!-- ============= Citations ================ -->
 										<div id="citations-facet-selection" class="facet-selection">
-											<div id="quality-facet-section-label" class="facet-section-label">
+											<div id="citations-facet-section-label" class="facet-section-label">
 												Citations Information
 											</div>
 											<img id="citations-facet-img" class="citations-facet-img facet-img" src="img/facets/not_available/citations_not_available.png" alt="citations information" height="40" width="40" title="Citations information">
