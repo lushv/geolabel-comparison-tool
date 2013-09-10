@@ -1,3 +1,47 @@
+
+// ***********************************   RESET ALL ELEMENTS WHEN TOOL IS LOADED   ************************************
+$(document).ready(function() {
+// Clear all Query Constraints fields
+$("#keyword-autocomplete").val('');
+$("#location-name-select").val('');
+
+$('#location-radio').prop('checked', true);
+$('#location-name-select').prop('disabled', false);
+
+$("#select-area-north").val('');
+$("#select-area-west").val('');
+$("#select-area-east").val('');
+$("#select-area-south").val('');
+$('#area-selection-radio').prop('checked', true);
+$('#select-area-south').prop('disabled', true);
+$('#select-area-west').prop('disabled', true);
+$('#select-area-east').prop('disabled', true);
+$('#select-area-north').prop('disabled', true);
+
+$("#clear-select-area-input").prop('disabled', true);
+
+$("#start-date").val('');
+$("#end-date").val('');
+$("#clear-start-date-input").prop('disabled', true);
+$("#clear-end-date-input").prop('disabled', true);
+
+$("#access-constraints").val('');
+$("#use-constraints").val('');
+
+// Clear and disable all GEO Label Filtering optopns
+
+
+});
+
+function enableFilters(){
+
+
+}
+
+function resetFilters(){
+
+}
+
 //************************  Set up height of the sliders div depending on the window size  *****************************
 $(document).ready(function() {
 	var height = $(window).height() - 290;
