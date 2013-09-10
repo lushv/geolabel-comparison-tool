@@ -121,11 +121,11 @@
 									<div id="query-constraints-div" class="query-constraints">
 										<form id="query-constraints-form" name="query-constraints-form" action="">
 											<fieldset>
-												 - Keyword<br>
+												 Keyword  <i class="icon-info-sign info-glyphicon" title="Enter free text keywords"></i><br>
 												<input id="keyword-autocomplete" class="keyword-autocomplete" type="text" name="keyword"><br><br>
 												
 												<div id="select-location" class="select-location">
-													<input id="location-radio" type="radio" name="location-radios" value="location" checked="true">  - Location<br>
+													<input id="location-radio" type="radio" name="location-radios" value="location" checked="true">  Location  <i class="icon-info-sign info-glyphicon" title=""></i><br>
 													<select id="location-name-select" class="location-name-select dropdown" name="location-name-select">
 														<option value=""></option>
 														<option value="AF">Afghanistan</option>
@@ -374,7 +374,7 @@
 														<option value="ZW">Zimbabwe</option>
 													</select><br>
 													
-													<input id="area-selection-radio" type="radio" name="location-radios" value="area-selection">  - Area Selection<br>
+													<input id="area-selection-radio" type="radio" name="location-radios" value="area-selection">  Area Selection  <i class="icon-info-sign info-glyphicon" title=""></i><br>
 													<!-- =================== centralised select area for location selection  ========================== -->
 													<div id="select-area" class="select-area">
 														<input id="select-area-north" class="input-select-area numeric" type="text" disabled="disabled" title="North Bound Latitude">
@@ -393,12 +393,12 @@
 												</div>
 												<br>
 												<div id="select-date" class="select-date">
-													 - Start date <br>
+													 Start date  <i class="icon-info-sign info-glyphicon" title=""></i><br>
 													 <input type="text" id="start-date" class="start-date">
 													<button id="clear-start-date-input" class="btn btn-danger btn-clear-input" type="button" disabled="disabled">
 														<i class="icon-remove icon-white"></i>
 													</button><br>											 
-													 - End date  <br>
+													 End date  <i class="icon-info-sign info-glyphicon" title=""></i><br>
 													 <input type="text" id="end-date" class="end-date">
 													<button id="clear-end-date-input" class="btn btn-danger btn-clear-input" type="button" disabled="disabled">
 														<i class="icon-remove icon-white"></i>
@@ -407,7 +407,7 @@
 												<br>
 												<!-- =================== area for use constraints selection  ========================== -->
 												<div id="select-constraints" class="select-constraints">
-													 - Access Constraints<br>
+													 Access Constraints  <i class="icon-info-sign info-glyphicon" title=""></i><br>
 													<select id="access-constraints" name="access-constraints" class="constraints dropdown">
 														<option value=""></option>
 														<option value="None">None</option>
@@ -421,7 +421,7 @@
 														<option value="restricted">Restricted</option>
 														<option value="otherRestrictions">Other restrictions</option>
 													</select><br>
-													 - Use Constraints<br>
+													  Use Constraints  <i class="icon-info-sign info-glyphicon" title=""></i><br>
 													<select id="use-constraints" name="use-constraints" class="constraints dropdown">
 														<option value=""></option>
 														<option value="None">None</option>
@@ -453,7 +453,7 @@
 									<!-- GEO label filtering functionality -->
 									<div id="geolabel-selection" class="geolabel-selection">
 										<div id="svg-label" class="svg-label">
-	<svg version="1.1" id="geo_label" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="150px">
+	<svg version="1.1" id="geo_label" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="150px" clickable="true">
 		<g class="size_group" id="size_group" transform="scale(0.6)">
 			<!-- =================== Producer Profile ========================== -->
 			<g class="producer_profile" id="producer_profile" title= "'Producer profile' facet conveys availability of information about the producer of the dataset, e.g., organisation or individual who produced the dataset, their contact information, etc.">

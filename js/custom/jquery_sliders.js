@@ -70,6 +70,10 @@ $(function() {
 				document.getElementById("producer-facet-img").src = "img/facets/available/producer_available.png";
 				getProducerProfileAvailable(producer_profile);
 			}
+			// Check if producer name filtering has been applied and if so, reset the filtering
+			if(datasetSource != ""){
+				resetProducer();
+			}
 			// Hide or show labels depending on the current state of all the sliders
 			setLabelsVisibility();
 		}
@@ -101,6 +105,10 @@ $(function() {
 				$slidersVal[1] = 2;
 				document.getElementById("comments-facet-img").src = "img/facets/available/comments_available.png";
 				getProducerCommentsAvailable(producer_comments);
+			}
+			// Check if producer comments filtering has been applied and if so, reset the filtering
+			if(commentType != ""){
+				resetComments();
 			}
 			// Hide or show labels depending on the current state of all the sliders
 			setLabelsVisibility();
@@ -134,6 +142,10 @@ $(function() {
 				document.getElementById("lineage-facet-img").src = "img/facets/available/lineage_available.png";
 				getLineageAvailable(lineage);
 			}
+			// Check if lineage filtering has been applied and if so, reset the filtering
+			if(processStepsMaxNum != ""){
+				resetLineage();
+			}
 			// Hide or show labels depending on the current state of all the sliders
 			setLabelsVisibility();
 		}
@@ -165,6 +177,10 @@ $(function() {
 				$slidersVal[3] = 2;
 				document.getElementById("compliance-facet-img").src = "img/facets/available/compliance_available.png";
 				getStandardsComplianceAvailable(standards_compliance);
+			}
+			// Check if producer comments filtering has been applied and if so, reset the filtering
+			if(standardName != ""){
+				resetStandards();
 			}
 			// Hide or show labels depending on the current state of all the sliders
 			setLabelsVisibility();
@@ -198,6 +214,10 @@ $(function() {
 				document.getElementById("quality-facet-img").src = "img/facets/available/quality_available.png";
 				getQualityInformationAvailable(quality_information);
 			}
+			// Check if quality filtering has been applied and if so, reset the filtering
+			if(scopeLevel != ""){
+				resetQuality();
+			}
 			// Hide or show labels depending on the current state of all the sliders
 			setLabelsVisibility();
 		}
@@ -229,6 +249,10 @@ $(function() {
 				$slidersVal[5] = 2;
 				document.getElementById("feedback-facet-img").src = "img/facets/available/feedback_available.png";
 				getUserFeedbackAvailable(user_feedback);
+			}
+			// Check if user feedback filtering has been applied and if so, reset the filtering
+			if(averageRatingMin != "" || averageRatingMin != 0 || feedbackNumberMin != "" || feedbackNumberMin != 0){
+				resetFeedback();
 			}
 			// Hide or show labels depending on the current state of all the sliders
 			setLabelsVisibility();
@@ -262,6 +286,10 @@ $(function() {
 				document.getElementById("review-facet-img").src = "img/facets/available/review_available.png";
 				getExpertReviewAvailable(expert_review);
 			}
+			// Check if user feedback filtering has been applied and if so, reset the filtering
+			if(averageReviewRatingMin != "" || averageReviewRatingMin != 0 || reviewsNumberMin != "" || reviewsNumberMin != 0){
+				resetReviews();
+			}
 			// Hide or show labels depending on the current state of all the sliders
 			setLabelsVisibility();
 		}
@@ -293,6 +321,10 @@ $(function() {
 				$slidersVal[7] = 2;
 				document.getElementById("citations-facet-img").src = "img/facets/available/citations_available.png";
 				getCitationsInformationAvailable(citations_information);
+			}
+			// Check if user feedback filtering has been applied and if so, reset the filtering
+			if(citationsNumberMin != "" || citationsNumberMin != 0){
+				resetCitations();
 			}
 			// Hide or show labels depending on the current state of all the sliders
 			setLabelsVisibility();

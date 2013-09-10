@@ -46,8 +46,106 @@ function downScaleLabel(i){
 	$("#size_group_" + i).attr("translate_y", newY);
 }
 
+// ******************************  Functions for applying and reseting filters  ********************************
+
 $(function() {
   $("#filter-producer-btn").click(function() {
+	filterProducer();
+  })
+});
+
+$(function() {
+  $("#reset-producer-btn").click(function() {
+	resetProducer();
+  })
+});
+
+$(function() {
+  $("#filter-comments-btn").click(function() {
+	filterComments();
+  })
+});
+
+$(function() {
+  $("#reset-comments-btn").click(function() {
+	resetComments();
+  })
+});
+
+$(function() {
+  $("#filter-lineage-btn").click(function() {
+	filterLineage();
+  })
+});
+
+$(function() {
+  $("#reset-lineage-btn").click(function() {
+	resetLineage();
+  })
+});
+
+$(function() {
+  $("#filter-standards-btn").click(function() {
+	filterStandards();
+  })
+});
+
+$(function() {
+  $("#reset-standards-btn").click(function() {
+	resetStandards();
+  })
+});
+
+$(function() {
+  $("#filter-quality-btn").click(function() {
+	filterQuality();
+  })
+});
+
+$(function() {
+  $("#reset-quality-btn").click(function() {
+	resetQuality();
+  })
+});
+
+$(function() {
+  $("#filter-feedback-btn").click(function() {
+	filterFeedback();
+  })
+});
+
+$(function() {
+  $("#reset-feedback-btn").click(function() {
+	resetFeedback();
+  })
+});
+
+$(function() {
+  $("#filter-expert-btn").click(function() {
+	filterReviews();
+  })
+});
+
+$(function() {
+  $("#reset-expert-btn").click(function() {
+	resetReviews();
+  })
+});
+
+$(function() {
+  $("#filter-citations-btn").click(function() {
+	filterCitations();
+  })
+});
+
+$(function() {
+  $("#reset-citations-btn").click(function() {
+	resetCitations();
+  })
+});
+
+// ******************************************* FILTER AND RESET FUNCTIONS ***********************************
+function filterProducer(){
 	datasetSource = $("#dataset-source-autocomplete").val();
 	if(datasetSource != ""){
 		// Iterate through all GEO labels
@@ -59,15 +157,17 @@ $(function() {
 				// increase the size of the label
 				upScaleLabel(i);
 			}
+			else{
+				downScaleLabel(i);
+			}
 		}
+		$("#dataset-source-autocomplete").prop('disabled', true);
 		$("#filter-producer-btn").prop('disabled', true);
 		$("#reset-producer-btn").prop('disabled', false);
 	}
-  })
-});
+}
 
-$(function() {
-  $("#reset-producer-btn").click(function() {
+function resetProducer(){
 	if(datasetSource != ""){
 		// Iterate through all GEO labels
 		var count = $("#results_svg").children().length;
@@ -78,16 +178,19 @@ $(function() {
 				// decrease the size of the label
 				downScaleLabel(i);
 			}
+			else{
+				upScaleLabel(i);
+			}
 		}
 		datasetSource = "";
+		$("#dataset-source-autocomplete").val('');
+		$("#dataset-source-autocomplete").prop('disabled', false);
 		$("#filter-producer-btn").prop('disabled', false);
 		$("#reset-producer-btn").prop('disabled', true);
 	}
-  })
-});
+}
 
-$(function() {
-  $("#filter-comments-btn").click(function() {
+function filterComments(){
 	commentType = $("#comments_type_select").val();
 	if(commentType != ""){
 		// Iterate through all GEO labels
@@ -102,29 +205,37 @@ $(function() {
 					if(availability != 0 && supplementalInfo != ""){
 						upScaleLabel(i);
 					}
+					else{
+						downScaleLabel(i);
+					}
 					break;
 				case "known_problem":
 					if(availability != 0 && knownProblems != ""){
 						upScaleLabel(i);
+					}
+					else{
+						downScaleLabel(i);
 					}
 					break;
 				case "both":
 					if(availability != 0 && supplementalInfo != "" && knownProblems != ""){
 						upScaleLabel(i);
 					}
+					else{
+						downScaleLabel(i);
+					}
 					break;
 				default:
 					break;
 			}
 		}
+		$("#comments_type_select").prop('disabled', true);
 		$("#filter-comments-btn").prop('disabled', true);
 		$("#reset-comments-btn").prop('disabled', false);
 	}
-  })
-});
+}
 
-$(function() {
-  $("#reset-comments-btn").click(function() {
+function resetComments(){
 	if(commentType != ""){
 		// Iterate through all GEO labels
 		var count = $("#results_svg").children().length;
@@ -138,15 +249,24 @@ $(function() {
 					if(availability != 0 && supplementalInfo != ""){
 						downScaleLabel(i);
 					}
+					else{
+						upScaleLabel(i);
+					}
 					break;
 				case "known_problem":
 					if(availability != 0 && knownProblems != ""){
 						downScaleLabel(i);
 					}
+					else{
+						upScaleLabel(i);
+					}
 					break;
 				case "both":
 					if(availability != 0 && supplementalInfo != "" && knownProblems != ""){
 						downScaleLabel(i);
+					}
+					else{
+						upScaleLabel(i);
 					}
 					break;
 				default:
@@ -154,56 +274,60 @@ $(function() {
 			}
 		}
 		commentType = "";
+		$("#comments_type_select").val('');
+		$("#comments_type_select").prop('disabled', false);
 		$("#filter-comments-btn").prop('disabled', false);
 		$("#reset-comments-btn").prop('disabled', true);
 	}
-  })
-});
+}
 
-$(function() {
-  $("#filter-lineage-btn").click(function() {
+function filterLineage(){
 	processStepsMaxNum = $("#process-steps-input").val();
 	if(processStepsMaxNum != ""){
-		processStepsMaxNum = parseInt(processStepsMaxNum, 10);
 		// Iterate through all GEO labels
 		var count = $("#results_svg").children().length;
 		for (var i = 0; i < count; i++) {
 			var availability = $("#lineage_" + i).attr("availability");
-			var processSteps = parseInt($("#lineage_" + i).attr("process_step_count"), 10);
-			if(availability != 0 && processStepsMaxNum >= processSteps){
+			var processSteps = $("#lineage_" + i).attr("process_step_count");
+			if(availability != 0 && parseInt(processStepsMaxNum, 10) >= parseInt(processSteps, 10)){
 				// increase the size of the label
 				upScaleLabel(i);
 			}
+			else{
+				downScaleLabel(i);
+			}
 		}
+		$("#process-steps-input").prop('disabled', true);
 		$("#filter-lineage-btn").prop('disabled', true);
 		$("#reset-lineage-btn").prop('disabled', false);
 	}
-  })
-});
+}
 
-$(function() {
-  $("#reset-lineage-btn").click(function() {
+function resetLineage(){
 	if(processStepsMaxNum != ""){
-		processStepsMaxNum = parseInt(processStepsMaxNum, 10);
 		// Iterate through all GEO labels
 		var count = $("#results_svg").children().length;
 		for (var i = 0; i < count; i++) {
 			var availability = $("#lineage_" + i).attr("availability");
-			var processSteps = parseInt($("#lineage_" + i).attr("process_step_count"), 10);
-			if(availability != 0 && processStepsMaxNum >= processSteps){
+			var processSteps = $("#lineage_" + i).attr("process_step_count");
+			if(availability != 0 && parseInt(processStepsMaxNum, 10) >= parseInt(processSteps, 10)){
 				// increase the size of the label
 				downScaleLabel(i);
 			}
+			else{
+				upScaleLabel(i);
+			}
 		}
 		processStepsMaxNum = "";
+		$("#process-steps-input").val('');
+		$("#process-steps-input").prop('disabled', false);
 		$("#filter-lineage-btn").prop('disabled', false);
 		$("#reset-lineage-btn").prop('disabled', true);
 	}
-  })
-});
+}
 
-$(function() {
-  $("#filter-standards-btn").click(function() {
+
+function filterStandards(){
 	standardName = $("#standard-name-autocomplete").val();
 	if(standardName != ""){
 		// Iterate through all GEO labels
@@ -215,15 +339,17 @@ $(function() {
 				// increase the size of the label
 				upScaleLabel(i);
 			}
+			else{
+				downScaleLabel(i);
+			}
 		}
+		$("#standard-name-autocomplete").prop('disabled', true);
 		$("#filter-standards-btn").prop('disabled', true);
 		$("#reset-standards-btn").prop('disabled', false);
 	}
-  })
-});
+}
 
-$(function() {
-  $("#reset-standards-btn").click(function() {
+function resetStandards(){
 	if(standardName != ""){
 		// Iterate through all GEO labels
 		var count = $("#results_svg").children().length;
@@ -234,16 +360,19 @@ $(function() {
 				// increase the size of the label
 				downScaleLabel(i);
 			}
+			else{
+				upScaleLabel(i);
+			}
 		}
 		standardName = "";
+		$("#standard-name-autocomplete").val('');
+		$("#standard-name-autocomplete").prop('disabled', false);
 		$("#filter-standards-btn").prop('disabled', false);
 		$("#reset-standards-btn").prop('disabled', true);
 	}
-  })
-});
+}
 
-$(function() {
-  $("#filter-quality-btn").click(function() {
+function filterQuality(){
 	scopeLevel = $("#scope-level-select").val();
 	if(scopeLevel != ""){
 		// Iterate through all GEO labels
@@ -254,15 +383,17 @@ $(function() {
 			if(availability != 0 && scopeLevel == scopeLevelAttr){
 				upScaleLabel(i);
 			}
+			else{
+				downScaleLabel(i);
+			}
 		}
+		$("#scope-level-select").prop('disabled', true);
 		$("#filter-quality-btn").prop('disabled', true);
 		$("#reset-quality-btn").prop('disabled', false);
 	}
-  })
-});
+}
 
-$(function() {
-  $("#reset-quality-btn").click(function() {
+function resetQuality(){
 	if(scopeLevel != ""){
 		// Iterate through all GEO labels
 		var count = $("#results_svg").children().length;
@@ -272,15 +403,19 @@ $(function() {
 			if(availability != 0 && scopeLevel == scopeLevelAttr){
 				downScaleLabel(i);
 			}
+			else{
+				upScaleLabel(i);
+			}
 		}
+		scopeLevel = "";
+		$("#scope-level-select").val('');
+		$("#scope-level-select").prop('disabled', false);
 		$("#filter-quality-btn").prop('disabled', false);
 		$("#reset-quality-btn").prop('disabled', true);
 	}
-  })
-});
+}
 
-$(function() {
-  $("#filter-feedback-btn").click(function() {
+function filterFeedback(){
 	averageRatingMin = $("#feedback-star > input[name='score']").val();
 	feedbackNumberMin = $("#minimum-feedbacks").val();
 	if(!(averageRatingMin == "" && feedbackNumberMin == "")){
@@ -290,19 +425,29 @@ $(function() {
 			var availability = $("#user_feedback_" + i).attr("availability");
 			var averageRating = $("#user_feedback_" + i).attr("feedbacks_average_rating");
 			var feedbackNumber = $("#user_feedback_" + i).attr("feedbacks_count");
+			// Ensure that empty fields are treated as zeros
+			if(averageRatingMin == ""){
+				averageRatingMin = 0;
+			}
+			if(feedbackNumberMin == ""){
+				feedbackNumberMin = 0;
+			}
 			
-			if(availability != 0 && averageRatingMin <= averageRating && feedbackNumberMin <= feedbackNumber){
+			if(availability != 0 && parseFloat(averageRatingMin, 10) <= parseFloat(averageRating, 10) && parseFloat(feedbackNumberMin, 10) <= parseFloat(feedbackNumber, 10)){
 				upScaleLabel(i);
 			}
+			else{
+				downScaleLabel(i);
+			}
 		}
+		$('#feedback-star').raty('readOnly', true);
+		$("#minimum-feedbacks").prop('disabled', true);
 		$("#filter-feedback-btn").prop('disabled', true);
 		$("#reset-feedback-btn").prop('disabled', false);
 	}
-  })
-});
+}
 
-$(function() {
-  $("#reset-feedback-btn").click(function() {
+function resetFeedback(){
 	if(!(averageRatingMin == "" && feedbackNumberMin == "")){
 		// Iterate through all GEO labels
 		var count = $("#results_svg").children().length;
@@ -310,21 +455,32 @@ $(function() {
 			var availability = $("#user_feedback_" + i).attr("availability");
 			var averageRating = $("#user_feedback_" + i).attr("feedbacks_average_rating");
 			var feedbackNumber = $("#user_feedback_" + i).attr("feedbacks_count");
-			
-			if(availability != 0 && averageRatingMin <= averageRating && feedbackNumberMin <= feedbackNumber){
+			// Ensure that empty fields are treated as zeros
+			if(averageRatingMin == ""){
+				averageRatingMin = 0;
+			}
+			if(feedbackNumberMin == ""){
+				feedbackNumberMin = 0;
+			}
+			if(availability != 0 && parseFloat(averageRatingMin, 10) <= parseFloat(averageRating, 10) && parseFloat(feedbackNumberMin, 10) <= parseFloat(feedbackNumber, 10)){
 				downScaleLabel(i);
+			}
+			else{
+				upScaleLabel(i);
 			}
 		}
 		averageRatingMin = "";
 		feedbackNumberMin = "";
+		$('#feedback-star').raty('reload');
+		$('#feedback-star').raty('readOnly', false);
+		$("#minimum-feedbacks").val('');
+		$("#minimum-feedbacks").prop('disabled', false);
 		$("#filter-feedback-btn").prop('disabled', false);
 		$("#reset-feedback-btn").prop('disabled', true);
 	}
-  })
-});
+}
 
-$(function() {
-  $("#filter-expert-btn").click(function() {
+function filterReviews(){
 	averageReviewRatingMin = $("#reviews-star > input[name='score']").val();
 	reviewsNumberMin = $("#minimum-reviews").val();
 	if(!(averageReviewRatingMin == "" && reviewsNumberMin == "")){
@@ -334,19 +490,28 @@ $(function() {
 			var availability = $("#expert_review_" + i).attr("availability");
 			var averageRating = $("#expert_review_" + i).attr("expert_average_rating");
 			var reviewsNumber = $("#expert_review_" + i).attr("expert_reviews_count");
-			
-			if(availability != 0 && averageReviewRatingMin <= averageRating && reviewsNumberMin <= reviewsNumber){
+			// Ensure that empty fields are treated as zeros
+			if(averageReviewRatingMin == ""){
+				averageReviewRatingMin = 0;
+			}
+			if(reviewsNumberMin == ""){
+				reviewsNumberMin = 0;
+			}
+			if(availability != 0 && parseFloat(averageReviewRatingMin, 10) <= parseFloat(averageRating, 10) && parseFloat(reviewsNumberMin, 10) <= parseFloat(reviewsNumber, 10)){
 				upScaleLabel(i);
 			}
+			else{
+				downScaleLabel(i);
+			}
 		}
+		$('#reviews-star').raty('readOnly', true);
+		$("#minimum-reviews").prop('disabled', true);
 		$("#filter-expert-btn").prop('disabled', true);
 		$("#reset-expert-btn").prop('disabled', false);
 	}
-  })
-});
+}
 
-$(function() {
-  $("#reset-expert-btn").click(function() {
+function resetReviews(){
 	if(!(averageReviewRatingMin == "" && reviewsNumberMin == "")){
 		// Iterate through all GEO labels
 		var count = $("#results_svg").children().length;
@@ -354,21 +519,32 @@ $(function() {
 			var availability = $("#expert_review_" + i).attr("availability");
 			var averageRating = $("#expert_review_" + i).attr("expert_average_rating");
 			var reviewsNumber = $("#expert_review_" + i).attr("expert_reviews_count");
-			
-			if(availability != 0 && averageReviewRatingMin <= averageRating && reviewsNumberMin <= reviewsNumber){
+			// Ensure that empty fields are treated as zeros
+			if(averageReviewRatingMin == ""){
+				averageReviewRatingMin = 0;
+			}
+			if(reviewsNumberMin == ""){
+				reviewsNumberMin = 0;
+			}
+			if(availability != 0 && parseFloat(averageReviewRatingMin, 10) <= parseFloat(averageRating, 10) && parseFloat(reviewsNumberMin, 10) <= parseFloat(reviewsNumber, 10)){
 				downScaleLabel(i);
+			}
+			else{
+				upScaleLabel(i);
 			}
 		}
 		averageReviewRatingMin = "";
 		reviewsNumberMin = "";
+		$('#reviews-star').raty('reload');
+		$('#reviews-star').raty('readOnly', false);
+		$("#minimum-reviews").val('');
+		$("#minimum-reviews").prop('disabled', false);
 		$("#filter-expert-btn").prop('disabled', false);
 		$("#reset-expert-btn").prop('disabled', true);
 	}
-  })
-});
+}
 
-$(function() {
-  $("#filter-citations-btn").click(function() {
+function filterCitations(){
 	citationsNumberMin = $("#minimum-citations").val();
 	if(citationsNumberMin != ""){
 		// Iterate through all GEO labels
@@ -376,33 +552,39 @@ $(function() {
 		for (var i = 0; i < count; i++) {
 			var availability = $("#citations_" + i).attr("availability");
 			var citationsNum = $("#citations_" + i).attr("citations_count");
-			if(availability != 0 && citationsNumberMin <= citationsNum){
+			if(availability != 0 && parseInt(citationsNumberMin, 10) <= parseInt(citationsNum, 10)){
 				// increase the size of the label
 				upScaleLabel(i);
 			}
+			else{
+				downScaleLabel(i);
+			}
 		}
+		$("#minimum-citations").prop('disabled', true);
 		$("#filter-citations-btn").prop('disabled', true);
 		$("#reset-citations-btn").prop('disabled', false);
 	}
-  })
-});
+}
 
-$(function() {
-  $("#reset-citations-btn").click(function() {
+function resetCitations(){
 	if(citationsNumberMin != ""){
 		// Iterate through all GEO labels
 		var count = $("#results_svg").children().length;
 		for (var i = 0; i < count; i++) {
 			var availability = $("#citations_" + i).attr("availability");
 			var citationsNum = $("#citations_" + i).attr("citations_count");
-			if(availability != 0 && citationsNumberMin <= citationsNum){
+			if(availability != 0 && parseInt(citationsNumberMin, 10) <= parseInt(citationsNum, 10)){
 				// increase the size of the label
 				downScaleLabel(i);
 			}
+			else{
+				upScaleLabel(i);
+			}
 		}
 		citationsNumberMin = "";
+		$("#minimum-citations").val('');
+		$("#minimum-citations").prop('disabled', false);
 		$("#filter-citations-btn").prop('disabled', false);
 		$("#reset-citations-btn").prop('disabled', true);
 	}
-  })
-});
+}
