@@ -1,41 +1,105 @@
 
 // ***********************************   RESET ALL ELEMENTS WHEN TOOL IS LOADED   ************************************
 $(document).ready(function() {
-// Clear all Query Constraints fields
-$("#keyword-autocomplete").val('');
-$("#location-name-select").val('');
+	// Clear all Query Constraints fields
+	$("#keyword-autocomplete").val('');
+	$("#location-name-select").val('');
 
-$('#location-radio').prop('checked', true);
-$('#location-name-select').prop('disabled', false);
+	$('#location-radio').prop('checked', true);
+	$('#location-name-select').prop('disabled', false);
 
-$("#select-area-north").val('');
-$("#select-area-west").val('');
-$("#select-area-east").val('');
-$("#select-area-south").val('');
-$('#area-selection-radio').prop('checked', true);
-$('#select-area-south').prop('disabled', true);
-$('#select-area-west').prop('disabled', true);
-$('#select-area-east').prop('disabled', true);
-$('#select-area-north').prop('disabled', true);
+	$("#select-area-north").val('');
+	$("#select-area-west").val('');
+	$("#select-area-east").val('');
+	$("#select-area-south").val('');
+	$('#area-selection-radio').prop('checked', false);
+	$('#select-area-south').prop('disabled', true);
+	$('#select-area-west').prop('disabled', true);
+	$('#select-area-east').prop('disabled', true);
+	$('#select-area-north').prop('disabled', true);
 
-$("#clear-select-area-input").prop('disabled', true);
+	$("#clear-select-area-input").prop('disabled', true);
 
-$("#start-date").val('');
-$("#end-date").val('');
-$("#clear-start-date-input").prop('disabled', true);
-$("#clear-end-date-input").prop('disabled', true);
+	$("#start-date").val('');
+	$("#end-date").val('');
+	$("#clear-start-date-input").prop('disabled', true);
+	$("#clear-end-date-input").prop('disabled', true);
 
-$("#access-constraints").val('');
-$("#use-constraints").val('');
+	$("#access-constraints").val('');
+	$("#use-constraints").val('');
 
-// Clear and disable all GEO Label Filtering optopns
+	// Clear and disable all GEO Label Filtering optopns
+	//$("#facets-sliders").scrollTop(0);
+	
+	$("#dataset-source-autocomplete").val('');
+	$("#dataset-source-autocomplete").prop('disabled', true);
+	$("#filter-producer-btn").prop('disabled', true);
+	$("#reset-producer-btn").prop('disabled', true);
 
+	$("#comments_type_select").val('');
+	$("#comments_type_select").prop('disabled', true);
+	$("#filter-comments-btn").prop('disabled', true);
+	$("#reset-comments-btn").prop('disabled', true);
 
+	$("#process-steps-input").val('');
+	$("#process-steps-input").prop('disabled', true);
+	$("#filter-lineage-btn").prop('disabled', true);
+	$("#reset-lineage-btn").prop('disabled', true);
+	
+	$("#standard-name-autocomplete").val('');
+	$("#standard-name-autocomplete").prop('disabled', true);
+	$("#filter-standards-btn").prop('disabled', true);
+	$("#reset-standards-btn").prop('disabled', true);
+	
+	$("#scope-level-select").val('');
+	$("#scope-level-select").prop('disabled', true);
+	$("#filter-quality-btn").prop('disabled', true);
+	$("#reset-quality-btn").prop('disabled', true);
+
+	$("#minimum-feedbacks").val('');
+	$("#minimum-feedbacks").prop('disabled', true);
+	$("#filter-feedback-btn").prop('disabled', true);
+	$("#reset-feedback-btn").prop('disabled', true);
+
+	$("#minimum-reviews").val('');
+	$("#minimum-reviews").prop('disabled', true);
+	$("#filter-expert-btn").prop('disabled', true);
+	$("#reset-expert-btn").prop('disabled', true);
+	
+	$("#minimum-citations").val('');
+	$("#minimum-citations").prop('disabled', true);
+	$("#filter-citations-btn").prop('disabled', true);
+	$("#reset-citations-btn").prop('disabled', true);
 });
 
 function enableFilters(){
+	$("#geo_label").attr('is_filter', true);
+	$( ".facet-slider" ).slider( "option", "disabled", false);
+	$(".star").raty('readOnly', false);
+	
+	$("#dataset-source-autocomplete").prop('disabled', false);
+	$("#filter-producer-btn").prop('disabled', false);
 
+	$("#comments_type_select").prop('disabled', false);
+	$("#filter-comments-btn").prop('disabled', false);
 
+	$("#process-steps-input").prop('disabled', false);
+	$("#filter-lineage-btn").prop('disabled', false);
+	
+	$("#standard-name-autocomplete").prop('disabled', false);
+	$("#filter-standards-btn").prop('disabled', false);
+	
+	$("#scope-level-select").prop('disabled', false);
+	$("#filter-quality-btn").prop('disabled', false);
+
+	$("#minimum-feedbacks").prop('disabled', false);
+	$("#filter-feedback-btn").prop('disabled', false);
+
+	$("#minimum-reviews").prop('disabled', false);
+	$("#filter-expert-btn").prop('disabled', false);
+	
+	$("#minimum-citations").prop('disabled', false);
+	$("#filter-citations-btn").prop('disabled', false);
 }
 
 function resetFilters(){
@@ -130,7 +194,8 @@ $(function() {
 		cancelOff: '/comparison_tool/img/star_rating/cancel-off-big.png',
 		cancelOn : '/comparison_tool/img/star_rating/cancel-on-big.png',		
 		size: 16,
-		width: 150,			
+		width: 150,	
+		readOnly: true,
 	});
 	$('#reviews-star').raty({
 		half: true,
@@ -144,7 +209,8 @@ $(function() {
 		cancelOff: '/comparison_tool/img/star_rating/cancel-off-big.png',
 		cancelOn : '/comparison_tool/img/star_rating/cancel-on-big.png',		
 		size: 16,
-		width: 150,			
+		width: 150,
+		readOnly: true,
 	});
 });
 

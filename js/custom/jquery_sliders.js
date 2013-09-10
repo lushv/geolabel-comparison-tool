@@ -8,38 +8,40 @@ $(function() {
 
 	$("#geo_label").on('click', function (event) {
 
-		// get the group object that the target is a child of
-		var $targetFacet = $(event.target).closest("g"),
-			id = $targetFacet.attr('id');
+		if($("#geo_label").attr('is_filter') == "true"){
+			// get the group object that the target is a child of
+			var $targetFacet = $(event.target).closest("g"),
+				id = $targetFacet.attr('id');
 
-		// get the slider for this facet
-		var $slider = $(".facet-slider[data-svg-group='" + id + "']");
+			// get the slider for this facet
+			var $slider = $(".facet-slider[data-svg-group='" + id + "']");
 
-		if ($slider.length !== 0) {
+			if ($slider.length !== 0) {
 
-			// compare the DOM objects to see if the same group was clicked on
-			if ($targetFacet[0] !== $lastClickedFacet[0]) {
+				// compare the DOM objects to see if the same group was clicked on
+				if ($targetFacet[0] !== $lastClickedFacet[0]) {
 
-				var $container = $("#facets-sliders"),
-					$sliderDiv = $slider.parent();
+					var $container = $("#facets-sliders"),
+						$sliderDiv = $slider.parent();
 
-				// scroll to the new slider
-				$container.animate({
-					scrollTop: ($container.scrollTop() + ($sliderDiv.position().top - $container.position().top) - parseInt($sliderDiv.css('padding-bottom'), 10))
-				}, "fast");
+					// scroll to the new slider
+					$container.animate({
+						scrollTop: ($container.scrollTop() + ($sliderDiv.position().top - $container.position().top) - parseInt($sliderDiv.css('padding-bottom'), 10))
+					}, "fast");
+				}
+
+				var min = $slider.slider("option", "min"),
+					max = $slider.slider("option", "max"),
+					step = $slider.slider("option", "step"),
+					currentValue = $slider.slider("value");
+
+				// adjust the slider's value
+				$slider.slider("value", ((currentValue < max) ? (currentValue + step) : min));
 			}
 
-			var min = $slider.slider("option", "min"),
-				max = $slider.slider("option", "max"),
-				step = $slider.slider("option", "step"),
-				currentValue = $slider.slider("value");
-
-			// adjust the slider's value
-			$slider.slider("value", ((currentValue < max) ? (currentValue + step) : min));
+			// keep track of the facet that was clicked on last
+			$lastClickedFacet = $targetFacet;
 		}
-
-		// keep track of the facet that was clicked on last
-		$lastClickedFacet = $targetFacet;
 	});
 });
 
@@ -52,6 +54,7 @@ $(function() {
 		min: 0,
 		max: 2,
 		step: 1,
+		disabled: true,
 		change: function( event, ui ) {
 			// producer_profile group to append to
 			var producer_profile = document.getElementById("producer_profile");
@@ -88,6 +91,7 @@ $(function() {
 		min: 0,
 		max: 2,
 		step: 1,
+		disabled: true,
 		change: function( event, ui ) {
 			// producer_comments group to append to
 			var producer_comments = document.getElementById("producer_comments");	
@@ -124,6 +128,7 @@ $(function() {
 		min: 0,
 		max: 2,
 		step: 1,
+		disabled: true,
 		change: function( event, ui ) {
 			// lineage group to append to
 			var lineage = document.getElementById("lineage");
@@ -160,6 +165,7 @@ $(function() {
 		min: 0,
 		max: 2,
 		step: 1,
+		disabled: true,
 		change: function( event, ui ) {
 			// standards_compliance group to append to
 			var standards_compliance = document.getElementById("standards_compliance");
@@ -196,6 +202,7 @@ $(function() {
 		min: 0,
 		max: 2,
 		step: 1,
+		disabled: true,
 		change: function( event, ui ) {
 			// quality_information group to append to
 			var quality_information = document.getElementById("quality_information");
@@ -232,6 +239,7 @@ $(function() {
 		min: 0,
 		max: 2,
 		step: 1,
+		disabled: true,
 		change: function( event, ui ) {
 			// user_feedback group to append to
 			var user_feedback = document.getElementById("user_feedback");
@@ -268,6 +276,7 @@ $(function() {
 		min: 0,
 		max: 2,
 		step: 1,
+		disabled: true,
 		change: function( event, ui ) {
 			// expert_review group to append to
 			var expert_review = document.getElementById("expert_review");
@@ -304,6 +313,7 @@ $(function() {
 		min: 0,
 		max: 2,
 		step: 1,
+		disabled: true,
 		change: function( event, ui ) {
 			// citations_information group to append to
 			var citations_information = document.getElementById("citations_information");

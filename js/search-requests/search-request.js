@@ -73,6 +73,7 @@ $(function() {
 					// Set GEO label svg
 					var labelSVG = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 					labelSVG.setAttributeNS(null, "id", "geolabel_" + i);
+					labelSVG.setAttributeNS(null, "title", "Dataset ID: " + datasetID);
 					// Set a group element to group all GEO label facets
 					var transformGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
 					transformGroup.setAttributeNS(null, "id", "size_group_" + i);
@@ -87,7 +88,6 @@ $(function() {
 					// Create branding
 					var brandingGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
 					brandingGroup.setAttributeNS(null, "id", "branding_group_" + i);
-					brandingGroup.setAttributeNS(null, "title", "Dataset ID: " + datasetID);
 					getBranding(brandingGroup);
 					
 					// Create producer profile facet
@@ -276,6 +276,9 @@ $(function() {
 			$("#geo-label-filtering-tab").addClass("active");
 			$('.tab-content #tab-pane-query-constraints').hide();
 			$('.tab-content #tab-pane-geo-label-filtering').show();
+			
+			// Enable all the filters
+			enableFilters();
 		},
 		error:function(){
 			alert("failure");
