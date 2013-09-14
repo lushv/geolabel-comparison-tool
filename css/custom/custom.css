@@ -410,11 +410,15 @@ iframe.ui-layout-mask {}	/* extra mask for objects/applets */
  * Map Examples Specific
  */
 .smallmap {
-    width: 1150px;
-    height: 650px;
-    border: 1px solid #ccc;
+  width: 1150px;
+  height: 650px;
+  border: 1px solid #ccc;
 }
 
+#tab-pane-map {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 
 .btn-reset{
   margin: 0px 0px 0px 55px;
@@ -439,4 +443,17 @@ iframe.ui-layout-mask {}	/* extra mask for objects/applets */
   margin-right: auto;
   width:100%;
   background-color:#0044CC;
+}
+
+
+div.dataset-details-labels {
+  font-weight: bold;
+  float: left;
+  text-align: left;
+  width: 120px;
+}
+
+div.dataset-details-data {
+  margin: 5px 5px 5px 120px;
+  text-align: left;
 }

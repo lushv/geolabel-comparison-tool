@@ -111,10 +111,10 @@ $(document).ready(function() {
 	var height = $(window).height() - 290;
 	$("#facets-sliders").height(height);
 	
-	var mapHeight = $(window).height() - 230;
+	var mapHeight = $(window).height() - 250;
 	$("#map").height(mapHeight);
 
-	var mapWidth = $(window).width() - 475;
+	var mapWidth = $(window).width() - 470;
 	$("#map").width(mapWidth);
 });
 
@@ -122,10 +122,10 @@ $(window).resize(function() {
 	var height = $(window).height() - 290;
 	$("#facets-sliders").height(height);
 	
-	var mapHeight = $(window).height() - 230;
+	var mapHeight = $(window).height() - 250;
 	$("#map").height(mapHeight);
 
-	var mapWidth = $(window).width() - 475;
+	var mapWidth = $(window).width() - 470;
 	$("#map").width(mapWidth);
 });
 

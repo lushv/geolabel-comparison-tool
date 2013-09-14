@@ -37,9 +37,39 @@ $(function() {
 			if(isJson(data)){
 			
 				var JSONObject = JSON.parse(data);
-				var scale = 0.2;
-				var x = 30;
-				var y = 30;
+				
+				var windowHeight = $(window).height(),
+				windowWidth = $(window).width(),
+				searchAreaHeight = windowHeight - (windowHeight * 0.2 + 100),
+				serachAreaWidth = windowWidth - 500;
+				
+				var resultsParentSVG = document.getElementById("results_svg");
+				
+				
+				// Set size of the search results SVG
+				resultsParentSVG.setAttributeNS(null, "height", searchAreaHeight + "px");
+				resultsParentSVG.setAttributeNS(null, "width", serachAreaWidth + "px");
+				
+				//1) get screen height and width
+				//2) available area = height * width 
+				//3) area per label = available area / number of datasets
+				//4) label scale = area per label / (250 * 250)
+				var x = 30,
+				y = 30,
+				xMargin = 30;
+				
+				var availableArea = searchAreaHeight * serachAreaWidth;
+				var areaPerLabel = parseInt(availableArea / JSONObject.dataset.length, 10);
+				var scale = areaPerLabel / 40000;
+				var xOffset = parseInt((250 * scale) + 30, 10);
+				var yOffset = xOffset;
+				var maxLabelsPerRow = parseInt(serachAreaWidth / xOffset, 10);
+				
+				//var scale = 0.2,
+				//xOffset = 100,
+				//yOffset = 100,
+				//maxLabelsPerRow = 9;
+						
 				// Process all JSON datasets objects and build GEO label representations
 				for (var i = 0; i < JSONObject.dataset.length; i++) {
 					var datasetID = JSONObject.dataset[i].datasetIdentifier;
@@ -73,6 +103,8 @@ $(function() {
 					// Set GEO label svg
 					var labelSVG = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 					labelSVG.setAttributeNS(null, "id", "geolabel_" + i);
+					labelSVG.setAttributeNS(null, "class", "dataset_geolabel");
+					labelSVG.setAttributeNS(null, "dataset_id", datasetID);
 					labelSVG.setAttributeNS(null, "title", "Dataset ID: " + datasetID);
 					// Set a group element to group all GEO label facets
 					var transformGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
@@ -252,10 +284,10 @@ $(function() {
 					labelSVG.appendChild(transformGroup);
 					resultsParentSVG.appendChild(labelSVG);
 					
-					x += 100;
-					if(i == 9){
-						y += 100;
-						x = 30;
+					x += xOffset;
+					if((i+1)%maxLabelsPerRow == 0){
+						y += yOffset;
+						x = xMargin;
 					}
 					
 				}
@@ -276,6 +308,25 @@ $(function() {
 			$("#geo-label-filtering-tab").addClass("active");
 			$('.tab-content #tab-pane-query-constraints').hide();
 			$('.tab-content #tab-pane-geo-label-filtering').show();
+			
+			//Attach on click event to all GEO labels
+			$(function() {
+				$(".dataset_geolabel").click(function(event) {
+					var targetLabel = $(event.target).closest("svg");
+					var targetLabelID = targetLabel.attr('dataset_id');
+					
+					
+					$.get("/geolabel-comparison-tool/php/metadata_records/" + targetLabelID + ".xml", function(data) {
+						  var xml = data;
+						  alert(xml);
+					});
+					//var xml = $.parseXML("/php/metadata_records/" + targetLabelID + ".xml")
+					
+					
+					
+					
+				})
+			});
 			
 			// Enable all the filters
 			enableFilters();
