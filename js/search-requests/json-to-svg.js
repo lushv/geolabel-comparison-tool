@@ -1,3 +1,7 @@
+/*
+ *  THIS FILE IS NOT USED.
+ */
+
 $(function() {
   $("#search-btn").click(function() {
 	// First of all clear all the previous results
