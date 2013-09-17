@@ -1,6 +1,7 @@
 <?php
 // Include GEO label classes
 require_once("geolabel_classes/XMLProcessor.php");
+error_reporting(E_ERROR);
 
 // --------------------- Get data from POST varaible ---------------------------
 $keyword = $_POST['keyword'];
@@ -61,7 +62,7 @@ if($db->connect_errno > 0){
 }
 
 // SQL query
-$sql = "SELECT dataset_id FROM query_constraints 
+$sql = "SELECT dataset_id, parent_id FROM query_constraints 
 		WHERE keywords LIKE '%$keyword%'  
 		AND access_constraints LIKE '%$accessConstraints%'
 		AND use_constraints LIKE '%$useConstraints%'";	
@@ -96,12 +97,17 @@ if($result = $db->query($sql)){
 	while($row = $result->fetch_assoc()){
 		// Get location of the metadata XML file
 		$metadataURL = 'metadata_records/' . $row['dataset_id'] . '.xml';
+		$parentURL = 'metadata_records/' . $row['parent_id'] . '.xml';
+		
 		// Load metadata XML file
 		$metadataXML = new DOMDocument();
 		$metadataXML->load($metadataURL);
 		
+		$parentXML = new DOMDocument();
+		$parentXML->load($parentURL);
+		
 		$xmlProcessor = new xmlProcessor();
-		$json = $xmlProcessor->getJsonDatasetSummary($metadataXML, null);
+		$json = $xmlProcessor->getJsonDatasetSummary($metadataXML, null, $parentXML);
 		
 		if(!empty($json)){
 			$jsonResponceString .=  $json;
