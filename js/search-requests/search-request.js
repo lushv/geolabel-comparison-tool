@@ -60,8 +60,8 @@ $(function() {
 					
 					var availableArea = searchAreaHeight * serachAreaWidth;
 					var areaPerLabel = parseInt(availableArea / JSONObject.dataset.length, 10);
-					var scale = areaPerLabel / 40000;
-					var xOffset = parseInt((250 * scale) + 30, 10);
+					var scale = areaPerLabel / 45000;
+					var xOffset = parseInt((250 * scale) + 35, 10);
 					var yOffset = xOffset;
 					var maxLabelsPerRow = parseInt(serachAreaWidth / xOffset, 10);
 					
@@ -106,6 +106,7 @@ $(function() {
 						labelSVG.setAttributeNS(null, "class", "dataset_geolabel");
 						labelSVG.setAttributeNS(null, "dataset_id", datasetID);
 						labelSVG.setAttributeNS(null, "title", "Dataset ID: " + datasetID);
+						
 						// Set a group element to group all GEO label facets
 						var transformGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
 						transformGroup.setAttributeNS(null, "id", "size_group_" + i);
@@ -291,10 +292,10 @@ $(function() {
 						}
 						
 					}
-					//$("#search-results").html(searchStr);
 				}
 				else{
-					window.alert("An error occurred.");
+					$("#search-results").html("An error occurred.");
+					//window.alert("An error occurred.");
 				}
 				
 				// switch tabs when the button is clicked
@@ -310,14 +311,44 @@ $(function() {
 				$('.tab-content #tab-pane-geo-label-filtering').show();
 				
 				// ********************************************************************************************************
-				//Attach on click event to all GEO labels
+				//									Attach on click event to all GEO labels
+				// ********************************************************************************************************
 				$(function() {
+					var $selectedLabelID = null;
 					$(".dataset_geolabel").click(function(event) {
+						
+						// Reset all information
+						if($selectedLabelID != null){
+							$("#select_glow_group_" + $selectedLabelID).remove();
+						}
+						
+						$("#dataset-details-id").html(" <br> ");
+						$("#dataset-details-title").html(" <br> ");
+						$("#dataset-details-keywords").html(" <br> ");
+						$("#dataset-details-date").html(" <br> ");
+						$("#dataset-details-organisation").html(" <br> ");
+						$("#dataset-details-abstract").html(" <br> ");
+						$("#dataset-details-purpose").html(" <br> ");
+						
+						// Get ID of the GEO label that was clicked
 						var targetLabel = $(event.target).closest("svg");
-						var targetLabelID = targetLabel.attr('dataset_id');
+						var targetDatasetID = targetLabel.attr('dataset_id');
+						//stores ID of the label curently selected
+						$selectedLabelID = targetLabel.attr('id').replace("geolabel_", "");
 						
-						var detailsDataString = 'datasetID='+ targetLabelID;
+						// Highlight the selected label by adding a 'glow' effect
+						var selectGlowGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+						selectGlowGroup.setAttributeNS(null, "id", "select_glow_group_" + $selectedLabelID);
+						getSelectGlow(selectGlowGroup);
 						
+						if($("#highlight_glow_group_" + $selectedLabelID).length){
+							$("#highlight_glow_group_" + $selectedLabelID).after(selectGlowGroup);
+						}
+						else{
+							$("#size_group_" + $selectedLabelID).prepend(selectGlowGroup);
+						}
+						
+						var detailsDataString = 'datasetID='+ targetDatasetID;
 						// Make a post request
 						$.ajax({
 							type: "POST",
@@ -330,51 +361,39 @@ $(function() {
 									if(JSONObject.dataset.title != "" && JSONObject.dataset.title != null){
 										$("#dataset-details-title").html(JSONObject.dataset.title);
 									}
-									else{
-										$("#dataset-details-title").html(" <br> ");
-									}
-									
 									if(JSONObject.dataset.fileIdentifier != "" && JSONObject.dataset.fileIdentifier != null){
 										$("#dataset-details-id").html(JSONObject.dataset.fileIdentifier);
 									}
-									else{
-										$("#dataset-details-id").html(" <br> ");
-									}
-									
 									if(JSONObject.dataset.keywords != "" && JSONObject.dataset.keywords != null){
 										$("#dataset-details-keywords").html(JSONObject.dataset.keywords);
 									}
-									else{
-										$("#dataset-details-keywords").html(" <br> ");
-									}
-									
 									if(JSONObject.dataset.date != "" && JSONObject.dataset.date != null){
 										$("#dataset-details-date").html(JSONObject.dataset.date);
 									}
-									else{
-										$("#dataset-details-date").html(" <br> ");
-									}
-									
 									if(JSONObject.dataset.producer != "" && JSONObject.dataset.producer){
 										$("#dataset-details-organisation").html(JSONObject.dataset.producer);
 									}
-									else{
-										$("#dataset-details-organisation").html(" <br> ");
-									}
-									
 									if(JSONObject.dataset.abstract != "" && JSONObject.dataset.abstract != null){
 										$("#dataset-details-abstract").html(JSONObject.dataset.abstract);
 									}
-									else{
-										$("#dataset-details-abstract").html(" <br> ");
-									}	
-
+									if(JSONObject.dataset.purpose != "" && JSONObject.dataset.purpose != null){
+										$("#dataset-details-purpose").html(JSONObject.dataset.purpose);
+									}
 								}
 							},
 							error:function(){
 								$("#dataset-details").html('An error occured.');
 							},
-						});
+						}); // -- End of Ajax request to get dataset details
+					}) // -- End of on label click function
+				}); // -- End of $(function() { ... });
+
+				$(function() {
+					$(".dataset_geolabel").mousedown(function(event) {
+						if(event.which == 3){
+							var targetLabel = $(event.target).closest("svg");
+							$clickedLabelID = targetLabel.attr('id').replace("geolabel_", "");
+						}
 					})
 				});
 				
@@ -387,6 +406,38 @@ $(function() {
 		});
 		return false;
 	});
+});
+
+var $clickedLabelID = null;
+$(function() {
+	$("#highlight").click(function(event) {
+		if($clickedLabelID != null && !($("#highlight_glow_group_" + $clickedLabelID).length)){
+			// Highlight the selected label by adding a 'glow' effect
+			var highlightGlowGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+			highlightGlowGroup.setAttributeNS(null, "id", "highlight_glow_group_" + $clickedLabelID);
+			getHighlightGlow(highlightGlowGroup);
+			
+			if($("#select_glow_group_" + $clickedLabelID).length){
+				$("#select_glow_group_" + $clickedLabelID).after(highlightGlowGroup);
+			}
+			else{
+				$("#size_group_" + $clickedLabelID).prepend(highlightGlowGroup);
+			}
+			
+			$clickedLabelID = null;
+		}
+	})
+});
+
+$(function() {
+	$("#undo-highlight").click(function(event) {
+		if($clickedLabelID != null){
+			// Remove the highlight from the selected label
+			$("#highlight_glow_group_" + $clickedLabelID).remove();
+			
+			$clickedLabelID = null;
+		}
+	})
 });
 
 // Function for JSON validation

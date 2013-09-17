@@ -750,3 +750,61 @@ function createPolygon(fill, points){
     polygon.setAttributeNS(null, "points", points);
     return polygon;
 }
+  
+// helper function to create a filter
+function createFilter(id, x, y, width, height, stdDeviation){
+    var filter = document.createElementNS("http://www.w3.org/2000/svg", "filter");
+    filter.setAttributeNS(null, "id", id);
+    filter.setAttributeNS(null, "filterUnits", "userSpaceOnUse");
+    filter.setAttributeNS(null, "x", x);
+    filter.setAttributeNS(null, "y", y);
+    filter.setAttributeNS(null, "width", width);
+    filter.setAttributeNS(null, "height", height);
+	
+    var feGaussianBlur = document.createElementNS("http://www.w3.org/2000/svg", "feGaussianBlur");
+    feGaussianBlur.setAttributeNS(null, "in", "SourceGraphic");
+	feGaussianBlur.setAttributeNS(null, "stdDeviation", stdDeviation);
+	filter.appendChild(feGaussianBlur);
+    return filter;
+}
+
+function getSelectGlow(parent_svg){
+	// create paths
+	var filter1 = createFilter("theBlur_1", "-30", "-30", 400, 400, 8);
+	var circle1 = createCircle("#FFFFFF", "#6699FF", 40, 10, "125", "125", "125");
+	circle1.setAttributeNS(null, "filter", "url(#theBlur_1)");
+
+
+	// remove content
+	parent_svg.innerHTML = '';
+	// append new paths
+	parent_svg.appendChild(filter1);
+	parent_svg.appendChild(circle1);
+}
+
+function getHighlightGlow(parent_svg){
+	// create paths
+	var filter1 = createFilter("theBlur_2", "-30", "-30", 400, 400, 8);
+	
+	var circle1 = createCircle("#FFFFFF", "#FF0000", 40, 10, "125", "125", "125");
+	circle1.setAttributeNS(null, "filter", "url(#theBlur_2)");
+	var circle2 = createCircle("#FFFFFF", "#FFFF00", 40, 10, "125", "125", "125");
+	circle2.setAttributeNS(null, "filter", "url(#theBlur_2)");
+
+
+
+	// remove content
+	parent_svg.innerHTML = '';
+	// append new paths
+	parent_svg.appendChild(filter1);
+	parent_svg.appendChild(circle1);
+	parent_svg.appendChild(circle2);
+}
+
+
+
+
+
+
+
+

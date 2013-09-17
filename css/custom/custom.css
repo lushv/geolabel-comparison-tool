@@ -445,6 +445,9 @@ iframe.ui-layout-mask {}	/* extra mask for objects/applets */
   background-color:#0044CC;
 }
 
+#dataset-details {
+  padding: 0px 0px 0px 10px;
+}
 
 div.dataset-details-labels {
   font-weight: bold;
@@ -456,4 +459,9 @@ div.dataset-details-labels {
 div.dataset-details-data {
   margin: 5px 5px 5px 120px;
   text-align: left;
+}
+
+.dataset_geolabel {
+  height: 100%;
+  width: 100%;
 }
