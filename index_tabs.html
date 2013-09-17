@@ -75,11 +75,17 @@
 								</div> <!-- end of tab-pane-map -->
 								<!-- =================== TAB 2 SEARCH RESULTS ========================== -->
 								<div id="tab-pane-search-results" class="tab-pane">
-									<div id="search-results">
+									<div id="search-results" contextmenu="mymenu">
 										<!--  Search results will be automatically displayed here  -->
 										<svg version="1.1" id="results_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px">
 										
 										</svg>
+										
+										<menu type="context" id="mymenu">
+											<menuitem id="highlight" label="Highlight" onclick=""></menuitem>
+											<menuitem id="undo-highlight" label="Undo Highlight" onclick=""></menuitem>
+										</menu>
+										
 									</div>
 								</div> <!-- end of tab-pane-search-results -->								
 							</div> <!-- end of tab-content  -->
@@ -92,11 +98,11 @@
 						Dataset Details
 					</div>
 					<div id="dataset-details">
-						<div id="title-label" class="dataset-details-labels">Title:</div>
-						<div id="dataset-details-title" class="dataset-details-data"> <br> </div>
-
 						<div id="dataset-id-label" class="dataset-details-labels">Dataset ID:</div>
-						<div id="dataset-details-id" class="dataset-details-data"> <br> </div>				
+						<div id="dataset-details-id" class="dataset-details-data"> <br> </div>
+						
+						<div id="title-label" class="dataset-details-labels">Title:</div>
+						<div id="dataset-details-title" class="dataset-details-data"> <br> </div>		
 						
 						<div id="dataset-keywords-label" class="dataset-details-labels">Keywords:</div>
 						<div id="dataset-details-keywords" class="dataset-details-data"> <br> </div>
@@ -109,6 +115,9 @@
 						
 						<div id="dataset-abstract-label" class="dataset-details-labels">Abstract:</div>
 						<div id="dataset-details-abstract" class="dataset-details-data"> <br> </div>		
+						
+						<div id="dataset-purpose-label" class="dataset-details-labels">Purpose:</div>
+						<div id="dataset-details-purpose" class="dataset-details-data"> <br> </div>
 					</div>
 				</div>
 			</div>

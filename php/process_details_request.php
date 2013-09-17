@@ -6,6 +6,7 @@ $datasetID = $_POST['datasetID'];
 $fileIdentifierXPath = '//*[local-name()=\'fileIdentifier\']/*[local-name()=\'CharacterString\']';
 $title = '//*[local-name()=\'title\']/*[local-name()=\'CharacterString\']';
 $abstract = '//*[local-name()=\'abstract\']/*[local-name()=\'CharacterString\']';
+$purpose = '//*[local-name()=\'identificationInfo\']/*[local-name()=\'GVQ_DataIdentification\']/*[local-name()=\'purpose\']/*[local-name()=\'CharacterString\']';
 $date = '//*[local-name()=\'CI_Date\']/*[local-name()=\'date\']/*[local-name()=\'Date\']';
 $keywords = '//*[local-name()=\'descriptiveKeywords\']/*[local-name()=\'MD_Keywords\']/*[local-name()=\'keyword\']/*[local-name()=\'CharacterString\']';
 $producerProfileXpath = 
@@ -21,7 +22,7 @@ $metadataXML = new DOMDocument();
 $metadataXML->load($metadataURL);
 $jsonResponceString = '{"dataset": ';
 
-$summaryArray = getDatasetSummary($metadataXML, $fileIdentifierXPath, $title, $abstract, $date, $keywords, $producerProfileXpath);
+$summaryArray = getDatasetSummary($metadataXML, $fileIdentifierXPath, $title, $abstract, $purpose, $date, $keywords, $producerProfileXpath);
 
 $json = json_encode($summaryArray);
 if(!empty($json)){
@@ -39,7 +40,7 @@ echo $jsonResponceString;
  * @return array an array populated with hover-over text for each GEO label facet,
  * or null if $xml is empty
  */
-function getDatasetSummary($xml, $fileIdentifierXPath, $title, $abstract, $date, $keywords, $producerProfileXpath){
+function getDatasetSummary($xml, $fileIdentifierXPath, $title, $abstract, $purpose, $date, $keywords, $producerProfileXpath){
 	if(empty($xml)){
 		return null;
 	}
@@ -47,6 +48,7 @@ function getDatasetSummary($xml, $fileIdentifierXPath, $title, $abstract, $date,
 						'fileIdentifier' => getFirstNode($xml, $fileIdentifierXPath),
 						'title' => getFirstNode($xml, $title),
 						'abstract' => getFirstNode($xml, $abstract),
+						'purpose' => getFirstNode($xml, $purpose),
 						'date' => getFirstNode($xml, $date),
 						'keywords' => getFirstNode($xml, $keywords),
 						'producer' => getFirstNode($xml, $producerProfileXpath)
