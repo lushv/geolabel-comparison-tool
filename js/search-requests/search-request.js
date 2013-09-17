@@ -84,8 +84,7 @@ $(function() {
 						
 						var organisationName = JSONObject.dataset[i].facets.producerProfile.organisationName;
 						var supplementalInformation = JSONObject.dataset[i].facets.produerComments.supplementalInformation;
-						var knownProblems = "";
-						//var knownProblems = JSONObject.dataset[i].facets.produerComments.knownProblems;
+						var knownProblems = JSONObject.dataset[i].facets.produerComments.knownProblems;
 						var processStepCount = JSONObject.dataset[i].facets.lineage.processStepCount;
 						var standardName = JSONObject.dataset[i].facets.standardsComplaince.standardName;
 						var standardVersion = JSONObject.dataset[i].facets.standardsComplaince.standardVersion;

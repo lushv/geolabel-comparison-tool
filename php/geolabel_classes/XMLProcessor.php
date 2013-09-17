@@ -53,8 +53,10 @@ class XMLProcessor{
 						'//*[local-name()=\'LI_Lineage\']//*[local-name()=\'processStep\'] | //*[local-name()=\'lineage\']//*[local-name()=\'processStep\']';
 	// Producer Comments:
 	private $supplementalInformationXPath = 
-						'//*[local-name()=\'identificationInfo\']//*[local-name()=\'supplementalInformation\'] | 
-						//*[local-name()=\'dataQualityInfo\']//*[local-name()=\'GVQ_DiscoveredIssue\']/*[local-name()=\'knownProblem\']';
+						'//*[local-name()=\'identificationInfo\']//*[local-name()=\'supplementalInformation\']';
+	private $knownProblemsXPath = 
+						'//*[local-name()=\'dataQualityInfo\']//*[local-name()=\'GVQ_DiscoveredIssue\']/*[local-name()=\'knownProblem\']';
+						
 	// Standards Complaince:
 	private $standardNameXPath = 
 						'//*[local-name()=\'metadataStandardName\'] | //*[local-name()=\'metstdv\']';
@@ -245,48 +247,157 @@ class XMLProcessor{
 	 * @return array an array populated with hover-over text for each GEO label facet,
 	 * or null if $xml is empty
 	 */
-	public function getDatasetSummary($xml){
+	public function getDatasetSummary($xml, $parentXML){
 		if(empty($xml)){
 			return null;
 		}
+		
+		// Get producer information
+		$producerAvailability = $this->getAvailabilityInteger($xml, $this->producerProfileXpath);
+		$organisationName = $this->getFirstNode($xml, $this->organisationNameXPath);
+		if($producerAvailability == 0){
+			$parentAvailability = $this->getAvailabilityInteger($parentXML, $this->producerProfileXpath);
+			
+			if($parentAvailability == 1){
+				$producerAvailability = 2;
+				$organisationName = $this->getFirstNode($parentXML, $this->organisationNameXPath);
+			}
+		}
+		
+		// Get comments information
+		$commentsAvailability = $this->getAvailabilityInteger($xml, $this->producerCommentsXPath);
+		$supplementalInformation = $this->getFirstNode($xml, $this->supplementalInformationXPath);
+		$knownProblems = $this->getFirstNode($xml, $this->knownProblemsXPath);
+		if($commentsAvailability == 0){
+			$parentAvailability = $this->getAvailabilityInteger($parentXML, $this->producerCommentsXPath);
+			
+			if($parentAvailability == 1){
+				$commentsAvailability = 2;
+				$supplementalInformation = $this->getFirstNode($parentXML, $this->supplementalInformationXPath);
+				$knownProblems = $this->getFirstNode($parentXML, $this->knownProblemsXPath);
+			}
+		}
+		
+		// Get lineage information
+		$lineageAvailability = $this->getAvailabilityInteger($xml, $this->lineageXPath);
+		$processStepCount = $this->countElements($xml, $this->processStepCountXPath);
+		if($lineageAvailability == 0){
+			$parentAvailability = $this->getAvailabilityInteger($parentXML, $this->lineageXPath);
+			
+			if($parentAvailability == 1){
+				$lineageAvailability = 2;
+				$processStepCount = $this->countElements($parentXML, $this->processStepCountXPath);
+			}
+		}
+		
+		// Get standards information
+		$standardsAvailability = $this->getAvailabilityInteger($xml, $this->standardsXPath);
+		$standardName = $this->getFirstNode($xml, $this->standardNameXPath);
+		$standardVersion = $this->getFirstNode($xml, $this->standardVersionXPath);
+		if($standardsAvailability == 0){
+			$parentAvailability = $this->getAvailabilityInteger($parentXML, $this->standardsXPath);
+			
+			if($parentAvailability == 1){
+				$standardsAvailability = 2;
+				$standardName = $this->getFirstNode($parentXML, $this->standardNameXPath);
+				$standardVersion = $this->getFirstNode($parentXML, $this->standardVersionXPath);
+			}
+		}
+		
+		// Get quality information
+		$qualityAvailability = $this->getAvailabilityInteger($xml, $this->qualityXPath);
+		$scopeLevel = $this->getFirstNode($xml, $this->scopeLevelXPath);
+		if($qualityAvailability == 0){
+			$parentAvailability = $this->getAvailabilityInteger($parentXML, $this->qualityXPath);
+			
+			if($parentAvailability == 1){
+				$qualityAvailability = 2;
+				$scopeLevel = $this->getFirstNode($parentXML, $this->scopeLevelXPath);
+			}
+		}
+		
+		// Get feedback information
+		$feedbackAvailability = $this->getAvailabilityInteger($xml, $this->feedbackXPath);
+		$feedbacksCount = $this->countElements($xml, $this->feedbacksCountXPath);
+		$ratingsCount = $this->countElements($xml, $this->ratingsCountXPath);
+		$feedbacksAverageRating = $this->getAverageRating($xml, $this->ratingsCountXPath);
+		if($feedbackAvailability == 0){
+			$parentAvailability =  $this->getAvailabilityInteger($parentXML, $this->feedbackXPath);
+			
+			if($parentAvailability == 1){
+				$feedbackAvailability = 2;
+				$feedbacksCount = $this->countElements($parentXML, $this->feedbacksCountXPath);
+				$ratingsCount = $this->countElements($parentXML, $this->ratingsCountXPath);
+				$feedbacksAverageRating = $this->getAverageRating($parentXML, $this->ratingsCountXPath);
+			}
+		}
+
+		// Get review information
+		$reviewAvailability = $this->getAvailabilityInteger($xml, $this->reviewXPath);
+		$expertReviewsCount = $this->countElements($xml, $this->expertReviewsCountXPath);
+		$expertRatingsCount = $this->countElements($xml, $this->expertRatingsCountXPath);
+		$expertAverageRating = $this->getAverageRating($xml, $this->expertRatingsCountXPath);
+		if($reviewAvailability == 0){
+			$parentAvailability =  $this->getAvailabilityInteger($parentXML, $this->reviewXPath);
+			
+			if($parentAvailability == 1){
+				$reviewAvailability = 2;
+				$expertReviewsCount = $this->countElements($parentXML, $this->expertReviewsCountXPath);
+				$expertRatingsCount = $this->countElements($parentXML, $this->expertRatingsCountXPath);
+				$expertAverageRating = $this->getAverageRating($parentXML, $this->expertRatingsCountXPath);
+			}
+		}
+		
+		// Get citations information
+		$citationsAvailability = $this->getAvailabilityInteger($xml, $this->citationsXPath);
+		$citationsCount = $this->countElements($xml, $this->citationsCountXPath);
+		if($citationsAvailability == 0){
+			$parentAvailability = $this->getAvailabilityInteger($parentXML, $this->citationsXPath);
+			
+			if($parentAvailability == 1){
+				$citationsAvailability = 2;
+				$citationsCount = $this->countElements($xml, $parentXML->citationsCountXPath);
+			}
+		}
+		
 		$summaryArray = array(  
 								'producerProfile' => array(
-									'availability' => $this->getAvailabilityInteger($xml, $this->producerProfileXpath),
-									'organisationName' => $this->getFirstNode($xml, $this->organisationNameXPath),
+									'availability' => $producerAvailability,
+									'organisationName' => $organisationName,
 								),
 								'produerComments' => array(
-									'availability' => $this->getAvailabilityInteger($xml, $this->producerCommentsXPath),
-									'supplementalInformation' => $this->getFirstNode($xml, $this->supplementalInformationXPath),
-									'supplementalInformationType' => "",
+									'availability' => $commentsAvailability,
+									'supplementalInformation' => $supplementalInformation,
+									'knownProblems' => $knownProblems,
 								),
 								'lineage' => array(
-									'availability' => $this->getAvailabilityInteger($xml, $this->lineageXPath),
-									'processStepCount' => $this->countElements($xml, $this->processStepCountXPath),
+									'availability' => $lineageAvailability,
+									'processStepCount' => $processStepCount,
 								),
 								'standardsComplaince' => array(
-									'availability' => $this->getAvailabilityInteger($xml, $this->standardsXPath),
-									'standardName' => $this->getFirstNode($xml, $this->standardNameXPath),
-									'standardVersion' => $this->getFirstNode($xml, $this->standardVersionXPath),
+									'availability' => $standardsAvailability,
+									'standardName' => $standardName,
+									'standardVersion' => $standardVersion,
 								),
 								'qualityInformation' => array(
-									'availability' => $this->getAvailabilityInteger($xml, $this->qualityXPath),
-									'scopeLevel' => $this->getFirstNode($xml, $this->scopeLevelXPath),
+									'availability' => $qualityAvailability,
+									'scopeLevel' => $scopeLevel,
 								),
 								'userFeedback' => array(
-									'availability' => $this->getAvailabilityInteger($xml, $this->feedbackXPath),
-									'feedbacksCount' => $this->countElements($xml, $this->feedbacksCountXPath),
-									'ratingsCount' => $this->countElements($xml, $this->ratingsCountXPath),
-									'feedbacksAverageRating' => $this->getAverageRating($xml, $this->ratingsCountXPath),
+									'availability' => $feedbackAvailability,
+									'feedbacksCount' => $feedbacksCount,
+									'ratingsCount' => $ratingsCount,
+									'feedbacksAverageRating' => $feedbacksAverageRating,
 								),
 								'expertReview' => array(
-									'availability' => $this->getAvailabilityInteger($xml, $this->reviewXPath),
-									'expertReviewsCount' => $this->countElements($xml, $this->expertReviewsCountXPath),
-									'expertRatingsCount' => $this->countElements($xml, $this->expertRatingsCountXPath),
-									'expertAverageRating' => $this->getAverageRating($xml, $this->expertRatingsCountXPath),
+									'availability' => $reviewAvailability,
+									'expertReviewsCount' => $expertReviewsCount,
+									'expertRatingsCount' => $expertRatingsCount,
+									'expertAverageRating' => $expertAverageRating,
 								),
 								'citations' => array(
-									'availability' => $this->getAvailabilityInteger($xml, $this->citationsXPath),
-									'citationsCount' => $this->countElements($xml, $this->citationsCountXPath),
+									'availability' => $citationsAvailability,
+									'citationsCount' => $citationsCount,
 								)
 							);
 								
@@ -393,7 +504,7 @@ class XMLProcessor{
 	 * @param $feedbackXML DomDocument feedback document
 	 * @return String JSON representation of the GEO label facets
 	 */
-	public function getJsonDatasetSummary($producerXML, $feedbackXML){
+	public function getJsonDatasetSummary($producerXML, $feedbackXML, $parentXML){
 		// Join two documents
 		$gvqXML = null;
 		if(!empty($producerXML) && !empty($feedbackXML)){
@@ -408,7 +519,7 @@ class XMLProcessor{
 		
 		// Get summary of the XML documents
 		$datasetID = $this->getXMLFileIdentifier($gvqXML);
-		$summaryArray = $this->getDatasetSummary($gvqXML);		
+		$summaryArray = $this->getDatasetSummary($gvqXML, $parentXML);		
 
 		$json = json_encode(array('datasetIdentifier' => $datasetID, 'facets' => $summaryArray));
 		return $json;
