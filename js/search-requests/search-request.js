@@ -97,7 +97,6 @@ $(function() {
 						var expertAverageRating = JSONObject.dataset[i].facets.expertReview.expertAverageRating;
 						var citationsCount = JSONObject.dataset[i].facets.citations.citationsCount;
 						
-						var resultsParentSVG = document.getElementById("results_svg");
 						
 						// Set GEO label svg
 						var labelSVG = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -331,7 +330,7 @@ $(function() {
 						
 						// Get ID of the GEO label that was clicked
 						var targetLabel = $(event.target).closest("svg");
-						var targetDatasetID = targetLabel.attr('dataset_id');
+						var $targetDatasetID = targetLabel.attr('dataset_id');
 						//stores ID of the label curently selected
 						$selectedLabelID = targetLabel.attr('id').replace("geolabel_", "");
 						
@@ -347,7 +346,7 @@ $(function() {
 							$("#size_group_" + $selectedLabelID).prepend(selectGlowGroup);
 						}
 						
-						var detailsDataString = 'datasetID='+ targetDatasetID;
+						var detailsDataString = 'datasetID='+ $targetDatasetID;
 						// Make a post request
 						$.ajax({
 							type: "POST",
@@ -379,6 +378,25 @@ $(function() {
 										$("#dataset-details-purpose").html(JSONObject.dataset.purpose);
 									}
 								}
+								
+								var div = $("<div></div>");
+								var detailedLabel = $("#geolabel_" + $selectedLabelID).clone();
+								detailedLabel.attr("id", "detailed_geolabel_" + $selectedLabelID);
+								detailedLabel.removeAttr("title");
+								detailedLabel.children(":first").attr("transform","scale(0.6)");
+								
+								detailedLabel.find("#highlight_glow_group_" + $selectedLabelID).remove();
+								detailedLabel.find("#select_glow_group_" + $selectedLabelID).remove();
+								
+								// Add metadata button
+								var metadataURL = "http://localhost/geolabel-comparison-tool/php/metadata_records/" + $targetDatasetID + ".xml";
+								var metadataButton = $("<a id='metadata-anchor' href='" + metadataURL + "' target='_blank'><button id='metadata-button' class='btn btn-success' type='button'><i class='icon-eye-open icon-white'></i>&nbsp;&nbsp;&nbsp;View Metadata</button></a>");
+								div.append(detailedLabel);
+								div.append(metadataButton);
+								
+								$("#detailed-geolabel").html(div);
+								
+								
 							},
 							error:function(){
 								$("#dataset-details").html('An error occured.');
