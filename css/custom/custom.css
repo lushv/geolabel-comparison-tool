@@ -446,7 +446,18 @@ iframe.ui-layout-mask {}	/* extra mask for objects/applets */
 }
 
 #dataset-details {
-  padding: 0px 0px 0px 10px;
+  padding: 15px 20px 10px 10px;
+}
+
+#detailed-geolabel {
+  float: right;
+  width: 170px;
+  height: 200px;
+  padding: 0px 10px 10px 30px;
+}
+
+#metadata-button {
+  margin: 15px 0px 0px 0px;
 }
 
 div.dataset-details-labels {
@@ -457,11 +468,13 @@ div.dataset-details-labels {
 }
 
 div.dataset-details-data {
-  margin: 5px 5px 5px 120px;
-  text-align: left;
+  margin: 0px 5px 5px 120px;
+  text-align: justify;
 }
 
 .dataset_geolabel {
   height: 100%;
   width: 100%;
 }
+
+/*******************************  Zoom and Pan buttons  *******************************/
