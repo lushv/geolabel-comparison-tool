@@ -66,7 +66,7 @@ $(function() {
 			else if(ui.value == "1"){
 				$slidersVal[0] = 1;
 				document.getElementById("producer-facet-img").src = "img/facets/higher_level/producer_higher_level.png";
-				getProducerProfileHigherLevel(producer_profile);
+				getProducerProfileHigherLevel(producer_profile, "SVGID_1_");
 			}
 			else if(ui.value == "2"){
 				$slidersVal[0] = 2;
@@ -103,7 +103,7 @@ $(function() {
 			else if(ui.value == "1"){
 				$slidersVal[1] = 1;
 				document.getElementById("comments-facet-img").src = "img/facets/higher_level/comments_higher_level.png";
-				getProducerCommentsHigherLevel(producer_comments);
+				getProducerCommentsHigherLevel(producer_comments, "SVGID_2_");
 			}
 			else if(ui.value == "2"){
 				$slidersVal[1] = 2;
@@ -140,7 +140,7 @@ $(function() {
 			else if(ui.value == "1"){
 				$slidersVal[2] = 1;
 				document.getElementById("lineage-facet-img").src = "img/facets/higher_level/lineage_higher_level.png";
-				getLineageHigherLevel(lineage);
+				getLineageHigherLevel(lineage, "SVGID_3_");
 			}
 			else if(ui.value == "2"){
 				$slidersVal[2] = 2;
@@ -177,7 +177,7 @@ $(function() {
 			else if(ui.value == "1"){
 				$slidersVal[3] = 1;
 				document.getElementById("compliance-facet-img").src = "img/facets/higher_level/compliance_higher_level.png";
-				getStandardsComplianceHigherLevel(standards_compliance);
+				getStandardsComplianceHigherLevel(standards_compliance, "SVGID_4_");
 			}
 			else if(ui.value == "2"){
 				$slidersVal[3] = 2;
@@ -214,7 +214,7 @@ $(function() {
 			else if(ui.value == "1"){
 				$slidersVal[4] = 1;
 				document.getElementById("quality-facet-img").src = "img/facets/higher_level/quality_higher_level.png";
-				getQualityInformationHigherLevel(quality_information);
+				getQualityInformationHigherLevel(quality_information, "SVGID_5_");
 			}
 			else if(ui.value == "2"){
 				$slidersVal[4] = 2;
@@ -251,7 +251,7 @@ $(function() {
 			else if(ui.value == "1"){
 				$slidersVal[5] = 1;
 				document.getElementById("feedback-facet-img").src = "img/facets/higher_level/feedback_higher_level.png";
-				getUserFeedbackHigherLevel(user_feedback);
+				getUserFeedbackHigherLevel(user_feedback, "SVGID_6_");
 			}
 			else if(ui.value == "2"){
 				$slidersVal[5] = 2;
@@ -288,7 +288,7 @@ $(function() {
 			else if(ui.value == "1"){
 				$slidersVal[6] = 1;
 				document.getElementById("review-facet-img").src = "img/facets/higher_level/review_higher_level.png";
-				getExpertReviewHigherLevel(expert_review);
+				getExpertReviewHigherLevel(expert_review, "SVGID_7_");
 			}
 			else if(ui.value == "2"){
 				$slidersVal[6] = 2;
@@ -325,7 +325,7 @@ $(function() {
 			else if(ui.value == "1"){
 				$slidersVal[7] = 1;
 				document.getElementById("citations-facet-img").src = "img/facets/higher_level/citations_higher_level.png";
-				getCitationsInformationHigherLevel(citations_information);
+				getCitationsInformationHigherLevel(citations_information, "SVGID_8_");
 			}
 			else if(ui.value == "2"){
 				$slidersVal[7] = 2;

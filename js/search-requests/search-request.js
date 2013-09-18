@@ -135,7 +135,7 @@ $(function() {
 							producerProfileGroup.setAttributeNS(null, "availability", 1);
 						}
 						else if(producerProfileAvailability == 2){
-							getProducerProfileHigherLevel(producerProfileGroup);
+							getProducerProfileHigherLevel(producerProfileGroup, "producer_linear_gradient_" + i);
 							producerProfileGroup.setAttributeNS(null, "availability", 2);
 						}
 
@@ -154,7 +154,7 @@ $(function() {
 							producerCommentsGroup.setAttributeNS(null, "availability", 1);
 						}
 						else if(producerCommentsAvailability == 2){
-							getProducerCommentsHigherLevel(producerCommentsGroup);
+							getProducerCommentsHigherLevel(producerCommentsGroup, "comments_linear_gradient_" + i);
 							producerCommentsGroup.setAttributeNS(null, "availability", 2);
 						}
 						
@@ -172,7 +172,7 @@ $(function() {
 							lineageGroup.setAttributeNS(null, "availability", 1);
 						}
 						else if(lineageAvailability == 2){
-							getLineageHigherLevel(lineageGroup);
+							getLineageHigherLevel(lineageGroup, "lineage_linear_gradient_" + i);
 							lineageGroup.setAttributeNS(null, "availability", 2);
 						}
 						
@@ -190,7 +190,7 @@ $(function() {
 							standardsComplianceGroup.setAttributeNS(null, "availability", 1);
 						}
 						else if(standardsComplianceAvailability == 2){
-							getStandardsComplianceHigherLevel(standardsComplianceGroup);
+							getStandardsComplianceHigherLevel(standardsComplianceGroup, "linear_gradient_" + i);
 							standardsComplianceGroup.setAttributeNS(null, "availability", 2);
 						}
 						
@@ -208,7 +208,7 @@ $(function() {
 							qualityInformationGroup.setAttributeNS(null, "availability", 1);
 						}
 						else if(qualityInformationAvailability == 2){
-							getQualityInformationHigherLevel(qualityInformationGroup);
+							getQualityInformationHigherLevel(qualityInformationGroup, "quality_linear_gradient_" + i);
 							qualityInformationGroup.setAttributeNS(null, "availability", 2);
 						}
 						
@@ -228,7 +228,7 @@ $(function() {
 							userFeedbackGroup.setAttributeNS(null, "availability", 1);
 						}
 						else if(userFeedbackAvailability == 2){
-							getUserFeedbackHigherLevel(userFeedbackGroup);
+							getUserFeedbackHigherLevel(userFeedbackGroup, "feedbacks_linear_gradient_" + i);
 							userFeedbackGroup.setAttributeNS(null, "availability", 2);
 						}
 						
@@ -248,7 +248,7 @@ $(function() {
 							expertReviewGroup.setAttributeNS(null, "availability", 1);
 						}
 						else if(expertReviewAvailability == 2){
-							getExpertReviewHigherLevel(expertReviewGroup);
+							getExpertReviewHigherLevel(expertReviewGroup, "reviews_linear_gradient_" + i);
 							expertReviewGroup.setAttributeNS(null, "availability", 2);
 						}
 						
@@ -266,7 +266,7 @@ $(function() {
 							citationsGroup.setAttributeNS(null, "availability", 1);
 						}
 						else if(citationsAvailability == 2){
-							getCitationsInformationHigherLevel(citationsGroup);
+							getCitationsInformationHigherLevel(citationsGroup, "citations_linear_gradient_" + i);
 							citationsGroup.setAttributeNS(null, "availability", 2);
 						}
 						
