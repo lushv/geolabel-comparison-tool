@@ -942,7 +942,7 @@
             </gvq:discoveredIssue>
         </gvq:GVQ_DataQuality>
     </gvq:dataQualityInfo>
-<gvq:GVQ_FeedbackCollection xmlns:gvq="http://www.geoviqua.org/QualityInformationModel/3.1" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gmd19157="http://www.geoviqua.org/gmd19157" xmlns:updated19115="http://www.geoviqua.org/19115_updates" xmlns:gsrC="http://www.w3.org/2001/XMLSchema" xmlns:gsrD="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geoviqua.org/QualityInformationModel/3.1 ../GeoViQua_PQM_UQM.xsd">
+<gvq:GVQ_FeedbackCollection>
   <gmd:fileIdentifier xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:srv="http://www.isotc211.org/2005/srv">
       <gco:CharacterString>111ddf03-3d2b-44a4-ac35-5604e55bcc7c</gco:CharacterString>
   </gmd:fileIdentifier>
