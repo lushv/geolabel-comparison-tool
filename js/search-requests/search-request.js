@@ -60,7 +60,7 @@ $(function() {
 					
 					var availableArea = searchAreaHeight * serachAreaWidth;
 					var areaPerLabel = parseInt(availableArea / JSONObject.dataset.length, 10);
-					var scale = areaPerLabel / 45000;
+					var scale = parseFloat(areaPerLabel / 45000).toFixed(2);
 					var xOffset = parseInt((250 * scale) + 35, 10);
 					var yOffset = xOffset;
 					var maxLabelsPerRow = parseInt(serachAreaWidth / xOffset, 10);

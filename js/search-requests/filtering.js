@@ -9,41 +9,52 @@ var averageReviewRatingMin = 0;
 var reviewsNumberMin = 0;
 var citationsNumberMin = 0;
 
-var filterScale = 0.02;
-var filterTransformX = 3;
-var filterTransformY = 3;
+var filterScale = 0.015;
+var filterTransformX = 2;
+var filterTransformY = 2;
+var minimumSize = 0.005;
 
 // Helper function to resize the facet
 function upScaleLabel(i){
-	var currentSize = $("#size_group_" + i).attr("size_scale");
+	var currentScale = $("#size_group_" + i).attr("size_scale");
 	var currentX = $("#size_group_" + i).attr("translate_x");
 	var currentY = $("#size_group_" + i).attr("translate_y");
 	
-	var newSize = parseFloat(currentSize) + filterScale;
+	var newScale = parseFloat(currentScale) + filterScale;
 	var newX = parseFloat(currentX) - filterTransformX;
 	var newY = parseFloat(currentY) - filterTransformY;
-	var newTransform = "translate(" + newX + " " + newY + ") scale(" + newSize + ")";
-	
+	if(parseFloat(newScale).toFixed(3) > parseFloat(minimumSize).toFixed(3)){
+		newTransform = "translate(" + newX + " " + newY + ") scale(" + newScale + ")";
+		$("#size_group_" + i).attr("translate_x", newX);
+		$("#size_group_" + i).attr("translate_y", newY);
+	}
+	else{
+		newTransform = "translate(" + currentX + " " + currentY + ") scale(" + minimumSize + ")";
+	}		
 	$("#size_group_" + i).attr("transform", newTransform);
-	$("#size_group_" + i).attr("size_scale", newSize);
-	$("#size_group_" + i).attr("translate_x", newX);
-	$("#size_group_" + i).attr("translate_y", newY);
+	$("#size_group_" + i).attr("size_scale", newScale);
 }
 
 function downScaleLabel(i){
-	var currentSize = $("#size_group_" + i).attr("size_scale");
+	var currentScale = $("#size_group_" + i).attr("size_scale");
 	var currentX = $("#size_group_" + i).attr("translate_x");
 	var currentY = $("#size_group_" + i).attr("translate_y");
 	
-	var newSize = parseFloat(currentSize) - filterScale;
+	var newScale = parseFloat(currentScale) - filterScale;
 	var newX = parseFloat(currentX) + filterTransformX;
 	var newY = parseFloat(currentY) + filterTransformY;
-	var newTransform = "translate(" + newX + " " + newY + ") scale(" + newSize + ")";
+	var newTransform = "";
 	
+	if(parseFloat(newScale).toFixed(3) > parseFloat(minimumSize).toFixed(3)){
+		newTransform = "translate(" + newX + " " + newY + ") scale(" + newScale + ")";
+		$("#size_group_" + i).attr("translate_x", newX);
+		$("#size_group_" + i).attr("translate_y", newY);
+	}
+	else{
+		newTransform = "translate(" + currentX + " " + currentY + ") scale(" + minimumSize + ")";
+	}	
 	$("#size_group_" + i).attr("transform", newTransform);
-	$("#size_group_" + i).attr("size_scale", newSize);
-	$("#size_group_" + i).attr("translate_x", newX);
-	$("#size_group_" + i).attr("translate_y", newY);
+	$("#size_group_" + i).attr("size_scale", newScale);
 }
 
 // ******************************  Functions for applying and reseting filters  ********************************
