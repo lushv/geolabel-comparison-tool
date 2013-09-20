@@ -78,22 +78,27 @@
 									<div id="search-results" contextmenu="mymenu">
 										<!--  Search results will be automatically displayed here  -->
 										<svg version="1.1" id="results_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px">
-
-										<g id="zoom_pan_control" transform="matrix(0.8 0 0 0.8 0 0)">
-										  <circle cx="50" cy="50" r="42" fill="#FFFFFF" opacity="0.75"/>
-										  <path fill="#225EA8" stroke="#0C2C84" stroke-miterlimit="6" stroke-linecap="round" class="pan-button" onclick="pan( 0, 50)" d="M50 10 l12   20 a40, 70 0 0,0 -24,  0z" />
-										  <path fill="#225EA8" stroke="#0C2C84" stroke-miterlimit="6" stroke-linecap="round" class="pan-button" onclick="pan( 50, 0)" d="M10 50 l20  -12 a70, 40 0 0,0   0, 24z" />
-										  <path fill="#225EA8" stroke="#0C2C84" stroke-miterlimit="6" stroke-linecap="round" class="pan-button" onclick="pan( 0,-50)" d="M50 90 l12  -20 a40, 70 0 0,1 -24,  0z" />
-										  <path fill="#225EA8" stroke="#0C2C84" stroke-miterlimit="6" stroke-linecap="round" class="pan-button" onclick="pan(-50, 0)" d="M90 50 l-20 -12 a70, 40 0 0,1   0, 24z" />
-										  
-										  <circle fill="#fff" stroke="#000" stroke-width="1.5" class="compass" cx="50" cy="50" r="20"/>
-										  <circle fill="#225EA8" stroke="#0C2C84" stroke-miterlimit="6" stroke-linecap="round" class="zoom-button"  cx="50" cy="41" r="8" onclick="zoom(0.8)"/>
-										  <circle fill="#225EA8" stroke="#0C2C84" stroke-miterlimit="6" stroke-linecap="round" class="zoom-button"  cx="50" cy="59" r="8" onclick="zoom(1.25)"/>
-
-										  <rect fill="#fff" pointer-events="none" class="plus-minus" x="46" y="39.5" width="8" height="3"/>
-										  <rect fill="#fff" pointer-events="none" class="plus-minus" x="46" y="57.5" width="8" height="3"/>
-										  <rect fill="#fff" pointer-events="none" class="plus-minus" x="48.5" y="55" width="3" height="8"/>
-										</g>
+											<g id="zoom_pan_control" transform="matrix(0.8 0 0 0.8 0 0)">
+											  <circle cx="50" cy="50" r="42" fill="#FFFFFF" opacity="0.75"/>
+											  <path fill="#225EA8" stroke="#0C2C84" stroke-miterlimit="6" stroke-linecap="round" class="pan-button" d="M50 10 l12   20 a40, 70 0 0,0 -24,  0z" />
+											  <path fill="#225EA8" stroke="#0C2C84" stroke-miterlimit="6" stroke-linecap="round" class="pan-button" d="M10 50 l20  -12 a70, 40 0 0,0   0, 24z" />
+											  <path fill="#225EA8" stroke="#0C2C84" stroke-miterlimit="6" stroke-linecap="round" class="pan-button" d="M50 90 l12  -20 a40, 70 0 0,1 -24,  0z" />
+											  <path fill="#225EA8" stroke="#0C2C84" stroke-miterlimit="6" stroke-linecap="round" class="pan-button" d="M90 50 l-20 -12 a70, 40 0 0,1   0, 24z" />
+											  
+											  <circle fill="#fff" stroke="#000" stroke-width="1.5" class="compass" cx="50" cy="50" r="20"/>
+											  <g id="zoom_in">
+												<circle fill="#225EA8" stroke="#0C2C84" stroke-miterlimit="6" stroke-linecap="round" class="zoom-button"  cx="50" cy="41" r="8"/>
+												<rect fill="#fff" pointer-events="none" class="plus-minus" x="46" y="39.5" width="8" height="3"/>
+												<rect fill="#fff" pointer-events="none" class="plus-minus" x="48.5" y="37" width="3" height="8"/>
+											  </g>
+											  <g id="zoom_out">
+												<circle fill="#225EA8" stroke="#0C2C84" stroke-miterlimit="6" stroke-linecap="round" class="zoom-button"  cx="50" cy="59" r="8"/>
+												<rect fill="#fff" pointer-events="none" class="plus-minus" x="46" y="57.5" width="8" height="3"/>
+											  </g>
+											</g>
+											<g id="zoom_pan_results_svg">
+											
+											</g>
 										</svg>
 										
 										<menu type="context" id="mymenu">
@@ -139,7 +144,7 @@
 			</div>
 			<!-- =================== OUTER EAST ========================== -->
 			<div class="outer-east" id="outer-east">
-					<div class="row">
+					<div id="outer-east-row" class="row">
 						<div class="tabbable tabbable-outer-east">
 							<ul class="nav nav-tabs">
 								<li id="query-constraints-tab" class="active"><a href="#tab-pane-query-constraints" data-toggle="tab">Query Constraints</a></li>
