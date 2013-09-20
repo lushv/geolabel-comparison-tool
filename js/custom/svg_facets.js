@@ -797,3 +797,118 @@ function getHighlightGlow(parent_svg){
 	parent_svg.appendChild(circle1);
 	parent_svg.appendChild(circle2);
 }
+
+function getZoomPanControl(){
+    var g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+    g.setAttributeNS(null, "id", "zoom_pan_control");
+    g.setAttributeNS(null, "transform", "matrix(0.8 0 0 0.8 0 0)");
+
+	var circle1 = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    circle1.setAttributeNS(null, "cx", "50");
+	circle1.setAttributeNS(null, "cy", "50");
+	circle1.setAttributeNS(null, "r", "42");
+    circle1.setAttributeNS(null, "fill", "#FFFFFF");
+	circle1.setAttributeNS(null, "opacity", "0.75");
+
+	var path1 = getZoomPanPath("#225EA8", "M50 10 l12   20 a40, 70 0 0,0 -24, 0z", "#0C2C84", "6", "round", "pan-button", "pan_up", "pan( 0, 50)");
+	var path2 = getZoomPanPath("#225EA8", "M10 50 l20  -12 a70, 40 0 0,0  0, 24z", "#0C2C84", "6", "round", "pan-button", "pan_down", "pan( 50, 0)");
+	var path3 = getZoomPanPath("#225EA8", "M50 90 l12  -20 a40, 70 0 0,1 -24, 0z", "#0C2C84", "6", "round", "pan-button", "pan_right", "pan( 0,-50)");
+	var path4 = getZoomPanPath("#225EA8", "M90 50 l-20 -12 a70, 40 0 0,1  0, 24z", "#0C2C84", "6", "round", "pan-button", "pan_left", "pan(-50, 0)");
+  
+	var circle2 = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    circle2.setAttributeNS(null, "cx", "50");
+	circle2.setAttributeNS(null, "cy", "50");
+	circle2.setAttributeNS(null, "r", "20");
+    circle2.setAttributeNS(null, "fill", "#FFFFFF");
+    circle2.setAttributeNS(null, "stroke", "#000000");
+	circle2.setAttributeNS(null, "stroke-width", "1.5");
+	circle2.setAttributeNS(null, "class", "compass");
+
+	var circle3 = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    circle3.setAttributeNS(null, "cx", "50");
+	circle3.setAttributeNS(null, "cy", "41");
+	circle3.setAttributeNS(null, "r", "8");
+    circle3.setAttributeNS(null, "fill", "#225EA8");
+    circle3.setAttributeNS(null, "stroke", "#0C2C84");
+	circle3.setAttributeNS(null, "stroke-miterlimit", "6");
+	circle3.setAttributeNS(null, "stroke-linecap", "round");
+	circle3.setAttributeNS(null, "class", "zoom-button");
+	//circle3.setAttributeNS(null, "onclick", "zoom(0.8)");
+	
+	var circle4 = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    circle4.setAttributeNS(null, "cx", "50");
+	circle4.setAttributeNS(null, "cy", "59");
+	circle4.setAttributeNS(null, "r", "8");
+    circle4.setAttributeNS(null, "fill", "#225EA8");
+    circle4.setAttributeNS(null, "stroke", "#0C2C84");
+	circle4.setAttributeNS(null, "stroke-linecap", "round");
+	circle4.setAttributeNS(null, "stroke-miterlimit", "6");
+	circle4.setAttributeNS(null, "class", "zoom-button");
+	//circle4.setAttributeNS(null, "onclick", "zoom(1.25)");
+
+	var rect1 = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    rect1.setAttributeNS(null, "x", "46");
+	rect1.setAttributeNS(null, "y", "39.5");
+	rect1.setAttributeNS(null, "width", "8");
+	rect1.setAttributeNS(null, "height", "3");
+    rect1.setAttributeNS(null, "fill", "#FFFFFF");
+    rect1.setAttributeNS(null, "pointer-events", "none");
+	rect1.setAttributeNS(null, "class", "plus-minus");
+	
+	var rect2 = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    rect2.setAttributeNS(null, "x", "48.5");
+	rect2.setAttributeNS(null, "y", "37");
+	rect2.setAttributeNS(null, "width", "3");
+	rect2.setAttributeNS(null, "height", "8");
+    rect2.setAttributeNS(null, "fill", "#FFFFFF");
+    rect2.setAttributeNS(null, "pointer-events", "none");
+	rect2.setAttributeNS(null, "class", "plus-minus");
+
+	var rect3 = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    rect3.setAttributeNS(null, "x", "46");
+	rect3.setAttributeNS(null, "y", "57.5");
+	rect3.setAttributeNS(null, "width", "8");
+	rect3.setAttributeNS(null, "height", "3");
+    rect3.setAttributeNS(null, "fill", "#FFFFFF");
+    rect3.setAttributeNS(null, "pointer-events", "none");
+	rect3.setAttributeNS(null, "class", "plus-minus");
+	
+    var plusG = document.createElementNS("http://www.w3.org/2000/svg", "g");
+    plusG.setAttributeNS(null, "id", "zoom_in");
+	
+    var minusG = document.createElementNS("http://www.w3.org/2000/svg", "g");
+    minusG.setAttributeNS(null, "id", "zoom_out");
+	
+	g.appendChild(circle1);
+	g.appendChild(path1);
+	g.appendChild(path2);
+	g.appendChild(path3);
+	g.appendChild(path4);
+	g.appendChild(circle2);
+	
+	plusG.appendChild(circle3);
+	plusG.appendChild(rect1);
+	plusG.appendChild(rect2);
+	
+	plusG.appendChild(circle4);
+	plusG.appendChild(rect3);
+
+	g.appendChild(plusG);
+	g.appendChild(minusG);
+	
+	return g;
+}
+
+function getZoomPanPath(fill, d, stroke, stroke_miterlimit, stroke_linecap, classAttr, id, onclick){
+	var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path.setAttributeNS(null, "fill", fill);
+    path.setAttributeNS(null, "d", d);
+	path.setAttributeNS(null, "stroke", stroke);
+	path.setAttributeNS(null, "stroke-miterlimit", stroke_miterlimit);
+    path.setAttributeNS(null, "stroke-linecap", stroke_linecap);
+	path.setAttributeNS(null, "class", classAttr);
+	path.setAttributeNS(null, "id", id);
+	//path.setAttributeNS(null, "onclick", onclick);
+
+	return path;
+}

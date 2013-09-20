@@ -48,7 +48,7 @@ $(function() {
 					
 					// Set size of the search results SVG
 					resultsParentSVG.setAttributeNS(null, "height", searchAreaHeight + "px");
-					resultsParentSVG.setAttributeNS(null, "width", serachAreaWidth + "px");
+					resultsParentSVG.setAttributeNS(null, "width", serachAreaWidth + "px");					
 					
 					//1) get screen height and width
 					//2) available area = height * width 
@@ -290,6 +290,16 @@ $(function() {
 						}
 						
 					}
+					resultsParentSVG.appendChild(getZoomPanControl());
+					
+					// Attach zoom and pan functionality
+					$("#zoom_in").click(function() {
+						
+					});
+					// Attach zoom and pan functionality
+					$("#zoom_out").click(function() {
+						
+					});
 				}
 				else{
 					$("#search-results").html("An error occurred.");
