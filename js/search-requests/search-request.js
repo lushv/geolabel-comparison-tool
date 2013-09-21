@@ -54,9 +54,6 @@ $(function() {
 					//2) available area = height * width 
 					//3) area per label = available area / number of datasets
 					//4) label scale = area per label / (250 * 250)
-					var x = 30,
-					y = 30,
-					xMargin = 30;
 					
 					var availableArea = searchAreaHeight * serachAreaWidth;
 					var areaPerLabel = parseInt(availableArea / JSONObject.dataset.length, 10);
@@ -65,6 +62,15 @@ $(function() {
 					var yOffset = xOffset;
 					var maxLabelsPerRow = parseInt(serachAreaWidth / xOffset, 10);
 					
+					// Margin from left side of results svg
+					var xMargin = 30;
+					// Initial x value, also a value to hold current GEO label position
+					var x = 30;
+					// Initail y value
+					var y = 30;
+					// Number of labels placed on the current row
+					var currentLabelsOnRow = 0;
+					
 					//var scale = 0.2,
 					//xOffset = 100,
 					//yOffset = 100,
@@ -72,6 +78,17 @@ $(function() {
 							
 					// Process all JSON datasets objects and build GEO label representations
 					for (var i = 0; i < JSONObject.dataset.length; i++) {
+						// Check current labels vertical position to make sure that the labels do not overlap with the zoom-pan control
+						if(y < 80){
+							// Increase the value of x until horisoanl label position does not overlap the zoom-pan control
+							// Increase number of labels that could be placed on a horisontal row
+							var zoomPanWidht = 80;
+							while (zoomPanWidht > x) {
+								x += xOffset;
+								currentLabelsOnRow += 1;
+							}
+						}
+						
 						var datasetID = JSONObject.dataset[i].datasetIdentifier;
 						var producerProfileAvailability = JSONObject.dataset[i].facets.producerProfile.availability;
 						var producerCommentsAvailability = JSONObject.dataset[i].facets.produerComments.availability;
@@ -283,10 +300,13 @@ $(function() {
 						labelSVG.appendChild(transformGroup);
 						resultsGroup.appendChild(labelSVG);
 						
+						// Increase x postion and number of added labels
 						x += xOffset;
-						if((i+1)%maxLabelsPerRow == 0){
+						currentLabelsOnRow += 1;
+						if(currentLabelsOnRow == maxLabelsPerRow){
 							y += yOffset;
 							x = xMargin;
+							currentLabelsOnRow = 0;
 						}
 						
 					}
