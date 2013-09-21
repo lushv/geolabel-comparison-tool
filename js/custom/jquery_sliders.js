@@ -349,7 +349,7 @@ var $slidersVal = [0, 0, 0, 0, 0, 0, 0, 0];
 
 function setLabelsVisibility(){
 	// Iterate through all GEO labels
-	var count = $("#results_svg").children().length;
+	var count = $("#zoom_pan_results_svg").children().length;
 	for (var i = 0; i < count; i++) {				
 		var totalMatch = getMatch($slidersVal[0], $("#producer_profile_" + i).attr("availability")) +
 					getMatch($slidersVal[1], $("#producer_comments_" + i).attr("availability")) +
