@@ -160,7 +160,7 @@ function filterProducer(){
 	datasetSource = $("#dataset-source-autocomplete").val();
 	if(datasetSource != ""){
 		// Iterate through all GEO labels
-		var count = $("#results_svg").children().length;
+		var count = $("#zoom_pan_results_svg").children().length;
 		for (var i = 0; i < count; i++) {
 			var availability = $("#producer_profile_" + i).attr("availability");
 			var producerName = $("#producer_profile_" + i).attr("producer_profile_name");
@@ -181,7 +181,7 @@ function filterProducer(){
 function resetProducer(){
 	if(datasetSource != ""){
 		// Iterate through all GEO labels
-		var count = $("#results_svg").children().length;
+		var count = $("#zoom_pan_results_svg").children().length;
 		for (var i = 0; i < count; i++) {
 			var availability = $("#producer_profile_" + i).attr("availability");
 			var producerName = $("#producer_profile_" + i).attr("producer_profile_name");
@@ -205,7 +205,7 @@ function filterComments(){
 	commentType = $("#comments_type_select").val();
 	if(commentType != ""){
 		// Iterate through all GEO labels
-		var count = $("#results_svg").children().length;
+		var count = $("#zoom_pan_results_svg").children().length;
 		for (var i = 0; i < count; i++) {
 			var availability = $("#producer_comments_" + i).attr("availability");
 			var supplementalInfo = $("#producer_comments_" + i).attr("supplemental_information");
@@ -249,7 +249,7 @@ function filterComments(){
 function resetComments(){
 	if(commentType != ""){
 		// Iterate through all GEO labels
-		var count = $("#results_svg").children().length;
+		var count = $("#zoom_pan_results_svg").children().length;
 		for (var i = 0; i < count; i++) {
 			var availability = $("#producer_comments_" + i).attr("availability");
 			var supplementalInfo = $("#producer_comments_" + i).attr("supplemental_information");
@@ -296,7 +296,7 @@ function filterLineage(){
 	processStepsMaxNum = $("#process-steps-input").val();
 	if(processStepsMaxNum != ""){
 		// Iterate through all GEO labels
-		var count = $("#results_svg").children().length;
+		var count = $("#zoom_pan_results_svg").children().length;
 		for (var i = 0; i < count; i++) {
 			var availability = $("#lineage_" + i).attr("availability");
 			var processSteps = $("#lineage_" + i).attr("process_step_count");
@@ -317,7 +317,7 @@ function filterLineage(){
 function resetLineage(){
 	if(processStepsMaxNum != ""){
 		// Iterate through all GEO labels
-		var count = $("#results_svg").children().length;
+		var count = $("#zoom_pan_results_svg").children().length;
 		for (var i = 0; i < count; i++) {
 			var availability = $("#lineage_" + i).attr("availability");
 			var processSteps = $("#lineage_" + i).attr("process_step_count");
@@ -342,7 +342,7 @@ function filterStandards(){
 	standardName = $("#standard-name-autocomplete").val();
 	if(standardName != ""){
 		// Iterate through all GEO labels
-		var count = $("#results_svg").children().length;
+		var count = $("#zoom_pan_results_svg").children().length;
 		for (var i = 0; i < count; i++) {
 			var availability = $("#standards_compliance_" + i).attr("availability");
 			var standardNameAttr = $("#standards_compliance_" + i).attr("standard_name");
@@ -363,7 +363,7 @@ function filterStandards(){
 function resetStandards(){
 	if(standardName != ""){
 		// Iterate through all GEO labels
-		var count = $("#results_svg").children().length;
+		var count = $("#zoom_pan_results_svg").children().length;
 		for (var i = 0; i < count; i++) {
 			var availability = $("#standards_compliance_" + i).attr("availability");
 			var standardNameAttr = $("#standards_compliance_" + i).attr("standard_name");
@@ -387,7 +387,7 @@ function filterQuality(){
 	scopeLevel = $("#scope-level-select").val();
 	if(scopeLevel != ""){
 		// Iterate through all GEO labels
-		var count = $("#results_svg").children().length;
+		var count = $("#zoom_pan_results_svg").children().length;
 		for (var i = 0; i < count; i++) {
 			var availability = $("#quality_information_" + i).attr("availability");
 			var scopeLevelAttr = $("#quality_information_" + i).attr("scope_level");
@@ -407,7 +407,7 @@ function filterQuality(){
 function resetQuality(){
 	if(scopeLevel != ""){
 		// Iterate through all GEO labels
-		var count = $("#results_svg").children().length;
+		var count = $("#zoom_pan_results_svg").children().length;
 		for (var i = 0; i < count; i++) {
 			var availability = $("#quality_information_" + i).attr("availability");
 			var scopeLevelAttr = $("#quality_information_" + i).attr("scope_level");
@@ -431,7 +431,7 @@ function filterFeedback(){
 	feedbackNumberMin = $("#minimum-feedbacks").val();
 	if(!(averageRatingMin == "" && feedbackNumberMin == "")){
 		// Iterate through all GEO labels
-		var count = $("#results_svg").children().length;
+		var count = $("#zoom_pan_results_svg").children().length;
 		for (var i = 0; i < count; i++) {
 			var availability = $("#user_feedback_" + i).attr("availability");
 			var averageRating = $("#user_feedback_" + i).attr("feedbacks_average_rating");
@@ -461,7 +461,7 @@ function filterFeedback(){
 function resetFeedback(){
 	if(!(averageRatingMin == "" && feedbackNumberMin == "")){
 		// Iterate through all GEO labels
-		var count = $("#results_svg").children().length;
+		var count = $("#zoom_pan_results_svg").children().length;
 		for (var i = 0; i < count; i++) {
 			var availability = $("#user_feedback_" + i).attr("availability");
 			var averageRating = $("#user_feedback_" + i).attr("feedbacks_average_rating");
@@ -496,7 +496,7 @@ function filterReviews(){
 	reviewsNumberMin = $("#minimum-reviews").val();
 	if(!(averageReviewRatingMin == "" && reviewsNumberMin == "")){
 		// Iterate through all GEO labels
-		var count = $("#results_svg").children().length;
+		var count = $("#zoom_pan_results_svg").children().length;
 		for (var i = 0; i < count; i++) {
 			var availability = $("#expert_review_" + i).attr("availability");
 			var averageRating = $("#expert_review_" + i).attr("expert_average_rating");
@@ -525,7 +525,7 @@ function filterReviews(){
 function resetReviews(){
 	if(!(averageReviewRatingMin == "" && reviewsNumberMin == "")){
 		// Iterate through all GEO labels
-		var count = $("#results_svg").children().length;
+		var count = $("#zoom_pan_results_svg").children().length;
 		for (var i = 0; i < count; i++) {
 			var availability = $("#expert_review_" + i).attr("availability");
 			var averageRating = $("#expert_review_" + i).attr("expert_average_rating");
@@ -559,7 +559,7 @@ function filterCitations(){
 	citationsNumberMin = $("#minimum-citations").val();
 	if(citationsNumberMin != ""){
 		// Iterate through all GEO labels
-		var count = $("#results_svg").children().length;
+		var count = $("#zoom_pan_results_svg").children().length;
 		for (var i = 0; i < count; i++) {
 			var availability = $("#citations_" + i).attr("availability");
 			var citationsNum = $("#citations_" + i).attr("citations_count");
@@ -580,7 +580,7 @@ function filterCitations(){
 function resetCitations(){
 	if(citationsNumberMin != ""){
 		// Iterate through all GEO labels
-		var count = $("#results_svg").children().length;
+		var count = $("#zoom_pan_results_svg").children().length;
 		for (var i = 0; i < count; i++) {
 			var availability = $("#citations_" + i).attr("availability");
 			var citationsNum = $("#citations_" + i).attr("citations_count");

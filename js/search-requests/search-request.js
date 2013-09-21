@@ -1,7 +1,7 @@
 $(function() {
   $("#search-btn").click(function() {
 	// First of all clear all the previous results
-	document.getElementById("results_svg").innerHTML = '';
+	document.getElementById("zoom_pan_results_svg").innerHTML = '';
 	
 	// validate and process form here
 	var keyword = $("input#keyword-autocomplete").val();
@@ -44,7 +44,7 @@ $(function() {
 					serachAreaWidth = windowWidth - 500;
 					
 					var resultsParentSVG = document.getElementById("results_svg");
-					
+					var resultsGroup = document.getElementById("zoom_pan_results_svg");
 					
 					// Set size of the search results SVG
 					resultsParentSVG.setAttributeNS(null, "height", searchAreaHeight + "px");
@@ -281,7 +281,7 @@ $(function() {
 						transformGroup.appendChild(citationsGroup);
 
 						labelSVG.appendChild(transformGroup);
-						resultsParentSVG.appendChild(labelSVG);
+						resultsGroup.appendChild(labelSVG);
 						
 						x += xOffset;
 						if((i+1)%maxLabelsPerRow == 0){
@@ -290,6 +290,7 @@ $(function() {
 						}
 						
 					}
+					/*
 					resultsParentSVG.appendChild(getZoomPanControl());
 					
 					// Attach zoom and pan functionality
@@ -300,6 +301,7 @@ $(function() {
 					$("#zoom_out").click(function() {
 						
 					});
+					*/
 				}
 				else{
 					$("#search-results").html("An error occurred.");
