@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:GetRecordByIdResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:ows="http://www.opengis.net/ows" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd">
+	<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dm="http://floraresearch.eu/sdi/services/7.0/dataModel/schema" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:ns15="http://quakeml.org/xmlns/quakeml/1.2" xmlns:ns3="http://www.geoviqua.org/QualityInformationModel/3.1" xmlns:ns4="http://quakeml.org/xmlns/bed/1.2" xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:wrs="http://www.opengis.net/cat/wrs/1.0">
+		<gmd:fileIdentifier>
+			<gco:CharacterString>a0073-88fd-11da-a88f-000d939bc5d8</gco:CharacterString>
+		</gmd:fileIdentifier>
+		<gmd:parentIdentifier>
+			<gco:CharacterString>UUID-28a86180-659d-4cbb-afa2-61961379c0de</gco:CharacterString>
+		</gmd:parentIdentifier>
+		<gmd:language>
+			<gmd:LanguageCode codeList="http://schemas.opengis.net/iso/19139/20070417/resources/Codelist/ML_gmxCodelists.xml#LanguageCode" codeListValue="eng">English</gmd:LanguageCode>
+		</gmd:language>
+		<gmd:dateStamp>
+			<gco:DateTime>2011-03-01T01:00:00+01:00</gco:DateTime>
+		</gmd:dateStamp>
+		<gmd:metadataStandardName>
+			<gco:CharacterString>x-urn:mdweb:schema:ISO19115:GeoNetCab:ThematicDataCatalog</gco:CharacterString>
+		</gmd:metadataStandardName>
+		<gmd:metadataStandardVersion>
+			<gco:CharacterString>2012.01</gco:CharacterString>
+		</gmd:metadataStandardVersion>
+		<gmd:identificationInfo>
+			<gmd:MD_DataIdentification>
+				<gmd:citation>
+					<gmd:CI_Citation>
+						<gmd:title>
+							<gco:CharacterString>JRC - DESERT Action</gco:CharacterString>
+						</gmd:title>
+					</gmd:CI_Citation>
+				</gmd:citation>
+				<gmd:abstract>
+					<gco:CharacterString>Drought is one of the major weather-related disasters worldwide that may occur in all climatic zones. Persisting over months or years, it can affect large areas and may have serious environmental, social and economic impacts. A significant decrease in agricultural production, forest fires and inadequate municipal water supplies are among the immediate and obvious effects of drought. Land degradation and desertification are, however, most severe long-term effects of repeated drought events. Land degradation and desertification as a result of prolonged droughts in combination with socio-economic drivers and societal vulnerability are particularly evident in drylands. The global importance of the problem is highlighted by the fact that drylands cover about 41% of the Earth’s surface and that they are home to about 1/3 of the world population. The action DESERT is in particultar active in the following fields:o       Development of a European Drought Observatory as a contribution to a global drought monitoring system.o       Evaluation and development of benchmarks and indicators for the assessment of drought and desertification processes and their impacts.o       Development of a global Early Warning System (EWS) for desertification.o       Development of the new World Atlas of DesertificationUnder the desertification part a Digital Atlas is available, allowing the display of products:- desertification maps- precipitation from archive- climate variable- fAPAR- meteorological Drought- earthquake risksThe drought part proposes 'real time' data access and a mapping utility.Real time datas available:- Precipitation- Soil Moisture          - Soil Moisture Anomaly- Forecast- Anomaly Forecast      - NDWI- fAPARThe mapserver application allows users to plot a wide range of parameter over a map and to print it.- Soil moisture- Precipitation- Remote sensing indicator- Drought-related products</gco:CharacterString>
+				</gmd:abstract>
+				<gmd:pointOfContact>
+					<gmd:CI_ResponsibleParty>
+						<gmd:contactInfo>
+							<gmd:CI_Contact>
+								<gmd:phone>
+									<gmd:CI_Telephone />
+								</gmd:phone>
+								<gmd:address>
+									<gmd:CI_Address />
+								</gmd:address>
+							</gmd:CI_Contact>
+						</gmd:contactInfo>
+					</gmd:CI_ResponsibleParty>
+				</gmd:pointOfContact>
+				<gmd:graphicOverview>
+					<gmd:MD_BrowseGraphic />
+				</gmd:graphicOverview>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>Drought</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>desertification</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>Mapping</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>precipitation</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>climate</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>fAPAR</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>earthquake</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>NDVI</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>Soil moisture</gco:CharacterString>
+						</gmd:keyword>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>feedRSSAlert</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>catalogRegistryMetadataCollection</gco:CharacterString>
+						</gmd:keyword>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>Disasters</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>Energy</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>Climate</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>Weather</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>Water</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>Agriculture</gco:CharacterString>
+						</gmd:keyword>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:extent>
+					<gmd:EX_Extent>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicBoundingBox>
+								<gmd:westBoundLongitude>
+									<gco:Decimal>-180.0</gco:Decimal>
+								</gmd:westBoundLongitude>
+								<gmd:eastBoundLongitude>
+									<gco:Decimal>180.0</gco:Decimal>
+								</gmd:eastBoundLongitude>
+								<gmd:southBoundLatitude>
+									<gco:Decimal>-90.0</gco:Decimal>
+								</gmd:southBoundLatitude>
+								<gmd:northBoundLatitude>
+									<gco:Decimal>90.0</gco:Decimal>
+								</gmd:northBoundLatitude>
+							</gmd:EX_GeographicBoundingBox>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier />
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+					</gmd:EX_Extent>
+				</gmd:extent>
+			</gmd:MD_DataIdentification>
+		</gmd:identificationInfo>
+		<gmd:identificationInfo>
+			<srv:SV_ServiceIdentification>
+				<gmd:citation />
+				<gmd:abstract />
+				<srv:serviceType />
+				<srv:couplingType />
+				<srv:containsOperations />
+			</srv:SV_ServiceIdentification>
+		</gmd:identificationInfo>
+		<gmd:distributionInfo>
+			<gmd:MD_Distribution>
+				<gmd:transferOptions>
+					<gmd:MD_DigitalTransferOptions>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL />
+								</gmd:linkage>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+					</gmd:MD_DigitalTransferOptions>
+				</gmd:transferOptions>
+			</gmd:MD_Distribution>
+		</gmd:distributionInfo>
+	</gmd:MD_Metadata>
+</csw:GetRecordByIdResponse>

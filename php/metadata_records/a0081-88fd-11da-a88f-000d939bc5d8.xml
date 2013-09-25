@@ -1,0 +1,1404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gvq:GVQ_Metadata xmlns:updated19115="http://www.geoviqua.org/19115_updates" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gvq="http://www.geoviqua.org/QualityInformationModel/4.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmd19157="http://www.geoviqua.org/gmd19157" xmlns:un="http://www.uncertml.org/2.0" xsi:schemaLocation="http://www.isotc211.org/2005/gmx http://schemas.opengis.net/iso/19139/20070417/gmx/gmx.xsd  http://www.geoviqua.org/QualityInformationModel/4.0 http://schemas.geoviqua.org/GVQ/4.0/GeoViQua_PQM_UQM.xsd http://www.uncertml.org/2.0 http://www.uncertml.org/uncertml.xsd" id="dataset_MD">
+		<gmd:fileIdentifier>
+			<gco:CharacterString>a0083-88fd-11da-a88f-000d939bc5d8</gco:CharacterString>
+		</gmd:fileIdentifier>
+		<gmd:parentIdentifier>
+			<gco:CharacterString>UUID-b2d227da-02ea-4711-a49f-59f707a4e300</gco:CharacterString>
+		</gmd:parentIdentifier>
+		<gmd:language>
+			<gco:CharacterString>eng</gco:CharacterString>
+		</gmd:language>
+		<gmd:characterSet>
+			<gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+		</gmd:characterSet>
+		<gmd:hierarchyLevel>
+			<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+		</gmd:hierarchyLevel>
+		<gmd:contact>
+			<gmd:CI_ResponsibleParty>
+				<gmd:organisationName>
+					<gco:CharacterString>GCMD</gco:CharacterString>
+				</gmd:organisationName>
+				<gmd:role>
+					<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+				</gmd:role>
+			</gmd:CI_ResponsibleParty>
+		</gmd:contact>
+		<gmd:dateStamp gco:nilReason="missing" />
+		<gmd:metadataStandardName>
+			<gco:CharacterString>CEOS IDN DIF</gco:CharacterString>
+		</gmd:metadataStandardName>
+		<gmd:metadataStandardVersion>
+			<gco:CharacterString>VERSION 9.7</gco:CharacterString>
+		</gmd:metadataStandardVersion>
+		<gmd:identificationInfo>
+			<gmd:MD_DataIdentification>
+				<gmd:citation>
+					<gmd:CI_Citation>
+						<gmd:title>
+							<gco:CharacterString>AVNIR Land Cover Classification (EORC-019)</gco:CharacterString>
+						</gmd:title>
+						<gmd:date>
+							<gmd:CI_Date>
+								<gmd:date gco:nilReason="unknown" />
+								<gmd:dateType>
+									<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+								</gmd:dateType>
+							</gmd:CI_Date>
+						</gmd:date>
+						<gmd:citedResponsibleParty>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>JAXA EORC USER SERVICES,</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:contactInfo>
+									<gmd:CI_Contact>
+										<gmd:phone>
+											<gmd:CI_Telephone>
+												<gmd:voice>
+													<gco:CharacterString>+81-3-6220-1306</gco:CharacterString>
+												</gmd:voice>
+												<gmd:facsimile>
+													<gco:CharacterString>+81-3-6221-0205</gco:CharacterString>
+												</gmd:facsimile>
+											</gmd:CI_Telephone>
+										</gmd:phone>
+										<gmd:address>
+											<gmd:CI_Address>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>Japan Aerospace Exploration Agency (JAXA)</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>Earth Observation Research Center</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>Harumi Island Triton Square, Office Tower X 21F</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>1-8-10</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:city>
+													<gco:CharacterString>Harumi</gco:CharacterString>
+												</gmd:city>
+												<gmd:administrativeArea>
+													<gco:CharacterString>Chuo-ku</gco:CharacterString>
+												</gmd:administrativeArea>
+												<gmd:postalCode>
+													<gco:CharacterString>104-6021</gco:CharacterString>
+												</gmd:postalCode>
+												<gmd:country>
+													<gco:CharacterString>JAPAN</gco:CharacterString>
+												</gmd:country>
+												<gmd:electronicMailAddress>
+													<gco:CharacterString>orderdesk@eorc.jaxa.jp</gco:CharacterString>
+												</gmd:electronicMailAddress>
+												<gmd:electronicMailAddress>
+													<gco:CharacterString>comments@eorc.jaxa.jp</gco:CharacterString>
+												</gmd:electronicMailAddress>
+											</gmd:CI_Address>
+										</gmd:address>
+									</gmd:CI_Contact>
+								</gmd:contactInfo>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="processor">processor</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:citedResponsibleParty>
+						<gmd:citedResponsibleParty>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>NASDA</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:citedResponsibleParty>
+					</gmd:CI_Citation>
+				</gmd:citation>
+				<gmd:abstract>
+					<gco:CharacterString>This CD-ROM contains ADEOS AVNIR images around KANTO and KANSAI. The            AVNIR data will be useful for monitoring such phenomena as            disasters,resource exploration, distribution of plants,land            use,etc. As an example,this CD-ROM contains land use classification            maps.  There are two CD-ROMs,Vol. 1 contains observed data and image            data of the KANTO area, Vol. 2 contains observed data and image data            of the KANSAI area.	  [ This document was provided by NASA's Global Change Master Directory.       For more information on the source of this metadata please visit      http://gcmd.nasa.gov/r/geoss/[GCMD]ND01052 ]</gco:CharacterString>
+				</gmd:abstract>
+				<gmd:pointOfContact>
+					<gmd:CI_ResponsibleParty>
+						<gmd:individualName>
+							<gco:CharacterString>JAXA EORC USER SERVICES,</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:organisationName>
+							<gco:CharacterString>JP/JAXA/EORC &gt; Earth Observation Research Center, Japan Aerospace Exploration Agency, Japan</gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:positionName>
+							<gco:CharacterString>DATA CENTER CONTACT</gco:CharacterString>
+						</gmd:positionName>
+						<gmd:contactInfo>
+							<gmd:CI_Contact>
+								<gmd:phone>
+									<gmd:CI_Telephone>
+										<gmd:voice>
+											<gco:CharacterString>+81-3-6220-1306</gco:CharacterString>
+										</gmd:voice>
+										<gmd:facsimile>
+											<gco:CharacterString>+81-3-6221-0205</gco:CharacterString>
+										</gmd:facsimile>
+									</gmd:CI_Telephone>
+								</gmd:phone>
+								<gmd:address>
+									<gmd:CI_Address>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>Japan Aerospace Exploration Agency (JAXA)</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>Earth Observation Research Center</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>Harumi Island Triton Square, Office Tower X 21F</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>1-8-10</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:city>
+											<gco:CharacterString>Harumi</gco:CharacterString>
+										</gmd:city>
+										<gmd:administrativeArea>
+											<gco:CharacterString>Chuo-ku</gco:CharacterString>
+										</gmd:administrativeArea>
+										<gmd:postalCode>
+											<gco:CharacterString>104-6021</gco:CharacterString>
+										</gmd:postalCode>
+										<gmd:country>
+											<gco:CharacterString>JAPAN</gco:CharacterString>
+										</gmd:country>
+										<gmd:electronicMailAddress>
+											<gco:CharacterString>orderdesk@eorc.jaxa.jp</gco:CharacterString>
+										</gmd:electronicMailAddress>
+										<gmd:electronicMailAddress>
+											<gco:CharacterString>comments@eorc.jaxa.jp</gco:CharacterString>
+										</gmd:electronicMailAddress>
+									</gmd:CI_Address>
+								</gmd:address>
+								<gmd:onlineResource>
+									<gmd:CI_OnlineResource>
+										<gmd:linkage>
+											<gmd:URL>http://www.eorc.jaxa.jp/en/index.html</gmd:URL>
+										</gmd:linkage>
+									</gmd:CI_OnlineResource>
+								</gmd:onlineResource>
+							</gmd:CI_Contact>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="resourceProvider">resourceProvider</gmd:CI_RoleCode>
+						</gmd:role>
+					</gmd:CI_ResponsibleParty>
+				</gmd:pointOfContact>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; LAND SURFACE &gt; LAND USE/LAND COVER &gt; LAND USE CLASSES</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; SPECTRAL/ENGINEERING &gt; INFRARED WAVELENGTHS &gt; INFRARED IMAGERY</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; SPECTRAL/ENGINEERING &gt; INFRARED WAVELENGTHS &gt; REFLECTED INFRARED</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; SPECTRAL/ENGINEERING &gt; INFRARED WAVELENGTHS &gt; THERMAL INFRARED</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; SPECTRAL/ENGINEERING &gt; VISIBLE WAVELENGTHS &gt; VISIBLE IMAGERY</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>Science Keywords</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2008-02-05</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>ADEOS</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>AVNIR</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>JAPAN</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>NASDA</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EOC</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EORC</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EORC-019</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EORC-020</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>KANTO</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>KANSAI</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>FOREST</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>GEOLOGY</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>IMAGERY</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>LAND USE</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>MAPPING</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>MULTISPECTRAL</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>REMOTE SENSING</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>SATELLITE</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>SEA ICE</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>SEA SURFACE TEMPERATURE</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>VEGETATION</gco:CharacterString>
+						</gmd:keyword>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>AVNIR &gt; Advanced Visible and Near-Infrared Radiometer</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>Instruments</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2009-06-10</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>ADEOS-I &gt; Advanced Earth Observing Satellite-I</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>Platforms</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2009-06-10</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>JAPAN/JAXA</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>CEOS</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>IDN Nodes</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2007-04-01</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>GEOGRAPHIC REGION &gt; GLOBAL LAND</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>Locations</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2009-12-22</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:language gco:nilReason="missing">
+					<gco:CharacterString />
+				</gmd:language>
+				<gmd:characterSet>
+					<gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+				</gmd:characterSet>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>observingSystemSensorNetwork</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>imagery/base maps/earth cover</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:extent>
+					<gmd:EX_Extent>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicBoundingBox>
+								<gmd:westBoundLongitude>
+									<gco:Decimal>-180.0</gco:Decimal>
+								</gmd:westBoundLongitude>
+								<gmd:eastBoundLongitude>
+									<gco:Decimal>180.0</gco:Decimal>
+								</gmd:eastBoundLongitude>
+								<gmd:southBoundLatitude>
+									<gco:Decimal>-90.0</gco:Decimal>
+								</gmd:southBoundLatitude>
+								<gmd:northBoundLatitude>
+									<gco:Decimal>90.0</gco:Decimal>
+								</gmd:northBoundLatitude>
+							</gmd:EX_GeographicBoundingBox>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>GEOGRAPHIC REGION &gt; GLOBAL LAND</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:temporalElement>
+							<gmd:EX_TemporalExtent>
+								<gmd:extent>
+									<gml:TimePeriod gml:id="d7121e229">
+										<gml:begin>
+											<gml:TimeInstant gml:id="d7121e231">
+												<gml:timePosition>1996-08-17</gml:timePosition>
+											</gml:TimeInstant>
+										</gml:begin>
+										<gml:end>
+											<gml:TimeInstant gml:id="d7121e234">
+												<gml:timePosition>1997-06-30</gml:timePosition>
+											</gml:TimeInstant>
+										</gml:end>
+									</gml:TimePeriod>
+								</gmd:extent>
+							</gmd:EX_TemporalExtent>
+						</gmd:temporalElement>
+					</gmd:EX_Extent>
+				</gmd:extent>
+			</gmd:MD_DataIdentification>
+		</gmd:identificationInfo>
+		<gmd:identificationInfo>
+			<srv:SV_ServiceIdentification>
+				<gmd:citation />
+				<gmd:abstract />
+				<srv:serviceType />
+				<srv:couplingType />
+				<srv:containsOperations />
+			</srv:SV_ServiceIdentification>
+		</gmd:identificationInfo>
+		<gmd:distributionInfo>
+			<gmd:MD_Distribution>
+				<gmd:distributionFormat>
+					<gmd:MD_Format>
+						<gmd:name gco:nilReason="missing">
+							<gco:CharacterString />
+						</gmd:name>
+						<gmd:version gco:nilReason="missing">
+							<gco:CharacterString />
+						</gmd:version>
+					</gmd:MD_Format>
+				</gmd:distributionFormat>
+				<gmd:distributor>
+					<gmd:MD_Distributor>
+						<gmd:distributorContact>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>JAXA EORC USER SERVICES,</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:organisationName>
+									<gco:CharacterString>JP/JAXA/EORC &gt; Earth Observation Research Center, Japan Aerospace Exploration Agency, Japan</gco:CharacterString>
+								</gmd:organisationName>
+								<gmd:positionName>
+									<gco:CharacterString>DATA CENTER CONTACT</gco:CharacterString>
+								</gmd:positionName>
+								<gmd:contactInfo>
+									<gmd:CI_Contact>
+										<gmd:phone>
+											<gmd:CI_Telephone>
+												<gmd:voice>
+													<gco:CharacterString>+81-3-6220-1306</gco:CharacterString>
+												</gmd:voice>
+												<gmd:facsimile>
+													<gco:CharacterString>+81-3-6221-0205</gco:CharacterString>
+												</gmd:facsimile>
+											</gmd:CI_Telephone>
+										</gmd:phone>
+										<gmd:address>
+											<gmd:CI_Address>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>Japan Aerospace Exploration Agency (JAXA)</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>Earth Observation Research Center</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>Harumi Island Triton Square, Office Tower X 21F</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>1-8-10</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:city>
+													<gco:CharacterString>Harumi</gco:CharacterString>
+												</gmd:city>
+												<gmd:administrativeArea>
+													<gco:CharacterString>Chuo-ku</gco:CharacterString>
+												</gmd:administrativeArea>
+												<gmd:postalCode>
+													<gco:CharacterString>104-6021</gco:CharacterString>
+												</gmd:postalCode>
+												<gmd:country>
+													<gco:CharacterString>JAPAN</gco:CharacterString>
+												</gmd:country>
+												<gmd:electronicMailAddress>
+													<gco:CharacterString>orderdesk@eorc.jaxa.jp</gco:CharacterString>
+												</gmd:electronicMailAddress>
+												<gmd:electronicMailAddress>
+													<gco:CharacterString>comments@eorc.jaxa.jp</gco:CharacterString>
+												</gmd:electronicMailAddress>
+											</gmd:CI_Address>
+										</gmd:address>
+										<gmd:onlineResource>
+											<gmd:CI_OnlineResource>
+												<gmd:linkage>
+													<gmd:URL>http://www.eorc.jaxa.jp/en/index.html</gmd:URL>
+												</gmd:linkage>
+											</gmd:CI_OnlineResource>
+										</gmd:onlineResource>
+									</gmd:CI_Contact>
+								</gmd:contactInfo>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor">distributor</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:distributorContact>
+					</gmd:MD_Distributor>
+				</gmd:distributor>
+				<gmd:transferOptions>
+					<gmd:MD_DigitalTransferOptions>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>http://kuroshio.eorc.jaxa.jp/ADEOS/index.html</gmd:URL>
+								</gmd:linkage>
+								<gmd:protocol>
+									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+								</gmd:protocol>
+								<gmd:name>
+									<gco:CharacterString>VIEW PROJECT HOME PAGE</gco:CharacterString>
+								</gmd:name>
+								<gmd:description>
+									<gco:CharacterString>ADEOS Project.</gco:CharacterString>
+								</gmd:description>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+					</gmd:MD_DigitalTransferOptions>
+				</gmd:transferOptions>
+			</gmd:MD_Distribution>
+		</gmd:distributionInfo>
+		<gmd:dataQualityInfo>
+			<gmd:DQ_DataQuality>
+				<gmd:scope>
+					<gmd:DQ_Scope>
+						<gmd:level>
+							<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+						</gmd:level>
+					</gmd:DQ_Scope>
+				</gmd:scope>
+				<gmd:lineage>
+					<gmd:LI_Lineage>
+						<gmd:statement gco:nilReason="missing">
+							<gco:CharacterString />
+						</gmd:statement>
+					</gmd:LI_Lineage>
+				</gmd:lineage>
+			</gmd:DQ_DataQuality>
+		</gmd:dataQualityInfo>
+		<gmd:metadataConstraints>
+			<gmd:MD_LegalConstraints>
+				<gmd:useLimitation>
+					<gco:CharacterString>This metadata record is publicly available.</gco:CharacterString>
+				</gmd:useLimitation>
+			</gmd:MD_LegalConstraints>
+		</gmd:metadataConstraints>
+		<gmd:metadataMaintenance>
+			<gmd:MD_MaintenanceInformation>
+				<gmd:maintenanceAndUpdateFrequency>
+					<gmd:MD_MaintenanceFrequencyCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded">asNeeded</gmd:MD_MaintenanceFrequencyCode>
+				</gmd:maintenanceAndUpdateFrequency>
+			</gmd:MD_MaintenanceInformation>
+		</gmd:metadataMaintenance>
+	<gvq:dataQualityInfo>
+		<gmd19157:DQ_DataQuality>
+			<gmd19157:scope>
+				<gmd19157:DQ_Scope id="datasetScope">
+					<gmd19157:level>
+						<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+					</gmd19157:level>
+					<gmd19157:extent xlink:href="#datasetExtent"/>
+				</gmd19157:DQ_Scope>
+			</gmd19157:scope>
+			<gmd19157:report>
+				<gmd19157:DQ_QuantitativeAttributeAccuracy id="CrossValidationAccuraccy">
+					<gmd19157:dateTime>
+						<gco:DateTime>2004-07-02T00:00:00.0</gco:DateTime>
+					</gmd19157:dateTime>
+					<gmd19157:evaluation>
+						<gvq:GVQ_SampleBasedInspection>
+							<gmd19157:evaluationMethodDescription>
+								<gco:CharacterString>Cross-validation and calculation of Pearson Coefficient (R2) and Root Mean Square Error (RMSE) with 40% of the ground meteorological stations (global quality indicators)</gco:CharacterString>
+							</gmd19157:evaluationMethodDescription>
+							<gmd19157:evaluationProcedure xlink:href="#TAC_2007_Ninyerola_et_al"/>
+							<gmd19157:referenceDoc xlink:href="#TAC_2007_Ninyerola_et_al"/>
+							<gmd19157:evaluationMethodType>
+								<!-- ·$· QUESTION: The evaluation method type we are not sure if directInternal or directExternal should be used because we do not like any of them. -->
+								<!-- ·$· ANSWER: I understand - because you have divided the original dataset for cross-validation, these aren’t genuinely independent data, but nor are they completely about internal consistency. Might have to ask for some other opinions on this one…. -->
+								<gmd19157:DQ_EvaluationMethodTypeCode codeList="http://schemas.geoviqua.org/GVQ/4.0/resources/Codelist/gvqCodelists.xml#DQ_EvaluationMethodTypeCode" codeListValue="directInternal">directInternal</gmd19157:DQ_EvaluationMethodTypeCode>
+							</gmd19157:evaluationMethodType>
+							<gmd19157:samplingScheme>
+								<gco:CharacterString>Random sampling into two lots</gco:CharacterString>
+							</gmd19157:samplingScheme>
+							<gmd19157:lotDescription>
+								<gco:CharacterString>Subsets of 40% and 60% of the population</gco:CharacterString>
+							</gmd19157:lotDescription>
+							<gmd19157:samplingRatio>
+								<gco:CharacterString>100% of each lot is inspected</gco:CharacterString>
+							</gmd19157:samplingRatio>
+						</gvq:GVQ_SampleBasedInspection>
+					</gmd19157:evaluation>
+					<gmd19157:result>
+						<gmd19157:DQ_QuantitativeResult>
+							<gmd19157:resultScope xlink:href="#datasetScope"/>
+							<gmd19157:valueType>
+								<gco:RecordType xlink:href="http://www.uncertml.org/statistics/correlation">Pearson Coefficient (R2)</gco:RecordType>
+							</gmd19157:valueType>
+							<gmd19157:valueUnit xlink:href="urn:ogc:def:nil:OGC::inapplicable"/>
+							<gmd19157:value>
+								<gco:Record>
+									<un:Correlation>
+										<un:values>0.9</un:values>
+									</un:Correlation>
+								</gco:Record>
+							</gmd19157:value>
+						</gmd19157:DQ_QuantitativeResult>
+					</gmd19157:result>
+					<gmd19157:result>
+						<gmd19157:DQ_QuantitativeResult>
+							<gmd19157:resultScope xlink:href="#datasetScope"/>
+							<gmd19157:valueType>
+								<gco:RecordType xlink:href="http://www.uncertml.org/statistics/normal">Distribution of errors</gco:RecordType>
+							</gmd19157:valueType>
+							<gmd19157:valueUnit xlink:href="urn:ogc:def:uom:OGC::degC"/>
+							<gmd19157:value>
+								<gco:Record>
+									<un:NormalDistribution>
+										<!-- ··$$·· actual values in DEGREES (no tenths of deg) are needed! -->
+										<un:mean>0</un:mean>
+										<un:variance>16</un:variance>
+									</un:NormalDistribution>
+								</gco:Record>
+							</gmd19157:value>
+						</gmd19157:DQ_QuantitativeResult>
+					</gmd19157:result>
+					<gmd19157:result>
+						<gmd19157:DQ_QuantitativeResult>
+							<gmd19157:resultScope xlink:href="#datasetScope"/>
+							<gmd19157:valueType>
+								<!-- ··$$·· urn for RMSE is needed!!! We will describe here the new link to http://Qthesaurus.geoviqua.org-->
+								<gco:RecordType xlink:href="http://www.uncertml.org/statistics/variance">Root Mean Square Error (RMSE)</gco:RecordType>
+							</gmd19157:valueType>
+							<gmd19157:valueUnit xlink:href="urn:ogc:def:uom:OGC::degC"/>
+							<gmd19157:value>
+								<gco:Record>0.8</gco:Record>
+							</gmd19157:value>
+						</gmd19157:DQ_QuantitativeResult>
+					</gmd19157:result>
+				</gmd19157:DQ_QuantitativeAttributeAccuracy>
+			</gmd19157:report>
+			<gmd19157:report>
+				<gmd19157:DQ_QuantitativeAttributeAccuracy id="ResidualAccuracy">
+					<gmd19157:evaluation>
+						<gvq:GVQ_FullInspection>
+							<gmd19157:evaluationMethodDescription>
+								<gco:CharacterString>Interpolation of the residuals from the multiple regression using 100% of the ground meteorological stations.</gco:CharacterString>
+							</gmd19157:evaluationMethodDescription>
+							<gmd19157:evaluationProcedure xlink:href="#TAC_2007_Ninyerola_et_al"/>
+							<gmd19157:referenceDoc xlink:href="#TAC_2007_Ninyerola_et_al"/>
+							<gmd19157:evaluationMethodType>
+								<gmd19157:DQ_EvaluationMethodTypeCode codeList="http://schemas.geoviqua.org/GVQ/4.0/resources/Codelist/gvqCodelists.xml#DQ_EvaluationMethodTypeCode" codeListValue="directInternal">directInternal</gmd19157:DQ_EvaluationMethodTypeCode>
+							</gmd19157:evaluationMethodType>
+						</gvq:GVQ_FullInspection>
+					</gmd19157:evaluation>
+					<gmd19157:result>
+						<gmd19157:QE_CoverageResult>
+							<gmd19157:resultScope xlink:href="#datasetScope"/>
+							<gmd19157:spatialRepresentationType>
+								<gmd:MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="grid">grid</gmd:MD_SpatialRepresentationTypeCode>
+							</gmd19157:spatialRepresentationType>
+							<gmd19157:resultFile xlink:href="#mtri2an1ib_MMZ_file"/>
+							<gmd19157:resultSpatialRepresentation xlink:href="#dataset_SR"/>
+							<gmd19157:resultContentDescription xlink:href="#mtri2an1ib_mean_temp_residuals"/>
+							<gmd19157:resultFormat xlink:href="#datasetFormat"/>
+						</gmd19157:QE_CoverageResult>
+					</gmd19157:result>
+				</gmd19157:DQ_QuantitativeAttributeAccuracy>
+			</gmd19157:report>
+			<gmd19157:report>
+				<gmd19157:DQ_QuantitativeAttributeAccuracy id="SensibilityAnalysis">
+					<gmd19157:evaluation>
+						<gvq:GVQ_SampleBasedInspection>
+							<gmd19157:evaluationMethodDescription>
+								<gco:CharacterString>Standard deviation of the inter-model variability.</gco:CharacterString>
+							</gmd19157:evaluationMethodDescription>
+							<gmd19157:evaluationProcedure xlink:href="#TAC_2007_Ninyerola_et_al"/>
+							<gmd19157:referenceDoc xlink:href="#TAC_2007_Ninyerola_et_al"/>
+							<gmd19157:evaluationMethodType>
+								<gmd19157:DQ_EvaluationMethodTypeCode codeList="http://schemas.geoviqua.org/GVQ/4.0/resources/Codelist/gvqCodelists.xml#DQ_EvaluationMethodTypeCode" codeListValue="directInternal">directInternal</gmd19157:DQ_EvaluationMethodTypeCode>
+							</gmd19157:evaluationMethodType>
+							<gmd19157:samplingScheme>
+								<gco:CharacterString>Bootstrap sampling techniques are used to obtain 20 different models that are compared to obtain the inter-model variability.</gco:CharacterString>
+							</gmd19157:samplingScheme>
+							<gmd19157:lotDescription>
+								<gco:CharacterString>··$$··</gco:CharacterString>
+							</gmd19157:lotDescription>
+							<gmd19157:samplingRatio>
+								<gco:CharacterString>··$$··</gco:CharacterString>
+							</gmd19157:samplingRatio>
+						</gvq:GVQ_SampleBasedInspection>
+					</gmd19157:evaluation>
+					<gmd19157:result>
+						<gmd19157:QE_CoverageResult>
+							<gmd19157:resultScope xlink:href="#datasetScope"/>
+							<gmd19157:spatialRepresentationType>
+								<gmd:MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="grid">grid</gmd:MD_SpatialRepresentationTypeCode>
+							</gmd19157:spatialRepresentationType>
+							<gmd19157:resultFile xlink:href="#mtri2an1ib_MMZ_file"/>
+							<gmd19157:resultSpatialRepresentation xlink:href="#dataset_SR"/>
+							<gmd19157:resultContentDescription xlink:href="#mtri2an1ib_mean_temp_intermodel_variability"/>
+							<gmd19157:resultFormat xlink:href="#datasetFormat"/>
+						</gmd19157:QE_CoverageResult>
+					</gmd19157:result>
+				</gmd19157:DQ_QuantitativeAttributeAccuracy>
+			</gmd19157:report>
+			<gmd19157:report>
+				<gvq:GVQ_Traceability>
+					<gmd19157:evaluation gco:nilReason="definedElsewhere"/>
+					<gmd19157:result gco:nilReason="definedElsewhere"/>
+					<gmd19157:relatedElement xlink:href="#CrossValidationAccuraccy"/>
+					<gvq:trace>
+						<gmd19157:LI_Lineage>
+							<gmd19157:processStep>
+								<gmd19157:LI_ProcessStep>
+									<gmd19157:description>
+										<gco:CharacterString>Empirical selection of the best proportion of the ground meteorological stations to be used to fit and to test the regression model (e.g. 60%-40%, 70%-30%,...)</gco:CharacterString>
+									</gmd19157:description>
+									<gmd19157:source xlink:href="#MeteorologicalStations"/>
+								</gmd19157:LI_ProcessStep>
+							</gmd19157:processStep>
+							<gmd19157:processStep>
+								<gmd19157:LI_ProcessStep>
+									<gmd19157:description>
+										<gco:CharacterString>Random sampling (without constrains) over meteorological stations to assign each one of them to the fit (60%) and test (40%) sets.</gco:CharacterString>
+									</gmd19157:description>
+									<gmd19157:source xlink:href="#MeteorologicalStations"/>
+								</gmd19157:LI_ProcessStep>
+							</gmd19157:processStep>
+							<gmd19157:processStep>
+								<gmd19157:LI_ProcessStep>
+									<gmd19157:description>
+										<gco:CharacterString>Enrichment of the test set of ground meteorological stations to include dataset values (predicted by linear regression) using binomial interpolation</gco:CharacterString>
+									</gmd19157:description>
+									<gmd19157:source xlink:href="#MeteorologicalStations"/>
+								</gmd19157:LI_ProcessStep>
+							</gmd19157:processStep>
+							<gmd19157:processStep>
+								<gmd19157:LI_ProcessStep>
+									<gmd19157:description>
+										<gco:CharacterString>Pearson coefficient and Root Mean Squared Error computation using dataset and observed values for each ground meteorological stations on the test set</gco:CharacterString>
+									</gmd19157:description>
+								</gmd19157:LI_ProcessStep>
+							</gmd19157:processStep>
+						</gmd19157:LI_Lineage>
+					</gvq:trace>
+				</gvq:GVQ_Traceability>
+			</gmd19157:report>
+			<gmd19157:report>
+				<gvq:GVQ_Traceability>
+					<gmd19157:evaluation gco:nilReason="definedElsewhere"/>
+					<gmd19157:result gco:nilReason="definedElsewhere"/>
+					<gmd19157:relatedElement xlink:href="#ResidualAccuracy"/>
+					<gvq:trace>
+						<gmd19157:LI_Lineage>
+							<gmd19157:processStep>
+								<gmd19157:LI_ProcessStep>
+									<gmd19157:description>
+										<gco:CharacterString>Apply multiple regression techniques to the 100% of the meteorological stations.</gco:CharacterString>
+									</gmd19157:description>
+									<gmd19157:source xlink:href="#MeteorologicalStations"/>
+								</gmd19157:LI_ProcessStep>
+							</gmd19157:processStep>
+							<gmd19157:processStep>
+								<gmd19157:LI_ProcessStep>
+									<gmd19157:description>
+										<gco:CharacterString>Regression residuals for each meteorological station are computed</gco:CharacterString>
+									</gmd19157:description>
+								</gmd19157:LI_ProcessStep>
+							</gmd19157:processStep>
+							<gmd19157:processStep>
+								<gmd19157:LI_ProcessStep>
+									<gmd19157:description>
+										<gco:CharacterString>Residual spatial interpolation is performed</gco:CharacterString>
+									</gmd19157:description>
+								</gmd19157:LI_ProcessStep>
+							</gmd19157:processStep>
+						</gmd19157:LI_Lineage>
+					</gvq:trace>
+				</gvq:GVQ_Traceability>
+			</gmd19157:report>
+			<gmd19157:report>
+				<gvq:GVQ_Traceability>
+					<gmd19157:evaluation gco:nilReason="definedElsewhere"/>
+					<gmd19157:result gco:nilReason="definedElsewhere"/>
+					<gmd19157:relatedElement xlink:href="#SensibilityAnalysis"/>
+					<gvq:trace>
+						<gmd19157:LI_Lineage>
+							<gmd19157:processStep>
+								<gmd19157:LI_ProcessStep>
+									<gmd19157:description>
+										<gco:CharacterString>Split meteorological stations into train (70%) and test (30%) sets recursively (20 models) using bootstrap methods.</gco:CharacterString>
+									</gmd19157:description>
+								</gmd19157:LI_ProcessStep>
+							</gmd19157:processStep>
+							<gmd19157:processStep>
+								<gmd19157:LI_ProcessStep>
+									<gmd19157:description>
+										<gco:CharacterString>The 20 models obtained from the bootsrap sampling are mapped.</gco:CharacterString>
+									</gmd19157:description>
+								</gmd19157:LI_ProcessStep>
+							</gmd19157:processStep>
+							<gmd19157:processStep>
+								<gmd19157:LI_ProcessStep>
+									<gmd19157:description>
+										<gco:CharacterString>Standard deviation of the inter-model variability (using the 20 models) is computed.</gco:CharacterString>
+									</gmd19157:description>
+								</gmd19157:LI_ProcessStep>
+							</gmd19157:processStep>
+						</gmd19157:LI_Lineage>
+					</gvq:trace>
+				</gvq:GVQ_Traceability>
+			</gmd19157:report>
+			<gmd19157:lineage>
+				<gmd19157:LI_Lineage>
+					<gmd19157:statement>
+						<gco:CharacterString>There are two different origins depending on the part of the Iberian Peninsula. In the case of Spain, the original layer comes from the Army Map Service (SGE) 1:200000 topograhic series. The paper maps were scanned and georeferenced. The contour lines were digitized, converted into a topological structure and finally spatially interpolated using the ISOMDE procedure (implemented in the MiraMon GIS). In the case of Portugal, the 1km GTOPO30 world DEM was densifiyed and mosaiked with the contour line-based raster.</gco:CharacterString>
+					</gmd19157:statement>
+					<gmd19157:processStep>
+						<gmd19157:LI_ProcessStep>
+							<gmd19157:description>
+								<gco:CharacterString>Meteorological stations from AEMET are filtered. First of all, the geometric position of the stations has been checked and modifiyed when need and possible. Secondly, stations with outlier values have been removed. Finally, stations with a temporal series length lower than 15 years have been removed. This theshold has been defined in order to obtain a compromise bewteen spatial coverage and temporal series lenght.</gco:CharacterString>
+							</gmd19157:description>
+							<gmd19157:source>
+								<gmd19157:LI_Source id="MeteorologicalStations">
+									<gmd19157:description>
+										<gco:CharacterString>Meteorological stations from AEMET</gco:CharacterString>
+									</gmd19157:description>
+									<gmd19157:sourceCitation>
+										<gmd:CI_Citation>
+											<gmd:title>
+												<gco:CharacterString>Mean monthly climate records from the AEMET (temeprature and precipitation)</gco:CharacterString>
+											</gmd:title>
+											<gmd:date>
+												<gmd:CI_Date>
+													<gmd:date>
+														<gco:Date>2000</gco:Date>
+													</gmd:date>
+													<gmd:dateType>
+														<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation">creation</gmd:CI_DateTypeCode>
+													</gmd:dateType>
+												</gmd:CI_Date>
+											</gmd:date>
+											<gmd:citedResponsibleParty>
+												<gmd:CI_ResponsibleParty>
+													<gmd:organisationName>
+														<gco:CharacterString>Unidad de Información Meteorológica. Instituto Nacional de Meteorología.</gco:CharacterString>
+													</gmd:organisationName>
+													<gmd:contactInfo>
+														<gmd:CI_Contact>
+															<gmd:phone>
+																<gmd:CI_Telephone>
+																	<gmd:voice>
+																		<gco:CharacterString>+34 915 819 810</gco:CharacterString>
+																	</gmd:voice>
+																	<gmd:facsimile>
+																		<gco:CharacterString>+34 915 819 811</gco:CharacterString>
+																	</gmd:facsimile>
+																</gmd:CI_Telephone>
+															</gmd:phone>
+															<gmd:address>
+																<gmd:CI_Address>
+																	<gmd:deliveryPoint>
+																		<gco:CharacterString>C/ Leonardo Prieto Castro, 8 (Ciudad Universitaria)</gco:CharacterString>
+																	</gmd:deliveryPoint>
+																	<gmd:administrativeArea>
+																		<gco:CharacterString>Madrid</gco:CharacterString>
+																	</gmd:administrativeArea>
+																	<gmd:postalCode>
+																		<gco:CharacterString>28071</gco:CharacterString>
+																	</gmd:postalCode>
+																	<gmd:country>
+																		<gco:CharacterString>Spain</gco:CharacterString>
+																	</gmd:country>
+																	<gmd:electronicMailAddress>
+																		<gco:CharacterString>secinfomet@inm.es</gco:CharacterString>
+																	</gmd:electronicMailAddress>
+																	<gmd:electronicMailAddress>
+																		<gco:CharacterString>infomet@inm.es</gco:CharacterString>
+																	</gmd:electronicMailAddress>
+																</gmd:CI_Address>
+															</gmd:address>
+															<gmd:onlineResource>
+																<gmd:CI_OnlineResource>
+																	<gmd:linkage>
+																		<gmd:URL>http://www.aemet.es/es/portada</gmd:URL>
+																	</gmd:linkage>
+																</gmd:CI_OnlineResource>
+															</gmd:onlineResource>
+														</gmd:CI_Contact>
+													</gmd:contactInfo>
+													<gmd:role>
+														<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author">author</gmd:CI_RoleCode>
+													</gmd:role>
+												</gmd:CI_ResponsibleParty>
+											</gmd:citedResponsibleParty>
+											<gmd:presentationForm>
+												<gmd:CI_PresentationFormCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_PresentationFormCode" codeListValue="tableHardcopy">tableHardcopy</gmd:CI_PresentationFormCode>
+											</gmd:presentationForm>
+										</gmd:CI_Citation>
+									</gmd19157:sourceCitation>
+									<gmd19157:sourceExtent>
+										<gmd:EX_Extent>
+											<gmd:temporalElement>
+												<gmd:EX_TemporalExtent>
+													<gmd:extent>
+														<gml:TimePeriod gml:id="MeteorologicalStations_TempEx">
+															<gml:beginPosition>1975</gml:beginPosition>
+															<gml:endPosition>2000</gml:endPosition>
+														</gml:TimePeriod>
+													</gmd:extent>
+												</gmd:EX_TemporalExtent>
+											</gmd:temporalElement>
+										</gmd:EX_Extent>
+									</gmd19157:sourceExtent>
+									<gmd19157:sourceStep>
+										<gmd19157:LI_ProcessStep>
+											<gmd19157:description>
+												<gco:CharacterString>Mean monthly climate records have been computed from raw AEMET data by using own routines. These routines fix problems with repeated records, inconsistencies in values and missing values to obtain an accurate monthly database that will be used as a basis for the spatial interpolations procedures. The total number of meteorological stations is 1068.</gco:CharacterString>
+											</gmd19157:description>
+										</gmd19157:LI_ProcessStep>
+									</gmd19157:sourceStep>
+								</gmd19157:LI_Source>
+							</gmd19157:source>
+						</gmd19157:LI_ProcessStep>
+					</gmd19157:processStep>
+					<gmd19157:processStep>
+						<gmd19157:LI_ProcessStep>
+							<gmd19157:description>
+								<gco:CharacterString>Indepent variables for the regression have been selected using prior expert knowledge. This set of variables have been feeded to statistical analysis to select the significant ones for the model.</gco:CharacterString>
+							</gmd19157:description>
+							<gmd19157:source>
+								<gmd19157:LI_Source>
+									<gmd19157:description>
+										<gco:CharacterString>ASTER Global Digital Elevation Model</gco:CharacterString>
+									</gmd19157:description>
+									<gmd19157:sourceCitation>
+										<gmd:CI_Citation>
+											<gmd:title>
+												<gco:CharacterString>ASTER Global Digital Elevation Model</gco:CharacterString>
+											</gmd:title>
+											<gmd:date>
+												<gmd:CI_Date>
+													<gmd:date>
+														<gco:Date>2009-06-29</gco:Date>
+													</gmd:date>
+													<gmd:dateType>
+														<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+													</gmd:dateType>
+												</gmd:CI_Date>
+											</gmd:date>
+										</gmd:CI_Citation>
+									</gmd19157:sourceCitation>
+									<gmd19157:sourceStep>
+										<gmd19157:LI_ProcessStep>
+											<gmd19157:description>
+												<gco:CharacterString>The GDEM was created by stereo-correlating the 1.3 million scene ASTER VNIR, covering the surface of the Earth between latitudes 83N and 83S. The GDEM is produced with ~ 30 m spatial resolution, with a scenes of 1 x 1 degree in GeoTIFF format. Each GDEM file is accompanied by a file of quality assessment, which gives either the number of ASTER scenes used to calculate the value of a pixel (positive values) or whether external DEM data source used to fill the gaps of ASTER (negative values). The correspondence in this case is as follows: -1 in the case of SRTM3 V3 and -2 in the case of SRTM3 V2.</gco:CharacterString>
+											</gmd19157:description>
+										</gmd19157:LI_ProcessStep>
+									</gmd19157:sourceStep>
+								</gmd19157:LI_Source>
+							</gmd19157:source>
+							<gmd19157:source>
+								<gmd19157:LI_Source>
+									<gmd19157:description>
+										<gco:CharacterString>GIS based latitude</gco:CharacterString>
+									</gmd19157:description>
+								</gmd19157:LI_Source>
+							</gmd19157:source>
+							<gmd19157:source>
+								<gmd19157:LI_Source>
+									<gmd19157:description>
+										<gco:CharacterString>GIS based distance to Mediterranean sea (to express continentality)</gco:CharacterString>
+									</gmd19157:description>
+								</gmd19157:LI_Source>
+							</gmd19157:source>
+							<gmd19157:source>
+								<gmd19157:LI_Source>
+									<gmd19157:description>
+										<gco:CharacterString>GIS based distance to Cantabric sea (to express continentality)</gco:CharacterString>
+									</gmd19157:description>
+								</gmd19157:LI_Source>
+							</gmd19157:source>
+							<gmd19157:source>
+								<gmd19157:LI_Source>
+									<gmd19157:description>
+										<gco:CharacterString>GIS based distance to Atlantic sea (to express continentality)</gco:CharacterString>
+									</gmd19157:description>
+								</gmd19157:LI_Source>
+							</gmd19157:source>
+							<gmd19157:source>
+								<gmd19157:LI_Source>
+									<gmd19157:description>
+										<gco:CharacterString>DEM based solar radiation</gco:CharacterString>
+									</gmd19157:description>
+								</gmd19157:LI_Source>
+							</gmd19157:source>
+						</gmd19157:LI_ProcessStep>
+					</gmd19157:processStep>
+					<gmd19157:processStep>
+						<gmd19157:LI_ProcessStep>
+							<gmd19157:description>
+								<gco:CharacterString>Multiple lineal regression model is fitted and mapped. A mask is provided to identify intepolated and extrapolated areas (i.e. those whithin or outside the meteorological stations statistical range).</gco:CharacterString>
+							</gmd19157:description>
+						</gmd19157:LI_ProcessStep>
+					</gmd19157:processStep>
+					<gmd19157:processStep>
+						<gmd19157:LI_ProcessStep>
+							<gmd19157:description>
+								<gco:CharacterString>Regression residuals have been interpolated using inverse distance weighting.</gco:CharacterString>
+							</gmd19157:description>
+						</gmd19157:LI_ProcessStep>
+					</gmd19157:processStep>
+					<gmd19157:processStep>
+						<gmd19157:LI_ProcessStep>
+							<gmd19157:description>
+								<gco:CharacterString>Regression map and residual map (obtained on the two previous process steps) are combined to obtain the final dataset.</gco:CharacterString>
+							</gmd19157:description>
+						</gmd19157:LI_ProcessStep>
+					</gmd19157:processStep>
+				</gmd19157:LI_Lineage>
+			</gmd19157:lineage>
+		</gmd19157:DQ_DataQuality>
+	</gvq:dataQualityInfo>
+	<gvq:dataQualityInfo>
+		<gvq:GVQ_DataQuality>
+			<gmd19157:scope xlink:href="#datasetScope"/>
+			<gvq:discoveredIssue>
+				<gvq:GVQ_DiscoveredIssue>
+					<gvq:target xlink:href="#mtri2an1ib"/>
+					<gvq:knownProblem>
+						<gco:CharacterString>Some methodological constraints can be defined</gco:CharacterString>
+					</gvq:knownProblem>
+					<gvq:workAround>
+						<gco:CharacterString>First of all be careful with extrapolated areas (checking them in the provided binary mask). Moreover, be careful with areas with high uncertainty (checking them in the provided residuals map).</gco:CharacterString>
+					</gvq:workAround>
+				</gvq:GVQ_DiscoveredIssue>
+			</gvq:discoveredIssue>
+		</gvq:GVQ_DataQuality>
+	</gvq:dataQualityInfo>
+	<gvq:dataQualityInfo>
+		<gvq:GVQ_DataQuality>
+			<gmd19157:scope>
+				<gmd19157:DQ_Scope>
+					<gmd19157:level>
+						<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+						<!-- ··$$··LB: not very happy about this - I'd prefer to be able to say 'subset of dataset' -->
+						<!-- ··$$·· AZ: what about "tile" information applies to a tile, a spatial subset of geographic data ? -->
+					</gmd19157:level>
+					<gmd19157:extent>
+						<gmd:EX_Extent id="maskNavarraExtent">
+							<gmd:description>
+								<gco:CharacterString>Area of Navarra with incorrectly modelled values</gco:CharacterString>
+							</gmd:description>
+							<gmd:geographicElement>
+								<gmd:EX_BoundingPolygon>
+									<gmd:polygon>
+										<gml:LineString gml:id="coordsId1" srsName="urn:ogc:def:crs:EPSG:23030">
+											<gml:coordinates>634145.9 4764080.8 634145.9 4775323.2 646710.9 4775323.2 646710.9 4764080.8</gml:coordinates>
+										</gml:LineString>
+									</gmd:polygon>
+								</gmd:EX_BoundingPolygon>
+							</gmd:geographicElement>
+						</gmd:EX_Extent>
+					</gmd19157:extent>
+				</gmd19157:DQ_Scope>
+			</gmd19157:scope>
+			<gvq:discoveredIssue>
+				<gvq:GVQ_DiscoveredIssue>
+					<gvq:target xlink:href="#mtri2an1ib"/>
+					<gvq:knownProblem>
+						<gco:CharacterString>A problem with the DEM on an subset of the Navarra area lead to an incorrect modelling of the temperature and to a very high residuals (due to a bad adjust of the model there) on this area. The problem is due to a bad attribute (a missing "0", i.e. the curve stated “10” instead of “100” m) on the isolines indicating heigh used to produce the DEM.</gco:CharacterString>
+					</gvq:knownProblem>
+					<gvq:workAround>
+						<gco:CharacterString>The area with incorrect values can be masked (marked with NoData). The bounding box with the incorrect values is (expressed in the reference system of the dataset): Min X: 634145.9, Min Y:4764080.8, Max X: 646710.9, Max X: 4775323.2. Next version of the Atlas will solve this problem.</gco:CharacterString>
+					</gvq:workAround>
+				</gvq:GVQ_DiscoveredIssue>
+			</gvq:discoveredIssue>
+		</gvq:GVQ_DataQuality>
+	</gvq:dataQualityInfo>
+    <gvq:userFeedback>
+    <gvq:GVQ_FeedbackCollection>
+	<gvq:item>
+		<gvq:userRole>
+			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" NonresearchEndUser "/>
+		</gvq:userRole>
+		<gvq:user>
+			<gvq:userDetails>
+				<gmd:individualName>
+					<gco:CharacterString>Peter</gco:CharacterString>
+				</gmd:individualName>
+				<gmd:organisationName>
+					<gco:CharacterString>Adams</gco:CharacterString>
+				</gmd:organisationName>
+				<gmd:contactInfo>
+				</gmd:contactInfo>
+				<gmd:role>
+					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+				</gmd:role>
+			</gvq:userDetails>
+			<gvq:applicationDomain>Agriculture</gvq:applicationDomain>
+			<gvq:expertiseLevel>4</gvq:expertiseLevel>
+			<gvq:userRole>
+				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+			</gvq:userRole>
+		</gvq:user>
+		<gvq:dateStamp>
+			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
+		</gvq:dateStamp>
+		<gvq:qualityOverride>
+			<gvq:GVQ_DataQuality>
+				<gmd19157:scope/>
+				<gvq:discoveredIssue/>
+			</gvq:GVQ_DataQuality>
+		</gvq:qualityOverride>
+		<gvq:userComment>
+			<gvq:comment>Quality information was available at a pixel level.</gvq:comment>
+			<gvq:mime-type>text/plain</gvq:mime-type>
+		</gvq:userComment>
+		<gvq:rating>
+			<gvq:score>5</gvq:score>
+			<gvq:justification>The dataset is of very good quality.</gvq:justification>
+		</gvq:rating>
+		<gvq:usage>
+			<gvq:reportAspect>
+				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+			</gvq:reportAspect>
+			<gvq:usageDescription></gvq:usageDescription>
+			<gvq:discoveredIssue>
+				<gvq:GVQ_DiscoveredIssue>
+					<gvq:target xlink:href="targetUID"/>
+				</gvq:GVQ_DiscoveredIssue>
+			</gvq:discoveredIssue>
+		</gvq:usage>
+	</gvq:item>
+	<gvq:item>
+		<gvq:userRole>
+			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
+		</gvq:userRole>
+		<gvq:user>
+			<gvq:userDetails>
+				<gmd:individualName>
+					<gco:CharacterString>Richard</gco:CharacterString>
+				</gmd:individualName>
+				<gmd:organisationName>
+					<gco:CharacterString>Jones</gco:CharacterString>
+				</gmd:organisationName>
+				<gmd:contactInfo>
+				</gmd:contactInfo>
+				<gmd:role>
+					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+				</gmd:role>
+			</gvq:userDetails>
+			<gvq:applicationDomain>Land Cover</gvq:applicationDomain>
+			<gvq:expertiseLevel>4</gvq:expertiseLevel>
+			<gvq:userRole>
+				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+			</gvq:userRole>
+		</gvq:user>
+		<gvq:dateStamp>
+			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
+		</gvq:dateStamp>
+		<gvq:qualityOverride>
+			<gvq:GVQ_DataQuality>
+				<gmd19157:scope/>
+				<gvq:discoveredIssue/>
+			</gvq:GVQ_DataQuality>
+		</gvq:qualityOverride>
+		<gvq:userComment>
+			<gvq:comment>Very good spatial and temporal coverage.</gvq:comment>
+			<gvq:mime-type>text/plain</gvq:mime-type>
+		</gvq:userComment>
+		<gvq:rating>
+			<gvq:score>4</gvq:score>
+			<gvq:justification>The dataset and metadata record is of very high quality and quality information is available at a pixel level.</gvq:justification>
+		</gvq:rating>
+		<gvq:usage>
+			<gvq:reportAspect>
+				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+			</gvq:reportAspect>
+			<gvq:usageDescription></gvq:usageDescription>
+			<gvq:discoveredIssue>
+				<gvq:GVQ_DiscoveredIssue>
+					<gvq:target xlink:href="targetUID"/>
+				</gvq:GVQ_DiscoveredIssue>
+			</gvq:discoveredIssue>
+		</gvq:usage>
+	</gvq:item>
+	<gvq:item>
+		<gvq:userRole>
+			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
+		</gvq:userRole>
+		<gvq:user>
+			<gvq:userDetails>
+				<gmd:individualName>
+					<gco:CharacterString>Eva</gco:CharacterString>
+				</gmd:individualName>
+				<gmd:organisationName>
+					<gco:CharacterString>Klein</gco:CharacterString>
+				</gmd:organisationName>
+				<gmd:contactInfo>
+				</gmd:contactInfo>
+				<gmd:role>
+					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+				</gmd:role>
+			</gvq:userDetails>
+			<gvq:applicationDomain>Landcover Research</gvq:applicationDomain>
+			<gvq:expertiseLevel>4</gvq:expertiseLevel>
+			<gvq:userRole>
+				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="ResearchEndUser"/>
+			</gvq:userRole>
+		</gvq:user>
+		<gvq:dateStamp>
+			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
+		</gvq:dateStamp>
+		<gvq:qualityOverride>
+			<gvq:GVQ_DataQuality>
+				<gmd19157:scope/>
+				<gvq:discoveredIssue/>
+			</gvq:GVQ_DataQuality>
+		</gvq:qualityOverride>
+		<gvq:userComment>
+			<gvq:comment>I used this dataset to monitor changes in agricultural land use in the UK between 2005 and 2010.</gvq:comment>
+			<gvq:mime-type>text/plain</gvq:mime-type>
+		</gvq:userComment>
+		<gvq:rating>
+			<gvq:score>5</gvq:score>
+			<gvq:justification>The data is of good quality and quality information is provided at a pixel level.</gvq:justification>
+		</gvq:rating>
+		<gvq:usage>
+			<gvq:reportAspect>
+				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+			</gvq:reportAspect>
+			<gvq:usageDescription></gvq:usageDescription>
+			<gvq:discoveredIssue>
+				<gvq:GVQ_DiscoveredIssue>
+					<gvq:target xlink:href="targetUID"/>
+				</gvq:GVQ_DiscoveredIssue>
+			</gvq:discoveredIssue>
+		</gvq:usage>
+	</gvq:item>
+	<gvq:item>
+		<gvq:userRole>
+			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
+		</gvq:userRole>
+		<gvq:user>
+			<gvq:userDetails>
+				<gmd:individualName>
+					<gco:CharacterString>Jon</gco:CharacterString>
+				</gmd:individualName>
+				<gmd:organisationName>
+					<gco:CharacterString>Whitehouse</gco:CharacterString>
+				</gmd:organisationName>
+				<gmd:contactInfo>
+				</gmd:contactInfo>
+				<gmd:role>
+					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+				</gmd:role>
+			</gvq:userDetails>
+			<gvq:applicationDomain>Agriculture</gvq:applicationDomain>
+			<gvq:expertiseLevel>4</gvq:expertiseLevel>
+			<gvq:userRole>
+				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+			</gvq:userRole>
+		</gvq:user>
+		<gvq:dateStamp>
+			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
+		</gvq:dateStamp>
+		<gvq:qualityOverride>
+			<gvq:GVQ_DataQuality>
+				<gmd19157:scope/>
+				<gvq:discoveredIssue/>
+			</gvq:GVQ_DataQuality>
+		</gvq:qualityOverride>
+		<gvq:userComment>
+			<gvq:comment>I used this dataset to monitor farming land use in Turkey in 2010.</gvq:comment>
+			<gvq:mime-type>text/plain</gvq:mime-type>
+		</gvq:userComment>
+		<gvq:rating>
+			<gvq:score>5</gvq:score>
+			<gvq:justification>Very good data, suitable for application.</gvq:justification>
+		</gvq:rating>
+		<gvq:usage>
+			<gvq:reportAspect>
+				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+			</gvq:reportAspect>
+			<gvq:usageDescription></gvq:usageDescription>
+			<gvq:discoveredIssue>
+				<gvq:GVQ_DiscoveredIssue>
+					<gvq:target xlink:href="targetUID"/>
+				</gvq:GVQ_DiscoveredIssue>
+			</gvq:discoveredIssue>
+		</gvq:usage>
+	</gvq:item>
+	</gvq:GVQ_FeedbackCollection>
+	</gvq:userFeedback>
+</gvq:GVQ_Metadata>

@@ -18,7 +18,7 @@
                     <xsl:value-of select="$fileID" />
                 </h2>
 				<table width="95%" border="2" cellpadding="5" cellspacing="2">
-                    <xsl:for-each select="//gmd19157:LI_Lineage">
+                    <xsl:for-each select="//gmd19157:LI_Lineage | //gmd:LI_Lineage">
                         <xsl:call-template name="lineageInfo"/>
 			        </xsl:for-each>          
 				</table>
@@ -28,12 +28,12 @@
         </html>
         </xsl:template>              
     <!-- Template for collating feedbacks info a few paras -->
-    <xsl:template match="gmd19157:LI_Lineage" name="lineageInfo">
-        <xsl:variable name="statement" select="gmd19157:statement/gco:CharacterString"/>
-        <xsl:variable name="description" select="gmd19157:processStep/gmd19157:LI_ProcessStep/gmd19157:description/gco:CharacterString"/>
-        <xsl:variable name="rationale" select="gmd19157:processStep/gmd19157:LI_ProcessStep/gmd19157:rationale/gco:CharacterString"/>
+    <xsl:template match="gmd19157:LI_Lineage | gmd:LI_Lineage" name="lineageInfo">
+        <xsl:variable name="statement" select="gmd19157:statement/gco:CharacterString | gmd:statement/gco:CharacterString"/>
+        <xsl:variable name="description" select="gmd19157:processStep/gmd19157:LI_ProcessStep/gmd19157:description/gco:CharacterString | gmd:processStep/gmd:LI_ProcessStep/gmd:description/gco:CharacterString"/>
+        <xsl:variable name="rationale" select="gmd19157:processStep/gmd19157:LI_ProcessStep/gmd19157:rationale/gco:CharacterString | gmd:processStep/gmd:LI_ProcessStep/gmd:rationale/gco:CharacterString"/>
 		
-		<xsl:if test="$statement or $description or $rationale">
+		<xsl:if test="normalize-space($statement)  != '' or $description or $rationale">
 			<th>
 				<h4>Lineage Information</h4>
 			</th>
@@ -43,14 +43,20 @@
 						<b>Lineage Statement:</b><br />
 						<xsl:value-of select="$statement"/><br /><br />
 					</xsl:if>
-					<xsl:if test="$description">
-						<b>Process Step Description:</b><br />
-						<xsl:value-of select="$description"/><br /><br />
-					</xsl:if>
-					<xsl:if test="$rationale">
-						<b>Process Step Rationale:</b><br />
-						<xsl:value-of select="$rationale"/><br /><br />					
-					</xsl:if>
+					
+					<xsl:for-each select="gmd19157:processStep/gmd19157:LI_ProcessStep">
+						<p>
+							<b>Process step
+								<xsl:value-of select="position()" />
+							</b>
+							<br />
+							<b>Description: </b>
+							<xsl:value-of select="gmd19157:description/gco:CharacterString" />
+							<br />
+							<b>Rationale: </b>
+							<xsl:value-of select="gmd19157:rationale/gco:CharacterString" />
+						</p>
+					</xsl:for-each>
 				</td>
 			</tr>
 		</xsl:if>

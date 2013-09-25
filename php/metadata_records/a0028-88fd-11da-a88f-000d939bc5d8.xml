@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:GetRecordByIdResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:ows="http://www.opengis.net/ows" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd">
+	<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns="http://floraresearch.eu/sdi/services/7.0/dataModel/schema" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dclite4g="http://xmlns.com/2008/dclite4g#" xmlns:envisat="http://www.example.com/schemas/envisat.rdf#" xmlns:fp="http://downlode.org/Code/RDF/file-properties/" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:ical="http://www.w3.org/2002/12/cal/ical#" xmlns:os="http://a9.com/-/spec/opensearch/1.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:ws="http://dclite4g.xmlns.com/ws.rdf#">
+		<gmd:fileIdentifier>
+			<gco:CharacterString>a0028-88fd-11da-a88f-000d939bc5d8</gco:CharacterString>
+		</gmd:fileIdentifier>
+		<gmd:parentIdentifier>
+			<gco:CharacterString />
+		</gmd:parentIdentifier>
+		<gmd:hierarchyLevel>
+			<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode" codeListValue="series">series</gmd:MD_ScopeCode>
+		</gmd:hierarchyLevel>
+		<gmd:contact />
+		<gmd:dateStamp>
+			<gco:Date>1976-01-01</gco:Date>
+		</gmd:dateStamp>
+		<gmd:identificationInfo>
+			<gmd:MD_DataIdentification>
+				<gmd:citation>
+					<gmd:CI_Citation>
+						<gmd:title>
+							<gco:CharacterString>SNF FOREST COVER BY SPECIES/STRATA</gco:CharacterString>
+						</gmd:title>
+						<gmd:date />
+						<gmd:date>
+							<gmd:CI_Date>
+								<gmd:date>
+									<gco:Date>2012-04-13</gco:Date>
+								</gmd:date>
+								<gmd:dateType>
+									<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" codeSpace="ISOTC211/19115">revision</gmd:CI_DateTypeCode>
+								</gmd:dateType>
+							</gmd:CI_Date>
+						</gmd:date>
+						<gmd:date>
+							<gmd:CI_Date>
+								<gmd:date>
+									<gco:Date>2012-02-14</gco:Date>
+								</gmd:date>
+								<gmd:dateType>
+									<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="created" codeSpace="ISOTC211/19115">created</gmd:CI_DateTypeCode>
+								</gmd:dateType>
+							</gmd:CI_Date>
+						</gmd:date>
+						<gmd:pointOfContact>
+							<gmd:CI_ResponsibleParty>
+								<gmd:organisationName>
+									<gco:CharacterString>NASA</gco:CharacterString>
+								</gmd:organisationName>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="" codeListValue="originator" />
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:pointOfContact>
+						<gmd:identifier>
+							<gmd:RS_Identifier>
+								<gmd:code>
+									<gco:CharacterString>NASA:SNF_SITECOMP</gco:CharacterString>
+								</gmd:code>
+							</gmd:RS_Identifier>
+						</gmd:identifier>
+					</gmd:CI_Citation>
+				</gmd:citation>
+				<gmd:abstract>
+					<gco:CharacterString>The purpose of the SNF study was to improve our understanding of the relationship between remotely sensed observations and important biophysical parameters in the boreal forest. A key element of the experiment was the development of methodologies to measure forest stand characteristics to determine values of importance to both remote sensing and ecology. Parameters studied were biomass, leaf area index, above ground net primary productivity, bark area index and ground coverage by vegetation. Thirty two quaking aspen and thirty one black spruce sites were studied. Use of multiple plots within each site allowed estimation of the importance of spatial variation in stand parameters. Within each plot, all woody stems greater than two meters in height were recorded by species and relevant dimensions were measured. Diameter breast height (dbh) was measured directly. Height of the tree and height of the first live branch were determined by triangulation. The difference between these two heights was used as the depth of crown. Similar measurements were made for shrubs between one and two meters tall in the aspen sites. The Forest Canopy Composition (SNF) data set provides the counts of canopy (over two meters tall) tree species and subcanopy (between one and two meters tall) tree species. Also related, for the aspen sites, in each plot a visual estimation of the percent coverage of the canopy, subcanopy and understory vegetation was made. The site averages of these coverage estimates are presented in the Aspen Forest Cover by Stratum/Plot (SNF) data set.</gco:CharacterString>
+				</gmd:abstract>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE BIOSPHERE VEGETATION VEGETATION SPECIES; FIELD INVESTIGATION; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; SUPERIOR NATIONAL FOREST; CWIC CEOS WGISS INTEGRATED CATALOG; Eosdis; BIOTA; ENGLISH;</gco:CharacterString>
+						</gmd:keyword>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:language />
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>feedRSSAlert</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:extent>
+					<gmd:EX_Extent>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicBoundingBox>
+								<gmd:westBoundLongitude>
+									<gco:Decimal>-92.5057983398438</gco:Decimal>
+								</gmd:westBoundLongitude>
+								<gmd:eastBoundLongitude>
+									<gco:Decimal>-91.7658004760742</gco:Decimal>
+								</gmd:eastBoundLongitude>
+								<gmd:southBoundLatitude>
+									<gco:Decimal>47.6575012207031</gco:Decimal>
+								</gmd:southBoundLatitude>
+								<gmd:northBoundLatitude>
+									<gco:Decimal>48.1697006225586</gco:Decimal>
+								</gmd:northBoundLatitude>
+							</gmd:EX_GeographicBoundingBox>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_BoundingPolygon>
+								<gmd:polygon>
+									<gml:Polygon gml:id="d822e27">
+										<gml:exterior>
+											<gml:LinearRing>
+												<gml:pos>-91.7658004760742 48.1697006225586</gml:pos>
+												<gml:pos>-92.5057983398438 48.1697006225586</gml:pos>
+												<gml:pos>-92.5057983398438 47.6575012207031</gml:pos>
+												<gml:pos>-91.7658004760742 47.6575012207031</gml:pos>
+												<gml:pos>-91.7658004760742 48.1697006225586</gml:pos>
+											</gml:LinearRing>
+										</gml:exterior>
+									</gml:Polygon>
+								</gmd:polygon>
+							</gmd:EX_BoundingPolygon>
+						</gmd:geographicElement>
+						<gmd:temporalElement>
+							<gmd:EX_TemporalExtent>
+								<gmd:extent>
+									<gml:TimePeriod gml:id="tt824">
+										<gml:beginPosition>1976-01-01T12:00:00.000Z</gml:beginPosition>
+										<gml:endPosition>1986-12-31T23:59:59.000Z</gml:endPosition>
+									</gml:TimePeriod>
+								</gmd:extent>
+							</gmd:EX_TemporalExtent>
+						</gmd:temporalElement>
+					</gmd:EX_Extent>
+				</gmd:extent>
+			</gmd:MD_DataIdentification>
+		</gmd:identificationInfo>
+		<gmd:identificationInfo>
+			<srv:SV_ServiceIdentification>
+				<gmd:citation />
+				<gmd:abstract />
+				<srv:serviceType />
+				<srv:couplingType />
+				<srv:containsOperations />
+			</srv:SV_ServiceIdentification>
+		</gmd:identificationInfo>
+		<gmd:distributionInfo>
+			<gmd:MD_Distribution />
+		</gmd:distributionInfo>
+	</gmd:MD_Metadata>
+</csw:GetRecordByIdResponse>

@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:GetRecordByIdResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:ows="http://www.opengis.net/ows" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd">
+   <gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dif="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/" xmlns:dm="http://floraresearch.eu/sdi/services/7.0/dataModel/schema" xmlns:fn="http://www.w3.org/2005/02/xpath-functions" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:ns15="http://quakeml.org/xmlns/quakeml/1.2" xmlns:ns3="http://www.geoviqua.org/QualityInformationModel/3.1" xmlns:ns4="http://quakeml.org/xmlns/bed/1.2" xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:util="java:java.util.UUID" xmlns:wrs="http://www.opengis.net/cat/wrs/1.0">
+      <gmd:fileIdentifier>
+         <gco:CharacterString>a0077-88fd-11da-a88f-000d939bc5d8</gco:CharacterString>
+      </gmd:fileIdentifier>
+      <gmd:parentIdentifier>
+         <gco:CharacterString>UUID-b2d227da-02ea-4711-a49f-59f707a4e300</gco:CharacterString>
+      </gmd:parentIdentifier>
+      <gmd:language>
+         <gco:CharacterString>eng</gco:CharacterString>
+      </gmd:language>
+      <gmd:characterSet>
+         <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+      </gmd:characterSet>
+      <gmd:hierarchyLevel>
+         <gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+      </gmd:hierarchyLevel>
+      <gmd:contact>
+         <gmd:CI_ResponsibleParty>
+            <gmd:individualName>
+               <gco:CharacterString>STEVENS, TYLERB.</gco:CharacterString>
+            </gmd:individualName>
+            <gmd:contactInfo>
+               <gmd:CI_Contact>
+                  <gmd:phone>
+                     <gmd:CI_Telephone>
+                        <gmd:voice>
+                           <gco:CharacterString>(301) 614-6898</gco:CharacterString>
+                        </gmd:voice>
+                        <gmd:facsimile>
+                           <gco:CharacterString>301-614-5268</gco:CharacterString>
+                        </gmd:facsimile>
+                     </gmd:CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                     <gmd:CI_Address>
+                        <gmd:deliveryPoint>
+                           <gco:CharacterString>NASA Goddard Space Flight Center</gco:CharacterString>
+                        </gmd:deliveryPoint>
+                        <gmd:deliveryPoint>
+                           <gco:CharacterString>Global Change Master Directory</gco:CharacterString>
+                        </gmd:deliveryPoint>
+                        <gmd:city>
+                           <gco:CharacterString>Greenbelt</gco:CharacterString>
+                        </gmd:city>
+                        <gmd:administrativeArea>
+                           <gco:CharacterString>MD</gco:CharacterString>
+                        </gmd:administrativeArea>
+                        <gmd:postalCode>
+                           <gco:CharacterString>20771</gco:CharacterString>
+                        </gmd:postalCode>
+                        <gmd:country>
+                           <gco:CharacterString>USA</gco:CharacterString>
+                        </gmd:country>
+                        <gmd:electronicMailAddress>
+                           <gco:CharacterString>Tyler.B.Stevens@nasa.gov</gco:CharacterString>
+                        </gmd:electronicMailAddress>
+                     </gmd:CI_Address>
+                  </gmd:address>
+               </gmd:CI_Contact>
+            </gmd:contactInfo>
+            <gmd:role>
+               <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author">author</gmd:CI_RoleCode>
+            </gmd:role>
+         </gmd:CI_ResponsibleParty>
+      </gmd:contact>
+      <gmd:contact>
+         <gmd:CI_ResponsibleParty>
+            <gmd:organisationName>
+               <gco:CharacterString>GCMD</gco:CharacterString>
+            </gmd:organisationName>
+            <gmd:role>
+               <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+            </gmd:role>
+         </gmd:CI_ResponsibleParty>
+      </gmd:contact>
+      <gmd:dateStamp>
+         <gco:Date>2003-05-19</gco:Date>
+      </gmd:dateStamp>
+      <gmd:metadataStandardName>
+         <gco:CharacterString>CEOS IDN DIF</gco:CharacterString>
+      </gmd:metadataStandardName>
+      <gmd:metadataStandardVersion>
+         <gco:CharacterString>VERSION 9.7</gco:CharacterString>
+      </gmd:metadataStandardVersion>
+      <gmd:identificationInfo>
+         <gmd:MD_DataIdentification>
+            <gmd:citation>
+               <gmd:CI_Citation>
+                  <gmd:title>
+                     <gco:CharacterString>History Database of the Global Environment - HYDE</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:alternateTitle>
+                     <gco:CharacterString>History Database of the Global Environment - HYDE</gco:CharacterString>
+                  </gmd:alternateTitle>
+                  <gmd:date>
+                     <gmd:CI_Date>
+                        <gmd:date>
+                           <gco:Date>2003-05-19</gco:Date>
+                        </gmd:date>
+                        <gmd:dateType>
+                           <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+                        </gmd:dateType>
+                     </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:citedResponsibleParty>
+                     <gmd:CI_ResponsibleParty>
+                        <gmd:individualName>
+                           <gco:CharacterString>GOLDEWIJK, KEESKLEIN</gco:CharacterString>
+                        </gmd:individualName>
+                        <gmd:contactInfo>
+                           <gmd:CI_Contact>
+                              <gmd:phone>
+                                 <gmd:CI_Telephone>
+                                    <gmd:voice>
+                                       <gco:CharacterString>(+31) 30 274 3833</gco:CharacterString>
+                                    </gmd:voice>
+                                    <gmd:facsimile>
+                                       <gco:CharacterString>(+31) 30 274 4427</gco:CharacterString>
+                                    </gmd:facsimile>
+                                 </gmd:CI_Telephone>
+                              </gmd:phone>
+                              <gmd:address>
+                                 <gmd:CI_Address>
+                                    <gmd:deliveryPoint>
+                                       <gco:CharacterString>Netherlands Environmental Assessment Agency (MNP)</gco:CharacterString>
+                                    </gmd:deliveryPoint>
+                                    <gmd:deliveryPoint>
+                                       <gco:CharacterString>Box 303, NL-3720 AH</gco:CharacterString>
+                                    </gmd:deliveryPoint>
+                                    <gmd:city>
+                                       <gco:CharacterString>Bilthoven</gco:CharacterString>
+                                    </gmd:city>
+                                    <gmd:postalCode>
+                                       <gco:CharacterString>3720 AH</gco:CharacterString>
+                                    </gmd:postalCode>
+                                    <gmd:country>
+                                       <gco:CharacterString>The Netherlands</gco:CharacterString>
+                                    </gmd:country>
+                                    <gmd:electronicMailAddress>
+                                       <gco:CharacterString>kees.klein.goldewijk@mnp.nl</gco:CharacterString>
+                                    </gmd:electronicMailAddress>
+                                 </gmd:CI_Address>
+                              </gmd:address>
+                           </gmd:CI_Contact>
+                        </gmd:contactInfo>
+                        <gmd:role>
+                           <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="principalInvestigator">principalInvestigator</gmd:CI_RoleCode>
+                        </gmd:role>
+                     </gmd:CI_ResponsibleParty>
+                  </gmd:citedResponsibleParty>
+                  <gmd:citedResponsibleParty>
+                     <gmd:CI_ResponsibleParty>
+                        <gmd:individualName>
+                           <gco:CharacterString>MNP</gco:CharacterString>
+                        </gmd:individualName>
+                        <gmd:role>
+                           <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+                        </gmd:role>
+                     </gmd:CI_ResponsibleParty>
+                  </gmd:citedResponsibleParty>
+                  <gmd:citedResponsibleParty>
+                     <gmd:CI_ResponsibleParty>
+                        <gmd:individualName>
+                           <gco:CharacterString>MNP</gco:CharacterString>
+                        </gmd:individualName>
+                        <gmd:role>
+                           <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+                        </gmd:role>
+                     </gmd:CI_ResponsibleParty>
+                  </gmd:citedResponsibleParty>
+                  <gmd:citedResponsibleParty>
+                     <gmd:CI_ResponsibleParty>
+                        <gmd:individualName>
+                           <gco:CharacterString>RIVM</gco:CharacterString>
+                        </gmd:individualName>
+                        <gmd:role>
+                           <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="publisher">publisher</gmd:CI_RoleCode>
+                        </gmd:role>
+                     </gmd:CI_ResponsibleParty>
+                  </gmd:citedResponsibleParty>
+               </gmd:CI_Citation>
+            </gmd:citation>
+            <gmd:abstract>
+               <gco:CharacterString>The first version of this data base originally was set up for testing and            validation of the so-called Integrated Model of the Greenhouse Effect (the            IMAGE model; see Alcamo, 1994), developed at RIVM. The main aim of the model is            to use state-of-the-art models to assist policy makers in the development and            evaluation of future scenarios to mitigate the negative effects of global            change. The modelling framework consists of several subsystems that cover the            different aspects of the earth system.                        Many calculations in IMAGE and other models are performed on a 0.5o by 0.5o            longitude/latitude grid. This is because nearly all potential impacts of            climate change (impacts on ecosystems, agriculture and coastal flooding) have a            strong spatial variability. Moreover, land use related greenhouse gas emissions            depend on local environmental conditions and human activity. There are also            other reasons for using grid-scale information. First, policy makers are            interested in regional/national policies to address climate change. Secondly,            grid-scale information makes model caluclations more testable against            observations as compared to more aggregated models.                        Nevertheless, it is infeasable to perform grid-based calculations for economic            models, because of the difficulty in specifying economic/demographic factors on            a country scale for the entire world over the long horizon of the model.            Therefore, the world has been divided into 19 world regions, according to            economic and geographic similarity. This classification also takes into account            the regional aggregations used by the IPCC, OECD, FAO, UN and IEA. It should be            noted, however, that IMAGE has the additional requirement that countries within            a region be adjacent or nearby because of the model's approach to global land            cover simulation.                        An important initiative for the update the previous version of HYDE (Klein            Goldewijk, 2001) was the publication of a new population density data base, the            Gridded World Population v.3 (Balk et al, 2005), which is now used as a            starting point for historical gridded population calculations. Because            population data are important in many calculations, it resulted in modified            land cover estimates, as well as estimates for GDP, value added, private            consumption. Furthermore, numerous new data have been incorporated in many            tables.                         Besides the testing of IMAGE, HYDE has already been used for integrated            environmental assessents such as the Global Environmental Outlook (GEO) of the            United Nations Enviromental Programme (UNEP, 1997), technical background            reports for GEO (RIVM/UNEP, 1997), the TARGETS project (Rotmans and De Vries,            1997), the Dutch National Environmental Outlook (RIVM, 1997) and the Mappae            Mundi project (Goudsblom and De Vries, 2002).  Also, HYDE has contributed to            other research e.g. in the field of historical atmospheric trace gas            inventories (e.g. Kroeze et al, 1999; den Elzen et al, 1999; van Aardenne et            al, 2001; Pitman et al, 2000; Pielke et al, 2003 ), biological diversity  (e.g.            Gaston et al, 2003), and climate reconstructions (e.g. Matthews et al, 2003;            Brovkin et al, 2004).                        Furthermore, this effort very much fits within the Land-Use and Land-Cover            Change LUCC project, (activity 3; database development), part of the the            International Human Dimensions Project (IHDP), and the PAGES (Human            Interactions in Past Environmental Changes) - focus 3: Human Impacts on            Terrestrial Ecosystems (HITE) initiative. PAGES is the International            Geosphere-Biosphere Programme (IGBP) core project charged with providing a            quantitative understanding of the Earth's past climate and environment.                         Please note that this data base is far from complete. Work is continuous in            progress to update and extent the data series where possible.                        [Summary provided by MNP]	  [ This document was provided by NASA's Global Change Master Directory.       For more information on the source of this metadata please visit      http://gcmd.nasa.gov/r/geoss/[GCMD]HYDE ]</gco:CharacterString>
+            </gmd:abstract>
+            <gmd:status>
+               <gmd:MD_ProgressCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="onGoing">onGoing</gmd:MD_ProgressCode>
+            </gmd:status>
+            <gmd:pointOfContact>
+               <gmd:CI_ResponsibleParty>
+                  <gmd:individualName>
+                     <gco:CharacterString>GOLDEWIJK, KEESKLEIN</gco:CharacterString>
+                  </gmd:individualName>
+                  <gmd:organisationName>
+                     <gco:CharacterString>NL/PBL &gt; Netherlands Environmental Assessment Agency</gco:CharacterString>
+                  </gmd:organisationName>
+                  <gmd:positionName>
+                     <gco:CharacterString>DATA CENTER CONTACT</gco:CharacterString>
+                  </gmd:positionName>
+                  <gmd:contactInfo>
+                     <gmd:CI_Contact>
+                        <gmd:phone>
+                           <gmd:CI_Telephone>
+                              <gmd:voice>
+                                 <gco:CharacterString>(+31) 30 274 3833</gco:CharacterString>
+                              </gmd:voice>
+                              <gmd:facsimile>
+                                 <gco:CharacterString>(+31) 30 274 4427</gco:CharacterString>
+                              </gmd:facsimile>
+                           </gmd:CI_Telephone>
+                        </gmd:phone>
+                        <gmd:address>
+                           <gmd:CI_Address>
+                              <gmd:deliveryPoint>
+                                 <gco:CharacterString>Netherlands Environmental Assessment Agency (MNP)</gco:CharacterString>
+                              </gmd:deliveryPoint>
+                              <gmd:deliveryPoint>
+                                 <gco:CharacterString>Box 303, NL-3720 AH</gco:CharacterString>
+                              </gmd:deliveryPoint>
+                              <gmd:city>
+                                 <gco:CharacterString>Bilthoven</gco:CharacterString>
+                              </gmd:city>
+                              <gmd:postalCode>
+                                 <gco:CharacterString>3720 AH</gco:CharacterString>
+                              </gmd:postalCode>
+                              <gmd:country>
+                                 <gco:CharacterString>The Netherlands</gco:CharacterString>
+                              </gmd:country>
+                              <gmd:electronicMailAddress>
+                                 <gco:CharacterString>kees.klein.goldewijk@mnp.nl</gco:CharacterString>
+                              </gmd:electronicMailAddress>
+                           </gmd:CI_Address>
+                        </gmd:address>
+                        <gmd:onlineResource>
+                           <gmd:CI_OnlineResource>
+                              <gmd:linkage>
+                                 <gmd:URL>http://www.pbl.nl/en</gmd:URL>
+                              </gmd:linkage>
+                           </gmd:CI_OnlineResource>
+                        </gmd:onlineResource>
+                     </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                     <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="resourceProvider">resourceProvider</gmd:CI_RoleCode>
+                  </gmd:role>
+               </gmd:CI_ResponsibleParty>
+            </gmd:pointOfContact>
+            <gmd:descriptiveKeywords>
+               <gmd:MD_Keywords>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; AGRICULTURAL CHEMICALS &gt; FERTILIZERS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; AGRICULTURAL ENGINEERING</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; ANIMAL COMMODITIES &gt; LIVESTOCK PRODUCTS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; FOOD SCIENCE</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; SOILS &gt; SOIL STRUCTURE</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; ATMOSPHERE &gt; AIR QUALITY &gt; NITROGEN OXIDES</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; TERRESTRIAL ECOSYSTEMS &gt; AGRICULTURAL LANDS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; TERRESTRIAL ECOSYSTEMS &gt; ALPINE/TUNDRA</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; TERRESTRIAL ECOSYSTEMS &gt; BEACHES</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; TERRESTRIAL ECOSYSTEMS &gt; DESERTS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; TERRESTRIAL ECOSYSTEMS &gt; DUNES</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; TERRESTRIAL ECOSYSTEMS &gt; FORESTS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; TERRESTRIAL ECOSYSTEMS &gt; GRASSLANDS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; TERRESTRIAL ECOSYSTEMS &gt; ISLANDS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; TERRESTRIAL ECOSYSTEMS &gt; KARST LANDSCAPE</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; TERRESTRIAL ECOSYSTEMS &gt; MONTANE HABITATS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; TERRESTRIAL ECOSYSTEMS &gt; SAVANNAS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; TERRESTRIAL ECOSYSTEMS &gt; SHRUBLAND/SCRUB</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; TERRESTRIAL ECOSYSTEMS &gt; URBAN LANDS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; TERRESTRIAL ECOSYSTEMS &gt; WETLANDS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; VEGETATION &gt; VEGETATION COVER</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; HUMAN DIMENSIONS &gt; ENVIRONMENTAL IMPACTS &gt; BIOMASS BURNING</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; HUMAN DIMENSIONS &gt; ENVIRONMENTAL IMPACTS &gt; CONTAMINANT LEVELS/SPILLS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; HUMAN DIMENSIONS &gt; ENVIRONMENTAL IMPACTS &gt; FOSSIL FUEL BURNING</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; HUMAN DIMENSIONS &gt; ENVIRONMENTAL IMPACTS &gt; INDUSTRIAL EMISSIONS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; HUMAN DIMENSIONS &gt; SOCIOECONOMICS &gt; INDUSTRIALIZATION</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; HUMAN DIMENSIONS &gt; HABITAT CONVERSION/FRAGMENTATION &gt; RECLAMATION/REVEGETATION/RESTORATION</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; HUMAN DIMENSIONS &gt; ENVIRONMENTAL GOVERNANCE/MANAGEMENT &gt; LAND MANAGEMENT</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; HUMAN DIMENSIONS &gt; ENVIRONMENTAL GOVERNANCE/MANAGEMENT &gt; LAND MANAGEMENT &gt; LAND TENURE</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; HUMAN DIMENSIONS &gt; ENVIRONMENTAL GOVERNANCE/MANAGEMENT &gt; LAND MANAGEMENT &gt; LAND USE CLASSES</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; LAND SURFACE &gt; LAND USE/LAND COVER &gt; LAND COVER</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; LAND SURFACE &gt; LAND USE/LAND COVER &gt; LAND PRODUCTIVITY</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; LAND SURFACE &gt; LAND USE/LAND COVER &gt; LAND RESOURCES</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; LAND SURFACE &gt; LAND USE/LAND COVER &gt; LAND USE CLASSES</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; SOLID EARTH &gt; ROCKS/MINERALS/CRYSTALS &gt; SEDIMENTARY ROCKS &gt; COAL</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; SOLID EARTH &gt; ROCKS/MINERALS/CRYSTALS &gt; METALS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; SOLID EARTH &gt; EARTH GASES/LIQUIDS &gt; NATURAL GAS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; SOLID EARTH &gt; ROCKS/MINERALS/CRYSTALS &gt; NON-METALLIC MINERALS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; SOLID EARTH &gt; EARTH GASES/LIQUIDS &gt; PETROLEUM</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; SOLID EARTH &gt; ROCKS/MINERALS/CRYSTALS &gt; ELEMENTS &gt; RADIOACTIVE ELEMENTS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; HUMAN DIMENSIONS &gt; ENVIRONMENTAL GOVERNANCE/MANAGEMENT &gt; ENVIRONMENTAL ASSESSMENTS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; HUMAN DIMENSIONS &gt; ENVIRONMENTAL IMPACTS &gt; CONSERVATION</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; AQUATIC ECOSYSTEMS &gt; WETLANDS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; ATMOSPHERE &gt; ATMOSPHERIC CHEMISTRY &gt; CARBON AND HYDROCARBON COMPOUNDS &gt; CARBON DIOXIDE</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; ATMOSPHERE &gt; ATMOSPHERIC CHEMISTRY &gt; CARBON AND HYDROCARBON COMPOUNDS &gt; METHANE</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; ATMOSPHERE &gt; ATMOSPHERIC CHEMISTRY &gt; NITROGEN COMPOUNDS &gt; AMMONIA</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; ATMOSPHERE &gt; ATMOSPHERIC CHEMISTRY &gt; NITROGEN COMPOUNDS &gt; NITROGEN OXIDES</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; ATMOSPHERE &gt; ATMOSPHERIC CHEMISTRY &gt; SULFUR COMPOUNDS &gt; SULFUR DIOXIDE</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EARTH SCIENCE &gt; ATMOSPHERE &gt; ATMOSPHERIC CHEMISTRY &gt; SULFUR COMPOUNDS &gt; SULFUR OXIDES</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:thesaurusName>
+                     <gmd:CI_Citation>
+                        <gmd:title>
+                           <gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+                        </gmd:title>
+                        <gmd:alternateTitle>
+                           <gco:CharacterString>Science Keywords</gco:CharacterString>
+                        </gmd:alternateTitle>
+                        <gmd:date>
+                           <gmd:CI_Date>
+                              <gmd:date>
+                                 <gco:Date>2008-02-05</gco:Date>
+                              </gmd:date>
+                              <gmd:dateType>
+                                 <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+                              </gmd:dateType>
+                           </gmd:CI_Date>
+                        </gmd:date>
+                        <gmd:collectiveTitle>
+                           <gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+                        </gmd:collectiveTitle>
+                     </gmd:CI_Citation>
+                  </gmd:thesaurusName>
+               </gmd:MD_Keywords>
+            </gmd:descriptiveKeywords>
+            <gmd:descriptiveKeywords>
+               <gmd:MD_Keywords>
+                  <gmd:keyword>
+                     <gco:CharacterString>Cement</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>Global Warming</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>Greenhouse Gasses</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>CFC</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>CFC Production</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>NMVOC</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>NMVOC Emissions</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>Historical Data</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>Historical Land Cover</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>Historical Land Use</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>Potential Natural Vegetation</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>Initial Agriculture</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>Human Food Consumption</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>Livestock</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>Buffaloe</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>Cattle</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>Goats</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>Pigs</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>Sheep</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>CONSERVATION</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>TEMS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>GTOS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>G3OS</gco:CharacterString>
+                  </gmd:keyword>
+               </gmd:MD_Keywords>
+            </gmd:descriptiveKeywords>
+            <gmd:descriptiveKeywords>
+               <gmd:MD_Keywords>
+                  <gmd:keyword>
+                     <gco:CharacterString>GTOS &gt; Global Terrestrial Observing System</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>ISLSCP &gt; International Satellite Land Surface Climatology Project</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>LUCC &gt; Land Use and Land Cover Change, IGBP</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>EDGAR &gt; Emission Database for Global Atmospheric Research</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:thesaurusName>
+                     <gmd:CI_Citation>
+                        <gmd:title>
+                           <gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+                        </gmd:title>
+                        <gmd:alternateTitle>
+                           <gco:CharacterString>Projects</gco:CharacterString>
+                        </gmd:alternateTitle>
+                        <gmd:date>
+                           <gmd:CI_Date>
+                              <gmd:date>
+                                 <gco:Date>2009-06-10</gco:Date>
+                              </gmd:date>
+                              <gmd:dateType>
+                                 <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+                              </gmd:dateType>
+                           </gmd:CI_Date>
+                        </gmd:date>
+                        <gmd:collectiveTitle>
+                           <gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+                        </gmd:collectiveTitle>
+                     </gmd:CI_Citation>
+                  </gmd:thesaurusName>
+               </gmd:MD_Keywords>
+            </gmd:descriptiveKeywords>
+            <gmd:descriptiveKeywords>
+               <gmd:MD_Keywords>
+                  <gmd:keyword>
+                     <gco:CharacterString>GOSIC/GTOS</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>USA/NASA</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:keyword>
+                     <gco:CharacterString>GOSIC</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:thesaurusName>
+                     <gmd:CI_Citation>
+                        <gmd:title>
+                           <gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+                        </gmd:title>
+                        <gmd:alternateTitle>
+                           <gco:CharacterString>IDN Nodes</gco:CharacterString>
+                        </gmd:alternateTitle>
+                        <gmd:date>
+                           <gmd:CI_Date>
+                              <gmd:date>
+                                 <gco:Date>2007-04-01</gco:Date>
+                              </gmd:date>
+                              <gmd:dateType>
+                                 <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+                              </gmd:dateType>
+                           </gmd:CI_Date>
+                        </gmd:date>
+                        <gmd:collectiveTitle>
+                           <gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+                        </gmd:collectiveTitle>
+                     </gmd:CI_Citation>
+                  </gmd:thesaurusName>
+               </gmd:MD_Keywords>
+            </gmd:descriptiveKeywords>
+            <gmd:descriptiveKeywords>
+               <gmd:MD_Keywords>
+                  <gmd:keyword>
+                     <gco:CharacterString>GEOGRAPHIC REGION &gt; GLOBAL LAND</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:thesaurusName>
+                     <gmd:CI_Citation>
+                        <gmd:title>
+                           <gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+                        </gmd:title>
+                        <gmd:alternateTitle>
+                           <gco:CharacterString>Locations</gco:CharacterString>
+                        </gmd:alternateTitle>
+                        <gmd:date>
+                           <gmd:CI_Date>
+                              <gmd:date>
+                                 <gco:Date>2009-12-22</gco:Date>
+                              </gmd:date>
+                              <gmd:dateType>
+                                 <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+                              </gmd:dateType>
+                           </gmd:CI_Date>
+                        </gmd:date>
+                        <gmd:collectiveTitle>
+                           <gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+                        </gmd:collectiveTitle>
+                     </gmd:CI_Citation>
+                  </gmd:thesaurusName>
+               </gmd:MD_Keywords>
+            </gmd:descriptiveKeywords>
+            <gmd:resourceConstraints>
+               <gmd:MD_LegalConstraints>
+                  <gmd:accessConstraints>
+                     <gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
+                  </gmd:accessConstraints>
+                  <gmd:otherConstraints>
+                     <gco:CharacterString>Must register with RIVM to download data sets.</gco:CharacterString>
+                  </gmd:otherConstraints>
+               </gmd:MD_LegalConstraints>
+            </gmd:resourceConstraints>
+            <gmd:language>
+               <gco:CharacterString>eng</gco:CharacterString>
+            </gmd:language>
+            <gmd:characterSet>
+               <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+            </gmd:characterSet>
+            <gmd:topicCategory>
+               <gmd:MD_TopicCategoryCode>observingSystemSensorNetwork</gmd:MD_TopicCategoryCode>
+            </gmd:topicCategory>
+            <gmd:topicCategory>
+               <gmd:MD_TopicCategoryCode>farming</gmd:MD_TopicCategoryCode>
+            </gmd:topicCategory>
+            <gmd:topicCategory>
+               <gmd:MD_TopicCategoryCode>biota</gmd:MD_TopicCategoryCode>
+            </gmd:topicCategory>
+            <gmd:topicCategory>
+               <gmd:MD_TopicCategoryCode>climatology/meteorology/atmosphere</gmd:MD_TopicCategoryCode>
+            </gmd:topicCategory>
+            <gmd:topicCategory>
+               <gmd:MD_TopicCategoryCode>economy</gmd:MD_TopicCategoryCode>
+            </gmd:topicCategory>
+            <gmd:topicCategory>
+               <gmd:MD_TopicCategoryCode>environment</gmd:MD_TopicCategoryCode>
+            </gmd:topicCategory>
+            <gmd:topicCategory>
+               <gmd:MD_TopicCategoryCode>geoscientific information</gmd:MD_TopicCategoryCode>
+            </gmd:topicCategory>
+            <gmd:topicCategory>
+               <gmd:MD_TopicCategoryCode>imagery/base maps/earth cover</gmd:MD_TopicCategoryCode>
+            </gmd:topicCategory>
+            <gmd:topicCategory>
+               <gmd:MD_TopicCategoryCode>planning cadastre</gmd:MD_TopicCategoryCode>
+            </gmd:topicCategory>
+            <gmd:extent>
+               <gmd:EX_Extent>
+                  <gmd:geographicElement>
+                     <gmd:EX_GeographicBoundingBox>
+                        <gmd:westBoundLongitude>
+                           <gco:Decimal>-180.0</gco:Decimal>
+                        </gmd:westBoundLongitude>
+                        <gmd:eastBoundLongitude>
+                           <gco:Decimal>180.0</gco:Decimal>
+                        </gmd:eastBoundLongitude>
+                        <gmd:southBoundLatitude>
+                           <gco:Decimal>-90.0</gco:Decimal>
+                        </gmd:southBoundLatitude>
+                        <gmd:northBoundLatitude>
+                           <gco:Decimal>90.0</gco:Decimal>
+                        </gmd:northBoundLatitude>
+                     </gmd:EX_GeographicBoundingBox>
+                  </gmd:geographicElement>
+                  <gmd:geographicElement>
+                     <gmd:EX_GeographicDescription>
+                        <gmd:geographicIdentifier>
+                           <gmd:MD_Identifier>
+                              <gmd:authority>
+                                 <gmd:CI_Citation>
+                                    <gmd:title>
+                                       <gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+                                    </gmd:title>
+                                    <gmd:alternateTitle>
+                                       <gco:CharacterString>Locations</gco:CharacterString>
+                                    </gmd:alternateTitle>
+                                    <gmd:date>
+                                       <gmd:CI_Date>
+                                          <gmd:date>
+                                             <gco:Date>2009-12-22</gco:Date>
+                                          </gmd:date>
+                                          <gmd:dateType>
+                                             <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+                                          </gmd:dateType>
+                                       </gmd:CI_Date>
+                                    </gmd:date>
+                                    <gmd:collectiveTitle>
+                                       <gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+                                    </gmd:collectiveTitle>
+                                 </gmd:CI_Citation>
+                              </gmd:authority>
+                              <gmd:code>
+                                 <gco:CharacterString>GEOGRAPHIC REGION &gt; GLOBAL LAND</gco:CharacterString>
+                              </gmd:code>
+                           </gmd:MD_Identifier>
+                        </gmd:geographicIdentifier>
+                     </gmd:EX_GeographicDescription>
+                  </gmd:geographicElement>
+                  <gmd:temporalElement>
+                     <gmd:EX_TemporalExtent>
+                        <gmd:extent>
+                           <gml:TimePeriod gml:id="d8638e990">
+                              <gml:begin>
+                                 <gml:TimeInstant gml:id="d8638e992">
+                                    <gml:timePosition>1700-01-01</gml:timePosition>
+                                 </gml:TimeInstant>
+                              </gml:begin>
+                              <gml:end>
+                                 <gml:TimeInstant gml:id="d8638e995">
+                                    <gml:timePosition>2000-12-31</gml:timePosition>
+                                 </gml:TimeInstant>
+                              </gml:end>
+                           </gml:TimePeriod>
+                        </gmd:extent>
+                     </gmd:EX_TemporalExtent>
+                  </gmd:temporalElement>
+               </gmd:EX_Extent>
+            </gmd:extent>
+            <gmd:supplementalInformation>
+               <gco:CharacterString>Aardenne, J. van, J.F. Dentener, J.G.J. Olivier, C.G.M. Klein Goldewijk and J.            Lelieveld. A 1o x 1o resolution dataset of historical anthropogenic trace gas            emissions for the period 1890 - 1990. Global Biogeochemical Cycles 15(4): 909 -            928.                        Alcamo, J. (ed.), IMAGE 2.0: Integrated modeling of global climate change.            Kluwer Academic Publishers, Dordrecht, Boston, pp. 318. 1994.                        Alcamo, J., Kreileman, E. and Leemans, R., (eds.), Integrated Scenarios of            Global Change. Global Environmental Change, Special Issue on Human and Policy            Dimensions, 6(4): 255-397. 1996.                        Alcamo, J., Kreileman, G.J.J. and Krol, M., An overview of IMAGE 2.1. Brochure.            1995.                        Alcamo, J., Leemans, R. and Kreileman, E. (eds.), Global Change Scenarios of            the 21th Century. Pergamon, Elsevier Science Ltd., Oxford, UK, pp. 296. 1998.                        Biraben, J.-N., An essay concerning mankind's evolution. Population, Selected            papers. 1980.                        Bogue, D.J., The population of the United States, historical trends and future            projections. The Free Press, New York. 1985.                        Darmstadter, J., Energy in the world economy, John Hopkins Press, Baltimore,            pp. 876. 1971.                        Demeny, P., Population. In: B.L. Turner II et al. (eds), The earth as            transformed by human action. Cambridge University Press, New York, pp 41-54.            1990.                        Durand, J.D., Historical estimates of world population: An evaluation,            Population Studies Center, Philidelphia. 1974.                        Durand, J.D., Historical estimates of world population. Population and            Development Review, 3(3): 253-296. 1977.                        Elzen, M den, M. Berk, M. Shaeffer, J. Olivier, C. Hendriks, B. Metz, The            Brazilian proposal and other options for international burden sharing: an            evaluation of methodological and policy aspects using the FAIR model. Dutch            National Research Programme on Global Air Pollution and Climate Change. NOP            Report 410 200 029/ RIVM report no 728001011. 1999.                        Esser, G. and D. Overdieck (eds.), Osnabruck Biosphere Model: structure,            construction, results. Modern Ecology, Basic and Applied Aspects. Elsevier,            Amsterdam. pp. 679-709. 1991.                        Etemad, B, P. Bairoch, J. Luciani and J.-C. Toutain, World energy production            1800 - 1985. Libraire Droz, Geneve. pp. 272. 1991.                        Etheridge, D.M., Steele, L.P., Francey, R.J. and Langenfelds, R.L. Atmospheric            methane between 1000 A.D. and present: evidence of anthropogenic emissions and            climatic variability. Journal of Geophysical Research, 103(D13): 15,979 -            15,993. 1998.                        FAO, FAOSTAT PC. Food and Agricultural Organization of the United Nations,            Rome. 1996.                        FAO, http://www.fao.org. Food and Agricultural Organization of the United            Nations, Rome. 1998.                        Flint, E.P., and Richards, J.F. Historic land use and carbon estimates for            South and Southeast Asia 1880-1980, Dataset NDP-046 CDIAC/ORNL, Oak Ridge            Laboratory, Oak Ridge. 1994.                        Grigg, D., The industrial revolution and land transformation. In: M.G. Wolman            and F.G.A. Fournier (eds.), Land transformation in agriculture. John Wiley &amp;            Sons, Chichester - New York - Brisbane - Toronto - Singapore, pp 79-109. 1987.                         Grigg, D.B., The agricultural systems of the world: an evolutionary approach.            Cambridge University Press, Cambridge, England, 1974.                        Hall, C.A.S., Tian, H., Qi, Y., Pontius, G.H. and Cornell, J.D., Modeling            spatial and temporal patterns of tropical land use change. Journal of            Biogeography 22: 2547-2551. 1995.                        Haub, C., How many people have ever lived on Earth ? Population Today,            February: p5, 1995.                        Houghton, R.A., The annual net flux of carbon to the atmosphere from changes in            land use 1850 - 1990. Tellus, 51B: 298-313. 1999.                        Houghton, R.A. and Hackler, J.L., Continental scale estimates of the biotic            carbon flux from land cover change: 1850 - 1980, Oak Ridge National Laboratory,            Oak Ridge, TN. 1995.                        Houghton, R.A., Hobbie, J.E., Melillo, J.M., Moore, B., Peterson, B.J., Shaver,            G.R., and Woodwell, G.M. Changes in the carbon content of terrestrial biota and            soils between 1860 and 1980: a net release of CO2 to the atmosphere. Ecol.            Monogr., 53(3): 235-262. 1983.                        Houghton, R.A., Lefkowitz, D.S. and Skole, D.L., Changes in the landscape of            Latin America between 1850 and 1985. I. Progessive loss of forests. Forest            Ecology and Management, 38: 143-172, 1991.            IEA. International Energy Agency, International Energy Agency Database Beyond            20/20. Paris. 1998.                        IPCC, Climate Change: The IPCC Scientific Assessment. Cambridge University            Press, Cambridge, pp. 365. 1990.                        IPCC, Climate Change 1992. The Supplementary Report to the IPCC Scientific            Assessment. Cambridge University Press, Cambridge, pp. 200. 1992.                        IPCC, Climate Change 1995. Impacts, adaptations and mitigation of climate            change: scientific-technical analysis. Cambridge University Press, Cambridge,            pp. 878. 1996.                        Jones, P.D., T. M. L. Wigley, and K. R. Briffa. Global and hemispheric            temperature anomalies--land and marine instrumental records. pp. 603-608. In:            T.A. Boden, D. P. Kaiser, R. J. Sepanski, and F. W. Stoss (eds.), Trends '93: A            Compendium of Data on Global Change. ORNL/CDIAC-65. Carbon Dioxide Information            Analysis Center, Oak Ridge National Laboratory, Oak Ridge, Tenn., U.S.A. 1994.                        Klein Goldewijk, K. Three centuries of global population growth: A spatial            referenced population density database for 1700 ? 2000, Population and            Environment, 26 (4): 343-367. 2005.                        Klein Goldewijk, K., Estimating global land use change over the past 300 years:            the HYDE database. Global Biogeochemical Cycles, 15(2): 417-434. 2001                        Kreileman, E., J. van Woerden and J. Bakkes. RIVM Environmental research 1998            world regions and subregions. CIM Report no. M025/98, National Institute of            Public Health and the Environment (RIVM), Bilthoven, The Netherlands. pp. 20.            1998.                        Leemans, R. and Cramer, W., The IIASA database for mean monthly values of            temperature, precipitation and cloudiness on a global terrestrial grid,            Laxenburg. 1991.                        Leemans, R. and van den Born, G.J., Determining the potential global            distribution of natural vegetation, crops and agricultural productivity. Water,            Air &amp; Soil Pollution , 76(1-2): 133-162. 1994.                        Lefohn A.S., Husar J.D., and Husar R.B., Estimating Historical Anthropogenic            Global Sulfur Emission Patterns for the Period 1850-1990. Atmospheric            Environment 33: 3435-3444. 1999.                        Loveland, T.R. and Belward, A.S., The IGBP-DIS global 1km land cover data set,            DISCover: first results. International Journal of Remote Sensing, 18:            3289-3295. 1997.                        Maddison, A., Monitoring the world economy. OECD, Paris. 1994.                        Marland, G., R. J. Andres, T. A. Boden, C. Johnston, and A. Brenkert. Global,            Regional, and National CO2 Emission Estimates from Fossil Fuel Burning, Cement            Production, and Gas Flaring: 1751-1996 (revised March 1999), Dataset NDP030.            Carbon Dioxide Information and Analysis Center (CDIAC), Oak Ridge Laboratory,            Oak Ridge. 1999.                        McEvedy, C. and Jones, R., Atlas of World Population History, Middlesex,            England: Viking Penguin. 1978.                        Merrick, T.W., World population in transition. Population Bulletin, 41(2): 53.            1986.                        Metallgesellschaft. Metallstatistik 1980-1990. Druckerei C. Adelmann, Frankfurt            am Main. 1991.                        Metallgesellschaft. Metallstatistik 1982-1992. Druckerei C. Adelmann, Frankfurt            am Main. 1992.                        Mitchell, B.R. International Historical Statistics, The Americas: 1750 - 1988.            New York, Stockton Press, London, MacMillan Publishers Ltd., 817 pp. 1993.                        Mitchell, B.R. International Historical Statistics, Africa, Asia &amp; Oceania:            1750 - 1993, Third Edition. New York, Stockton Press, London, MacMillan            Reference Ltd., 1113 pp. 1998.                        Mitchell, B.R. International historical statistics Europe: 1750 - 1993, Fourth            Edition. New York, Stockton Press, London, MacMillan Reference Ltd., 959 pp.            1998.                        Olivier, J., A.F. Bouwman, C.W.M. Van der Maas, J.J.M. Berdowksi, C. Veldt,            J.P.J. Bloos, A.J.H. Visschedijk, P.Y.J. Zandveld and J.L. Haverlag.            Description of EDGAR Version 2.0: a set of emission inventories of greenhouse            gases and ozone-depleting substances for all anthropogenic and most natural            sources on a per country basis and on 1o x 1o grid. RIVM Report nr. 771060002            and TNO-MEP Report nr. R96/119. 1996.                        Olson, J., Watts, J.A. and Allison, L.J., Major World Ecosystem Complexes            Ranked by Carbon in Live Vegetation: A Data Base, Carbon Dioxide Information            Center, Oak Ridge, Tennessee. 1985.                        Oxford Economic Atlas of the World, Oxford's Economic Atlas of the World.            Oxford University Press, New York. 1972.                        Prentice, I.C., Cramer, W., Harrison, S.P., Leemans, R., Monserud, R.A. and            Solomon, A.M., A global biome model based on plant physiology and dominance,            soil properties and climate. J. Biogeogr., 19: 117-134. 1992.                        Ramankutty, N. and Foley, J.A., Characterizing patterns of global land use: an            analysis of global croplands data. Global Biogeochemical Cycles, 12(04): p.            667. 1998.                        Ramankutty, N. and Foley, J.A., Estimating historical changes in land cover:            North Anerican croplands from 1850 - 1792. Subm. to Global Ecology and            Biogeography Letters.                        Rotty, R.M. Distribution of and changes in industrial carbon dioxide            production. Global Biogeochemical Cycles, 88(C2): 1301-1308. 1983.                        Richards, J.F., World environmental history and economic development. In: W.C.            Clark and R.E. Munn (eds.), Sustainable development of the biosphere. Cambridge            University Press, IIASA Laxenburg, Austria, pp. 53-73. 1986.                        Richards, J.F., Land transformation. In: B.L. Turner II et al. (eds.), The            earth as transformed by human action. Cambridge University Press, New York, pp.            163-178. 1990.                        Richards, J.F. and E. P. Flint, Historical land use and carbon estimates for            South and Southeast Asia 1880 - 1980. ORNL/CDIAC-61 NDP-046, Oak Ridge. 1994.                        RIVM, The national environmental outlook. National Institute of Public Health            and the environment (RIVM). 1997.                        Sausen, R. and U. Schumann, Estimates of the climate response to aircraft CO2            and NOx emissions, Climatic Change 44: 27-58. 2000.                        Schmitz, C.J. World non-ferrous metal production and prices, 1700 - 1976. Frank            Cass, London. 432 pp. 1979.                        Stern, D.I. and Kaufmann, R.K., Estimates of global anthropogenic sulphate            emissions 1860 - 1993. Center for Energy and Enironmental Studies, Boston            University, Working paper series 9602. 1996.                        Thomlinson, J.R., Serrano, M.I., Lopez, T.D., Aide, T.M. and Zimmerman, J.K.,            Land-use dynamics in a post-agricultural Puerto Rican landscape (1936-1988).            Biotropica, 28(4 Part A): 525-536. 1996.                        Tobler, W., Deichmann, U., Gottsegen, J. and Maloy, K., The global demography            project. Technical Report TR-95-6, Santa Barbara, CA, USA, 1995.                        Trends '93. Boden, T.A., D. P. Kaiser, R. J. Sepanski, and F. W. Stoss (eds.),            A Compendium of Data on Global Change. ORNL/CDIAC-65. Carbon Dioxide            Information Analysis Center, Oak Ridge National Laboratory, Oak Ridge, Tenn.,            U.S.A. 1994.                        Turner, B.L., Moss, R.H. and Skole, D.L., Relating land use and global            land-cover change: A proposal for an IGBP-HDP core project. Report No. 24,            Royal Swedish Academy of Sciences, Stockholm, Zweden. 1993.                        Turner II, B.L., Clark, W.C., Kates, R.W., Richards, J.F., Mathews, J.T. and            Meyer, W.B. (eds.), The earth as transformed by human action. Global and            regional changes in the biosphere over the past 300 years. Cambridge University            Press, Clark University, New York, Port Chester, Melbourne, Sydney. 1992.                        Tuve, G.L., Energy, environment, population, and food. A Wiley-Interscience            Publication. John Wiley &amp; Sons, New York, 264 pp. 1976.                        United Nations, Long-range world population projections: Two centuries of            population growth, 1950-2150, New York, 1992.                        United Nations, World Population Prospects: The 1994 Revision, New York. 1994.                        United Nations, World Population Prospects, The 1996 Revision. 1996.                        Urquhart, M.C. and K.A.H. Buckley (eds.). Historical statistics of Canada,            Cambridge: University Press; Toronto: MacMillan Company of Canada Ltd., pp.672.            1965.                        U.S. Bureau of Census. The statistical history of the United States; from            colonial times to the present, New York; Basic Books, Inc. Publishers. 1976.                        USGS, http://edcwww.cr.usgs.gov/landdaac/glcc/glcc_na.html. 1-km global land            characterization. U.S. Geological Survey. 1998.                        Williams, M., Forests. In: B.L. Turner II et al. (eds.), The earth as            transformed by human action. Cambridge University Press, New York, pp. 179-202.            1990.                        Winkler Prins, De grote Winkler Prins Wereldatlas. Elsevier, Amsterdam. 1987.                        Woytinsky, W.S. and Woytinsky, E.S., World population and production, The Lord            Baltimore Press, New York. 1953.                        WDI. World Development Indicators 1998, World Bank, Washington D.C. 1998.                        WRI, World Resources, 1986-1987, World Resources Institute, Basic Books, New            York. 1987.</gco:CharacterString>
+            </gmd:supplementalInformation>
+         </gmd:MD_DataIdentification>
+      </gmd:identificationInfo>
+      <gmd:identificationInfo>
+         <srv:SV_ServiceIdentification>
+            <gmd:citation />
+            <gmd:abstract />
+            <srv:serviceType />
+            <srv:couplingType />
+            <srv:containsOperations />
+         </srv:SV_ServiceIdentification>
+      </gmd:identificationInfo>
+      <gmd:distributionInfo>
+         <gmd:MD_Distribution>
+            <gmd:distributionFormat>
+               <gmd:MD_Format>
+                  <gmd:name>
+                     <gco:CharacterString>varies</gco:CharacterString>
+                  </gmd:name>
+                  <gmd:version gco:nilReason="missing">
+                     <gco:CharacterString />
+                  </gmd:version>
+               </gmd:MD_Format>
+            </gmd:distributionFormat>
+            <gmd:distributor>
+               <gmd:MD_Distributor>
+                  <gmd:distributorContact>
+                     <gmd:CI_ResponsibleParty>
+                        <gmd:individualName>
+                           <gco:CharacterString>GOLDEWIJK, KEESKLEIN</gco:CharacterString>
+                        </gmd:individualName>
+                        <gmd:organisationName>
+                           <gco:CharacterString>NL/PBL &gt; Netherlands Environmental Assessment Agency</gco:CharacterString>
+                        </gmd:organisationName>
+                        <gmd:positionName>
+                           <gco:CharacterString>DATA CENTER CONTACT</gco:CharacterString>
+                        </gmd:positionName>
+                        <gmd:contactInfo>
+                           <gmd:CI_Contact>
+                              <gmd:phone>
+                                 <gmd:CI_Telephone>
+                                    <gmd:voice>
+                                       <gco:CharacterString>(+31) 30 274 3833</gco:CharacterString>
+                                    </gmd:voice>
+                                    <gmd:facsimile>
+                                       <gco:CharacterString>(+31) 30 274 4427</gco:CharacterString>
+                                    </gmd:facsimile>
+                                 </gmd:CI_Telephone>
+                              </gmd:phone>
+                              <gmd:address>
+                                 <gmd:CI_Address>
+                                    <gmd:deliveryPoint>
+                                       <gco:CharacterString>Netherlands Environmental Assessment Agency (MNP)</gco:CharacterString>
+                                    </gmd:deliveryPoint>
+                                    <gmd:deliveryPoint>
+                                       <gco:CharacterString>Box 303, NL-3720 AH</gco:CharacterString>
+                                    </gmd:deliveryPoint>
+                                    <gmd:city>
+                                       <gco:CharacterString>Bilthoven</gco:CharacterString>
+                                    </gmd:city>
+                                    <gmd:postalCode>
+                                       <gco:CharacterString>3720 AH</gco:CharacterString>
+                                    </gmd:postalCode>
+                                    <gmd:country>
+                                       <gco:CharacterString>The Netherlands</gco:CharacterString>
+                                    </gmd:country>
+                                    <gmd:electronicMailAddress>
+                                       <gco:CharacterString>kees.klein.goldewijk@mnp.nl</gco:CharacterString>
+                                    </gmd:electronicMailAddress>
+                                 </gmd:CI_Address>
+                              </gmd:address>
+                              <gmd:onlineResource>
+                                 <gmd:CI_OnlineResource>
+                                    <gmd:linkage>
+                                       <gmd:URL>http://www.pbl.nl/en</gmd:URL>
+                                    </gmd:linkage>
+                                 </gmd:CI_OnlineResource>
+                              </gmd:onlineResource>
+                           </gmd:CI_Contact>
+                        </gmd:contactInfo>
+                        <gmd:role>
+                           <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor">distributor</gmd:CI_RoleCode>
+                        </gmd:role>
+                     </gmd:CI_ResponsibleParty>
+                  </gmd:distributorContact>
+                  <gmd:distributionOrderProcess>
+                     <gmd:MD_StandardOrderProcess>
+                        <gmd:fees>
+                           <gco:CharacterString>No fees</gco:CharacterString>
+                        </gmd:fees>
+                     </gmd:MD_StandardOrderProcess>
+                  </gmd:distributionOrderProcess>
+               </gmd:MD_Distributor>
+            </gmd:distributor>
+            <gmd:transferOptions>
+               <gmd:MD_DigitalTransferOptions>
+                  <gmd:unitsOfDistribution>
+                     <gco:CharacterString />
+                  </gmd:unitsOfDistribution>
+                  <gmd:transferSize>
+                     <gco:Real />
+                  </gmd:transferSize>
+                  <gmd:onLine>
+                     <gmd:CI_OnlineResource>
+                        <gmd:linkage>
+                           <gmd:URL>http://www.pbl.nl/en/index.html</gmd:URL>
+                        </gmd:linkage>
+                        <gmd:protocol>
+                           <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                        </gmd:protocol>
+                        <gmd:name>
+                           <gco:CharacterString>GET DATA</gco:CharacterString>
+                        </gmd:name>
+                        <gmd:description>
+                           <gco:CharacterString>Information for downloading HYDE data.</gco:CharacterString>
+                        </gmd:description>
+                     </gmd:CI_OnlineResource>
+                  </gmd:onLine>
+                  <gmd:onLine>
+                     <gmd:CI_OnlineResource>
+                        <gmd:linkage>
+                           <gmd:URL>http://www.mnp.nl/hyde</gmd:URL>
+                        </gmd:linkage>
+                        <gmd:protocol>
+                           <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                        </gmd:protocol>
+                        <gmd:name>
+                           <gco:CharacterString>VIEW RELATED INFORMATION</gco:CharacterString>
+                        </gmd:name>
+                        <gmd:description>
+                           <gco:CharacterString>International Environmental Research at RIVM.</gco:CharacterString>
+                        </gmd:description>
+                     </gmd:CI_OnlineResource>
+                  </gmd:onLine>
+                  <gmd:onLine>
+                     <gmd:CI_OnlineResource>
+                        <gmd:linkage>
+                           <gmd:URL>http://www.mnp.nl/hyde/</gmd:URL>
+                        </gmd:linkage>
+                        <gmd:protocol>
+                           <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                        </gmd:protocol>
+                        <gmd:name>
+                           <gco:CharacterString>Data Set Citation</gco:CharacterString>
+                        </gmd:name>
+                        <gmd:description>
+                           <gco:CharacterString>History Database of the Global Environment - HYDE</gco:CharacterString>
+                        </gmd:description>
+                     </gmd:CI_OnlineResource>
+                  </gmd:onLine>
+               </gmd:MD_DigitalTransferOptions>
+            </gmd:transferOptions>
+         </gmd:MD_Distribution>
+      </gmd:distributionInfo>
+      <gmd:dataQualityInfo>
+         <gmd:DQ_DataQuality>
+            <gmd:scope>
+               <gmd:DQ_Scope>
+                  <gmd:level>
+                     <gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+                  </gmd:level>
+               </gmd:DQ_Scope>
+            </gmd:scope>
+            <gmd:lineage>
+               <gmd:LI_Lineage>
+                  <gmd:statement gco:nilReason="missing">
+                     <gco:CharacterString />
+                  </gmd:statement>
+               </gmd:LI_Lineage>
+            </gmd:lineage>
+         </gmd:DQ_DataQuality>
+      </gmd:dataQualityInfo>
+      <gmd:metadataConstraints>
+         <gmd:MD_LegalConstraints>
+            <gmd:useLimitation>
+               <gco:CharacterString>This metadata record is publicly available.</gco:CharacterString>
+            </gmd:useLimitation>
+         </gmd:MD_LegalConstraints>
+      </gmd:metadataConstraints>
+      <gmd:metadataMaintenance>
+         <gmd:MD_MaintenanceInformation>
+            <gmd:maintenanceAndUpdateFrequency>
+               <gmd:MD_MaintenanceFrequencyCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded">asNeeded</gmd:MD_MaintenanceFrequencyCode>
+            </gmd:maintenanceAndUpdateFrequency>
+            <gmd:contact>
+               <gmd:CI_ResponsibleParty>
+                  <gmd:individualName>
+                     <gco:CharacterString>STEVENS, TYLERB.</gco:CharacterString>
+                  </gmd:individualName>
+                  <gmd:contactInfo>
+                     <gmd:CI_Contact>
+                        <gmd:phone>
+                           <gmd:CI_Telephone>
+                              <gmd:voice>
+                                 <gco:CharacterString>(301) 614-6898</gco:CharacterString>
+                              </gmd:voice>
+                              <gmd:facsimile>
+                                 <gco:CharacterString>301-614-5268</gco:CharacterString>
+                              </gmd:facsimile>
+                           </gmd:CI_Telephone>
+                        </gmd:phone>
+                        <gmd:address>
+                           <gmd:CI_Address>
+                              <gmd:deliveryPoint>
+                                 <gco:CharacterString>NASA Goddard Space Flight Center</gco:CharacterString>
+                              </gmd:deliveryPoint>
+                              <gmd:deliveryPoint>
+                                 <gco:CharacterString>Global Change Master Directory</gco:CharacterString>
+                              </gmd:deliveryPoint>
+                              <gmd:city>
+                                 <gco:CharacterString>Greenbelt</gco:CharacterString>
+                              </gmd:city>
+                              <gmd:administrativeArea>
+                                 <gco:CharacterString>MD</gco:CharacterString>
+                              </gmd:administrativeArea>
+                              <gmd:postalCode>
+                                 <gco:CharacterString>20771</gco:CharacterString>
+                              </gmd:postalCode>
+                              <gmd:country>
+                                 <gco:CharacterString>USA</gco:CharacterString>
+                              </gmd:country>
+                              <gmd:electronicMailAddress>
+                                 <gco:CharacterString>Tyler.B.Stevens@nasa.gov</gco:CharacterString>
+                              </gmd:electronicMailAddress>
+                           </gmd:CI_Address>
+                        </gmd:address>
+                     </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                     <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author">author</gmd:CI_RoleCode>
+                  </gmd:role>
+               </gmd:CI_ResponsibleParty>
+            </gmd:contact>
+         </gmd:MD_MaintenanceInformation>
+      </gmd:metadataMaintenance>
+   </gmd:MD_Metadata>
+</csw:GetRecordByIdResponse>

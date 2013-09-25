@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:GetRecordByIdResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:ows="http://www.opengis.net/ows" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd">
+	<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns="http://floraresearch.eu/sdi/services/7.0/dataModel/schema" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dclite4g="http://xmlns.com/2008/dclite4g#" xmlns:envisat="http://www.example.com/schemas/envisat.rdf#" xmlns:fp="http://downlode.org/Code/RDF/file-properties/" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:ical="http://www.w3.org/2002/12/cal/ical#" xmlns:os="http://a9.com/-/spec/opensearch/1.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:ws="http://dclite4g.xmlns.com/ws.rdf#">
+		<gmd:fileIdentifier>
+			<gco:CharacterString>a0048-88fd-11da-a88f-000d939bc5d8</gco:CharacterString>
+		</gmd:fileIdentifier>
+		<gmd:parentIdentifier>
+			<gco:CharacterString />
+		</gmd:parentIdentifier>
+		<gmd:hierarchyLevel>
+			<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode" codeListValue="series">series</gmd:MD_ScopeCode>
+		</gmd:hierarchyLevel>
+		<gmd:contact />
+		<gmd:dateStamp>
+			<gco:Date>1995-02-01</gco:Date>
+		</gmd:dateStamp>
+		<gmd:identificationInfo>
+			<gmd:MD_DataIdentification>
+				<gmd:citation>
+					<gmd:CI_Citation>
+						<gmd:title>
+							<gco:CharacterString>SAFARI 2000 STEM AND CANOPY CHARACTERIZATION, KALAHARI TRANSECT, 1995-2000</gco:CharacterString>
+						</gmd:title>
+						<gmd:date />
+						<gmd:date>
+							<gmd:CI_Date>
+								<gmd:date>
+									<gco:Date>2012-04-13</gco:Date>
+								</gmd:date>
+								<gmd:dateType>
+									<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" codeSpace="ISOTC211/19115">revision</gmd:CI_DateTypeCode>
+								</gmd:dateType>
+							</gmd:CI_Date>
+						</gmd:date>
+						<gmd:date>
+							<gmd:CI_Date>
+								<gmd:date>
+									<gco:Date>2012-02-14</gco:Date>
+								</gmd:date>
+								<gmd:dateType>
+									<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="created" codeSpace="ISOTC211/19115">created</gmd:CI_DateTypeCode>
+								</gmd:dateType>
+							</gmd:CI_Date>
+						</gmd:date>
+						<gmd:pointOfContact>
+							<gmd:CI_ResponsibleParty>
+								<gmd:organisationName>
+									<gco:CharacterString>NASA</gco:CharacterString>
+								</gmd:organisationName>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="" codeListValue="originator" />
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:pointOfContact>
+						<gmd:identifier>
+							<gmd:RS_Identifier>
+								<gmd:code>
+									<gco:CharacterString>NASA:s2k_kt_stem_map</gco:CharacterString>
+								</gmd:code>
+							</gmd:RS_Identifier>
+						</gmd:identifier>
+					</gmd:CI_Citation>
+				</gmd:citation>
+				<gmd:abstract>
+					<gco:CharacterString>This data set provides species distribution, basal area, height, and crown cover of woody stems at 10 sites along the Kalahari Transect where a large gradient in both the mean and variation of annual rainfall results in dramatic changes in vegetation structure. Some of the data were collected during earlier Kalahari Transect projects in 1995 and 1997 at Vastrap, South Africa; Sandveld and Sachinga, Namibia; and Maziba, Senanga, and Lukulu, Zambia. The rest of the data were collected at Mongu, Zambia; and Pandamatenga, Maun, and Tshane, Botswana during the February-March 2000 wet season field campaign of SAFARI 2000. Stem maps were generated at each site using a variable-width belt-transect approach. Tree location, species, diameter, height, and major and minor axis of crown dimensions were measured for each individual taller than 1.5 meters. For multi-stemmed individuals, the diameter of each stem was recorded separately. Canopy area was calculated to be an ellipse defined by the two major axes of measurement. Canopy height was estimated using a clinometer. Biomass was calculated following Goodman (1990) as modified by Dowty (1999).There are two ASCII data files, in comma-delimited format. The stem map file contains records of living, dead, and cut stem allometry, canopy geometry, and biomass at the SAFARI sites. The species list file provides plant family, genus, and species names, numerical codes that correspond to the stem map file, and species common names in English and AFRICAANS.</gco:CharacterString>
+				</gmd:abstract>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE BIOSPHERE VEGETATION VEGETATION SPECIES; FIELD INVESTIGATION; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; SAFARI 2000 THE SOUTHERN AFRICAN REGIONAL SCIENCE INITIATIVE PROJECT; CWIC CEOS WGISS INTEGRATED CATALOG; Eosdis; Canopy; Biomass; Basal Area; Vegetation; Safari 2000; Crown Cover; Woody Stems; Forest Cover; Tree Biomass; Leaf Biomass; Stem Allometry; Canopy Geometry; Kalahari Transect; BIOTA; ENGLISH;</gco:CharacterString>
+						</gmd:keyword>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:language />
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>feedRSSAlert</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:extent>
+					<gmd:EX_Extent>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicBoundingBox>
+								<gmd:westBoundLongitude>
+									<gco:Decimal>19.1700000762939</gco:Decimal>
+								</gmd:westBoundLongitude>
+								<gmd:eastBoundLongitude>
+									<gco:Decimal>25.5</gco:Decimal>
+								</gmd:eastBoundLongitude>
+								<gmd:southBoundLatitude>
+									<gco:Decimal>-27.75</gco:Decimal>
+								</gmd:southBoundLatitude>
+								<gmd:northBoundLatitude>
+									<gco:Decimal>-14.4200000762939</gco:Decimal>
+								</gmd:northBoundLatitude>
+							</gmd:EX_GeographicBoundingBox>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_BoundingPolygon>
+								<gmd:polygon>
+									<gml:Polygon gml:id="d1180e27">
+										<gml:exterior>
+											<gml:LinearRing>
+												<gml:pos>25.5 -14.4200000762939</gml:pos>
+												<gml:pos>19.1700000762939 -14.4200000762939</gml:pos>
+												<gml:pos>19.1700000762939 -27.75</gml:pos>
+												<gml:pos>25.5 -27.75</gml:pos>
+												<gml:pos>25.5 -14.4200000762939</gml:pos>
+											</gml:LinearRing>
+										</gml:exterior>
+									</gml:Polygon>
+								</gmd:polygon>
+							</gmd:EX_BoundingPolygon>
+						</gmd:geographicElement>
+						<gmd:temporalElement>
+							<gmd:EX_TemporalExtent>
+								<gmd:extent>
+									<gml:TimePeriod gml:id="tt1182">
+										<gml:beginPosition>1995-02-01T12:00:00.000Z</gml:beginPosition>
+										<gml:endPosition>2000-03-16T23:59:59.000Z</gml:endPosition>
+									</gml:TimePeriod>
+								</gmd:extent>
+							</gmd:EX_TemporalExtent>
+						</gmd:temporalElement>
+					</gmd:EX_Extent>
+				</gmd:extent>
+			</gmd:MD_DataIdentification>
+		</gmd:identificationInfo>
+		<gmd:identificationInfo>
+			<srv:SV_ServiceIdentification>
+				<gmd:citation />
+				<gmd:abstract />
+				<srv:serviceType />
+				<srv:couplingType />
+				<srv:containsOperations />
+			</srv:SV_ServiceIdentification>
+		</gmd:identificationInfo>
+		<gmd:distributionInfo>
+			<gmd:MD_Distribution />
+		</gmd:distributionInfo>
+	</gmd:MD_Metadata>
+</csw:GetRecordByIdResponse>
