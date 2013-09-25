@@ -356,7 +356,7 @@ class XMLProcessor{
 			
 			if($parentAvailability == 1){
 				$citationsAvailability = 2;
-				$citationsCount = $this->countElements($xml, $parentXML->citationsCountXPath);
+				$citationsCount = $this->countElements($parentXML, $this->citationsCountXPath);
 			}
 		}
 		
