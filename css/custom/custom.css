@@ -431,6 +431,11 @@ iframe.ui-layout-mask {}	/* extra mask for objects/applets */
 .info-glyphicon {
  vertical-align: super;
 }
+
+.btn-reset-filters{
+  margin: -10px 0px 10px 25px;
+}
+
  /* *****************************   Dataset Details section   **************************************** */
 .dataset-details-label {
   padding: 5px 0px 5px 0px;
