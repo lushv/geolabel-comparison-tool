@@ -70,6 +70,8 @@ $(document).ready(function() {
 	$("#minimum-citations").prop('disabled', true);
 	$("#filter-citations-btn").prop('disabled', true);
 	$("#reset-citations-btn").prop('disabled', true);
+	
+	$("#reset-filters-btn").prop('disabled', true);
 });
 
 function enableFilters(){
@@ -100,6 +102,8 @@ function enableFilters(){
 	
 	$("#minimum-citations").prop('disabled', false);
 	$("#filter-citations-btn").prop('disabled', false);
+	
+	$("#reset-filters-btn").prop('disabled', false);
 }
 
 function resetFilters(){

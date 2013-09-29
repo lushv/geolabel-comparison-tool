@@ -155,6 +155,13 @@ $(function() {
   })
 });
 
+
+$(function() {
+  $("#reset-filters-btn").click(function() {
+	resetAllFilters();
+  })
+});
+
 // ******************************************* FILTER AND RESET FUNCTIONS ***********************************
 function filterProducer(){
 	datasetSource = $("#dataset-source-autocomplete").val();
@@ -598,4 +605,49 @@ function resetCitations(){
 		$("#filter-citations-btn").prop('disabled', false);
 		$("#reset-citations-btn").prop('disabled', true);
 	}
+}
+
+function resetAllFilters(){
+	// Check if producer name filtering has been applied and if so, reset the filtering
+	if(datasetSource != ""){
+		resetProducer();
+	}
+	// Check if producer comments filtering has been applied and if so, reset the filtering
+	if(commentType != ""){
+		resetComments();
+	}
+	// Check if lineage filtering has been applied and if so, reset the filtering
+	if(processStepsMaxNum != ""){
+		resetLineage();
+	}
+	// Check if producer comments filtering has been applied and if so, reset the filtering
+	if(standardName != ""){
+		resetStandards();
+	}
+	// Check if quality filtering has been applied and if so, reset the filtering
+	if(scopeLevel != ""){
+		resetQuality();
+	}
+	// Check if user feedback filtering has been applied and if so, reset the filtering
+	if(averageRatingMin != "" || averageRatingMin != 0 || feedbackNumberMin != "" || feedbackNumberMin != 0){
+		resetFeedback();
+	}
+	// Check if expert review filtering has been applied and if so, reset the filtering
+	if(averageReviewRatingMin != "" || averageReviewRatingMin != 0 || reviewsNumberMin != "" || reviewsNumberMin != 0){
+		resetReviews();
+	}
+	// Check if citations filtering has been applied and if so, reset the filtering
+	if(citationsNumberMin != "" || citationsNumberMin != 0){
+		resetCitations();
+	}
+	
+	// Reset all sliders
+	$("#producer-slider").slider("value", 0);
+	$("#comments-slider").slider("value", 0);
+	$("#lineage-slider").slider("value", 0);
+	$("#compliance-slider").slider("value", 0);
+	$("#quality-slider").slider("value", 0);
+	$("#feedback-slider").slider("value", 0);
+	$("#review-slider").slider("value", 0);
+	$("#citations-slider").slider("value", 0);
 }
