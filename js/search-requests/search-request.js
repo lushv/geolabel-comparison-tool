@@ -631,7 +631,7 @@ function getHighlightedDetailsTab(highlightedID){
 	var parentDiv = $('<div/>', {id: 'highlighted_item_' + highlightedID, class: 'highlighted-item'});
 	var label = $('<div class="highlighted-dataset-label">Dataset ID: ' + $highlightedLabelID + '</div>');
 	var detailsDiv = $('<div class="highlighted-dataset-details"></div>');
-	var button = $('<div class="remove-highlighted-div"><button id="remove-highlighted"' + highlightedID + ' class="btn btn-danger remove-highlighted" type="button"><i class="icon-remove icon-white"></i>&nbsp;&nbsp;&nbsp;Remove from List</button></div>');
+	var button = $('<div class="remove-highlighted-div"><button id="remove-highlighted-' + highlightedID + '" class="btn btn-danger remove-highlighted" type="button"><i class="icon-remove icon-white"></i>&nbsp;&nbsp;&nbsp;Remove from List</button></div>');
 	var div = $("<div></div>");
 	
 	var details = $('<div id="detailed-geolabel-' + highlightedID + '" class="highlighted-geolabel"></div>' +
@@ -790,6 +790,15 @@ function getHighlightedDetailsTab(highlightedID){
 			// Add metadata button
 			var metadataURL = "http://localhost/geolabel-comparison-tool/php/metadata_records/" + $highlightedLabelID + ".xml";
 			var metadataButton = $("<a id='metadata-anchor' href='" + metadataURL + "' target='_blank'><button id='metadata-button' class='btn btn-success' type='button'><i class='icon-eye-open icon-white'></i>&nbsp;&nbsp;&nbsp;View Metadata</button></a>");
+			
+			
+			$("#remove-highlighted-" + highlightedID).click(function(event) {
+
+				// Remove the highlight from the selected label
+				$("#highlight_glow_group_" + highlightedID).remove();
+				$("#highlighted_item_" + highlightedID).remove();
+				
+			});
 			
 			div.append(highlightedLabel);
 			div.append(metadataButton);

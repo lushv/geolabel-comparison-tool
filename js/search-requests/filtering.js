@@ -158,8 +158,27 @@ $(function() {
 
 $(function() {
   $("#reset-filters-btn").click(function() {
-	resetAllFilters();
+	$("#dialog-confirm").dialog("open");
   })
+});
+
+
+$(function() {
+	$("#dialog-confirm").dialog({
+		autoOpen: false,
+		resizable: false,
+		height:140,
+		modal: true,
+		buttons: {
+		"Reset all filters": function() {
+			resetAllFilters();
+			$(this).dialog("close");
+			},
+		Cancel: function() {
+			$(this).dialog("close");
+			}
+		}
+	});
 });
 
 // ******************************************* FILTER AND RESET FUNCTIONS ***********************************
