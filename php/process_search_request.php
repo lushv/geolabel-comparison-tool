@@ -141,22 +141,4 @@ function getXMLNode($xml, $nodeXPath){
 	}
 	return $nodeValue;
 }
-
-/*
-echo '{
-    "dataset": [
-			{"datasetIdentifier":"5262159C-D358-11D5-88C8-000102DCCF41",
-			"facets":
-				{"producerProfile":{"availability":1,"organisationName":"Beh\u00f6rde f\u00fcr Wirtschaft, Verkehr und Innovation, Amt f\u00fcr Verkehr und Stra\u00dfenwesen"},
-				"produerComments":{"availability":0,"supplementalInformation":null,"supplementalInformationType":""},
-				"lineage":{"availability":1,"processStepCount":0},
-				"standardsComplaince":{"availability":1,"standardName":"ISO 19115","standardVersion":"1.0"},
-				"qualityInformation":{"availability":1,"scopeLevel":"dataset"},
-				"userFeedback":{"availability":1,"feedbacksCount":7,"ratingsCount":7,"feedbacksAverageRating":3.2857142857143},
-				"expertReview":{"availability":1,"expertReviewsCount":5,"expertRatingsCount":5,"expertAverageRating":2.6},
-				"citations":{"availability":0,"citationsCount":0}}
-			}
-	]
-	}';
-*/
 ?>

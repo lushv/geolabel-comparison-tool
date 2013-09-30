@@ -481,4 +481,43 @@ div.dataset-details-data {
   height: 100%;
   width: 100%;
 }
+
+.highlighted-dataset-label {
+  padding: 2px 0px 2px 0px;
+  margin: 0px 0px 5px 0px;
+  text-align: center;
+  font: sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+  background-color:#5050F5;
+}
+
+.highlighted-dataset-details {
+  padding: 0px 10px 0px 10px;
+  min-height: 250px;
+}
+
+.highlighted-geolabel {
+  float: right;
+  width: 170px;
+  height: 200px;
+  padding: 0px 10px 10px 30px;
+}
+
+.highlighted-item{
+  min-height: 300px;
+}
+
+.remove-highlighted-div {
+  height: 50px;
+  width:100%;
+}
+.remove-highlighted{
+  float: right;
+  margin: 0px 30px 0px 0px;
+}
+
 /*******************************  Zoom and Pan buttons  *******************************/

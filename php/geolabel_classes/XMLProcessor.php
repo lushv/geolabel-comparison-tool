@@ -315,6 +315,10 @@ class XMLProcessor{
 				$scopeLevel = $this->getFirstNode($parentXML, $this->scopeLevelXPath);
 			}
 		}
+		// check correct dataset level
+		if($qualityAvailability == 0){
+			$scopeLevel = null;
+		}
 		
 		// Get feedback information
 		$feedbackAvailability = $this->getAvailabilityInteger($xml, $this->feedbackXPath);
