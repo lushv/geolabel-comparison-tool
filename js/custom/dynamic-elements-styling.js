@@ -106,10 +106,6 @@ function enableFilters(){
 	$("#reset-filters-btn").prop('disabled', false);
 }
 
-function resetFilters(){
-
-}
-
 //************************  Set up height of the sliders div depending on the window size  *****************************
 $(document).ready(function() {
 	var height = $(window).height() - 290;
@@ -300,17 +296,31 @@ $(function() {
   $("#map-tab").click(function() {
 	// make the clicked tab active
 	$("#serach-results-tab").removeClass("active");
+	$("#highlighted-tab").removeClass("active");
 	$("#map-tab").addClass("active");
 	$('.tab-content #tab-pane-search-results').hide();
+	$('.tab-content #tab-pane-highlighted').hide();
 	$('.tab-content #tab-pane-map').show();
   });
   
   $("#serach-results-tab").click(function() {
 	// make the clicked tab active
 	$("#map-tab").removeClass("active");
+	$("#highlighted-tab").removeClass("active");
 	$("#serach-results-tab").addClass("active");
 	$('.tab-content #tab-pane-map').hide();
+	$('.tab-content #tab-pane-highlighted').hide();
 	$('.tab-content #tab-pane-search-results').show();	
+  });
+  
+  $("#highlighted-tab").click(function() {
+	// make the clicked tab active
+	$("#map-tab").removeClass("active");
+	$("#serach-results-tab").removeClass("active");
+	$("#highlighted-tab").addClass("active");
+	$('.tab-content #tab-pane-map').hide();
+	$('.tab-content #tab-pane-search-results').hide();
+	$('.tab-content #tab-pane-highlighted').show();	
   });
   
   $("#query-constraints-tab").click(function() {

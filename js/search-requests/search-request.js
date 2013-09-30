@@ -573,6 +573,11 @@ $(function() {
 				$("#size_group_" + $clickedLabelID).prepend(highlightGlowGroup);
 			}
 			
+			// Add highlighted dataset into Highlighted Dataset tab
+			
+			var highlightedDiv = getHighlightedDetailsTab($clickedLabelID);
+			$("#highlighted-datasets").append(highlightedDiv);
+			
 			$clickedLabelID = null;
 		}
 	})
@@ -583,6 +588,7 @@ $(function() {
 		if($clickedLabelID != null){
 			// Remove the highlight from the selected label
 			$("#highlight_glow_group_" + $clickedLabelID).remove();
+			$("#highlighted_item_" + $clickedLabelID).remove();
 			
 			$clickedLabelID = null;
 		}
@@ -615,4 +621,188 @@ function isJson(str) {
         return false;
     }
     return true;
+}
+
+function getHighlightedDetailsTab(highlightedID){
+
+	$highlightedLabelID = $("#geolabel_" + highlightedID).attr('dataset_id');
+	
+	// create a new tab element
+	var parentDiv = $('<div/>', {id: 'highlighted_item_' + highlightedID, class: 'highlighted-item'});
+	var label = $('<div class="highlighted-dataset-label">Dataset ID: ' + $highlightedLabelID + '</div>');
+	var detailsDiv = $('<div class="highlighted-dataset-details"></div>');
+	var button = $('<div class="remove-highlighted-div"><button id="remove-highlighted"' + highlightedID + ' class="btn btn-danger remove-highlighted" type="button"><i class="icon-remove icon-white"></i>&nbsp;&nbsp;&nbsp;Remove from List</button></div>');
+	var div = $("<div></div>");
+	
+	var details = $('<div id="detailed-geolabel-' + highlightedID + '" class="highlighted-geolabel"></div>' +
+					'<div class="dataset-details-labels">Title:</div>' +
+					'<div id="dataset-details-title-' + highlightedID + '" class="dataset-details-data"> <br> </div>' +
+					
+					'<div class="dataset-details-labels">Keywords:</div>' +
+					'<div id="dataset-details-keywords-' + highlightedID + '" class="dataset-details-data"> <br> </div>' +
+					
+					'<div class="dataset-details-labels">Date:</div>' +
+					'<div id="dataset-details-date-' + highlightedID + '" class="dataset-details-data"> <br> </div>' +
+					
+					'<div class="dataset-details-labels">Contact:</div>' +
+					'<div id="dataset-details-organisation-' + highlightedID + '" class="dataset-details-data"> <br> </div>' +
+					
+					'<div class="dataset-details-labels">Abstract:</div>' +
+					'<div id="dataset-details-abstract-' + highlightedID + '" class="dataset-details-data"> <br> </div>' +
+					
+					'<div class="dataset-details-labels">Purpose:</div>' +
+					'<div id="dataset-details-purpose-' + highlightedID + '" class="dataset-details-data"> <br> </div><br>');
+	
+	var detailsDataString = 'datasetID='+ $highlightedLabelID;
+
+	// Make a post request
+	$.ajax({
+		type: "POST",
+		url: "php/process_details_request.php",
+		data: detailsDataString,
+		success: function(data){
+			if(isJson(data)){
+				var JSONObject = JSON.parse(data);
+				
+				if(JSONObject.dataset.title != "" && JSONObject.dataset.title != null){
+					parentDiv.find("#dataset-details-title-" + highlightedID).html(JSONObject.dataset.title);
+				}
+				
+				if(JSONObject.dataset.fileIdentifier != "" && JSONObject.dataset.fileIdentifier != null){
+					parentDiv.find("#dataset-details-id-" + highlightedID).html(JSONObject.dataset.fileIdentifier);
+				}
+				if(JSONObject.dataset.keywords != "" && JSONObject.dataset.keywords != null){
+					parentDiv.find("#dataset-details-keywords-" + highlightedID).html(JSONObject.dataset.keywords);
+				}
+				if(JSONObject.dataset.date != "" && JSONObject.dataset.date != null){
+					parentDiv.find("#dataset-details-date-" + highlightedID).html(JSONObject.dataset.date);
+				}
+				if(JSONObject.dataset.producer != "" && JSONObject.dataset.producer){
+					parentDiv.find("#dataset-details-organisation-" + highlightedID).html(JSONObject.dataset.producer);
+				}
+				if(JSONObject.dataset.abstract != "" && JSONObject.dataset.abstract != null){
+					parentDiv.find("#dataset-details-abstract-" + highlightedID).html(JSONObject.dataset.abstract);
+				}
+				if(JSONObject.dataset.purpose != "" && JSONObject.dataset.purpose != null){
+					parentDiv.find("#dataset-details-purpose-" + highlightedID).html(JSONObject.dataset.purpose);
+				}
+			}
+			
+			// ***********************************************************************************************
+			//									highlighted GEO LABEL
+			//								Display a highlighted GEO label
+			// ***********************************************************************************************
+			var highlightedLabel = $("#geolabel_" + highlightedID).clone();
+			highlightedLabel.attr("id", "highlighted_geolabel_" + highlightedID);
+			highlightedLabel.attr("xmlns:xlink", "http://www.w3.org/1999/xlink");
+			highlightedLabel.removeAttr("title");
+			highlightedLabel.children(":first").attr("transform","scale(0.6)");
+			
+			// Remove any glow effects
+			highlightedLabel.find("#highlight_glow_group_" + highlightedID).remove();
+			highlightedLabel.find("#select_glow_group_" + highlightedID).remove();
+			
+			// Change group IDs to avoid ID conflict
+			highlightedLabel.find("#size_group_" + highlightedID).attr("id", "highlighted_size_group_" + highlightedID);
+			highlightedLabel.find("#branding_group_" + highlightedID).attr("id", "highlighted_branding_group_" + highlightedID);
+			highlightedLabel.find("#producer_profile_" + highlightedID).attr("id", "highlighted_producer_profile_" + highlightedID);
+			highlightedLabel.find("#producer_comments_" + highlightedID).attr("id", "highlighted_producer_comments_" + highlightedID);
+			highlightedLabel.find("#lineage_" + highlightedID).attr("id", "highlighted_lineage_" + highlightedID);
+			highlightedLabel.find("#standards_compliance_" + highlightedID).attr("id", "highlighted_standards_compliance_" + highlightedID);
+			highlightedLabel.find("#quality_information_" + highlightedID).attr("id", "highlighted_quality_information_" + highlightedID);
+			highlightedLabel.find("#user_feedback_" + highlightedID).attr("id", "highlighted_user_feedback_" + highlightedID);
+			highlightedLabel.find("#expert_review_" + highlightedID).attr("id", "highlighted_expert_review_" + highlightedID);
+			highlightedLabel.find("#citations_" + highlightedID).attr("id", "highlighted_citations_" + highlightedID);
+											
+			// Add hover-over functionality
+			var organisationName = highlightedLabel.find("#highlighted_producer_profile_" + highlightedID).attr("producer_profile_name");
+			if(organisationName == "null"){
+				organisationName = "not defined."
+			}
+			highlightedLabel.find("#highlighted_producer_profile_" + highlightedID).attr("title", "Organisation name: " + organisationName);
+
+			var supplementalInfo = highlightedLabel.find("#highlighted_producer_comments_" + highlightedID).attr("supplemental_information");
+			var knownProblems = highlightedLabel.find("#highlighted_producer_comments_" + highlightedID).attr("known_problems");
+			if(supplementalInfo == "null"){
+				supplementalInfo = "not defined."
+			}
+			if(knownProblems == "null"){
+				knownProblems = "not defined."
+			}
+			highlightedLabel.find("#highlighted_producer_comments_" + highlightedID).attr("title", "Supplemental Information: " + supplementalInfo + " Known Problems: " + knownProblems);
+			
+			highlightedLabel.find("#highlighted_lineage_" + highlightedID).attr("title", "Number of process steps: " + highlightedLabel.find("#highlighted_lineage_" + highlightedID).attr("process_step_count"));
+			
+			var standardName = highlightedLabel.find("#highlighted_standards_compliance_" + highlightedID).attr("standard_name");
+			if(standardName == "null"){
+				standardName = "not defined."
+			}
+			highlightedLabel.find("#highlighted_standards_compliance_" + highlightedID).attr("title", "Standard name: " + standardName);
+			
+			var qualityScope = highlightedLabel.find("#highlighted_quality_information_" + highlightedID).attr("scope_level");
+			if(qualityScope == "null"){
+				qualityScope = "not defined."
+			}
+			highlightedLabel.find("#highlighted_quality_information_" + highlightedID).attr("title", "Quality information scope: " + qualityScope);
+			
+			var averageRating = highlightedLabel.find("#highlighted_user_feedback_" + highlightedID).attr("feedbacks_average_rating");
+			if(averageRating == "null"){
+				averageRating = "0"
+			}
+			highlightedLabel.find("#highlighted_user_feedback_" + highlightedID).attr("title", "Number of feedbacks: " + highlightedLabel.find("#highlighted_user_feedback_" + highlightedID).attr("feedbacks_count") + ". Average rating: " + averageRating + " (" + highlightedLabel.find("#highlighted_user_feedback_" + highlightedID).attr("ratings_count") + " rating(s)).");
+			
+			var averageExpertRating = highlightedLabel.find("#highlighted_expert_review_" + highlightedID).attr("expert_average_rating");
+			if(averageExpertRating == "null"){
+				averageExpertRating = "0"
+			}
+			highlightedLabel.find("#highlighted_expert_review_" + highlightedID).attr("title", "Number of reviews: " + highlightedLabel.find("#highlighted_expert_review_" + highlightedID).attr("expert_reviews_count") + ". Average rating: " + averageExpertRating + " (" + highlightedLabel.find("#highlighted_expert_review_" + highlightedID).attr("expert_ratings_count") + " rating(s)).");
+			
+			highlightedLabel.find("#highlighted_citations_" + highlightedID).attr("title", "Number of citations: " + highlightedLabel.find("#highlighted_citations_" + highlightedID).attr("citations_count"));			
+
+			// ***************************************************************************************
+			//   							Add on click functionality  
+			// ***************************************************************************************
+			var xlinkNS="http://www.w3.org/1999/xlink",
+			svgNS="http://www.w3.org/2000/svg";
+
+			var drilldownBaseURL = "http://localhost/geolabel-comparison-tool/php/stylesheets/facet.php?";
+			var xmlDocumentURL = "doc=" + escape("http://localhost/geolabel-comparison-tool/php/metadata_records/" + $highlightedLabelID + ".xml");
+			var xslBaseURL = "&xsl=" + escape("http://localhost/geolabel-comparison-tool/php/stylesheets/");
+			
+			getBrandingAnchorElement(svgNS, xlinkNS, "http://www.geolabel.info", highlightedLabel.find("#highlighted_branding_group_" + highlightedID));
+			
+			getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Producer_Profile.xsl", highlightedLabel.find("#highlighted_producer_profile_" + highlightedID));
+			
+			getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Producer_Comments.xsl", highlightedLabel.find("#highlighted_producer_comments_" + highlightedID));
+			
+			getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Lineage.xsl", highlightedLabel.find("#highlighted_lineage_" + highlightedID));
+			
+			getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Standards_Compliance.xsl", highlightedLabel.find("#highlighted_standards_compliance_" + highlightedID));
+			
+			getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Quality.xsl", highlightedLabel.find("#highlighted_quality_information_" + highlightedID));
+			
+			getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_User_Feedback.xsl", highlightedLabel.find("#highlighted_user_feedback_" + highlightedID));
+			
+			getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Expert_Reviews.xsl", highlightedLabel.find("#highlighted_expert_review_" + highlightedID));
+			
+			getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Citations.xsl", highlightedLabel.find("#highlighted_citations_" + highlightedID));
+			
+			// Add metadata button
+			var metadataURL = "http://localhost/geolabel-comparison-tool/php/metadata_records/" + $highlightedLabelID + ".xml";
+			var metadataButton = $("<a id='metadata-anchor' href='" + metadataURL + "' target='_blank'><button id='metadata-button' class='btn btn-success' type='button'><i class='icon-eye-open icon-white'></i>&nbsp;&nbsp;&nbsp;View Metadata</button></a>");
+			
+			div.append(highlightedLabel);
+			div.append(metadataButton);
+			parentDiv.find("#detailed-geolabel-" + highlightedID).html(div);
+			
+		},
+		error:function(){
+		},
+	}); // -- End of Ajax request to get dataset details
+	detailsDiv.append(details);
+	parentDiv.append(label);
+	parentDiv.append(detailsDiv);
+	parentDiv.append(button);
+
+	return parentDiv;
 }
