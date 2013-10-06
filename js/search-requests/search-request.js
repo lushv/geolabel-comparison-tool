@@ -420,185 +420,7 @@ $(function() {
 								//								Display a detailed GEO label
 								// ***********************************************************************************************
 								var div = $("<div></div>");
-								var detailedLabel = $("#geolabel_" + $selectedLabelID).clone();
-								detailedLabel.attr("id", "detailed_geolabel_" + $selectedLabelID);
-								//detailedLabel.attr("class", "detailed_geolabel");
-								detailedLabel.attr("xmlns:xlink", "http://www.w3.org/1999/xlink");
-								detailedLabel.removeAttr("title");
-								detailedLabel.children(":first").attr("transform","scale(0.6)");
-								
-								// Remove any glow effects
-								detailedLabel.find("#highlight_glow_group_" + $selectedLabelID).remove();
-								detailedLabel.find("#select_glow_group_" + $selectedLabelID).remove();
-								
-								// Change group IDs to avoid ID conflict
-								detailedLabel.find("#size_group_" + $selectedLabelID).attr("id", "detailed_size_group_" + $selectedLabelID);
-								detailedLabel.find("#branding_group_" + $selectedLabelID).attr("id", "detailed_branding_group_" + $selectedLabelID);
-								//detailedLabel.find("#branding_group_" + $selectedLabelID).attr("class", "detailed_branding_group");
-
-								detailedLabel.find("#producer_profile_" + $selectedLabelID).attr("id", "detailed_producer_profile_" + $selectedLabelID);
-								detailedLabel.find("#producer_comments_" + $selectedLabelID).attr("id", "detailed_producer_comments_" + $selectedLabelID);
-								detailedLabel.find("#lineage_" + $selectedLabelID).attr("id", "detailed_lineage_" + $selectedLabelID);
-								detailedLabel.find("#standards_compliance_" + $selectedLabelID).attr("id", "detailed_standards_compliance_" + $selectedLabelID);
-								detailedLabel.find("#quality_information_" + $selectedLabelID).attr("id", "detailed_quality_information_" + $selectedLabelID);
-								detailedLabel.find("#user_feedback_" + $selectedLabelID).attr("id", "detailed_user_feedback_" + $selectedLabelID);
-								detailedLabel.find("#expert_review_" + $selectedLabelID).attr("id", "detailed_expert_review_" + $selectedLabelID);
-								detailedLabel.find("#citations_" + $selectedLabelID).attr("id", "detailed_citations_" + $selectedLabelID);
-																
-								// Add hover-over functionality
-								var organisationName = detailedLabel.find("#detailed_producer_profile_" + $selectedLabelID).attr("producer_profile_name");
-								if(organisationName == "null"){
-									organisationName = "not defined."
-								}
-								detailedLabel.find("#detailed_producer_profile_" + $selectedLabelID).attr("title", "Organisation name: " + organisationName);
-
-								var supplementalInfo = detailedLabel.find("#detailed_producer_comments_" + $selectedLabelID).attr("supplemental_information");
-								var knownProblems = detailedLabel.find("#detailed_producer_comments_" + $selectedLabelID).attr("known_problems");
-								if(supplementalInfo == "null"){
-									supplementalInfo = "not defined."
-								}
-								if(knownProblems == "null"){
-									knownProblems = "not defined."
-								}
-								detailedLabel.find("#detailed_producer_comments_" + $selectedLabelID).attr("title", "Supplemental Information: " + supplementalInfo + " Known Problems: " + knownProblems);
-								
-								detailedLabel.find("#detailed_lineage_" + $selectedLabelID).attr("title", "Number of process steps: " + detailedLabel.find("#detailed_lineage_" + $selectedLabelID).attr("process_step_count"));
-								
-								var standardName = detailedLabel.find("#detailed_standards_compliance_" + $selectedLabelID).attr("standard_name");
-								if(standardName == "null"){
-									standardName = "not defined."
-								}
-								detailedLabel.find("#detailed_standards_compliance_" + $selectedLabelID).attr("title", "Standard name: " + standardName);
-								
-								var qualityScope = detailedLabel.find("#detailed_quality_information_" + $selectedLabelID).attr("scope_level");
-								if(qualityScope == "null"){
-									qualityScope = "not defined."
-								}
-								detailedLabel.find("#detailed_quality_information_" + $selectedLabelID).attr("title", "Quality information scope: " + qualityScope);
-								
-								var averageRating = detailedLabel.find("#detailed_user_feedback_" + $selectedLabelID).attr("feedbacks_average_rating");
-								if(averageRating == "null"){
-									averageRating = "0"
-								}
-								detailedLabel.find("#detailed_user_feedback_" + $selectedLabelID).attr("title", "Number of feedbacks: " + detailedLabel.find("#detailed_user_feedback_" + $selectedLabelID).attr("feedbacks_count") + ". Average rating: " + averageRating + " (" + detailedLabel.find("#detailed_user_feedback_" + $selectedLabelID).attr("ratings_count") + " rating(s)).");
-								
-								var averageExpertRating = detailedLabel.find("#detailed_expert_review_" + $selectedLabelID).attr("expert_average_rating");
-								if(averageExpertRating == "null"){
-									averageExpertRating = "0"
-								}
-								detailedLabel.find("#detailed_expert_review_" + $selectedLabelID).attr("title", "Number of reviews: " + detailedLabel.find("#detailed_expert_review_" + $selectedLabelID).attr("expert_reviews_count") + ". Average rating: " + averageExpertRating + " (" + detailedLabel.find("#detailed_expert_review_" + $selectedLabelID).attr("expert_ratings_count") + " rating(s)).");
-								
-								detailedLabel.find("#detailed_citations_" + $selectedLabelID).attr("title", "Number of citations: " + detailedLabel.find("#detailed_citations_" + $selectedLabelID).attr("citations_count"));
-								
-								
-								// ***************************************************************************************
-								//   				Add on click functionality and modify gradien fill IDs
-								// ***************************************************************************************
-								var xlinkNS="http://www.w3.org/1999/xlink",
-								svgNS="http://www.w3.org/2000/svg";
-
-								var drilldownBaseURL = "http://localhost/geolabel-comparison-tool/php/stylesheets/facet.php?";
-								var xmlDocumentURL = "doc=" + escape("http://localhost/geolabel-comparison-tool/php/metadata_records/" + $targetDatasetID + ".xml");
-								var xmlParentURL = "doc=" + escape("http://localhost/geolabel-comparison-tool/php/metadata_records/" + $targetParentID + ".xml");
-								var xslBaseURL = "&xsl=" + escape("http://localhost/geolabel-comparison-tool/php/stylesheets/");
-								
-								getBrandingAnchorElement(svgNS, xlinkNS, "http://www.geolabel.info", detailedLabel.find("#detailed_branding_group_" + $selectedLabelID));
-								
-								// Producer Profile
-								var selectedProducerProfile = detailedLabel.find("#detailed_producer_profile_" + $selectedLabelID);
-								if(selectedProducerProfile.attr('availability') == 2){
-									// Replace gardient fill identifiers so they do not clash
-									getProducerProfileHigherLevel(selectedProducerProfile, "detailed_producer_linear_gradient_" + $selectedLabelID);
-									// Add drilldown
-									getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Producer_Profile.xsl", selectedProducerProfile);
-								}
-								else{
-									getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Producer_Profile.xsl", selectedProducerProfile);
-								}
-
-								// Producer Comments
-								var selectedProducerComments = detailedLabel.find("#detailed_producer_comments_" + $selectedLabelID);
-								if(selectedProducerComments.attr('availability') == 2){
-									// Replace gardient fill identifiers so they do not clash
-									getProducerCommentsHigherLevel(selectedProducerComments, "detailed_comments_linear_gradient_" + $selectedLabelID);
-									// Add drilldown
-									getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Producer_Comments.xsl", selectedProducerComments);
-								}
-								else{
-									getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Producer_Comments.xsl", selectedProducerComments);
-								}
-
-								// Lineage
-								var selectedLineage = detailedLabel.find("#detailed_lineage_" + $selectedLabelID);
-								if(selectedLineage.attr('availability') == 2){
-									// Replace gardient fill identifiers so they do not clash
-									getLineageHigherLevel(selectedLineage, "detailed_lineage_linear_gradient_" + $selectedLabelID);
-									// Add drilldown
-									getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Lineage.xsl", selectedLineage);
-								}
-								else{
-									getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Lineage.xsl", selectedLineage);
-								}
-								
-								// Standards Compliance
-								var selectedStandardsCompliance = detailedLabel.find("#detailed_standards_compliance_" + $selectedLabelID);
-								if(selectedStandardsCompliance.attr('availability') == 2){
-									// Replace gardient fill identifiers so they do not clash
-									getStandardsComplianceHigherLevel(selectedStandardsCompliance, "detailed_standards_linear_gradient_" + $selectedLabelID);
-									// Add drilldown
-									getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Standards_Compliance.xsl", selectedStandardsCompliance);
-								}
-								else{
-									getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Standards_Compliance.xsl", selectedStandardsCompliance);
-								}
-								
-								// Quality Information
-								selectedQualityInformation = detailedLabel.find("#detailed_quality_information_" + $selectedLabelID);
-								if(selectedQualityInformation.attr('availability') == 2){
-									// Replace gardient fill identifiers so they do not clash
-									getQualityInformationHigherLevel(selectedQualityInformation, "detailed_quality_linear_gradient_" + $selectedLabelID);
-									// Add drilldown
-									getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Quality.xsl", selectedQualityInformation);
-								}
-								else{
-									getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Quality.xsl", selectedQualityInformation);
-								}
-
-								// User Feedback
-								var selectedUserFeedback = detailedLabel.find("#detailed_user_feedback_" + $selectedLabelID);
-								if(selectedUserFeedback.attr('availability') == 2){
-									// Replace gardient fill identifiers so they do not clash
-									getUserFeedbackHigherLevel(selectedUserFeedback, "detailed_feedback_linear_gradient_" + $selectedLabelID);
-									// Add drilldown
-									getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_User_Feedback.xsl", selectedUserFeedback);
-								}
-								else{
-									getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_User_Feedback.xsl", selectedUserFeedback);
-								}
-								
-								// Expert Review
-								var selectedExpertReview = detailedLabel.find("#detailed_expert_review_" + $selectedLabelID);
-								if(selectedExpertReview.attr('availability') == 2){
-									// Replace gardient fill identifiers so they do not clash
-									getExpertReviewHigherLevel(selectedExpertReview, "detailed_expert_linear_gradient_" + $selectedLabelID);
-									// Add drilldown
-									getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Expert_Reviews.xsl", selectedExpertReview);
-								}
-								else{
-									getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Expert_Reviews.xsl", selectedExpertReview);
-								}
-								
-								// Citations
-								var selectedCitations = detailedLabel.find("#detailed_citations_" + $selectedLabelID);
-								if(selectedCitations.attr('availability') == 2){
-									// Replace gardient fill identifiers so they do not clash
-									getCitationsInformationHigherLevel(selectedCitations, "detailed_citations_linear_gradient_" + $selectedLabelID);
-									// Add drilldown
-									getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Citations.xsl", selectedCitations);
-								}
-								else{
-									getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Citations.xsl", selectedCitations);
-								}
+								var detailedLabel = cloneLabel($("#geolabel_" + $selectedLabelID), "detailed_");
 								
 								// Add metadata button
 								var metadataURL = "http://localhost/geolabel-comparison-tool/php/metadata_records/" + $targetDatasetID + ".xml";
@@ -607,12 +429,6 @@ $(function() {
 								div.append(metadataButton);
 								
 								$("#detailed-geolabel").html(div);
-								
-								/*
-								$(detailedLabel.find("#detailed_branding_group_" + $selectedLabelID)).click(function() {
-									window.open("http://www.geolabel.info");
-								});
-								*/
 							},
 							error:function(){
 								$("#dataset-details").html('An error occured.');
@@ -659,7 +475,7 @@ $(function() {
 			
 			// Add highlighted dataset into Highlighted Dataset tab
 			
-			var highlightedDiv = getHighlightedDetailsTab($clickedLabelID);
+			var highlightedDiv = getHighlightedLabelDetails($clickedLabelID);
 			$("#highlighted-datasets").append(highlightedDiv);
 			
 			$clickedLabelID = null;
@@ -707,11 +523,10 @@ function isJson(str) {
     return true;
 }
 
-function getHighlightedDetailsTab(highlightedID){
+function getHighlightedLabelDetails(highlightedID){
 
 	$highlightedLabelID = $("#geolabel_" + highlightedID).attr('dataset_id');
 	$highlightedParentID = $("#geolabel_" + highlightedID).attr('parent_id');
-
 	
 	// create a new tab element
 	var parentDiv = $('<div/>', {id: 'highlighted_item_' + highlightedID, class: 'highlighted-item'});
@@ -778,7 +593,7 @@ function getHighlightedDetailsTab(highlightedID){
 			//									highlighted GEO LABEL
 			//								Display a highlighted GEO label
 			// ***********************************************************************************************
-			var highlightedLabel = cloneLabel($("#geolabel_" + highlightedID), "highlighted_")
+			var highlightedLabel = cloneLabel($("#geolabel_" + highlightedID), "highlighted_");
 			
 			// Add metadata button
 			var metadataURL = "http://localhost/geolabel-comparison-tool/php/metadata_records/" + $highlightedLabelID + ".xml";
@@ -815,10 +630,10 @@ function getHighlightedDetailsTab(highlightedID){
  *  Returns a cloned GEO label representation.
  */
 function cloneLabel(originalLabel, newIDPrefix){
-	// ***********************************************************************************************
-	//									DETAILED GEO LABEL
-	//								Display a detailed GEO label
-	// ***********************************************************************************************
+	// ********************************************************************************************************************
+	//												DETAILED GEO LABEL
+	//											Display a detailed GEO label
+	// ********************************************************************************************************************
 	var detailedLabel = originalLabel.clone();
 	var detailedLabelID = detailedLabel.closest("svg").attr('id').replace("geolabel_", "");
 	var detailedDatasetID = detailedLabel.closest("svg").attr('dataset_id');
@@ -879,9 +694,9 @@ function cloneLabel(originalLabel, newIDPrefix){
 	detailedLabel.find("#citations_" + detailedLabelID).attr("title", "Number of citations: " + detailedLabel.find("#citations_" + detailedLabelID).attr("citations_count"));
 	
 	
-	// ***************************************************************************************
-	//   				Add on click functionality and modify gradien fill IDs
-	// ***************************************************************************************
+	// *******************************************************************************************************************************
+	//   								Add on click functionality and modify gradien fill IDs
+	// *******************************************************************************************************************************
 	var xlinkNS="http://www.w3.org/1999/xlink",
 	svgNS="http://www.w3.org/2000/svg";
 
@@ -988,7 +803,9 @@ function cloneLabel(originalLabel, newIDPrefix){
 		getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Citations.xsl", selectedCitations);
 	}
 	
-	// ************************************   Change group IDs to avoid ID conflict   **********************************************
+	// ********************************************************************************************************************************
+	//											Change group IDs to avoid ID conflict
+	// ********************************************************************************************************************************
 	detailedLabel.find("#size_group_" + detailedLabelID).attr("id", newIDPrefix + "size_group_" + detailedLabelID);
 	detailedLabel.find("#branding_group_" + detailedLabelID).attr("id", newIDPrefix + "branding_group_" + detailedLabelID);
 
@@ -1002,5 +819,4 @@ function cloneLabel(originalLabel, newIDPrefix){
 	detailedLabel.find("#citations_" + detailedLabelID).attr("id", newIDPrefix + "citations_" + detailedLabelID);
 	
 	return detailedLabel;
-
 }
