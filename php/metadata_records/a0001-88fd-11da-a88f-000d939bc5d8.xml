@@ -19,6 +19,9 @@
          <gmd:role>
             <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode" codeListValue="pointOfContact"/>
          </gmd:role>
+		<gmd:organisationName>
+			<gco:CharacterString>JRC</gco:CharacterString>
+		</gmd:organisationName>
       </gmd:CI_ResponsibleParty>
   </gmd:contact>
   <gmd:dateStamp>
@@ -31,7 +34,7 @@
       <gco:CharacterString xmlns:srv="http://www.isotc211.org/2005/srv">1.0</gco:CharacterString>
   </gmd:metadataStandardVersion>
   <gmd:identificationInfo>
-      <gmd:MD_DataIdentification>
+      <gmd:GVQ_DataIdentification>
          <gmd:citation>
             <gmd:CI_Citation>
                <gmd:title>
@@ -191,7 +194,55 @@
          <gmd:supplementalInformation>
             <gco:CharacterString>Vegetation classification and descriptions in the USGS land cover database are built on characteristics of vegetation seasonality determined in terms of AVHRR NDVI.</gco:CharacterString>
          </gmd:supplementalInformation>
-      </gmd:MD_DataIdentification>
+		<gmd19157:referenceDoc>
+			<gvq:GVQ_Publication>
+				<gmd:title>
+					<gco:CharacterString>Seasonal land cover classes 2000</gco:CharacterString>
+				</gmd:title>
+				<gmd:date>
+					<gmd:CI_Date>
+						<gmd:date>
+							<gco:Date>2000-06-11</gco:Date>
+						</gmd:date>
+						<gmd:dateType>
+							<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+						</gmd:dateType>
+					</gmd:CI_Date>
+				</gmd:date>
+				<gmd:ISSN>
+					<gco:CharacterString>0196-2892</gco:CharacterString>
+				</gmd:ISSN>
+				<gvq:target>
+					<updated19115:MD_Identifier uuid="jrc.europa.eu:GLC2000" id="GLC2000">
+						<!-- the ID is used for xlinking within the document (see 'discoveredIssue'), the UUID for potential outside links -->
+						<gmd:code>
+							<gco:CharacterString>a0001-88fd-11da-a88f-000d939bc5d8</gco:CharacterString>
+						</gmd:code>
+						<updated19115:codeSpace>
+							<gco:CharacterString>jrc.europa.eu</gco:CharacterString>
+						</updated19115:codeSpace>
+					</updated19115:MD_Identifier>
+				</gvq:target>
+				<gvq:doi>
+					<gco:CharacterString>10.3689/ERFC.2000.864370</gco:CharacterString>
+				</gvq:doi>
+				<gvq:purpose>
+					<gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>
+				</gvq:purpose>
+				<gvq:scope xlink:href="#datasetScope"/>
+				<gvq:category>
+					<gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+				</gvq:category>
+				<gvq:onlineResource>
+					<gmd:CI_OnlineResource>
+						<gmd:linkage>
+							<gmd:URL>http://ieeexplore.ieee.org</gmd:URL>
+						</gmd:linkage>
+					</gmd:CI_OnlineResource>
+				</gvq:onlineResource>
+			</gvq:GVQ_Publication>
+		</gmd19157:referenceDoc>
+      </gmd:GVQ_DataIdentification>
   </gmd:identificationInfo>
   <gmd:distributionInfo>
       <gmd:MD_Distribution>
@@ -225,63 +276,63 @@
       </gmd:MD_MaintenanceInformation>
   </gmd:metadataMaintenance>
 	<gvq:userFeedback>
-	<gvq:GVQ_FeedbackCollection>
-	<gvq:item>
-		<gvq:identifier>
-			<updated19115:MD_Identifier>
-				<gmd:code/>
-			</updated19115:MD_Identifier>
-		</gvq:identifier>
-		<gvq:subject>string</gvq:subject>
-		<gvq:primaryTarget>
-			<gvq:natureOfTarget>
-				<gvq:MD_ScopeCode codeList="http://www.geoviqua.org/gmd19157/resources/codeList.xml#MD_ScopeCode" codeListValue="metadata"/>
-			</gvq:natureOfTarget>
-		</gvq:primaryTarget>
-		<gvq:userRole>
-			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" NonresearchEndUser "/>
-		</gvq:userRole>
-		<gvq:user>
-			<gvq:userDetails>
-				<gmd:individualName>
-					<gco:CharacterString>Pepito</gco:CharacterString>
-				</gmd:individualName>
-				<gmd:organisationName>
-					<gco:CharacterString>Afrucat</gco:CharacterString>
-				</gmd:organisationName>
-				<gmd:role>
-					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
-				</gmd:role>
-			</gvq:userDetails>
-			<gvq:applicationDomain>http://www.eionet.europa.eu/gemet/concept/3502</gvq:applicationDomain>
-			<gvq:expertiseLevel>2</gvq:expertiseLevel>
+		<gvq:GVQ_FeedbackCollection>
+		<gvq:item>
+			<gvq:identifier>
+				<updated19115:MD_Identifier>
+					<gmd:code/>
+				</updated19115:MD_Identifier>
+			</gvq:identifier>
+			<gvq:subject>string</gvq:subject>
+			<gvq:primaryTarget>
+				<gvq:natureOfTarget>
+					<gvq:MD_ScopeCode codeList="http://www.geoviqua.org/gmd19157/resources/codeList.xml#MD_ScopeCode" codeListValue="metadata"/>
+				</gvq:natureOfTarget>
+			</gvq:primaryTarget>
 			<gvq:userRole>
-				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" NonresearchEndUser "/>
 			</gvq:userRole>
-		</gvq:user>
-		<gvq:dateStamp>
-			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
-		</gvq:dateStamp>
-		<gvq:qualityOverride>
-			<gvq:GVQ_DataQuality>
-				<gmd19157:scope/>
-				<gvq:discoveredIssue/>
-			</gvq:GVQ_DataQuality>
-		</gvq:qualityOverride>
-		<gvq:userComment>
-			<gvq:comment>Metadata record is incomplete.</gvq:comment>
-			<gvq:mime-type>text/plain</gvq:mime-type>
-		</gvq:userComment>
-		<gvq:rating>
-			<gvq:score>2</gvq:score>
-			<gvq:justification>The data itself is of acceptable quality but metadata is extremely incomplete.</gvq:justification>
-		</gvq:rating>
-		<gvq:usage>
-			<gvq:reportAspect>
-				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
-			</gvq:reportAspect>
-		</gvq:usage>
-	</gvq:item>
-	</gvq:GVQ_FeedbackCollection>
-        </gvq:userFeedback>
+			<gvq:user>
+				<gvq:userDetails>
+					<gmd:individualName>
+						<gco:CharacterString>Richard Jones</gco:CharacterString>
+					</gmd:individualName>
+					<gmd:organisationName>
+						<gco:CharacterString>UAB</gco:CharacterString>
+					</gmd:organisationName>
+					<gmd:role>
+						<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+					</gmd:role>
+				</gvq:userDetails>
+				<gvq:applicationDomain>http://www.eionet.europa.eu/gemet/concept/3502</gvq:applicationDomain>
+				<gvq:expertiseLevel>2</gvq:expertiseLevel>
+				<gvq:userRole>
+					<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+				</gvq:userRole>
+			</gvq:user>
+			<gvq:dateStamp>
+				<gco:DateTime>20013-01-31T00:00:00.0Z</gco:DateTime>
+			</gvq:dateStamp>
+			<gvq:qualityOverride>
+				<gvq:GVQ_DataQuality>
+					<gmd19157:scope/>
+					<gvq:discoveredIssue/>
+				</gvq:GVQ_DataQuality>
+			</gvq:qualityOverride>
+			<gvq:userComment>
+				<gvq:comment>Metadata record is incomplete.</gvq:comment>
+				<gvq:mime-type>text/plain</gvq:mime-type>
+			</gvq:userComment>
+			<gvq:rating>
+				<gvq:score>2</gvq:score>
+				<gvq:justification>The data itself is of acceptable quality but metadata is incomplete.</gvq:justification>
+			</gvq:rating>
+			<gvq:usage>
+				<gvq:reportAspect>
+					<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+				</gvq:reportAspect>
+			</gvq:usage>
+		</gvq:item>
+		</gvq:GVQ_FeedbackCollection>
+	</gvq:userFeedback>
 </gvq:GVQ_Metadata>

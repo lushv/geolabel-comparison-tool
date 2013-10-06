@@ -412,7 +412,7 @@
             <gmd19157:scope>
                 <gmd19157:DQ_Scope id="datasetScope">
                     <gmd19157:level>
-                        <gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode" codeListValue="dataset"/>
+                        <gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode" codeListValue="pixel"/>
                     </gmd19157:level>
                     <gmd19157:extent>
                         <gmd:EX_Extent id="boundingExtent">
@@ -932,7 +932,7 @@
 		<gvq:user>
 			<gvq:userDetails>
 				<gmd:individualName>
-					<gco:CharacterString>Pepito</gco:CharacterString>
+					<gco:CharacterString>Roberto Ponte</gco:CharacterString>
 				</gmd:individualName>
 				<gmd:organisationName>
 					<gco:CharacterString>Afrucat</gco:CharacterString>
@@ -946,7 +946,7 @@
 			<gvq:applicationDomain>http://www.eionet.europa.eu/gemet/concept/3502</gvq:applicationDomain>
 			<gvq:expertiseLevel>4</gvq:expertiseLevel>
 			<gvq:userRole>
-				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="ResearchEndUser"/>
 			</gvq:userRole>
 		</gvq:user>
 		<gvq:dateStamp>
@@ -959,12 +959,12 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>The data itself was appropriated for my application and the metadata records is beyond the expectation allowing for error traceability.</gvq:comment>
+			<gvq:comment>The metadata records is beyond the expectation allowing for error traceability. Very detailed quality information.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
 			<gvq:score>5</gvq:score>
-			<gvq:justification>The data itself is appropriated for this application and the metadata records is beyond the expectation allowing for error traceability.</gvq:justification>
+			<gvq:justification>The data can be recommended for land cover research. The metadata records is beyond the expectation allowing for error traceability.</gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>
@@ -985,10 +985,10 @@
 		<gvq:user>
 			<gvq:userDetails>
 				<gmd:individualName>
-					<gco:CharacterString>Sarah</gco:CharacterString>
+					<gco:CharacterString>Sarah White</gco:CharacterString>
 				</gmd:individualName>
 				<gmd:organisationName>
-					<gco:CharacterString>White</gco:CharacterString>
+					<gco:CharacterString>FAO</gco:CharacterString>
 				</gmd:organisationName>
 				<gmd:contactInfo>
 				</gmd:contactInfo>
@@ -996,10 +996,10 @@
 					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
 				</gmd:role>
 			</gvq:userDetails>
-			<gvq:applicationDomain>http://www.eionet.europa.eu/gemet/concept/3502</gvq:applicationDomain>
+			<gvq:applicationDomain>Land Cover</gvq:applicationDomain>
 			<gvq:expertiseLevel>5</gvq:expertiseLevel>
 			<gvq:userRole>
-				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="ResearchEndUser"/>
 			</gvq:userRole>
 		</gvq:user>
 		<gvq:dateStamp>
@@ -1012,12 +1012,12 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>The data is of really good quality and metadata record is really detailed.</gvq:comment>
+			<gvq:comment>The dataset was used for classification of vegetation cover in the Warwickshire area, UK, in 2010 - 2012. Extremely detailed metadata record.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
 			<gvq:score>5</gvq:score>
-			<gvq:justification>The metadata records is beyond my expectation.</gvq:justification>
+			<gvq:justification>The metadata records was beyond my expectation.</gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>
@@ -1038,10 +1038,10 @@
 		<gvq:user>
 			<gvq:userDetails>
 				<gmd:individualName>
-					<gco:CharacterString>Peter</gco:CharacterString>
+					<gco:CharacterString>Peter Adams</gco:CharacterString>
 				</gmd:individualName>
 				<gmd:organisationName>
-					<gco:CharacterString>Adams</gco:CharacterString>
+					<gco:CharacterString>DEFRA</gco:CharacterString>
 				</gmd:organisationName>
 				<gmd:contactInfo>
 				</gmd:contactInfo>
@@ -1065,12 +1065,12 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>Quality information was available at a pixel level.</gvq:comment>
+			<gvq:comment>I used this dataset for observation of UK land use between 2000 and 2010. The data is of very high quality. Metadata record provides quality information at a pixel level.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
 			<gvq:score>5</gvq:score>
-			<gvq:justification>The dataset is of very good quality.</gvq:justification>
+			<gvq:justification>The dataset and metadata record are of very good quality.</gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>
@@ -1091,10 +1091,10 @@
 		<gvq:user>
 			<gvq:userDetails>
 				<gmd:individualName>
-					<gco:CharacterString>Richard</gco:CharacterString>
+					<gco:CharacterString>Victor Feretti</gco:CharacterString>
 				</gmd:individualName>
 				<gmd:organisationName>
-					<gco:CharacterString>Stevens</gco:CharacterString>
+					<gco:CharacterString>CNR</gco:CharacterString>
 				</gmd:organisationName>
 				<gmd:contactInfo>
 				</gmd:contactInfo>
@@ -1118,12 +1118,12 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>I used this data for landcover reserach and was extremely satisfied with the quality.</gvq:comment>
+			<gvq:comment>This dataset was used to assess vegetation cover in the south region of Italy in 2012. Uncertainty measures are available at a pixel level. The data is highly recommended for land cover applications.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
 			<gvq:score>4</gvq:score>
-			<gvq:justification>The data was suitable for my application.</gvq:justification>
+			<gvq:justification>The data is suitable for land cover applications.</gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>
@@ -1144,10 +1144,10 @@
 		<gvq:user>
 			<gvq:userDetails>
 				<gmd:individualName>
-					<gco:CharacterString>Eva</gco:CharacterString>
+					<gco:CharacterString>Eva Klein</gco:CharacterString>
 				</gmd:individualName>
 				<gmd:organisationName>
-					<gco:CharacterString>Wilkinson</gco:CharacterString>
+					<gco:CharacterString>Fraunhofer Institute</gco:CharacterString>
 				</gmd:organisationName>
 				<gmd:contactInfo>
 				</gmd:contactInfo>
@@ -1158,7 +1158,7 @@
 			<gvq:applicationDomain>Forestry</gvq:applicationDomain>
 			<gvq:expertiseLevel>4</gvq:expertiseLevel>
 			<gvq:userRole>
-				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="ResearchEndUser"/>
 			</gvq:userRole>
 		</gvq:user>
 		<gvq:dateStamp>
@@ -1171,12 +1171,12 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>The data itself was appropriated for my application and the metadata records is extremely good.</gvq:comment>
+			<gvq:comment>The dataset was used to monitor changes in forest cover in Germany between 2005 and 2010. We would highly recommend this dataset for forestry and land use applications.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
 			<gvq:score>5</gvq:score>
-			<gvq:justification>Data is suitable for land cover research.</gvq:justification>
+			<gvq:justification>The dataset is highly recommended for land cover research.</gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>
@@ -1197,10 +1197,10 @@
 		<gvq:user>
 			<gvq:userDetails>
 				<gmd:individualName>
-					<gco:CharacterString>Mark</gco:CharacterString>
+					<gco:CharacterString>Mark Archer</gco:CharacterString>
 				</gmd:individualName>
 				<gmd:organisationName>
-					<gco:CharacterString>Archer</gco:CharacterString>
+					<gco:CharacterString>FAO</gco:CharacterString>
 				</gmd:organisationName>
 				<gmd:contactInfo>
 				</gmd:contactInfo>
@@ -1211,7 +1211,7 @@
 			<gvq:applicationDomain>Vegetataion Cover</gvq:applicationDomain>
 			<gvq:expertiseLevel>4</gvq:expertiseLevel>
 			<gvq:userRole>
-				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="ResearchEndUser"/>
 			</gvq:userRole>
 		</gvq:user>
 		<gvq:dateStamp>
@@ -1224,7 +1224,7 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>I used this dataset for monitoring changes in vegetation cover in the UK between 2000 and 2010.</gvq:comment>
+			<gvq:comment>I used this dataset for monitoring changes in vegetation cover in the UK between 2000 and 2010. The data is of very high quality and quality information is available at a pixel level.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
@@ -1250,10 +1250,10 @@
 		<gvq:user>
 			<gvq:userDetails>
 				<gmd:individualName>
-					<gco:CharacterString>Richard</gco:CharacterString>
+					<gco:CharacterString>Recardo Reviero</gco:CharacterString>
 				</gmd:individualName>
 				<gmd:organisationName>
-					<gco:CharacterString>Jones</gco:CharacterString>
+					<gco:CharacterString>UAB</gco:CharacterString>
 				</gmd:organisationName>
 				<gmd:contactInfo>
 				</gmd:contactInfo>
@@ -1277,12 +1277,12 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>Very good spatial and temporal coverage.</gvq:comment>
+			<gvq:comment>The dataset was used for classification of land cover in Brazil between 2000 and 2007. The dataset and metadata record are of very high quality. Quality information is available at a pixel level.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
 			<gvq:score>4</gvq:score>
-			<gvq:justification>The dataset and metadata record is of very high quality and quality information is available at a pixel level.</gvq:justification>
+			<gvq:justification>Quality information is available at a pixel level.</gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>
@@ -1303,10 +1303,10 @@
 		<gvq:user>
 			<gvq:userDetails>
 				<gmd:individualName>
-					<gco:CharacterString>Pinar</gco:CharacterString>
+					<gco:CharacterString>Pinar Boston</gco:CharacterString>
 				</gmd:individualName>
 				<gmd:organisationName>
-					<gco:CharacterString>Boston</gco:CharacterString>
+					<gco:CharacterString>Middle East Technical University</gco:CharacterString>
 				</gmd:organisationName>
 				<gmd:contactInfo>
 				</gmd:contactInfo>
@@ -1317,7 +1317,7 @@
 			<gvq:applicationDomain>Ecosystems</gvq:applicationDomain>
 			<gvq:expertiseLevel>5</gvq:expertiseLevel>
 			<gvq:userRole>
-				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="ResearchEndUser"/>
 			</gvq:userRole>
 		</gvq:user>
 		<gvq:dateStamp>
@@ -1330,7 +1330,7 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>Very good quality and spatial coverage.</gvq:comment>
+			<gvq:comment>We used this dataset to classify vegetation cover in Turkey for the year 2011. The dataset provides very good spatial and temporal coverage.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
@@ -1356,10 +1356,10 @@
 		<gvq:user>
 			<gvq:userDetails>
 				<gmd:individualName>
-					<gco:CharacterString>Eva</gco:CharacterString>
+					<gco:CharacterString>Eva Sevilliano</gco:CharacterString>
 				</gmd:individualName>
 				<gmd:organisationName>
-					<gco:CharacterString>Klein</gco:CharacterString>
+					<gco:CharacterString>UAB</gco:CharacterString>
 				</gmd:organisationName>
 				<gmd:contactInfo>
 				</gmd:contactInfo>
@@ -1383,12 +1383,12 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>I used this dataset to monitor changes in agricultural land use in the UK between 2005 and 2010.</gvq:comment>
+			<gvq:comment>Our university used this dataset to monitor changes in the agricultural land use in Spain between 2005 and 2010. We would highly recommend this dataset for landcover research.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
 			<gvq:score>5</gvq:score>
-			<gvq:justification>The data is of good quality and quality information is provided at a pixel level.</gvq:justification>
+			<gvq:justification>Metadata record is extremely good. Quality and lineage information is available.</gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>
@@ -1409,10 +1409,10 @@
 		<gvq:user>
 			<gvq:userDetails>
 				<gmd:individualName>
-					<gco:CharacterString>Jon</gco:CharacterString>
+					<gco:CharacterString>Jon Wilkies</gco:CharacterString>
 				</gmd:individualName>
 				<gmd:organisationName>
-					<gco:CharacterString>Whitehouse</gco:CharacterString>
+					<gco:CharacterString>FAO</gco:CharacterString>
 				</gmd:organisationName>
 				<gmd:contactInfo>
 				</gmd:contactInfo>
@@ -1436,12 +1436,12 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>I used this dataset to monitor farming land use in Turkey in 2010.</gvq:comment>
+			<gvq:comment>The dataset was used to monitor farming land use in the UK between June 2010 and July 2013. Metadta record provided us with full lineage information which allowed traceability.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
 			<gvq:score>5</gvq:score>
-			<gvq:justification>Very good data, suitable for application.</gvq:justification>
+			<gvq:justification>The data is of very high quality. Metadata record provides full lineage information.</gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>
@@ -1462,10 +1462,10 @@
 		<gvq:user>
 			<gvq:userDetails>
 				<gmd:individualName>
-					<gco:CharacterString>Christopher</gco:CharacterString>
+					<gco:CharacterString>Xavier Pau</gco:CharacterString>
 				</gmd:individualName>
 				<gmd:organisationName>
-					<gco:CharacterString>Rowley</gco:CharacterString>
+					<gco:CharacterString>UAB</gco:CharacterString>
 				</gmd:organisationName>
 				<gmd:contactInfo>
 				</gmd:contactInfo>
@@ -1476,7 +1476,7 @@
 			<gvq:applicationDomain>Land Cover</gvq:applicationDomain>
 			<gvq:expertiseLevel>4</gvq:expertiseLevel>
 			<gvq:userRole>
-				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="ResearchEndUser"/>
 			</gvq:userRole>
 		</gvq:user>
 		<gvq:dateStamp>
@@ -1489,12 +1489,12 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>This dataset is appropriate for land cover research.</gvq:comment>
+			<gvq:comment>The dataset was used for classification of forests cover in Spain between 2010 and 2013 . We discovered that data for June - August 2011 was missing but, apart from this, .</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
 			<gvq:score>4</gvq:score>
-			<gvq:justification>Quality information is available at a pixel level.</gvq:justification>
+			<gvq:justification>Overall, very good temporal and spatial coverage. Data is missing for Spain region between June and August 2011.</gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>

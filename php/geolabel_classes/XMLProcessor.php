@@ -37,6 +37,7 @@ class XMLProcessor{
 	private $citationsXPath = 
 						'//*[local-name()=\'LI_Lineage\']/*[local-name()=\'processStep\']//*[local-name()=\'sourceCitation\']/*[local-name()=\'CI_Citation\'] | 
 						//*[local-name()=\'identificationInfo\']/*[local-name()=\'GVQ_DataIdentification\']/*[local-name()=\'referenceDoc\']/*[local-name()=\'GVQ_Publication\'] | 
+						//*[local-name()=\'identificationInfo\']/*[local-name()=\'MD_DataIdentification\']/*[local-name()=\'referenceDoc\']/*[local-name()=\'GVQ_Publication\'] | 
 						//*[local-name()=\'dataQualityInfo\']/*[local-name()=\'GVQ_DataQuality\']/*[local-name()=\'report\']//*[local-name()=\'referenceDoc\']/*[local-name()=\'GVQ_Publication\'] | 
 						//*[local-name()=\'discoveredIssue\']/*[local-name()=\'GVQ_DiscoveredIssue\']//*[local-name()=\'referenceDoc\']/*[local-name()=\'GVQ_Publication\'] | 
 						//*[local-name()=\'item\']/*[local-name()=\'citation\'] | 
@@ -523,9 +524,10 @@ class XMLProcessor{
 		
 		// Get summary of the XML documents
 		$datasetID = $this->getXMLFileIdentifier($gvqXML);
+		$parentID = $this->getXMLFileIdentifier($parentXML);
 		$summaryArray = $this->getDatasetSummary($gvqXML, $parentXML);		
 
-		$json = json_encode(array('datasetIdentifier' => $datasetID, 'facets' => $summaryArray));
+		$json = json_encode(array('datasetIdentifier' => $datasetID, 'parentIdentifier' => $parentID, 'facets' => $summaryArray));
 		return $json;
 	}
 	
@@ -609,7 +611,7 @@ class XMLProcessor{
 			}
 		}
 		if(!empty($result)){
-			$average = array_sum($result)/count($result);
+			$average = round(array_sum($result)/count($result), 1);
 		}
 		return $average;
 	}
