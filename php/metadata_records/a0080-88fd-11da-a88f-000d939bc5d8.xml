@@ -459,13 +459,6 @@
 			</gmd:MD_DataIdentification>
 		</gmd:identificationInfo>
 		<gmd:identificationInfo>
-			<srv:SV_ServiceIdentification>
-				<gmd:citation />
-				<gmd:abstract />
-				<srv:serviceType />
-				<srv:couplingType />
-				<srv:containsOperations />
-			</srv:SV_ServiceIdentification>
 		</gmd:identificationInfo>
 		<gmd:distributionInfo>
 			<gmd:MD_Distribution>
