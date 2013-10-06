@@ -778,150 +778,7 @@ function getHighlightedDetailsTab(highlightedID){
 			//									highlighted GEO LABEL
 			//								Display a highlighted GEO label
 			// ***********************************************************************************************
-			var highlightedLabel = $("#geolabel_" + highlightedID).clone();
-			highlightedLabel.attr("id", "highlighted_geolabel_" + highlightedID);
-			highlightedLabel.attr("xmlns:xlink", "http://www.w3.org/1999/xlink");
-			highlightedLabel.removeAttr("title");
-			highlightedLabel.children(":first").attr("transform","scale(0.6)");
-			
-			// Remove any glow effects
-			highlightedLabel.find("#highlight_glow_group_" + highlightedID).remove();
-			highlightedLabel.find("#select_glow_group_" + highlightedID).remove();
-			
-			// Change group IDs to avoid ID conflict
-			highlightedLabel.find("#size_group_" + highlightedID).attr("id", "highlighted_size_group_" + highlightedID);
-			highlightedLabel.find("#branding_group_" + highlightedID).attr("id", "highlighted_branding_group_" + highlightedID);
-			highlightedLabel.find("#producer_profile_" + highlightedID).attr("id", "highlighted_producer_profile_" + highlightedID);
-			highlightedLabel.find("#producer_comments_" + highlightedID).attr("id", "highlighted_producer_comments_" + highlightedID);
-			highlightedLabel.find("#lineage_" + highlightedID).attr("id", "highlighted_lineage_" + highlightedID);
-			highlightedLabel.find("#standards_compliance_" + highlightedID).attr("id", "highlighted_standards_compliance_" + highlightedID);
-			highlightedLabel.find("#quality_information_" + highlightedID).attr("id", "highlighted_quality_information_" + highlightedID);
-			highlightedLabel.find("#user_feedback_" + highlightedID).attr("id", "highlighted_user_feedback_" + highlightedID);
-			highlightedLabel.find("#expert_review_" + highlightedID).attr("id", "highlighted_expert_review_" + highlightedID);
-			highlightedLabel.find("#citations_" + highlightedID).attr("id", "highlighted_citations_" + highlightedID);
-											
-			// Add hover-over functionality
-			var organisationName = highlightedLabel.find("#highlighted_producer_profile_" + highlightedID).attr("producer_profile_name");
-			if(organisationName == "null"){
-				organisationName = "not defined."
-			}
-			highlightedLabel.find("#highlighted_producer_profile_" + highlightedID).attr("title", "Organisation name: " + organisationName);
-
-			var supplementalInfo = highlightedLabel.find("#highlighted_producer_comments_" + highlightedID).attr("supplemental_information");
-			var knownProblems = highlightedLabel.find("#highlighted_producer_comments_" + highlightedID).attr("known_problems");
-			if(supplementalInfo == "null"){
-				supplementalInfo = "not defined."
-			}
-			if(knownProblems == "null"){
-				knownProblems = "not defined."
-			}
-			highlightedLabel.find("#highlighted_producer_comments_" + highlightedID).attr("title", "Supplemental Information: " + supplementalInfo + " Known Problems: " + knownProblems);
-			
-			highlightedLabel.find("#highlighted_lineage_" + highlightedID).attr("title", "Number of process steps: " + highlightedLabel.find("#highlighted_lineage_" + highlightedID).attr("process_step_count"));
-			
-			var standardName = highlightedLabel.find("#highlighted_standards_compliance_" + highlightedID).attr("standard_name");
-			if(standardName == "null"){
-				standardName = "not defined."
-			}
-			highlightedLabel.find("#highlighted_standards_compliance_" + highlightedID).attr("title", "Standard name: " + standardName);
-			
-			var qualityScope = highlightedLabel.find("#highlighted_quality_information_" + highlightedID).attr("scope_level");
-			if(qualityScope == "null"){
-				qualityScope = "not defined."
-			}
-			highlightedLabel.find("#highlighted_quality_information_" + highlightedID).attr("title", "Quality information scope: " + qualityScope);
-			
-			var averageRating = highlightedLabel.find("#highlighted_user_feedback_" + highlightedID).attr("feedbacks_average_rating");
-			if(averageRating == "null"){
-				averageRating = "0"
-			}
-			highlightedLabel.find("#highlighted_user_feedback_" + highlightedID).attr("title", "Number of feedbacks: " + highlightedLabel.find("#highlighted_user_feedback_" + highlightedID).attr("feedbacks_count") + ". Average rating: " + averageRating + " (" + highlightedLabel.find("#highlighted_user_feedback_" + highlightedID).attr("ratings_count") + " rating(s)).");
-			
-			var averageExpertRating = highlightedLabel.find("#highlighted_expert_review_" + highlightedID).attr("expert_average_rating");
-			if(averageExpertRating == "null"){
-				averageExpertRating = "0"
-			}
-			highlightedLabel.find("#highlighted_expert_review_" + highlightedID).attr("title", "Number of reviews: " + highlightedLabel.find("#highlighted_expert_review_" + highlightedID).attr("expert_reviews_count") + ". Average rating: " + averageExpertRating + " (" + highlightedLabel.find("#highlighted_expert_review_" + highlightedID).attr("expert_ratings_count") + " rating(s)).");
-			
-			highlightedLabel.find("#highlighted_citations_" + highlightedID).attr("title", "Number of citations: " + highlightedLabel.find("#highlighted_citations_" + highlightedID).attr("citations_count"));			
-
-			// ***************************************************************************************
-			//   							Add on click functionality  
-			// ***************************************************************************************
-			var xlinkNS="http://www.w3.org/1999/xlink",
-			svgNS="http://www.w3.org/2000/svg";
-
-			var drilldownBaseURL = "http://localhost/geolabel-comparison-tool/php/stylesheets/facet.php?";
-			var xmlDocumentURL = "doc=" + escape("http://localhost/geolabel-comparison-tool/php/metadata_records/" + $highlightedLabelID + ".xml");
-			var xmlParentURL = "doc=" + escape("http://localhost/geolabel-comparison-tool/php/metadata_records/" + $highlightedParentID + ".xml");
-			var xslBaseURL = "&xsl=" + escape("http://localhost/geolabel-comparison-tool/php/stylesheets/");
-			
-			getBrandingAnchorElement(svgNS, xlinkNS, "http://www.geolabel.info", highlightedLabel.find("#highlighted_branding_group_" + highlightedID));
-			
-
-			// Producer Profile
-			if(highlightedLabel.find("#highlighted_producer_profile_" + highlightedID).attr('availability') == 2){
-				getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Producer_Profile.xsl", highlightedLabel.find("#highlighted_producer_profile_" + highlightedID));
-			}
-			else{
-				getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Producer_Profile.xsl", highlightedLabel.find("#highlighted_producer_profile_" + highlightedID));
-			}
-
-			// Producer Comments
-			if(highlightedLabel.find("#highlighted_producer_comments_" + highlightedID).attr('availability') == 2){
-				getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Producer_Comments.xsl", highlightedLabel.find("#highlighted_producer_comments_" + highlightedID));
-			}
-			else{
-				getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Producer_Comments.xsl", highlightedLabel.find("#highlighted_producer_comments_" + highlightedID));
-			}
-
-			// Lineage
-			if(highlightedLabel.find("#highlighted_lineage_" + highlightedID).attr('availability') == 2){
-				getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Lineage.xsl", highlightedLabel.find("#highlighted_lineage_" + highlightedID));
-			}
-			else{
-				getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Lineage.xsl", highlightedLabel.find("#highlighted_lineage_" + highlightedID));
-			}
-			
-			// Standards Compliance
-			if(highlightedLabel.find("#highlighted_standards_compliance_" + highlightedID).attr('availability') == 2){
-				getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Standards_Compliance.xsl", highlightedLabel.find("#highlighted_standards_compliance_" + highlightedID));
-			}
-			else{
-				getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Standards_Compliance.xsl", highlightedLabel.find("#highlighted_standards_compliance_" + highlightedID));
-			}
-			
-			// Quality Information
-			if(highlightedLabel.find("#highlighted_quality_information_" + highlightedID).attr('availability') == 2){
-				getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Quality.xsl", highlightedLabel.find("#highlighted_quality_information_" + highlightedID));
-			}
-			else{
-				getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Quality.xsl", highlightedLabel.find("#highlighted_quality_information_" + highlightedID));
-			}
-
-			// User Feedback
-			if(highlightedLabel.find("#highlighted_user_feedback_" + highlightedID).attr('availability') == 2){
-				getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_User_Feedback.xsl", highlightedLabel.find("#highlighted_user_feedback_" + highlightedID));
-			}
-			else{
-				getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_User_Feedback.xsl", highlightedLabel.find("#highlighted_user_feedback_" + highlightedID));
-			}
-			
-			// Expert Review
-			if(highlightedLabel.find("#highlighted_expert_review_" + highlightedID).attr('availability') == 2){
-				getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Expert_Reviews.xsl", highlightedLabel.find("#highlighted_expert_review_" + highlightedID));
-			}
-			else{
-				getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Expert_Reviews.xsl", highlightedLabel.find("#highlighted_expert_review_" + highlightedID));
-			}
-			
-			// Citations
-			if(highlightedLabel.find("#highlighted_citations_" + highlightedID).attr('availability') == 2){
-				getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Citations.xsl", highlightedLabel.find("#highlighted_citations_" + highlightedID));
-			}
-			else{
-				getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Citations.xsl", highlightedLabel.find("#highlighted_citations_" + highlightedID));
-			}
+			var highlightedLabel = cloneLabel($("#geolabel_" + highlightedID), "highlighted_")
 			
 			// Add metadata button
 			var metadataURL = "http://localhost/geolabel-comparison-tool/php/metadata_records/" + $highlightedLabelID + ".xml";
@@ -950,4 +807,200 @@ function getHighlightedDetailsTab(highlightedID){
 	parentDiv.append(button);
 
 	return parentDiv;
+}
+
+
+/*  Function to clone a label
+ *  This function clones a GEO label and changes the elements' identifiers so the elements do not clash.
+ *  Returns a cloned GEO label representation.
+ */
+function cloneLabel(originalLabel, newIDPrefix){
+	// ***********************************************************************************************
+	//									DETAILED GEO LABEL
+	//								Display a detailed GEO label
+	// ***********************************************************************************************
+	var detailedLabel = originalLabel.clone();
+	var detailedLabelID = detailedLabel.closest("svg").attr('id').replace("geolabel_", "");
+	var detailedDatasetID = detailedLabel.closest("svg").attr('dataset_id');
+	var detailedParentID =  detailedLabel.closest("svg").attr('parent_id');
+	
+	detailedLabel.attr("id", newIDPrefix + "geolabel_" + detailedLabelID);
+	detailedLabel.attr("xmlns:xlink", "http://www.w3.org/1999/xlink");
+	detailedLabel.removeAttr("title");
+	detailedLabel.children(":first").attr("transform","scale(0.6)");
+	
+	// Remove any glow effects
+	detailedLabel.find("#highlight_glow_group_" + detailedLabelID).remove();
+	detailedLabel.find("#select_glow_group_" + detailedLabelID).remove();
+	
+	// Add hover-over functionality
+	var organisationName = detailedLabel.find("#producer_profile_" + detailedLabelID).attr("producer_profile_name");
+	if(organisationName == "null"){
+		organisationName = "not defined."
+	}
+	detailedLabel.find("#producer_profile_" + detailedLabelID).attr("title", "Organisation name: " + organisationName);
+
+	var supplementalInfo = detailedLabel.find("#producer_comments_" + detailedLabelID).attr("supplemental_information");
+	var knownProblems = detailedLabel.find("#producer_comments_" + detailedLabelID).attr("known_problems");
+	if(supplementalInfo == "null"){
+		supplementalInfo = "not defined."
+	}
+	if(knownProblems == "null"){
+		knownProblems = "not defined."
+	}
+	detailedLabel.find("#producer_comments_" + detailedLabelID).attr("title", "Supplemental Information: " + supplementalInfo + " Known Problems: " + knownProblems);
+	
+	detailedLabel.find("#lineage_" + detailedLabelID).attr("title", "Number of process steps: " + detailedLabel.find("#lineage_" + detailedLabelID).attr("process_step_count"));
+	
+	var standardName = detailedLabel.find("#standards_compliance_" + detailedLabelID).attr("standard_name");
+	if(standardName == "null"){
+		standardName = "not defined."
+	}
+	detailedLabel.find("#standards_compliance_" + detailedLabelID).attr("title", "Standard name: " + standardName);
+	
+	var qualityScope = detailedLabel.find("#quality_information_" + detailedLabelID).attr("scope_level");
+	if(qualityScope == "null"){
+		qualityScope = "not defined."
+	}
+	detailedLabel.find("#quality_information_" + detailedLabelID).attr("title", "Quality information scope: " + qualityScope);
+	
+	var averageRating = detailedLabel.find("#user_feedback_" + detailedLabelID).attr("feedbacks_average_rating");
+	if(averageRating == "null"){
+		averageRating = "0"
+	}
+	detailedLabel.find("#user_feedback_" + detailedLabelID).attr("title", "Number of feedbacks: " + detailedLabel.find("#user_feedback_" + detailedLabelID).attr("feedbacks_count") + ". Average rating: " + averageRating + " (" + detailedLabel.find("#user_feedback_" + detailedLabelID).attr("ratings_count") + " rating(s)).");
+	
+	var averageExpertRating = detailedLabel.find("#expert_review_" + detailedLabelID).attr("expert_average_rating");
+	if(averageExpertRating == "null"){
+		averageExpertRating = "0"
+	}
+	detailedLabel.find("#expert_review_" + detailedLabelID).attr("title", "Number of reviews: " + detailedLabel.find("#expert_review_" + detailedLabelID).attr("expert_reviews_count") + ". Average rating: " + averageExpertRating + " (" + detailedLabel.find("#expert_review_" + detailedLabelID).attr("expert_ratings_count") + " rating(s)).");
+	
+	detailedLabel.find("#citations_" + detailedLabelID).attr("title", "Number of citations: " + detailedLabel.find("#citations_" + detailedLabelID).attr("citations_count"));
+	
+	
+	// ***************************************************************************************
+	//   				Add on click functionality and modify gradien fill IDs
+	// ***************************************************************************************
+	var xlinkNS="http://www.w3.org/1999/xlink",
+	svgNS="http://www.w3.org/2000/svg";
+
+	var drilldownBaseURL = "http://localhost/geolabel-comparison-tool/php/stylesheets/facet.php?";
+	var xmlDocumentURL = "doc=" + escape("http://localhost/geolabel-comparison-tool/php/metadata_records/" + detailedDatasetID + ".xml");
+	var xmlParentURL = "doc=" + escape("http://localhost/geolabel-comparison-tool/php/metadata_records/" + detailedParentID + ".xml");
+	var xslBaseURL = "&xsl=" + escape("http://localhost/geolabel-comparison-tool/php/stylesheets/");
+	
+	getBrandingAnchorElement(svgNS, xlinkNS, "http://www.geolabel.info", detailedLabel.find("#branding_group_" + detailedLabelID));
+	
+	// Producer Profile
+	var selectedProducerProfile = detailedLabel.find("#producer_profile_" + detailedLabelID);
+	if(selectedProducerProfile.attr('availability') == 2){
+		// Replace gardient fill identifiers so they do not clash
+		getProducerProfileHigherLevel(selectedProducerProfile, newIDPrefix + "producer_linear_gradient_" + detailedLabelID);
+		// Add drilldown
+		getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Producer_Profile.xsl", selectedProducerProfile);
+	}
+	else{
+		getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Producer_Profile.xsl", selectedProducerProfile);
+	}
+
+	// Producer Comments
+	var selectedProducerComments = detailedLabel.find("#producer_comments_" + detailedLabelID);
+	if(selectedProducerComments.attr('availability') == 2){
+		// Replace gardient fill identifiers so they do not clash
+		getProducerCommentsHigherLevel(selectedProducerComments, newIDPrefix + "comments_linear_gradient_" + detailedLabelID);
+		// Add drilldown
+		getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Producer_Comments.xsl", selectedProducerComments);
+	}
+	else{
+		getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Producer_Comments.xsl", selectedProducerComments);
+	}
+
+	// Lineage
+	var selectedLineage = detailedLabel.find("#lineage_" + detailedLabelID);
+	if(selectedLineage.attr('availability') == 2){
+		// Replace gardient fill identifiers so they do not clash
+		getLineageHigherLevel(selectedLineage, newIDPrefix + "lineage_linear_gradient_" + detailedLabelID);
+		// Add drilldown
+		getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Lineage.xsl", selectedLineage);
+	}
+	else{
+		getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Lineage.xsl", selectedLineage);
+	}
+	
+	// Standards Compliance
+	var selectedStandardsCompliance = detailedLabel.find("#standards_compliance_" + detailedLabelID);
+	if(selectedStandardsCompliance.attr('availability') == 2){
+		// Replace gardient fill identifiers so they do not clash
+		getStandardsComplianceHigherLevel(selectedStandardsCompliance, newIDPrefix + "standards_linear_gradient_" + detailedLabelID);
+		// Add drilldown
+		getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Standards_Compliance.xsl", selectedStandardsCompliance);
+	}
+	else{
+		getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Standards_Compliance.xsl", selectedStandardsCompliance);
+	}
+	
+	// Quality Information
+	selectedQualityInformation = detailedLabel.find("#quality_information_" + detailedLabelID);
+	if(selectedQualityInformation.attr('availability') == 2){
+		// Replace gardient fill identifiers so they do not clash
+		getQualityInformationHigherLevel(selectedQualityInformation, newIDPrefix + "quality_linear_gradient_" + detailedLabelID);
+		// Add drilldown
+		getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Quality.xsl", selectedQualityInformation);
+	}
+	else{
+		getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Quality.xsl", selectedQualityInformation);
+	}
+
+	// User Feedback
+	var selectedUserFeedback = detailedLabel.find("#user_feedback_" + detailedLabelID);
+	if(selectedUserFeedback.attr('availability') == 2){
+		// Replace gardient fill identifiers so they do not clash
+		getUserFeedbackHigherLevel(selectedUserFeedback, newIDPrefix + "feedback_linear_gradient_" + detailedLabelID);
+		// Add drilldown
+		getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_User_Feedback.xsl", selectedUserFeedback);
+	}
+	else{
+		getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_User_Feedback.xsl", selectedUserFeedback);
+	}
+	
+	// Expert Review
+	var selectedExpertReview = detailedLabel.find("#expert_review_" + detailedLabelID);
+	if(selectedExpertReview.attr('availability') == 2){
+		// Replace gardient fill identifiers so they do not clash
+		getExpertReviewHigherLevel(selectedExpertReview, newIDPrefix + "expert_linear_gradient_" + detailedLabelID);
+		// Add drilldown
+		getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Expert_Reviews.xsl", selectedExpertReview);
+	}
+	else{
+		getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Expert_Reviews.xsl", selectedExpertReview);
+	}
+	
+	// Citations
+	var selectedCitations = detailedLabel.find("#citations_" + detailedLabelID);
+	if(selectedCitations.attr('availability') == 2){
+		// Replace gardient fill identifiers so they do not clash
+		getCitationsInformationHigherLevel(selectedCitations, newIDPrefix + "citations_linear_gradient_" + detailedLabelID);
+		// Add drilldown
+		getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlParentURL, xslBaseURL, "GVQ_Citations.xsl", selectedCitations);
+	}
+	else{
+		getFacetAnchorElement(svgNS, xlinkNS, drilldownBaseURL, xmlDocumentURL, xslBaseURL, "GVQ_Citations.xsl", selectedCitations);
+	}
+	
+	// ************************************   Change group IDs to avoid ID conflict   **********************************************
+	detailedLabel.find("#size_group_" + detailedLabelID).attr("id", newIDPrefix + "size_group_" + detailedLabelID);
+	detailedLabel.find("#branding_group_" + detailedLabelID).attr("id", newIDPrefix + "branding_group_" + detailedLabelID);
+
+	detailedLabel.find("#producer_profile_" + detailedLabelID).attr("id", newIDPrefix + "producer_profile_" + detailedLabelID);
+	detailedLabel.find("#producer_comments_" + detailedLabelID).attr("id", newIDPrefix + "producer_comments_" + detailedLabelID);
+	detailedLabel.find("#lineage_" + detailedLabelID).attr("id", newIDPrefix + "lineage_" + detailedLabelID);
+	detailedLabel.find("#standards_compliance_" + detailedLabelID).attr("id", newIDPrefix + "standards_compliance_" + detailedLabelID);
+	detailedLabel.find("#quality_information_" + detailedLabelID).attr("id", newIDPrefix + "quality_information_" + detailedLabelID);
+	detailedLabel.find("#user_feedback_" + detailedLabelID).attr("id", newIDPrefix + "user_feedback_" + detailedLabelID);
+	detailedLabel.find("#expert_review_" + detailedLabelID).attr("id", newIDPrefix + "expert_review_" + detailedLabelID);
+	detailedLabel.find("#citations_" + detailedLabelID).attr("id", newIDPrefix + "citations_" + detailedLabelID);
+	
+	return detailedLabel;
+
 }
