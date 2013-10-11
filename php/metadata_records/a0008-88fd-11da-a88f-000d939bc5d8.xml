@@ -26,10 +26,8 @@
       <gco:DateTime xmlns:srv="http://www.isotc211.org/2005/srv">2004-10-01T14:49:08</gco:DateTime>
   </gmd:dateStamp>
   <gmd:metadataStandardName>
-      <gco:CharacterString xmlns:srv="http://www.isotc211.org/2005/srv">ISO 19115:2003/19139</gco:CharacterString>
   </gmd:metadataStandardName>
   <gmd:metadataStandardVersion>
-      <gco:CharacterString xmlns:srv="http://www.isotc211.org/2005/srv">1.0</gco:CharacterString>
   </gmd:metadataStandardVersion>
   <gmd:identificationInfo>
       <gmd:MD_DataIdentification>
@@ -180,7 +178,7 @@ Generalized forest types, forest reserves and location of forest industries.</gc
             </gmd:EX_Extent>
          </gmd:extent>
          <gmd:supplementalInformation>
-            <gco:CharacterString>ISIS Identifier: 002852</gco:CharacterString>
+            
          </gmd:supplementalInformation>
       </gmd:MD_DataIdentification>
   </gmd:identificationInfo>
