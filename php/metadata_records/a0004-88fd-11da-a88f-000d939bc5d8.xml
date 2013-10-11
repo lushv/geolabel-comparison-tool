@@ -9,34 +9,34 @@
    <characterSet>
       <MD_CharacterSetCode codeList="./resources/codeList.xml#MD_CharacterSetCode" codeListValue="utf8"/>
    </characterSet>
-   <contact>
-      <CI_ResponsibleParty>
-         <individualName>
+   <gmd:contact>
+      <gmd:CI_ResponsibleParty>
+         <gmd:individualName>
             <gco:CharacterString>Livia Peiser</gco:CharacterString>
-         </individualName>
-         <organisationName>
+         </gmd:individualName>
+         <gmd:organisationName>
             <gco:CharacterString>WFP</gco:CharacterString>
-         </organisationName>
-         <positionName>
+         </gmd:organisationName>
+         <gmd:positionName>
             <gco:CharacterString>GIS Specialist</gco:CharacterString>
-         </positionName>
-         <contactInfo>
-            <CI_Contact>
-               <phone>
-                  <CI_Telephone>
-                     <voice>
+         </gmd:positionName>
+         <gmd:contactInfo>
+            <gmd:CI_Contact>
+               <gmd:phone>
+                  <gmd:CI_Telephone>
+                     <gmd:voice>
                         <gco:CharacterString>0039-06-65132539</gco:CharacterString>
-                     </voice>
-                     <facsimile>
+                     </gmd:voice>
+                     <gmd:facsimile>
                         <gco:CharacterString/>
-                     </facsimile>
-                  </CI_Telephone>
-               </phone>
-               <address>
-                  <CI_Address>
-                     <deliveryPoint>
+                     </gmd:facsimile>
+                  </gmd:CI_Telephone>
+               </gmd:phone>
+               <gmd:address>
+                  <gmd:CI_Address>
+                     <gmd:deliveryPoint>
                         <gco:CharacterString>Via Cesare Giulio Viola, 68</gco:CharacterString>
-                     </deliveryPoint>
+                     </gmd:deliveryPoint>
                      <city>
                         <gco:CharacterString>Rome</gco:CharacterString>
                      </city>
@@ -52,15 +52,15 @@
                      <electronicMailAddress>
                         <gco:CharacterString>livia.peiser@wfp.org</gco:CharacterString>
                      </electronicMailAddress>
-                  </CI_Address>
-               </address>
-            </CI_Contact>
-         </contactInfo>
-         <role>
+                  </gmd:CI_Address>
+               </gmd:address>
+            </gmd:CI_Contact>
+         </gmd:contactInfo>
+         <gmd:role>
             <CI_RoleCode codeList="./resources/codeList.xml#CI_RoleCode" codeListValue="pointOfContact"/>
-         </role>
-      </CI_ResponsibleParty>
-   </contact>
+         </gmd:role>
+      </gmd:CI_ResponsibleParty>
+   </gmd:contact>
    <dateStamp>
       <gco:DateTime>2005-03-02T19:30:43</gco:DateTime>
    </dateStamp>
@@ -318,9 +318,9 @@
                </geographicElement>
             </EX_Extent>
          </extent>
-         <supplementalInformation>
+         <gmd:supplementalInformation>
             <gco:CharacterString>The downlodable file contains: the Image (Jpe, the grid in ARC Infor Format and the relative legend</gco:CharacterString>
-         </supplementalInformation>
+         </gmd:supplementalInformation>
       </MD_DataIdentification>
    </identificationInfo>
    <distributionInfo>
