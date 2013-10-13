@@ -19,7 +19,7 @@
 				<gmd:citation>
 					<gmd:CI_Citation>
 						<gmd:title>
-							<gco:CharacterString>SAFARI 2000 SURFACE IRRADIANCE MEASUREMENTS, MONGU TOWER SITE, ZAMBIA, 2000-2002</gco:CharacterString>
+							<gco:CharacterString>SAFARI SURFACE IRRADIANCE MEASUREMENTS, MONGU TOWER SITE, ZAMBIA, 2000-2002</gco:CharacterString>
 						</gmd:title>
 						<gmd:date />
 						<gmd:date>
@@ -67,7 +67,7 @@
 				<gmd:descriptiveKeywords>
 					<gmd:MD_Keywords>
 						<gmd:keyword>
-							<gco:CharacterString>EARTH SCIENCE ATMOSPHERE ATMOSPHERIC RADIATION SHORTWAVE RADIATION; PYRANOMETERS; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; SAFARI 2000 THE SOUTHERN AFRICAN REGIONAL SCIENCE INITIATIVE PROJECT; CWIC CEOS WGISS INTEGRATED CATALOG; Par; Canopy; Eosdis; Radiation; Vegetation; Reflectance; Safari 2000; Forest Cover; Shortwave Radiation; Photosynthetically Active Radation; CLIMATOLOGY/METEOROLOGY/ATMOSPHERE; ENGLISH;</gco:CharacterString>
+							<gco:CharacterString>EARTH SCIENCE ATMOSPHERE ATMOSPHERIC RADIATION SHORTWAVE RADIATION; PYRANOMETERS; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; SAFARI THE SOUTHERN AFRICAN REGIONAL SCIENCE INITIATIVE PROJECT; CWIC CEOS WGISS INTEGRATED CATALOG; Par; Canopy; Eosdis; Radiation; Vegetation; Reflectance; SAFARI; Forest Cover; Shortwave Radiation; Photosynthetically Active Radation; CLIMATOLOGY/METEOROLOGY/ATMOSPHERE; ENGLISH;</gco:CharacterString>
 						</gmd:keyword>
 					</gmd:MD_Keywords>
 				</gmd:descriptiveKeywords>

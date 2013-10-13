@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<csw:GetRecordByIdResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:ows="http://www.opengis.net/ows" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd">
-	<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns="http://floraresearch.eu/sdi/services/7.0/dataModel/schema" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dclite4g="http://xmlns.com/2008/dclite4g#" xmlns:envisat="http://www.example.com/schemas/envisat.rdf#" xmlns:fp="http://downlode.org/Code/RDF/file-properties/" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:ical="http://www.w3.org/2002/12/cal/ical#" xmlns:os="http://a9.com/-/spec/opensearch/1.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:ws="http://dclite4g.xmlns.com/ws.rdf#">
+<gvq:GVQ_Metadata xmlns:updated19115="http://www.geoviqua.org/19115_updates" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gvq="http://www.geoviqua.org/QualityInformationModel/4.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmd19157="http://www.geoviqua.org/gmd19157" xsi:schemaLocation="http://www.geoviqua.org/QualityInformationModel/4.0 http://schemas.geoviqua.org/GVQ/4.0/GeoViQua_PQM_UQM.xsd http://www.uncertml.org/2.0 http://www.uncertml.org/uncertml.xsd">
 		<gmd:fileIdentifier>
 			<gco:CharacterString>a0048-88fd-11da-a88f-000d939bc5d8</gco:CharacterString>
 		</gmd:fileIdentifier>
@@ -14,12 +13,18 @@
 		<gmd:dateStamp>
 			<gco:Date>1995-02-01</gco:Date>
 		</gmd:dateStamp>
+		<gmd:metadataStandardName>
+			<gco:CharacterString>CEOS IDN DIF</gco:CharacterString>
+		</gmd:metadataStandardName>
+		<gmd:metadataStandardVersion>
+			<gco:CharacterString>VERSION 9.7</gco:CharacterString>
+		</gmd:metadataStandardVersion>
 		<gmd:identificationInfo>
 			<gmd:MD_DataIdentification>
 				<gmd:citation>
 					<gmd:CI_Citation>
 						<gmd:title>
-							<gco:CharacterString>SAFARI 2000 STEM AND CANOPY CHARACTERIZATION, KALAHARI TRANSECT, 1995-2000</gco:CharacterString>
+							<gco:CharacterString>SAFARI STEM AND CANOPY CHARACTERIZATION, KALAHARI TRANSECT</gco:CharacterString>
 						</gmd:title>
 						<gmd:date />
 						<gmd:date>
@@ -62,12 +67,12 @@
 					</gmd:CI_Citation>
 				</gmd:citation>
 				<gmd:abstract>
-					<gco:CharacterString>This data set provides species distribution, basal area, height, and crown cover of woody stems at 10 sites along the Kalahari Transect where a large gradient in both the mean and variation of annual rainfall results in dramatic changes in vegetation structure. Some of the data were collected during earlier Kalahari Transect projects in 1995 and 1997 at Vastrap, South Africa; Sandveld and Sachinga, Namibia; and Maziba, Senanga, and Lukulu, Zambia. The rest of the data were collected at Mongu, Zambia; and Pandamatenga, Maun, and Tshane, Botswana during the February-March 2000 wet season field campaign of SAFARI 2000. Stem maps were generated at each site using a variable-width belt-transect approach. Tree location, species, diameter, height, and major and minor axis of crown dimensions were measured for each individual taller than 1.5 meters. For multi-stemmed individuals, the diameter of each stem was recorded separately. Canopy area was calculated to be an ellipse defined by the two major axes of measurement. Canopy height was estimated using a clinometer. Biomass was calculated following Goodman (1990) as modified by Dowty (1999).There are two ASCII data files, in comma-delimited format. The stem map file contains records of living, dead, and cut stem allometry, canopy geometry, and biomass at the SAFARI sites. The species list file provides plant family, genus, and species names, numerical codes that correspond to the stem map file, and species common names in English and AFRICAANS.</gco:CharacterString>
+					<gco:CharacterString>This data set provides species distribution, basal area, height, and crown cover of woody stems at 10 sites along the Kalahari Transect where a large gradient in both the mean and variation of annual rainfall results in dramatic changes in vegetation structure. Some of the data were collected during earlier Kalahari Transect projects in 1995 and 1997 at Vastrap, South Africa; Sandveld and Sachinga, Namibia; and Maziba, Senanga, and Lukulu, Zambia. The rest of the data were collected at Mongu, Zambia; and Pandamatenga, Maun, and Tshane, Botswana during the February-March 2000 wet season field campaign of SAFARI. Stem maps were generated at each site using a variable-width belt-transect approach. Tree location, species, diameter, height, and major and minor axis of crown dimensions were measured for each individual taller than 1.5 meters. For multi-stemmed individuals, the diameter of each stem was recorded separately. Canopy area was calculated to be an ellipse defined by the two major axes of measurement. Canopy height was estimated using a clinometer. Biomass was calculated following Goodman (1990) as modified by Dowty (1999).There are two ASCII data files, in comma-delimited format. The stem map file contains records of living, dead, and cut stem allometry, canopy geometry, and biomass at the SAFARI sites. The species list file provides plant family, genus, and species names, numerical codes that correspond to the stem map file, and species common names in English and AFRICAANS.</gco:CharacterString>
 				</gmd:abstract>
 				<gmd:descriptiveKeywords>
 					<gmd:MD_Keywords>
 						<gmd:keyword>
-							<gco:CharacterString>EARTH SCIENCE BIOSPHERE VEGETATION VEGETATION SPECIES; FIELD INVESTIGATION; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; SAFARI 2000 THE SOUTHERN AFRICAN REGIONAL SCIENCE INITIATIVE PROJECT; CWIC CEOS WGISS INTEGRATED CATALOG; Eosdis; Canopy; Biomass; Basal Area; Vegetation; Safari 2000; Crown Cover; Woody Stems; Forest Cover; Tree Biomass; Leaf Biomass; Stem Allometry; Canopy Geometry; Kalahari Transect; BIOTA; ENGLISH;</gco:CharacterString>
+							<gco:CharacterString>EARTH SCIENCE BIOSPHERE VEGETATION VEGETATION SPECIES; FIELD INVESTIGATION; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; SAFARI THE SOUTHERN AFRICAN REGIONAL SCIENCE INITIATIVE PROJECT; CWIC CEOS WGISS INTEGRATED CATALOG; Eosdis; Canopy; Biomass; Basal Area; Vegetation; SAFARI; Crown Cover; Woody Stems; Forest Cover; Tree Biomass; Leaf Biomass; Stem Allometry; Canopy Geometry; Kalahari Transect; BIOTA; ENGLISH;</gco:CharacterString>
 						</gmd:keyword>
 					</gmd:MD_Keywords>
 				</gmd:descriptiveKeywords>
@@ -122,19 +127,403 @@
 						</gmd:temporalElement>
 					</gmd:EX_Extent>
 				</gmd:extent>
+  <gmd19157:referenceDoc>
+	<gvq:GVQ_Publication>
+		<gmd:title>
+			<gco:CharacterString>SAFARI STEM AND CANOPY CHARACTERIZATION</gco:CharacterString>
+		</gmd:title>
+		<gmd:date>
+			<gmd:CI_Date>
+				<gmd:date>
+					<gco:Date>2000-07-01</gco:Date>
+				</gmd:date>
+				<gmd:dateType>
+					<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+				</gmd:dateType>
+			</gmd:CI_Date>
+		</gmd:date>
+		<gmd:ISSN>
+			<gco:CharacterString>0196-2892</gco:CharacterString>
+		</gmd:ISSN>
+		<gvq:target>
+			<updated19115:MD_Identifier uuid="jrc.europa.eu:GLC2000" id="GLC2000">
+				<!-- the ID is used for xlinking within the document (see 'discoveredIssue'), the UUID for potential outside links -->
+				<gmd:code>
+					<gco:CharacterString></gco:CharacterString>
+				</gmd:code>
+				<updated19115:codeSpace>
+					<gco:CharacterString></gco:CharacterString>
+				</updated19115:codeSpace>
+			</updated19115:MD_Identifier>
+		</gvq:target>
+		<gvq:doi>
+			<gco:CharacterString>10.1109/TGRS.2006.864370</gco:CharacterString>
+		</gvq:doi>
+		<gvq:purpose>
+			<gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>
+		</gvq:purpose>
+		<gvq:scope xlink:href="#datasetScope"/>
+		<gvq:category>
+			<gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+		</gvq:category>
+		<gvq:onlineResource>
+			<gmd:CI_OnlineResource>
+				<gmd:linkage>
+					<gmd:URL>http://ieeexplore.ieee.org/</gmd:URL>
+				</gmd:linkage>
+			</gmd:CI_OnlineResource>
+		</gvq:onlineResource>
+	</gvq:GVQ_Publication>
+</gmd19157:referenceDoc>
+  <gmd19157:referenceDoc>
+	<gvq:GVQ_Publication>
+		<gmd:title>
+			<gco:CharacterString>Validation of the SAFARI Stem And Canopy Characterization</gco:CharacterString>
+		</gmd:title>
+		<gmd:date>
+			<gmd:CI_Date>
+				<gmd:date>
+					<gco:Date>2005-07-01</gco:Date>
+				</gmd:date>
+				<gmd:dateType>
+					<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+				</gmd:dateType>
+			</gmd:CI_Date>
+		</gmd:date>
+		<gmd:ISSN>
+			<gco:CharacterString>0196-2892</gco:CharacterString>
+		</gmd:ISSN>
+		<gvq:target>
+			<updated19115:MD_Identifier uuid="jrc.europa.eu:GLC2000" id="GLC2000">
+				<!-- the ID is used for xlinking within the document (see 'discoveredIssue'), the UUID for potential outside links -->
+				<gmd:code>
+					<gco:CharacterString></gco:CharacterString>
+				</gmd:code>
+				<updated19115:codeSpace>
+					<gco:CharacterString></gco:CharacterString>
+				</updated19115:codeSpace>
+			</updated19115:MD_Identifier>
+		</gvq:target>
+		<gvq:doi>
+			<gco:CharacterString>10.1109/TGRS.864370</gco:CharacterString>
+		</gvq:doi>
+		<gvq:purpose>
+			<gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>
+		</gvq:purpose>
+		<gvq:scope xlink:href="#datasetScope"/>
+		<gvq:category>
+			<gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+		</gvq:category>
+		<gvq:onlineResource>
+			<gmd:CI_OnlineResource>
+				<gmd:linkage>
+					<gmd:URL>http://ieeexplore.ieee.org/</gmd:URL>
+				</gmd:linkage>
+			</gmd:CI_OnlineResource>
+		</gvq:onlineResource>
+	</gvq:GVQ_Publication>
+</gmd19157:referenceDoc>
+
 			</gmd:MD_DataIdentification>
 		</gmd:identificationInfo>
-		<gmd:identificationInfo>
-			<srv:SV_ServiceIdentification>
-				<gmd:citation />
-				<gmd:abstract />
-				<srv:serviceType />
-				<srv:couplingType />
-				<srv:containsOperations />
-			</srv:SV_ServiceIdentification>
-		</gmd:identificationInfo>
-		<gmd:distributionInfo>
-			<gmd:MD_Distribution />
-		</gmd:distributionInfo>
-	</gmd:MD_Metadata>
-</csw:GetRecordByIdResponse>
+	<gvq:dataQualityInfo>
+		<gvq:GVQ_DataQuality>
+			<gmd19157:scope>
+				<gmd19157:DQ_Scope id="datasetScope">
+					<gmd19157:level>
+						<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode" codeListValue="dataset"/>
+					</gmd19157:level>
+					<gmd19157:extent xlink:href="#datasetExtent"/>
+				</gmd19157:DQ_Scope>
+			</gmd19157:scope>
+			<gmd19157:report>
+				<gmd19157:DQ_NonQuantitativeAttributeAccuracy id="RegLog">
+					<gmd19157:dateTime>
+						<gco:DateTime>2013-02-26T15:41:45</gco:DateTime>
+					</gmd19157:dateTime>
+					<gmd19157:evaluation>
+						<gvq:GVQ_SampleBasedInspection>
+							<gmd19157:evaluationMethodDescription>
+								<gco:CharacterString>Spatialization of the classification success probability using independent test areas (25% of the buffered-MCSC, MCSC_test_12cat source)</gco:CharacterString>
+							</gmd19157:evaluationMethodDescription>
+							<gmd19157:evaluationMethodType>
+								<gmd19157:DQ_EvaluationMethodTypeCode codeListValue="http://www.geoviqua.org/gmd19157/resources/codeList.xml#DQ_EvaluationMethodTypeCode" codeList="directExternal"/>
+							</gmd19157:evaluationMethodType>
+							<gmd19157:samplingScheme>
+								<gco:CharacterString>Random sampling with stratification into three lots (all categories included in each of the three lots) (Stratified_random_sampling process step)</gco:CharacterString>
+							</gmd19157:samplingScheme>
+							<gmd19157:lotDescription>
+								<!-- $$ Maybe from "The test lot (MCSC_test_12cat) is used to define the dependent ..." to the end of the paragpah should go on the trace report of this report? -->
+								<gco:CharacterString>Split ground truth buffered-MCSC (MCSC_reclass_buffer) into training subsample (50%, MCSC_train_12cat), test (25%, MCSC_test_12cat) and validation (25%, MCSC_test_test_12cat) subsamples sing random stratified sampling methods in R software (Stratified_random_sampling process step). The test lot (MCSC_test_12cat) is used to define the dependent variable in the logistic regression model: success/failure binomial variable setting a 2 values reclassification of the overlaying of the classification product (ClsMix layer id="LC") and the test ground truth lot (MCSC_test_12cat) i.e., 1=agreement between ClsMix and MCSCtest, 0=disagreement between ClsMix and MCSCtest. Note that the overlaying of the classification product (ClsMix layer) and the test ground truth lot (MCSC_test_12cat) is actually the spatialization of the Confusion Matrix described in the previous quality report.</gco:CharacterString>
+							</gmd19157:lotDescription>
+							<gmd19157:samplingRatio>
+								<!-- $$ Maybe from "However this procedure implies that only 25% of the ..." to the end of the paragpah should go on the trace report of this report? -->
+								<gco:CharacterString>100% of the test lot (MCSC_test_12cat) is inspected. However this procedure implies that only 25% of the ground truth area is used in model fitting and then 10% of this 25% is sampled in the statistical model fitting in order to avoid spatial correlation (still 1105303 pixels analysed)</gco:CharacterString>
+							</gmd19157:samplingRatio>
+						</gvq:GVQ_SampleBasedInspection>
+					</gmd19157:evaluation>
+					<gmd19157:result>
+						<gmd19157:DQ_QuantitativeResult>
+							<gmd19157:resultScope xlink:href="#datasetScope"/>
+							<gmd19157:valueType>
+								<gco:RecordType xlink:href="http://www.uncertml.org/statistics/***">Discrete probability</gco:RecordType>
+								<!-- I didn't know which statistic was this case: LB: $$ which is the uncertML link for AUC/ROC (percentage accuracy)? Where can we write the result refers to the % probability of success in the classification product category assignment? and that the success is defined by setting a threshold to the continuous % probability of success obtained by the predicted group resulting from the application of a threshold in the SPSS software: >50% is group 1 =success < 50% is group 0=failure of the logistic regression model ? Or this is inherent to the AUC test in itself?? Maybe Dan can answer this...-->
+							</gmd19157:valueType>
+							<gmd19157:valueUnit xlink:href="urn:ogc:def:uom:UCUM:%25"/>
+							<gmd19157:value>
+								<gco:Record>
+									<gco:Real>74.10</gco:Real>
+								</gco:Record>
+							</gmd19157:value>
+						</gmd19157:DQ_QuantitativeResult>
+					</gmd19157:result>
+					<gmd19157:result>
+						<gmd19157:DQ_QuantitativeResult>
+							<gmd19157:valueType>
+								<gco:RecordType>Sensitivity</gco:RecordType>
+							</gmd19157:valueType>
+							<gmd19157:valueUnit>
+							</gmd19157:valueUnit>
+							<gmd19157:value>
+								<gco:Record>0.72</gco:Record>
+							</gmd19157:value>
+						</gmd19157:DQ_QuantitativeResult>
+					</gmd19157:result>
+					<gmd19157:result>
+						<gmd19157:DQ_QuantitativeResult>
+							<gmd19157:valueType>
+								<gco:RecordType>Specificity</gco:RecordType>
+							</gmd19157:valueType>
+							<gmd19157:valueUnit>
+							</gmd19157:valueUnit>
+							<gmd19157:value>
+								<gco:Record>0.76</gco:Record>
+							</gmd19157:value>
+						</gmd19157:DQ_QuantitativeResult>
+					</gmd19157:result>
+				</gmd19157:DQ_NonQuantitativeAttributeAccuracy>
+			</gmd19157:report>
+		</gvq:GVQ_DataQuality>
+	</gvq:dataQualityInfo>
+		<gmd:dataQualityInfo>
+			<gmd:DQ_DataQuality>
+				<gmd:scope>
+					<gmd:DQ_Scope>
+						<gmd:level>
+							<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+						</gmd:level>
+					</gmd:DQ_Scope>
+				</gmd:scope>
+				<gmd:report>
+					<gmd:DQ_AbsoluteExternalPositionalAccuracy>
+						<gmd:nameOfMeasure>
+							<gco:CharacterString>Latitude Resolution</gco:CharacterString>
+						</gmd:nameOfMeasure>
+						<gmd:result>
+							<gmd:DQ_QuantitativeResult>
+								<gmd:valueUnit>
+									<gml:DerivedUnit gml:id="d2740e203">
+										<gml:identifier codeSpace="" />
+										<gml:derivationUnitTerm uom="m " />
+									</gml:DerivedUnit>
+								</gmd:valueUnit>
+								<gmd:value>
+									<gco:Record>250</gco:Record>
+								</gmd:value>
+							</gmd:DQ_QuantitativeResult>
+						</gmd:result>
+					</gmd:DQ_AbsoluteExternalPositionalAccuracy>
+				</gmd:report>
+				<gmd:report>
+					<gmd:DQ_AbsoluteExternalPositionalAccuracy>
+						<gmd:nameOfMeasure>
+							<gco:CharacterString>Longitude Resolution</gco:CharacterString>
+						</gmd:nameOfMeasure>
+						<gmd:result>
+							<gmd:DQ_QuantitativeResult>
+								<gmd:valueUnit>
+									<gml:DerivedUnit gml:id="d2740e206">
+										<gml:identifier codeSpace="" />
+										<gml:derivationUnitTerm uom="m " />
+									</gml:DerivedUnit>
+								</gmd:valueUnit>
+								<gmd:value>
+									<gco:Record>250</gco:Record>
+								</gmd:value>
+							</gmd:DQ_QuantitativeResult>
+						</gmd:result>
+					</gmd:DQ_AbsoluteExternalPositionalAccuracy>
+				</gmd:report>
+				<gmd:lineage>
+					<gmd:LI_Lineage>
+						<gmd:statement>
+							<gco:CharacterString>Sensor anomalies may be present.</gco:CharacterString>
+						</gmd:statement>
+					</gmd:LI_Lineage>
+				</gmd:lineage>
+			</gmd:DQ_DataQuality>
+		</gmd:dataQualityInfo>
+    <gvq:userFeedback>
+    <gvq:GVQ_FeedbackCollection>
+	<gvq:item>
+		<gvq:userRole>
+			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
+		</gvq:userRole>
+		<gvq:user>
+			<gvq:userDetails>
+				<gmd:individualName>
+					<gco:CharacterString>Paula Diaz</gco:CharacterString>
+				</gmd:individualName>
+				<gmd:organisationName>
+					<gco:CharacterString>UAB</gco:CharacterString>
+				</gmd:organisationName>
+				<gmd:contactInfo>
+				</gmd:contactInfo>
+				<gmd:role>
+					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+				</gmd:role>
+			</gvq:userDetails>
+			<gvq:applicationDomain>Landcover Research</gvq:applicationDomain>
+			<gvq:expertiseLevel>4</gvq:expertiseLevel>
+			<gvq:userRole>
+				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="ResearchEndUser"/>
+			</gvq:userRole>
+		</gvq:user>
+		<gvq:dateStamp>
+			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
+		</gvq:dateStamp>
+		<gvq:qualityOverride>
+			<gvq:GVQ_DataQuality>
+				<gmd19157:scope/>
+				<gvq:discoveredIssue/>
+			</gvq:GVQ_DataQuality>
+		</gvq:qualityOverride>
+		<gvq:userComment>
+			<gvq:comment>We would recommend this dataset for landcover research.</gvq:comment>
+			<gvq:mime-type>text/plain</gvq:mime-type>
+		</gvq:userComment>
+		<gvq:rating>
+			<gvq:score>5</gvq:score>
+			<gvq:justification>Metadata record is very good. Quality information is available.</gvq:justification>
+		</gvq:rating>
+		<gvq:usage>
+			<gvq:reportAspect>
+				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+			</gvq:reportAspect>
+			<gvq:usageDescription>Our university used this dataset to monitor changes in land use in South Africa between 2000 and 2005.</gvq:usageDescription>
+			<gvq:discoveredIssue>
+				<gvq:GVQ_DiscoveredIssue>
+					<gvq:target xlink:href="targetUID"/>
+				</gvq:GVQ_DiscoveredIssue>
+			</gvq:discoveredIssue>
+		</gvq:usage>
+	</gvq:item>
+	<gvq:item>
+		<gvq:userRole>
+			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
+		</gvq:userRole>
+		<gvq:user>
+			<gvq:userDetails>
+				<gmd:individualName>
+					<gco:CharacterString>Jon Wilkies</gco:CharacterString>
+				</gmd:individualName>
+				<gmd:organisationName>
+					<gco:CharacterString>FAO</gco:CharacterString>
+				</gmd:organisationName>
+				<gmd:contactInfo>
+				</gmd:contactInfo>
+				<gmd:role>
+					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+				</gmd:role>
+			</gvq:userDetails>
+			<gvq:applicationDomain>Agriculture</gvq:applicationDomain>
+			<gvq:expertiseLevel>4</gvq:expertiseLevel>
+			<gvq:userRole>
+				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+			</gvq:userRole>
+		</gvq:user>
+		<gvq:dateStamp>
+			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
+		</gvq:dateStamp>
+		<gvq:qualityOverride>
+			<gvq:GVQ_DataQuality>
+				<gmd19157:scope/>
+				<gvq:discoveredIssue/>
+			</gvq:GVQ_DataQuality>
+		</gvq:qualityOverride>
+		<gvq:userComment>
+			<gvq:comment>Metadta record provides quality information.</gvq:comment>
+			<gvq:mime-type>text/plain</gvq:mime-type>
+		</gvq:userComment>
+		<gvq:rating>
+			<gvq:score>4</gvq:score>
+			<gvq:justification>The data is of good quality. Metadata record provides quality information.</gvq:justification>
+		</gvq:rating>
+		<gvq:usage>
+			<gvq:reportAspect>
+				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+			</gvq:reportAspect>
+			<gvq:usageDescription>The dataset was used to monitor farming land use in South Africa between June 2001 and July 2006.</gvq:usageDescription>
+			<gvq:discoveredIssue>
+				<gvq:GVQ_DiscoveredIssue>
+					<gvq:target xlink:href="targetUID"/>
+				</gvq:GVQ_DiscoveredIssue>
+			</gvq:discoveredIssue>
+		</gvq:usage>
+	</gvq:item>
+	<gvq:item>
+		<gvq:userRole>
+			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
+		</gvq:userRole>
+		<gvq:user>
+			<gvq:userDetails>
+				<gmd:individualName>
+					<gco:CharacterString>Xavier Pau</gco:CharacterString>
+				</gmd:individualName>
+				<gmd:organisationName>
+					<gco:CharacterString>UAB</gco:CharacterString>
+				</gmd:organisationName>
+				<gmd:contactInfo>
+				</gmd:contactInfo>
+				<gmd:role>
+					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+				</gmd:role>
+			</gvq:userDetails>
+			<gvq:applicationDomain>Land Cover</gvq:applicationDomain>
+			<gvq:expertiseLevel>4</gvq:expertiseLevel>
+			<gvq:userRole>
+				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="ResearchEndUser"/>
+			</gvq:userRole>
+		</gvq:user>
+		<gvq:dateStamp>
+			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
+		</gvq:dateStamp>
+		<gvq:qualityOverride>
+			<gvq:GVQ_DataQuality>
+				<gmd19157:scope/>
+				<gvq:discoveredIssue/>
+			</gvq:GVQ_DataQuality>
+		</gvq:qualityOverride>
+		<gvq:userComment>
+			<gvq:comment>We discovered that data for June - August 2005 was missing.</gvq:comment>
+			<gvq:mime-type>text/plain</gvq:mime-type>
+		</gvq:userComment>
+		<gvq:rating>
+			<gvq:score>4</gvq:score>
+			<gvq:justification>Overall, dataset provides good temporal and spatial coverage. Data is missing for South Africa region between June and August 2011.</gvq:justification>
+		</gvq:rating>
+		<gvq:usage>
+			<gvq:reportAspect>
+				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+			</gvq:reportAspect>
+			<gvq:usageDescription>The dataset was used for classification of land cover in South Africa between 2004 and 2006.</gvq:usageDescription>
+			<gvq:discoveredIssue>
+				<gvq:GVQ_DiscoveredIssue>
+					<gvq:target xlink:href="targetUID"/>
+				</gvq:GVQ_DiscoveredIssue>
+			</gvq:discoveredIssue>
+		</gvq:usage>
+	</gvq:item>
+	</gvq:GVQ_FeedbackCollection>
+	</gvq:userFeedback>
+</gvq:GVQ_Metadata>

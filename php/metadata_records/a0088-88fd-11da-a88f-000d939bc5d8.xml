@@ -2,7 +2,7 @@
 <csw:GetRecordByIdResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:ows="http://www.opengis.net/ows" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd">
 	<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns="http://floraresearch.eu/sdi/services/7.0/dataModel/schema" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dclite4g="http://xmlns.com/2008/dclite4g#" xmlns:envisat="http://www.example.com/schemas/envisat.rdf#" xmlns:fp="http://downlode.org/Code/RDF/file-properties/" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:ical="http://www.w3.org/2002/12/cal/ical#" xmlns:os="http://a9.com/-/spec/opensearch/1.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:ws="http://dclite4g.xmlns.com/ws.rdf#">
 		<gmd:fileIdentifier>
-			<gco:CharacterString>a0047-88fd-11da-a88f-000d939bc5d8</gco:CharacterString>
+			<gco:CharacterString>a0088-88fd-11da-a88f-000d939bc5d8</gco:CharacterString>
 		</gmd:fileIdentifier>
 		<gmd:parentIdentifier>
 			<gco:CharacterString />
@@ -12,20 +12,20 @@
 		</gmd:hierarchyLevel>
 		<gmd:contact />
 		<gmd:dateStamp>
-			<gco:Date>2000-10-09</gco:Date>
+			<gco:Date>1986-01-01</gco:Date>
 		</gmd:dateStamp>
 		<gmd:identificationInfo>
 			<gmd:MD_DataIdentification>
 				<gmd:citation>
 					<gmd:CI_Citation>
 						<gmd:title>
-							<gco:CharacterString>SAFARI LEAF AREA MEASUREMENTS AT THE MONGU TOWER SITE, ZAMBIA, 2000-2002</gco:CharacterString>
+							<gco:CharacterString>IMAGE DATA INVENTORY</gco:CharacterString>
 						</gmd:title>
 						<gmd:date />
 						<gmd:date>
 							<gmd:CI_Date>
 								<gmd:date>
-									<gco:Date>2013-08-28</gco:Date>
+									<gco:Date>2012-04-13</gco:Date>
 								</gmd:date>
 								<gmd:dateType>
 									<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" codeSpace="ISOTC211/19115">revision</gmd:CI_DateTypeCode>
@@ -35,7 +35,7 @@
 						<gmd:date>
 							<gmd:CI_Date>
 								<gmd:date>
-									<gco:Date>2013-08-27</gco:Date>
+									<gco:Date>2012-02-14</gco:Date>
 								</gmd:date>
 								<gmd:dateType>
 									<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="created" codeSpace="ISOTC211/19115">created</gmd:CI_DateTypeCode>
@@ -55,19 +55,19 @@
 						<gmd:identifier>
 							<gmd:RS_Identifier>
 								<gmd:code>
-									<gco:CharacterString>NASA:s2k_lai-2000</gco:CharacterString>
+									<gco:CharacterString>NASA:SNF_SAT_INV</gco:CharacterString>
 								</gmd:code>
 							</gmd:RS_Identifier>
 						</gmd:identifier>
 					</gmd:CI_Citation>
 				</gmd:citation>
 				<gmd:abstract>
-					<gco:CharacterString>Data from the LAI-2000 instrument were processed to determine the leaf area index (LAI) at the EOS Validation Core Site in Kataba Local Forest, approximately 20 km south of Mongu, Zambia. Measurements began in 2000 and continued into 2002, with measurements collected about every month throughout the growing season to examine the phenology of LAI for the site. The LAI-2000 measures the intensity of blue light in five upward-looking concentric conical rings. Measurements are made under the forest canopy and compared with open-sky measurements to determine transmittance for each of the five viewing angles. The sensor head was placed at ground level while the sensors measured light levels in conical scans. Effective leaf area was calculated from the transmittance in the different view angles based on the assumption of a random distribution of leaves (Welles and Norman, 1991).The LAI-2000 was carried along three parallel transects, each 750 m long and spaced 250 m apart. Each transect was divided into 25 m segments, and measurements were collected at the endpoints of each segment. Data from all transects were combined to provide site-average LAI for each sampling date. The length and spacing of the transects were chosen to sample an area large enough to be representative of a 1 km MODIS pixel. Ground observations of LAI from this study compared with MODIS LAI products were found to be in close agreement.The data are stored in an ASCII text file, in comma-separated-value (csv) format, with column headers.</gco:CharacterString>
+					<gco:CharacterString>The purpose of the SNF Study was to develop the techniques to make the link from biophysical measurements made on the ground to aircraft radiometric measurements and then to scale up to satellite observations.</gco:CharacterString>
 				</gmd:abstract>
 				<gmd:descriptiveKeywords>
 					<gmd:MD_Keywords>
 						<gmd:keyword>
-							<gco:CharacterString>EARTH SCIENCE BIOSPHERE TERRESTRIAL ECOSYSTEMS FORESTS; EARTH SCIENCE BIOSPHERE VEGETATION CANOPY CHARACTERISTICS; EARTH SCIENCE BIOSPHERE VEGETATION LEAF CHARACTERISTICS; EARTH SCIENCE BIOSPHERE VEGETATION PLANT PHENOLOGY; FIELD INVESTIGATION; LICOR LEAF AREA METER; LICOR PLANT CANOPY ANALYZER; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; SAFARI THE SOUTHERN AFRICAN REGIONAL SCIENCE INITIATIVE PROJECT; CWIC CEOS WGISS INTEGRATED CATALOG; Lai; Eosdis; Canopy; Lai-2000; Phenology; Vegetation; SAFARI; Forest Cover; Leaf Area Index; Kalahari Transect; Radiative Transfer Model; Canopy Light Interception; BIOTA; ENGLISH;</gco:CharacterString>
+							<gco:CharacterString>EARTH SCIENCE ATMOSPHERE EARTH OBSERVING SYSTEM DATA</gco:CharacterString>
 						</gmd:keyword>
 					</gmd:MD_Keywords>
 				</gmd:descriptiveKeywords>
@@ -80,30 +80,30 @@
 						<gmd:geographicElement>
 							<gmd:EX_GeographicBoundingBox>
 								<gmd:westBoundLongitude>
-									<gco:Decimal>22.0276</gco:Decimal>
+									<gco:Decimal>-92.5057983398438</gco:Decimal>
 								</gmd:westBoundLongitude>
 								<gmd:eastBoundLongitude>
-									<gco:Decimal>24.2773</gco:Decimal>
+									<gco:Decimal>-91.7658004760742</gco:Decimal>
 								</gmd:eastBoundLongitude>
 								<gmd:southBoundLatitude>
-									<gco:Decimal>-16.8667</gco:Decimal>
+									<gco:Decimal>47.6575012207031</gco:Decimal>
 								</gmd:southBoundLatitude>
 								<gmd:northBoundLatitude>
-									<gco:Decimal>-14.9342</gco:Decimal>
+									<gco:Decimal>48.1697006225586</gco:Decimal>
 								</gmd:northBoundLatitude>
 							</gmd:EX_GeographicBoundingBox>
 						</gmd:geographicElement>
 						<gmd:geographicElement>
 							<gmd:EX_BoundingPolygon>
 								<gmd:polygon>
-									<gml:Polygon gml:id="d1177e27">
+									<gml:Polygon gml:id="d828e27">
 										<gml:exterior>
 											<gml:LinearRing>
-												<gml:pos>24.2773 -14.9342</gml:pos>
-												<gml:pos>22.0276 -14.9342</gml:pos>
-												<gml:pos>22.0276 -16.8667</gml:pos>
-												<gml:pos>24.2773 -16.8667</gml:pos>
-												<gml:pos>24.2773 -14.9342</gml:pos>
+												<gml:pos>-91.7658004760742 48.1697006225586</gml:pos>
+												<gml:pos>-92.5057983398438 48.1697006225586</gml:pos>
+												<gml:pos>-92.5057983398438 47.6575012207031</gml:pos>
+												<gml:pos>-91.7658004760742 47.6575012207031</gml:pos>
+												<gml:pos>-91.7658004760742 48.1697006225586</gml:pos>
 											</gml:LinearRing>
 										</gml:exterior>
 									</gml:Polygon>
@@ -113,9 +113,9 @@
 						<gmd:temporalElement>
 							<gmd:EX_TemporalExtent>
 								<gmd:extent>
-									<gml:TimePeriod gml:id="tt1179">
-										<gml:beginPosition>2000-10-09T00:00:00.000Z</gml:beginPosition>
-										<gml:endPosition>2002-04-13T23:59:59.999Z</gml:endPosition>
+									<gml:TimePeriod gml:id="tt830">
+										<gml:beginPosition>1986-01-01T12:00:00.000Z</gml:beginPosition>
+										<gml:endPosition>1986-12-31T23:59:59.000Z</gml:endPosition>
 									</gml:TimePeriod>
 								</gmd:extent>
 							</gmd:EX_TemporalExtent>

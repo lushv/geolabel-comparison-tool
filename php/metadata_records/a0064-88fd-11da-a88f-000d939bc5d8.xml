@@ -223,15 +223,64 @@
   </gmd:distributionInfo>
   <gmd:identificationInfo>
     <gvq:GVQ_DataIdentification>
+  <gmd19157:referenceDoc>
+	<gvq:GVQ_Publication>
+		<gmd:title>
+			<gco:CharacterString>Validation of Forest Type Groups</gco:CharacterString>
+		</gmd:title>
+		<gmd:date>
+			<gmd:CI_Date>
+				<gmd:date>
+					<gco:Date>2008-07-01</gco:Date>
+				</gmd:date>
+				<gmd:dateType>
+					<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+				</gmd:dateType>
+			</gmd:CI_Date>
+		</gmd:date>
+		<gmd:ISSN>
+			<gco:CharacterString>0196-2892</gco:CharacterString>
+		</gmd:ISSN>
+		<gvq:target>
+			<updated19115:MD_Identifier uuid="jrc.europa.eu:GLC2000" id="GLC2000">
+				<!-- the ID is used for xlinking within the document (see 'discoveredIssue'), the UUID for potential outside links -->
+				<gmd:code>
+					<gco:CharacterString></gco:CharacterString>
+				</gmd:code>
+				<updated19115:codeSpace>
+					<gco:CharacterString></gco:CharacterString>
+				</updated19115:codeSpace>
+			</updated19115:MD_Identifier>
+		</gvq:target>
+		<gvq:doi>
+			<gco:CharacterString>10.1109/TGRS.2006.864370</gco:CharacterString>
+		</gvq:doi>
+		<gvq:purpose>
+			<gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>
+		</gvq:purpose>
+		<gvq:scope xlink:href="#datasetScope"/>
+		<gvq:category>
+			<gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+		</gvq:category>
+		<gvq:onlineResource>
+			<gmd:CI_OnlineResource>
+				<gmd:linkage>
+					<gmd:URL>http://ieeexplore.ieee.org/</gmd:URL>
+				</gmd:linkage>
+			</gmd:CI_OnlineResource>
+		</gvq:onlineResource>
+	</gvq:GVQ_Publication>
+</gmd19157:referenceDoc>
+
 	<gmd19157:referenceDoc>
 		<gvq:GVQ_Publication>
 			<gmd:title>
-				<gco:CharacterString>Validation of the global land cover map</gco:CharacterString>
+				<gco:CharacterString>Forest Type Groups</gco:CharacterString>
 			</gmd:title>
 			<gmd:date>
 				<gmd:CI_Date>
 					<gmd:date>
-						<gco:Date>2012-07-01</gco:Date>
+						<gco:Date>2005-07-01</gco:Date>
 					</gmd:date>
 					<gmd:dateType>
 						<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>

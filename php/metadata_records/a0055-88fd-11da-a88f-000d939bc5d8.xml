@@ -127,174 +127,15 @@
     <gvq:GVQ_FeedbackCollection>
 	<gvq:item>
 		<gvq:userRole>
-			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" NonresearchEndUser "/>
+			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
 		</gvq:userRole>
 		<gvq:user>
 			<gvq:userDetails>
 				<gmd:individualName>
-					<gco:CharacterString>Pepito</gco:CharacterString>
+					<gco:CharacterString>Recardo Reviero</gco:CharacterString>
 				</gmd:individualName>
 				<gmd:organisationName>
-					<gco:CharacterString>Afrucat</gco:CharacterString>
-				</gmd:organisationName>
-				<gmd:contactInfo>
-				</gmd:contactInfo>
-				<gmd:role>
-					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
-				</gmd:role>
-			</gvq:userDetails>
-			<gvq:applicationDomain>http://www.eionet.europa.eu/gemet/concept/3502</gvq:applicationDomain>
-			<gvq:expertiseLevel>2</gvq:expertiseLevel>
-			<gvq:userRole>
-				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
-			</gvq:userRole>
-		</gvq:user>
-		<gvq:dateStamp>
-			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
-		</gvq:dateStamp>
-		<gvq:qualityOverride>
-			<gvq:GVQ_DataQuality>
-				<gmd19157:scope/>
-				<gvq:discoveredIssue/>
-			</gvq:GVQ_DataQuality>
-		</gvq:qualityOverride>
-		<gvq:userComment>
-			<gvq:comment>The data itself was appropriated for my application and the metadata records but metadata is incomplete.</gvq:comment>
-			<gvq:mime-type>text/plain</gvq:mime-type>
-		</gvq:userComment>
-		<gvq:rating>
-			<gvq:score>3</gvq:score>
-			<gvq:justification>The data itself is appropriated for my application. Incomplete metadata record.</gvq:justification>
-		</gvq:rating>
-		<gvq:usage>
-			<gvq:reportAspect>
-				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
-			</gvq:reportAspect>
-			<gvq:usageDescription></gvq:usageDescription>
-			<gvq:discoveredIssue>
-				<gvq:GVQ_DiscoveredIssue>
-					<gvq:target xlink:href="targetUID"/>
-				</gvq:GVQ_DiscoveredIssue>
-			</gvq:discoveredIssue>
-		</gvq:usage>
-	</gvq:item>
-	<gvq:item>
-		<gvq:userRole>
-			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" NonresearchEndUser "/>
-		</gvq:userRole>
-		<gvq:user>
-			<gvq:userDetails>
-				<gmd:individualName>
-					<gco:CharacterString>Sarah</gco:CharacterString>
-				</gmd:individualName>
-				<gmd:organisationName>
-					<gco:CharacterString>White</gco:CharacterString>
-				</gmd:organisationName>
-				<gmd:contactInfo>
-				</gmd:contactInfo>
-				<gmd:role>
-					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
-				</gmd:role>
-			</gvq:userDetails>
-			<gvq:applicationDomain>http://www.eionet.europa.eu/gemet/concept/3502</gvq:applicationDomain>
-			<gvq:expertiseLevel>2</gvq:expertiseLevel>
-			<gvq:userRole>
-				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
-			</gvq:userRole>
-		</gvq:user>
-		<gvq:dateStamp>
-			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
-		</gvq:dateStamp>
-		<gvq:qualityOverride>
-			<gvq:GVQ_DataQuality>
-				<gmd19157:scope/>
-				<gvq:discoveredIssue/>
-			</gvq:GVQ_DataQuality>
-		</gvq:qualityOverride>
-		<gvq:userComment>
-			<gvq:comment>The data is of good quality but metadata record has no quality information.</gvq:comment>
-			<gvq:mime-type>text/plain</gvq:mime-type>
-		</gvq:userComment>
-		<gvq:rating>
-			<gvq:score>3</gvq:score>
-			<gvq:justification>The metadata records is beyond my expectation.</gvq:justification>
-		</gvq:rating>
-		<gvq:usage>
-			<gvq:reportAspect>
-				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
-			</gvq:reportAspect>
-			<gvq:usageDescription></gvq:usageDescription>
-			<gvq:discoveredIssue>
-				<gvq:GVQ_DiscoveredIssue>
-					<gvq:target xlink:href="targetUID"/>
-				</gvq:GVQ_DiscoveredIssue>
-			</gvq:discoveredIssue>
-		</gvq:usage>
-	</gvq:item>
-	<gvq:item>
-		<gvq:userRole>
-			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" NonresearchEndUser "/>
-		</gvq:userRole>
-		<gvq:user>
-			<gvq:userDetails>
-				<gmd:individualName>
-					<gco:CharacterString>Peter</gco:CharacterString>
-				</gmd:individualName>
-				<gmd:organisationName>
-					<gco:CharacterString>Adams</gco:CharacterString>
-				</gmd:organisationName>
-				<gmd:contactInfo>
-				</gmd:contactInfo>
-				<gmd:role>
-					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
-				</gmd:role>
-			</gvq:userDetails>
-			<gvq:applicationDomain>Agriculture</gvq:applicationDomain>
-			<gvq:expertiseLevel>2</gvq:expertiseLevel>
-			<gvq:userRole>
-				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
-			</gvq:userRole>
-		</gvq:user>
-		<gvq:dateStamp>
-			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
-		</gvq:dateStamp>
-		<gvq:qualityOverride>
-			<gvq:GVQ_DataQuality>
-				<gmd19157:scope/>
-				<gvq:discoveredIssue/>
-			</gvq:GVQ_DataQuality>
-		</gvq:qualityOverride>
-		<gvq:userComment>
-			<gvq:comment>Quality information is not available.</gvq:comment>
-			<gvq:mime-type>text/plain</gvq:mime-type>
-		</gvq:userComment>
-		<gvq:rating>
-			<gvq:score>3</gvq:score>
-			<gvq:justification>The dataset itself is of good quality.</gvq:justification>
-		</gvq:rating>
-		<gvq:usage>
-			<gvq:reportAspect>
-				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
-			</gvq:reportAspect>
-			<gvq:usageDescription></gvq:usageDescription>
-			<gvq:discoveredIssue>
-				<gvq:GVQ_DiscoveredIssue>
-					<gvq:target xlink:href="targetUID"/>
-				</gvq:GVQ_DiscoveredIssue>
-			</gvq:discoveredIssue>
-		</gvq:usage>
-	</gvq:item>
-	<gvq:item>
-		<gvq:userRole>
-			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" NonresearchEndUser "/>
-		</gvq:userRole>
-		<gvq:user>
-			<gvq:userDetails>
-				<gmd:individualName>
-					<gco:CharacterString>Richard</gco:CharacterString>
-				</gmd:individualName>
-				<gmd:organisationName>
-					<gco:CharacterString>Stevens</gco:CharacterString>
+					<gco:CharacterString>UAB</gco:CharacterString>
 				</gmd:organisationName>
 				<gmd:contactInfo>
 				</gmd:contactInfo>
@@ -303,59 +144,6 @@
 				</gmd:role>
 			</gvq:userDetails>
 			<gvq:applicationDomain>Land Cover</gvq:applicationDomain>
-			<gvq:expertiseLevel>3</gvq:expertiseLevel>
-			<gvq:userRole>
-				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
-			</gvq:userRole>
-		</gvq:user>
-		<gvq:dateStamp>
-			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
-		</gvq:dateStamp>
-		<gvq:qualityOverride>
-			<gvq:GVQ_DataQuality>
-				<gmd19157:scope/>
-				<gvq:discoveredIssue/>
-			</gvq:GVQ_DataQuality>
-		</gvq:qualityOverride>
-		<gvq:userComment>
-			<gvq:comment>I used this data for landcover reserach and was satisfied with the quality.</gvq:comment>
-			<gvq:mime-type>text/plain</gvq:mime-type>
-		</gvq:userComment>
-		<gvq:rating>
-			<gvq:score>4</gvq:score>
-			<gvq:justification>The data was suitable for my application.</gvq:justification>
-		</gvq:rating>
-		<gvq:usage>
-			<gvq:reportAspect>
-				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
-			</gvq:reportAspect>
-			<gvq:usageDescription></gvq:usageDescription>
-			<gvq:discoveredIssue>
-				<gvq:GVQ_DiscoveredIssue>
-					<gvq:target xlink:href="targetUID"/>
-				</gvq:GVQ_DiscoveredIssue>
-			</gvq:discoveredIssue>
-		</gvq:usage>
-	</gvq:item>
-	<gvq:item>
-		<gvq:userRole>
-			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" NonresearchEndUser "/>
-		</gvq:userRole>
-		<gvq:user>
-			<gvq:userDetails>
-				<gmd:individualName>
-					<gco:CharacterString>Eva</gco:CharacterString>
-				</gmd:individualName>
-				<gmd:organisationName>
-					<gco:CharacterString>Wilkinson</gco:CharacterString>
-				</gmd:organisationName>
-				<gmd:contactInfo>
-				</gmd:contactInfo>
-				<gmd:role>
-					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
-				</gmd:role>
-			</gvq:userDetails>
-			<gvq:applicationDomain>Forestry</gvq:applicationDomain>
 			<gvq:expertiseLevel>2</gvq:expertiseLevel>
 			<gvq:userRole>
 				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
@@ -371,18 +159,18 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>The data itself was appropriated for my application but the metadata records is incomplete.</gvq:comment>
+			<gvq:comment>The dataset and metadata record are of very high quality. Quality information is available.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
 			<gvq:score>4</gvq:score>
-			<gvq:justification>Data was suitable for forest cover research.</gvq:justification>
+			<gvq:justification>Quality information is available.</gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>
 				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
 			</gvq:reportAspect>
-			<gvq:usageDescription></gvq:usageDescription>
+			<gvq:usageDescription>The dataset was used for classification of land cover in Brazil between 2000 and 2007.</gvq:usageDescription>
 			<gvq:discoveredIssue>
 				<gvq:GVQ_DiscoveredIssue>
 					<gvq:target xlink:href="targetUID"/>
@@ -397,116 +185,10 @@
 		<gvq:user>
 			<gvq:userDetails>
 				<gmd:individualName>
-					<gco:CharacterString>Mark</gco:CharacterString>
+					<gco:CharacterString>Pinar Boston</gco:CharacterString>
 				</gmd:individualName>
 				<gmd:organisationName>
-					<gco:CharacterString>Archer</gco:CharacterString>
-				</gmd:organisationName>
-				<gmd:contactInfo>
-				</gmd:contactInfo>
-				<gmd:role>
-					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
-				</gmd:role>
-			</gvq:userDetails>
-			<gvq:applicationDomain>Vegetataion Cover</gvq:applicationDomain>
-			<gvq:expertiseLevel>2</gvq:expertiseLevel>
-			<gvq:userRole>
-				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
-			</gvq:userRole>
-		</gvq:user>
-		<gvq:dateStamp>
-			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
-		</gvq:dateStamp>
-		<gvq:qualityOverride>
-			<gvq:GVQ_DataQuality>
-				<gmd19157:scope/>
-				<gvq:discoveredIssue/>
-			</gvq:GVQ_DataQuality>
-		</gvq:qualityOverride>
-		<gvq:userComment>
-			<gvq:comment>I tried using this dataset for monitoring changes in vegetation cover in the UK between 2000 and 2010.</gvq:comment>
-			<gvq:mime-type>text/plain</gvq:mime-type>
-		</gvq:userComment>
-		<gvq:rating>
-			<gvq:score>1</gvq:score>
-			<gvq:justification>The data was not suitable for me because there is no information on its quality.</gvq:justification>
-		</gvq:rating>
-		<gvq:usage>
-			<gvq:reportAspect>
-				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
-			</gvq:reportAspect>
-			<gvq:usageDescription></gvq:usageDescription>
-			<gvq:discoveredIssue>
-				<gvq:GVQ_DiscoveredIssue>
-					<gvq:target xlink:href="targetUID"/>
-				</gvq:GVQ_DiscoveredIssue>
-			</gvq:discoveredIssue>
-		</gvq:usage>
-	</gvq:item>
-	<gvq:item>
-		<gvq:userRole>
-			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
-		</gvq:userRole>
-		<gvq:user>
-			<gvq:userDetails>
-				<gmd:individualName>
-					<gco:CharacterString>Richard</gco:CharacterString>
-				</gmd:individualName>
-				<gmd:organisationName>
-					<gco:CharacterString>Jones</gco:CharacterString>
-				</gmd:organisationName>
-				<gmd:contactInfo>
-				</gmd:contactInfo>
-				<gmd:role>
-					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
-				</gmd:role>
-			</gvq:userDetails>
-			<gvq:applicationDomain>Land Cover</gvq:applicationDomain>
-			<gvq:expertiseLevel>1</gvq:expertiseLevel>
-			<gvq:userRole>
-				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
-			</gvq:userRole>
-		</gvq:user>
-		<gvq:dateStamp>
-			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
-		</gvq:dateStamp>
-		<gvq:qualityOverride>
-			<gvq:GVQ_DataQuality>
-				<gmd19157:scope/>
-				<gvq:discoveredIssue/>
-			</gvq:GVQ_DataQuality>
-		</gvq:qualityOverride>
-		<gvq:userComment>
-			<gvq:comment>Good spatial and temporal coverage but metadata is incomplete.</gvq:comment>
-			<gvq:mime-type>text/plain</gvq:mime-type>
-		</gvq:userComment>
-		<gvq:rating>
-			<gvq:score>2</gvq:score>
-			<gvq:justification>Quality information is not available even at a dataset level.</gvq:justification>
-		</gvq:rating>
-		<gvq:usage>
-			<gvq:reportAspect>
-				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
-			</gvq:reportAspect>
-			<gvq:usageDescription></gvq:usageDescription>
-			<gvq:discoveredIssue>
-				<gvq:GVQ_DiscoveredIssue>
-					<gvq:target xlink:href="targetUID"/>
-				</gvq:GVQ_DiscoveredIssue>
-			</gvq:discoveredIssue>
-		</gvq:usage>
-	</gvq:item>
-	<gvq:item>
-		<gvq:userRole>
-			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
-		</gvq:userRole>
-		<gvq:user>
-			<gvq:userDetails>
-				<gmd:individualName>
-					<gco:CharacterString>Pinar</gco:CharacterString>
-				</gmd:individualName>
-				<gmd:organisationName>
-					<gco:CharacterString>Boston</gco:CharacterString>
+					<gco:CharacterString>Middle East Technical University</gco:CharacterString>
 				</gmd:organisationName>
 				<gmd:contactInfo>
 				</gmd:contactInfo>
@@ -515,59 +197,6 @@
 				</gmd:role>
 			</gvq:userDetails>
 			<gvq:applicationDomain>Ecosystems</gvq:applicationDomain>
-			<gvq:expertiseLevel>2</gvq:expertiseLevel>
-			<gvq:userRole>
-				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
-			</gvq:userRole>
-		</gvq:user>
-		<gvq:dateStamp>
-			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
-		</gvq:dateStamp>
-		<gvq:qualityOverride>
-			<gvq:GVQ_DataQuality>
-				<gmd19157:scope/>
-				<gvq:discoveredIssue/>
-			</gvq:GVQ_DataQuality>
-		</gvq:qualityOverride>
-		<gvq:userComment>
-			<gvq:comment>Overall the data itself is of good quality and spatial coverage is good.</gvq:comment>
-			<gvq:mime-type>text/plain</gvq:mime-type>
-		</gvq:userComment>
-		<gvq:rating>
-			<gvq:score>3</gvq:score>
-			<gvq:justification>Quality information is not provided therefore it is hard to work with the data.</gvq:justification>
-		</gvq:rating>
-		<gvq:usage>
-			<gvq:reportAspect>
-				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
-			</gvq:reportAspect>
-			<gvq:usageDescription></gvq:usageDescription>
-			<gvq:discoveredIssue>
-				<gvq:GVQ_DiscoveredIssue>
-					<gvq:target xlink:href="targetUID"/>
-				</gvq:GVQ_DiscoveredIssue>
-			</gvq:discoveredIssue>
-		</gvq:usage>
-	</gvq:item>
-	<gvq:item>
-		<gvq:userRole>
-			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
-		</gvq:userRole>
-		<gvq:user>
-			<gvq:userDetails>
-				<gmd:individualName>
-					<gco:CharacterString>Eva</gco:CharacterString>
-				</gmd:individualName>
-				<gmd:organisationName>
-					<gco:CharacterString>Klein</gco:CharacterString>
-				</gmd:organisationName>
-				<gmd:contactInfo>
-				</gmd:contactInfo>
-				<gmd:role>
-					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
-				</gmd:role>
-			</gvq:userDetails>
-			<gvq:applicationDomain>Landcover Research</gvq:applicationDomain>
 			<gvq:expertiseLevel>3</gvq:expertiseLevel>
 			<gvq:userRole>
 				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="ResearchEndUser"/>
@@ -583,18 +212,177 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>I used this dataset to monitor changes in agricultural land use in the UK between 2005 and 2010.</gvq:comment>
+			<gvq:comment>The dataset provides very good spatial and temporal coverage.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
-			<gvq:score>3</gvq:score>
-			<gvq:justification>Lack of metadata.</gvq:justification>
+			<gvq:score>5</gvq:score>
+			<gvq:justification>Quality information is available.</gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>
 				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
 			</gvq:reportAspect>
-			<gvq:usageDescription></gvq:usageDescription>
+			<gvq:usageDescription>We used this dataset to classify vegetation cover in Turkey for the year 2011.</gvq:usageDescription>
+			<gvq:discoveredIssue>
+				<gvq:GVQ_DiscoveredIssue>
+					<gvq:target xlink:href="targetUID"/>
+				</gvq:GVQ_DiscoveredIssue>
+			</gvq:discoveredIssue>
+		</gvq:usage>
+	</gvq:item>
+	<gvq:item>
+		<gvq:userRole>
+			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
+		</gvq:userRole>
+		<gvq:user>
+			<gvq:userDetails>
+				<gmd:individualName>
+					<gco:CharacterString>Eva Sevilliano</gco:CharacterString>
+				</gmd:individualName>
+				<gmd:organisationName>
+					<gco:CharacterString>UAB</gco:CharacterString>
+				</gmd:organisationName>
+				<gmd:contactInfo>
+				</gmd:contactInfo>
+				<gmd:role>
+					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+				</gmd:role>
+			</gvq:userDetails>
+			<gvq:applicationDomain>Landcover Research</gvq:applicationDomain>
+			<gvq:expertiseLevel>2</gvq:expertiseLevel>
+			<gvq:userRole>
+				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="ResearchEndUser"/>
+			</gvq:userRole>
+		</gvq:user>
+		<gvq:dateStamp>
+			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
+		</gvq:dateStamp>
+		<gvq:qualityOverride>
+			<gvq:GVQ_DataQuality>
+				<gmd19157:scope/>
+				<gvq:discoveredIssue/>
+			</gvq:GVQ_DataQuality>
+		</gvq:qualityOverride>
+		<gvq:userComment>
+			<gvq:comment> We would highly recommend this dataset for landcover research.</gvq:comment>
+			<gvq:mime-type>text/plain</gvq:mime-type>
+		</gvq:userComment>
+		<gvq:rating>
+			<gvq:score>5</gvq:score>
+			<gvq:justification>Metadata record is extremely good. Quality information is available.</gvq:justification>
+		</gvq:rating>
+		<gvq:usage>
+			<gvq:reportAspect>
+				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+			</gvq:reportAspect>
+			<gvq:usageDescription>Our university used this dataset to monitor changes in the agricultural land use in Spain between 2005 and 2010.</gvq:usageDescription>
+			<gvq:discoveredIssue>
+				<gvq:GVQ_DiscoveredIssue>
+					<gvq:target xlink:href="targetUID"/>
+				</gvq:GVQ_DiscoveredIssue>
+			</gvq:discoveredIssue>
+		</gvq:usage>
+	</gvq:item>
+	<gvq:item>
+		<gvq:userRole>
+			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
+		</gvq:userRole>
+		<gvq:user>
+			<gvq:userDetails>
+				<gmd:individualName>
+					<gco:CharacterString>Jon Wilkies</gco:CharacterString>
+				</gmd:individualName>
+				<gmd:organisationName>
+					<gco:CharacterString>FAO</gco:CharacterString>
+				</gmd:organisationName>
+				<gmd:contactInfo>
+				</gmd:contactInfo>
+				<gmd:role>
+					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+				</gmd:role>
+			</gvq:userDetails>
+			<gvq:applicationDomain>Agriculture</gvq:applicationDomain>
+			<gvq:expertiseLevel>3</gvq:expertiseLevel>
+			<gvq:userRole>
+				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+			</gvq:userRole>
+		</gvq:user>
+		<gvq:dateStamp>
+			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
+		</gvq:dateStamp>
+		<gvq:qualityOverride>
+			<gvq:GVQ_DataQuality>
+				<gmd19157:scope/>
+				<gvq:discoveredIssue/>
+			</gvq:GVQ_DataQuality>
+		</gvq:qualityOverride>
+		<gvq:userComment>
+			<gvq:comment> </gvq:comment>
+			<gvq:mime-type>text/plain</gvq:mime-type>
+		</gvq:userComment>
+		<gvq:rating>
+			<gvq:score>5</gvq:score>
+			<gvq:justification>The data is of very high quality. Metadata record provides quality information.</gvq:justification>
+		</gvq:rating>
+		<gvq:usage>
+			<gvq:reportAspect>
+				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+			</gvq:reportAspect>
+			<gvq:usageDescription>The dataset was used to monitor farming land use in the UK between June 2010 and July 2013.</gvq:usageDescription>
+			<gvq:discoveredIssue>
+				<gvq:GVQ_DiscoveredIssue>
+					<gvq:target xlink:href="targetUID"/>
+				</gvq:GVQ_DiscoveredIssue>
+			</gvq:discoveredIssue>
+		</gvq:usage>
+	</gvq:item>
+	<gvq:item>
+		<gvq:userRole>
+			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
+		</gvq:userRole>
+		<gvq:user>
+			<gvq:userDetails>
+				<gmd:individualName>
+					<gco:CharacterString>Xavier Pau</gco:CharacterString>
+				</gmd:individualName>
+				<gmd:organisationName>
+					<gco:CharacterString>UAB</gco:CharacterString>
+				</gmd:organisationName>
+				<gmd:contactInfo>
+				</gmd:contactInfo>
+				<gmd:role>
+					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+				</gmd:role>
+			</gvq:userDetails>
+			<gvq:applicationDomain>Land Cover</gvq:applicationDomain>
+			<gvq:expertiseLevel>2</gvq:expertiseLevel>
+			<gvq:userRole>
+				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="ResearchEndUser"/>
+			</gvq:userRole>
+		</gvq:user>
+		<gvq:dateStamp>
+			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
+		</gvq:dateStamp>
+		<gvq:qualityOverride>
+			<gvq:GVQ_DataQuality>
+				<gmd19157:scope/>
+				<gvq:discoveredIssue/>
+			</gvq:GVQ_DataQuality>
+		</gvq:qualityOverride>
+		<gvq:userComment>
+			<gvq:comment> We discovered that data for June - August 2011 was missing but, apart from this, the dataset is of good quality.</gvq:comment>
+			<gvq:mime-type>text/plain</gvq:mime-type>
+		</gvq:userComment>
+		<gvq:rating>
+			<gvq:score>4</gvq:score>
+			<gvq:justification>Overall, very good temporal and spatial coverage. Data is missing for Spain region between June and August 2011.</gvq:justification>
+		</gvq:rating>
+		<gvq:usage>
+			<gvq:reportAspect>
+				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+			</gvq:reportAspect>
+			<gvq:usageDescription>The dataset was used for classification of forests cover in Spain between 2010 and 2013.</gvq:usageDescription>
 			<gvq:discoveredIssue>
 				<gvq:GVQ_DiscoveredIssue>
 					<gvq:target xlink:href="targetUID"/>

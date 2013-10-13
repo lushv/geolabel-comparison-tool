@@ -19,7 +19,7 @@
 				<gmd:citation>
 					<gmd:CI_Citation>
 						<gmd:title>
-							<gco:CharacterString>SAFARI 2000 WOODY VEGETATION CHARACTERISTICS OF KALAHARI AND SKUKUZA SITES</gco:CharacterString>
+							<gco:CharacterString>SAFARI WOODY VEGETATION CHARACTERISTICS OF KALAHARI AND SKUKUZA SITES</gco:CharacterString>
 						</gmd:title>
 						<gmd:date />
 						<gmd:date>
@@ -62,12 +62,12 @@
 					</gmd:CI_Citation>
 				</gmd:citation>
 				<gmd:abstract>
-					<gco:CharacterString>This data set contains species composition, basal area, height, and crown cover of all woody plants at six sites along the Kalahari Transect visited in February-March of 2000 as part of SAFARI 2000. Similar measurements on woody and herbaceous vegetation at the Skukuza Flux Tower site in Kruger National Park, South Africa, were made in June of 2000. Leaf area index was derived from measurements made using PAR sensors at each site.Sampling protocol was the same at each site, with a slight variation at Skukuza. A grid of 42 points, 6 rows of 7 columns, each 50 m apart, was laid down in an area 300 m x 350 m for the Kalahari Transect sites. At Skukuza, the grid was 7x7, or 350 m x 350 m, centered on the tower site, yielding 49 points. At each grid point, all woody plants within a circular plot of a fixed radius were identified and measured. Stem circumference was measured on all stems and basal area per stem was derived. Basal area for the circular plots, per species, was calculated and extrapolated to hectares. Tree and stem densities were determined from the number of trees and stems in subplots and extrapolated to hectares. Woody plant height and canopy cover were determined, and aboveground woody biomass and peak leaf area index were estimated. The files are in comma-delimited ASCII format, with the first line listing the data set, author, and date, followed by the data records.</gco:CharacterString>
+					<gco:CharacterString>This data set contains species composition, basal area, height, and crown cover of all woody plants at six sites along the Kalahari Transect visited in February-March of 2000 as part of SAFARI. Similar measurements on woody and herbaceous vegetation at the Skukuza Flux Tower site in Kruger National Park, South Africa, were made in June of 2000. Leaf area index was derived from measurements made using PAR sensors at each site.Sampling protocol was the same at each site, with a slight variation at Skukuza. A grid of 42 points, 6 rows of 7 columns, each 50 m apart, was laid down in an area 300 m x 350 m for the Kalahari Transect sites. At Skukuza, the grid was 7x7, or 350 m x 350 m, centered on the tower site, yielding 49 points. At each grid point, all woody plants within a circular plot of a fixed radius were identified and measured. Stem circumference was measured on all stems and basal area per stem was derived. Basal area for the circular plots, per species, was calculated and extrapolated to hectares. Tree and stem densities were determined from the number of trees and stems in subplots and extrapolated to hectares. Woody plant height and canopy cover were determined, and aboveground woody biomass and peak leaf area index were estimated. The files are in comma-delimited ASCII format, with the first line listing the data set, author, and date, followed by the data records.</gco:CharacterString>
 				</gmd:abstract>
 				<gmd:descriptiveKeywords>
 					<gmd:MD_Keywords>
 						<gmd:keyword>
-							<gco:CharacterString>EARTH SCIENCE BIOSPHERE VEGETATION VEGETATION SPECIES; FIELD INVESTIGATION; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; SAFARI 2000 THE SOUTHERN AFRICAN REGIONAL SCIENCE INITIATIVE PROJECT; CWIC CEOS WGISS INTEGRATED CATALOG; Par; Lai; Canopy; Eosdis; Biomass; Basal Area; Vegetation; Safari 2000; Forest Cover; Stem Density; Gap Fraction; Tree Density; Leaf Area Index; Woody Vegetation; Herbaceous Layer; Kalahari Transect; Species Composition; BIOTA; ENGLISH;</gco:CharacterString>
+							<gco:CharacterString>EARTH SCIENCE BIOSPHERE VEGETATION VEGETATION SPECIES; FIELD INVESTIGATION; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; SAFARI THE SOUTHERN AFRICAN REGIONAL SCIENCE INITIATIVE PROJECT; CWIC CEOS WGISS INTEGRATED CATALOG; Par; Lai; Canopy; Eosdis; Biomass; Basal Area; Vegetation; SAFARI; Forest Cover; Stem Density; Gap Fraction; Tree Density; Leaf Area Index; Woody Vegetation; Herbaceous Layer; Kalahari Transect; Species Composition; BIOTA; ENGLISH;</gco:CharacterString>
 						</gmd:keyword>
 					</gmd:MD_Keywords>
 				</gmd:descriptiveKeywords>

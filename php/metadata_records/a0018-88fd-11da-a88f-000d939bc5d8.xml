@@ -194,9 +194,6 @@
                </gmd:geographicElement>
             </gmd:EX_Extent>
          </gmd:extent>
-         <gmd:supplementalInformation>
-            <gco:CharacterString>ISIS Identifier: 004610; Number of sheets: 3</gco:CharacterString>
-         </gmd:supplementalInformation>
       </gmd:MD_DataIdentification>
   </gmd:identificationInfo>
   <gmd:distributionInfo>
