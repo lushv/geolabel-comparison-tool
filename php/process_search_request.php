@@ -61,11 +61,26 @@ if($db->connect_errno > 0){
     die('Unable to connect to database [' . $db->connect_error . ']');
 }
 
+$keywordsString = "keywords LIKE '%%'";
+if(!empty($keyword)){
+	// Get all the keywords separately
+	$keywordsArray = explode(' ', $keyword);
+	$keywordItems = array();
+	foreach ($keywordsArray as $item) {
+		$item = trim($item);
+		if (!empty($item)) {
+			$keywordItems[] = "keywords LIKE '%$item%'";
+		}
+	}
+	$keywordsString = implode(' OR ', $keywordItems);
+}
+
 // SQL query
 $sql = "SELECT dataset_id, parent_id FROM query_constraints 
-		WHERE keywords LIKE '%$keyword%'  
-		AND access_constraints LIKE '%$accessConstraints%'
-		AND use_constraints LIKE '%$useConstraints%'";	
+		WHERE access_constraints LIKE '%$accessConstraints%'
+		AND use_constraints LIKE '%$useConstraints%'
+		AND (" . $keywordsString . ")";
+
 // Add dates to query if not empty
 if(!empty($startDate)){
 	$sql .= " AND start_date <= DATE('$startDate')";
