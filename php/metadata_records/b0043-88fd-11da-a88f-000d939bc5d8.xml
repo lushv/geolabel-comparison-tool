@@ -1,0 +1,1147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gvq:GVQ_Metadata xmlns:updated19115="http://www.geoviqua.org/19115_updates" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gvq="http://www.geoviqua.org/QualityInformationModel/3.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmd19157="http://www.geoviqua.org/gmd19157" xsi:schemaLocation="http://www.geoviqua.org/QualityInformationModel/3.1 http://schemas.geoviqua.org/GVQ/3.1.0/GeoViQua_PQM_UQM.xsd http://www.uncertml.org/2.0 http://www.uncertml.org/uncertml.xsd">
+		<gmd:fileIdentifier>
+			<gco:CharacterString>b0043-88fd-11da-a88f-000d939bc5d8</gco:CharacterString>
+		</gmd:fileIdentifier>
+		<gmd:parentIdentifier>
+			<gco:CharacterString></gco:CharacterString>
+		</gmd:parentIdentifier>
+		<gmd:language>
+			<gco:CharacterString>eng</gco:CharacterString>
+		</gmd:language>
+		<gmd:characterSet>
+			<gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+		</gmd:characterSet>
+		<gmd:hierarchyLevel>
+			<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+		</gmd:hierarchyLevel>
+		<gmd:contact>
+			<gmd:CI_ResponsibleParty>
+				<gmd:individualName>
+					<gco:CharacterString>STEVENS, TYLERB.</gco:CharacterString>
+				</gmd:individualName>
+				<gmd:contactInfo>
+					<gmd:CI_Contact>
+						<gmd:phone>
+							<gmd:CI_Telephone>
+								<gmd:voice>
+									<gco:CharacterString>(301) 614-6898</gco:CharacterString>
+								</gmd:voice>
+								<gmd:facsimile>
+									<gco:CharacterString>301-614-5268</gco:CharacterString>
+								</gmd:facsimile>
+							</gmd:CI_Telephone>
+						</gmd:phone>
+						<gmd:address>
+							<gmd:CI_Address>
+								<gmd:deliveryPoint>
+									<gco:CharacterString>NASA Goddard Space Flight Center</gco:CharacterString>
+								</gmd:deliveryPoint>
+								<gmd:deliveryPoint>
+									<gco:CharacterString>Global Change Master Directory</gco:CharacterString>
+								</gmd:deliveryPoint>
+								<gmd:city>
+									<gco:CharacterString>Greenbelt</gco:CharacterString>
+								</gmd:city>
+								<gmd:administrativeArea>
+									<gco:CharacterString>MD</gco:CharacterString>
+								</gmd:administrativeArea>
+								<gmd:postalCode>
+									<gco:CharacterString>20771</gco:CharacterString>
+								</gmd:postalCode>
+								<gmd:country>
+									<gco:CharacterString>USA</gco:CharacterString>
+								</gmd:country>
+								<gmd:electronicMailAddress>
+									<gco:CharacterString>Tyler.B.Stevens@nasa.gov</gco:CharacterString>
+								</gmd:electronicMailAddress>
+							</gmd:CI_Address>
+						</gmd:address>
+					</gmd:CI_Contact>
+				</gmd:contactInfo>
+				<gmd:role>
+					<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author">author</gmd:CI_RoleCode>
+				</gmd:role>
+			</gmd:CI_ResponsibleParty>
+		</gmd:contact>
+		<gmd:contact>
+			<gmd:CI_ResponsibleParty>
+				<gmd:organisationName>
+					<gco:CharacterString>GCMD</gco:CharacterString>
+				</gmd:organisationName>
+				<gmd:role>
+					<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+				</gmd:role>
+			</gmd:CI_ResponsibleParty>
+		</gmd:contact>
+		<gmd:dateStamp>
+			<gco:Date>2006-08-30</gco:Date>
+		</gmd:dateStamp>
+		<gmd:metadataStandardName>
+			<gco:CharacterString>CEOS IDN DIF</gco:CharacterString>
+		</gmd:metadataStandardName>
+		<gmd:metadataStandardVersion>
+			<gco:CharacterString>VERSION 9.8.3</gco:CharacterString>
+		</gmd:metadataStandardVersion>
+		<gmd:identificationInfo>
+			<gmd:MD_DataIdentification>
+				<gmd:citation>
+					<gmd:CI_Citation>
+						<gmd:title>
+							<gco:CharacterString>HydroSHEDS : The Hydrological data and maps based on SHuttle Elevation Derivatives at multiple Scales.</gco:CharacterString>
+						</gmd:title>
+						<gmd:date>
+							<gmd:CI_Date>
+								<gmd:date>
+									<gco:Date>2006-08-30</gco:Date>
+								</gmd:date>
+								<gmd:dateType>
+									<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+								</gmd:dateType>
+							</gmd:CI_Date>
+						</gmd:date>
+					</gmd:CI_Citation>
+				</gmd:citation>
+				<gmd:abstract>
+					<gco:CharacterString>HydroSHEDS is a mapping product that provides hydrographic information forregional and global-scale applications in a consistent format. It offers asuite of geo-referenced data sets (vector and raster) at various scales,including river networks, watershed boundaries, drainage directions, and flowaccumulations. HydroSHEDS is based on high-resolution elevation data obtainedduring a Space Shuttle flight for NASA's Shuttle Radar Topography Mission(SRTM) (Source: HydroSHEDS).	  [ This document was provided by NASA's Global Change Master Directory.       For more information on the source of this metadata please visit      http://gcmd.nasa.gov/r/geoss/[GCMD]WWF_HS ]</gco:CharacterString>
+				</gmd:abstract>
+				<gmd:resourceConstraints>
+					<gmd:MD_LegalConstraints id="GDC">
+						<gmd:useLimitation>
+							<gco:CharacterString>geossdatacore</gco:CharacterString>
+						</gmd:useLimitation>
+					</gmd:MD_LegalConstraints>
+				</gmd:resourceConstraints>
+				<gmd:status>
+					<gmd:MD_ProgressCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="onGoing">onGoing</gmd:MD_ProgressCode>
+				</gmd:status>
+				<gmd:pointOfContact>
+					<gmd:CI_ResponsibleParty>
+						<gmd:individualName>
+							<gco:CharacterString>VERDIN, JIM</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:organisationName>
+							<gco:CharacterString>DOI/USGS/EROS &gt; Earth Resources Observation and Science Center, U.S. Geological Survey, U.S. Department of the Interior</gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:positionName>
+							<gco:CharacterString>DATA CENTER CONTACT</gco:CharacterString>
+						</gmd:positionName>
+						<gmd:contactInfo>
+							<gmd:CI_Contact>
+								<gmd:address>
+									<gmd:CI_Address>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>EROS Data Center</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>47914 252nd Street</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:city>
+											<gco:CharacterString>Sioux Falls</gco:CharacterString>
+										</gmd:city>
+										<gmd:administrativeArea>
+											<gco:CharacterString>SD</gco:CharacterString>
+										</gmd:administrativeArea>
+										<gmd:postalCode>
+											<gco:CharacterString>57198</gco:CharacterString>
+										</gmd:postalCode>
+										<gmd:country>
+											<gco:CharacterString>USA</gco:CharacterString>
+										</gmd:country>
+										<gmd:electronicMailAddress>
+											<gco:CharacterString>verdin@usgs.gov</gco:CharacterString>
+										</gmd:electronicMailAddress>
+									</gmd:CI_Address>
+								</gmd:address>
+								<gmd:onlineResource>
+									<gmd:CI_OnlineResource>
+										<gmd:linkage>
+											<gmd:URL>http://eros.usgs.gov/</gmd:URL>
+										</gmd:linkage>
+									</gmd:CI_OnlineResource>
+								</gmd:onlineResource>
+							</gmd:CI_Contact>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="resourceProvider">resourceProvider</gmd:CI_RoleCode>
+						</gmd:role>
+					</gmd:CI_ResponsibleParty>
+				</gmd:pointOfContact>
+				<gmd:pointOfContact>
+					<gmd:CI_ResponsibleParty>
+						<gmd:individualName>
+							<gco:CharacterString>JARVIS, ANDREW</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:organisationName>
+							<gco:CharacterString>CGIAR/CIAT &gt; Centro Internacional de Agricultura Tropical, Consultative Group on International Agricultural Research</gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:positionName>
+							<gco:CharacterString>DATA CENTER CONTACT</gco:CharacterString>
+						</gmd:positionName>
+						<gmd:contactInfo>
+							<gmd:CI_Contact>
+								<gmd:address>
+									<gmd:CI_Address>
+										<gmd:electronicMailAddress>
+											<gco:CharacterString>csi-info@cgiar.org</gco:CharacterString>
+										</gmd:electronicMailAddress>
+									</gmd:CI_Address>
+								</gmd:address>
+								<gmd:onlineResource>
+									<gmd:CI_OnlineResource>
+										<gmd:linkage>
+											<gmd:URL>http://www.ciat.cgiar.org/</gmd:URL>
+										</gmd:linkage>
+									</gmd:CI_OnlineResource>
+								</gmd:onlineResource>
+							</gmd:CI_Contact>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="resourceProvider">resourceProvider</gmd:CI_RoleCode>
+						</gmd:role>
+					</gmd:CI_ResponsibleParty>
+				</gmd:pointOfContact>
+				<gmd:pointOfContact>
+					<gmd:CI_ResponsibleParty>
+						<gmd:individualName>
+							<gco:CharacterString>LEHNER, BERNHARD</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:organisationName>
+							<gco:CharacterString>WWF &gt; World Wildlife Fund</gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:positionName>
+							<gco:CharacterString>DATA CENTER CONTACT</gco:CharacterString>
+						</gmd:positionName>
+						<gmd:contactInfo>
+							<gmd:CI_Contact>
+								<gmd:address>
+									<gmd:CI_Address>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>Conservation Science Program</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:city>
+											<gco:CharacterString>Washington</gco:CharacterString>
+										</gmd:city>
+										<gmd:administrativeArea>
+											<gco:CharacterString>DC</gco:CharacterString>
+										</gmd:administrativeArea>
+										<gmd:postalCode>
+											<gco:CharacterString>20037</gco:CharacterString>
+										</gmd:postalCode>
+										<gmd:country>
+											<gco:CharacterString>USA</gco:CharacterString>
+										</gmd:country>
+										<gmd:electronicMailAddress>
+											<gco:CharacterString>bernhard.lehner@wwfus.org</gco:CharacterString>
+										</gmd:electronicMailAddress>
+									</gmd:CI_Address>
+								</gmd:address>
+								<gmd:onlineResource>
+									<gmd:CI_OnlineResource>
+										<gmd:linkage>
+											<gmd:URL>http://www.worldwildlife.org/</gmd:URL>
+										</gmd:linkage>
+									</gmd:CI_OnlineResource>
+								</gmd:onlineResource>
+							</gmd:CI_Contact>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="resourceProvider">resourceProvider</gmd:CI_RoleCode>
+						</gmd:role>
+					</gmd:CI_ResponsibleParty>
+				</gmd:pointOfContact>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; AGRICULTURAL AQUATIC SCIENCES</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; AGRICULTURAL AQUATIC SCIENCES &gt; AQUACULTURE</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; AGRICULTURAL AQUATIC SCIENCES &gt; FISHERIES</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; AGRICULTURAL ENGINEERING &gt; FARM STRUCTURES</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; AGRICULTURAL PLANT SCIENCE &gt; IRRIGATION</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; AGRICULTURAL PLANT SCIENCE &gt; RECLAMATION/REVEGETATION/RESTORATION</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; AGRICULTURAL PLANT SCIENCE &gt; WEEDS, NOXIOUS PLANTS OR INVASIVE PLANTS</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; FOREST SCIENCE &gt; AFFORESTATION/REFORESTATION</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; FOREST SCIENCE &gt; FOREST CONSERVATION</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; FOREST SCIENCE &gt; FOREST FIRE SCIENCE</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; FOREST SCIENCE &gt; FOREST HARVESTING AND ENGINEERING</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; FOREST SCIENCE &gt; FOREST MANAGEMENT</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; FOREST SCIENCE &gt; FOREST MENSURATION</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; FOREST SCIENCE &gt; FOREST PROTECTION</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; FOREST SCIENCE &gt; FOREST YIELDS</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; SOILS</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; SOILS &gt; SOIL ABSORPTION</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; SOILS &gt; SOIL INFILTRATION</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; ATMOSPHERE &gt; ATMOSPHERIC WATER VAPOR &gt; EVAPOTRANSPIRATION</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; ATMOSPHERE &gt; PRECIPITATION</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; AQUATIC ECOSYSTEMS</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; AQUATIC ECOSYSTEMS &gt; WETLANDS</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; ECOLOGICAL DYNAMICS</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; ECOLOGICAL DYNAMICS &gt; COMMUNITY DYNAMICS &gt; COMMUNITY STRUCTURE</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; ECOLOGICAL DYNAMICS &gt; COMMUNITY DYNAMICS &gt; PLANT SUCCESSION</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; ECOLOGICAL DYNAMICS &gt; ECOSYSTEM FUNCTIONS &gt; BIOMASS DYNAMICS</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; ECOLOGICAL DYNAMICS &gt; FIRE ECOLOGY &gt; FIRE OCCURRENCE</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; TERRESTRIAL ECOSYSTEMS</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; TERRESTRIAL ECOSYSTEMS &gt; WETLANDS</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; VEGETATION</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; CLIMATE INDICATORS &gt; ATMOSPHERIC/OCEAN INDICATORS &gt; HUMIDITY INDICES</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; CLIMATE INDICATORS &gt; ATMOSPHERIC/OCEAN INDICATORS &gt; HUMIDITY INDICES &gt; HUMIDITY INDEX</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; HUMAN DIMENSIONS &gt; ENVIRONMENTAL GOVERNANCE/MANAGEMENT &gt; ENVIRONMENTAL ASSESSMENTS</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; HUMAN DIMENSIONS &gt; HABITAT CONVERSION/FRAGMENTATION &gt; DEFORESTATION</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; HUMAN DIMENSIONS &gt; HABITAT CONVERSION/FRAGMENTATION &gt; RECLAMATION/REVEGETATION/RESTORATION</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; HUMAN DIMENSIONS &gt; HABITAT CONVERSION/FRAGMENTATION &gt; REFORESTATION/REVEGETATION</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; HUMAN DIMENSIONS &gt; ENVIRONMENTAL GOVERNANCE/MANAGEMENT &gt; LAND MANAGEMENT</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; HUMAN DIMENSIONS &gt; ENVIRONMENTAL GOVERNANCE/MANAGEMENT &gt; LAND MANAGEMENT &gt; LAND TENURE</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; HUMAN DIMENSIONS &gt; ENVIRONMENTAL GOVERNANCE/MANAGEMENT &gt; LAND MANAGEMENT &gt; LAND USE CLASSES</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; LAND SURFACE &gt; EROSION/SEDIMENTATION</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; LAND SURFACE &gt; GEOMORPHOLOGY</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; LAND SURFACE &gt; LAND USE/LAND COVER</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; LAND SURFACE &gt; LANDSCAPE</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; LAND SURFACE &gt; LANDSCAPE &gt; LANDSCAPE ECOLOGY</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; LAND SURFACE &gt; LANDSCAPE &gt; LANDSCAPE PATTERNS</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; TERRESTRIAL HYDROSPHERE &gt; WATER QUALITY/WATER CHEMISTRY</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; HUMAN DIMENSIONS &gt; ECONOMIC RESOURCES &gt; AQUACULTURE PRODUCTION</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>Science Keywords</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2008-02-05</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>HS &gt; HYDROSHEDS</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>Projects</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2009-06-10</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>CONTINENT &gt; AFRICA &gt; CENTRAL AFRICA &gt; ANGOLA</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>CONTINENT &gt; AFRICA &gt; CENTRAL AFRICA &gt; CAMEROON</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>CONTINENT &gt; AFRICA &gt; CENTRAL AFRICA &gt; CENTRAL AFRICAN REPUBLIC</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>CONTINENT &gt; AFRICA &gt; CENTRAL AFRICA &gt; CHAD</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>CONTINENT &gt; AFRICA &gt; CENTRAL AFRICA &gt; CONGO, REPUBLIC</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>CONTINENT &gt; AFRICA &gt; CENTRAL AFRICA &gt; CONGO, DEMOCRATIC REPUBLIC</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>GEOGRAPHIC REGION &gt; GLOBAL</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>Locations</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2009-12-22</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>geossDataCore</gco:CharacterString>
+						</gmd:keyword>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>geossNoMonetaryCharge</gco:CharacterString>
+						</gmd:keyword>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:resourceConstraints>
+					<gmd:MD_LegalConstraints>
+						<gmd:accessConstraints>
+							<gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
+						</gmd:accessConstraints>
+						<gmd:otherConstraints>
+							<gco:CharacterString>COPYRIGHT AND REDISTRIBUTION RESTRICTIONS            HydroSHEDS has been developed by the Conservation Science Program of World            Wildlife Fund (WWF), hereafter referred to as "authors", in partnership with            the U.S. Geological Survey (USGS), the International Centre for Tropical            Agriculture (CIAT), The Nature Conservancy (TNC), and the Center for            Environmental Systems Research (CESR) of the University of Kassel, Germany.                        Users may apply HydroSHEDS for non-commercial purposes. Any modification of the            original data by users must be noted. The authors of HydroSHEDS may request            reprints of publications and copies of derived materials. The user shall not            reproduce, convert, (re)publish, (re)distribute, (re)broadcast, (re)transmit,            sell, rent, lease, sublicense, lend, assign, time-share, or transfer, in whole            or in part, or provide unlicensed third parties access to the data and related            materials without explicit written permission from the authors. HydroSHEDS has            been generated through the extensive use and incorporation of data products            provided by various other authors (see "Data sources" and "Data set            development"). The data and related materials may thus contain proprietary and            confidential property of these authors and/or their licensor(s). HydroSHEDS            data and related materials are protected by United States copyright or sui            generis laws and applicable international copyright treaties and/or            conventions.                        DISCLAIMER OF WARRANTY            The data and any related materials contained therein are provided "as is"            without warranty of any kind, either express or implied, including, but not            limited to, the implied warranties of merchantability, fitness for a particular            purpose, noninterference, system integration, or noninfringement. The entire            risk of use of the data shall be with the user. The user expressly acknowledges            that the data may contain some nonconformities, defects, or errors. The authors            do not warrant that the data will meet the user's needs or expectations, that            the use of the data will be uninterrupted, or that all nonconformities,            defects, or errors can or will be corrected. The authors are not inviting            reliance on these data, and the user should always verify actual data.                        LIMITATION OF LIABILITY            In no event shall the authors be liable for costs of procurement of substitute            goods or services, lost profits, lost sales or business expenditures,            investments, or commitments in connection with any business, loss of any            goodwill, or for any direct, indirect, special, incidental, exemplary, or            consequential damages arising out of the use of the data and any related            materials, however caused, on any theory of liability, and whether or not the            authors have been advised of the possibility of such damage. These limitations            shall apply notwithstanding any failure of essential purpose of any exclusive            remedy.                        DISCLAIMER BY USGS            Any use of trade, product, or firm names is for descriptive purposes only and            does not imply endorsement by the U.S. Government. Please note that some            information contained in this data set and documentation may be preliminary in            nature and presented prior to final review and approval by the Director of the            USGS.                        ACKNOWLEDGMENT AND CITATION            We kindly ask users to cite HydroSHEDS in any published material produced using            this data. If possible, please provide online links to            http://www.worldwildlife.org/hydrosheds for general information, and/or            http://hydrosheds.cr.usgs.gov for data download and technical information.</gco:CharacterString>
+						</gmd:otherConstraints>
+					</gmd:MD_LegalConstraints>
+				</gmd:resourceConstraints>
+				<gmd:resourceConstraints>
+					<gmd:MD_LegalConstraints>
+						<gmd:useConstraints>
+							<gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
+						</gmd:useConstraints>
+						<gmd:otherConstraints>
+							<gco:CharacterString>There is no guarantee of warranty concerning the accuracy of these data.  Users should be aware that temporal changes may have occurred since the data was collected and that some parts of these data may no longer represent actual surface conditions.  Users should not use these data for critical applications without a full awareness of their limitations.  Acknowledgement of the originating agencies would be appreciated in products derived from these data.  Any user who modifies the data set is obligated to describe the types of modifications they perform.  User specifically agrees not to misrepresent the data set, nor to imply that changes made were approved or endorsed by the U.S. Geological Survey.  Please refer to http://www.usgs.gov/privacy.html for the USGS disclaimer.</gco:CharacterString>
+						</gmd:otherConstraints>
+					</gmd:MD_LegalConstraints>
+				</gmd:resourceConstraints>
+				<gmd:language>
+					<gco:CharacterString>eng</gco:CharacterString>
+				</gmd:language>
+				<gmd:characterSet>
+					<gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+				</gmd:characterSet>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>geossdatacore</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>dataSetDataBase</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>farming</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>biota</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>elevation</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>environment</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>geoscientific information</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>imagery/base maps/earth cover</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>inland waters</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>planning cadastre</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>society</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:extent>
+					<gmd:EX_Extent>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicBoundingBox>
+								<gmd:westBoundLongitude>
+									<gco:Decimal>-180.0</gco:Decimal>
+								</gmd:westBoundLongitude>
+								<gmd:eastBoundLongitude>
+									<gco:Decimal>180.0</gco:Decimal>
+								</gmd:eastBoundLongitude>
+								<gmd:southBoundLatitude>
+									<gco:Decimal>-90.0</gco:Decimal>
+								</gmd:southBoundLatitude>
+								<gmd:northBoundLatitude>
+									<gco:Decimal>90.0</gco:Decimal>
+								</gmd:northBoundLatitude>
+							</gmd:EX_GeographicBoundingBox>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>CONTINENT &gt; AFRICA &gt; CENTRAL AFRICA &gt; ANGOLA</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>CONTINENT &gt; AFRICA &gt; CENTRAL AFRICA &gt; CAMEROON</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>CONTINENT &gt; AFRICA &gt; CENTRAL AFRICA &gt; CENTRAL AFRICAN REPUBLIC</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>CONTINENT &gt; AFRICA &gt; CENTRAL AFRICA &gt; CHAD</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>CONTINENT &gt; AFRICA &gt; CENTRAL AFRICA &gt; CONGO, REPUBLIC</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>CONTINENT &gt; AFRICA &gt; CENTRAL AFRICA &gt; CONGO, DEMOCRATIC REPUBLIC</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>GEOGRAPHIC REGION &gt; GLOBAL</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:temporalElement>
+							<gmd:EX_TemporalExtent>
+								<gmd:extent>
+									<gml:TimePeriod gml:id="d3501e783">
+										<gml:begin>
+											<gml:TimeInstant gml:id="d3501e785">
+												<gml:timePosition>1940-01-01</gml:timePosition>
+											</gml:TimeInstant>
+										</gml:begin>
+										<gml:end>
+											<gml:TimeInstant gml:id="a99d0a877-7e2a-4064-8833-544755db6055">
+												<gml:timePosition indeterminatePosition="unknown" />
+											</gml:TimeInstant>
+										</gml:end>
+									</gml:TimePeriod>
+								</gmd:extent>
+							</gmd:EX_TemporalExtent>
+						</gmd:temporalElement>
+					</gmd:EX_Extent>
+				</gmd:extent>
+				<gmd:supplementalInformation>
+					<gco:CharacterString>Lehner, B., Verdin, K., Jarvis, A. (2006): HydroSHEDS Technical Documentation.World Wildlife Fund US, Washington, DC. Available athttp://hydrosheds.cr.usgs.gov.</gco:CharacterString>
+				</gmd:supplementalInformation>
+			</gmd:MD_DataIdentification>
+		</gmd:identificationInfo>
+		<gmd:distributionInfo>
+			<gmd:MD_Distribution>
+				<gmd:distributionFormat>
+					<gmd:MD_Format>
+						<gmd:name gco:nilReason="missing">
+							<gco:CharacterString />
+						</gmd:name>
+						<gmd:version gco:nilReason="missing">
+							<gco:CharacterString />
+						</gmd:version>
+					</gmd:MD_Format>
+				</gmd:distributionFormat>
+				<gmd:distributor>
+					<gmd:MD_Distributor>
+						<gmd:distributorContact>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>VERDIN, JIM</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:organisationName>
+									<gco:CharacterString>DOI/USGS/EROS &gt; Earth Resources Observation and Science Center, U.S. Geological Survey, U.S. Department of the Interior</gco:CharacterString>
+								</gmd:organisationName>
+								<gmd:positionName>
+									<gco:CharacterString>DATA CENTER CONTACT</gco:CharacterString>
+								</gmd:positionName>
+								<gmd:contactInfo>
+									<gmd:CI_Contact>
+										<gmd:address>
+											<gmd:CI_Address>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>EROS Data Center</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>47914 252nd Street</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:city>
+													<gco:CharacterString>Sioux Falls</gco:CharacterString>
+												</gmd:city>
+												<gmd:administrativeArea>
+													<gco:CharacterString>SD</gco:CharacterString>
+												</gmd:administrativeArea>
+												<gmd:postalCode>
+													<gco:CharacterString>57198</gco:CharacterString>
+												</gmd:postalCode>
+												<gmd:country>
+													<gco:CharacterString>USA</gco:CharacterString>
+												</gmd:country>
+												<gmd:electronicMailAddress>
+													<gco:CharacterString>verdin@usgs.gov</gco:CharacterString>
+												</gmd:electronicMailAddress>
+											</gmd:CI_Address>
+										</gmd:address>
+										<gmd:onlineResource>
+											<gmd:CI_OnlineResource>
+												<gmd:linkage>
+													<gmd:URL>http://eros.usgs.gov/</gmd:URL>
+												</gmd:linkage>
+											</gmd:CI_OnlineResource>
+										</gmd:onlineResource>
+									</gmd:CI_Contact>
+								</gmd:contactInfo>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor">distributor</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:distributorContact>
+					</gmd:MD_Distributor>
+				</gmd:distributor>
+				<gmd:distributor>
+					<gmd:MD_Distributor>
+						<gmd:distributorContact>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>JARVIS, ANDREW</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:organisationName>
+									<gco:CharacterString>CGIAR/CIAT &gt; Centro Internacional de Agricultura Tropical, Consultative Group on International Agricultural Research</gco:CharacterString>
+								</gmd:organisationName>
+								<gmd:positionName>
+									<gco:CharacterString>DATA CENTER CONTACT</gco:CharacterString>
+								</gmd:positionName>
+								<gmd:contactInfo>
+									<gmd:CI_Contact>
+										<gmd:address>
+											<gmd:CI_Address>
+												<gmd:electronicMailAddress>
+													<gco:CharacterString>csi-info@cgiar.org</gco:CharacterString>
+												</gmd:electronicMailAddress>
+											</gmd:CI_Address>
+										</gmd:address>
+										<gmd:onlineResource>
+											<gmd:CI_OnlineResource>
+												<gmd:linkage>
+													<gmd:URL>http://www.ciat.cgiar.org/</gmd:URL>
+												</gmd:linkage>
+											</gmd:CI_OnlineResource>
+										</gmd:onlineResource>
+									</gmd:CI_Contact>
+								</gmd:contactInfo>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor">distributor</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:distributorContact>
+					</gmd:MD_Distributor>
+				</gmd:distributor>
+				<gmd:distributor>
+					<gmd:MD_Distributor>
+						<gmd:distributorContact>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>LEHNER, BERNHARD</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:organisationName>
+									<gco:CharacterString>WWF &gt; World Wildlife Fund</gco:CharacterString>
+								</gmd:organisationName>
+								<gmd:positionName>
+									<gco:CharacterString>DATA CENTER CONTACT</gco:CharacterString>
+								</gmd:positionName>
+								<gmd:contactInfo>
+									<gmd:CI_Contact>
+										<gmd:address>
+											<gmd:CI_Address>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>Conservation Science Program</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:city>
+													<gco:CharacterString>Washington</gco:CharacterString>
+												</gmd:city>
+												<gmd:administrativeArea>
+													<gco:CharacterString>DC</gco:CharacterString>
+												</gmd:administrativeArea>
+												<gmd:postalCode>
+													<gco:CharacterString>20037</gco:CharacterString>
+												</gmd:postalCode>
+												<gmd:country>
+													<gco:CharacterString>USA</gco:CharacterString>
+												</gmd:country>
+												<gmd:electronicMailAddress>
+													<gco:CharacterString>bernhard.lehner@wwfus.org</gco:CharacterString>
+												</gmd:electronicMailAddress>
+											</gmd:CI_Address>
+										</gmd:address>
+										<gmd:onlineResource>
+											<gmd:CI_OnlineResource>
+												<gmd:linkage>
+													<gmd:URL>http://www.worldwildlife.org/</gmd:URL>
+												</gmd:linkage>
+											</gmd:CI_OnlineResource>
+										</gmd:onlineResource>
+									</gmd:CI_Contact>
+								</gmd:contactInfo>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor">distributor</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:distributorContact>
+					</gmd:MD_Distributor>
+				</gmd:distributor>
+				<gmd:transferOptions>
+					<gmd:MD_DigitalTransferOptions>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>http://gisdata.usgs.net/website/HydroSHEDS/viewer.php</gmd:URL>
+								</gmd:linkage>
+								<gmd:protocol>
+									<gco:CharacterString>OGC:WMS-1.1.1-http-get-map</gco:CharacterString>
+								</gmd:protocol>
+								<gmd:name>
+									<gco:CharacterString>GET SERVICE &gt; GET MAP SERVICE</gco:CharacterString>
+								</gmd:name>
+								<gmd:description>
+									<gco:CharacterString>Hydrosheds Download Site</gco:CharacterString>
+								</gmd:description>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>http://gisdata.usgs.net/website/HydroSHEDS/viewer.php</gmd:URL>
+								</gmd:linkage>
+								<gmd:protocol>
+									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+								</gmd:protocol>
+								<gmd:name>
+									<gco:CharacterString>GET SERVICE</gco:CharacterString>
+								</gmd:name>
+								<gmd:description>
+									<gco:CharacterString>Hydrosheds Download Site</gco:CharacterString>
+								</gmd:description>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>http://gisweb.ciat.cgiar.org/sig/inicio.htm</gmd:URL>
+								</gmd:linkage>
+								<gmd:protocol>
+									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+								</gmd:protocol>
+								<gmd:name>
+									<gco:CharacterString>VIEW RELATED INFORMATION</gco:CharacterString>
+								</gmd:name>
+								<gmd:description>
+									<gco:CharacterString />
+								</gmd:description>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+					</gmd:MD_DigitalTransferOptions>
+				</gmd:transferOptions>
+			</gmd:MD_Distribution>
+		</gmd:distributionInfo>
+		<gmd:dataQualityInfo>
+			<gmd:DQ_DataQuality>
+				<gmd:scope>
+					<gmd:DQ_Scope>
+						<gmd:level>
+							<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+						</gmd:level>
+					</gmd:DQ_Scope>
+				</gmd:scope>
+				<gmd:lineage>
+					<gmd:LI_Lineage>
+						<gmd:statement gco:nilReason="missing">
+							<gco:CharacterString />
+						</gmd:statement>
+					</gmd:LI_Lineage>
+				</gmd:lineage>
+			</gmd:DQ_DataQuality>
+		</gmd:dataQualityInfo>
+		<gmd:metadataConstraints>
+			<gmd:MD_LegalConstraints>
+				<gmd:useLimitation>
+					<gco:CharacterString>This metadata record is publicly available.</gco:CharacterString>
+				</gmd:useLimitation>
+			</gmd:MD_LegalConstraints>
+		</gmd:metadataConstraints>
+		<gmd:metadataMaintenance>
+			<gmd:MD_MaintenanceInformation>
+				<gmd:maintenanceAndUpdateFrequency>
+					<gmd:MD_MaintenanceFrequencyCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded">asNeeded</gmd:MD_MaintenanceFrequencyCode>
+				</gmd:maintenanceAndUpdateFrequency>
+				<gmd:contact>
+					<gmd:CI_ResponsibleParty>
+						<gmd:individualName>
+							<gco:CharacterString>STEVENS, TYLERB.</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:contactInfo>
+							<gmd:CI_Contact>
+								<gmd:phone>
+									<gmd:CI_Telephone>
+										<gmd:voice>
+											<gco:CharacterString>(301) 614-6898</gco:CharacterString>
+										</gmd:voice>
+										<gmd:facsimile>
+											<gco:CharacterString>301-614-5268</gco:CharacterString>
+										</gmd:facsimile>
+									</gmd:CI_Telephone>
+								</gmd:phone>
+								<gmd:address>
+									<gmd:CI_Address>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>NASA Goddard Space Flight Center</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>Global Change Master Directory</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:city>
+											<gco:CharacterString>Greenbelt</gco:CharacterString>
+										</gmd:city>
+										<gmd:administrativeArea>
+											<gco:CharacterString>MD</gco:CharacterString>
+										</gmd:administrativeArea>
+										<gmd:postalCode>
+											<gco:CharacterString>20771</gco:CharacterString>
+										</gmd:postalCode>
+										<gmd:country>
+											<gco:CharacterString>USA</gco:CharacterString>
+										</gmd:country>
+										<gmd:electronicMailAddress>
+											<gco:CharacterString>Tyler.B.Stevens@nasa.gov</gco:CharacterString>
+										</gmd:electronicMailAddress>
+									</gmd:CI_Address>
+								</gmd:address>
+							</gmd:CI_Contact>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author">author</gmd:CI_RoleCode>
+						</gmd:role>
+					</gmd:CI_ResponsibleParty>
+				</gmd:contact>
+			</gmd:MD_MaintenanceInformation>
+		</gmd:metadataMaintenance>
+</gvq:GVQ_Metadata>

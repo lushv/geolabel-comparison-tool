@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gvq:GVQ_Metadata xmlns:updated19115="http://www.geoviqua.org/19115_updates" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gvq="http://www.geoviqua.org/QualityInformationModel/3.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmd19157="http://www.geoviqua.org/gmd19157" xsi:schemaLocation="http://www.geoviqua.org/QualityInformationModel/3.1 http://schemas.geoviqua.org/GVQ/3.1.0/GeoViQua_PQM_UQM.xsd http://www.uncertml.org/2.0 http://www.uncertml.org/uncertml.xsd">
+		<gmd:fileIdentifier>
+			<gco:CharacterString>b0065-88fd-11da-a88f-000d939bc5d8</gco:CharacterString>
+		</gmd:fileIdentifier>
+		<gmd:parentIdentifier>
+			<gco:CharacterString>UUID-b2d227da-02ea-4711-a49f-59f707a4e300</gco:CharacterString>
+		</gmd:parentIdentifier>
+		<gmd:language>
+			<gco:CharacterString>eng</gco:CharacterString>
+		</gmd:language>
+		<gmd:characterSet>
+			<gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+		</gmd:characterSet>
+		<gmd:hierarchyLevel>
+			<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+		</gmd:hierarchyLevel>
+		<gmd:contact>
+			<gmd:CI_ResponsibleParty>
+				<gmd:organisationName>
+					<gco:CharacterString>GCMD</gco:CharacterString>
+				</gmd:organisationName>
+				<gmd:role>
+					<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+				</gmd:role>
+			</gmd:CI_ResponsibleParty>
+		</gmd:contact>
+		<gmd:dateStamp>
+			<gco:Date>2012-03-01</gco:Date>
+		</gmd:dateStamp>
+		<gmd:metadataStandardName>
+			<gco:CharacterString>CEOS IDN DIF</gco:CharacterString>
+		</gmd:metadataStandardName>
+		<gmd:metadataStandardVersion>
+			<gco:CharacterString>VERSION 9.8.2.2</gco:CharacterString>
+		</gmd:metadataStandardVersion>
+		<gmd:identificationInfo>
+			<gmd:MD_DataIdentification>
+				<gmd:citation>
+					<gmd:CI_Citation>
+						<gmd:title>
+							<gco:CharacterString>Global distribution of soil phosphorus retention potential</gco:CharacterString>
+						</gmd:title>
+						<gmd:alternateTitle>
+							<gco:CharacterString>Global distribution of soil phosphorus retention potential</gco:CharacterString>
+						</gmd:alternateTitle>
+						<gmd:date>
+							<gmd:CI_Date>
+								<gmd:date>
+									<gco:Date>2012-03-01</gco:Date>
+								</gmd:date>
+								<gmd:dateType>
+									<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+								</gmd:dateType>
+							</gmd:CI_Date>
+						</gmd:date>
+						<gmd:edition>
+							<gco:CharacterString>ver. 1.0</gco:CharacterString>
+						</gmd:edition>
+						<gmd:identifier>
+							<gmd:MD_Identifier>
+								<gmd:code>
+									<gco:CharacterString>ISRIC_SOTWIScaf</gco:CharacterString>
+								</gmd:code>
+							</gmd:MD_Identifier>
+						</gmd:identifier>
+						<gmd:citedResponsibleParty>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>BATJES, NIELSH.</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:contactInfo>
+									<gmd:CI_Contact>
+										<gmd:phone>
+											<gmd:CI_Telephone>
+												<gmd:voice>
+													<gco:CharacterString>+31-317-471700</gco:CharacterString>
+												</gmd:voice>
+											</gmd:CI_Telephone>
+										</gmd:phone>
+										<gmd:address>
+											<gmd:CI_Address>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>ISRIC - World Soil Information (World Data Center for Soils)</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>P.O. Box 353</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:city>
+													<gco:CharacterString>Wageningen</gco:CharacterString>
+												</gmd:city>
+												<gmd:postalCode>
+													<gco:CharacterString>6700 AJ</gco:CharacterString>
+												</gmd:postalCode>
+												<gmd:country>
+													<gco:CharacterString>The Netherlands</gco:CharacterString>
+												</gmd:country>
+												<gmd:electronicMailAddress>
+													<gco:CharacterString>niels.batjes@wur.nl</gco:CharacterString>
+												</gmd:electronicMailAddress>
+											</gmd:CI_Address>
+										</gmd:address>
+									</gmd:CI_Contact>
+								</gmd:contactInfo>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="principalInvestigator">principalInvestigator</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:citedResponsibleParty>
+						<gmd:citedResponsibleParty>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>Niels H. Batjes</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:citedResponsibleParty>
+						<gmd:citedResponsibleParty>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>ISRIC - World Soil Information</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:citedResponsibleParty>
+						<gmd:citedResponsibleParty>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>ISRIC - World Soil Information</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="publisher">publisher</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:citedResponsibleParty>
+						<gmd:otherCitationDetails>
+							<gco:CharacterString>http://www.isric.org/sites/default/files/ISRIC_Report_2011_06.pdf</gco:CharacterString>
+						</gmd:otherCitationDetails>
+					</gmd:CI_Citation>
+				</gmd:citation>
+				<gmd:abstract>
+					<gco:CharacterString>Limited availability of P in soils to crops may be due to deficiency and/or severe P retention. Earlier studies that drew on large soil profile databases have indicated that it is not (yet) feasible to present meaningful values for ?plant-available? soil P, obtained according to comparable analytical methods, that may be linked to soil geographical databases derived from 1:5 million scale FAO Digital Soil Map of the World, such as the 5 x 5 arc-minute version of the ISRIC-WISE database. Therefore, an alternative solution for studying possible crop responses to fertilizer-P applied to soils, at a broad scale, was sought. The approach described in this report considers the inherent capacity of soils to retain phosphorus (P retention), in various forms. Main controlling factors of P retention processes, at the broad scale under consideration, are considered to be pH, soil mineralogy, and clay content. First, derived values for these properties were used to rate the inferred capacity for P retention of the component soil units of each map unit (or grid cell) using four classes (i.e., Low, Moderate, High, and Very High). Subsequently, the overall soil phosphorus retention potential was assessed for each mapping unit, taking into account the P-ratings and relative proportion of each component soil unit. Each P retention class has been assigned to a likely fertilizer P recovery fraction, derived from the literature, thereby permitting spatially more detailed, integrated model-based studies of environmental sustainability and agricultural production at the global and continental level (&amp;amp;lt; 1:5 million). Nonetheless, uncertainties remain high; the present analysis provides an approximation of world soil phosphorus retention potential.	  [ This document was provided by NASA's Global Change Master Directory.       For more information on the source of this metadata please visit      http://gcmd.nasa.gov/r/geoss/[GCMD]ISRIC_Global_distribution_of_soil_phosphorus_retention_potential ]</gco:CharacterString>
+				</gmd:abstract>
+				<gmd:purpose>
+					<gco:CharacterString>Limited availability of P in soils to crops may be due to deficiency and/or severe P retention. The class for P-retention potential for a given soil unit, respectively mapping unit, can be coupled to recovery rates for fertilizer P derived from the literature. In combination with auxiliary knowledge/databases on climate, input levels, P-fertilizer application history, and crop-specific soil requirements, this information can serve as input to crop production models. As such, results of this study should permit spatially more detailed, integrated model-based studies of environmental sustainability and agricultural production. Within the current project on ?Resource scarcity and distribution in a changing world,? the initial focus will be on model applications for Africa, but applied tools are principally developed for global usage. Global modelers may also use the data for broad scale analyses.</gco:CharacterString>
+				</gmd:purpose>
+				<gmd:status>
+					<gmd:MD_ProgressCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="completed">completed</gmd:MD_ProgressCode>
+				</gmd:status>
+				<gmd:pointOfContact>
+					<gmd:CI_ResponsibleParty>
+						<gmd:individualName>
+							<gco:CharacterString>BATJES, NIELSH.</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:organisationName>
+							<gco:CharacterString>WDC/SOILS, ISRIC, WAGENINGEN &gt; World Data Center for Soils, ISRIC - World Soil Information, Wageningen</gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:positionName>
+							<gco:CharacterString>DATA CENTER CONTACT</gco:CharacterString>
+						</gmd:positionName>
+						<gmd:contactInfo>
+							<gmd:CI_Contact>
+								<gmd:phone>
+									<gmd:CI_Telephone>
+										<gmd:voice>
+											<gco:CharacterString>+31-317-471700</gco:CharacterString>
+										</gmd:voice>
+									</gmd:CI_Telephone>
+								</gmd:phone>
+								<gmd:address>
+									<gmd:CI_Address>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>ISRIC - World Soil Information (World Data Center for Soils)</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>P.O. Box 353</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:city>
+											<gco:CharacterString>Wageningen</gco:CharacterString>
+										</gmd:city>
+										<gmd:postalCode>
+											<gco:CharacterString>6700 AJ</gco:CharacterString>
+										</gmd:postalCode>
+										<gmd:country>
+											<gco:CharacterString>The Netherlands</gco:CharacterString>
+										</gmd:country>
+										<gmd:electronicMailAddress>
+											<gco:CharacterString>niels.batjes@wur.nl</gco:CharacterString>
+										</gmd:electronicMailAddress>
+									</gmd:CI_Address>
+								</gmd:address>
+								<gmd:onlineResource>
+									<gmd:CI_OnlineResource>
+										<gmd:linkage>
+											<gmd:URL>http://www.isric.org</gmd:URL>
+										</gmd:linkage>
+									</gmd:CI_OnlineResource>
+								</gmd:onlineResource>
+							</gmd:CI_Contact>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="resourceProvider">resourceProvider</gmd:CI_RoleCode>
+						</gmd:role>
+					</gmd:CI_ResponsibleParty>
+				</gmd:pointOfContact>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; SOILS &gt; PHOSPHORUS</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; SOILS &gt; SOIL CLASSIFICATION</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; SOILS &gt; SOIL FERTILITY</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; LAND SURFACE &gt; SOILS &gt; PHOSPHORUS</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; LAND SURFACE &gt; SOILS &gt; SOIL PH</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; LAND SURFACE &gt; SOILS</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>Science Keywords</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2008-02-05</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>secondary (derived) soil data</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>soil property estimates</gco:CharacterString>
+						</gmd:keyword>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>USA/NASA</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>IDN Nodes</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2007-04-01</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>GEOGRAPHIC REGION &gt; GLOBAL</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>Locations</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2009-12-22</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:resourceConstraints>
+					<gmd:MD_LegalConstraints>
+						<gmd:accessConstraints>
+							<gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
+						</gmd:accessConstraints>
+						<gmd:otherConstraints>
+							<gco:CharacterString>All rights reserved. Reproduction and dissemination for educational or non-commercial purposes are permitted without any prior written permission provided the source is fully acknowledged. Reproduction of materials for resale or other commercial purposes is prohibited without prior written permission from ISRIC. Applications for such permission should be addressed to:       Director, ISRIC?World Soil Information      PO B0X 353      6700 AJ Wageningen      The Netherlands      E-mail: soil.isric@wur.nl</gco:CharacterString>
+						</gmd:otherConstraints>
+					</gmd:MD_LegalConstraints>
+				</gmd:resourceConstraints>
+				<gmd:resourceConstraints>
+					<gmd:MD_LegalConstraints>
+						<gmd:useConstraints>
+							<gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
+						</gmd:useConstraints>
+						<gmd:otherConstraints>
+							<gco:CharacterString>All rights reserved. Reproduction and dissemination for educational or non-commercial purposes are permitted without any prior written permission provided the source is fully acknowledged. Reproduction of materials for resale or other commercial purposes is prohibited without prior written permission from ISRIC. Applications for such permission should be addressed to:       Director, ISRIC?World Soil Information      PO B0X 353      6700 AJ Wageningen      The Netherlands      E-mail: soil.isric@wur.nl</gco:CharacterString>
+						</gmd:otherConstraints>
+					</gmd:MD_LegalConstraints>
+				</gmd:resourceConstraints>
+				<gmd:aggregationInfo>
+					<gmd:MD_AggregateInformation>
+						<gmd:aggregateDataSetName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>Global distribution of soil phosphorus retention</gco:CharacterString>
+								</gmd:title>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2011-06-01</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:identifier>
+									<gmd:MD_Identifier>
+										<gmd:code>
+											<gco:CharacterString>http://www.isric.org/sites/default/files/ISRIC_Report_2011_06.pdf</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:identifier>
+								<gmd:identifier>
+									<gmd:MD_Identifier>
+										<gmd:code>
+											<gco:CharacterString>Report Number Report 2011/06</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:identifier>
+								<gmd:citedResponsibleParty>
+									<gmd:CI_ResponsibleParty>
+										<gmd:individualName>
+											<gco:CharacterString>Batjes NH</gco:CharacterString>
+										</gmd:individualName>
+										<gmd:role>
+											<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author">author</gmd:CI_RoleCode>
+										</gmd:role>
+									</gmd:CI_ResponsibleParty>
+								</gmd:citedResponsibleParty>
+								<gmd:citedResponsibleParty>
+									<gmd:CI_ResponsibleParty>
+										<gmd:organisationName>
+											<gco:CharacterString>ISRIC - World Soil Information</gco:CharacterString>
+										</gmd:organisationName>
+										<gmd:contactInfo>
+											<gmd:CI_Contact>
+												<gmd:address>
+													<gmd:CI_Address>
+														<gmd:city>
+															<gco:CharacterString>Wageningen</gco:CharacterString>
+														</gmd:city>
+													</gmd:CI_Address>
+												</gmd:address>
+											</gmd:CI_Contact>
+										</gmd:contactInfo>
+										<gmd:role>
+											<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="publisher">publisher</gmd:CI_RoleCode>
+										</gmd:role>
+									</gmd:CI_ResponsibleParty>
+								</gmd:citedResponsibleParty>
+								<gmd:series>
+									<gmd:CI_Series>
+										<gmd:name>
+											<gco:CharacterString>ISRIC Reports</gco:CharacterString>
+										</gmd:name>
+										<gmd:page>
+											<gco:CharacterString>42</gco:CharacterString>
+										</gmd:page>
+									</gmd:CI_Series>
+								</gmd:series>
+							</gmd:CI_Citation>
+						</gmd:aggregateDataSetName>
+						<gmd:associationType>
+							<gmd:DS_AssociationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#DS_AssociationTypeCode" codeListValue="largerWorkCitation">largerWorkCitation</gmd:DS_AssociationTypeCode>
+						</gmd:associationType>
+					</gmd:MD_AggregateInformation>
+				</gmd:aggregationInfo>
+				<gmd:language>
+					<gco:CharacterString>eng</gco:CharacterString>
+				</gmd:language>
+				<gmd:characterSet>
+					<gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+				</gmd:characterSet>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>dataSetDataBase</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>geoscientific information</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>imagery/base maps/earth cover</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:extent>
+					<gmd:EX_Extent>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicBoundingBox>
+								<gmd:westBoundLongitude>
+									<gco:Decimal>-180.0</gco:Decimal>
+								</gmd:westBoundLongitude>
+								<gmd:eastBoundLongitude>
+									<gco:Decimal>180.0</gco:Decimal>
+								</gmd:eastBoundLongitude>
+								<gmd:southBoundLatitude>
+									<gco:Decimal>-90.0</gco:Decimal>
+								</gmd:southBoundLatitude>
+								<gmd:northBoundLatitude>
+									<gco:Decimal>90.0</gco:Decimal>
+								</gmd:northBoundLatitude>
+							</gmd:EX_GeographicBoundingBox>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>GEOGRAPHIC REGION &gt; GLOBAL</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:temporalElement>
+							<gmd:EX_TemporalExtent>
+								<gmd:extent>
+									<gml:TimePeriod gml:id="d3457e181">
+										<gml:begin>
+											<gml:TimeInstant gml:id="d3457e183">
+												<gml:timePosition>1950-01-01</gml:timePosition>
+											</gml:TimeInstant>
+										</gml:begin>
+										<gml:end>
+											<gml:TimeInstant gml:id="d3457e186">
+												<gml:timePosition>2011-01-01</gml:timePosition>
+											</gml:TimeInstant>
+										</gml:end>
+									</gml:TimePeriod>
+								</gmd:extent>
+							</gmd:EX_TemporalExtent>
+						</gmd:temporalElement>
+					</gmd:EX_Extent>
+				</gmd:extent>
+				<gmd:supplementalInformation>
+					<gco:CharacterString>Batjes NH 2011. Global distribution of soil phosphorus retention. Report 2011/06, Plant Research International (PRI), Wageningen UR, and ISRIC ? World Soil Information, Wageningen, 42 p. with dataset  http://www.isric.org/sites/default/files/ISRIC_Report_2011_06.pdf      Batjes NH      2011-06-01      Global distribution of soil phosphorus retention      ISRIC Reports      Report 2011/06      Wageningen      ISRIC - World Soil Information      42      http://www.isric.org/sites/default/files/ISRIC_Report_2011_06.pdf</gco:CharacterString>
+				</gmd:supplementalInformation>
+			</gmd:MD_DataIdentification>
+		</gmd:identificationInfo>
+		<gmd:distributionInfo>
+			<gmd:MD_Distribution>
+				<gmd:distributionFormat>
+					<gmd:MD_Format>
+						<gmd:name>
+							<gco:CharacterString>ArcGIS and MSAccess tables</gco:CharacterString>
+						</gmd:name>
+						<gmd:version gco:nilReason="missing">
+							<gco:CharacterString />
+						</gmd:version>
+					</gmd:MD_Format>
+				</gmd:distributionFormat>
+				<gmd:distributor>
+					<gmd:MD_Distributor>
+						<gmd:distributorContact>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>BATJES, NIELSH.</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:organisationName>
+									<gco:CharacterString>WDC/SOILS, ISRIC, WAGENINGEN &gt; World Data Center for Soils, ISRIC - World Soil Information, Wageningen</gco:CharacterString>
+								</gmd:organisationName>
+								<gmd:positionName>
+									<gco:CharacterString>DATA CENTER CONTACT</gco:CharacterString>
+								</gmd:positionName>
+								<gmd:contactInfo>
+									<gmd:CI_Contact>
+										<gmd:phone>
+											<gmd:CI_Telephone>
+												<gmd:voice>
+													<gco:CharacterString>+31-317-471700</gco:CharacterString>
+												</gmd:voice>
+											</gmd:CI_Telephone>
+										</gmd:phone>
+										<gmd:address>
+											<gmd:CI_Address>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>ISRIC - World Soil Information (World Data Center for Soils)</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>P.O. Box 353</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:city>
+													<gco:CharacterString>Wageningen</gco:CharacterString>
+												</gmd:city>
+												<gmd:postalCode>
+													<gco:CharacterString>6700 AJ</gco:CharacterString>
+												</gmd:postalCode>
+												<gmd:country>
+													<gco:CharacterString>The Netherlands</gco:CharacterString>
+												</gmd:country>
+												<gmd:electronicMailAddress>
+													<gco:CharacterString>niels.batjes@wur.nl</gco:CharacterString>
+												</gmd:electronicMailAddress>
+											</gmd:CI_Address>
+										</gmd:address>
+										<gmd:onlineResource>
+											<gmd:CI_OnlineResource>
+												<gmd:linkage>
+													<gmd:URL>http://www.isric.org</gmd:URL>
+												</gmd:linkage>
+											</gmd:CI_OnlineResource>
+										</gmd:onlineResource>
+									</gmd:CI_Contact>
+								</gmd:contactInfo>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor">distributor</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:distributorContact>
+						<gmd:distributionOrderProcess>
+							<gmd:MD_StandardOrderProcess>
+								<gmd:fees>
+									<gco:CharacterString>n/a</gco:CharacterString>
+								</gmd:fees>
+								<gmd:plannedAvailableDateTime>
+									<gco:DateTime>20111006T12:00:00</gco:DateTime>
+								</gmd:plannedAvailableDateTime>
+							</gmd:MD_StandardOrderProcess>
+						</gmd:distributionOrderProcess>
+					</gmd:MD_Distributor>
+				</gmd:distributor>
+				<gmd:transferOptions>
+					<gmd:MD_DigitalTransferOptions>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>http://www.isric.org/data/global-assessment-soil-phosphorus-retention-potential</gmd:URL>
+								</gmd:linkage>
+								<gmd:protocol>
+									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+								</gmd:protocol>
+								<gmd:name>
+									<gco:CharacterString>VIEW PROJECT HOME PAGE</gco:CharacterString>
+								</gmd:name>
+								<gmd:description>
+									<gco:CharacterString>View project home page; download ducomentation and (zipped) data set</gco:CharacterString>
+								</gmd:description>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>http://www.isric.org/sites/default/files/World_Prtet_13Sept2011.jpg?1316086568</gmd:URL>
+								</gmd:linkage>
+								<gmd:protocol>
+									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+								</gmd:protocol>
+								<gmd:name>
+									<gco:CharacterString>Multimedia Sample</gco:CharacterString>
+								</gmd:name>
+								<gmd:description>
+									<gco:CharacterString />
+								</gmd:description>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>http://www.isric.org/sites/default/files/private/datasets/Soil_Phosphorus_Retention_Potential_v1.zip</gmd:URL>
+								</gmd:linkage>
+								<gmd:protocol>
+									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+								</gmd:protocol>
+								<gmd:name>
+									<gco:CharacterString>Data Set Citation</gco:CharacterString>
+								</gmd:name>
+								<gmd:description>
+									<gco:CharacterString>Global distribution of soil phosphorus retention potential</gco:CharacterString>
+								</gmd:description>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+					</gmd:MD_DigitalTransferOptions>
+				</gmd:transferOptions>
+			</gmd:MD_Distribution>
+		</gmd:distributionInfo>
+		<gmd:dataQualityInfo>
+			<gmd:DQ_DataQuality>
+				<gmd:scope>
+					<gmd:DQ_Scope>
+						<gmd:level>
+							<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+						</gmd:level>
+					</gmd:DQ_Scope>
+				</gmd:scope>
+				<gmd:lineage>
+					<gmd:LI_Lineage>
+						<gmd:statement>
+							<gco:CharacterString>The data set's lineage is described in:      Batjes NH 2011. Global distribution of soil phosphorus retention. Report 2011/06, Plant Research International (PRI), Wageningen UR, and ISRIC ? World Soil Information, Wageningen, 42 p. with dataset http://www.isric.org/sites/default/files/ISRIC_Report_2011_06.pdf</gco:CharacterString>
+						</gmd:statement>
+					</gmd:LI_Lineage>
+				</gmd:lineage>
+			</gmd:DQ_DataQuality>
+		</gmd:dataQualityInfo>
+		<gmd:metadataConstraints>
+			<gmd:MD_LegalConstraints>
+				<gmd:useLimitation>
+					<gco:CharacterString>This metadata record is publicly available.</gco:CharacterString>
+				</gmd:useLimitation>
+			</gmd:MD_LegalConstraints>
+		</gmd:metadataConstraints>
+		<gmd:metadataMaintenance>
+			<gmd:MD_MaintenanceInformation>
+				<gmd:maintenanceAndUpdateFrequency>
+					<gmd:MD_MaintenanceFrequencyCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded">asNeeded</gmd:MD_MaintenanceFrequencyCode>
+				</gmd:maintenanceAndUpdateFrequency>
+			</gmd:MD_MaintenanceInformation>
+		</gmd:metadataMaintenance>
+</gvq:GVQ_Metadata>

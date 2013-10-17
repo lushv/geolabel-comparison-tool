@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gvq:GVQ_Metadata xmlns:updated19115="http://www.geoviqua.org/19115_updates" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gvq="http://www.geoviqua.org/QualityInformationModel/3.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmd19157="http://www.geoviqua.org/gmd19157" xsi:schemaLocation="http://www.geoviqua.org/QualityInformationModel/3.1 http://schemas.geoviqua.org/GVQ/3.1.0/GeoViQua_PQM_UQM.xsd http://www.uncertml.org/2.0 http://www.uncertml.org/uncertml.xsd">
+		<fileIdentifier>
+			<gco:CharacterString>b0106-88fd-11da-a88f-000d939bc5d8</gco:CharacterString>
+		</fileIdentifier>
+		<parentIdentifier>
+			<gco:CharacterString>UUID-28a86180-659d-4cbb-afa2-61961379c0de</gco:CharacterString>
+		</parentIdentifier>
+		<language>
+			<gco:CharacterString>en</gco:CharacterString>
+		</language>
+		<characterSet>
+			<MD_CharacterSetCode codeList="./resources/codeList.xml#MD_CharacterSetCode" codeListValue="utf8" />
+		</characterSet>
+		<contact>
+			<CI_ResponsibleParty>
+				<individualName>
+					<gco:CharacterString>GeoPortal Web Content Team</gco:CharacterString>
+				</individualName>
+				<organisationName>
+					<gco:CharacterString>GeoPortal Web Content Team</gco:CharacterString>
+				</organisationName>
+				<positionName>
+					<gco:CharacterString>Content Architect</gco:CharacterString>
+				</positionName>
+				<role>
+					<CI_RoleCode codeList="./resources/codeList.xml#CI_RoleCode" codeListValue="custodian" />
+				</role>
+			</CI_ResponsibleParty>
+		</contact>
+		<dateStamp>
+			<gco:DateTime>2012-05-28T15:48:28</gco:DateTime>
+		</dateStamp>
+		<metadataStandardName>
+			<gco:CharacterString>ISO 19115:2003/19139</gco:CharacterString>
+		</metadataStandardName>
+		<metadataStandardVersion>
+			<gco:CharacterString>1.0</gco:CharacterString>
+		</metadataStandardVersion>
+		<referenceSystemInfo>
+			<MD_ReferenceSystem />
+		</referenceSystemInfo>
+		<identificationInfo>
+			<MD_DataIdentification>
+				<citation>
+					<CI_Citation>
+						<title>
+							<gco:CharacterString>Land Cover Map 2000 (1km dominant subclass, GB)</gco:CharacterString>
+						</title>
+						<date>
+							<CI_Date>
+								<date>
+									<gco:DateTime>2012-05-28</gco:DateTime>
+								</date>
+								<dateType>
+									<CI_DateTypeCode codeList="./resources/codeList.xml#CI_DateTypeCode" codeListValue="creation" />
+								</dateType>
+							</CI_Date>
+						</date>
+					</CI_Citation>
+				</citation>
+				<abstract>
+					<gco:CharacterString>LCM2000 is a parcel-based thematic classification of satellite image data covering the entire United Kingdom. The map updates and substantially upgrades the Land Cover Map of Great Britain (LCMGB) 1990. Like the earlier LCMGB, LCM2000 is derived from a computer classification of satellite scenes obtained mainly from the Landsat sensor, but in addition to LCMGB, it also covers Northern Ireland, producing for the first time an all-UK dataset. It also incorporates information derived from other ancillary datasets. LCM2000 was classified using a hierarchical nomenclature corresponding to the Joint Nature Conservation Committee (JNCC) Broad Habitats, which encompasses the entire range of UK habitats. In addition, it recorded further detail where possible and incorporating land cover classes sought by other users. LCM2000 is produced in both vector and raster formats, with a number of different versions containing varying levels of detail and at different spatial resolutions.</gco:CharacterString>
+				</abstract>
+				<gmd:resourceConstraints>
+					<gmd:MD_LegalConstraints id="GDC">
+						<gmd:useLimitation>
+							<gco:CharacterString>geossdatacore</gco:CharacterString>
+						</gmd:useLimitation>
+					</gmd:MD_LegalConstraints>
+				</gmd:resourceConstraints>
+				<status>
+					<MD_ProgressCode codeList="./resources/codeList.xml#MD_ProgressCode" codeListValue="onGoing" />
+				</status>
+				<pointOfContact>
+					<CI_ResponsibleParty>
+						<individualName>
+							<gco:CharacterString />
+						</individualName>
+						<organisationName>
+							<gco:CharacterString>Centre for Ecology &amp; Hydrology</gco:CharacterString>
+						</organisationName>
+						<positionName>
+							<gco:CharacterString />
+						</positionName>
+						<contactInfo>
+							<CI_Contact>
+								<phone>
+									<CI_Telephone>
+										<voice>
+											<gco:CharacterString />
+										</voice>
+										<facsimile>
+											<gco:CharacterString />
+										</facsimile>
+									</CI_Telephone>
+								</phone>
+								<address>
+									<CI_Address>
+										<deliveryPoint>
+											<gco:CharacterString />
+										</deliveryPoint>
+										<city>
+											<gco:CharacterString />
+										</city>
+										<administrativeArea>
+											<gco:CharacterString />
+										</administrativeArea>
+										<postalCode>
+											<gco:CharacterString />
+										</postalCode>
+										<country>
+											<gco:CharacterString>United Kingdom</gco:CharacterString>
+										</country>
+										<electronicMailAddress>
+											<gco:CharacterString>enquiries@ceh.ac.uk</gco:CharacterString>
+										</electronicMailAddress>
+									</CI_Address>
+								</address>
+							</CI_Contact>
+						</contactInfo>
+						<role>
+							<CI_RoleCode codeList="./resources/codeList.xml#CI_RoleCode" codeListValue="resourceProvider" />
+						</role>
+					</CI_ResponsibleParty>
+				</pointOfContact>
+				<resourceMaintenance>
+					<MD_MaintenanceInformation>
+						<maintenanceAndUpdateFrequency>
+							<MD_MaintenanceFrequencyCode codeList="./resources/codeList.xml#MD_MaintenanceFrequencyCode" codeListValue="continual" />
+						</maintenanceAndUpdateFrequency>
+					</MD_MaintenanceInformation>
+				</resourceMaintenance>
+				<descriptiveKeywords>
+					<MD_Keywords>
+						<keyword>
+							<gco:CharacterString />
+						</keyword>
+					</MD_Keywords>
+				</descriptiveKeywords>
+				<descriptiveKeywords>
+					<MD_Keywords>
+						<keyword>
+							<gco:CharacterString>Agriculture</gco:CharacterString>
+						</keyword>
+						<keyword>
+							<gco:CharacterString>Biodiversity</gco:CharacterString>
+						</keyword>
+						<keyword>
+							<gco:CharacterString>Ecosystems</gco:CharacterString>
+						</keyword>
+						<keyword>
+							<gco:CharacterString>Water</gco:CharacterString>
+						</keyword>
+						<type>
+							<MD_KeywordTypeCode codeList="./resources/codeList.xml#MD_KeywordTypeCode" codeListValue="theme" />
+						</type>
+					</MD_Keywords>
+				</descriptiveKeywords>
+				<descriptiveKeywords>
+					<MD_Keywords>
+						<keyword>
+							<gco:CharacterString>Land use</gco:CharacterString>
+						</keyword>
+						<keyword>
+							<gco:CharacterString>Land Cover</gco:CharacterString>
+						</keyword>
+						<type>
+							<MD_KeywordTypeCode codeList="./resources/codeList.xml#MD_KeywordTypeCode" codeListValue="theme" />
+						</type>
+					</MD_Keywords>
+				</descriptiveKeywords>
+				<descriptiveKeywords>
+					<MD_Keywords>
+						<keyword>
+							<gco:CharacterString>dataSetDataBase</gco:CharacterString>
+						</keyword>
+						<keyword>
+							<gco:CharacterString>geossdatacore</gco:CharacterString>
+						</keyword>
+						<type>
+							<MD_KeywordTypeCode codeList="./resources/codeList.xml#MD_KeywordTypeCode" codeListValue="theme" />
+						</type>
+					</MD_Keywords>
+				</descriptiveKeywords>
+				<descriptiveKeywords>
+					<MD_Keywords>
+						<keyword>
+							<gco:CharacterString>World</gco:CharacterString>
+						</keyword>
+						<type>
+							<MD_KeywordTypeCode codeList="./resources/codeList.xml#MD_KeywordTypeCode" codeListValue="place" />
+						</type>
+					</MD_Keywords>
+				</descriptiveKeywords>
+				<language>
+					<gco:CharacterString>en</gco:CharacterString>
+				</language>
+				<characterSet>
+					<MD_CharacterSetCode codeList="./resources/codeList.xml#MD_CharacterSetCode" codeListValue="utf8" />
+				</characterSet>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>geossdatacore</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>feedRSSAlert</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<topicCategory>
+					<MD_TopicCategoryCode>datasets</MD_TopicCategoryCode>
+				</topicCategory>
+				<topicCategory>
+					<MD_TopicCategoryCode>geossDataCore</MD_TopicCategoryCode>
+				</topicCategory>
+				<extent>
+					<EX_Extent>
+						<geographicElement>
+							<EX_GeographicBoundingBox>
+								<westBoundLongitude>
+									<gco:Decimal>-180</gco:Decimal>
+								</westBoundLongitude>
+								<eastBoundLongitude>
+									<gco:Decimal>180</gco:Decimal>
+								</eastBoundLongitude>
+								<southBoundLatitude>
+									<gco:Decimal>-90</gco:Decimal>
+								</southBoundLatitude>
+								<northBoundLatitude>
+									<gco:Decimal>90</gco:Decimal>
+								</northBoundLatitude>
+							</EX_GeographicBoundingBox>
+						</geographicElement>
+					</EX_Extent>
+				</extent>
+			</MD_DataIdentification>
+		</identificationInfo>
+		<contentInfo />
+		<distributionInfo>
+			<MD_Distribution>
+				<transferOptions>
+					<MD_DigitalTransferOptions>
+						<unitsOfDistribution>
+							<gco:CharacterString />
+						</unitsOfDistribution>
+						<onLine>
+							<CI_OnlineResource>
+								<linkage>
+									<URL>http://data.ceh.ac.uk/metadata/abff8409-0995-48d2-9303-468e1a9fe3df</URL>
+								</linkage>
+								<protocol>
+									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+								</protocol>
+								<name>
+									<gco:CharacterString />
+								</name>
+								<description>
+									<gco:CharacterString>Land Cover Map 2000 (1km dominant subclass, GB)</gco:CharacterString>
+								</description>
+							</CI_OnlineResource>
+						</onLine>
+						<offLine>
+							<MD_Medium>
+								<mediumFormat>
+									<MD_MediumFormatCode codeList="./resources/codeList.xml#MD_MediumFormatCode" codeListValue="" />
+								</mediumFormat>
+							</MD_Medium>
+						</offLine>
+					</MD_DigitalTransferOptions>
+				</transferOptions>
+			</MD_Distribution>
+		</distributionInfo>
+		<metadataMaintenance>
+			<MD_MaintenanceInformation>
+				<maintenanceAndUpdateFrequency>
+					<MD_MaintenanceFrequencyCode codeList="./resources/codeList.xml#MD_MaintenanceFrequencyCode" codeListValue="continual" />
+				</maintenanceAndUpdateFrequency>
+			</MD_MaintenanceInformation>
+		</metadataMaintenance>
+</gvq:GVQ_Metadata>

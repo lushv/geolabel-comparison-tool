@@ -1,0 +1,1434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gvq:GVQ_Metadata xmlns:updated19115="http://www.geoviqua.org/19115_updates" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gvq="http://www.geoviqua.org/QualityInformationModel/3.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmd19157="http://www.geoviqua.org/gmd19157" xsi:schemaLocation="http://www.geoviqua.org/QualityInformationModel/3.1 http://schemas.geoviqua.org/GVQ/3.1.0/GeoViQua_PQM_UQM.xsd http://www.uncertml.org/2.0 http://www.uncertml.org/uncertml.xsd">
+		<gmd:fileIdentifier>
+			<gco:CharacterString>b0104-88fd-11da-a88f-000d939bc5d8</gco:CharacterString>
+		</gmd:fileIdentifier>
+		<gmd:parentIdentifier>
+			<gco:CharacterString>UUID-b2d227da-02ea-4711-a49f-59f707a4e300</gco:CharacterString>
+		</gmd:parentIdentifier>
+		<gmd:language>
+			<gco:CharacterString>eng</gco:CharacterString>
+		</gmd:language>
+		<gmd:characterSet>
+			<gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+		</gmd:characterSet>
+		<gmd:hierarchyLevel>
+			<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+		</gmd:hierarchyLevel>
+		<gmd:contact>
+			<gmd:CI_ResponsibleParty>
+				<gmd:individualName>
+					<gco:CharacterString>CIESIN METADATA ADMINISTRATION,</gco:CharacterString>
+				</gmd:individualName>
+				<gmd:contactInfo>
+					<gmd:CI_Contact>
+						<gmd:phone>
+							<gmd:CI_Telephone>
+								<gmd:voice>
+									<gco:CharacterString>+1 845-365-8988</gco:CharacterString>
+								</gmd:voice>
+								<gmd:facsimile>
+									<gco:CharacterString>+1 845-365-8922</gco:CharacterString>
+								</gmd:facsimile>
+							</gmd:CI_Telephone>
+						</gmd:phone>
+						<gmd:address>
+							<gmd:CI_Address>
+								<gmd:deliveryPoint>
+									<gco:CharacterString>61 Route 9W, P.O. Box 1000</gco:CharacterString>
+								</gmd:deliveryPoint>
+								<gmd:city>
+									<gco:CharacterString>Palisades</gco:CharacterString>
+								</gmd:city>
+								<gmd:administrativeArea>
+									<gco:CharacterString>New York</gco:CharacterString>
+								</gmd:administrativeArea>
+								<gmd:postalCode>
+									<gco:CharacterString>10964</gco:CharacterString>
+								</gmd:postalCode>
+								<gmd:country>
+									<gco:CharacterString>USA</gco:CharacterString>
+								</gmd:country>
+								<gmd:electronicMailAddress>
+									<gco:CharacterString>metadata@ciesin.columbia.edu</gco:CharacterString>
+								</gmd:electronicMailAddress>
+							</gmd:CI_Address>
+						</gmd:address>
+					</gmd:CI_Contact>
+				</gmd:contactInfo>
+				<gmd:role>
+					<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author">author</gmd:CI_RoleCode>
+				</gmd:role>
+			</gmd:CI_ResponsibleParty>
+		</gmd:contact>
+		<gmd:contact>
+			<gmd:CI_ResponsibleParty>
+				<gmd:organisationName>
+					<gco:CharacterString>GCMD</gco:CharacterString>
+				</gmd:organisationName>
+				<gmd:role>
+					<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+				</gmd:role>
+			</gmd:CI_ResponsibleParty>
+		</gmd:contact>
+		<gmd:dateStamp>
+			<gco:Date>2011-05-02</gco:Date>
+		</gmd:dateStamp>
+		<gmd:metadataStandardName>
+			<gco:CharacterString>CEOS IDN DIF</gco:CharacterString>
+		</gmd:metadataStandardName>
+		<gmd:metadataStandardVersion>
+			<gco:CharacterString>VERSION 9.8.4</gco:CharacterString>
+		</gmd:metadataStandardVersion>
+		<gmd:identificationInfo>
+			<gmd:MD_DataIdentification>
+				<gmd:citation>
+					<gmd:CI_Citation>
+						<gmd:title>
+							<gco:CharacterString>Global Agricultural Lands: Pastures, 2000</gco:CharacterString>
+						</gmd:title>
+						<gmd:alternateTitle>
+							<gco:CharacterString>Global Agricultural Lands: Pastures, 2000</gco:CharacterString>
+						</gmd:alternateTitle>
+						<gmd:date>
+							<gmd:CI_Date>
+								<gmd:date>
+									<gco:Date>2011-05-02</gco:Date>
+								</gmd:date>
+								<gmd:dateType>
+									<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+								</gmd:dateType>
+							</gmd:CI_Date>
+						</gmd:date>
+						<gmd:edition>
+							<gco:CharacterString>1.00</gco:CharacterString>
+						</gmd:edition>
+						<gmd:identifier>
+							<gmd:MD_Identifier>
+								<gmd:code>
+									<gco:CharacterString>CIESIN_SEDAC_AGLANDS_PAS2000</gco:CharacterString>
+								</gmd:code>
+							</gmd:MD_Identifier>
+						</gmd:identifier>
+						<gmd:identifier>
+							<gmd:MD_Identifier>
+								<gmd:code>
+									<gco:CharacterString>CIESIN_SEDAC_AGLANDS_PAS2000</gco:CharacterString>
+								</gmd:code>
+							</gmd:MD_Identifier>
+						</gmd:identifier>
+						<gmd:citedResponsibleParty>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>SEDAC USER SERVICES,</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:contactInfo>
+									<gmd:CI_Contact>
+										<gmd:phone>
+											<gmd:CI_Telephone>
+												<gmd:voice>
+													<gco:CharacterString>+1 845-365-8920</gco:CharacterString>
+												</gmd:voice>
+												<gmd:facsimile>
+													<gco:CharacterString>+1 845-365-8922</gco:CharacterString>
+												</gmd:facsimile>
+											</gmd:CI_Telephone>
+										</gmd:phone>
+										<gmd:address>
+											<gmd:CI_Address>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>61 Route 9W, P.O. Box 1000</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:city>
+													<gco:CharacterString>Palisades</gco:CharacterString>
+												</gmd:city>
+												<gmd:administrativeArea>
+													<gco:CharacterString>NY</gco:CharacterString>
+												</gmd:administrativeArea>
+												<gmd:postalCode>
+													<gco:CharacterString>10964</gco:CharacterString>
+												</gmd:postalCode>
+												<gmd:country>
+													<gco:CharacterString>USA</gco:CharacterString>
+												</gmd:country>
+												<gmd:electronicMailAddress>
+													<gco:CharacterString>ciesin.info@ciesin.columbia.edu</gco:CharacterString>
+												</gmd:electronicMailAddress>
+											</gmd:CI_Address>
+										</gmd:address>
+									</gmd:CI_Contact>
+								</gmd:contactInfo>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="processor">processor</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:citedResponsibleParty>
+						<gmd:citedResponsibleParty>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>Ramankutty, N., A.T. Evan, C. Monfreda, and  J.A. Foley</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:citedResponsibleParty>
+						<gmd:citedResponsibleParty>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>SEDAC</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:citedResponsibleParty>
+						<gmd:citedResponsibleParty>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>NASA Socioeconomic Data and Applications Center (SEDAC)</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="publisher">publisher</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:citedResponsibleParty>
+					</gmd:CI_Citation>
+				</gmd:citation>
+				<gmd:abstract>
+					<gco:CharacterString>The Global Pastures dataset represents the proportion of land areas used as pasture land (land used to support grazing animals) in the year 2000. Satellite data from Modetate Resolution Imaging Spectroradiometer (MODIS) and Satellite Pour l'Observation de la Terre (SPOT) Image Vegetation sensor were combined with agricultural inventory data to create a global data set. The visual presentation of this data demonstrates the extent to which human land use for agriculture has changed the Earth and in which areas this change is most intense. The data was compiled by Navin Ramankutty, et. al. (2008) and distributed by the Columbia University Center for International Earth Science Information Network (CIESIN).The global and regional data  in Geographic Tagged Image File Format (GeoTIFF) and ESRI GRID formats and maps in Portable Document Format (PDF) and Portable Network Graphics (PNG) formats are available from the NASA Socioeconomic Data and Applications Center (SEDAC).	  [ This document was provided by NASA's Global Change Master Directory.       For more information on the source of this metadata please visit      http://gcmd.nasa.gov/r/geoss/[GCMD]CIESIN_SEDAC_AGLANDS_PAS2000 ]</gco:CharacterString>
+				</gmd:abstract>
+				<gmd:resourceConstraints>
+					<gmd:MD_LegalConstraints id="GDC">
+						<gmd:useLimitation>
+							<gco:CharacterString>geossdatacore</gco:CharacterString>
+						</gmd:useLimitation>
+					</gmd:MD_LegalConstraints>
+				</gmd:resourceConstraints>
+				<gmd:purpose>
+					<gco:CharacterString>To provide data on the extent of pasturelands for research on human-environment interactions.</gco:CharacterString>
+				</gmd:purpose>
+				<gmd:status>
+					<gmd:MD_ProgressCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="completed">completed</gmd:MD_ProgressCode>
+				</gmd:status>
+				<gmd:pointOfContact>
+					<gmd:CI_ResponsibleParty>
+						<gmd:individualName>
+							<gco:CharacterString>SEDAC USER SERVICES,</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:organisationName>
+							<gco:CharacterString>SEDAC &gt; Socioeconomic Data and Applications Center</gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:positionName>
+							<gco:CharacterString>DATA CENTER CONTACT</gco:CharacterString>
+						</gmd:positionName>
+						<gmd:contactInfo>
+							<gmd:CI_Contact>
+								<gmd:phone>
+									<gmd:CI_Telephone>
+										<gmd:voice>
+											<gco:CharacterString>+1 845-365-8920</gco:CharacterString>
+										</gmd:voice>
+										<gmd:facsimile>
+											<gco:CharacterString>+1 845-365-8922</gco:CharacterString>
+										</gmd:facsimile>
+									</gmd:CI_Telephone>
+								</gmd:phone>
+								<gmd:address>
+									<gmd:CI_Address>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>61 Route 9W, P.O. Box 1000</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:city>
+											<gco:CharacterString>Palisades</gco:CharacterString>
+										</gmd:city>
+										<gmd:administrativeArea>
+											<gco:CharacterString>NY</gco:CharacterString>
+										</gmd:administrativeArea>
+										<gmd:postalCode>
+											<gco:CharacterString>10964</gco:CharacterString>
+										</gmd:postalCode>
+										<gmd:country>
+											<gco:CharacterString>USA</gco:CharacterString>
+										</gmd:country>
+										<gmd:electronicMailAddress>
+											<gco:CharacterString>ciesin.info@ciesin.columbia.edu</gco:CharacterString>
+										</gmd:electronicMailAddress>
+									</gmd:CI_Address>
+								</gmd:address>
+								<gmd:onlineResource>
+									<gmd:CI_OnlineResource>
+										<gmd:linkage>
+											<gmd:URL>http://sedac.ciesin.columbia.edu/</gmd:URL>
+										</gmd:linkage>
+									</gmd:CI_OnlineResource>
+								</gmd:onlineResource>
+							</gmd:CI_Contact>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="resourceProvider">resourceProvider</gmd:CI_RoleCode>
+						</gmd:role>
+					</gmd:CI_ResponsibleParty>
+				</gmd:pointOfContact>
+				<gmd:pointOfContact>
+					<gmd:CI_ResponsibleParty>
+						<gmd:individualName>
+							<gco:CharacterString>CHEN, ROBERT</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:organisationName>
+							<gco:CharacterString>WDC/HIE, PALISADES &gt; World Data Center for Human Interactions in the Environment</gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:positionName>
+							<gco:CharacterString>DATA CENTER CONTACT</gco:CharacterString>
+						</gmd:positionName>
+						<gmd:contactInfo>
+							<gmd:CI_Contact>
+								<gmd:phone>
+									<gmd:CI_Telephone>
+										<gmd:voice>
+											<gco:CharacterString>1-845-365-8952</gco:CharacterString>
+										</gmd:voice>
+										<gmd:facsimile>
+											<gco:CharacterString>1-845-365-8922</gco:CharacterString>
+										</gmd:facsimile>
+									</gmd:CI_Telephone>
+								</gmd:phone>
+								<gmd:address>
+									<gmd:CI_Address>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>WDC for Human Interactions in the Environment</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>CIESIN/Columbia University</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>P. O. Box 1000</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>61 Route 9W</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:city>
+											<gco:CharacterString>Palisades</gco:CharacterString>
+										</gmd:city>
+										<gmd:administrativeArea>
+											<gco:CharacterString>NY</gco:CharacterString>
+										</gmd:administrativeArea>
+										<gmd:postalCode>
+											<gco:CharacterString>10964</gco:CharacterString>
+										</gmd:postalCode>
+										<gmd:country>
+											<gco:CharacterString>USA</gco:CharacterString>
+										</gmd:country>
+										<gmd:electronicMailAddress>
+											<gco:CharacterString>bchen@ciesin.columbia.edu</gco:CharacterString>
+										</gmd:electronicMailAddress>
+									</gmd:CI_Address>
+								</gmd:address>
+								<gmd:onlineResource>
+									<gmd:CI_OnlineResource>
+										<gmd:linkage>
+											<gmd:URL>http://sedac.ciesin.columbia.edu/wdc/</gmd:URL>
+										</gmd:linkage>
+									</gmd:CI_OnlineResource>
+								</gmd:onlineResource>
+							</gmd:CI_Contact>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="resourceProvider">resourceProvider</gmd:CI_RoleCode>
+						</gmd:role>
+					</gmd:CI_ResponsibleParty>
+				</gmd:pointOfContact>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; TERRESTRIAL ECOSYSTEMS &gt; GRASSLANDS</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>Science Keywords</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2008-02-05</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>CIESIN &gt; Agriculture and Food Security &gt; Agricultural Production &gt; Crop Production</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>CIESIN &gt; Environmental Protection &gt; Land Use &gt; Agricultural Use</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>Pasture</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>MODIS</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>SPOT</gco:CharacterString>
+						</gmd:keyword>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>EOSDIS &gt; Earth Observing System Data Information System</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>ESIP &gt; Earth Science Information Partners Program</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>AGLANDS &gt; Agricultural Lands</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>Projects</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2009-06-10</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>USA/CIESIN</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>ECHO</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>IDN Nodes</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2007-04-01</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>CONTINENT &gt; AFRICA</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>CONTINENT &gt; ASIA</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>GEOGRAPHIC REGION &gt; OCEANIA</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>CONTINENT &gt; EUROPE</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>CONTINENT &gt; NORTH AMERICA</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>GEOGRAPHIC REGION &gt; EQUATORIAL</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>GEOGRAPHIC REGION &gt; GLOBAL</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>GEOGRAPHIC REGION &gt; MID-LATITUDE</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>GEOGRAPHIC REGION &gt; POLAR</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>CONTINENT &gt; SOUTH AMERICA</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>Locations</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2009-12-22</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>geossDataCore</gco:CharacterString>
+						</gmd:keyword>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>geossNoMonetaryCharge</gco:CharacterString>
+						</gmd:keyword>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:resourceConstraints>
+					<gmd:MD_LegalConstraints>
+						<gmd:accessConstraints>
+							<gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
+						</gmd:accessConstraints>
+						<gmd:otherConstraints>
+							<gco:CharacterString>None</gco:CharacterString>
+						</gmd:otherConstraints>
+					</gmd:MD_LegalConstraints>
+				</gmd:resourceConstraints>
+				<gmd:resourceConstraints>
+					<gmd:MD_LegalConstraints>
+						<gmd:useConstraints>
+							<gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
+						</gmd:useConstraints>
+						<gmd:otherConstraints>
+							<gco:CharacterString>Global Biogeochemical Cycles Journal (GBCJ) and Trustees of Columbia University in the City of New York hold the copyright of this dataset. Users are prohibited from any commercial, non-free resale, or redistribution without explicit written permission from GBCJ or CIESIN. Users should acknowledge GBCJ and CIESIN as the source used in the creation of any reports, publications, new data sets, derived products, or services resulting from the use of this data set. GBCJ or CIESIN also request reprints of any publications and notification of any redistributing efforts.</gco:CharacterString>
+						</gmd:otherConstraints>
+					</gmd:MD_LegalConstraints>
+				</gmd:resourceConstraints>
+				<gmd:aggregationInfo>
+					<gmd:MD_AggregateInformation>
+						<gmd:aggregateDataSetName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>Global Agricultural Lands: Croplands, 2000</gco:CharacterString>
+								</gmd:title>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2010</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:identifier>
+									<gmd:MD_Identifier>
+										<gmd:code>
+											<gco:CharacterString>http://sedac.ciesin.columbia.edu/data/set/aglands-croplands-2000</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:identifier>
+								<gmd:citedResponsibleParty>
+									<gmd:CI_ResponsibleParty>
+										<gmd:individualName>
+											<gco:CharacterString>Ramankutty, N., A.T. Evan, C. Monfreda, and  J.A. Foley</gco:CharacterString>
+										</gmd:individualName>
+										<gmd:role>
+											<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author">author</gmd:CI_RoleCode>
+										</gmd:role>
+									</gmd:CI_ResponsibleParty>
+								</gmd:citedResponsibleParty>
+								<gmd:citedResponsibleParty>
+									<gmd:CI_ResponsibleParty>
+										<gmd:organisationName>
+											<gco:CharacterString>NASA Socioeconomic Data and Applications Center (SEDAC)</gco:CharacterString>
+										</gmd:organisationName>
+										<gmd:contactInfo>
+											<gmd:CI_Contact>
+												<gmd:address>
+													<gmd:CI_Address>
+														<gmd:city>
+															<gco:CharacterString>Palisades, NY</gco:CharacterString>
+														</gmd:city>
+													</gmd:CI_Address>
+												</gmd:address>
+											</gmd:CI_Contact>
+										</gmd:contactInfo>
+										<gmd:role>
+											<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="publisher">publisher</gmd:CI_RoleCode>
+										</gmd:role>
+									</gmd:CI_ResponsibleParty>
+								</gmd:citedResponsibleParty>
+							</gmd:CI_Citation>
+						</gmd:aggregateDataSetName>
+						<gmd:associationType>
+							<gmd:DS_AssociationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#DS_AssociationTypeCode" codeListValue="largerWorkCitation">largerWorkCitation</gmd:DS_AssociationTypeCode>
+						</gmd:associationType>
+					</gmd:MD_AggregateInformation>
+				</gmd:aggregationInfo>
+				<gmd:language>
+					<gco:CharacterString>eng</gco:CharacterString>
+				</gmd:language>
+				<gmd:characterSet>
+					<gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+				</gmd:characterSet>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>geossdatacore</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>observingSystemSensorNetwork</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>farming</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>imagery/base maps/earth cover</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:extent>
+					<gmd:EX_Extent>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicBoundingBox>
+								<gmd:westBoundLongitude>
+									<gco:Decimal>-180.0</gco:Decimal>
+								</gmd:westBoundLongitude>
+								<gmd:eastBoundLongitude>
+									<gco:Decimal>180.0</gco:Decimal>
+								</gmd:eastBoundLongitude>
+								<gmd:southBoundLatitude>
+									<gco:Decimal>-90.0</gco:Decimal>
+								</gmd:southBoundLatitude>
+								<gmd:northBoundLatitude>
+									<gco:Decimal>90.0</gco:Decimal>
+								</gmd:northBoundLatitude>
+							</gmd:EX_GeographicBoundingBox>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>CONTINENT &gt; AFRICA</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>CONTINENT &gt; ASIA</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>GEOGRAPHIC REGION &gt; OCEANIA</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>CONTINENT &gt; EUROPE</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>CONTINENT &gt; NORTH AMERICA</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>GEOGRAPHIC REGION &gt; EQUATORIAL</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>GEOGRAPHIC REGION &gt; GLOBAL</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>GEOGRAPHIC REGION &gt; MID-LATITUDE</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>GEOGRAPHIC REGION &gt; POLAR</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>CONTINENT &gt; SOUTH AMERICA</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:temporalElement>
+							<gmd:EX_TemporalExtent>
+								<gmd:extent>
+									<gml:TimePeriod gml:id="d7149e149">
+										<gml:begin>
+											<gml:TimeInstant gml:id="d7149e151">
+												<gml:timePosition>2000-01-01</gml:timePosition>
+											</gml:TimeInstant>
+										</gml:begin>
+										<gml:end>
+											<gml:TimeInstant gml:id="d7149e154">
+												<gml:timePosition>2000-01-01</gml:timePosition>
+											</gml:TimeInstant>
+										</gml:end>
+									</gml:TimePeriod>
+								</gmd:extent>
+							</gmd:EX_TemporalExtent>
+						</gmd:temporalElement>
+					</gmd:EX_Extent>
+				</gmd:extent>
+				<gmd:supplementalInformation>
+					<gco:CharacterString>Ramankutty, N., A.T. Evan, C. Monfreda, and  J.A. Foley      2010      Global Agricultural Lands: Croplands, 2000      Palisades, NY      NASA Socioeconomic Data and Applications Center (SEDAC)      http://sedac.ciesin.columbia.edu/data/set/aglands-croplands-2000</gco:CharacterString>
+				</gmd:supplementalInformation>
+			</gmd:MD_DataIdentification>
+		</gmd:identificationInfo>
+		<gmd:distributionInfo>
+			<gmd:MD_Distribution>
+				<gmd:distributionFormat>
+					<gmd:MD_Format>
+						<gmd:name>
+							<gco:CharacterString>GeoTiff</gco:CharacterString>
+						</gmd:name>
+						<gmd:version gco:nilReason="missing">
+							<gco:CharacterString />
+						</gmd:version>
+					</gmd:MD_Format>
+				</gmd:distributionFormat>
+				<gmd:distributionFormat>
+					<gmd:MD_Format>
+						<gmd:name>
+							<gco:CharacterString>ESRI Grid</gco:CharacterString>
+						</gmd:name>
+						<gmd:version gco:nilReason="missing">
+							<gco:CharacterString />
+						</gmd:version>
+					</gmd:MD_Format>
+				</gmd:distributionFormat>
+				<gmd:distributionFormat>
+					<gmd:MD_Format>
+						<gmd:name>
+							<gco:CharacterString>PNG</gco:CharacterString>
+						</gmd:name>
+						<gmd:version gco:nilReason="missing">
+							<gco:CharacterString />
+						</gmd:version>
+					</gmd:MD_Format>
+				</gmd:distributionFormat>
+				<gmd:distributionFormat>
+					<gmd:MD_Format>
+						<gmd:name>
+							<gco:CharacterString>PDF</gco:CharacterString>
+						</gmd:name>
+						<gmd:version gco:nilReason="missing">
+							<gco:CharacterString />
+						</gmd:version>
+					</gmd:MD_Format>
+				</gmd:distributionFormat>
+				<gmd:distributor>
+					<gmd:MD_Distributor>
+						<gmd:distributorContact>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>SEDAC USER SERVICES,</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:organisationName>
+									<gco:CharacterString>SEDAC &gt; Socioeconomic Data and Applications Center</gco:CharacterString>
+								</gmd:organisationName>
+								<gmd:positionName>
+									<gco:CharacterString>DATA CENTER CONTACT</gco:CharacterString>
+								</gmd:positionName>
+								<gmd:contactInfo>
+									<gmd:CI_Contact>
+										<gmd:phone>
+											<gmd:CI_Telephone>
+												<gmd:voice>
+													<gco:CharacterString>+1 845-365-8920</gco:CharacterString>
+												</gmd:voice>
+												<gmd:facsimile>
+													<gco:CharacterString>+1 845-365-8922</gco:CharacterString>
+												</gmd:facsimile>
+											</gmd:CI_Telephone>
+										</gmd:phone>
+										<gmd:address>
+											<gmd:CI_Address>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>61 Route 9W, P.O. Box 1000</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:city>
+													<gco:CharacterString>Palisades</gco:CharacterString>
+												</gmd:city>
+												<gmd:administrativeArea>
+													<gco:CharacterString>NY</gco:CharacterString>
+												</gmd:administrativeArea>
+												<gmd:postalCode>
+													<gco:CharacterString>10964</gco:CharacterString>
+												</gmd:postalCode>
+												<gmd:country>
+													<gco:CharacterString>USA</gco:CharacterString>
+												</gmd:country>
+												<gmd:electronicMailAddress>
+													<gco:CharacterString>ciesin.info@ciesin.columbia.edu</gco:CharacterString>
+												</gmd:electronicMailAddress>
+											</gmd:CI_Address>
+										</gmd:address>
+										<gmd:onlineResource>
+											<gmd:CI_OnlineResource>
+												<gmd:linkage>
+													<gmd:URL>http://sedac.ciesin.columbia.edu/</gmd:URL>
+												</gmd:linkage>
+											</gmd:CI_OnlineResource>
+										</gmd:onlineResource>
+									</gmd:CI_Contact>
+								</gmd:contactInfo>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor">distributor</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:distributorContact>
+						<gmd:distributionOrderProcess>
+							<gmd:MD_StandardOrderProcess>
+								<gmd:fees>
+									<gco:CharacterString>0</gco:CharacterString>
+								</gmd:fees>
+								<gmd:plannedAvailableDateTime>
+									<gco:DateTime>2010T12:00:00</gco:DateTime>
+								</gmd:plannedAvailableDateTime>
+							</gmd:MD_StandardOrderProcess>
+						</gmd:distributionOrderProcess>
+						<gmd:distributionOrderProcess>
+							<gmd:MD_StandardOrderProcess>
+								<gmd:fees>
+									<gco:CharacterString>0</gco:CharacterString>
+								</gmd:fees>
+								<gmd:plannedAvailableDateTime>
+									<gco:DateTime>2010T12:00:00</gco:DateTime>
+								</gmd:plannedAvailableDateTime>
+							</gmd:MD_StandardOrderProcess>
+						</gmd:distributionOrderProcess>
+						<gmd:distributionOrderProcess>
+							<gmd:MD_StandardOrderProcess>
+								<gmd:fees>
+									<gco:CharacterString>0</gco:CharacterString>
+								</gmd:fees>
+								<gmd:plannedAvailableDateTime>
+									<gco:DateTime>2010T12:00:00</gco:DateTime>
+								</gmd:plannedAvailableDateTime>
+							</gmd:MD_StandardOrderProcess>
+						</gmd:distributionOrderProcess>
+						<gmd:distributionOrderProcess>
+							<gmd:MD_StandardOrderProcess>
+								<gmd:fees>
+									<gco:CharacterString>0</gco:CharacterString>
+								</gmd:fees>
+								<gmd:plannedAvailableDateTime>
+									<gco:DateTime>2010T12:00:00</gco:DateTime>
+								</gmd:plannedAvailableDateTime>
+							</gmd:MD_StandardOrderProcess>
+						</gmd:distributionOrderProcess>
+					</gmd:MD_Distributor>
+				</gmd:distributor>
+				<gmd:distributor>
+					<gmd:MD_Distributor>
+						<gmd:distributorContact>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>CHEN, ROBERT</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:organisationName>
+									<gco:CharacterString>WDC/HIE, PALISADES &gt; World Data Center for Human Interactions in the Environment</gco:CharacterString>
+								</gmd:organisationName>
+								<gmd:positionName>
+									<gco:CharacterString>DATA CENTER CONTACT</gco:CharacterString>
+								</gmd:positionName>
+								<gmd:contactInfo>
+									<gmd:CI_Contact>
+										<gmd:phone>
+											<gmd:CI_Telephone>
+												<gmd:voice>
+													<gco:CharacterString>1-845-365-8952</gco:CharacterString>
+												</gmd:voice>
+												<gmd:facsimile>
+													<gco:CharacterString>1-845-365-8922</gco:CharacterString>
+												</gmd:facsimile>
+											</gmd:CI_Telephone>
+										</gmd:phone>
+										<gmd:address>
+											<gmd:CI_Address>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>WDC for Human Interactions in the Environment</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>CIESIN/Columbia University</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>P. O. Box 1000</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>61 Route 9W</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:city>
+													<gco:CharacterString>Palisades</gco:CharacterString>
+												</gmd:city>
+												<gmd:administrativeArea>
+													<gco:CharacterString>NY</gco:CharacterString>
+												</gmd:administrativeArea>
+												<gmd:postalCode>
+													<gco:CharacterString>10964</gco:CharacterString>
+												</gmd:postalCode>
+												<gmd:country>
+													<gco:CharacterString>USA</gco:CharacterString>
+												</gmd:country>
+												<gmd:electronicMailAddress>
+													<gco:CharacterString>bchen@ciesin.columbia.edu</gco:CharacterString>
+												</gmd:electronicMailAddress>
+											</gmd:CI_Address>
+										</gmd:address>
+										<gmd:onlineResource>
+											<gmd:CI_OnlineResource>
+												<gmd:linkage>
+													<gmd:URL>http://sedac.ciesin.columbia.edu/wdc/</gmd:URL>
+												</gmd:linkage>
+											</gmd:CI_OnlineResource>
+										</gmd:onlineResource>
+									</gmd:CI_Contact>
+								</gmd:contactInfo>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor">distributor</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:distributorContact>
+						<gmd:distributionOrderProcess>
+							<gmd:MD_StandardOrderProcess>
+								<gmd:fees>
+									<gco:CharacterString>0</gco:CharacterString>
+								</gmd:fees>
+								<gmd:plannedAvailableDateTime>
+									<gco:DateTime>2010T12:00:00</gco:DateTime>
+								</gmd:plannedAvailableDateTime>
+							</gmd:MD_StandardOrderProcess>
+						</gmd:distributionOrderProcess>
+						<gmd:distributionOrderProcess>
+							<gmd:MD_StandardOrderProcess>
+								<gmd:fees>
+									<gco:CharacterString>0</gco:CharacterString>
+								</gmd:fees>
+								<gmd:plannedAvailableDateTime>
+									<gco:DateTime>2010T12:00:00</gco:DateTime>
+								</gmd:plannedAvailableDateTime>
+							</gmd:MD_StandardOrderProcess>
+						</gmd:distributionOrderProcess>
+						<gmd:distributionOrderProcess>
+							<gmd:MD_StandardOrderProcess>
+								<gmd:fees>
+									<gco:CharacterString>0</gco:CharacterString>
+								</gmd:fees>
+								<gmd:plannedAvailableDateTime>
+									<gco:DateTime>2010T12:00:00</gco:DateTime>
+								</gmd:plannedAvailableDateTime>
+							</gmd:MD_StandardOrderProcess>
+						</gmd:distributionOrderProcess>
+						<gmd:distributionOrderProcess>
+							<gmd:MD_StandardOrderProcess>
+								<gmd:fees>
+									<gco:CharacterString>0</gco:CharacterString>
+								</gmd:fees>
+								<gmd:plannedAvailableDateTime>
+									<gco:DateTime>2010T12:00:00</gco:DateTime>
+								</gmd:plannedAvailableDateTime>
+							</gmd:MD_StandardOrderProcess>
+						</gmd:distributionOrderProcess>
+					</gmd:MD_Distributor>
+				</gmd:distributor>
+				<gmd:transferOptions>
+					<gmd:MD_DigitalTransferOptions>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>http://reverb.echo.nasa.gov/reverb/#utf8=%E2%9C%93&amp;spatial_map=satellite&amp;spatial_type=rectangle&amp;keywords=CIESIN_SEDAC_AGLANDS_PAS2000</gmd:URL>
+								</gmd:linkage>
+								<gmd:protocol>
+									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+								</gmd:protocol>
+								<gmd:name>
+									<gco:CharacterString>GET DATA &gt; ECHO</gco:CharacterString>
+								</gmd:name>
+								<gmd:description>
+									<gco:CharacterString>Refine your granule search with ECHO's next generation Earth Science discovery tool (Reverb) using information from this record.</gco:CharacterString>
+								</gmd:description>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>http://sedac.ciesin.columbia.edu/data/set/aglands-pastures-2000/data-download</gmd:URL>
+								</gmd:linkage>
+								<gmd:protocol>
+									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+								</gmd:protocol>
+								<gmd:name>
+									<gco:CharacterString>GET DATA</gco:CharacterString>
+								</gmd:name>
+								<gmd:description>
+									<gco:CharacterString>Data download page.</gco:CharacterString>
+								</gmd:description>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>http://reverb.echo.nasa.gov/reverb/#utf8=%E2%9C%93&amp;spatial_map=satellite&amp;spatial_type=rectangle&amp;keywords=CIESIN_SEDAC_AGLANDS_PAS2000</gmd:URL>
+								</gmd:linkage>
+								<gmd:protocol>
+									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+								</gmd:protocol>
+								<gmd:name>
+									<gco:CharacterString>GET DATA</gco:CharacterString>
+								</gmd:name>
+								<gmd:description>
+									<gco:CharacterString>Refine your granule search with ECHO's next generation Earth Science discovery tool (Reverb) using information from this record.</gco:CharacterString>
+								</gmd:description>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>http://sedac.ciesin.columbia.edu/data/set/aglands-pastures-2000/maps</gmd:URL>
+								</gmd:linkage>
+								<gmd:protocol>
+									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+								</gmd:protocol>
+								<gmd:name>
+									<gco:CharacterString>GET RELATED VISUALIZATION</gco:CharacterString>
+								</gmd:name>
+								<gmd:description>
+									<gco:CharacterString>Maps in PDF and PNG formats.</gco:CharacterString>
+								</gmd:description>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>http://sedac.ciesin.columbia.edu/data/set/aglands-pastures-2000</gmd:URL>
+								</gmd:linkage>
+								<gmd:protocol>
+									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+								</gmd:protocol>
+								<gmd:name>
+									<gco:CharacterString>Data Set Citation</gco:CharacterString>
+								</gmd:name>
+								<gmd:description>
+									<gco:CharacterString>Global Agricultural Lands: Pastures, 2000</gco:CharacterString>
+								</gmd:description>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+					</gmd:MD_DigitalTransferOptions>
+				</gmd:transferOptions>
+			</gmd:MD_Distribution>
+		</gmd:distributionInfo>
+		<gmd:dataQualityInfo>
+			<gmd:DQ_DataQuality>
+				<gmd:scope>
+					<gmd:DQ_Scope>
+						<gmd:level>
+							<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+						</gmd:level>
+					</gmd:DQ_Scope>
+				</gmd:scope>
+				<gmd:lineage>
+					<gmd:LI_Lineage>
+						<gmd:statement gco:nilReason="missing">
+							<gco:CharacterString />
+						</gmd:statement>
+					</gmd:LI_Lineage>
+				</gmd:lineage>
+			</gmd:DQ_DataQuality>
+		</gmd:dataQualityInfo>
+		<gmd:metadataConstraints>
+			<gmd:MD_LegalConstraints>
+				<gmd:useLimitation>
+					<gco:CharacterString>This metadata record is publicly available.</gco:CharacterString>
+				</gmd:useLimitation>
+			</gmd:MD_LegalConstraints>
+		</gmd:metadataConstraints>
+		<gmd:metadataMaintenance>
+			<gmd:MD_MaintenanceInformation>
+				<gmd:maintenanceAndUpdateFrequency>
+					<gmd:MD_MaintenanceFrequencyCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded">asNeeded</gmd:MD_MaintenanceFrequencyCode>
+				</gmd:maintenanceAndUpdateFrequency>
+				<gmd:contact>
+					<gmd:CI_ResponsibleParty>
+						<gmd:individualName>
+							<gco:CharacterString>CIESIN METADATA ADMINISTRATION,</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:contactInfo>
+							<gmd:CI_Contact>
+								<gmd:phone>
+									<gmd:CI_Telephone>
+										<gmd:voice>
+											<gco:CharacterString>+1 845-365-8988</gco:CharacterString>
+										</gmd:voice>
+										<gmd:facsimile>
+											<gco:CharacterString>+1 845-365-8922</gco:CharacterString>
+										</gmd:facsimile>
+									</gmd:CI_Telephone>
+								</gmd:phone>
+								<gmd:address>
+									<gmd:CI_Address>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>61 Route 9W, P.O. Box 1000</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:city>
+											<gco:CharacterString>Palisades</gco:CharacterString>
+										</gmd:city>
+										<gmd:administrativeArea>
+											<gco:CharacterString>New York</gco:CharacterString>
+										</gmd:administrativeArea>
+										<gmd:postalCode>
+											<gco:CharacterString>10964</gco:CharacterString>
+										</gmd:postalCode>
+										<gmd:country>
+											<gco:CharacterString>USA</gco:CharacterString>
+										</gmd:country>
+										<gmd:electronicMailAddress>
+											<gco:CharacterString>metadata@ciesin.columbia.edu</gco:CharacterString>
+										</gmd:electronicMailAddress>
+									</gmd:CI_Address>
+								</gmd:address>
+							</gmd:CI_Contact>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author">author</gmd:CI_RoleCode>
+						</gmd:role>
+					</gmd:CI_ResponsibleParty>
+				</gmd:contact>
+			</gmd:MD_MaintenanceInformation>
+		</gmd:metadataMaintenance>
+</gvq:GVQ_Metadata>

@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gvq:GVQ_Metadata xmlns:updated19115="http://www.geoviqua.org/19115_updates" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gvq="http://www.geoviqua.org/QualityInformationModel/3.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmd19157="http://www.geoviqua.org/gmd19157" xsi:schemaLocation="http://www.geoviqua.org/QualityInformationModel/3.1 http://schemas.geoviqua.org/GVQ/3.1.0/GeoViQua_PQM_UQM.xsd http://www.uncertml.org/2.0 http://www.uncertml.org/uncertml.xsd">
+		<gmd:fileIdentifier>
+			<gco:CharacterString>b0100-88fd-11da-a88f-000d939bc5d8</gco:CharacterString>
+		</gmd:fileIdentifier>
+		<gmd:parentIdentifier>
+			<gco:CharacterString>UUID-b2d227da-02ea-4711-a49f-59f707a4e300</gco:CharacterString>
+		</gmd:parentIdentifier>
+		<gmd:language>
+			<gco:CharacterString>eng</gco:CharacterString>
+		</gmd:language>
+		<gmd:characterSet>
+			<gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+		</gmd:characterSet>
+		<gmd:hierarchyLevel>
+			<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+		</gmd:hierarchyLevel>
+		<gmd:contact>
+			<gmd:CI_ResponsibleParty>
+				<gmd:organisationName>
+					<gco:CharacterString>GCMD</gco:CharacterString>
+				</gmd:organisationName>
+				<gmd:role>
+					<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+				</gmd:role>
+			</gmd:CI_ResponsibleParty>
+		</gmd:contact>
+		<gmd:dateStamp>
+			<gco:Date>2004-09-24</gco:Date>
+		</gmd:dateStamp>
+		<gmd:metadataStandardName>
+			<gco:CharacterString>CEOS IDN DIF</gco:CharacterString>
+		</gmd:metadataStandardName>
+		<gmd:metadataStandardVersion>
+			<gco:CharacterString>VERSION 9.8.2</gco:CharacterString>
+		</gmd:metadataStandardVersion>
+		<gmd:identificationInfo>
+			<gmd:MD_DataIdentification>
+				<gmd:citation>
+					<gmd:CI_Citation>
+						<gmd:title>
+							<gco:CharacterString>NASA/Ames Global Emissions Data Set (GLEMIS)</gco:CharacterString>
+						</gmd:title>
+						<gmd:alternateTitle>
+							<gco:CharacterString>Global Emissions Data Set</gco:CharacterString>
+						</gmd:alternateTitle>
+						<gmd:date>
+							<gmd:CI_Date>
+								<gmd:date>
+									<gco:Date>2004-09-24</gco:Date>
+								</gmd:date>
+								<gmd:dateType>
+									<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+								</gmd:dateType>
+							</gmd:CI_Date>
+						</gmd:date>
+						<gmd:edition>
+							<gco:CharacterString>07.29.02</gco:CharacterString>
+						</gmd:edition>
+						<gmd:citedResponsibleParty>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>POTTER, CHRISTOPHERS.</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:contactInfo>
+									<gmd:CI_Contact>
+										<gmd:phone>
+											<gmd:CI_Telephone>
+												<gmd:voice>
+													<gco:CharacterString>650-604-6164</gco:CharacterString>
+												</gmd:voice>
+												<gmd:facsimile>
+													<gco:CharacterString>650-604-4680</gco:CharacterString>
+												</gmd:facsimile>
+											</gmd:CI_Telephone>
+										</gmd:phone>
+										<gmd:address>
+											<gmd:CI_Address>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>NASA Ames Research Center</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>Ecosystem Science and Technology Program</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>Mail Stop 242-4</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:city>
+													<gco:CharacterString>Moffett Field</gco:CharacterString>
+												</gmd:city>
+												<gmd:administrativeArea>
+													<gco:CharacterString>CA</gco:CharacterString>
+												</gmd:administrativeArea>
+												<gmd:postalCode>
+													<gco:CharacterString>94035</gco:CharacterString>
+												</gmd:postalCode>
+												<gmd:country>
+													<gco:CharacterString>USA</gco:CharacterString>
+												</gmd:country>
+												<gmd:electronicMailAddress>
+													<gco:CharacterString>Christopher.S.Potter@nasa.gov</gco:CharacterString>
+												</gmd:electronicMailAddress>
+											</gmd:CI_Address>
+										</gmd:address>
+									</gmd:CI_Contact>
+								</gmd:contactInfo>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="principalInvestigator">principalInvestigator</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:citedResponsibleParty>
+						<gmd:citedResponsibleParty>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>Potter, C.S.</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:citedResponsibleParty>
+						<gmd:citedResponsibleParty>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>NASA/Ames</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:citedResponsibleParty>
+						<gmd:citedResponsibleParty>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>NASA Ames</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="publisher">publisher</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:citedResponsibleParty>
+					</gmd:CI_Citation>
+				</gmd:citation>
+				<gmd:abstract>
+					<gco:CharacterString>NASA-CASA data sets include global maps for predicted fluxes of soil nitrogen gases (N2O and NO), methane (CH4), and carbon monoxide (CO), plus predictions of net primary production (NPP) and carbon storage in leaf, wood, root, litter, and surface soil pools. Others data sets will follow. To obtain copies of these map data files, log-on to the NASA Ames ftp server:ftp://geo.arc.nasa.gov/pub/glemis/The documentation text files called README_glemis provides necessary downloading information (formats, references, methods, etc.) for the map files. All global data sets (except those for carbon storage) contain 12 monthly files, gridded with each cell representing 1 degree or 0.5 degree of latitude-longitude.	  [ This document was provided by NASA's Global Change Master Directory.       For more information on the source of this metadata please visit      http://gcmd.nasa.gov/r/geoss/[GCMD]NASA_AMES_GLEMIS ]</gco:CharacterString>
+				</gmd:abstract>
+				<gmd:resourceConstraints>
+					<gmd:MD_LegalConstraints id="GDC">
+						<gmd:useLimitation>
+							<gco:CharacterString>geossdatacore</gco:CharacterString>
+						</gmd:useLimitation>
+					</gmd:MD_LegalConstraints>
+				</gmd:resourceConstraints>
+				<gmd:status>
+					<gmd:MD_ProgressCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="completed">completed</gmd:MD_ProgressCode>
+				</gmd:status>
+				<gmd:pointOfContact>
+					<gmd:CI_ResponsibleParty>
+						<gmd:individualName>
+							<gco:CharacterString>POTTER, CHRISTOPHERS.</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:organisationName>
+							<gco:CharacterString>NASA/ARC/ESD/SGE &gt; Ecosystem Science and Technology Branch, Earth Sciences Division, Ames Research Center, NASA</gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:positionName>
+							<gco:CharacterString>DATA CENTER CONTACT</gco:CharacterString>
+						</gmd:positionName>
+						<gmd:contactInfo>
+							<gmd:CI_Contact>
+								<gmd:phone>
+									<gmd:CI_Telephone>
+										<gmd:voice>
+											<gco:CharacterString>650-604-6164</gco:CharacterString>
+										</gmd:voice>
+										<gmd:facsimile>
+											<gco:CharacterString>650-604-4680</gco:CharacterString>
+										</gmd:facsimile>
+									</gmd:CI_Telephone>
+								</gmd:phone>
+								<gmd:address>
+									<gmd:CI_Address>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>NASA Ames Research Center</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>Ecosystem Science and Technology Program</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>Mail Stop 242-4</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:city>
+											<gco:CharacterString>Moffett Field</gco:CharacterString>
+										</gmd:city>
+										<gmd:administrativeArea>
+											<gco:CharacterString>CA</gco:CharacterString>
+										</gmd:administrativeArea>
+										<gmd:postalCode>
+											<gco:CharacterString>94035</gco:CharacterString>
+										</gmd:postalCode>
+										<gmd:country>
+											<gco:CharacterString>USA</gco:CharacterString>
+										</gmd:country>
+										<gmd:electronicMailAddress>
+											<gco:CharacterString>Christopher.S.Potter@nasa.gov</gco:CharacterString>
+										</gmd:electronicMailAddress>
+									</gmd:CI_Address>
+								</gmd:address>
+								<gmd:onlineResource>
+									<gmd:CI_OnlineResource>
+										<gmd:linkage>
+											<gmd:URL>http://geo.arc.nasa.gov/sge/</gmd:URL>
+										</gmd:linkage>
+									</gmd:CI_OnlineResource>
+								</gmd:onlineResource>
+							</gmd:CI_Contact>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="resourceProvider">resourceProvider</gmd:CI_RoleCode>
+						</gmd:role>
+					</gmd:CI_ResponsibleParty>
+				</gmd:pointOfContact>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; SOILS &gt; CARBON</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; SOILS &gt; NITROGEN</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; SOILS &gt; SOIL GAS/AIR</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; LAND SURFACE &gt; SOILS &gt; CARBON</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; LAND SURFACE &gt; SOILS &gt; NITROGEN</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; LAND SURFACE &gt; SOILS &gt; SOIL GAS/AIR</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; ATMOSPHERE &gt; ATMOSPHERIC CHEMISTRY &gt; CARBON AND HYDROCARBON COMPOUNDS &gt; CARBON MONOXIDE</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; ATMOSPHERE &gt; ATMOSPHERIC CHEMISTRY &gt; CARBON AND HYDROCARBON COMPOUNDS &gt; METHANE</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; ATMOSPHERE &gt; ATMOSPHERIC CHEMISTRY &gt; NITROGEN COMPOUNDS &gt; NITROGEN OXIDES</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; ATMOSPHERE &gt; ATMOSPHERIC CHEMISTRY &gt; NITROGEN COMPOUNDS &gt; NITROUS OXIDE</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; ECOLOGICAL DYNAMICS &gt; ECOSYSTEM FUNCTIONS &gt; BIOGEOCHEMICAL CYCLES</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>Science Keywords</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2008-02-05</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>CASA</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>biogenic models</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>emissions</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>N2O</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>NO</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>CO</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>CH4</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>soil emissions</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>soil uptake</gco:CharacterString>
+						</gmd:keyword>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>GEIA &gt; Global Emissions Inventory Activity</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>ESIP &gt; Earth Science Information Partners Program</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>Projects</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2009-06-10</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>USA/NASA</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>IDN Nodes</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2007-04-01</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>GEOGRAPHIC REGION &gt; GLOBAL LAND</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>Locations</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2009-12-22</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>geossDataCore</gco:CharacterString>
+						</gmd:keyword>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>geossNoMonetaryCharge</gco:CharacterString>
+						</gmd:keyword>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:language>
+					<gco:CharacterString>eng</gco:CharacterString>
+				</gmd:language>
+				<gmd:characterSet>
+					<gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+				</gmd:characterSet>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>geossdatacore</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>documentFileGraphic</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>farming</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>biota</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>climatology/meteorology/atmosphere</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>geoscientific information</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:extent>
+					<gmd:EX_Extent>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicBoundingBox>
+								<gmd:westBoundLongitude>
+									<gco:Decimal>-180.0</gco:Decimal>
+								</gmd:westBoundLongitude>
+								<gmd:eastBoundLongitude>
+									<gco:Decimal>180.0</gco:Decimal>
+								</gmd:eastBoundLongitude>
+								<gmd:southBoundLatitude>
+									<gco:Decimal>-90.0</gco:Decimal>
+								</gmd:southBoundLatitude>
+								<gmd:northBoundLatitude>
+									<gco:Decimal>90.0</gco:Decimal>
+								</gmd:northBoundLatitude>
+							</gmd:EX_GeographicBoundingBox>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>GEOGRAPHIC REGION &gt; GLOBAL LAND</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:temporalElement>
+							<gmd:EX_TemporalExtent>
+								<gmd:extent>
+									<gml:TimePeriod gml:id="d2747e1">
+										<gml:begin>
+											<gml:TimeInstant gml:id="aa11b122c-308d-4060-88bb-484a00d2e858">
+												<gml:timePosition indeterminatePosition="unknown" />
+											</gml:TimeInstant>
+										</gml:begin>
+										<gml:end>
+											<gml:TimeInstant gml:id="ab025bdd1-325c-424b-9378-e7e4a4a5e728">
+												<gml:timePosition indeterminatePosition="unknown" />
+											</gml:TimeInstant>
+										</gml:end>
+									</gml:TimePeriod>
+								</gmd:extent>
+							</gmd:EX_TemporalExtent>
+						</gmd:temporalElement>
+					</gmd:EX_Extent>
+				</gmd:extent>
+				<gmd:supplementalInformation>
+					<gco:CharacterString>Potter, C. S., P. A. Matson, P. M. Vitousek and E. A. Davidson. 1996. Processmodeling of controls on nitrogen trace gas emissions from soils world-wide. J.Geophys. Res. 101:1361-1377.          Potter, C. S., E. A. Davidson, and L. Verchot. 1996. Estimation of globalbiogeochemical controls and seasonality in soil methane consumption.Chemosphere. 32(11):2219-2246.          Potter, C. S., S. A. Klooster, and R. B. Chatfield. 1996. Production andconsumption of carbon monoxide in soils: a global model analysis of spatial andseasonal variation. Chemosphere. 33(6):1175-1193.</gco:CharacterString>
+				</gmd:supplementalInformation>
+			</gmd:MD_DataIdentification>
+		</gmd:identificationInfo>
+		<gmd:distributionInfo>
+			<gmd:MD_Distribution>
+				<gmd:distributionFormat>
+					<gmd:MD_Format>
+						<gmd:name gco:nilReason="missing">
+							<gco:CharacterString />
+						</gmd:name>
+						<gmd:version gco:nilReason="missing">
+							<gco:CharacterString />
+						</gmd:version>
+					</gmd:MD_Format>
+				</gmd:distributionFormat>
+				<gmd:distributor>
+					<gmd:MD_Distributor>
+						<gmd:distributorContact>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>POTTER, CHRISTOPHERS.</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:organisationName>
+									<gco:CharacterString>NASA/ARC/ESD/SGE &gt; Ecosystem Science and Technology Branch, Earth Sciences Division, Ames Research Center, NASA</gco:CharacterString>
+								</gmd:organisationName>
+								<gmd:positionName>
+									<gco:CharacterString>DATA CENTER CONTACT</gco:CharacterString>
+								</gmd:positionName>
+								<gmd:contactInfo>
+									<gmd:CI_Contact>
+										<gmd:phone>
+											<gmd:CI_Telephone>
+												<gmd:voice>
+													<gco:CharacterString>650-604-6164</gco:CharacterString>
+												</gmd:voice>
+												<gmd:facsimile>
+													<gco:CharacterString>650-604-4680</gco:CharacterString>
+												</gmd:facsimile>
+											</gmd:CI_Telephone>
+										</gmd:phone>
+										<gmd:address>
+											<gmd:CI_Address>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>NASA Ames Research Center</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>Ecosystem Science and Technology Program</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>Mail Stop 242-4</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:city>
+													<gco:CharacterString>Moffett Field</gco:CharacterString>
+												</gmd:city>
+												<gmd:administrativeArea>
+													<gco:CharacterString>CA</gco:CharacterString>
+												</gmd:administrativeArea>
+												<gmd:postalCode>
+													<gco:CharacterString>94035</gco:CharacterString>
+												</gmd:postalCode>
+												<gmd:country>
+													<gco:CharacterString>USA</gco:CharacterString>
+												</gmd:country>
+												<gmd:electronicMailAddress>
+													<gco:CharacterString>Christopher.S.Potter@nasa.gov</gco:CharacterString>
+												</gmd:electronicMailAddress>
+											</gmd:CI_Address>
+										</gmd:address>
+										<gmd:onlineResource>
+											<gmd:CI_OnlineResource>
+												<gmd:linkage>
+													<gmd:URL>http://geo.arc.nasa.gov/sge/</gmd:URL>
+												</gmd:linkage>
+											</gmd:CI_OnlineResource>
+										</gmd:onlineResource>
+									</gmd:CI_Contact>
+								</gmd:contactInfo>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor">distributor</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:distributorContact>
+						<gmd:distributionOrderProcess>
+							<gmd:MD_StandardOrderProcess>
+								<gmd:fees>
+									<gco:CharacterString>none</gco:CharacterString>
+								</gmd:fees>
+								<gmd:plannedAvailableDateTime>
+									<gco:DateTime>July 29, 2002T12:00:00</gco:DateTime>
+								</gmd:plannedAvailableDateTime>
+							</gmd:MD_StandardOrderProcess>
+						</gmd:distributionOrderProcess>
+					</gmd:MD_Distributor>
+				</gmd:distributor>
+				<gmd:transferOptions>
+					<gmd:MD_DigitalTransferOptions>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>ftp://geo.arc.nasa.gov/pub/glemis</gmd:URL>
+								</gmd:linkage>
+								<gmd:protocol>
+									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+								</gmd:protocol>
+								<gmd:name>
+									<gco:CharacterString>GET DATA</gco:CharacterString>
+								</gmd:name>
+								<gmd:description>
+									<gco:CharacterString>Access to NASA Ames global emissions data set</gco:CharacterString>
+								</gmd:description>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>http://geiacenter.org/inventories/present.html</gmd:URL>
+								</gmd:linkage>
+								<gmd:protocol>
+									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+								</gmd:protocol>
+								<gmd:name>
+									<gco:CharacterString>GET DATA</gco:CharacterString>
+								</gmd:name>
+								<gmd:description>
+									<gco:CharacterString>Accesss to GEIA inventories</gco:CharacterString>
+								</gmd:description>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>ftp://geo.arc.nasa.gov/pub/glemis</gmd:URL>
+								</gmd:linkage>
+								<gmd:protocol>
+									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+								</gmd:protocol>
+								<gmd:name>
+									<gco:CharacterString>Data Set Citation</gco:CharacterString>
+								</gmd:name>
+								<gmd:description>
+									<gco:CharacterString>Global Emissions Data Set</gco:CharacterString>
+								</gmd:description>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+					</gmd:MD_DigitalTransferOptions>
+				</gmd:transferOptions>
+			</gmd:MD_Distribution>
+		</gmd:distributionInfo>
+		<gmd:metadataConstraints>
+			<gmd:MD_LegalConstraints>
+				<gmd:useLimitation>
+					<gco:CharacterString>This metadata record is publicly available.</gco:CharacterString>
+				</gmd:useLimitation>
+			</gmd:MD_LegalConstraints>
+		</gmd:metadataConstraints>
+		<gmd:metadataMaintenance>
+			<gmd:MD_MaintenanceInformation>
+				<gmd:maintenanceAndUpdateFrequency>
+					<gmd:MD_MaintenanceFrequencyCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded">asNeeded</gmd:MD_MaintenanceFrequencyCode>
+				</gmd:maintenanceAndUpdateFrequency>
+				<gmd:maintenanceNote>
+					<gco:CharacterString>2011-03-11, S. Ritz cleaned up summary text and removed a broken link.</gco:CharacterString>
+				</gmd:maintenanceNote>
+			</gmd:MD_MaintenanceInformation>
+		</gmd:metadataMaintenance>
+</gvq:GVQ_Metadata>

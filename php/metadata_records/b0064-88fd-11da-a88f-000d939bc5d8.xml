@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gvq:GVQ_Metadata xmlns:updated19115="http://www.geoviqua.org/19115_updates" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gvq="http://www.geoviqua.org/QualityInformationModel/3.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmd19157="http://www.geoviqua.org/gmd19157" xsi:schemaLocation="http://www.geoviqua.org/QualityInformationModel/3.1 http://schemas.geoviqua.org/GVQ/3.1.0/GeoViQua_PQM_UQM.xsd http://www.uncertml.org/2.0 http://www.uncertml.org/uncertml.xsd">
+		<gmd:fileIdentifier>
+			<gco:CharacterString>b0064-88fd-11da-a88f-000d939bc5d8</gco:CharacterString>
+		</gmd:fileIdentifier>
+		<gmd:parentIdentifier>
+			<gco:CharacterString>UUID-b2d227da-02ea-4711-a49f-59f707a4e300</gco:CharacterString>
+		</gmd:parentIdentifier>
+		<gmd:language>
+			<gco:CharacterString>eng</gco:CharacterString>
+		</gmd:language>
+		<gmd:characterSet>
+			<gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+		</gmd:characterSet>
+		<gmd:hierarchyLevel>
+			<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+		</gmd:hierarchyLevel>
+		<gmd:contact>
+			<gmd:CI_ResponsibleParty>
+				<gmd:individualName>
+					<gco:CharacterString>STEVENS, TYLERB.</gco:CharacterString>
+				</gmd:individualName>
+				<gmd:contactInfo>
+					<gmd:CI_Contact>
+						<gmd:phone>
+							<gmd:CI_Telephone>
+								<gmd:voice>
+									<gco:CharacterString>(301) 614-6898</gco:CharacterString>
+								</gmd:voice>
+								<gmd:facsimile>
+									<gco:CharacterString>301-614-5268</gco:CharacterString>
+								</gmd:facsimile>
+							</gmd:CI_Telephone>
+						</gmd:phone>
+						<gmd:address>
+							<gmd:CI_Address>
+								<gmd:deliveryPoint>
+									<gco:CharacterString>NASA Goddard Space Flight Center</gco:CharacterString>
+								</gmd:deliveryPoint>
+								<gmd:deliveryPoint>
+									<gco:CharacterString>Global Change Master Directory</gco:CharacterString>
+								</gmd:deliveryPoint>
+								<gmd:city>
+									<gco:CharacterString>Greenbelt</gco:CharacterString>
+								</gmd:city>
+								<gmd:administrativeArea>
+									<gco:CharacterString>MD</gco:CharacterString>
+								</gmd:administrativeArea>
+								<gmd:postalCode>
+									<gco:CharacterString>20771</gco:CharacterString>
+								</gmd:postalCode>
+								<gmd:country>
+									<gco:CharacterString>USA</gco:CharacterString>
+								</gmd:country>
+								<gmd:electronicMailAddress>
+									<gco:CharacterString>Tyler.B.Stevens@nasa.gov</gco:CharacterString>
+								</gmd:electronicMailAddress>
+							</gmd:CI_Address>
+						</gmd:address>
+					</gmd:CI_Contact>
+				</gmd:contactInfo>
+				<gmd:role>
+					<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author">author</gmd:CI_RoleCode>
+				</gmd:role>
+			</gmd:CI_ResponsibleParty>
+		</gmd:contact>
+		<gmd:contact>
+			<gmd:CI_ResponsibleParty>
+				<gmd:organisationName>
+					<gco:CharacterString>GCMD</gco:CharacterString>
+				</gmd:organisationName>
+				<gmd:role>
+					<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+				</gmd:role>
+			</gmd:CI_ResponsibleParty>
+		</gmd:contact>
+		<gmd:dateStamp>
+			<gco:Date>2005-12-13</gco:Date>
+		</gmd:dateStamp>
+		<gmd:metadataStandardName>
+			<gco:CharacterString>CEOS IDN DIF</gco:CharacterString>
+		</gmd:metadataStandardName>
+		<gmd:metadataStandardVersion>
+			<gco:CharacterString>VERSION 9.7</gco:CharacterString>
+		</gmd:metadataStandardVersion>
+		<gmd:identificationInfo>
+			<gmd:MD_DataIdentification>
+				<gmd:citation>
+					<gmd:CI_Citation>
+						<gmd:title>
+							<gco:CharacterString>Geographic distribution of major crops across the world Global Biogeochemical Cycles</gco:CharacterString>
+						</gmd:title>
+						<gmd:alternateTitle>
+							<gco:CharacterString>Geographic distribution of major crops across the world Global Biogeochemical Cycles</gco:CharacterString>
+						</gmd:alternateTitle>
+						<gmd:date>
+							<gmd:CI_Date>
+								<gmd:date>
+									<gco:Date>2005-12-13</gco:Date>
+								</gmd:date>
+								<gmd:dateType>
+									<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+								</gmd:dateType>
+							</gmd:CI_Date>
+						</gmd:date>
+						<gmd:citedResponsibleParty>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>RAMANKUTTY, NAVIN</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:contactInfo>
+									<gmd:CI_Contact>
+										<gmd:address>
+											<gmd:CI_Address>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>Center for Sustainability and the Global Environment</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>Nelson Institute for Environmental Studies</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>University of Wisconsin-Madison</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>1710 University Avenue</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:city>
+													<gco:CharacterString>Madison</gco:CharacterString>
+												</gmd:city>
+												<gmd:administrativeArea>
+													<gco:CharacterString>WI</gco:CharacterString>
+												</gmd:administrativeArea>
+												<gmd:postalCode>
+													<gco:CharacterString>53726</gco:CharacterString>
+												</gmd:postalCode>
+												<gmd:country>
+													<gco:CharacterString>USA</gco:CharacterString>
+												</gmd:country>
+												<gmd:electronicMailAddress>
+													<gco:CharacterString>nramanku@wisc.edu</gco:CharacterString>
+												</gmd:electronicMailAddress>
+											</gmd:CI_Address>
+										</gmd:address>
+									</gmd:CI_Contact>
+								</gmd:contactInfo>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="processor">processor</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:citedResponsibleParty>
+						<gmd:citedResponsibleParty>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>Leff, B., Ramankutty, N., and Foley, J.A</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:citedResponsibleParty>
+						<gmd:citedResponsibleParty>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>University of Wisconsin-Madison</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="publisher">publisher</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:citedResponsibleParty>
+					</gmd:CI_Citation>
+				</gmd:citation>
+				<gmd:abstract>
+					<gco:CharacterString>The Center for Sustainability and the Global Environment (SAGE) 18 Major Crops       dataset characterizes the distribution of major crops across the Global      Biogeochemical Cycles.  The data set was developed using data on proportion of      harvested area within each grid cell, and therefore represents, for each grid      cell, the probability of finding a given crop in that location during the year.      Thus, if a crop is multiple cropped during the year, it has a higher      probability of being in a grid cell than those crops that are single cropped,      even if they occupy the same "physical" area. Furthermore, the sum of the 18      major crops and the other crops will yield the original Ramankutty and Foley      (1998) data set. This implies simplisitic assumptions such as the ignoring of      temporary fallow land (also considered cropland), croplands temporarily used as      pastures, etc. In summary, this is a global data set intended to provide very      rough indications of the probability of finding major crops in different      locations across the world in the early 1990s period.            [Summary provided by SAGE.]	  [ This document was provided by NASA's Global Change Master Directory.       For more information on the source of this metadata please visit      http://gcmd.nasa.gov/r/geoss/[GCMD]SAGE_MAJORCROPS ]</gco:CharacterString>
+				</gmd:abstract>
+				<gmd:status>
+					<gmd:MD_ProgressCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="onGoing">onGoing</gmd:MD_ProgressCode>
+				</gmd:status>
+				<gmd:pointOfContact>
+					<gmd:CI_ResponsibleParty>
+						<gmd:individualName>
+							<gco:CharacterString>RAMANKUTTY, NAVIN</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:organisationName>
+							<gco:CharacterString>UWI-MAD/IES/SAGE &gt; Center for Sustainability and the Global Environment, Gaylord Nelson Institute for Environmental Studies, University of Wisconsin, Madison</gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:positionName>
+							<gco:CharacterString>DATA CENTER CONTACT</gco:CharacterString>
+						</gmd:positionName>
+						<gmd:contactInfo>
+							<gmd:CI_Contact>
+								<gmd:address>
+									<gmd:CI_Address>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>Center for Sustainability and the Global Environment</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>Nelson Institute for Environmental Studies</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>University of Wisconsin-Madison</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>1710 University Avenue</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:city>
+											<gco:CharacterString>Madison</gco:CharacterString>
+										</gmd:city>
+										<gmd:administrativeArea>
+											<gco:CharacterString>WI</gco:CharacterString>
+										</gmd:administrativeArea>
+										<gmd:postalCode>
+											<gco:CharacterString>53726</gco:CharacterString>
+										</gmd:postalCode>
+										<gmd:country>
+											<gco:CharacterString>USA</gco:CharacterString>
+										</gmd:country>
+										<gmd:electronicMailAddress>
+											<gco:CharacterString>nramanku@wisc.edu</gco:CharacterString>
+										</gmd:electronicMailAddress>
+									</gmd:CI_Address>
+								</gmd:address>
+								<gmd:onlineResource>
+									<gmd:CI_OnlineResource>
+										<gmd:linkage>
+											<gmd:URL>http://www.sage.wisc.edu/</gmd:URL>
+										</gmd:linkage>
+									</gmd:CI_OnlineResource>
+								</gmd:onlineResource>
+							</gmd:CI_Contact>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="resourceProvider">resourceProvider</gmd:CI_RoleCode>
+						</gmd:role>
+					</gmd:CI_ResponsibleParty>
+				</gmd:pointOfContact>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; AGRICULTURAL PLANT SCIENCE</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; FOREST SCIENCE</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; AGRICULTURE &gt; SOILS &gt; SOIL CLASSIFICATION</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; BIOSPHERE &gt; TERRESTRIAL ECOSYSTEMS &gt; AGRICULTURAL LANDS</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; HUMAN DIMENSIONS &gt; ENVIRONMENTAL GOVERNANCE/MANAGEMENT &gt; LAND MANAGEMENT</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; LAND SURFACE &gt; LAND USE/LAND COVER &gt; LAND COVER</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE &gt; LAND SURFACE &gt; SOILS &gt; SOIL CLASSIFICATION</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>Science Keywords</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2008-02-05</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>Crops</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>Crop Characteristics</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:keyword>
+							<gco:CharacterString>Biogeochemical Cycle</gco:CharacterString>
+						</gmd:keyword>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>USA/NASA</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>IDN Nodes</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2007-04-01</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>GEOGRAPHIC REGION &gt; GLOBAL LAND</gco:CharacterString>
+						</gmd:keyword>
+						<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+								</gmd:title>
+								<gmd:alternateTitle>
+									<gco:CharacterString>Locations</gco:CharacterString>
+								</gmd:alternateTitle>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2009-12-22</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:collectiveTitle>
+									<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+								</gmd:collectiveTitle>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:resourceConstraints>
+					<gmd:MD_LegalConstraints>
+						<gmd:useConstraints>
+							<gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
+						</gmd:useConstraints>
+						<gmd:otherConstraints>
+							<gco:CharacterString>This global data set is intended to provide very rough indications of the            probability of finding major crops in different locations across the world in            the early 1990s period. It was developed to be used for global modeling            applications, and should be used with caution.</gco:CharacterString>
+						</gmd:otherConstraints>
+					</gmd:MD_LegalConstraints>
+				</gmd:resourceConstraints>
+				<gmd:language>
+					<gco:CharacterString>eng</gco:CharacterString>
+				</gmd:language>
+				<gmd:characterSet>
+					<gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+				</gmd:characterSet>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>dataSetDataBase</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>farming</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>biota</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>economy</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>environment</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>geoscientific information</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>imagery/base maps/earth cover</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>planning cadastre</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:extent>
+					<gmd:EX_Extent>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicBoundingBox>
+								<gmd:westBoundLongitude>
+									<gco:Decimal>-180.0</gco:Decimal>
+								</gmd:westBoundLongitude>
+								<gmd:eastBoundLongitude>
+									<gco:Decimal>180.0</gco:Decimal>
+								</gmd:eastBoundLongitude>
+								<gmd:southBoundLatitude>
+									<gco:Decimal>-90.0</gco:Decimal>
+								</gmd:southBoundLatitude>
+								<gmd:northBoundLatitude>
+									<gco:Decimal>90.0</gco:Decimal>
+								</gmd:northBoundLatitude>
+							</gmd:EX_GeographicBoundingBox>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicDescription>
+								<gmd:geographicIdentifier>
+									<gmd:MD_Identifier>
+										<gmd:authority>
+											<gmd:CI_Citation>
+												<gmd:title>
+													<gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+												</gmd:title>
+												<gmd:alternateTitle>
+													<gco:CharacterString>Locations</gco:CharacterString>
+												</gmd:alternateTitle>
+												<gmd:date>
+													<gmd:CI_Date>
+														<gmd:date>
+															<gco:Date>2009-12-22</gco:Date>
+														</gmd:date>
+														<gmd:dateType>
+															<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+														</gmd:dateType>
+													</gmd:CI_Date>
+												</gmd:date>
+												<gmd:collectiveTitle>
+													<gco:CharacterString>Olsen, L.M., G. Major, K. Shein, J. Scialdone, R. Vogel, S. Leicester, H. Weir, S. Ritz, T. Stevens, M. Meaux, C.Solomon, R. Bilodeau, M. Holland, T. Northcutt, R. A. Restrepo, 2007 .   NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version  6.0.0.0.0</gco:CharacterString>
+												</gmd:collectiveTitle>
+											</gmd:CI_Citation>
+										</gmd:authority>
+										<gmd:code>
+											<gco:CharacterString>GEOGRAPHIC REGION &gt; GLOBAL LAND</gco:CharacterString>
+										</gmd:code>
+									</gmd:MD_Identifier>
+								</gmd:geographicIdentifier>
+							</gmd:EX_GeographicDescription>
+						</gmd:geographicElement>
+						<gmd:temporalElement>
+							<gmd:EX_TemporalExtent>
+								<gmd:extent>
+									<gml:TimePeriod gml:id="d11277e1">
+										<gml:begin>
+											<gml:TimeInstant gml:id="a24ec59b7-5d16-4211-a58f-2e81178afc8c">
+												<gml:timePosition indeterminatePosition="unknown" />
+											</gml:TimeInstant>
+										</gml:begin>
+										<gml:end>
+											<gml:TimeInstant gml:id="a8a93004d-413b-4f70-bcb9-3554b2c714a7">
+												<gml:timePosition indeterminatePosition="unknown" />
+											</gml:TimeInstant>
+										</gml:end>
+									</gml:TimePeriod>
+								</gmd:extent>
+							</gmd:EX_TemporalExtent>
+						</gmd:temporalElement>
+					</gmd:EX_Extent>
+				</gmd:extent>
+			</gmd:MD_DataIdentification>
+		</gmd:identificationInfo>
+		<gmd:distributionInfo>
+			<gmd:MD_Distribution>
+				<gmd:distributionFormat>
+					<gmd:MD_Format>
+						<gmd:name>
+							<gco:CharacterString>ArcInfo ASCII, NetCDF</gco:CharacterString>
+						</gmd:name>
+						<gmd:version gco:nilReason="missing">
+							<gco:CharacterString />
+						</gmd:version>
+					</gmd:MD_Format>
+				</gmd:distributionFormat>
+				<gmd:distributor>
+					<gmd:MD_Distributor>
+						<gmd:distributorContact>
+							<gmd:CI_ResponsibleParty>
+								<gmd:individualName>
+									<gco:CharacterString>RAMANKUTTY, NAVIN</gco:CharacterString>
+								</gmd:individualName>
+								<gmd:organisationName>
+									<gco:CharacterString>UWI-MAD/IES/SAGE &gt; Center for Sustainability and the Global Environment, Gaylord Nelson Institute for Environmental Studies, University of Wisconsin, Madison</gco:CharacterString>
+								</gmd:organisationName>
+								<gmd:positionName>
+									<gco:CharacterString>DATA CENTER CONTACT</gco:CharacterString>
+								</gmd:positionName>
+								<gmd:contactInfo>
+									<gmd:CI_Contact>
+										<gmd:address>
+											<gmd:CI_Address>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>Center for Sustainability and the Global Environment</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>Nelson Institute for Environmental Studies</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>University of Wisconsin-Madison</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:deliveryPoint>
+													<gco:CharacterString>1710 University Avenue</gco:CharacterString>
+												</gmd:deliveryPoint>
+												<gmd:city>
+													<gco:CharacterString>Madison</gco:CharacterString>
+												</gmd:city>
+												<gmd:administrativeArea>
+													<gco:CharacterString>WI</gco:CharacterString>
+												</gmd:administrativeArea>
+												<gmd:postalCode>
+													<gco:CharacterString>53726</gco:CharacterString>
+												</gmd:postalCode>
+												<gmd:country>
+													<gco:CharacterString>USA</gco:CharacterString>
+												</gmd:country>
+												<gmd:electronicMailAddress>
+													<gco:CharacterString>nramanku@wisc.edu</gco:CharacterString>
+												</gmd:electronicMailAddress>
+											</gmd:CI_Address>
+										</gmd:address>
+										<gmd:onlineResource>
+											<gmd:CI_OnlineResource>
+												<gmd:linkage>
+													<gmd:URL>http://www.sage.wisc.edu/</gmd:URL>
+												</gmd:linkage>
+											</gmd:CI_OnlineResource>
+										</gmd:onlineResource>
+									</gmd:CI_Contact>
+								</gmd:contactInfo>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor">distributor</gmd:CI_RoleCode>
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:distributorContact>
+						<gmd:distributionOrderProcess>
+							<gmd:MD_StandardOrderProcess>
+								<gmd:fees>
+									<gco:CharacterString>No fees</gco:CharacterString>
+								</gmd:fees>
+								<gmd:plannedAvailableDateTime>
+									<gco:DateTime>2004-01-16T12:00:00</gco:DateTime>
+								</gmd:plannedAvailableDateTime>
+							</gmd:MD_StandardOrderProcess>
+						</gmd:distributionOrderProcess>
+					</gmd:MD_Distributor>
+				</gmd:distributor>
+				<gmd:transferOptions>
+					<gmd:MD_DigitalTransferOptions>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>http://www.sage.wisc.edu/download/get_info?dl_file_name=majorcrops/ArcASCII_5min.zip</gmd:URL>
+								</gmd:linkage>
+								<gmd:protocol>
+									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+								</gmd:protocol>
+								<gmd:name>
+									<gco:CharacterString>GET DATA</gco:CharacterString>
+								</gmd:name>
+								<gmd:description>
+									<gco:CharacterString>Download the 18 Major Crops Dataset ArcINFO ASCII 5 min (14.8MB).</gco:CharacterString>
+								</gmd:description>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>http://www.sage.wisc.edu/download/get_info?dl_file_name=majorcrops/ArcASCII_halfdeg.zip</gmd:URL>
+								</gmd:linkage>
+								<gmd:protocol>
+									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+								</gmd:protocol>
+								<gmd:name>
+									<gco:CharacterString>GET DATA</gco:CharacterString>
+								</gmd:name>
+								<gmd:description>
+									<gco:CharacterString>Download the 18 Major Crops Dataset ArcINFO ASCII half degree (645K).</gco:CharacterString>
+								</gmd:description>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>http://www.sage.wisc.edu/download/get_info?dl_file_name=majorcrops/NetCDF_5min.zip</gmd:URL>
+								</gmd:linkage>
+								<gmd:protocol>
+									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+								</gmd:protocol>
+								<gmd:name>
+									<gco:CharacterString>GET DATA</gco:CharacterString>
+								</gmd:name>
+								<gmd:description>
+									<gco:CharacterString>Download the 18 Major Crops Dataset NetCDF 5 min (54.3MB).</gco:CharacterString>
+								</gmd:description>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>http://www.sage.wisc.edu/download/get_info?dl_file_name=majorcrops/NetCDF_halfdeg.zip</gmd:URL>
+								</gmd:linkage>
+								<gmd:protocol>
+									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+								</gmd:protocol>
+								<gmd:name>
+									<gco:CharacterString>GET DATA</gco:CharacterString>
+								</gmd:name>
+								<gmd:description>
+									<gco:CharacterString>Download the 18 Major Crops Dataset NetCDF half degree (2.3MB)</gco:CharacterString>
+								</gmd:description>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>http://www.sage.wisc.edu/iamdata/</gmd:URL>
+								</gmd:linkage>
+								<gmd:protocol>
+									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+								</gmd:protocol>
+								<gmd:name>
+									<gco:CharacterString>Data Set Citation</gco:CharacterString>
+								</gmd:name>
+								<gmd:description>
+									<gco:CharacterString>Geographic distribution of major crops across the world Global Biogeochemical Cycles</gco:CharacterString>
+								</gmd:description>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+					</gmd:MD_DigitalTransferOptions>
+				</gmd:transferOptions>
+			</gmd:MD_Distribution>
+		</gmd:distributionInfo>
+		<gmd:metadataConstraints>
+			<gmd:MD_LegalConstraints>
+				<gmd:useLimitation>
+					<gco:CharacterString>This metadata record is publicly available.</gco:CharacterString>
+				</gmd:useLimitation>
+			</gmd:MD_LegalConstraints>
+		</gmd:metadataConstraints>
+		<gmd:metadataMaintenance>
+			<gmd:MD_MaintenanceInformation>
+				<gmd:maintenanceAndUpdateFrequency>
+					<gmd:MD_MaintenanceFrequencyCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded">asNeeded</gmd:MD_MaintenanceFrequencyCode>
+				</gmd:maintenanceAndUpdateFrequency>
+				<gmd:contact>
+					<gmd:CI_ResponsibleParty>
+						<gmd:individualName>
+							<gco:CharacterString>STEVENS, TYLERB.</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:contactInfo>
+							<gmd:CI_Contact>
+								<gmd:phone>
+									<gmd:CI_Telephone>
+										<gmd:voice>
+											<gco:CharacterString>(301) 614-6898</gco:CharacterString>
+										</gmd:voice>
+										<gmd:facsimile>
+											<gco:CharacterString>301-614-5268</gco:CharacterString>
+										</gmd:facsimile>
+									</gmd:CI_Telephone>
+								</gmd:phone>
+								<gmd:address>
+									<gmd:CI_Address>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>NASA Goddard Space Flight Center</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:deliveryPoint>
+											<gco:CharacterString>Global Change Master Directory</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:city>
+											<gco:CharacterString>Greenbelt</gco:CharacterString>
+										</gmd:city>
+										<gmd:administrativeArea>
+											<gco:CharacterString>MD</gco:CharacterString>
+										</gmd:administrativeArea>
+										<gmd:postalCode>
+											<gco:CharacterString>20771</gco:CharacterString>
+										</gmd:postalCode>
+										<gmd:country>
+											<gco:CharacterString>USA</gco:CharacterString>
+										</gmd:country>
+										<gmd:electronicMailAddress>
+											<gco:CharacterString>Tyler.B.Stevens@nasa.gov</gco:CharacterString>
+										</gmd:electronicMailAddress>
+									</gmd:CI_Address>
+								</gmd:address>
+							</gmd:CI_Contact>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author">author</gmd:CI_RoleCode>
+						</gmd:role>
+					</gmd:CI_ResponsibleParty>
+				</gmd:contact>
+			</gmd:MD_MaintenanceInformation>
+		</gmd:metadataMaintenance>
+</gvq:GVQ_Metadata>

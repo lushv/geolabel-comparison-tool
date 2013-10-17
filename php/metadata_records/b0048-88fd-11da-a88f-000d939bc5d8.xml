@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gvq:GVQ_Metadata xmlns:updated19115="http://www.geoviqua.org/19115_updates" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gvq="http://www.geoviqua.org/QualityInformationModel/3.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmd19157="http://www.geoviqua.org/gmd19157" xsi:schemaLocation="http://www.geoviqua.org/QualityInformationModel/3.1 http://schemas.geoviqua.org/GVQ/3.1.0/GeoViQua_PQM_UQM.xsd http://www.uncertml.org/2.0 http://www.uncertml.org/uncertml.xsd">
+		<gmd:fileIdentifier>
+			<gco:CharacterString>b0048-88fd-11da-a88f-000d939bc5d8</gco:CharacterString>
+		</gmd:fileIdentifier>
+		<gmd:parentIdentifier>
+			<gco:CharacterString />
+		</gmd:parentIdentifier>
+		<gmd:hierarchyLevel>
+			<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode" codeListValue="series">series</gmd:MD_ScopeCode>
+		</gmd:hierarchyLevel>
+		<gmd:contact />
+		<gmd:dateStamp>
+			<gco:Date>1996-01-01</gco:Date>
+		</gmd:dateStamp>
+		<gmd:identificationInfo>
+			<gmd:MD_DataIdentification>
+				<gmd:citation>
+					<gmd:CI_Citation>
+						<gmd:title>
+							<gco:CharacterString>GLOBAL DISTRIBUTION OF PLANT-EXTRACTABLE WATER CAPACITY OF SOIL (DUNNE)</gco:CharacterString>
+						</gmd:title>
+						<gmd:date />
+						<gmd:date>
+							<gmd:CI_Date>
+								<gmd:date>
+									<gco:Date>2012-04-13</gco:Date>
+								</gmd:date>
+								<gmd:dateType>
+									<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" codeSpace="ISOTC211/19115">revision</gmd:CI_DateTypeCode>
+								</gmd:dateType>
+							</gmd:CI_Date>
+						</gmd:date>
+						<gmd:date>
+							<gmd:CI_Date>
+								<gmd:date>
+									<gco:Date>2012-02-14</gco:Date>
+								</gmd:date>
+								<gmd:dateType>
+									<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="created" codeSpace="ISOTC211/19115">created</gmd:CI_DateTypeCode>
+								</gmd:dateType>
+							</gmd:CI_Date>
+						</gmd:date>
+						<gmd:pointOfContact>
+							<gmd:CI_ResponsibleParty>
+								<gmd:organisationName>
+									<gco:CharacterString>NASA</gco:CharacterString>
+								</gmd:organisationName>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="" codeListValue="originator" />
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:pointOfContact>
+						<gmd:identifier>
+							<gmd:RS_Identifier>
+								<gmd:code>
+									<gco:CharacterString>NASA:DUNNESOIL</gco:CharacterString>
+								</gmd:code>
+							</gmd:RS_Identifier>
+						</gmd:identifier>
+					</gmd:CI_Citation>
+				</gmd:citation>
+				<gmd:abstract>
+					<gco:CharacterString>Plant-extractable water capacity of soil is the amount of water that can be extracted from the soil to fulfill evapotranspiration demands. It is often assumed to be spatially invariant in large-scale computations of the soil-water balance. Empirical evidence, however, suggests that this assumption is incorrect. This data set provides an estimate of the global distribution of plant-extractable water capacity of soil. A representative soil profile, characterized by horizon (layer) particle size data and thickness, was created for each soil unit mapped by FAO (Food and Agriculture Organization of the United Nations)/Unesco. Soil organic matter was estimated empirically from climate data. Plant rooting depths and ground coverages were obtained from a vegetation characteristic data set. At each 0.5 x 0.5 degree grid cell where vegetation is present, unit available water capacity (cm water per cm soil) was estimated from the sand, clay, and organic content of each profile horizon, and integrated over horizon thickness. Summation of the integrated values over the lesser of profile depth and root depth produced an estimate of the plant-extractable water capacity of soil. The global average of the estimated plant-extractable water capacities of soil is 8.6 cm (Greenland, Antarctica and bare soil areas excluded). Estimates are less than 5, 10 and 15 cm - over approximately 30, 60, and 89 per cent of the area, respectively. Estimates reflect the combined effects of soil texture, soil organic content, and plant root depth or profile depth. The most influential and uncertain parameter is the depth over which the plant-extractable water capacity of soil is computed, which is usually limited by root depth. Soil texture exerts a lesser, but still substantial, influence. Organic content, except where concentrations are very high, has relatively little effect. The file is available in an ascii array format. The format is such that j=1 corresponds to the grid cell bounded by 90.0 and 89.5 degrees south latitude (centered on 89.75) and i=1 corresponds to the grid cell bounded by 0.0 and 0.5 degrees east longitude (centered on 0.25). No data are given for land ice grid cells, most of which occur in Antarctica and Greenland, or for other unvegetated areas. A value of -99.0 indicates either a water grid cell or a land ice grid cell. A value of -1.0 indicates that vegetation is absent (and the plant-extractable water capacity of soil is undefined). Units are cm. The data file may be read as follows: dimension whcdat(720,360) do j=1,360 read(iunit,''(36f5.1)'') (whcdat(i,j),i=1,720) enddo Data Citation The data set should be cited as follows: Dunne, K. A., and Cort J. Willmott. 2000. Global Distribution of Plant-extractable Water Capacity of Soil (Dunne). Available on-line from Oak Ridge National Laboratory Distributed Active Archive Center, Oak Ridge, Tennessee, U.S.A.</gco:CharacterString>
+				</gmd:abstract>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE LAND SURFACE SOILS SOIL MOISTURE/WATER CONTENT; EARTH SCIENCE LAND SURFACE SOILS SOIL WATER HOLDING CAPACITY; MAPS; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; GEOSCIENTIFIC INFORMATION; ENGLISH;</gco:CharacterString>
+						</gmd:keyword>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:language />
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>feedRSSAlert</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:extent>
+					<gmd:EX_Extent>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicBoundingBox>
+								<gmd:westBoundLongitude>
+									<gco:Decimal>-180</gco:Decimal>
+								</gmd:westBoundLongitude>
+								<gmd:eastBoundLongitude>
+									<gco:Decimal>180</gco:Decimal>
+								</gmd:eastBoundLongitude>
+								<gmd:southBoundLatitude>
+									<gco:Decimal>-90</gco:Decimal>
+								</gmd:southBoundLatitude>
+								<gmd:northBoundLatitude>
+									<gco:Decimal>90</gco:Decimal>
+								</gmd:northBoundLatitude>
+							</gmd:EX_GeographicBoundingBox>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_BoundingPolygon>
+								<gmd:polygon>
+									<gml:Polygon gml:id="d5339e27">
+										<gml:exterior>
+											<gml:LinearRing>
+												<gml:pos>180 90</gml:pos>
+												<gml:pos>-180 90</gml:pos>
+												<gml:pos>-180 -90</gml:pos>
+												<gml:pos>180 -90</gml:pos>
+												<gml:pos>180 90</gml:pos>
+											</gml:LinearRing>
+										</gml:exterior>
+									</gml:Polygon>
+								</gmd:polygon>
+							</gmd:EX_BoundingPolygon>
+						</gmd:geographicElement>
+						<gmd:temporalElement>
+							<gmd:EX_TemporalExtent>
+								<gmd:extent>
+									<gml:TimePeriod gml:id="tt5341">
+										<gml:beginPosition>1996-01-01T12:00:00.000Z</gml:beginPosition>
+										<gml:endPosition>1996-12-31T23:59:59.000Z</gml:endPosition>
+									</gml:TimePeriod>
+								</gmd:extent>
+							</gmd:EX_TemporalExtent>
+						</gmd:temporalElement>
+					</gmd:EX_Extent>
+				</gmd:extent>
+			</gmd:MD_DataIdentification>
+		</gmd:identificationInfo>
+		<gmd:distributionInfo>
+			<gmd:MD_Distribution />
+		</gmd:distributionInfo>
+</gvq:GVQ_Metadata>

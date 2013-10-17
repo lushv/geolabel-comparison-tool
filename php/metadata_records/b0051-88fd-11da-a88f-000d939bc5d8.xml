@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gvq:GVQ_Metadata xmlns:updated19115="http://www.geoviqua.org/19115_updates" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gvq="http://www.geoviqua.org/QualityInformationModel/3.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmd19157="http://www.geoviqua.org/gmd19157" xsi:schemaLocation="http://www.geoviqua.org/QualityInformationModel/3.1 http://schemas.geoviqua.org/GVQ/3.1.0/GeoViQua_PQM_UQM.xsd http://www.uncertml.org/2.0 http://www.uncertml.org/uncertml.xsd">
+		<gmd:fileIdentifier>
+			<gco:CharacterString>b0051-88fd-11da-a88f-000d939bc5d8</gco:CharacterString>
+		</gmd:fileIdentifier>
+		<gmd:parentIdentifier>
+			<gco:CharacterString />
+		</gmd:parentIdentifier>
+		<gmd:hierarchyLevel>
+			<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode" codeListValue="series">series</gmd:MD_ScopeCode>
+		</gmd:hierarchyLevel>
+		<gmd:contact />
+		<gmd:dateStamp>
+			<gco:Date>1982-01-01</gco:Date>
+		</gmd:dateStamp>
+		<gmd:identificationInfo>
+			<gmd:MD_DataIdentification>
+				<gmd:citation>
+					<gmd:CI_Citation>
+						<gmd:title>
+							<gco:CharacterString>PHENOREGIONS FOR MONITORING VEGETATION RESPONSES TO CLIMATE CHANGE</gco:CharacterString>
+						</gmd:title>
+						<gmd:date />
+						<gmd:date>
+							<gmd:CI_Date>
+								<gmd:date>
+									<gco:Date>2012-04-13</gco:Date>
+								</gmd:date>
+								<gmd:dateType>
+									<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" codeSpace="ISOTC211/19115">revision</gmd:CI_DateTypeCode>
+								</gmd:dateType>
+							</gmd:CI_Date>
+						</gmd:date>
+						<gmd:date>
+							<gmd:CI_Date>
+								<gmd:date>
+									<gco:Date>2012-02-14</gco:Date>
+								</gmd:date>
+								<gmd:dateType>
+									<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="created" codeSpace="ISOTC211/19115">created</gmd:CI_DateTypeCode>
+								</gmd:dateType>
+							</gmd:CI_Date>
+						</gmd:date>
+						<gmd:pointOfContact>
+							<gmd:CI_ResponsibleParty>
+								<gmd:organisationName>
+									<gco:CharacterString>NASA</gco:CharacterString>
+								</gmd:organisationName>
+								<gmd:role>
+									<gmd:CI_RoleCode codeList="" codeListValue="originator" />
+								</gmd:role>
+							</gmd:CI_ResponsibleParty>
+						</gmd:pointOfContact>
+						<gmd:identifier>
+							<gmd:RS_Identifier>
+								<gmd:code>
+									<gco:CharacterString>NASA:white_phenoregions</gco:CharacterString>
+								</gmd:code>
+							</gmd:RS_Identifier>
+						</gmd:identifier>
+					</gmd:CI_Citation>
+				</gmd:citation>
+				<gmd:abstract>
+					<gco:CharacterString>The overall purpose in this research was to identify the regions of the world best suited for long-term monitoring of biospheric responses to climate change, i.e. monitoring land surface phenology. The user is referred to White et al. [2005] for further details. Using global 8 km 1982 to 1999 Normalized Difference Vegetation Index (NDVI) data and an eight-element monthly climatology, we identified pixels consistently dominated by annual cycles and then created phenologically and climatically self-similar clusters, which we term phenoregions. We then ranked and screened each phenoregion as a function of landcover homogeneity and consistency, evidence of human impacts, and political diversity.This dataset contains material providing users with direct access to data used to construct the figures in White et al. [2005]. Users are referred to this reference for additional information. Data files include ASCII and binary versions of the image files for the 50 0 elemental phenoregions and the 136 final monitoring phenoregions (shown in figure below) and a corresponding .jpg map. Also included are the classification data in tabular ACSII format for each of the 500 elemental phenoregions.Selected monitoring phenoregions. Phenoregions with fewer than 100 pixels or dominated by crop, urban or barren landcover removed. The 136 remaining phenoregions are those passing the screening factors in Table 1 and are shown with normalized rankings by landcover. (From White et al., 2005).</gco:CharacterString>
+				</gmd:abstract>
+				<gmd:descriptiveKeywords>
+					<gmd:MD_Keywords>
+						<gmd:keyword>
+							<gco:CharacterString>EARTH SCIENCE BIOSPHERE VEGETATION VEGETATION INDEX; LANDSAT-7; TM THEMATIC MAPPER; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; CWIC CEOS WGISS INTEGRATED CATALOG; Phenology; Landcover; Phenoregion; Urbanization; Disturbances; Multiple Biomes; Political Changes; Agricultural Practices; BIOTA; ENGLISH;</gco:CharacterString>
+						</gmd:keyword>
+					</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+				<gmd:language />
+				<gmd:topicCategory>
+					<gmd:MD_TopicCategoryCode>feedRSSAlert</gmd:MD_TopicCategoryCode>
+				</gmd:topicCategory>
+				<gmd:extent>
+					<gmd:EX_Extent>
+						<gmd:geographicElement>
+							<gmd:EX_GeographicBoundingBox>
+								<gmd:westBoundLongitude>
+									<gco:Decimal>-180</gco:Decimal>
+								</gmd:westBoundLongitude>
+								<gmd:eastBoundLongitude>
+									<gco:Decimal>180</gco:Decimal>
+								</gmd:eastBoundLongitude>
+								<gmd:southBoundLatitude>
+									<gco:Decimal>-90</gco:Decimal>
+								</gmd:southBoundLatitude>
+								<gmd:northBoundLatitude>
+									<gco:Decimal>90</gco:Decimal>
+								</gmd:northBoundLatitude>
+							</gmd:EX_GeographicBoundingBox>
+						</gmd:geographicElement>
+						<gmd:geographicElement>
+							<gmd:EX_BoundingPolygon>
+								<gmd:polygon>
+									<gml:Polygon gml:id="d5355e27">
+										<gml:exterior>
+											<gml:LinearRing>
+												<gml:pos>180 90</gml:pos>
+												<gml:pos>-180 90</gml:pos>
+												<gml:pos>-180 -90</gml:pos>
+												<gml:pos>180 -90</gml:pos>
+												<gml:pos>180 90</gml:pos>
+											</gml:LinearRing>
+										</gml:exterior>
+									</gml:Polygon>
+								</gmd:polygon>
+							</gmd:EX_BoundingPolygon>
+						</gmd:geographicElement>
+						<gmd:temporalElement>
+							<gmd:EX_TemporalExtent>
+								<gmd:extent>
+									<gml:TimePeriod gml:id="tt5357">
+										<gml:beginPosition>1982-01-01T12:00:00.000Z</gml:beginPosition>
+										<gml:endPosition>1999-12-31T23:59:59.000Z</gml:endPosition>
+									</gml:TimePeriod>
+								</gmd:extent>
+							</gmd:EX_TemporalExtent>
+						</gmd:temporalElement>
+					</gmd:EX_Extent>
+				</gmd:extent>
+			</gmd:MD_DataIdentification>
+		</gmd:identificationInfo>
+</gvq:GVQ_Metadata>
