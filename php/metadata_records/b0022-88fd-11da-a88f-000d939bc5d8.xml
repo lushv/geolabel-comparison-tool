@@ -9,42 +9,6 @@
   <gmd:characterSet>
       <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_CharacterSetCode" codeListValue="utf8"/>
   </gmd:characterSet>
-  <gmd:contact>
-      <gmd:CI_ResponsibleParty>
-         <gmd:individualName>
-            <gco:CharacterString>Freddy Nachtergaele</gco:CharacterString>
-         </gmd:individualName>
-         <gmd:organisationName>
-            <gco:CharacterString>Land and Plant Nutrition Management Service - AGLL - FAO-UN</gco:CharacterString>
-         </gmd:organisationName>
-         <gmd:contactInfo>
-            <gmd:CI_Contact>
-               <gmd:address>
-                  <gmd:CI_Address>
-                     <gmd:deliveryPoint>
-                        <gco:CharacterString>Viale delle Terme di Caracalla</gco:CharacterString>
-                     </gmd:deliveryPoint>
-                     <gmd:city>
-                        <gco:CharacterString>Rome</gco:CharacterString>
-                     </gmd:city>
-                     <gmd:postalCode>
-                        <gco:CharacterString>00100</gco:CharacterString>
-                     </gmd:postalCode>
-                     <gmd:country>
-                        <gco:CharacterString>Italy</gco:CharacterString>
-                     </gmd:country>
-                     <gmd:electronicMailAddress>
-                        <gco:CharacterString>land-and-water@fao.org</gco:CharacterString>
-                     </gmd:electronicMailAddress>
-                  </gmd:CI_Address>
-               </gmd:address>
-            </gmd:CI_Contact>
-         </gmd:contactInfo>
-         <gmd:role>
-            <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode" codeListValue="pointOfContact"/>
-         </gmd:role>
-      </gmd:CI_ResponsibleParty>
-  </gmd:contact>
   <gmd:dateStamp>
       <gco:DateTime xmlns:srv="http://www.isotc211.org/2005/srv">2005-11-07T15:20:54</gco:DateTime>
   </gmd:dateStamp>

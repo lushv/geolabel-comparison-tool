@@ -9,48 +9,6 @@
   <gmd:characterSet>
       <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_CharacterSetCode" codeListValue="utf8"/>
   </gmd:characterSet>
-  <gmd:contact>
-      <gmd:CI_ResponsibleParty>
-         <gmd:individualName>
-            <gco:CharacterString>Mirella Salvatore</gco:CharacterString>
-         </gmd:individualName>
-         <gmd:organisationName>
-            <gco:CharacterString>FAO - GIS UNIT</gco:CharacterString>
-         </gmd:organisationName>
-         <gmd:positionName>
-            <gco:CharacterString>Consultant</gco:CharacterString>
-         </gmd:positionName>
-         <gmd:contactInfo>
-            <gmd:CI_Contact>
-               <gmd:phone>
-                  <gmd:CI_Telephone/>
-               </gmd:phone>
-               <gmd:address>
-                  <gmd:CI_Address>
-                     <gmd:deliveryPoint>
-                        <gco:CharacterString>Via delle Terme di Caracalla, 1</gco:CharacterString>
-                     </gmd:deliveryPoint>
-                     <gmd:city>
-                        <gco:CharacterString>Rome</gco:CharacterString>
-                     </gmd:city>
-                     <gmd:postalCode>
-                        <gco:CharacterString>00153</gco:CharacterString>
-                     </gmd:postalCode>
-                     <gmd:country>
-                        <gco:CharacterString>Italy</gco:CharacterString>
-                     </gmd:country>
-                     <gmd:electronicMailAddress>
-                        <gco:CharacterString>mirella.salvatore@fao.org</gco:CharacterString>
-                     </gmd:electronicMailAddress>
-                  </gmd:CI_Address>
-               </gmd:address>
-            </gmd:CI_Contact>
-         </gmd:contactInfo>
-         <gmd:role>
-            <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode" codeListValue="pointOfContact"/>
-         </gmd:role>
-      </gmd:CI_ResponsibleParty>
-  </gmd:contact>
   <gmd:dateStamp>
       <gco:DateTime xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:srv="http://www.isotc211.org/2005/srv">2011-09-23T14:43:32</gco:DateTime>
   </gmd:dateStamp>
@@ -157,48 +115,6 @@
          <gmd:status>
             <gmd:MD_ProgressCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ProgressCode" codeListValue="completed"/>
          </gmd:status>
-         <gmd:pointOfContact>
-            <gmd:CI_ResponsibleParty>
-               <gmd:individualName gco:nilReason="missing">
-                  <gco:CharacterString/>
-               </gmd:individualName>
-               <gmd:organisationName>
-                  <gco:CharacterString>FAO - GIS UNIT</gco:CharacterString>
-               </gmd:organisationName>
-               <gmd:positionName>
-                  <gco:CharacterString>GIS Manager</gco:CharacterString>
-               </gmd:positionName>
-               <gmd:contactInfo>
-                  <gmd:CI_Contact>
-                     <gmd:phone>
-                        <gmd:CI_Telephone/>
-                     </gmd:phone>
-                     <gmd:address>
-                        <gmd:CI_Address>
-                           <gmd:deliveryPoint>
-                              <gco:CharacterString>Viale delle Terme di Caracalla, 1</gco:CharacterString>
-                           </gmd:deliveryPoint>
-                           <gmd:city>
-                              <gco:CharacterString>Rome</gco:CharacterString>
-                           </gmd:city>
-                           <gmd:postalCode>
-                              <gco:CharacterString>00153</gco:CharacterString>
-                           </gmd:postalCode>
-                           <gmd:country>
-                              <gco:CharacterString>Italy</gco:CharacterString>
-                           </gmd:country>
-                           <gmd:electronicMailAddress>
-                              <gco:CharacterString>gis-manager@fao.org</gco:CharacterString>
-                           </gmd:electronicMailAddress>
-                        </gmd:CI_Address>
-                     </gmd:address>
-                  </gmd:CI_Contact>
-               </gmd:contactInfo>
-               <gmd:role>
-                  <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode" codeListValue="pointOfContact"/>
-               </gmd:role>
-            </gmd:CI_ResponsibleParty>
-         </gmd:pointOfContact>
          <gmd:resourceMaintenance>
             <gmd:MD_MaintenanceInformation>
                <gmd:maintenanceAndUpdateFrequency>
