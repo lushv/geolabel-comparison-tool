@@ -236,10 +236,18 @@ function filterComments(){
 			var availability = $("#producer_comments_" + i).attr("availability");
 			var supplementalInfo = $("#producer_comments_" + i).attr("supplemental_information");
 			var knownProblems = $("#producer_comments_" + i).attr("known_problems");
-
+			
+			// make sure that null values are treated as empty
+			if(supplementalInfo == "null"){
+				supplementalInfo = "";
+			}
+			if(knownProblems == "null"){
+				knownProblems = "";
+			}
+			
 			switch(commentType){
 				case "supplemental_information":
-					if(availability != 0 && supplementalInfo != "" && supplementalInfo != "null"){
+					if(availability != 0 && supplementalInfo != ""){
 						upScaleLabel(i);
 					}
 					else{
@@ -247,7 +255,7 @@ function filterComments(){
 					}
 					break;
 				case "known_problem":
-					if(availability != 0 && knownProblems != "" && knownProblems != "null"){
+					if(availability != 0 && knownProblems != ""){
 						upScaleLabel(i);
 					}
 					else{
@@ -255,7 +263,7 @@ function filterComments(){
 					}
 					break;
 				case "both":
-					if(availability != 0 && supplementalInfo != "" && knownProblems != "" && supplementalInfo != "null" && knownProblems != "null"){
+					if(availability != 0 && supplementalInfo != "" && knownProblems != ""){
 						upScaleLabel(i);
 					}
 					else{
@@ -281,9 +289,17 @@ function resetComments(){
 			var supplementalInfo = $("#producer_comments_" + i).attr("supplemental_information");
 			var knownProblems = $("#producer_comments_" + i).attr("known_problems");
 
+			// make sure that null values are treated as empty
+			if(supplementalInfo == "null"){
+				supplementalInfo = "";
+			}
+			if(knownProblems == "null"){
+				knownProblems = "";
+			}
+			
 			switch(commentType){
 				case "supplemental_information":
-					if(availability != 0 && supplementalInfo != "" && supplementalInfo != "null"){
+					if(availability != 0 && supplementalInfo != ""){
 						downScaleLabel(i);
 					}
 					else{
@@ -291,7 +307,7 @@ function resetComments(){
 					}
 					break;
 				case "known_problem":
-					if(availability != 0 && knownProblems != "" && knownProblems != "null"){
+					if(availability != 0 && knownProblems != ""){
 						downScaleLabel(i);
 					}
 					else{
@@ -299,7 +315,7 @@ function resetComments(){
 					}
 					break;
 				case "both":
-					if(availability != 0 && supplementalInfo != "" && knownProblems != "" && supplementalInfo != "null" && knownProblems != "null"){
+					if(availability != 0 && supplementalInfo != "" && knownProblems != ""){
 						downScaleLabel(i);
 					}
 					else{
