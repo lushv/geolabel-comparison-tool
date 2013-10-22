@@ -347,6 +347,13 @@
                     </xsl:for-each>
                     <!-- Selecting dataQualityInfo elements - usually just one report for each... -->
                 </xsl:if>
+				<xsl:if test="not(count(//gvq:dataQualityInfo/*/gmd19157:report))">
+					<table width="95%" border="2" cellpadding="5" cellspacing="2">
+						<xsl:for-each select="//gmd19157:LI_Lineage | //gmd:LI_Lineage">
+							<xsl:call-template name="lineageInfo"/>
+						</xsl:for-each>          
+					</table>
+				</xsl:if>
 			</div>
             </body>
         </html>
@@ -517,4 +524,39 @@
             </xsl:for-each>
         </p>
     </xsl:template>
+					
+	<!-- Template for collating lineage information info a table -->
+	<xsl:template match="gmd19157:LI_Lineage | gmd:LI_Lineage" name="lineageInfo">
+		<xsl:variable name="statement" select="gmd19157:statement/gco:CharacterString | gmd:statement/gco:CharacterString"/>
+		<xsl:variable name="description" select="gmd19157:processStep/gmd19157:LI_ProcessStep/gmd19157:description/gco:CharacterString | gmd:processStep/gmd:LI_ProcessStep/gmd:description/gco:CharacterString"/>
+		<xsl:variable name="rationale" select="gmd19157:processStep/gmd19157:LI_ProcessStep/gmd19157:rationale/gco:CharacterString | gmd:processStep/gmd:LI_ProcessStep/gmd:rationale/gco:CharacterString"/>
+		
+		<xsl:if test="normalize-space($statement)  != '' or $description or $rationale">
+			<th>
+				<h4>Lineage Information</h4>
+			</th>
+			<tr>
+				<td>
+					<xsl:if test="$statement">
+						<b>Lineage Statement:</b><br />
+						<xsl:value-of select="$statement"/><br /><br />
+					</xsl:if>
+					
+					<xsl:for-each select="gmd19157:processStep/gmd19157:LI_ProcessStep">
+						<p>
+							<b>Process step
+								<xsl:value-of select="position()" />
+							</b>
+							<br />
+							<b>Description: </b>
+							<xsl:value-of select="gmd19157:description/gco:CharacterString" />
+							<br />
+							<b>Rationale: </b>
+							<xsl:value-of select="gmd19157:rationale/gco:CharacterString" />
+						</p>
+					</xsl:for-each>
+				</td>
+			</tr>
+		</xsl:if>
+	</xsl:template>
 </xsl:stylesheet>

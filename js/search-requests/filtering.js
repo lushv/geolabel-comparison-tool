@@ -239,7 +239,7 @@ function filterComments(){
 
 			switch(commentType){
 				case "supplemental_information":
-					if(availability != 0 && supplementalInfo != ""){
+					if(availability != 0 && supplementalInfo != "" && supplementalInfo != "null"){
 						upScaleLabel(i);
 					}
 					else{
@@ -247,7 +247,7 @@ function filterComments(){
 					}
 					break;
 				case "known_problem":
-					if(availability != 0 && knownProblems != ""){
+					if(availability != 0 && knownProblems != "" && knownProblems != "null"){
 						upScaleLabel(i);
 					}
 					else{
@@ -255,7 +255,7 @@ function filterComments(){
 					}
 					break;
 				case "both":
-					if(availability != 0 && supplementalInfo != "" && knownProblems != ""){
+					if(availability != 0 && supplementalInfo != "" && knownProblems != "" && supplementalInfo != "null" && knownProblems != "null"){
 						upScaleLabel(i);
 					}
 					else{

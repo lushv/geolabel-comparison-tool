@@ -27,7 +27,7 @@
           </body>
         </html>
         </xsl:template>              
-    <!-- Template for collating feedbacks info a few paras -->
+    <!-- Template for collating lineage into a table -->
     <xsl:template match="gmd19157:LI_Lineage | gmd:LI_Lineage" name="lineageInfo">
         <xsl:variable name="statement" select="gmd19157:statement/gco:CharacterString | gmd:statement/gco:CharacterString"/>
         <xsl:variable name="description" select="gmd19157:processStep/gmd19157:LI_ProcessStep/gmd19157:description/gco:CharacterString | gmd:processStep/gmd:LI_ProcessStep/gmd:description/gco:CharacterString"/>
