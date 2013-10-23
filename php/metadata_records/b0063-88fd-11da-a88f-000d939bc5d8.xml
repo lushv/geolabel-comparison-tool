@@ -464,6 +464,102 @@
 				<gmd:supplementalInformation>
 					<gco:CharacterString>Bridges EM and Oldeman LR 1999. Global assessment of human-induced land degradation.  Arid Soil Research and Rehabilitation 13, 319-325          Oldeman LR, Hakkeling RTA and Sombroek WG 1991. World Map of  the Status of Human-Induced Soil Degradation: An explanatory Note (rev. ed.), UNEP and ISRIC, Wageningen (http://www.isric.org/isric/webdocs/Docs/ExplanNote.pdf)          Oldeman LR 1994. The global extent of soil degradation. In: Greenland DJ and I Szabolcs (editors), Soil Resilience and Sustainble land Use. CAB Int., Wallingford, pp 99-118          UNEP 1992. World Atlas of Desertification. United Nations Environment Programme, and Edward Arnold, London, 69 p          UNEP 1997. World Atlas of Desertification (2nd ed.). Arnold, London</gco:CharacterString>
 				</gmd:supplementalInformation>
+		  <gmd19157:referenceDoc>
+			<gvq:GVQ_Publication>
+				<gmd:title>
+					<gco:CharacterString>A joint initiative for harmonization and validation of land cover datasets</gco:CharacterString>
+				</gmd:title>
+				<gmd:date>
+					<gmd:CI_Date>
+						<gmd:date>
+							<gco:Date>2013-03-01</gco:Date>
+						</gmd:date>
+						<gmd:dateType>
+							<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+						</gmd:dateType>
+					</gmd:CI_Date>
+				</gmd:date>
+				<gmd:ISSN>
+					<gco:CharacterString>0196-2892</gco:CharacterString>
+				</gmd:ISSN>
+				<gvq:target>
+					<updated19115:MD_Identifier uuid="jrc.europa.eu:GLC2000" id="GLC2000">
+						<!-- the ID is used for xlinking within the document (see 'discoveredIssue'), the UUID for potential outside links -->
+						<gmd:code>
+							<gco:CharacterString></gco:CharacterString>
+						</gmd:code>
+						<updated19115:codeSpace>
+							<gco:CharacterString></gco:CharacterString>
+						</updated19115:codeSpace>
+					</updated19115:MD_Identifier>
+				</gvq:target>
+				<gvq:doi>
+					<gco:CharacterString>39.3340/JJCW.2013.769908</gco:CharacterString>
+				</gvq:doi>
+				<gvq:purpose>
+					<gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>
+				</gvq:purpose>
+				<gvq:scope xlink:href="#datasetScope"/>
+				<gvq:category>
+					<gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+				</gvq:category>
+				<gvq:onlineResource>
+					<gmd:CI_OnlineResource>
+						<gmd:linkage>
+							<gmd:URL>http://ieeexplore.ieee.org/</gmd:URL>
+						</gmd:linkage>
+					</gmd:CI_OnlineResource>
+				</gvq:onlineResource>
+			</gvq:GVQ_Publication>
+		</gmd19157:referenceDoc>
+		  <gmd19157:referenceDoc>
+			<gvq:GVQ_Publication>
+				<gmd:title>
+					<gco:CharacterString>A soil particle-size distribution dataset for regional land and climate modelling</gco:CharacterString>
+				</gmd:title>
+				<gmd:date>
+					<gmd:CI_Date>
+						<gmd:date>
+							<gco:Date>2013-03-01</gco:Date>
+						</gmd:date>
+						<gmd:dateType>
+							<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+						</gmd:dateType>
+					</gmd:CI_Date>
+				</gmd:date>
+				<gmd:ISSN>
+					<gco:CharacterString>0196-2892</gco:CharacterString>
+				</gmd:ISSN>
+				<gvq:target>
+					<updated19115:MD_Identifier uuid="jrc.europa.eu:GLC2000" id="GLC2000">
+						<!-- the ID is used for xlinking within the document (see 'discoveredIssue'), the UUID for potential outside links -->
+						<gmd:code>
+							<gco:CharacterString></gco:CharacterString>
+						</gmd:code>
+						<updated19115:codeSpace>
+							<gco:CharacterString></gco:CharacterString>
+						</updated19115:codeSpace>
+					</updated19115:MD_Identifier>
+				</gvq:target>
+				<gvq:doi>
+					<gco:CharacterString>39.3340/JJCW.2013.769908</gco:CharacterString>
+				</gvq:doi>
+				<gvq:purpose>
+					<gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>
+				</gvq:purpose>
+				<gvq:scope xlink:href="#datasetScope"/>
+				<gvq:category>
+					<gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+				</gvq:category>
+				<gvq:onlineResource>
+					<gmd:CI_OnlineResource>
+						<gmd:linkage>
+							<gmd:URL>http://www.sciencedirect.com/</gmd:URL>
+						</gmd:linkage>
+					</gmd:CI_OnlineResource>
+				</gvq:onlineResource>
+			</gvq:GVQ_Publication>
+		</gmd19157:referenceDoc>
 			</gmd:MD_DataIdentification>
 		</gmd:identificationInfo>
 		<gmd:distributionInfo>

@@ -86,7 +86,7 @@
 				<gmd:citation>
 					<gmd:CI_Citation>
 						<gmd:title>
-							<gco:CharacterString>Global Change In Net Primary Productivity (1981-2003)</gco:CharacterString>
+							<gco:CharacterString>Global Change In Net Primary Productivity (1981-2013)</gco:CharacterString>
 						</gmd:title>
 						<gmd:date>
 							<gmd:CI_Date>
@@ -425,7 +425,7 @@
 									<gco:CharacterString>Global change in NPP - Fig 2.zip</gco:CharacterString>
 								</gmd:name>
 								<gmd:description>
-									<gco:CharacterString>Global change in net primary productivity 1981-2003 - IMG format</gco:CharacterString>
+									<gco:CharacterString>Global change in net primary productivity 1981-2013 - IMG format</gco:CharacterString>
 								</gmd:description>
 							</gmd:CI_OnlineResource>
 						</gmd:onLine>
@@ -457,7 +457,7 @@
 									<gco:CharacterString>GEONETWORK:fig2_37049</gco:CharacterString>
 								</gmd:name>
 								<gmd:description>
-									<gco:CharacterString>Global Change In Net Primary Productivity (1981-2003)</gco:CharacterString>
+									<gco:CharacterString>Global Change In Net Primary Productivity (1981-2013)</gco:CharacterString>
 								</gmd:description>
 							</gmd:CI_OnlineResource>
 						</gmd:onLine>
@@ -485,4 +485,83 @@
 				</gmd:maintenanceAndUpdateFrequency>
 			</gmd:MD_MaintenanceInformation>
 		</gmd:metadataMaintenance>
+	<gvq:dataQualityInfo>
+		<gvq:GVQ_DataQuality>
+			<gmd19157:scope>
+				<gmd19157:DQ_Scope id="datasetScope">
+					<gmd19157:level>
+						<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode" codeListValue="dataset"/>
+					</gmd19157:level>
+					<gmd19157:extent xlink:href="#datasetExtent"/>
+				</gmd19157:DQ_Scope>
+			</gmd19157:scope>
+			<gmd19157:report>
+				<gmd19157:DQ_NonQuantitativeAttributeAccuracy id="RegLog">
+					<gmd19157:dateTime>
+						<gco:DateTime>2013-02-26T15:41:45</gco:DateTime>
+					</gmd19157:dateTime>
+					<gmd19157:evaluation>
+						<gvq:GVQ_SampleBasedInspection>
+							<gmd19157:evaluationMethodDescription>
+								<gco:CharacterString>Spatialization of the classification success probability using independent test areas (25% of the buffered-MCSC, MCSC_test_12cat source)</gco:CharacterString>
+							</gmd19157:evaluationMethodDescription>
+							<gmd19157:evaluationMethodType>
+								<gmd19157:DQ_EvaluationMethodTypeCode codeListValue="http://www.geoviqua.org/gmd19157/resources/codeList.xml#DQ_EvaluationMethodTypeCode" codeList="directExternal"/>
+							</gmd19157:evaluationMethodType>
+							<gmd19157:samplingScheme>
+								<gco:CharacterString>Random sampling with stratification into three lots (all categories included in each of the three lots) (Stratified_random_sampling process step)</gco:CharacterString>
+							</gmd19157:samplingScheme>
+							<gmd19157:lotDescription>
+								<!-- $$ Maybe from "The test lot (MCSC_test_12cat) is used to define the dependent ..." to the end of the paragpah should go on the trace report of this report? -->
+								<gco:CharacterString>Split ground truth buffered-MCSC (MCSC_reclass_buffer) into training subsample (50%, MCSC_train_12cat), test (25%, MCSC_test_12cat) and validation (25%, MCSC_test_test_12cat) subsamples sing random stratified sampling methods in R software (Stratified_random_sampling process step). The test lot (MCSC_test_12cat) is used to define the dependent variable in the logistic regression model: success/failure binomial variable setting a 2 values reclassification of the overlaying of the classification product (ClsMix layer id="LC") and the test ground truth lot (MCSC_test_12cat) i.e., 1=agreement between ClsMix and MCSCtest, 0=disagreement between ClsMix and MCSCtest. Note that the overlaying of the classification product (ClsMix layer) and the test ground truth lot (MCSC_test_12cat) is actually the spatialization of the Confusion Matrix described in the previous quality report.</gco:CharacterString>
+							</gmd19157:lotDescription>
+							<gmd19157:samplingRatio>
+								<!-- $$ Maybe from "However this procedure implies that only 25% of the ..." to the end of the paragpah should go on the trace report of this report? -->
+								<gco:CharacterString>100% of the test lot (MCSC_test_12cat) is inspected. However this procedure implies that only 25% of the ground truth area is used in model fitting and then 10% of this 25% is sampled in the statistical model fitting in order to avoid spatial correlation (still 1105303 pixels analysed)</gco:CharacterString>
+							</gmd19157:samplingRatio>
+						</gvq:GVQ_SampleBasedInspection>
+					</gmd19157:evaluation>
+					<gmd19157:result>
+						<gmd19157:DQ_QuantitativeResult>
+							<gmd19157:resultScope xlink:href="#datasetScope"/>
+							<gmd19157:valueType>
+								<gco:RecordType xlink:href="http://www.uncertml.org/statistics/***">Discrete probability</gco:RecordType>
+								<!-- I didn't know which statistic was this case: LB: $$ which is the uncertML link for AUC/ROC (percentage accuracy)? Where can we write the result refers to the % probability of success in the classification product category assignment? and that the success is defined by setting a threshold to the continuous % probability of success obtained by the predicted group resulting from the application of a threshold in the SPSS software: >50% is group 1 =success < 50% is group 0=failure of the logistic regression model ? Or this is inherent to the AUC test in itself?? Maybe Dan can answer this...-->
+							</gmd19157:valueType>
+							<gmd19157:valueUnit xlink:href="urn:ogc:def:uom:UCUM:%25"/>
+							<gmd19157:value>
+								<gco:Record>
+									<gco:Real>74.10</gco:Real>
+								</gco:Record>
+							</gmd19157:value>
+						</gmd19157:DQ_QuantitativeResult>
+					</gmd19157:result>
+					<gmd19157:result>
+						<gmd19157:DQ_QuantitativeResult>
+							<gmd19157:valueType>
+								<gco:RecordType>Sensitivity</gco:RecordType>
+							</gmd19157:valueType>
+							<gmd19157:valueUnit>
+							</gmd19157:valueUnit>
+							<gmd19157:value>
+								<gco:Record>0.72</gco:Record>
+							</gmd19157:value>
+						</gmd19157:DQ_QuantitativeResult>
+					</gmd19157:result>
+					<gmd19157:result>
+						<gmd19157:DQ_QuantitativeResult>
+							<gmd19157:valueType>
+								<gco:RecordType>Specificity</gco:RecordType>
+							</gmd19157:valueType>
+							<gmd19157:valueUnit>
+							</gmd19157:valueUnit>
+							<gmd19157:value>
+								<gco:Record>0.76</gco:Record>
+							</gmd19157:value>
+						</gmd19157:DQ_QuantitativeResult>
+					</gmd19157:result>
+				</gmd19157:DQ_NonQuantitativeAttributeAccuracy>
+			</gmd19157:report>
+		</gvq:GVQ_DataQuality>
+	</gvq:dataQualityInfo>
 </gvq:GVQ_Metadata>

@@ -796,6 +796,54 @@
 				<gmd:supplementalInformation>
 					<gco:CharacterString>1) Current data set (WISE ver. 3.1):          Batjes NH 2008. ISRIC-WISE Harmonized Global Soil Profile Dataset (Ver. 3.1). Report 2008/02, ISRIC ? World Soil Information, Wageningen (with dataset). (http://www.isric.org/isric/Webdocs/Docs/ISRIC_Report_2008_02.pdf)          Batjes NH 2009. Harmonized soil profile data for applications at global and continental scales: updates to the WISE database. Soil Use and Management 25 (accepted 08/01/2009)          2) Earlier versions:          Batjes, N.H., 1997. A world data set of derived soil properties by FAO-UNESCO soil unit for global modelling. Soil Use and Management, 13: 9-16.          Batjes, N.H., 2002. A homogenized soil profile data set for global and regional environmental research (WISE version 1.1). ISRIC Report 2002/01, International Soil Reference and Information Centre (ISRIC), Wageningen          Batjes, N.H. and Bridges, E.M., 1994. Potential emissions of radiatively active gases from soil to atmosphere with special reference to methane: development of a global database (WISE). Journal of Geophysical Research, 99(D8): 16479-16489.          Batjes, N.H., Bridges, E.M. and Nachtergaele, F.O., 1995. World Inventory of Soil Emission Potentials: development of a global soil data base of process-controlling factors. In: S. Peng, K.T. Ingram, H.U. Neue and L.H. Ziska (Editors), Climate Change and Rice. Springer-Verlag, Heidelberg, pp. 102-115.          3) Examples of studies that use WISE-derived data may be found at:http://www.isric.org/UK/About+ISRIC/Projects/Track+Record/WISE+applications.htm</gco:CharacterString>
 				</gmd:supplementalInformation>
+		  <gmd19157:referenceDoc>
+			<gvq:GVQ_Publication>
+				<gmd:title>
+					<gco:CharacterString>New developments in soil classification: World Reference Base for Soil Resources</gco:CharacterString>
+				</gmd:title>
+				<gmd:date>
+					<gmd:CI_Date>
+						<gmd:date>
+							<gco:Date>2013-03-01</gco:Date>
+						</gmd:date>
+						<gmd:dateType>
+							<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+						</gmd:dateType>
+					</gmd:CI_Date>
+				</gmd:date>
+				<gmd:ISSN>
+					<gco:CharacterString>0196-2892</gco:CharacterString>
+				</gmd:ISSN>
+				<gvq:target>
+					<updated19115:MD_Identifier uuid="jrc.europa.eu:GLC2000" id="GLC2000">
+						<!-- the ID is used for xlinking within the document (see 'discoveredIssue'), the UUID for potential outside links -->
+						<gmd:code>
+							<gco:CharacterString></gco:CharacterString>
+						</gmd:code>
+						<updated19115:codeSpace>
+							<gco:CharacterString></gco:CharacterString>
+						</updated19115:codeSpace>
+					</updated19115:MD_Identifier>
+				</gvq:target>
+				<gvq:doi>
+					<gco:CharacterString>39.3340/JJCW.2013.769908</gco:CharacterString>
+				</gvq:doi>
+				<gvq:purpose>
+					<gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>
+				</gvq:purpose>
+				<gvq:scope xlink:href="#datasetScope"/>
+				<gvq:category>
+					<gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+				</gvq:category>
+				<gvq:onlineResource>
+					<gmd:CI_OnlineResource>
+						<gmd:linkage>
+							<gmd:URL>http://www.sciencedirect.com/</gmd:URL>
+						</gmd:linkage>
+					</gmd:CI_OnlineResource>
+				</gvq:onlineResource>
+			</gvq:GVQ_Publication>
+		</gmd19157:referenceDoc>
 			</gmd:MD_DataIdentification>
 		</gmd:identificationInfo>
 		<gmd:distributionInfo>

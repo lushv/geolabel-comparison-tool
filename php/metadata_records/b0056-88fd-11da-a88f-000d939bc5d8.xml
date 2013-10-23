@@ -86,7 +86,7 @@
 				<gmd:citation>
 					<gmd:CI_Citation>
 						<gmd:title>
-							<gco:CharacterString>Global Change in Rain-Use Efficiency 1981-2003</gco:CharacterString>
+							<gco:CharacterString>Global Change in Rain-Use Efficiency 1981-2013</gco:CharacterString>
 						</gmd:title>
 						<gmd:date>
 							<gmd:CI_Date>
@@ -378,6 +378,102 @@
 				<gmd:supplementalInformation>
 					<gco:CharacterString>Within the FAO program Land Degradation Assessment in Drylands (LADA), the present "Global Assessment of Land Degradation and Improvement" uses remote sensing to identify areas where significant biological change is happening, both hot spots of land degradation and bright spots of land improvement. In the next phase of the program, hot spots and bright spots will be further characterised in the field by national teams.</gco:CharacterString>
 				</gmd:supplementalInformation>
+		  <gmd19157:referenceDoc>
+			<gvq:GVQ_Publication>
+				<gmd:title>
+					<gco:CharacterString>Convergence across biomes to a common rain-use efficiency</gco:CharacterString>
+				</gmd:title>
+				<gmd:date>
+					<gmd:CI_Date>
+						<gmd:date>
+							<gco:Date>2013-03-01</gco:Date>
+						</gmd:date>
+						<gmd:dateType>
+							<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+						</gmd:dateType>
+					</gmd:CI_Date>
+				</gmd:date>
+				<gmd:ISSN>
+					<gco:CharacterString>0196-2892</gco:CharacterString>
+				</gmd:ISSN>
+				<gvq:target>
+					<updated19115:MD_Identifier uuid="jrc.europa.eu:GLC2000" id="GLC2000">
+						<!-- the ID is used for xlinking within the document (see 'discoveredIssue'), the UUID for potential outside links -->
+						<gmd:code>
+							<gco:CharacterString></gco:CharacterString>
+						</gmd:code>
+						<updated19115:codeSpace>
+							<gco:CharacterString></gco:CharacterString>
+						</updated19115:codeSpace>
+					</updated19115:MD_Identifier>
+				</gvq:target>
+				<gvq:doi>
+					<gco:CharacterString>21.1109/RRST.2013.864370</gco:CharacterString>
+				</gvq:doi>
+				<gvq:purpose>
+					<gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>
+				</gvq:purpose>
+				<gvq:scope xlink:href="#datasetScope"/>
+				<gvq:category>
+					<gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+				</gvq:category>
+				<gvq:onlineResource>
+					<gmd:CI_OnlineResource>
+						<gmd:linkage>
+							<gmd:URL>http://www.nature.com/nature/index.html</gmd:URL>
+						</gmd:linkage>
+					</gmd:CI_OnlineResource>
+				</gvq:onlineResource>
+			</gvq:GVQ_Publication>
+		</gmd19157:referenceDoc>
+		  <gmd19157:referenceDoc>
+			<gvq:GVQ_Publication>
+				<gmd:title>
+					<gco:CharacterString>Rain use efficiency: a unifying concept in arid-land ecology</gco:CharacterString>
+				</gmd:title>
+				<gmd:date>
+					<gmd:CI_Date>
+						<gmd:date>
+							<gco:Date>2013-03-01</gco:Date>
+						</gmd:date>
+						<gmd:dateType>
+							<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+						</gmd:dateType>
+					</gmd:CI_Date>
+				</gmd:date>
+				<gmd:ISSN>
+					<gco:CharacterString>0196-2892</gco:CharacterString>
+				</gmd:ISSN>
+				<gvq:target>
+					<updated19115:MD_Identifier uuid="jrc.europa.eu:GLC2000" id="GLC2000">
+						<!-- the ID is used for xlinking within the document (see 'discoveredIssue'), the UUID for potential outside links -->
+						<gmd:code>
+							<gco:CharacterString></gco:CharacterString>
+						</gmd:code>
+						<updated19115:codeSpace>
+							<gco:CharacterString></gco:CharacterString>
+						</updated19115:codeSpace>
+					</updated19115:MD_Identifier>
+				</gvq:target>
+				<gvq:doi>
+					<gco:CharacterString>21.1109/RRST.2013.864370</gco:CharacterString>
+				</gvq:doi>
+				<gvq:purpose>
+					<gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>
+				</gvq:purpose>
+				<gvq:scope xlink:href="#datasetScope"/>
+				<gvq:category>
+					<gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+				</gvq:category>
+				<gvq:onlineResource>
+					<gmd:CI_OnlineResource>
+						<gmd:linkage>
+							<gmd:URL>http://onlinelibrary.wiley.com/</gmd:URL>
+						</gmd:linkage>
+					</gmd:CI_OnlineResource>
+				</gvq:onlineResource>
+			</gvq:GVQ_Publication>
+		</gmd19157:referenceDoc>
 			</gmd:MD_DataIdentification>
 		</gmd:identificationInfo>
 		<gmd:distributionInfo>
@@ -425,7 +521,7 @@
 									<gco:CharacterString>Global change in RUE - Fig 3.zip</gco:CharacterString>
 								</gmd:name>
 								<gmd:description>
-									<gco:CharacterString>Global change in rain-use efficiency 1981-2003 - IMG format</gco:CharacterString>
+									<gco:CharacterString>Global change in rain-use efficiency 1981-2013 - IMG format</gco:CharacterString>
 								</gmd:description>
 							</gmd:CI_OnlineResource>
 						</gmd:onLine>
@@ -457,7 +553,7 @@
 									<gco:CharacterString>GEONETWORK:fig3_37051</gco:CharacterString>
 								</gmd:name>
 								<gmd:description>
-									<gco:CharacterString>Global Change in Rain-Use Efficiency 1981-2003</gco:CharacterString>
+									<gco:CharacterString>Global Change in Rain-Use Efficiency 1981-2013</gco:CharacterString>
 								</gmd:description>
 							</gmd:CI_OnlineResource>
 						</gmd:onLine>

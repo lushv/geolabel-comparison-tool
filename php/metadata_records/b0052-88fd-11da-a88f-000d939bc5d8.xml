@@ -18,7 +18,7 @@
 				<gmd:citation>
 					<gmd:CI_Citation>
 						<gmd:title>
-							<gco:CharacterString>GLOBAL LEAF AREA INDEX DATA FROM FIELD MEASUREMENTS, 1932-2000</gco:CharacterString>
+							<gco:CharacterString>GLOBAL LEAF AREA INDEX DATA FROM FIELD MEASUREMENTS, 1932-2013</gco:CharacterString>
 						</gmd:title>
 						<gmd:date />
 						<gmd:date>
@@ -61,7 +61,7 @@
 					</gmd:CI_Citation>
 				</gmd:citation>
 				<gmd:abstract>
-					<gco:CharacterString>Approximately 1000 published estimates of leaf area index (LAI) from nearly 400 unique field sites, covering the period 1932-2000, have been compiled into a single data set. LAI is a key parameter for global and regional models of biosphere/atmosphere exchange of carbon dioxide, water vapor, etc. This data set provides a benchmark of typical values and ranges of LAI for a variety of biomes and land cover types, in support of model development and validation of satellite-derived remote sensing estimates of LAI and other vegetation parameters. The LAI data are linked to a bibliography of over 300 original-source references. These historical LAI data are mostly from natural and semi-natural (managed) ecosystems, although some agricultural estimates are also included. Caution is advised in using these data; they were collected using a wide range of methodologies and assumptions and may not be comparable among sites. Some attempts have been made to detect and flag the outliers in this data set, according to different biome/land cover classes. Needleleaf (coniferous) forests are by far the most commonly measured biome/land cover types in this compilation, with 22% of the measurements from temperate evergreen needleleaf forests, and boreal evergreen needleleaf forests and crops the next most common (about 9% each). About 40% of the records in the data set were published in the past 10 years (1991-2000), with a further 20% collected between 1981 and 1990. Mean LAI (+/- standard deviation), distributed between 15 biome/land cover classes, ranged from 1.31 +/- 0.85 for deserts to 8.72 +/- 4.32 for tree plantations, with evergreen forests (needleleaf and broadleaf) displaying the highest LAI among the natural vegetation classes. Further information on this data set is available from the link below: Leaf Area Index Data Citation: Cite this data set as follows: Scurlock, J. M. O., G. P. Asner, and S. T. Gower. 2001. Global Leaf Area Index from Field Measurements, 1932-2000. Available on-line [ http://www.daac.ornl.gov ] from Oak Ridge National Laboratory Distributed Active Archive Center, Oak Ridge, Tennessee, U.S.A.</gco:CharacterString>
+					<gco:CharacterString>Approximately 1000 published estimates of leaf area index (LAI) from nearly 400 unique field sites, covering the period 1932-2013, have been compiled into a single data set. LAI is a key parameter for global and regional models of biosphere/atmosphere exchange of carbon dioxide, water vapor, etc. This data set provides a benchmark of typical values and ranges of LAI for a variety of biomes and land cover types, in support of model development and validation of satellite-derived remote sensing estimates of LAI and other vegetation parameters. The LAI data are linked to a bibliography of over 300 original-source references. These historical LAI data are mostly from natural and semi-natural (managed) ecosystems, although some agricultural estimates are also included. Caution is advised in using these data; they were collected using a wide range of methodologies and assumptions and may not be comparable among sites. Some attempts have been made to detect and flag the outliers in this data set, according to different biome/land cover classes. Needleleaf (coniferous) forests are by far the most commonly measured biome/land cover types in this compilation, with 22% of the measurements from temperate evergreen needleleaf forests, and boreal evergreen needleleaf forests and crops the next most common (about 9% each). About 40% of the records in the data set were published in the past 10 years (1991-2000), with a further 20% collected between 1981 and 1990. Mean LAI (+/- standard deviation), distributed between 15 biome/land cover classes, ranged from 1.31 +/- 0.85 for deserts to 8.72 +/- 4.32 for tree plantations, with evergreen forests (needleleaf and broadleaf) displaying the highest LAI among the natural vegetation classes. Further information on this data set is available from the link below: Leaf Area Index Data Citation: Cite this data set as follows: Scurlock, J. M. O., G. P. Asner, and S. T. Gower. 2001. Global Leaf Area Index from Field Measurements, 1932-2013. Available on-line [ http://www.daac.ornl.gov ] from Oak Ridge National Laboratory Distributed Active Archive Center, Oak Ridge, Tennessee, U.S.A.</gco:CharacterString>
 				</gmd:abstract>
 				<gmd:descriptiveKeywords>
 					<gmd:MD_Keywords>
@@ -123,4 +123,326 @@
 				</gmd:extent>
 			</gmd:MD_DataIdentification>
 		</gmd:identificationInfo>
+    <gvq:userFeedback>
+		<gvq:GVQ_FeedbackCollection>
+			<gvq:item>
+				<gvq:userRole>
+					<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" NonresearchEndUser "/>
+				</gvq:userRole>
+				<gvq:user>
+					<gvq:userDetails>
+						<gmd:individualName>
+							<gco:CharacterString>Peter Adams</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:organisationName>
+							<gco:CharacterString>FAO</gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:contactInfo>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+						</gmd:role>
+					</gvq:userDetails>
+					<gvq:applicationDomain>Agriculture</gvq:applicationDomain>
+					<gvq:expertiseLevel>2</gvq:expertiseLevel>
+					<gvq:userRole>
+						<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+					</gvq:userRole>
+				</gvq:user>
+				<gvq:dateStamp>
+					<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
+				</gvq:dateStamp>
+				<gvq:qualityOverride>
+					<gvq:GVQ_DataQuality>
+						<gmd19157:scope/>
+						<gvq:discoveredIssue/>
+					</gvq:GVQ_DataQuality>
+				</gvq:qualityOverride>
+				<gvq:userComment>
+					<gvq:comment>Metadata record is of very bad quality.</gvq:comment>
+					<gvq:mime-type>text/plain</gvq:mime-type>
+				</gvq:userComment>
+				<gvq:rating>
+					<gvq:score>3</gvq:score>
+					<gvq:justification>Metadata does not provide any quality information or guidelines on fitness for use.</gvq:justification>
+				</gvq:rating>
+				<gvq:usage>
+					<gvq:reportAspect>
+						<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+					</gvq:reportAspect>
+					<gvq:usageDescription>I used this dataset for classification of vegetation in the Warwickshire area, UK, in 2012.</gvq:usageDescription>
+					<gvq:discoveredIssue>
+						<gvq:GVQ_DiscoveredIssue>
+							<gvq:target xlink:href="targetUID"/>
+						</gvq:GVQ_DiscoveredIssue>
+					</gvq:discoveredIssue>
+				</gvq:usage>
+			</gvq:item>
+			<gvq:item>
+				<gvq:userRole>
+					<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+				</gvq:userRole>
+				<gvq:user>
+					<gvq:userDetails>
+						<gmd:individualName>
+							<gco:CharacterString>Paula Diaz</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:organisationName>
+							<gco:CharacterString>UAB</gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:contactInfo>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+						</gmd:role>
+					</gvq:userDetails>
+					<gvq:applicationDomain>http://www.eionet.europa.eu/gemet/concept/3502</gvq:applicationDomain>
+					<gvq:expertiseLevel>4</gvq:expertiseLevel>
+					<gvq:userRole>
+						<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+					</gvq:userRole>
+				</gvq:user>
+				<gvq:dateStamp>
+					<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
+				</gvq:dateStamp>
+				<gvq:qualityOverride>
+					<gvq:GVQ_DataQuality>
+						<gmd19157:scope/>
+						<gvq:discoveredIssue/>
+					</gvq:GVQ_DataQuality>
+				</gvq:qualityOverride>
+				<gvq:userComment>
+					<gvq:comment>This data was suitable for land use classification for Spain region (2010) but metadata record is incomplete.</gvq:comment>
+					<gvq:mime-type>text/plain</gvq:mime-type>
+				</gvq:userComment>
+				<gvq:rating>
+					<gvq:score>3</gvq:score>
+					<gvq:justification>Incomplete metadata record. Quality information is missing.</gvq:justification>
+				</gvq:rating>
+				<gvq:usage>
+					<gvq:reportAspect>
+						<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+					</gvq:reportAspect>
+					<gvq:usageDescription></gvq:usageDescription>
+					<gvq:discoveredIssue>
+						<gvq:GVQ_DiscoveredIssue>
+							<gvq:target xlink:href="targetUID"/>
+						</gvq:GVQ_DiscoveredIssue>
+					</gvq:discoveredIssue>
+				</gvq:usage>
+			</gvq:item>
+			<gvq:item>
+				<gvq:userRole>
+					<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" NonresearchEndUser "/>
+				</gvq:userRole>
+				<gvq:user>
+					<gvq:userDetails>
+						<gmd:individualName>
+							<gco:CharacterString>Sarah White</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:organisationName>
+							<gco:CharacterString>DEFRA</gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:contactInfo>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+						</gmd:role>
+					</gvq:userDetails>
+					<gvq:applicationDomain>http://www.eionet.europa.eu/gemet/concept/3502</gvq:applicationDomain>
+					<gvq:expertiseLevel>2</gvq:expertiseLevel>
+					<gvq:userRole>
+						<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+					</gvq:userRole>
+				</gvq:user>
+				<gvq:dateStamp>
+					<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
+				</gvq:dateStamp>
+				<gvq:qualityOverride>
+					<gvq:GVQ_DataQuality>
+						<gmd19157:scope/>
+						<gvq:discoveredIssue/>
+					</gvq:GVQ_DataQuality>
+				</gvq:qualityOverride>
+				<gvq:userComment>
+					<gvq:comment>Metadata record is incomplete: no quality or lineage information.</gvq:comment>
+					<gvq:mime-type>text/plain</gvq:mime-type>
+				</gvq:userComment>
+				<gvq:rating>
+					<gvq:score>3</gvq:score>
+					<gvq:justification>The metadata records is empty.</gvq:justification>
+				</gvq:rating>
+				<gvq:usage>
+					<gvq:reportAspect>
+						<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+					</gvq:reportAspect>
+					<gvq:usageDescription></gvq:usageDescription>
+					<gvq:discoveredIssue>
+						<gvq:GVQ_DiscoveredIssue>
+							<gvq:target xlink:href="targetUID"/>
+						</gvq:GVQ_DiscoveredIssue>
+					</gvq:discoveredIssue>
+				</gvq:usage>
+			</gvq:item>
+			<gvq:item>
+				<gvq:userRole>
+					<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" NonresearchEndUser "/>
+				</gvq:userRole>
+				<gvq:user>
+					<gvq:userDetails>
+						<gmd:individualName>
+							<gco:CharacterString>Richard Stevens</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:organisationName>
+							<gco:CharacterString>FAO</gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:contactInfo>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+						</gmd:role>
+					</gvq:userDetails>
+					<gvq:applicationDomain>Land Cover</gvq:applicationDomain>
+					<gvq:expertiseLevel>3</gvq:expertiseLevel>
+					<gvq:userRole>
+						<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+					</gvq:userRole>
+				</gvq:user>
+				<gvq:dateStamp>
+					<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
+				</gvq:dateStamp>
+				<gvq:qualityOverride>
+					<gvq:GVQ_DataQuality>
+						<gmd19157:scope/>
+						<gvq:discoveredIssue/>
+					</gvq:GVQ_DataQuality>
+				</gvq:qualityOverride>
+				<gvq:userComment>
+					<gvq:comment>This dataset has high uncertainty. I would not recommend this data for land cover research.</gvq:comment>
+					<gvq:mime-type>text/plain</gvq:mime-type>
+				</gvq:userComment>
+				<gvq:rating>
+					<gvq:score>4</gvq:score>
+					<gvq:justification>The dataset was not suitable for observation of land cover changes in the UK for the period between March 2009 and April 2013.</gvq:justification>
+				</gvq:rating>
+				<gvq:usage>
+					<gvq:reportAspect>
+						<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+					</gvq:reportAspect>
+					<gvq:usageDescription>I used this dataset to observe changes in the UK land cover between March 2009 and April 2013.</gvq:usageDescription>
+					<gvq:discoveredIssue>
+						<gvq:GVQ_DiscoveredIssue>
+							<gvq:target xlink:href="targetUID"/>
+						</gvq:GVQ_DiscoveredIssue>
+					</gvq:discoveredIssue>
+				</gvq:usage>
+			</gvq:item>
+			<gvq:item>
+				<gvq:userRole>
+					<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
+				</gvq:userRole>
+				<gvq:user>
+					<gvq:userDetails>
+						<gmd:individualName>
+							<gco:CharacterString>Marcio Melo</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:organisationName>
+							<gco:CharacterString></gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:contactInfo>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+						</gmd:role>
+					</gvq:userDetails>
+					<gvq:applicationDomain>Vegetataion Cover</gvq:applicationDomain>
+					<gvq:expertiseLevel>2</gvq:expertiseLevel>
+					<gvq:userRole>
+						<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+					</gvq:userRole>
+				</gvq:user>
+				<gvq:dateStamp>
+					<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
+				</gvq:dateStamp>
+				<gvq:qualityOverride>
+					<gvq:GVQ_DataQuality>
+						<gmd19157:scope/>
+						<gvq:discoveredIssue/>
+					</gvq:GVQ_DataQuality>
+				</gvq:qualityOverride>
+				<gvq:userComment>
+					<gvq:comment>It was planned to use this dataset to assess vegetation cover in the south region of Italy in 2012. The data for 2012 was extremely patchy and therefore unfit for purpose.</gvq:comment>
+					<gvq:mime-type>text/plain</gvq:mime-type>
+				</gvq:userComment>
+				<gvq:rating>
+					<gvq:score>1</gvq:score>
+					<gvq:justification>Data for 2012 is very patchy, a lot of land coverage is missing or of very poor quality.</gvq:justification>
+				</gvq:rating>
+				<gvq:usage>
+					<gvq:reportAspect>
+						<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+					</gvq:reportAspect>
+					<gvq:usageDescription></gvq:usageDescription>
+					<gvq:discoveredIssue>
+						<gvq:GVQ_DiscoveredIssue>
+							<gvq:target xlink:href="targetUID"/>
+						</gvq:GVQ_DiscoveredIssue>
+					</gvq:discoveredIssue>
+				</gvq:usage>
+			</gvq:item>
+			<gvq:item>
+				<gvq:userRole>
+					<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
+				</gvq:userRole>
+				<gvq:user>
+					<gvq:userDetails>
+						<gmd:individualName>
+							<gco:CharacterString>Semahat Nalbantoglu</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:organisationName>
+							<gco:CharacterString>Middle East Technical University</gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:contactInfo>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+						</gmd:role>
+					</gvq:userDetails>
+					<gvq:applicationDomain>Agriculture</gvq:applicationDomain>
+					<gvq:expertiseLevel>2</gvq:expertiseLevel>
+					<gvq:userRole>
+						<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+					</gvq:userRole>
+				</gvq:user>
+				<gvq:dateStamp>
+					<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
+				</gvq:dateStamp>
+				<gvq:qualityOverride>
+					<gvq:GVQ_DataQuality>
+						<gmd19157:scope/>
+						<gvq:discoveredIssue/>
+					</gvq:GVQ_DataQuality>
+				</gvq:qualityOverride>
+				<gvq:userComment>
+					<gvq:comment>Empty metadata record.</gvq:comment>
+					<gvq:mime-type>text/plain</gvq:mime-type>
+				</gvq:userComment>
+				<gvq:rating>
+					<gvq:score>3</gvq:score>
+					<gvq:justification>Very good temporal coverage for the Turkey region (August 2010 - September 2012). Metadata record is incomplete.</gvq:justification>
+				</gvq:rating>
+				<gvq:usage>
+					<gvq:reportAspect>
+						<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+					</gvq:reportAspect>
+					<gvq:usageDescription>The data was used to observe farming land use in Turkey in 2010.</gvq:usageDescription>
+					<gvq:discoveredIssue>
+						<gvq:GVQ_DiscoveredIssue>
+							<gvq:target xlink:href="targetUID"/>
+						</gvq:GVQ_DiscoveredIssue>
+					</gvq:discoveredIssue>
+				</gvq:usage>
+			</gvq:item>
+		</gvq:GVQ_FeedbackCollection>
+	</gvq:userFeedback>
 </gvq:GVQ_Metadata>

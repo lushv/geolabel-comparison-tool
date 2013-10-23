@@ -126,4 +126,61 @@
 		<gmd:distributionInfo>
 			<gmd:MD_Distribution />
 		</gmd:distributionInfo>
+    <gvq:userFeedback>
+		<gvq:GVQ_FeedbackCollection>
+			<gvq:item>
+				<gvq:userRole>
+					<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
+				</gvq:userRole>
+				<gvq:user>
+					<gvq:userDetails>
+						<gmd:individualName>
+							<gco:CharacterString>Semahat Nalbantoglu</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:organisationName>
+							<gco:CharacterString>Middle East Technical University</gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:contactInfo>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+						</gmd:role>
+					</gvq:userDetails>
+					<gvq:applicationDomain>Agriculture</gvq:applicationDomain>
+					<gvq:expertiseLevel>2</gvq:expertiseLevel>
+					<gvq:userRole>
+						<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+					</gvq:userRole>
+				</gvq:user>
+				<gvq:dateStamp>
+					<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
+				</gvq:dateStamp>
+				<gvq:qualityOverride>
+					<gvq:GVQ_DataQuality>
+						<gmd19157:scope/>
+						<gvq:discoveredIssue/>
+					</gvq:GVQ_DataQuality>
+				</gvq:qualityOverride>
+				<gvq:userComment>
+					<gvq:comment>Empty metadata record.</gvq:comment>
+					<gvq:mime-type>text/plain</gvq:mime-type>
+				</gvq:userComment>
+				<gvq:rating>
+					<gvq:score>3</gvq:score>
+					<gvq:justification>Very good temporal coverage for the Turkey region (August 2010 - September 2012). Metadata record is incomplete.</gvq:justification>
+				</gvq:rating>
+				<gvq:usage>
+					<gvq:reportAspect>
+						<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+					</gvq:reportAspect>
+					<gvq:usageDescription>The data was used to observe farming land use in Turkey in 2010.</gvq:usageDescription>
+					<gvq:discoveredIssue>
+						<gvq:GVQ_DiscoveredIssue>
+							<gvq:target xlink:href="targetUID"/>
+						</gvq:GVQ_DiscoveredIssue>
+					</gvq:discoveredIssue>
+				</gvq:usage>
+			</gvq:item>
+		</gvq:GVQ_FeedbackCollection>
+	</gvq:userFeedback>
 </gvq:GVQ_Metadata>
