@@ -266,44 +266,393 @@
          </gmd:transferOptions>
       </gmd:MD_Distribution>
   </gmd:distributionInfo>
-  <gmd:dataQualityInfo>
-      <gmd:DQ_DataQuality>
-         <gmd:scope>
-            <gmd:DQ_Scope>
-               <gmd:level>
-                  <gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode" codeListValue="dataset"/>
-               </gmd:level>
-            </gmd:DQ_Scope>
-         </gmd:scope>
-         <gmd:report>
-            <gmd:DQ_TemporalValidity>
-               <gmd:result/>
-            </gmd:DQ_TemporalValidity>
-         </gmd:report>
-         <gmd:lineage>
-            <gmd:LI_Lineage>
-               <gmd:statement gco:nilReason="missing">
-                  <gco:CharacterString/>
-               </gmd:statement>
-               <gmd:processStep>
-                  <gmd:LI_ProcessStep>
-                     <gmd:description>
-                        <gco:CharacterString>Last Updated</gco:CharacterString>
-                     </gmd:description>
-                     <gmd:dateTime>
-                        <gco:DateTime>2002-05-31 19:58:00</gco:DateTime>
-                     </gmd:dateTime>
-                  </gmd:LI_ProcessStep>
-               </gmd:processStep>
-            </gmd:LI_Lineage>
-         </gmd:lineage>
-      </gmd:DQ_DataQuality>
-  </gmd:dataQualityInfo>
-  <gmd:metadataMaintenance>
-      <gmd:MD_MaintenanceInformation>
-         <gmd:maintenanceAndUpdateFrequency>
-            <gmd:MD_MaintenanceFrequencyCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded"/>
-         </gmd:maintenanceAndUpdateFrequency>
-      </gmd:MD_MaintenanceInformation>
-  </gmd:metadataMaintenance>
+	<gvq:dataQualityInfo>	
+		<gvq:GVQ_DataQuality>
+			<gmd19157:scope>
+				<gmd19157:DQ_Scope id="datasetScope">
+					<gmd19157:level>
+						<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode" codeListValue="dataset"/>
+					</gmd19157:level>
+					<gmd19157:extent xlink:href="#datasetExtent"/>
+				</gmd19157:DQ_Scope>
+			</gmd19157:scope>
+			<gmd19157:report>
+				<gvq:GVQ_Traceability id="ConfMat_test_trace">
+					<gmd19157:evaluation gco:nilReason="definedElsewhere"/>
+					<gmd19157:result gco:nilReason="definedElsewhere"/>
+					<gmd19157:relatedElement xlink:href="#ConfMat_test"/>
+					<gvq:trace>
+						<gmd19157:LI_Lineage>
+							<gmd19157:source>
+								<gmd19157:LI_Source id="MCSC_test_12cat">
+									<gmd19157:sourceStep>
+										<gmd19157:LI_ProcessStep id="MCSC_reclassification">
+											<gmd19157:description>
+												<gco:CharacterString>Reclassification of 233 categories (photointerpretation enables a very detailed legend) of the original MCSC into 12 categories. The choice of the classification legend is based on a simplification of MCSC product to a ground truth of 12 categories (using spectral features and biological consistency of the legend categories as main criteria)</gco:CharacterString>
+												<!-- $$ can we add a discovered issue regarding the challenge of adapting the 233 classes original legend to a subjective choice of 12 categories and the difficulties on adapting a legend obtained by photointerpretation of 0.5 m resolution ortophotos to a remote sensing spatial resolution and spectral features of the land cover? this point is crucial in the global accuracy and limitations of the databases we are using in the whole study. the matching of a biologically consistent land cover classes, the spectral features and RS properties of the landsat scenes, and the photointerpreted MCSC is not easy...·· -->
+											</gmd19157:description>
+											<gmd19157:source>
+												<gmd19157:LI_Source id="MCSC">
+													<gmd19157:description>
+														<gco:CharacterString>Land Cover Map of Catalonia MCSC (3rd Edition, raster format) (Mapa de Cobertes del sòl de Catalunya. 3ª Edició, model ràster) (2005-2007). Obtained from photointerpretation of 0.5 m spatial resolution ortophotographies. 233 land cover categories legend. 20m pixel size. Centre de Recerca Ecològica i Aplicacions Forestals CREAF (2007)</gco:CharacterString>
+													</gmd19157:description>
+													<gmd19157:sourceExtent>
+														<gmd:EX_Extent>
+															<gmd:temporalElement>
+																<gmd:EX_TemporalExtent>
+																	<gmd:extent>
+																		<gml:TimePeriod gml:id="MCSC_TempEx">
+																			<gml:beginPosition>2005</gml:beginPosition>
+																			<gml:endPosition>2007</gml:endPosition>
+																		</gml:TimePeriod>
+																	</gmd:extent>
+																</gmd:EX_TemporalExtent>
+															</gmd:temporalElement>
+														</gmd:EX_Extent>
+													</gmd19157:sourceExtent>
+												</gmd19157:LI_Source>
+											</gmd19157:source>
+										</gmd19157:LI_ProcessStep>
+									</gmd19157:sourceStep>
+									<gmd19157:sourceStep>
+										<gmd19157:LI_ProcessStep id="Buffer_MCSC_reclass">
+											<gmd19157:description>
+												<gco:CharacterString>Obtain a MCSC reclassified raster file with NODATA on the border pixels between categories. The aim of this step is to assure homogeneous training areas and avoid introducing the mixtures that characterize the transition between landcover categories.</gco:CharacterString>
+											</gmd19157:description>
+											<gmd19157:source>
+												<gmd19157:LI_Source id="MCSC_reclass">
+													<gmd19157:description>
+														<gco:CharacterString>Original MCSC (raster format) reclassified into 12 categories (result of the MCSC_reclassification process step)</gco:CharacterString>
+													</gmd19157:description>
+												</gmd19157:LI_Source>
+											</gmd19157:source>
+										</gmd19157:LI_ProcessStep>
+									</gmd19157:sourceStep>
+									<gmd19157:sourceStep>
+										<gmd19157:LI_ProcessStep id="Vectorize_MCSC_reclass">
+											<gmd19157:description>
+												<gco:CharacterString>Vectorize the MCSC reclassified raster file (result of the MCSC_reclassification process step)</gco:CharacterString>
+											</gmd19157:description>
+											<gmd19157:source xlink:href="#MCSC-reclass"/>
+										</gmd19157:LI_ProcessStep>
+									</gmd19157:sourceStep>
+									<gmd19157:sourceStep>
+										<gmd19157:LI_ProcessStep id="OnekmGrid_MCSC_Vector">
+											<gmd19157:description>
+												<gco:CharacterString>Combination of the vectorized MCSC with a 1km grid. This partition is applied to fragment larger polygons into several smaller polygons, with the aim of selecting a % of its surface for posterior sampling purposes (training areas, test areas, validation areas subsamples). Thus, only the larger polygons are fragmentated. </gco:CharacterString>
+											</gmd19157:description>
+											<gmd19157:source>
+												<gmd19157:LI_Source id="MCSC_vector">
+													<gmd19157:description>
+														<gco:CharacterString>MSCS vector (result of the Vectorize_MCSC_reclass process step)</gco:CharacterString>
+													</gmd19157:description>
+												</gmd19157:LI_Source>
+											</gmd19157:source>
+										</gmd19157:LI_ProcessStep>
+									</gmd19157:sourceStep>
+									<gmd19157:sourceStep>
+										<gmd19157:LI_ProcessStep id="Stratified_random_sampling">
+											<gmd19157:description>
+												<gco:CharacterString>Finally, a stratified subsampling using a R syntax randomly assigns each gridded MCSC polygon values 1 to 3. Value 1 are training polygons (50% of the area), value 2 are test polygons (25% of the area) and value 3 are validation polygons (25% of the area). Accordingly, this layer is split into three polygon layers. One of each is combined with the MCSC reclassified raster file with NODATA on the border pixels (MCSC_reclass_buffer source) to generate three raster files with (training pixels, test pixels and validation pixels, with sources id's equal to MCSC_train_12cat, MCSC_test_12cat, MCSC_test_test_12cat). Each of these raster subsamples contain all the categories included on the legend (12 categories).</gco:CharacterString>
+											</gmd19157:description>
+											<gmd19157:source>
+												<gmd19157:LI_Source id="MCSC_vector_grid">
+													<gmd19157:description>
+														<gco:CharacterString>Combination of the vectorized MCSC with a 1km grid (result of the OnekmGrid_MCSC_Vector process step)</gco:CharacterString>
+													</gmd19157:description>
+												</gmd19157:LI_Source>
+											</gmd19157:source>
+											<gmd19157:source>
+												<gmd19157:LI_Source id="MCSC_reclass_buffer">
+													<gmd19157:description>
+														<gco:CharacterString>MCSC reclassified raster file with NODATA on the border pixels (result of the Buffer_MCSC_reclass process step)</gco:CharacterString>
+													</gmd19157:description>
+												</gmd19157:LI_Source>
+											</gmd19157:source>
+										</gmd19157:LI_ProcessStep>
+									</gmd19157:sourceStep>
+								</gmd19157:LI_Source>
+							</gmd19157:source>
+						</gmd19157:LI_Lineage>
+					</gvq:trace>
+				</gvq:GVQ_Traceability>
+			</gmd19157:report>
+			<gmd19157:report>
+				<gmd19157:DQ_NonQuantitativeAttributeAccuracy id="RegLog_Val">
+					<gmd19157:dateTime>
+						<gco:DateTime>2013-02-26T15:41:45</gco:DateTime>
+					</gmd19157:dateTime>
+					<gmd19157:result>
+						<gmd19157:QE_CoverageResult>
+							<gmd19157:resultScope xlink:href="#datasetScope"/>
+							<gmd19157:spatialRepresentationType>
+								<gmd:MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="grid">grid</gmd:MD_SpatialRepresentationTypeCode>
+							</gmd19157:spatialRepresentationType>
+							<gmd19157:resultFile xlink:href="#Categorical_accuracy_study_GeoViQua_MMZ_file"/>
+							<gmd19157:resultSpatialRepresentation xlink:href="#dataset_SR"/>
+							<gmd19157:resultContentDescription>
+								<gmd:MD_CoverageDescription>
+									<gmd:attributeDescription>
+										<gco:RecordType>This layer is the error model validation layer, i.e. a binomial layer representing coincidence between the values predicted by the logistic regression model and the observed values (either correct/incorrect pixels).</gco:RecordType>
+									</gmd:attributeDescription>
+									<gmd:contentType>
+										<!-- ·$$·· LB: link to ISO EXTENDED codelist? -->
+										<gmd:MD_CoverageContentTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="MD_CoverageContentTypeCode_modelResult">modelResult</gmd:MD_CoverageContentTypeCode>
+									</gmd:contentType>
+								</gmd:MD_CoverageDescription>
+							</gmd19157:resultContentDescription>
+							<gmd19157:resultFormat xlink:href="#datasetFormat"/>
+						</gmd19157:QE_CoverageResult>
+					</gmd19157:result>
+				</gmd19157:DQ_NonQuantitativeAttributeAccuracy>
+			</gmd19157:report>
+			<gmd19157:report>
+				<gvq:GVQ_Traceability id="RegLog_Val_trace">
+					<gmd19157:evaluation gco:nilReason="definedElsewhere"/>
+					<gmd19157:result gco:nilReason="definedElsewhere"/>
+					<gmd19157:relatedElement xlink:href="#RegLog_Val"/>
+					<gvq:trace>
+						<gmd19157:LI_Lineage>
+							<gmd19157:processStep>
+								<gmd19157:LI_ProcessStep>
+									<gmd19157:description>
+										<gco:CharacterString>A selection in the LC_prob_source (is the same layer than LC_prob ID coverageDescription) layer applying the success/failure threshold to respectively above or equal 50% values and below 50% values generates a binomial layer of correctly classified/incorrectly classified pixels (this is to say predicted correct/incorrect pixels by the logistic regression model).</gco:CharacterString>
+									</gmd19157:description>
+									<gmd19157:source>
+										<!-- $$ how to link that THIS source is one of a coverage descriptions. In fact they are exactly the same "layer" but in one place it is described as a coverageDescription and in the other as source ("two aspects" of the same thing, we could say?) -->
+										<gmd19157:LI_Source id="LC_prob_source"/>
+									</gmd19157:source>
+								</gmd19157:LI_ProcessStep>
+							</gmd19157:processStep>
+							<gmd19157:processStep>
+								<gmd19157:LI_ProcessStep>
+									<gmd19157:description>
+										<gco:CharacterString>The hybrid classification product (id="LC_source") is crossed with the third subsample of the ground truth (25% of the MCSC: validation areas, named test-test) in order to derive another layer with coinciding categories between the validation areas (ground truth) and the assigned categories in the classification product (landcover map). A reclassified binomial layers assigns value 1 to pixels in which the category coincides (correctly classified pixels) and 0 to pixels in which the category does not coincide (incorrectly classified pixels). This layer represents observed correct/incorrect pixels.</gco:CharacterString>
+									</gmd19157:description>
+									<gmd19157:source>
+										<gmd19157:LI_Source id="MCSC_testtest_12cat"/>
+									</gmd19157:source>
+									<!-- TO BE DEFINED, ID = COVERAGE DESCRIPTIONS -->
+									<gmd19157:source>
+										<gmd19157:LI_Source id="LC_source"/>
+									</gmd19157:source>
+									<!-- TO BE DEFINED, ID = COVERAGE DESCRIPTIONS -->
+								</gmd19157:LI_ProcessStep>
+							</gmd19157:processStep>
+							<gmd19157:processStep>
+								<gmd19157:LI_ProcessStep>
+									<gmd19157:description>
+										<gco:CharacterString>The binomial layer obtained (predicted correct/incorrect pixels according to the logistic regression model) is crossed with the observed correct/incorrect pixels layer. In the resulting layer, the focus is on coincidence between predicted by the logistic regression model and observed either correct/incorrect pixels (this means that both combinations are fine: 1-1 and 0-0 in this overlaying). This layer is the validation layer. (1 999 080 number of pixels 1-1 coincident/424 893 number of pixels 0-0 coincidences, and 0-1/1-0 disagreements!. Taking into account that this validation is carried out in the 25% of the surface of the ground truth area -only where the validation subsample is available i.e. total of 2 848 866 pixels, in the end this implies a 85.08% coincidence -either in correct or incorrect pixels-)</gco:CharacterString>
+									</gmd19157:description>
+								</gmd19157:LI_ProcessStep>
+							</gmd19157:processStep>
+						</gmd19157:LI_Lineage>
+					</gvq:trace>
+				</gvq:GVQ_Traceability>
+			</gmd19157:report>
+			<gmd19157:report>
+				<gmd19157:DQ_QuantitativeAttributeAccuracy id="RegLin">
+					<gmd19157:dateTime>
+						<gco:DateTime>2013-02-26T15:41:45</gco:DateTime>
+					</gmd19157:dateTime>
+					<gmd19157:result>
+						<gmd19157:QE_CoverageResult>
+							<gmd19157:resultScope xlink:href="#datasetScope"/>
+							<gmd19157:spatialRepresentationType>
+								<gmd:MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="grid">grid</gmd:MD_SpatialRepresentationTypeCode>
+							</gmd19157:spatialRepresentationType>
+							<gmd19157:resultFile xlink:href="#Categorical_accuracy_study_GeoViQua_MMZ_file"/>
+							<gmd19157:resultSpatialRepresentation xlink:href="#dataset_SR"/>
+							<gmd19157:resultContentDescription>
+								<gmd:MD_CoverageDescription>
+									<gmd:attributeDescription>
+										<gco:RecordType>Average success probability for the statistical cluster obtained from linear regression model (object level mean average success probability expressed in %)</gco:RecordType>
+									</gmd:attributeDescription>
+									<gmd:contentType>
+										<!-- ·$$·· LB: link to ISO EXTENDED codelist? -->
+										<gmd:MD_CoverageContentTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="MD_CoverageContentTypeCode_modelResult">modelResult</gmd:MD_CoverageContentTypeCode>
+									</gmd:contentType>
+								</gmd:MD_CoverageDescription>
+							</gmd19157:resultContentDescription>
+							<gmd19157:resultFormat xlink:href="#datasetFormat"/>
+						</gmd19157:QE_CoverageResult>
+					</gmd19157:result>
+				</gmd19157:DQ_QuantitativeAttributeAccuracy>
+			</gmd19157:report>
+			<gmd19157:report>
+				<gvq:GVQ_Traceability id="RegLin_trace">
+					<gmd19157:evaluation gco:nilReason="definedElsewhere"/>
+					<gmd19157:result gco:nilReason="definedElsewhere"/>
+					<gmd19157:relatedElement xlink:href="#RegLin"/>
+					<gvq:trace>
+						<gmd19157:LI_Lineage>
+							<gmd19157:processStep>
+								<gmd19157:LI_ProcessStep>
+									<gmd19157:description>
+										<gco:CharacterString>The IsoMM (Isodata product) is the layer from which the polygons are delimited (polygons=statistical cluster). From these polygons, the weighed by area average values of the independent variables layers (F, F2, F3, R, R2, R3, H, I, P, Q) and the dependent layer (for the testing areas subsample of the MCSC boundaries of the IsoMM -Isodata product-), mean values of the pixels inside the polygons: this is to say mean of the probability of success % obtained at pixel level based on observed values for the test subsample)</gco:CharacterString>
+									</gmd19157:description>
+									<gmd19157:source xlink:href="#IsoMM"/> <!-- ·$$·· the dependent variable is now another layer? IsoMM adapted to the mcsc12cat_test areas; vector layer, group polygons with "ciclar.exe", combicapa with observed correct pixels from mcsc12test+clsmix: mean for each polygon -->
+									<gmd19157:source>
+										<gmd19157:LI_Source id="F_source"/>
+									</gmd19157:source>
+									<gmd19157:source>
+										<gmd19157:LI_Source id="F2_source"/>
+									</gmd19157:source>
+									<gmd19157:source>
+										<gmd19157:LI_Source id="F3_source"/>
+									</gmd19157:source>
+									<gmd19157:source>
+										<gmd19157:LI_Source id="R_source"/>
+									</gmd19157:source>
+									<gmd19157:source>
+										<gmd19157:LI_Source id="R2_source"/>
+									</gmd19157:source>
+									<gmd19157:source>
+										<gmd19157:LI_Source id="R3_source"/>
+									</gmd19157:source>
+									<gmd19157:source>
+										<gmd19157:LI_Source id="H_source"/>
+									</gmd19157:source>
+									<gmd19157:source>
+										<gmd19157:LI_Source id="P_source"/>
+									</gmd19157:source>
+									<gmd19157:source>
+										<gmd19157:LI_Source id="I_source"/>
+									</gmd19157:source>
+									<gmd19157:source>
+										<gmd19157:LI_Source id="Q_source"/>
+									</gmd19157:source>
+								</gmd19157:LI_ProcessStep>
+							</gmd19157:processStep>
+							<gmd19157:processStep>
+								<gmd19157:LI_ProcessStep>
+									<gmd19157:description>
+										<gco:CharacterString>Linear regression model fitting in SPSS software: selection of the best model based on higher adjusted determination coeficient and parsimony principle. The selected model only uses F as independent variable (Adjusted determination coeficient=0.943) $$ check uncertML/Thesaurus discussion July2013</gco:CharacterString>
+									</gmd19157:description>
+								</gmd19157:LI_ProcessStep>
+							</gmd19157:processStep>
+							<gmd19157:processStep>
+								<gmd19157:LI_ProcessStep>
+									<gmd19157:description>
+										<gco:CharacterString>Validation of the linear regression model by replicating the process using as dependent variable the mean probability of success in the validation subsample (this is to say, the 25% test_test areas: MCSC_test_test_12cat). The obtained goodness of fit statistic Adjusted determination coeficient values is similar (0.931). Application of both models and correlation between predicted mean probability of successes (%) between both models' predictions: very similar models, and very close to 1 correlations
+								</gco:CharacterString>
+									</gmd19157:description>
+									<gmd19157:source>
+										<gmd19157:LI_Source id="RegLin_source"/>
+									</gmd19157:source>
+								</gmd19157:LI_ProcessStep>
+							</gmd19157:processStep>
+							<gmd19157:processStep>
+								<gmd19157:LI_ProcessStep>
+									<gmd19157:description>
+										<gco:CharacterString>Application of the Linear regression model in the algebra calculator in MiraMon software: generation of the mean probability of success at polygon level. ($$$ Discovered issue: 23July: values of the RegLin model should be between 0-1? but applying the model, the values obtained are higher than 1 in 1942355 pixels!!) <!--($$$ Discovered issue: 23July: values of the RegLin model should be between 0-1? but applying the model, the values obtained are higher than 1 in 1942355 pixels!!) -->
+								</gco:CharacterString>
+									</gmd19157:description>
+								</gmd19157:LI_ProcessStep>
+							</gmd19157:processStep>
+						</gmd19157:LI_Lineage>
+					</gvq:trace>
+				</gvq:GVQ_Traceability>
+			</gmd19157:report>
+			<gmd19157:lineage>
+				<gmd19157:LI_Lineage>
+					<gmd19157:statement>
+						<!-- $$ LB: can we cite a PDF file including explanations, diagrams, etc? See XP excel-->
+						<gco:CharacterString>The obtention of the hybrid classification product (ID="LC" in coverageDescription) is explained on the next processStep (****). Moreover, see the reports explaing the traces: ConfMat_test_trace, RegLog_trace, RegLin_trace for other coverageDescription's lineage.</gco:CharacterString>
+					</gmd19157:statement>
+					<gmd19157:processStep>
+						<gmd19157:LI_ProcessStep id="IsoMM_process">
+							<gmd19157:description>
+								<gco:CharacterString>Unsupervised classification (Isodata algorithm) of 47 standardized bands (6dates x6bands=36 landsat bands, 1 slope map, 6 NDVIs, 4 topoclimatic variables)</gco:CharacterString>
+							</gmd19157:description>
+							<gmd19157:source>
+								<gmd19157:LI_Source id="Landsat_NDVI_corrected_images">
+									<gmd19157:description>
+										<gco:CharacterString>Landsat-5 Thematic Mapper (path 197, row 31) 6 dates multitemporal set (2005-2007), 6 optical bands (30 m spatial resolution). thermal band discarded due to low spatial resolution (120m) after geometric correctected</gco:CharacterString>
+									</gmd19157:description>
+									<gmd19157:sourceStep>
+										<gmd19157:LI_ProcessStep>
+											<gmd19157:description>
+												<gco:CharacterString>Geometric (Palà and Pons 1995) and radiometric corrections (Pons and Solé-Sugrañes 1994) using ASTER DEM (ERSDAC 2009), applying clouds, cloud shadows, sea and snow cover masks. Resampling to 20 m spatial resolution.Transformation to calculate NDVI (Spectral vegetation index -Rouse et al. 1973-) for each date. Bands standardization (Spiegel 1991) to avoid difference of measurement units among the bands to be introduced in the classification process.</gco:CharacterString>
+											</gmd19157:description>
+										</gmd19157:LI_ProcessStep>
+									</gmd19157:sourceStep>
+								</gmd19157:LI_Source>
+							</gmd19157:source>
+							<gmd19157:source>
+								<gmd19157:LI_Source id="Slope_map">
+									<gmd19157:description>
+										<gco:CharacterString>Slope map derived from DTM based on PNOA at 5 m spatial resolution using 8 neighbours method and adapted to the 20 m resampled bands (median resolution change). This band is intended to account for the relief in terraces, abrupt or vertical slopes. Standardization of the slope maps to avoid difference of measurement units among the bands to be introduced in the classification process.</gco:CharacterString>
+										<!--ask Gerard if any changes have been made to this step. I don't remember exactly..-->
+									</gmd19157:description>
+								</gmd19157:LI_Source>
+							</gmd19157:source>
+							<gmd19157:source>
+								<gmd19157:LI_Source id="Topoclimatic_variables">
+									<gmd19157:description>
+										<gco:CharacterString>Topoclimatic variables calculated from the historical series of the Digital Climatic Atlas of Catalonia (minimum temperature of the average minimum temperature of the three coldest months, maximum temperature of the average maximum temperature of the three hotest months, minimum limiting precipitation of the three months with less precipitation, minimum solar radiation of the three months with less solar radiation). Standardization.</gco:CharacterString>
+										<!--link to digital climatic atlas publication or constraints or discovered issues regarding the differences in spatial resolution, for instance??-->
+									</gmd19157:description>
+								</gmd19157:LI_Source>
+							</gmd19157:source>
+						</gmd19157:LI_ProcessStep>
+					</gmd19157:processStep>
+					<gmd19157:processStep>
+						<gmd19157:LI_ProcessStep id="ClsMix_process">
+							<gmd19157:description>
+								<gco:CharacterString>Supervised classification introducing the training areas (subsample of the 50% of the MCSC: MCSC_train_12cat). Fidelity and representatitvity parameters set to 0.</gco:CharacterString>
+							</gmd19157:description>
+							<gmd19157:source>
+								<gmd19157:LI_Source id="IsoMM">
+									<gmd19157:description>
+										<gco:CharacterString>IsoMM process result in 957 statistical clusters (result of the IsoMM_process process step)</gco:CharacterString>
+									</gmd19157:description>
+								</gmd19157:LI_Source>
+							</gmd19157:source>
+							<gmd19157:source>
+								<gmd19157:LI_Source id="MCSC_train_12cat">
+								</gmd19157:LI_Source>
+							</gmd19157:source>
+						</gmd19157:LI_ProcessStep>
+					</gmd19157:processStep>
+				</gmd19157:LI_Lineage>
+			</gmd19157:lineage>
+			<!-- $$  We do have a JPG file showing the lineage schema (kind of a figure in a paper). Can we cite it here (including it on the MMZ/netCDF file for example?)? -->
+			<gvq:discoveredIssue>
+				<!-- ··$$·· I do not find how to describe the affected Bounding Box in an "standardized" way (EX_Extent? CornerPoints)?. It is possible? Maybe the model can be extended (optional info of course) to give this information? -->
+				<gvq:GVQ_DiscoveredIssue>
+					<gvq:target xlink:href="#MCSC_12cat"/>
+					<gvq:knownProblem>
+						<gco:CharacterString>Legend choice is subjective. Some of the original 233 categories have been reclassified as nodata. In the end the % of the MCSC that has been used (with buffering) is 41.38% of the study area. Difficulties in fitting the photointerpretation product legend with a suitable spectral features legend.</gco:CharacterString>
+					</gvq:knownProblem>
+					<gvq:workAround>
+						<gco:CharacterString>Use of the Habitats Maps of Catalonia -available online from the regional government web- to compare the categories between them and reject the most mixed ones when doubtful.</gco:CharacterString>
+					</gvq:workAround>
+				</gvq:GVQ_DiscoveredIssue>
+			</gvq:discoveredIssue>
+			<gvq:discoveredIssue>
+				<!-- ··$$·· I do not find how to describe the affected Bounding Box in an "standardized" way (EX_Extent? CornerPoints)?. It is possible? Maybe the model can be extended (optional info of course) to give this information? -->
+				<gvq:GVQ_DiscoveredIssue>
+					<gvq:target xlink:href="#ClsMix"/>
+					<gvq:knownProblem>
+						<gco:CharacterString>The classification steps (both unsupervised and supervised classification steps) are affected by the selection of the multitemporal landsat scenes. In order to avoid shadows to minimize radiometric corrections loss of pixels, we have not selected scenes from November to March, and the avoidance of this period is crucial in the correct classification or distinction of broadleaved tree species and other categories. Nonetheless, the main problem in classification in Mediterranean areas is the diversity and presence of mixed forests and landcovers. </gco:CharacterString>
+					</gvq:knownProblem>
+					<gvq:workAround>
+						<gco:CharacterString>Include autumn-winter scenes in the classification to better discriminate coniferous/deciduous species, but the most problematic is to distinguish within deciduous species (other scenes during the spring-summer period should be included, when some species have already grown leaves whether others have not yet).Consider NDVI discrimination criteria between the most problematic categories is not useful in this case because most forest landcovers are mixed forests and eventhough the broadleaved loose their leaves, other holm oaks are underneath and introduce confusion in the hybrid classification process.</gco:CharacterString>
+					</gvq:workAround>
+				</gvq:GVQ_DiscoveredIssue>
+			</gvq:discoveredIssue>
+			<gvq:discoveredIssue>
+				<gvq:GVQ_DiscoveredIssue>
+					<gvq:target xlink:href="#ClsMix_12cat"/>
+					<gvq:knownProblem>
+						<gco:CharacterString>Some methodological constraints can be defined.</gco:CharacterString>
+					</gvq:knownProblem>
+					<gvq:workAround>
+						<gco:CharacterString>First of all be careful with legend categories (legend is always a subjective choice). The legend chosen is suited to the objectives of the present study. However, it might be unsufficient for precise ecological or botanical studies at local scales. Classification methods differ in results at pixel level, both in categories assignment and associated uncertainty. Moreover, be careful with areas with high uncertainty (checking them in the provided probabilistic maps). Spatial and temporal resolution constraint the potential usage of the product).</gco:CharacterString>
+					</gvq:workAround>
+				</gvq:GVQ_DiscoveredIssue>
+			</gvq:discoveredIssue>
+		</gvq:GVQ_DataQuality>
+	</gvq:dataQualityInfo>
 </gvq:GVQ_Metadata>
