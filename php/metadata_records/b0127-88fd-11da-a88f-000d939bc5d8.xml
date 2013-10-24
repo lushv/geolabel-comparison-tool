@@ -149,7 +149,7 @@
             </gmd:CI_Citation>
          </gmd:citation>
          <gmd:abstract>
-            <gco:CharacterString>The FGGD land cover occurrence maps are global raster datalayers with a resolution of 5 arc-minutes. Each pixel in each map contains a value representing the percentage of the area belonging to the land cover type concerned. The method is described in FAO and IIASA, 2007, Mapping biophysical factors that influence agricultural production and rural vulnerability, by H. von Velthuizen et al.</gco:CharacterString>
+            <gco:CharacterString>The FGGD land cover occurrence maps are global raster datalayers with a resolution of 5 arc-minutes. Each pixel in each map contains a value representing the percentage of the area belonging to the land cover type concerned. The method is described in FAO and IIASA. Mapping biophysical factors that influence agricultural production and rural vulnerability, by H. von Velthuizen et al.</gco:CharacterString>
          </gmd:abstract>
          <gmd:purpose>
             <gco:CharacterString>The FGGD Digital Atlas consists of more than 100 global database that allows to analyse food insecurity and poverty in relation to the environment.</gco:CharacterString>
