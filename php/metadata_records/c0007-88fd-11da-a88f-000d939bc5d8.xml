@@ -335,4 +335,247 @@
          </gmd:transferOptions>
       </gmd:MD_Distribution>
   </gmd:distributionInfo>
+	<gvq:dataQualityInfo>
+		<gvq:GVQ_DataQuality>
+			<gmd19157:scope>
+				<gmd19157:DQ_Scope id="datasetScope">
+					<gmd19157:level>
+						<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode" codeListValue="dataset"/>
+					</gmd19157:level>
+					<gmd19157:extent xlink:href="#datasetExtent"/>
+				</gmd19157:DQ_Scope>
+			</gmd19157:scope>
+			<gmd19157:report>
+				<gmd19157:DQ_ThematicClassificationCorrectness id="ConfMat_test">
+					<gmd19157:dateTime>
+						<gco:DateTime>2013-02-26T15:41:45</gco:DateTime>
+					</gmd19157:dateTime>
+					<gmd19157:evaluation>
+						<gvq:GVQ_SampleBasedInspection>
+							<gmd19157:evaluationMethodDescription>
+								<gco:CharacterString>Validation of the classification using independent test areas (25% of the buffered-MCSC, MCSC_test_12cat source)</gco:CharacterString>
+							</gmd19157:evaluationMethodDescription>
+							<!-- $$ when PUBLICATIONS are available: gmd19157:evaluationProcedure xlink:href="$$$$"/>
+							<gmd19157:referenceDoc xlink:href="$$$$$$"/-->
+							<gmd19157:evaluationMethodType>
+								<gmd19157:DQ_EvaluationMethodTypeCode codeList="http://www.geoviqua.org/gmd19157/resources/codeList.xml#DQ_EvaluationMethodTypeCode" codeListValue="directExternal"/>
+							</gmd19157:evaluationMethodType>
+							<!-- $$ gvq:referenceDataset what is this refering to? To the dataset from where the samples are extracted i.e the buffered-MCSC? Can we define here an xllink where this source is described? But there it is described as a Ll_source! -->
+							<gmd19157:samplingScheme>
+								<gco:CharacterString>Random sampling with stratification into three lots (all categories included in each of the three lots) (Stratified_random_sampling process step)</gco:CharacterString>
+							</gmd19157:samplingScheme>
+							<gmd19157:lotDescription>
+								<gco:CharacterString>Split ground truth buffered-MCSC (MCSC_reclass_buffer) into training subsample (50%, MCSC_train_12cat), test (25%, MCSC_test_12cat) and validation (25%, MCSC_test_test_12cat) subsamples using random stratified sampling methods in R software (Stratified_random_sampling process step)</gco:CharacterString>
+							</gmd19157:lotDescription>
+							<gmd19157:samplingRatio>
+								<gco:CharacterString>100% of the test lot (MCSC_test_12cat) is inspected</gco:CharacterString>
+							</gmd19157:samplingRatio>
+						</gvq:GVQ_SampleBasedInspection>
+					</gmd19157:evaluation>
+					<gmd19157:result>
+						<gmd19157:DQ_QuantitativeResult>
+							<gmd19157:resultScope xlink:href="#datasetScope"/>
+							<gmd19157:valueType>
+								<gco:RecordType xlink:href="http://www.uncertml.org/statistics/***">Overall accuracy</gco:RecordType>
+								<!-- LB: $$ which is the uncertML link for overall accurracy (percentage accuracy)? -->
+								<!-- LB: $$ how we include that this is computed using only classified pixels, i.e, excluding NODATA value!? In this case, we don't have NODATA but in general this is important as the overall accuraccy computed using (or not) those nodata pixels is quite different, usually if including NODATA values results are lower. In this case those values are: 81.5% vs 80.8 % -->
+							</gmd19157:valueType>
+							<gmd19157:valueUnit xlink:href="urn:ogc:def:uom:UCUM:%25"/>
+							<gmd19157:value>
+								<gco:Record>
+									<gco:Real>80.80</gco:Real>
+								</gco:Record>
+							</gmd19157:value>
+						</gmd19157:DQ_QuantitativeResult>
+					</gmd19157:result>
+					<gmd19157:result>
+						<gmd19157:DQ_QuantitativeResult>
+							<gmd19157:resultScope xlink:href="#datasetScope"/>
+							<gmd19157:valueType>
+								<gco:RecordType xlink:href="http://www.uncertml.org/statistics/ConfusionMatrix">Confusion matrix recording counts from ground truthing</gco:RecordType>
+							</gmd19157:valueType>
+							<gmd19157:valueUnit xlink:href="urn:ogc:def:nil:OGC:inapplicable$$$$$"/>
+							<!-- $$ LB: how should we define "number of pixels"? -->
+							<gmd19157:value>
+								<gco:Record>
+								</gco:Record>
+							</gmd19157:value>
+						</gmd19157:DQ_QuantitativeResult>
+					</gmd19157:result>
+				</gmd19157:DQ_ThematicClassificationCorrectness>
+			</gmd19157:report>
+			<gmd19157:report>
+				<gmd19157:DQ_NonQuantitativeAttributeAccuracy id="RegLog">
+					<gmd19157:dateTime>
+						<gco:DateTime>2013-02-26T15:41:45</gco:DateTime>
+					</gmd19157:dateTime>
+					<gmd19157:evaluation>
+						<gvq:GVQ_SampleBasedInspection>
+							<gmd19157:evaluationMethodDescription>
+								<gco:CharacterString>Spatialization of the classification success probability using independent test areas (25% of the buffered-MCSC, MCSC_test_12cat source)</gco:CharacterString>
+							</gmd19157:evaluationMethodDescription>
+							<gmd19157:evaluationMethodType>
+								<gmd19157:DQ_EvaluationMethodTypeCode codeListValue="http://www.geoviqua.org/gmd19157/resources/codeList.xml#DQ_EvaluationMethodTypeCode" codeList="directExternal"/>
+							</gmd19157:evaluationMethodType>
+							<gmd19157:samplingScheme>
+								<gco:CharacterString>Random sampling with stratification into three lots (all categories included in each of the three lots) (Stratified_random_sampling process step)</gco:CharacterString>
+							</gmd19157:samplingScheme>
+							<gmd19157:lotDescription>
+								<!-- $$ Maybe from "The test lot (MCSC_test_12cat) is used to define the dependent ..." to the end of the paragpah should go on the trace report of this report? -->
+								<gco:CharacterString>Split ground truth buffered-MCSC (MCSC_reclass_buffer) into training subsample (50%, MCSC_train_12cat), test (25%, MCSC_test_12cat) and validation (25%, MCSC_test_test_12cat) subsamples sing random stratified sampling methods in R software (Stratified_random_sampling process step). The test lot (MCSC_test_12cat) is used to define the dependent variable in the logistic regression model: success/failure binomial variable setting a 2 values reclassification of the overlaying of the classification product (ClsMix layer id="LC") and the test ground truth lot (MCSC_test_12cat) i.e., 1=agreement between ClsMix and MCSCtest, 0=disagreement between ClsMix and MCSCtest. Note that the overlaying of the classification product (ClsMix layer) and the test ground truth lot (MCSC_test_12cat) is actually the spatialization of the Confusion Matrix described in the previous quality report.</gco:CharacterString>
+							</gmd19157:lotDescription>
+							<gmd19157:samplingRatio>
+								<!-- $$ Maybe from "However this procedure implies that only 25% of the ..." to the end of the paragpah should go on the trace report of this report? -->
+								<gco:CharacterString>100% of the test lot (MCSC_test_12cat) is inspected. However this procedure implies that only 25% of the ground truth area is used in model fitting and then 10% of this 25% is sampled in the statistical model fitting in order to avoid spatial correlation (still 1105303 pixels analysed)</gco:CharacterString>
+							</gmd19157:samplingRatio>
+						</gvq:GVQ_SampleBasedInspection>
+					</gmd19157:evaluation>
+					<gmd19157:result>
+						<gmd19157:DQ_QuantitativeResult>
+							<gmd19157:resultScope xlink:href="#datasetScope"/>
+							<gmd19157:valueType>
+								<gco:RecordType xlink:href="http://www.uncertml.org/statistics/***">Discrete probability</gco:RecordType>
+								<!-- I didn't know which statistic was this case: LB: $$ which is the uncertML link for AUC/ROC (percentage accuracy)? Where can we write the result refers to the % probability of success in the classification product category assignment? and that the success is defined by setting a threshold to the continuous % probability of success obtained by the predicted group resulting from the application of a threshold in the SPSS software: >50% is group 1 =success < 50% is group 0=failure of the logistic regression model ? Or this is inherent to the AUC test in itself?? Maybe Dan can answer this...-->
+							</gmd19157:valueType>
+							<gmd19157:valueUnit xlink:href="urn:ogc:def:uom:UCUM:%25"/>
+							<gmd19157:value>
+								<gco:Record>
+									<gco:Real>74.10</gco:Real>
+								</gco:Record>
+							</gmd19157:value>
+						</gmd19157:DQ_QuantitativeResult>
+					</gmd19157:result>
+					<gmd19157:result>
+						<gmd19157:DQ_QuantitativeResult>
+							<gmd19157:valueType>
+								<gco:RecordType>Sensitivity</gco:RecordType>
+							</gmd19157:valueType>
+							<gmd19157:valueUnit>
+								<!-- $$ per one units-->
+							</gmd19157:valueUnit>
+							<gmd19157:value>
+								<gco:Record>0.72</gco:Record>
+							</gmd19157:value>
+							<!--where do we explain how specificity is calculated based on false negatives/ false positives/true negatives /true positives ratios from the AUC??? revise how it is calculated. I don't find the UncertML statistic for this case, so I don't know what to write in the gmd19157:DQ_QuantitativeResult...I jump directly to gmd19157:result -->
+						</gmd19157:DQ_QuantitativeResult>
+					</gmd19157:result>
+					<gmd19157:result>
+						<gmd19157:DQ_QuantitativeResult>
+							<gmd19157:valueType>
+								<gco:RecordType>Specificity</gco:RecordType>
+							</gmd19157:valueType>
+							<gmd19157:valueUnit>
+								<!-- $$ per one units-->
+							</gmd19157:valueUnit>
+							<gmd19157:value>
+								<gco:Record>0.76</gco:Record>
+							</gmd19157:value>
+							<!--where do we explain how specificity is calculated based on false negatives/ false positives/true negatives /true positives ratios from the AUC??? revise how it is calculated. I don't find the UncertML statistic for this case, so I don't know what to write in the gmd19157:DQ_QuantitativeResult...I jump directly to gmd19157:result -->
+							<!--I don't know how to encode in UncertML other statistics from the logistic regression report: Nagelkerke R2 0.375, Cox&Snell R square 0.281. Can we directly hang a pdf report of the SPSS logistic regression results report output?? -->
+						</gmd19157:DQ_QuantitativeResult>
+					</gmd19157:result>
+				</gmd19157:DQ_NonQuantitativeAttributeAccuracy>
+			</gmd19157:report>
+			<gmd19157:report>
+				<gmd19157:DQ_NonQuantitativeAttributeAccuracy id="RegLog_Val">
+					<gmd19157:dateTime>
+						<gco:DateTime>2013-02-26T15:41:45</gco:DateTime>
+					</gmd19157:dateTime>
+					<gmd19157:result>
+						<gmd19157:QE_CoverageResult>
+							<gmd19157:resultScope xlink:href="#datasetScope"/>
+							<gmd19157:spatialRepresentationType>
+								<gmd:MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="grid">grid</gmd:MD_SpatialRepresentationTypeCode>
+							</gmd19157:spatialRepresentationType>
+							<gmd19157:resultFile xlink:href="#Categorical_accuracy_study_GeoViQua_MMZ_file"/>
+							<gmd19157:resultSpatialRepresentation xlink:href="#dataset_SR"/>
+							<gmd19157:resultContentDescription>
+								<gmd:MD_CoverageDescription>
+									<gmd:attributeDescription>
+										<gco:RecordType>This layer is the error model validation layer, i.e. a binomial layer representing coincidence between the values predicted by the logistic regression model and the observed values (either correct/incorrect pixels).</gco:RecordType>
+									</gmd:attributeDescription>
+									<gmd:contentType>
+										<!-- ·$$·· LB: link to ISO EXTENDED codelist? -->
+										<gmd:MD_CoverageContentTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="MD_CoverageContentTypeCode_modelResult">modelResult</gmd:MD_CoverageContentTypeCode>
+									</gmd:contentType>
+								</gmd:MD_CoverageDescription>
+							</gmd19157:resultContentDescription>
+							<gmd19157:resultFormat xlink:href="#datasetFormat"/>
+						</gmd19157:QE_CoverageResult>
+					</gmd19157:result>
+				</gmd19157:DQ_NonQuantitativeAttributeAccuracy>
+			</gmd19157:report>
+			<gmd19157:report>
+				<gmd19157:DQ_QuantitativeAttributeAccuracy id="RegLin">
+					<gmd19157:dateTime>
+						<gco:DateTime>2013-02-26T15:41:45</gco:DateTime>
+					</gmd19157:dateTime>
+					<gmd19157:result>
+						<gmd19157:QE_CoverageResult>
+							<gmd19157:resultScope xlink:href="#datasetScope"/>
+							<gmd19157:spatialRepresentationType>
+								<gmd:MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="grid">grid</gmd:MD_SpatialRepresentationTypeCode>
+							</gmd19157:spatialRepresentationType>
+							<gmd19157:resultFile xlink:href="#Categorical_accuracy_study_GeoViQua_MMZ_file"/>
+							<gmd19157:resultSpatialRepresentation xlink:href="#dataset_SR"/>
+							<gmd19157:resultContentDescription>
+								<gmd:MD_CoverageDescription>
+									<gmd:attributeDescription>
+										<gco:RecordType>Average success probability for the statistical cluster obtained from linear regression model (object level mean average success probability expressed in %)</gco:RecordType>
+									</gmd:attributeDescription>
+									<gmd:contentType>
+										<!-- ·$$·· LB: link to ISO EXTENDED codelist? -->
+										<gmd:MD_CoverageContentTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="MD_CoverageContentTypeCode_modelResult">modelResult</gmd:MD_CoverageContentTypeCode>
+									</gmd:contentType>
+								</gmd:MD_CoverageDescription>
+							</gmd19157:resultContentDescription>
+							<gmd19157:resultFormat xlink:href="#datasetFormat"/>
+						</gmd19157:QE_CoverageResult>
+					</gmd19157:result>
+				</gmd19157:DQ_QuantitativeAttributeAccuracy>
+			</gmd19157:report>
+			<gmd19157:report>
+				<gvq:GVQ_Traceability id="RegLin_trace">
+					<gmd19157:evaluation gco:nilReason="definedElsewhere"/>
+					<gmd19157:result gco:nilReason="definedElsewhere"/>
+					<gmd19157:relatedElement xlink:href="#RegLin"/>
+					<gvq:trace>
+						<gmd19157:LI_Lineage>
+							<gmd19157:source>
+								<gmd19157:LI_Source>
+									<gmd19157:sourceStep>
+										<gmd19157:LI_ProcessStep id="OnekmGrid_MCSC_Vector">
+											<gmd19157:description>
+												<gco:CharacterString>Combination of the vectorized MCSC with a 1km grid. This partition is applied to fragment larger polygons into several smaller polygons, with the aim of selecting a % of its surface for posterior sampling purposes (training areas, test areas, validation areas subsamples). Thus, only the larger polygons are fragmentated. </gco:CharacterString>
+											</gmd19157:description>
+											<gmd19157:source>
+												<gmd19157:LI_Source id="MCSC_vector">
+													<gmd19157:description>
+														<gco:CharacterString>MSCS vector (result of the Vectorize_MCSC_reclass process step)</gco:CharacterString>
+													</gmd19157:description>
+												</gmd19157:LI_Source>
+											</gmd19157:source>
+										</gmd19157:LI_ProcessStep>
+									</gmd19157:sourceStep>
+								</gmd19157:LI_Source>
+							</gmd19157:source>
+						</gmd19157:LI_Lineage>
+					</gvq:trace>
+				</gvq:GVQ_Traceability>
+			</gmd19157:report>
+			<!-- $$  We do have a JPG file showing the lineage schema (kind of a figure in a paper). Can we cite it here (including it on the MMZ/netCDF file for example?)? -->
+			<gvq:discoveredIssue>
+				<!-- ··$$·· I do not find how to describe the affected Bounding Box in an "standardized" way (EX_Extent? CornerPoints)?. It is possible? Maybe the model can be extended (optional info of course) to give this information? -->
+				<gvq:GVQ_DiscoveredIssue>
+					<gvq:target xlink:href="#MCSC_12cat"/>
+					<gvq:knownProblem>
+						<gco:CharacterString>Legend choice is subjective. Some of the original 233 categories have been reclassified as nodata. In the end the % of the MCSC that has been used (with buffering) is 41.38% of the study area. Difficulties in fitting the photointerpretation product legend with a suitable spectral features legend.</gco:CharacterString>
+					</gvq:knownProblem>
+					<gvq:workAround>
+						<gco:CharacterString>Use of the Habitats Maps -available online from the regional government web- to compare the categories between them and reject the most mixed ones when doubtful.</gco:CharacterString>
+					</gvq:workAround>
+				</gvq:GVQ_DiscoveredIssue>
+			</gvq:discoveredIssue>
+		</gvq:GVQ_DataQuality>
+	</gvq:dataQualityInfo>
 </gvq:GVQ_Metadata>

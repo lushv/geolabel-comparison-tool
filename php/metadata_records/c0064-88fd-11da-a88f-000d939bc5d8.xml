@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gvq:GVQ_Metadata xmlns:updated19115="http://www.geoviqua.org/19115_updates" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gvq="http://www.geoviqua.org/QualityInformationModel/3.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmd19157="http://www.geoviqua.org/gmd19157" xsi:schemaLocation="http://www.geoviqua.org/QualityInformationModel/3.1 http://schemas.geoviqua.org/GVQ/3.1.0/GeoViQua_PQM_UQM.xsd http://www.uncertml.org/2.0 http://www.uncertml.org/uncertml.xsd">
   <gmd:fileIdentifier>
-      <gco:CharacterString>c0064-88fd-11da-a88f-000d939bc5d8>c0064-88fd-11da-a88f-000d939bc5d8</gco:CharacterString>
+      <gco:CharacterString>c0064-88fd-11da-a88f-000d939bc5d8</gco:CharacterString>
   </gmd:fileIdentifier>
   <gmd:language>
       <gco:CharacterString>eng</gco:CharacterString>
@@ -353,10 +353,6 @@ d. Land degradation is indicated by a negative trend in RUE-adjusted NDVI and ma
                <gmd:temporalElement>
                   <gmd:EX_TemporalExtent>
                      <gmd:extent>
-                        <gml:TimePeriod>
-                           <gml:beginPosition>1981-07-01T07:00:00</gml:beginPosition>
-                           <gml:endPosition>2003-12-01T13:56:00</gml:endPosition>
-                        </gml:TimePeriod>
                      </gmd:extent>
                   </gmd:EX_TemporalExtent>
                </gmd:temporalElement>

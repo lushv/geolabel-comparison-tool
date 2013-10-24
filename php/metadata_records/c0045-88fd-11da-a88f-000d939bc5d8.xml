@@ -138,7 +138,7 @@
             </gmd:CI_Citation>
          </gmd:citation>
          <gmd:abstract>
-            <gco:CharacterString>The FGGD CV of LGP map is a global raster datalayer with a resolution of 5 arc-minutes. Each pixel contains an average coefficient of variation of LGP for the pixel area over the period 1901-1966. The data are from FAO and IIASA, 2000, Global agro-ecological zones, as reported in FAO and IIASA, 2007, Mapping biophysical factors that influence agricultural production and rural vulnerability, by H. von Velthuizen et al.</gco:CharacterString>
+            <gco:CharacterString>The FGGD CV of LGP map is a global raster datalayer with a resolution of 5 arc-minutes. Each pixel contains an average coefficient of variation of LGP for the pixel area. The data are from FAO and IIASA, 2000, Global agro-ecological zones, as reported in FAO and IIASA, 2007, Mapping biophysical factors that influence agricultural production and rural vulnerability, by H. von Velthuizen et al.</gco:CharacterString>
          </gmd:abstract>
          <gmd:purpose>
             <gco:CharacterString>The FGGD Digital Atlas consists of more than 100 global database that allows to analyse food insecurity and poverty in relation to the environment.</gco:CharacterString>
@@ -383,4 +383,167 @@
          </gmd:transferOptions>
       </gmd:MD_Distribution>
   </gmd:distributionInfo>
+    <gvq:userFeedback>
+		<gvq:GVQ_FeedbackCollection>
+			<gvq:item>
+				<gvq:userRole>
+					<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+				</gvq:userRole>
+				<gvq:user>
+					<gvq:userDetails>
+						<gmd:individualName>
+							<gco:CharacterString>Mark Jones</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:organisationName>
+							<gco:CharacterString>UAB</gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:contactInfo>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+						</gmd:role>
+					</gvq:userDetails>
+					<gvq:applicationDomain>http://www.eionet.europa.eu/gemet/concept/3502</gvq:applicationDomain>
+					<gvq:expertiseLevel>4</gvq:expertiseLevel>
+					<gvq:userRole>
+						<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+					</gvq:userRole>
+				</gvq:user>
+				<gvq:dateStamp>
+					<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
+				</gvq:dateStamp>
+				<gvq:qualityOverride>
+					<gvq:GVQ_DataQuality>
+						<gmd19157:scope/>
+						<gvq:discoveredIssue/>
+					</gvq:GVQ_DataQuality>
+				</gvq:qualityOverride>
+				<gvq:userComment>
+					<gvq:comment></gvq:comment>
+					<gvq:mime-type>text/plain</gvq:mime-type>
+				</gvq:userComment>
+				<gvq:rating>
+					<gvq:score>3</gvq:score>
+					<gvq:justification>Incomplete metadata record. Quality information is missing.</gvq:justification>
+				</gvq:rating>
+				<gvq:usage>
+					<gvq:reportAspect>
+						<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+					</gvq:reportAspect>
+					<gvq:usageDescription>This dataset was used to monitor impact of regional climate change on human health.</gvq:usageDescription>
+					<gvq:discoveredIssue>
+						<gvq:GVQ_DiscoveredIssue>
+							<gvq:target xlink:href="targetUID"/>
+						</gvq:GVQ_DiscoveredIssue>
+					</gvq:discoveredIssue>
+				</gvq:usage>
+			</gvq:item>
+			<gvq:item>
+				<gvq:userRole>
+					<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" NonresearchEndUser "/>
+				</gvq:userRole>
+				<gvq:user>
+					<gvq:userDetails>
+						<gmd:individualName>
+							<gco:CharacterString>Sarah White</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:organisationName>
+							<gco:CharacterString>DEFRA</gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:contactInfo>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+						</gmd:role>
+					</gvq:userDetails>
+					<gvq:applicationDomain></gvq:applicationDomain>
+					<gvq:expertiseLevel>4</gvq:expertiseLevel>
+					<gvq:userRole>
+						<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+					</gvq:userRole>
+				</gvq:user>
+				<gvq:dateStamp>
+					<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
+				</gvq:dateStamp>
+				<gvq:qualityOverride>
+					<gvq:GVQ_DataQuality>
+						<gmd19157:scope/>
+						<gvq:discoveredIssue/>
+					</gvq:GVQ_DataQuality>
+				</gvq:qualityOverride>
+				<gvq:userComment>
+					<gvq:comment>Metadata record is incomplete: no quality or lineage information.</gvq:comment>
+					<gvq:mime-type>text/plain</gvq:mime-type>
+				</gvq:userComment>
+				<gvq:rating>
+					<gvq:score>3</gvq:score>
+					<gvq:justification>The metadata records is empty.</gvq:justification>
+				</gvq:rating>
+				<gvq:usage>
+					<gvq:reportAspect>
+						<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+					</gvq:reportAspect>
+					<gvq:usageDescription></gvq:usageDescription>
+					<gvq:discoveredIssue>
+						<gvq:GVQ_DiscoveredIssue>
+							<gvq:target xlink:href="targetUID"/>
+						</gvq:GVQ_DiscoveredIssue>
+					</gvq:discoveredIssue>
+				</gvq:usage>
+			</gvq:item>
+			<gvq:item>
+				<gvq:userRole>
+					<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
+				</gvq:userRole>
+				<gvq:user>
+					<gvq:userDetails>
+						<gmd:individualName>
+							<gco:CharacterString>Mark Peters</gco:CharacterString>
+						</gmd:individualName>
+						<gmd:organisationName>
+							<gco:CharacterString></gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:contactInfo>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
+						</gmd:role>
+					</gvq:userDetails>
+					<gvq:applicationDomain>Climate</gvq:applicationDomain>
+					<gvq:expertiseLevel>4</gvq:expertiseLevel>
+					<gvq:userRole>
+						<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
+					</gvq:userRole>
+				</gvq:user>
+				<gvq:dateStamp>
+					<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
+				</gvq:dateStamp>
+				<gvq:qualityOverride>
+					<gvq:GVQ_DataQuality>
+						<gmd19157:scope/>
+						<gvq:discoveredIssue/>
+					</gvq:GVQ_DataQuality>
+				</gvq:qualityOverride>
+				<gvq:userComment>
+					<gvq:comment>The data is patchy, a lot of land coverage is missing or of very poor quality.</gvq:comment>
+					<gvq:mime-type>text/plain</gvq:mime-type>
+				</gvq:userComment>
+				<gvq:rating>
+					<gvq:score>1</gvq:score>
+					<gvq:justification>Data is patchy, a lot of land coverage is missing or of very poor quality.</gvq:justification>
+				</gvq:rating>
+				<gvq:usage>
+					<gvq:reportAspect>
+						<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
+					</gvq:reportAspect>
+					<gvq:usageDescription>This dataset was used for climate change investigations in the UK.</gvq:usageDescription>
+					<gvq:discoveredIssue>
+						<gvq:GVQ_DiscoveredIssue>
+							<gvq:target xlink:href="targetUID"/>
+						</gvq:GVQ_DiscoveredIssue>
+					</gvq:discoveredIssue>
+				</gvq:usage>
+			</gvq:item>
+		</gvq:GVQ_FeedbackCollection>
+	</gvq:userFeedback>
 </gvq:GVQ_Metadata>
