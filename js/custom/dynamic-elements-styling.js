@@ -1,6 +1,9 @@
 
 // ***********************************   RESET ALL ELEMENTS WHEN TOOL IS LOADED   ************************************
 $(document).ready(function() {
+	// Hide spinner
+	$("#loader_1").hide();
+	
 	// Clear all Query Constraints fields
 	$("#keyword-autocomplete").val('');
 	$("#location-name-select").val('');
@@ -135,12 +138,14 @@ $(function() {
 	$( "#start-date" ).datepicker({
 		changeMonth: true,
 		changeYear: true,
-		dateFormat: 'yy-mm-dd'
+		dateFormat: 'yy-mm-dd',
+		yearRange: '1970:2013'
 	});
 	$( "#end-date" ).datepicker({
 		changeMonth: true,
 		changeYear: true,
-		dateFormat: 'yy-mm-dd'
+		dateFormat: 'yy-mm-dd',
+		yearRange: '1970:2013',
 	});
 	$( "#producer-accordion" ).accordion({
 		heightStyle: "content",
@@ -339,3 +344,59 @@ $(function() {
 	$('.tab-content #tab-pane-geo-label-filtering').show();
   });
 });
+
+function resetFilters(){
+	// Reset all sliders
+	$("#producer-slider").slider("value", 0);
+	$("#comments-slider").slider("value", 0);
+	$("#lineage-slider").slider("value", 0);
+	$("#compliance-slider").slider("value", 0);
+	$("#quality-slider").slider("value", 0);
+	$("#feedback-slider").slider("value", 0);
+	$("#review-slider").slider("value", 0);
+	$("#citations-slider").slider("value", 0);
+	
+	$("#dataset-source-autocomplete").val('');
+	$("#dataset-source-autocomplete").prop('disabled', false);
+	$("#filter-producer-btn").prop('disabled', false);
+	$("#reset-producer-btn").prop('disabled', true);
+	
+	$("#comments_type_select").val('');
+	$("#comments_type_select").prop('disabled', false);
+	$("#filter-comments-btn").prop('disabled', false);
+	$("#reset-comments-btn").prop('disabled', true);
+	
+	$("#process-steps-input").val('');
+	$("#process-steps-input").prop('disabled', false);
+	$("#filter-lineage-btn").prop('disabled', false);
+	$("#reset-lineage-btn").prop('disabled', true);
+	
+	$("#standard-name-autocomplete").val('');
+	$("#standard-name-autocomplete").prop('disabled', false);
+	$("#filter-standards-btn").prop('disabled', false);
+	$("#reset-standards-btn").prop('disabled', true);
+	
+	$("#scope-level-select").val('');
+	$("#scope-level-select").prop('disabled', false);
+	$("#filter-quality-btn").prop('disabled', false);
+	$("#reset-quality-btn").prop('disabled', true);
+	
+	$('#feedback-star').raty('reload');
+	$('#feedback-star').raty('readOnly', false);
+	$("#minimum-feedbacks").val('');
+	$("#minimum-feedbacks").prop('disabled', false);
+	$("#filter-feedback-btn").prop('disabled', false);
+	$("#reset-feedback-btn").prop('disabled', true);
+	
+	$('#reviews-star').raty('reload');
+	$('#reviews-star').raty('readOnly', false);
+	$("#minimum-reviews").val('');
+	$("#minimum-reviews").prop('disabled', false);
+	$("#filter-expert-btn").prop('disabled', false);
+	$("#reset-expert-btn").prop('disabled', true);
+	
+	$("#minimum-citations").val('');
+	$("#minimum-citations").prop('disabled', false);
+	$("#filter-citations-btn").prop('disabled', false);
+	$("#reset-citations-btn").prop('disabled', true);
+}
