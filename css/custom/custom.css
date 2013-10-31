@@ -436,11 +436,25 @@ iframe.ui-layout-mask {}	/* extra mask for objects/applets */
   margin: -10px 0px 10px 25px;
 }
 
- /* *****************************   Dataset Details section   **************************************** */
-.dataset-details-label {
-  padding: 5px 0px 5px 0px;
+/* *****************************   Dataset Results Count section   **************************************** */
+#search-results-count {
+  padding: 1px 0px 1px 0px;
   text-align: center;
-  font: sans-serif;
+  font: Arial;
+  font-size: 10px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: #416ED7;
+}
+
+/* *****************************   Dataset Details section   **************************************** */
+.dataset-details-label {
+  padding: 4px 0px 4px 0px;
+  text-align: center;
+  font: Arial;
   font-size: 14px;
   font-weight: bold;
   color: #FFFFFF;
@@ -486,13 +500,13 @@ div.dataset-details-data {
   padding: 2px 0px 2px 0px;
   margin: 0px 0px 5px 0px;
   text-align: center;
-  font: sans-serif;
+  font: Arial;
   font-size: 14px;
   color: #FFFFFF;
   margin-left: auto;
   margin-right: auto;
   width:100%;
-  background-color:#5050F5;
+  background-color:#416ED7;
 }
 
 .highlighted-dataset-details {
@@ -521,3 +535,18 @@ div.dataset-details-data {
 }
 
 /*******************************  Zoom and Pan buttons  *******************************/
+
+/*******************************  Spinner  *******************************/
+.spinner {
+  width: 100px;
+  height: 100px;
+  background-image: url('../img/spinner.gif');
+  background-position: center;
+  background-repeat: no-repeat;  
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 80px;
+  text-align: center;
+  position: absolute;
+  top: 100px;
+}

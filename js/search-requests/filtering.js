@@ -1,5 +1,6 @@
 var datasetSource = "";
 var commentType = "";
+var processStepsMinNum = "";
 var processStepsMaxNum = "";
 var standardName = "";
 var scopeLevel = "";
@@ -335,8 +336,28 @@ function resetComments(){
 }
 
 function filterLineage(){
+	processStepsMinNum = $("#process-steps-min-input").val();
 	processStepsMaxNum = $("#process-steps-input").val();
-	if(processStepsMaxNum != ""){
+	if(processStepsMinNum != "" && processStepsMaxNum != ""){
+		// Iterate through all GEO labels
+		var count = $("#zoom_pan_results_svg").children().length;
+		for (var i = 0; i < count; i++) {
+			var availability = $("#lineage_" + i).attr("availability");
+			var processSteps = $("#lineage_" + i).attr("process_step_count");
+			if(availability != 0 && parseInt(processStepsMinNum, 10) <= parseInt(processSteps, 10) && parseInt(processStepsMaxNum, 10) >= parseInt(processSteps, 10)){
+				// increase the size of the label
+				upScaleLabel(i);
+			}
+			else{
+				downScaleLabel(i);
+			}
+		}
+		$("#process-steps-input").prop('disabled', true);
+		$("#process-steps-min-input").prop('disabled', true);
+		$("#filter-lineage-btn").prop('disabled', true);
+		$("#reset-lineage-btn").prop('disabled', false);
+	}
+	else if(processStepsMinNum == "" && processStepsMaxNum != ""){
 		// Iterate through all GEO labels
 		var count = $("#zoom_pan_results_svg").children().length;
 		for (var i = 0; i < count; i++) {
@@ -351,13 +372,56 @@ function filterLineage(){
 			}
 		}
 		$("#process-steps-input").prop('disabled', true);
+		$("#process-steps-min-input").prop('disabled', true);
+		$("#filter-lineage-btn").prop('disabled', true);
+		$("#reset-lineage-btn").prop('disabled', false);
+	}
+	else if(processStepsMinNum != "" && processStepsMaxNum == ""){
+		// Iterate through all GEO labels
+		var count = $("#zoom_pan_results_svg").children().length;
+		for (var i = 0; i < count; i++) {
+			var availability = $("#lineage_" + i).attr("availability");
+			var processSteps = $("#lineage_" + i).attr("process_step_count");
+			if(availability != 0 && parseInt(processStepsMinNum, 10) <= parseInt(processSteps, 10)){
+				// increase the size of the label
+				upScaleLabel(i);
+			}
+			else{
+				downScaleLabel(i);
+			}
+		}
+		$("#process-steps-input").prop('disabled', true);
+		$("#process-steps-min-input").prop('disabled', true);
 		$("#filter-lineage-btn").prop('disabled', true);
 		$("#reset-lineage-btn").prop('disabled', false);
 	}
 }
 
 function resetLineage(){
-	if(processStepsMaxNum != ""){
+	processStepsMinNum = $("#process-steps-min-input").val();
+	processStepsMaxNum = $("#process-steps-input").val();
+	if(processStepsMinNum != "" && processStepsMaxNum != ""){
+		// Iterate through all GEO labels
+		var count = $("#zoom_pan_results_svg").children().length;
+		for (var i = 0; i < count; i++) {
+			var availability = $("#lineage_" + i).attr("availability");
+			var processSteps = $("#lineage_" + i).attr("process_step_count");
+			if(availability != 0 && parseInt(processStepsMinNum, 10) <= parseInt(processSteps, 10) && parseInt(processStepsMaxNum, 10) >= parseInt(processSteps, 10)){
+				// increase the size of the label
+				downScaleLabel(i);
+			}
+			else{
+				upScaleLabel(i);
+			}
+		}
+		$("#process-steps-input").val('');
+		$("#process-steps-min-input").val('');
+		$("#process-steps-input").prop('disabled', false);
+		$("#process-steps-min-input").prop('disabled', false);
+		$("#filter-lineage-btn").prop('disabled', false);
+		$("#reset-lineage-btn").prop('disabled', true);
+	}
+	else if(processStepsMinNum == "" && processStepsMaxNum != ""){
 		// Iterate through all GEO labels
 		var count = $("#zoom_pan_results_svg").children().length;
 		for (var i = 0; i < count; i++) {
@@ -371,9 +435,31 @@ function resetLineage(){
 				upScaleLabel(i);
 			}
 		}
-		processStepsMaxNum = "";
 		$("#process-steps-input").val('');
+		$("#process-steps-min-input").val('');
 		$("#process-steps-input").prop('disabled', false);
+		$("#process-steps-min-input").prop('disabled', false);
+		$("#filter-lineage-btn").prop('disabled', false);
+		$("#reset-lineage-btn").prop('disabled', true);
+	}
+	else if(processStepsMinNum != "" && processStepsMaxNum == ""){
+		// Iterate through all GEO labels
+		var count = $("#zoom_pan_results_svg").children().length;
+		for (var i = 0; i < count; i++) {
+			var availability = $("#lineage_" + i).attr("availability");
+			var processSteps = $("#lineage_" + i).attr("process_step_count");
+			if(availability != 0 && parseInt(processStepsMinNum, 10) <= parseInt(processSteps, 10)){
+				// increase the size of the label
+				downScaleLabel(i);
+			}
+			else{
+				upScaleLabel(i);
+			}
+		}
+		$("#process-steps-input").val('');
+		$("#process-steps-min-input").val('');
+		$("#process-steps-input").prop('disabled', false);
+		$("#process-steps-min-input").prop('disabled', false);
 		$("#filter-lineage-btn").prop('disabled', false);
 		$("#reset-lineage-btn").prop('disabled', true);
 	}
@@ -652,7 +738,7 @@ function resetAllFilters(){
 		resetComments();
 	}
 	// Check if lineage filtering has been applied and if so, reset the filtering
-	if(processStepsMaxNum != ""){
+	if(processStepsMinNum != "" || processStepsMaxNum != ""){
 		resetLineage();
 	}
 	// Check if producer comments filtering has been applied and if so, reset the filtering

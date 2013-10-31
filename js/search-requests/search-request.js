@@ -1,7 +1,23 @@
 $(function() {
   $("#search-btn").click(function() {
-	// First of all clear all the previous results
+	// First of all clear all the previous results and GEO label filtering
 	document.getElementById("zoom_pan_results_svg").innerHTML = '';
+	resetFilters();
+	
+	// switch tabs when the button is clicked
+	$("#map-tab").removeClass("active");
+	$("#serach-results-tab").addClass("active");
+	$('.tab-content #tab-pane-map').hide();
+	$('.tab-content #tab-pane-search-results').show();
+	
+	// switch tabs when the button is clicked
+	$("#query-constraints-tab").removeClass("active");
+	$("#geo-label-filtering-tab").addClass("active");
+	$('.tab-content #tab-pane-query-constraints').hide();
+	$('.tab-content #tab-pane-geo-label-filtering').show();
+	
+	$("#loader_1").width($(window).width() - 500);
+	$("#loader_1").show();
 	
 	// validate and process form here
 	var keyword = $("input#keyword-autocomplete").val();
@@ -40,7 +56,7 @@ $(function() {
 					
 					var windowHeight = $(window).height(),
 					windowWidth = $(window).width(),
-					searchAreaHeight = windowHeight - (windowHeight * 0.2 + 100),
+					searchAreaHeight = windowHeight - (windowHeight * 0.2 + 130),
 					serachAreaWidth = windowWidth - 500;
 					
 					var resultsParentSVG = document.getElementById("results_svg");
@@ -57,7 +73,7 @@ $(function() {
 					
 					var availableArea = searchAreaHeight * serachAreaWidth;
 					var areaPerLabel = parseInt(availableArea / JSONObject.dataset.length, 10);
-					var scale = parseFloat(areaPerLabel / 45000).toFixed(2);
+					var scale = parseFloat(areaPerLabel / 47000).toFixed(2);
 					var xOffset = parseInt((250 * scale) + 35, 10);
 					var yOffset = xOffset;
 					var maxLabelsPerRow = parseInt(serachAreaWidth / xOffset, 10);
@@ -79,10 +95,10 @@ $(function() {
 					// Process all JSON datasets objects and build GEO label representations
 					for (var i = 0; i < JSONObject.dataset.length; i++) {
 						// Check current labels vertical position to make sure that the labels do not overlap with the zoom-pan control
-						if(y < 80){
+						if(y < 90){
 							// Increase the value of x until horisoanl label position does not overlap the zoom-pan control
 							// Increase number of labels that could be placed on a horisontal row
-							var zoomPanWidht = 80;
+							var zoomPanWidht = 90;
 							while (zoomPanWidht > x) {
 								x += xOffset;
 								currentLabelsOnRow += 1;
@@ -300,6 +316,9 @@ $(function() {
 						transformGroup.appendChild(citationsGroup);
 
 						labelSVG.appendChild(transformGroup);
+						// remove spinner
+						$("#loader_1").hide();
+						// show results
 						resultsGroup.appendChild(labelSVG);
 						
 						// Increase x postion and number of added labels
@@ -312,35 +331,10 @@ $(function() {
 						}
 						
 					}
-					/*
-					resultsParentSVG.appendChild(getZoomPanControl());
-					
-					// Attach zoom and pan functionality
-					$("#zoom_in").click(function() {
-						
-					});
-					// Attach zoom and pan functionality
-					$("#zoom_out").click(function() {
-						
-					});
-					*/
 				}
 				else{
 					$("#search-results").html("An error occurred.");
-					//window.alert("An error occurred.");
 				}
-				
-				// switch tabs when the button is clicked
-				$("#map-tab").removeClass("active");
-				$("#serach-results-tab").addClass("active");
-				$('.tab-content #tab-pane-map').hide();
-				$('.tab-content #tab-pane-search-results').show();
-				
-				// switch tabs when the button is clicked
-				$("#query-constraints-tab").removeClass("active");
-				$("#geo-label-filtering-tab").addClass("active");
-				$('.tab-content #tab-pane-query-constraints').hide();
-				$('.tab-content #tab-pane-geo-label-filtering').show();
 				
 				// ********************************************************************************************************
 				//										DATASET DETAILS FUNCTION
@@ -448,6 +442,8 @@ $(function() {
 				
 				// Enable all the filters
 				enableFilters();
+				$("#search-results-count").html("Search Results: Displaying a total of " + JSONObject.dataset.length + " datasets.");
+
 			},
 			error:function(){
 				$("#search-results").html('An error occured.');

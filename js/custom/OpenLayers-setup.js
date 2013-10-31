@@ -2,11 +2,13 @@ var lon = 40;
 var lat = -20;
 var zoom = 2;
 var map, layer;
+var extent = [];
 
 $(document).ready(function(){
 	map = new OpenLayers.Map('map');
 	layer = new OpenLayers.Layer.WMS( "OpenLayers WMS",
 			"http://vmap0.tiles.osgeo.org/wms/vmap0", {layers: 'basic'} );
+	var boxes  = new OpenLayers.Layer.Boxes( "Boxes" );
 
 	var control = new OpenLayers.Control();
 	OpenLayers.Util.extend(control, {
@@ -38,10 +40,19 @@ $(document).ready(function(){
 			$('#select-area-west').prop('value', ll.lon.toFixed(4));
 			$('#select-area-east').prop('value', ur.lon.toFixed(4));
 			$('#select-area-north').prop('value', ur.lat.toFixed(4));
+			
+			// Draw selected box by adding OpenLayer marker
+			boxes.clearMarkers();
+			ext = [ll.lon.toFixed(4), ll.lat.toFixed(4), ur.lon.toFixed(4), ur.lat.toFixed(4)];
+			bounds = new OpenLayers.Bounds.fromArray(ext);
+			box = new OpenLayers.Marker.Box(bounds);
+			boxes.addMarker(box);
+			map.addLayer(boxes);
 		}
 	});
-
+	
 	map.addLayer(layer);
 	map.addControl(control);
+    //map.addControl(new OpenLayers.Control.LayerSwitcher());
 	map.setCenter(new OpenLayers.LonLat(lon, lat), zoom);
 })

@@ -6,7 +6,7 @@ $datasetID = $_POST['datasetID'];
 $fileIdentifierXPath = '//*[local-name()=\'fileIdentifier\']/*[local-name()=\'CharacterString\']';
 $title = '//*[local-name()=\'title\']/*[local-name()=\'CharacterString\']';
 $abstract = '//*[local-name()=\'abstract\']/*[local-name()=\'CharacterString\']';
-$purpose = '//*[local-name()=\'identificationInfo\']/*[local-name()=\'GVQ_DataIdentification\']/*[local-name()=\'purpose\']/*[local-name()=\'CharacterString\']';
+$purpose = '//*[local-name()=\'identificationInfo\']//*[local-name()=\'purpose\']/*[local-name()=\'CharacterString\']';
 $date = '//*[local-name()=\'CI_Date\']/*[local-name()=\'date\']/*[local-name()=\'Date\']';
 $keywords = '//*[local-name()=\'descriptiveKeywords\']/*[local-name()=\'MD_Keywords\']/*[local-name()=\'keyword\']/*[local-name()=\'CharacterString\']';
 $producerProfileXpath = 
