@@ -429,16 +429,16 @@ The land cover products were developed by JRC as part of the LIB/00/04 'Mapping 
                <gmd:geographicElement>
                   <gmd:EX_GeographicBoundingBox>
                      <gmd:westBoundLongitude>
-                        <gco:Decimal>9.31139</gco:Decimal>
+                        <gco:Decimal>-180</gco:Decimal>
                      </gmd:westBoundLongitude>
                      <gmd:eastBoundLongitude>
-                        <gco:Decimal>25.1517</gco:Decimal>
+                        <gco:Decimal>180</gco:Decimal>
                      </gmd:eastBoundLongitude>
                      <gmd:southBoundLatitude>
-                        <gco:Decimal>19.4991</gco:Decimal>
+                        <gco:Decimal>-90</gco:Decimal>
                      </gmd:southBoundLatitude>
                      <gmd:northBoundLatitude>
-                        <gco:Decimal>33.1711</gco:Decimal>
+                        <gco:Decimal>90</gco:Decimal>
                      </gmd:northBoundLatitude>
                   </gmd:EX_GeographicBoundingBox>
                </gmd:geographicElement>

@@ -70,7 +70,7 @@
 					</gmd:CI_Citation>
 				</gmd:citation>
 				<gmd:abstract>
-					<gco:CharacterString>The purpose of the SNF study was to improve our understanding of the relationship between remotely sensed observations and important biophysical parameters in the boreal forest. A key element of the experiment was the development of methodologies to measure forest stand characteristics to determine values of importance to both remote sensing and ecology. Parameters studied were biomass, leaf area index, above ground net primary productivity, bark area index and ground coverage by vegetation. Thirty two quaking aspen and thirty one black spruce sites were studied. Use of multiple plots within each site allowed estimation of the importance of spatial variation in stand parameters. Within each plot, all woody stems greater than two meters in height were recorded by species and relevant dimensions were measured. Diameter breast height (dbh) was measured directly. Height of the tree and height of the first live branch were determined by triangulation. The difference between these two heights was used as the depth of crown. Similar measurements were made for shrubs between one and two meters tall in the aspen sites. The Forest Canopy Composition (SNF) data set provides the counts of canopy (over two meters tall) tree species and subcanopy (between one and two meters tall) tree species. Also related, for the aspen sites, in each plot a visual estimation of the percent coverage of the canopy, subcanopy and understory vegetation was made. The site averages of these coverage estimates are presented in the Aspen Forest Cover by Stratum/Plot (SNF) data set.</gco:CharacterString>
+					<gco:CharacterString>The purpose of the SNF study was to improve our understanding of the relationship between remotely sensed observations and important biophysical parameters in the forest areas. A key element of the experiment was the development of methodologies to measure forest stand characteristics to determine values of importance to both remote sensing and ecology. Parameters studied were biomass, leaf area index, above ground net primary productivity, bark area index and ground coverage by vegetation. Thirty two quaking aspen and thirty one black spruce sites were studied. Use of multiple plots within each site allowed estimation of the importance of spatial variation in stand parameters. Within each plot, all woody stems greater than two meters in height were recorded by species and relevant dimensions were measured. Diameter breast height (dbh) was measured directly. Height of the tree and height of the first live branch were determined by triangulation. The difference between these two heights was used as the depth of crown. Similar measurements were made for shrubs between one and two meters tall in the aspen sites. The Forest Canopy Composition (SNF) data set provides the counts of canopy (over two meters tall) tree species and subcanopy (between one and two meters tall) tree species. Also related, for the aspen sites, in each plot a visual estimation of the percent coverage of the canopy, subcanopy and understory vegetation was made. The site averages of these coverage estimates are presented in the Aspen Forest Cover by Stratum/Plot (SNF) data set.</gco:CharacterString>
 				</gmd:abstract>
 				<gmd:descriptiveKeywords>
 					<gmd:MD_Keywords>
@@ -86,20 +86,20 @@
 				<gmd:extent>
 					<gmd:EX_Extent>
 						<gmd:geographicElement>
-							<gmd:EX_GeographicBoundingBox>
-								<gmd:westBoundLongitude>
-									<gco:Decimal>-92.5057983398438</gco:Decimal>
-								</gmd:westBoundLongitude>
-								<gmd:eastBoundLongitude>
-									<gco:Decimal>-91.7658004760742</gco:Decimal>
-								</gmd:eastBoundLongitude>
-								<gmd:southBoundLatitude>
-									<gco:Decimal>47.6575012207031</gco:Decimal>
-								</gmd:southBoundLatitude>
-								<gmd:northBoundLatitude>
-									<gco:Decimal>48.1697006225586</gco:Decimal>
-								</gmd:northBoundLatitude>
-							</gmd:EX_GeographicBoundingBox>
+						  <gmd:EX_GeographicBoundingBox>
+							 <gmd:westBoundLongitude>
+								<gco:Decimal>-180</gco:Decimal>
+							 </gmd:westBoundLongitude>
+							 <gmd:eastBoundLongitude>
+								<gco:Decimal>180</gco:Decimal>
+							 </gmd:eastBoundLongitude>
+							 <gmd:southBoundLatitude>
+								<gco:Decimal>-90</gco:Decimal>
+							 </gmd:southBoundLatitude>
+							 <gmd:northBoundLatitude>
+								<gco:Decimal>90</gco:Decimal>
+							 </gmd:northBoundLatitude>
+						  </gmd:EX_GeographicBoundingBox>
 						</gmd:geographicElement>
 						<gmd:geographicElement>
 							<gmd:EX_BoundingPolygon>

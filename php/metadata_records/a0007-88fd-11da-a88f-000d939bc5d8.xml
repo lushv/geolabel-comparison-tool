@@ -159,16 +159,16 @@ Vanua Levu: Forest cover (DOS 3138).</gco:CharacterString>
                <gmd:geographicElement>
                   <gmd:EX_GeographicBoundingBox>
                      <gmd:westBoundLongitude>
-                        <gco:Decimal>175</gco:Decimal>
+                        <gco:Decimal>-180</gco:Decimal>
                      </gmd:westBoundLongitude>
                      <gmd:eastBoundLongitude>
                         <gco:Decimal>180</gco:Decimal>
                      </gmd:eastBoundLongitude>
                      <gmd:southBoundLatitude>
-                        <gco:Decimal>-19.1</gco:Decimal>
+                        <gco:Decimal>-90</gco:Decimal>
                      </gmd:southBoundLatitude>
                      <gmd:northBoundLatitude>
-                        <gco:Decimal>-16.1</gco:Decimal>
+                        <gco:Decimal>90</gco:Decimal>
                      </gmd:northBoundLatitude>
                   </gmd:EX_GeographicBoundingBox>
                </gmd:geographicElement>

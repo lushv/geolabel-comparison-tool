@@ -149,10 +149,10 @@
                 </gmd:CI_Citation>
             </gmd:citation>
             <gmd:abstract>
-                <gco:CharacterString>The Land Cover of the World 2000 is a product of the GVM Unit that is coordinating and implementing the GLOBAL LAND COVER 2000 Project (GLC 2000) in collaboration with a network of partners around the world, under the coordination of the European Commission's Joint Research Centre. To achieve its objective GLC 2000 makes use of the VEGA 2000 dataset: a dataset of 14 months of pre-processed daily global data acquired by the VEGETATION instrument on board the SPOT 4 satellite, made available through a sponsorship from members of the VEGETATION programme, including JRC. The legend of the map is based on FAO Land Cover Classification System (LCCS). Later version will also include regional legends.</gco:CharacterString>
+                <gco:CharacterString>The Land Cover of the World is a product of the GVM Unit that is coordinating and implementing the GLOBAL LAND COVER Project (GLC) in collaboration with a network of partners around the world, under the coordination of the European Commission's Joint Research Centre. To achieve its objective GLC makes use of the VEGA dataset: a dataset of pre-processed daily global data acquired by the VEGETATION instrument on board the SPOT 4 satellite, made available through a sponsorship from members of the VEGETATION programme, including JRC. The legend of the map is based on FAO Land Cover Classification System (LCCS). Later version will also include regional legends.</gco:CharacterString>
             </gmd:abstract>
             <gmd:purpose>
-                <gco:CharacterString>The general objective is to provide for the year 2000 a harmonized land cover database over the whole globe. The year Two Thousand is considered as a reference year for environmental assessment in relation to various activities, in particular the United Nation's Ecosystem-related International Conventions.</gco:CharacterString>
+                <gco:CharacterString>The general objective is to provide a harmonized land cover database over the whole globe.</gco:CharacterString>
             </gmd:purpose>
             <gmd:status>
                 <gmd:MD_ProgressCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ProgressCode" codeListValue="completed"/>
@@ -170,7 +170,7 @@
             <gmd:graphicOverview>
                 <gmd:MD_BrowseGraphic>
                     <gmd:fileName>
-                        <gco:CharacterString>glc2000_s.gif</gco:CharacterString>
+                        <gco:CharacterString>glc_s.gif</gco:CharacterString>
                     </gmd:fileName>
                     <gmd:fileDescription>
                         <gco:CharacterString>thumbnail</gco:CharacterString>
@@ -183,7 +183,7 @@
             <gmd:graphicOverview>
                 <gmd:MD_BrowseGraphic>
                     <gmd:fileName>
-                        <gco:CharacterString>glc2000.gif</gco:CharacterString>
+                        <gco:CharacterString>glc.gif</gco:CharacterString>
                     </gmd:fileName>
                     <gmd:fileDescription>
                         <gco:CharacterString>large_thumbnail</gco:CharacterString>
@@ -196,7 +196,7 @@
             <gmd:descriptiveKeywords>
                 <gmd:MD_Keywords>
                     <gmd:keyword>
-                        <gco:CharacterString>Global Landcover 2000</gco:CharacterString>
+                        <gco:CharacterString>Global Landcover</gco:CharacterString>
                     </gmd:keyword>
                     <gmd:keyword>
                         <gco:CharacterString>SPOT Vegetation</gco:CharacterString>
@@ -269,7 +269,7 @@
             <gvq:referenceDoc>
                 <gvq:GVQ_Publication>
                     <gmd:title>
-                        <gco:CharacterString>A new land-cover map of Africa for the year 2000</gco:CharacterString>
+                        <gco:CharacterString>A new land-cover map of Africa</gco:CharacterString>
                     </gmd:title>
                     <gmd:date>
                         <gmd:CI_Date>
@@ -284,7 +284,7 @@
                     <gmd:ISSN>
                         <gco:CharacterString>0196-2892</gco:CharacterString>
                     </gmd:ISSN>
-                    <gvq:target xlink:href="GLC2000">
+                    <gvq:target xlink:href="GLC">
                         <!-- the ID is used for xlinking within the document (see 'discoveredIssue'), the UUID for potential outside links -->
                     </gvq:target>
                     <gvq:doi>
@@ -306,6 +306,100 @@
                     </gvq:onlineResource>
                 </gvq:GVQ_Publication>
             </gvq:referenceDoc>
+			<gmd19157:referenceDoc>
+				<gvq:GVQ_Publication>
+					<gmd:title>
+						<gco:CharacterString>A multi-scale assessment of human and environmental constraints on forest land cover change</gco:CharacterString>
+					</gmd:title>
+					<gmd:date>
+						<gmd:CI_Date>
+							<gmd:date>
+								<gco:Date>2010-07-01</gco:Date>
+							</gmd:date>
+							<gmd:dateType>
+								<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+							</gmd:dateType>
+						</gmd:CI_Date>
+					</gmd:date>
+					<gmd:ISSN>
+						<gco:CharacterString>9007-2892</gco:CharacterString>
+					</gmd:ISSN>
+					<gvq:target>
+						<updated19115:MD_Identifier uuid="jrc.europa.eu:GLC" id="GLC">
+							<gmd:code>
+								<gco:CharacterString></gco:CharacterString>
+							</gmd:code>
+							<updated19115:codeSpace>
+								<gco:CharacterString></gco:CharacterString>
+							</updated19115:codeSpace>
+						</updated19115:MD_Identifier>
+					</gvq:target>
+					<gvq:doi>
+						<gco:CharacterString>10.6544/RRWA.6001.864370</gco:CharacterString>
+					</gvq:doi>
+					<gvq:purpose>
+						<gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>
+					</gvq:purpose>
+					<gvq:scope xlink:href="#datasetScope"/>
+					<gvq:category>
+						<gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+					</gvq:category>
+					<gvq:onlineResource>
+						<gmd:CI_OnlineResource>
+							<gmd:linkage>
+								<gmd:URL>http://ieeexplore.ieee.org/</gmd:URL>
+							</gmd:linkage>
+						</gmd:CI_OnlineResource>
+					</gvq:onlineResource>
+				</gvq:GVQ_Publication>
+			</gmd19157:referenceDoc>
+			<gmd19157:referenceDoc>
+				<gvq:GVQ_Publication>
+					<gmd:title>
+						<gco:CharacterString>Development of a 2001 national land-cover database for the United States</gco:CharacterString>
+					</gmd:title>
+					<gmd:date>
+						<gmd:CI_Date>
+							<gmd:date>
+								<gco:Date>2001-07-01</gco:Date>
+							</gmd:date>
+							<gmd:dateType>
+								<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+							</gmd:dateType>
+						</gmd:CI_Date>
+					</gmd:date>
+					<gmd:ISSN>
+						<gco:CharacterString>0196-2892</gco:CharacterString>
+					</gmd:ISSN>
+					<gvq:target>
+						<updated19115:MD_Identifier uuid="jrc.europa.eu:GLC" id="GLC">
+							<gmd:code>
+								<gco:CharacterString></gco:CharacterString>
+							</gmd:code>
+							<updated19115:codeSpace>
+								<gco:CharacterString></gco:CharacterString>
+							</updated19115:codeSpace>
+						</updated19115:MD_Identifier>
+					</gvq:target>
+					<gvq:doi>
+						<gco:CharacterString>89.3814/SLTR.2896.864370</gco:CharacterString>
+					</gvq:doi>
+					<gvq:purpose>
+						<gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>
+					</gvq:purpose>
+					<gvq:scope xlink:href="#datasetScope"/>
+					<gvq:category>
+						<gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+					</gvq:category>
+					<gvq:onlineResource>
+						<gmd:CI_OnlineResource>
+							<gmd:linkage>
+								<gmd:URL>http://ieeexplore.ieee.org/</gmd:URL>
+							</gmd:linkage>
+						</gmd:CI_OnlineResource>
+					</gvq:onlineResource>
+				</gvq:GVQ_Publication>
+			</gmd19157:referenceDoc>
         </gvq:GVQ_DataIdentification>
     </gmd:identificationInfo>
     <gmd:distributionInfo>
@@ -315,7 +409,7 @@
                     <gmd:onLine>
                         <gmd:CI_OnlineResource>
                             <gmd:linkage>
-                                <gmd:URL>http://www-gvm.jrc.it/glc2000/defaultGLC2000.htm</gmd:URL>
+                                <gmd:URL>http://www-gvm.jrc.it/glc/defaultGLC.htm</gmd:URL>
                             </gmd:linkage>
                             <gmd:protocol>
                                 <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
@@ -324,7 +418,7 @@
                                 <gco:CharacterString/>
                             </gmd:name>
                             <gmd:description>
-                                <gco:CharacterString>Global 2000 landcover Website</gco:CharacterString>
+                                <gco:CharacterString>Global landcover Website</gco:CharacterString>
                             </gmd:description>
                             <gmd:function>
                                 <gmd:CI_OnLineFunctionCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_OnLineFunctionCode" codeListValue="information"/>
@@ -334,7 +428,7 @@
                     <gmd:onLine>
                         <gmd:CI_OnlineResource>
                             <gmd:linkage>
-                                <gmd:URL>http://www-gvm.jrc.it/glc2000/Legend/GLC2000-LCCS_global-legend_overview.doc</gmd:URL>
+                                <gmd:URL>http://www-gvm.jrc.it/glc/Legend/GLC-LCCS_global-legend_overview.doc</gmd:URL>
                             </gmd:linkage>
                             <gmd:protocol>
                                 <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
@@ -372,10 +466,10 @@
                                 <gco:CharacterString>OGC:WMS-1.1.1-http-get-map</gco:CharacterString>
                             </gmd:protocol>
                             <gmd:name>
-                                <gco:CharacterString>global_land_cover_2000</gco:CharacterString>
+                                <gco:CharacterString>global_land_cover</gco:CharacterString>
                             </gmd:name>
                             <gmd:description>
-                                <gco:CharacterString>The Land Cover of the World in the Year 2000</gco:CharacterString>
+                                <gco:CharacterString>The Land Cover of the World</gco:CharacterString>
                             </gmd:description>
                             <gmd:function>
                                 <gmd:CI_OnLineFunctionCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_OnLineFunctionCode" codeListValue="information"/>
@@ -385,15 +479,13 @@
                     <gmd:onLine>
                         <gmd:CI_OnlineResource>
                             <gmd:linkage>
-                                <!--<gmd:URL>http://www.fao.org:80/geonetwork/srv/en/resources.get?id=6531&fname=glc2000_v1_1_grid.zip&access=private</gmd:URL>-->
-                                <!-- TODO fix - doesn't like the '='.... -->
-                                <gmd:URL>http://www.fao.org:80/geonetwork/srv/en/resources/glc2000_v1_1_grid.zip</gmd:URL>
+                                <gmd:URL>http://www.fao.org:80/geonetwork/srv/en/resources/glc_v1_1_grid.zip</gmd:URL>
                             </gmd:linkage>
                             <gmd:protocol>
                                 <gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
                             </gmd:protocol>
                             <gmd:name>
-                                <gco:CharacterString>glc2000_v1_1_grid.zip</gco:CharacterString>
+                                <gco:CharacterString>glc_v1_1_grid.zip</gco:CharacterString>
                             </gmd:name>
                             <gmd:description>
                                 <gco:CharacterString>Dataset in ESRI format (GRID)</gco:CharacterString>
@@ -451,7 +543,7 @@
                             <gmd19157:referenceDoc>
                                 <gvq:GVQ_Publication>
                                     <gmd:title>
-                                        <gco:CharacterString>Validation of the global land cover 2000 map</gco:CharacterString>
+                                        <gco:CharacterString>Validation of the global land cover map</gco:CharacterString>
                                     </gmd:title>
                                     <gmd:date>
                                         <gmd:CI_Date>
@@ -467,10 +559,10 @@
                                         <gco:CharacterString>0196-2892</gco:CharacterString>
                                     </gmd:ISSN>
                                     <gvq:target>
-                                        <updated19115:MD_Identifier uuid="jrc.europa.eu:GLC2000" id="GLC2000">
+                                        <updated19115:MD_Identifier uuid="jrc.europa.eu:GLC" id="GLC">
                                             <!-- the ID is used for xlinking within the document (see 'discoveredIssue'), the UUID for potential outside links -->
                                             <gmd:code>
-                                                <gco:CharacterString>GLC2000</gco:CharacterString>
+                                                <gco:CharacterString>GLC</gco:CharacterString>
                                             </gmd:code>
                                             <updated19115:codeSpace>
                                                 <gco:CharacterString>jrc.europa.eu</gco:CharacterString>
@@ -511,12 +603,12 @@
                                     <updated19115:name>
                                         <gmd:CI_Citation>
                                             <gmd:title>
-                                                <gco:CharacterString>GLC2000 field samples (global)</gco:CharacterString>
+                                                <gco:CharacterString>GLC field samples (global)</gco:CharacterString>
                                             </gmd:title>
                                             <gmd:date>
                                                 <gmd:CI_Date>
                                                     <gmd:date>
-                                                        <gco:Date>2000-12-31</gco:Date>
+                                                        <gco:Date>2013-01-31</gco:Date>
                                                     </gmd:date>
                                                     <gmd:dateType>
                                                         <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
@@ -524,9 +616,9 @@
                                                 </gmd:CI_Date>
                                             </gmd:date>
                                             <gmd:identifier>
-                                                <updated19115:MD_Identifier uuid="jrc.europa.eu:GLC2000_groundtruth">
+                                                <updated19115:MD_Identifier uuid="jrc.europa.eu:GLC_groundtruth">
                                                     <gmd:code>
-                                                        <gco:CharacterString>GLC2000_groundtruth</gco:CharacterString>
+                                                        <gco:CharacterString>GLC_groundtruth</gco:CharacterString>
                                                     </gmd:code>
                                                     <updated19115:codeSpace>
                                                         <gco:CharacterString>jrc.europa.eu</gco:CharacterString>
@@ -712,7 +804,7 @@
                                         <gmd19157:source>
                                             <gmd19157:LI_Source>
                                                 <gmd19157:description>
-                                                    <gco:CharacterString>Schematic sub-sampling of all GLC2000 landcover categories</gco:CharacterString>
+                                                    <gco:CharacterString>Schematic sub-sampling of all GLC landcover categories</gco:CharacterString>
                                                 </gmd19157:description>
                                                 <gmd19157:sourceReferenceSystem>
                                                     <gmd:MD_ReferenceSystem>
@@ -726,26 +818,6 @@
                                                     </gmd:MD_ReferenceSystem>
                                                 </gmd19157:sourceReferenceSystem>
                                                 <gmd19157:sourceCitation>
-                                                    <gmd:CI_Citation>
-                                                        <gmd:title>
-                                                            <gco:CharacterString>Schematic sub-sampling of all GLC2000 landcover categories</gco:CharacterString>
-                                                        </gmd:title>
-                                                        <gmd:date>
-                                                            <gmd:CI_Date>
-                                                                <gmd:date>
-                                                                    <gco:Date>2004-01-01</gco:Date>
-                                                                </gmd:date>
-                                                                <gmd:dateType>
-                                                                    <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="creation"/>
-                                                                </gmd:dateType>
-                                                            </gmd:CI_Date>
-                                                        </gmd:date>
-                                                        <gmd:citedResponsibleParty xlink:href="DrFiction">   
-                                                        </gmd:citedResponsibleParty>
-                                                        <gmd:presentationForm>
-                                                            <gmd:CI_PresentationFormCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_PresentationFormCode" codeListValue="mapDigital"/>
-                                                        </gmd:presentationForm>
-                                                    </gmd:CI_Citation>
                                                 </gmd19157:sourceCitation>
                                             </gmd19157:LI_Source>
                                         </gmd19157:source>
@@ -809,7 +881,7 @@
                                  <gmd19157:processStep>
                                     <gmd19157:LI_ProcessStep>
                                         <gmd19157:description>
-                                            <gco:CharacterString>Cross-validation of independently interpreted sites against GLC2000 data to generate confusion matrix and Kappa statistic.
+                                            <gco:CharacterString>Cross-validation of independently interpreted sites against GLC data to generate confusion matrix and Kappa statistic.
 											</gco:CharacterString>
                                         </gmd19157:description>
                                         <gmd19157:rationale>
@@ -866,7 +938,7 @@
             </gmd19157:report>
             <gvq:discoveredIssue>
                 <gvq:GVQ_DiscoveredIssue>
-                    <gvq:target xlink:href="#GLC2000"/>
+                    <gvq:target xlink:href="#GLC"/>
                     <!-- an internal document link for efficiency -->
                     <gvq:knownProblem>
                         <gco:CharacterString>Legend issues with South East Asia</gco:CharacterString>
@@ -880,7 +952,7 @@
                                 <gmd:CI_Citation>
                                     <gmd:title>
                                         <gco:CharacterString>
-                                            South East Asia legend mapping: regional classes to GLC2000
+                                            South East Asia legend mapping: regional classes to GLC
                                         </gco:CharacterString>
                                     </gmd:title>
                                     <gmd:date>
@@ -894,9 +966,9 @@
                                         </gmd:CI_Date>
                                     </gmd:date>
                                     <gmd:identifier>
-                                        <updated19115:MD_Identifier uuid="jrc.europa.eu:GLC2000_SEA_mapping">
+                                        <updated19115:MD_Identifier uuid="jrc.europa.eu:GLC_SEA_mapping">
                                             <gmd:code>
-                                                <gco:CharacterString>GLC2000_SEA_mapping</gco:CharacterString>
+                                                <gco:CharacterString>GLC_SEA_mapping</gco:CharacterString>
                                             </gmd:code>
                                             <updated19115:codeSpace>
                                                 <gco:CharacterString>jrc.europa.eu</gco:CharacterString>
@@ -908,76 +980,20 @@
                             <gmd:abstract>
                                 <gco:CharacterString>
                                     This table gives a full hierarchical mapping from all
-                                    regional SEA landcover categories to those used in GLC2000
+                                    regional SEA landcover categories to those used in GLC
                                 </gco:CharacterString>
                             </gmd:abstract>
                             <gmd:language>
                                 <gco:CharacterString>EN-GB</gco:CharacterString>
                             </gmd:language>
-                            <!-- any amount of other data identification could be supplied here -->
                         </gmd:MD_DataIdentification>
                     </gvq:alternativeDataset>
-                    <!-- a publication may be referenced here: also a date when a fix is expected,
-                    or identifier for fixed resource -->
                 </gvq:GVQ_DiscoveredIssue>
             </gvq:discoveredIssue>
         </gvq:GVQ_DataQuality>
     </gvq:dataQualityInfo>
     <gvq:userFeedback>
     <gvq:GVQ_FeedbackCollection>
-	<gvq:item>
-		<gvq:userRole>
-			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" NonresearchEndUser "/>
-		</gvq:userRole>
-		<gvq:user>
-			<gvq:userDetails>
-				<gmd:individualName>
-					<gco:CharacterString>Roberto Ponte</gco:CharacterString>
-				</gmd:individualName>
-				<gmd:organisationName>
-					<gco:CharacterString>Afrucat</gco:CharacterString>
-				</gmd:organisationName>
-				<gmd:contactInfo>
-				</gmd:contactInfo>
-				<gmd:role>
-					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
-				</gmd:role>
-			</gvq:userDetails>
-			<gvq:applicationDomain>http://www.eionet.europa.eu/gemet/concept/3502</gvq:applicationDomain>
-			<gvq:expertiseLevel>4</gvq:expertiseLevel>
-			<gvq:userRole>
-				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="ResearchEndUser"/>
-			</gvq:userRole>
-		</gvq:user>
-		<gvq:dateStamp>
-			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
-		</gvq:dateStamp>
-		<gvq:qualityOverride>
-			<gvq:GVQ_DataQuality>
-				<gmd19157:scope/>
-				<gvq:discoveredIssue/>
-			</gvq:GVQ_DataQuality>
-		</gvq:qualityOverride>
-		<gvq:userComment>
-			<gvq:comment>The metadata records is beyond the expectation allowing for error traceability. Very detailed quality information.</gvq:comment>
-			<gvq:mime-type>text/plain</gvq:mime-type>
-		</gvq:userComment>
-		<gvq:rating>
-			<gvq:score>5</gvq:score>
-			<gvq:justification>The data can be recommended for land cover research. The metadata records is beyond the expectation allowing for error traceability.</gvq:justification>
-		</gvq:rating>
-		<gvq:usage>
-			<gvq:reportAspect>
-				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
-			</gvq:reportAspect>
-			<gvq:usageDescription></gvq:usageDescription>
-			<gvq:discoveredIssue>
-				<gvq:GVQ_DiscoveredIssue>
-					<gvq:target xlink:href="targetUID"/>
-				</gvq:GVQ_DiscoveredIssue>
-			</gvq:discoveredIssue>
-		</gvq:usage>
-	</gvq:item>
 	<gvq:item>
 		<gvq:userRole>
 			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" NonresearchEndUser "/>
@@ -1065,7 +1081,7 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>I used this dataset for observation of UK land use between 2000 and 2010. The data is of very high quality. Metadata record provides quality information at a pixel level.</gvq:comment>
+			<gvq:comment>The data is of very high quality. Metadata record provides quality information at a pixel level.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
@@ -1076,7 +1092,7 @@
 			<gvq:reportAspect>
 				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
 			</gvq:reportAspect>
-			<gvq:usageDescription></gvq:usageDescription>
+			<gvq:usageDescription>I used this dataset for observation of UK land cover between 2005 and 2010.</gvq:usageDescription>
 			<gvq:discoveredIssue>
 				<gvq:GVQ_DiscoveredIssue>
 					<gvq:target xlink:href="targetUID"/>
@@ -1118,7 +1134,7 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>This dataset was used to assess vegetation cover in the south region of Italy in 2012. Uncertainty measures are available at a pixel level. The data is highly recommended for land cover applications.</gvq:comment>
+			<gvq:comment>This dataset was used to assess land cover in the south region of Italy in 2012. Uncertainty measures are available. The data is highly recommended for land cover applications.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
@@ -1224,7 +1240,7 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>I used this dataset for monitoring changes in vegetation cover in the UK between 2000 and 2010. The data is of very high quality and quality information is available at a pixel level.</gvq:comment>
+			<gvq:comment>I used this dataset for monitoring changes in forest cover in the UK between 2000 and 2010. The data is of very high quality and quality information is available at a pixel level.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
@@ -1330,12 +1346,12 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>We used this dataset to classify vegetation cover in Turkey for the year 2011. The dataset provides very good spatial and temporal coverage.</gvq:comment>
+			<gvq:comment>We used this dataset to classify forest cover in Turkey for the year 2011. The dataset provides very good spatial and temporal coverage.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
 			<gvq:score>5</gvq:score>
-			<gvq:justification>Quality information is available at a pixel level.</gvq:justification>
+			<gvq:justification>Quality information is available.</gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>
@@ -1383,7 +1399,7 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>Our university used this dataset to monitor changes in the agricultural land use in Spain between 2005 and 2010. We would highly recommend this dataset for landcover research.</gvq:comment>
+			<gvq:comment>We would highly recommend this dataset for landcover research.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
@@ -1394,7 +1410,7 @@
 			<gvq:reportAspect>
 				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
 			</gvq:reportAspect>
-			<gvq:usageDescription></gvq:usageDescription>
+			<gvq:usageDescription>Our university used this dataset to monitor changes in land use in Spain between 2005 and 2010.</gvq:usageDescription>
 			<gvq:discoveredIssue>
 				<gvq:GVQ_DiscoveredIssue>
 					<gvq:target xlink:href="targetUID"/>
@@ -1489,7 +1505,7 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>The dataset was used for classification of forests cover in Spain between 2010 and 2013 . We discovered that data for June - August 2011 was missing but, apart from this, .</gvq:comment>
+			<gvq:comment>The dataset was used for classification of forests cover in Spain between 2010 and 2013 . We discovered that data for June - August 2011 was missing.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>

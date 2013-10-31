@@ -335,6 +335,139 @@
          <gmd:supplementalInformation>
             <gco:CharacterString>This dataset is contained in Module 5 "Land use patterns and land cover" of Food Insecurity, Poverty and Environment Global GIS Database (FGGD) (FAO, 2007).</gco:CharacterString>
          </gmd:supplementalInformation>
+            <gvq:referenceDoc>
+                <gvq:GVQ_Publication>
+                    <gmd:title>
+                        <gco:CharacterString>Forest cover types of the United States and Canada</gco:CharacterString>
+                    </gmd:title>
+                    <gmd:date>
+                        <gmd:CI_Date>
+                            <gmd:date>
+                                <gco:Date>2007-05-22</gco:Date>
+                            </gmd:date>
+                            <gmd:dateType>
+                                <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+                            </gmd:dateType>
+                        </gmd:CI_Date>
+                    </gmd:date>
+                    <gmd:ISSN>
+                        <gco:CharacterString>9834-2892</gco:CharacterString>
+                    </gmd:ISSN>
+                    <gvq:target xlink:href="GLC">
+                    </gvq:target>
+                    <gvq:doi>
+                        <gco:CharacterString>10.5523/j.1365-2699.2004</gco:CharacterString>
+                    </gvq:doi>
+                    <gvq:purpose>
+                        <gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="describe"></gvq:GVQ_PublicationPurposeCode>
+                    </gvq:purpose>
+                    <gvq:scope xlink:href="#datasetScope"/>
+                    <gvq:category>
+                        <gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+                    </gvq:category>
+                    <gvq:onlineResource>
+                        <gmd:CI_OnlineResource>
+                            <gmd:linkage>
+                                <gmd:URL>http://www.cabdirect.org/</gmd:URL>
+                            </gmd:linkage>
+                        </gmd:CI_OnlineResource>
+                    </gvq:onlineResource>
+                </gvq:GVQ_Publication>
+            </gvq:referenceDoc>
+			<gmd19157:referenceDoc>
+				<gvq:GVQ_Publication>
+					<gmd:title>
+						<gco:CharacterString>Fragmentation effects on forest birds: relative influence of woodland cover and configuration on landscape occupancy</gco:CharacterString>
+					</gmd:title>
+					<gmd:date>
+						<gmd:CI_Date>
+							<gmd:date>
+								<gco:Date>2009-07-01</gco:Date>
+							</gmd:date>
+							<gmd:dateType>
+								<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+							</gmd:dateType>
+						</gmd:CI_Date>
+					</gmd:date>
+					<gmd:ISSN>
+						<gco:CharacterString>7440-2892</gco:CharacterString>
+					</gmd:ISSN>
+					<gvq:target>
+						<updated19115:MD_Identifier uuid="" id="GLC">
+							<gmd:code>
+								<gco:CharacterString></gco:CharacterString>
+							</gmd:code>
+							<updated19115:codeSpace>
+								<gco:CharacterString></gco:CharacterString>
+							</updated19115:codeSpace>
+						</updated19115:MD_Identifier>
+					</gvq:target>
+					<gvq:doi>
+						<gco:CharacterString>10.5509/RRWA.6001.864370</gco:CharacterString>
+					</gvq:doi>
+					<gvq:purpose>
+						<gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>
+					</gvq:purpose>
+					<gvq:scope xlink:href="#datasetScope"/>
+					<gvq:category>
+						<gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+					</gvq:category>
+					<gvq:onlineResource>
+						<gmd:CI_OnlineResource>
+							<gmd:linkage>
+								<gmd:URL>http://ieeexplore.ieee.org/</gmd:URL>
+							</gmd:linkage>
+						</gmd:CI_OnlineResource>
+					</gvq:onlineResource>
+				</gvq:GVQ_Publication>
+			</gmd19157:referenceDoc>
+			<gmd19157:referenceDoc>
+				<gvq:GVQ_Publication>
+					<gmd:title>
+						<gco:CharacterString>A Meta-Analysis of Forest Cover, Edge Effects, and Artificial Nest Predation Rates</gco:CharacterString>
+					</gmd:title>
+					<gmd:date>
+						<gmd:CI_Date>
+							<gmd:date>
+								<gco:Date>2011-10-08</gco:Date>
+							</gmd:date>
+							<gmd:dateType>
+								<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+							</gmd:dateType>
+						</gmd:CI_Date>
+					</gmd:date>
+					<gmd:ISSN>
+						<gco:CharacterString>0196-8553</gco:CharacterString>
+					</gmd:ISSN>
+					<gvq:target>
+						<updated19115:MD_Identifier uuid="" id="GLC">
+							<gmd:code>
+								<gco:CharacterString></gco:CharacterString>
+							</gmd:code>
+							<updated19115:codeSpace>
+								<gco:CharacterString></gco:CharacterString>
+							</updated19115:codeSpace>
+						</updated19115:MD_Identifier>
+					</gvq:target>
+					<gvq:doi>
+						<gco:CharacterString>07.3814/GDCR.2896.864370</gco:CharacterString>
+					</gvq:doi>
+					<gvq:purpose>
+						<gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>
+					</gvq:purpose>
+					<gvq:scope xlink:href="#datasetScope"/>
+					<gvq:category>
+						<gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+					</gvq:category>
+					<gvq:onlineResource>
+						<gmd:CI_OnlineResource>
+							<gmd:linkage>
+								<gmd:URL>http://ieeexplore.ieee.org/</gmd:URL>
+							</gmd:linkage>
+						</gmd:CI_OnlineResource>
+					</gvq:onlineResource>
+				</gvq:GVQ_Publication>
+			</gmd19157:referenceDoc>
       </gmd:MD_DataIdentification>
   </gmd:identificationInfo>
   <gmd:distributionInfo>
@@ -424,74 +557,6 @@
 									<gmd19157:description>
 										<gco:CharacterString>One Landsat-5 image is used for each of the 6 studied dates: 29-10-2006, 14-11-2006, 30-11-2006, 16-12-2006, 17-01-2007 and 22-03-2007. Those dates are selected within the 4 months during the autumn winter period in which the field should be flooded (see "Purpose" metadata element).</gco:CharacterString>
 									</gmd19157:description>
-									<gmd19157:sourceCitation>
-										<gmd:CI_Citation>
-											<gmd:title>
-												<gco:CharacterString>$$</gco:CharacterString>
-											</gmd:title>
-											<gmd:date>
-												<gmd:CI_Date>
-													<gmd:date>
-														<gco:Date>2006-10-29</gco:Date>
-													</gmd:date>
-													<gmd:dateType>
-														<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="creation"/>
-													</gmd:dateType>
-												</gmd:CI_Date>
-											</gmd:date>
-											<gmd:date>
-												<gmd:CI_Date>
-													<gmd:date>
-														<gco:Date>2006-11-14</gco:Date>
-													</gmd:date>
-													<gmd:dateType>
-														<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="creation"/>
-													</gmd:dateType>
-												</gmd:CI_Date>
-											</gmd:date>
-											<gmd:date>
-												<gmd:CI_Date>
-													<gmd:date>
-														<gco:Date>2006-11-30</gco:Date>
-													</gmd:date>
-													<gmd:dateType>
-														<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="creation"/>
-													</gmd:dateType>
-												</gmd:CI_Date>
-											</gmd:date>
-											<gmd:date>
-												<gmd:CI_Date>
-													<gmd:date>
-														<gco:Date>2006-12-16</gco:Date>
-													</gmd:date>
-													<gmd:dateType>
-														<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="creation"/>
-													</gmd:dateType>
-												</gmd:CI_Date>
-											</gmd:date>
-											<gmd:date>
-												<gmd:CI_Date>
-													<gmd:date>
-														<gco:Date>2007-01-17</gco:Date>
-													</gmd:date>
-													<gmd:dateType>
-														<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="creation"/>
-													</gmd:dateType>
-												</gmd:CI_Date>
-											</gmd:date>
-											<gmd:date>
-												<gmd:CI_Date>
-													<gmd:date>
-														<gco:Date>2007-03-22</gco:Date>
-													</gmd:date>
-													<gmd:dateType>
-														<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="creation"/>
-													</gmd:dateType>
-												</gmd:CI_Date>
-											</gmd:date>
-										</gmd:CI_Citation>
-									</gmd19157:sourceCitation>
-									<!-- ··$$·· how RMS of positional accuracy corrected images is documented here (i.e és resultat del procés) ?? -->
 								</gmd19157:LI_Source>
 							</gmd19157:source>
 							<gmd19157:source>
@@ -499,23 +564,6 @@
 									<gmd19157:description>
 										<gco:CharacterString>DEM 10m</gco:CharacterString>
 									</gmd19157:description>
-									<gmd19157:sourceCitation>
-										<gmd:CI_Citation>
-											<gmd:title>
-												<gco:CharacterString>$$$$ </gco:CharacterString>
-											</gmd:title>
-											<gmd:date/>
-											<gmd:citedResponsibleParty>
-												<gmd:CI_ResponsibleParty>
-													<!-- acabar bé $$$ -->
-													<gmd:organisationName>
-														<gco:CharacterString>ICC $$$$</gco:CharacterString>
-													</gmd:organisationName>
-													<gmd:role/>
-												</gmd:CI_ResponsibleParty>
-											</gmd:citedResponsibleParty>
-										</gmd:CI_Citation>
-									</gmd19157:sourceCitation>
 								</gmd19157:LI_Source>
 							</gmd19157:source>
 						</gmd19157:LI_ProcessStep>
@@ -526,22 +574,16 @@
 								<gco:CharacterString>Radiometric correction of Landsat images is based on sensor calibration parameters (extracted from original metadata of the images) and other factors such as atmospheric effects and solar incident angles, taking into account relief. Through this process, digital numbers were converted to reflectance values.</gco:CharacterString>
 							</gmd19157:description>
 							<gmd19157:processor>
-								<!-- $$$ igual que adalt -->
 							</gmd19157:processor>
 							<gmd19157:source>
 								<gmd19157:LI_Source id="Georeferenced_Landsat_images">
-									<!-- $$$ it is possuble to directly xlink to the result of the previous processStep, that is this source?? -->
 									<gmd19157:description>
 										<gco:CharacterString>Each of the 5 previous Landsat-5 images after geometric correction.</gco:CharacterString>
 									</gmd19157:description>
 									<gmd19157:sourceReferenceSystem>
 										<gmd:MD_ReferenceSystem>
-											<!--- UTM $$··· -->
 										</gmd:MD_ReferenceSystem>
 									</gmd19157:sourceReferenceSystem>
-									<gmd19157:sourceCitation>
-										<!-- cita a les georef iamges -->
-									</gmd19157:sourceCitation>
 								</gmd19157:LI_Source>
 							</gmd19157:source>
 						</gmd19157:LI_ProcessStep>
@@ -564,9 +606,6 @@
 											<!--- UTM $$··· -->
 										</gmd:MD_ReferenceSystem>
 									</gmd19157:sourceReferenceSystem>
-									<gmd19157:sourceCitation>
-										<!-- cita a les georef iamges -->
-									</gmd19157:sourceCitation>
 									<gmd19157:sourceStep xlink:href="#Geometric_correction"/>
 								</gmd19157:LI_Source>
 							</gmd19157:source>
@@ -575,32 +614,6 @@
 									<gmd19157:description>
 										<gco:CharacterString>The mask source was obtained from the vector layer corresponding to the SIGPAC (Agrarian Data Geographic Information Management System) extracting only the agricultural parcels from the original SIGPAC layer containing all land-uses</gco:CharacterString>
 									</gmd19157:description>
-									<gmd19157:sourceCitation>
-										<gmd:CI_Citation>
-											<gmd:title>
-												<gco:CharacterString>Sistema de Información Geográfica de Parcelas Agrícolas (SIGPAC)</gco:CharacterString>
-											</gmd:title>
-											<gmd:date>
-												<gmd:CI_Date>
-													<gmd:date>
-														<gco:Date>2007</gco:Date>
-													</gmd:date>
-													<gmd:dateType/>
-												</gmd:CI_Date>
-											</gmd:date>
-											<gmd:citedResponsibleParty>
-												<gmd:CI_ResponsibleParty>
-													<gmd:organisationName>
-														<gco:CharacterString>Ministerio de Agricultura, Pesca y Alimentación</gco:CharacterString>
-													</gmd:organisationName>
-													<gmd:role/>
-												</gmd:CI_ResponsibleParty>
-											</gmd:citedResponsibleParty>
-											<gmd:otherCitationDetails>
-												<gco:CharacterString>Available online at: http://www.magrama.gob.es/es/agricultura/temas/sistema-de-informacion-geografica-de-parcelas-agricolas-sigpac-/default.aspx</gco:CharacterString>
-											</gmd:otherCitationDetails>
-										</gmd:CI_Citation>
-									</gmd19157:sourceCitation>
 								</gmd19157:LI_Source>
 							</gmd19157:source>
 						</gmd19157:LI_ProcessStep>
@@ -760,7 +773,7 @@
 										</gmd:CI_Date>
 									</gmd:date>
 									<gmd:identifier>
-										<updated19115:MD_Identifier uuid="jrc.europa.eu:GLC2000_SEA_mapping">
+										<updated19115:MD_Identifier uuid="2000_SEA_mapping">
 											<gmd:code>
 												<gco:CharacterString>GLC2000_SEA_mapping</gco:CharacterString>
 											</gmd:code>
@@ -995,17 +1008,12 @@
 					<gmd19157:relatedElement xlink:href="#RegLin"/>
 				</gvq:GVQ_Traceability>
 			</gmd19157:report>
-			<!-- $$  We do have a JPG file showing the lineage schema (kind of a figure in a paper). Can we cite it here (including it on the MMZ/netCDF file for example?)? -->
 			<gvq:discoveredIssue>
-				<!-- ··$$·· I do not find how to describe the affected Bounding Box in an "standardized" way (EX_Extent? CornerPoints)?. It is possible? Maybe the model can be extended (optional info of course) to give this information? -->
 				<gvq:GVQ_DiscoveredIssue>
 					<gvq:target xlink:href="#MCSC_12cat"/>
 					<gvq:knownProblem>
 						<gco:CharacterString>Legend choice is subjective. Some of the original 233 categories have been reclassified as nodata. In the end the % of the MCSC that has been used (with buffering) is 41.38% of the study area. Difficulties in fitting the photointerpretation product legend with a suitable spectral features legend.</gco:CharacterString>
 					</gvq:knownProblem>
-					<gvq:workAround>
-						<gco:CharacterString>Use of the Habitats Maps of Catalonia -available online from the regional government web- to compare the categories between them and reject the most mixed ones when doubtful.</gco:CharacterString>
-					</gvq:workAround>
 				</gvq:GVQ_DiscoveredIssue>
 			</gvq:discoveredIssue>
 		</gvq:GVQ_DataQuality>

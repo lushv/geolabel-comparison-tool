@@ -204,16 +204,16 @@ Reconnaissance soil survey; proposed potential pine plantation sites in Kedah.</
                <gmd:geographicElement>
                   <gmd:EX_GeographicBoundingBox>
                      <gmd:westBoundLongitude>
-                        <gco:Decimal>99.64</gco:Decimal>
+                        <gco:Decimal>-180</gco:Decimal>
                      </gmd:westBoundLongitude>
                      <gmd:eastBoundLongitude>
-                        <gco:Decimal>119.27</gco:Decimal>
+                        <gco:Decimal>180</gco:Decimal>
                      </gmd:eastBoundLongitude>
                      <gmd:southBoundLatitude>
-                        <gco:Decimal>0.85</gco:Decimal>
+                        <gco:Decimal>-90</gco:Decimal>
                      </gmd:southBoundLatitude>
                      <gmd:northBoundLatitude>
-                        <gco:Decimal>7.35</gco:Decimal>
+                        <gco:Decimal>90</gco:Decimal>
                      </gmd:northBoundLatitude>
                   </gmd:EX_GeographicBoundingBox>
                </gmd:geographicElement>
@@ -695,7 +695,7 @@ Reconnaissance soil survey; proposed potential pine plantation sites in Kedah.</
 			<gvq:reportAspect>
 				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
 			</gvq:reportAspect>
-			<gvq:usageDescription>The dataset was used for classification of land cover in Brazil between 2000 and 2007.</gvq:usageDescription>
+			<gvq:usageDescription>The dataset was used for classification of land cover in Spain between 2000 and 2007.</gvq:usageDescription>
 			<gvq:discoveredIssue>
 				<gvq:GVQ_DiscoveredIssue>
 					<gvq:target xlink:href="targetUID"/>
@@ -748,7 +748,7 @@ Reconnaissance soil survey; proposed potential pine plantation sites in Kedah.</
 			<gvq:reportAspect>
 				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
 			</gvq:reportAspect>
-			<gvq:usageDescription>We used this dataset to classify vegetation cover in Turkey for the year 2011.</gvq:usageDescription>
+			<gvq:usageDescription>We used this dataset to observe forest cover in Turkey in year 2011.</gvq:usageDescription>
 			<gvq:discoveredIssue>
 				<gvq:GVQ_DiscoveredIssue>
 					<gvq:target xlink:href="targetUID"/>
@@ -790,18 +790,18 @@ Reconnaissance soil survey; proposed potential pine plantation sites in Kedah.</
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment> We would highly recommend this dataset for landcover research.</gvq:comment>
+			<gvq:comment> We would recommend this dataset for landcover research.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
 			<gvq:score>5</gvq:score>
-			<gvq:justification>Metadata record is extremely good. Quality information is available.</gvq:justification>
+			<gvq:justification>Metadata record is good. Quality information is available.</gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>
 				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
 			</gvq:reportAspect>
-			<gvq:usageDescription>Our university used this dataset to monitor changes in the agricultural land use in Spain between 2005 and 2010.</gvq:usageDescription>
+			<gvq:usageDescription>Our university used this dataset to monitor land cover in Spain between 2005 and 2010.</gvq:usageDescription>
 			<gvq:discoveredIssue>
 				<gvq:GVQ_DiscoveredIssue>
 					<gvq:target xlink:href="targetUID"/>
@@ -816,63 +816,10 @@ Reconnaissance soil survey; proposed potential pine plantation sites in Kedah.</
 		<gvq:user>
 			<gvq:userDetails>
 				<gmd:individualName>
-					<gco:CharacterString>Jon Wilkies</gco:CharacterString>
+					<gco:CharacterString>Adam Jones</gco:CharacterString>
 				</gmd:individualName>
 				<gmd:organisationName>
-					<gco:CharacterString>FAO</gco:CharacterString>
-				</gmd:organisationName>
-				<gmd:contactInfo>
-				</gmd:contactInfo>
-				<gmd:role>
-					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
-				</gmd:role>
-			</gvq:userDetails>
-			<gvq:applicationDomain>Agriculture</gvq:applicationDomain>
-			<gvq:expertiseLevel>5</gvq:expertiseLevel>
-			<gvq:userRole>
-				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
-			</gvq:userRole>
-		</gvq:user>
-		<gvq:dateStamp>
-			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
-		</gvq:dateStamp>
-		<gvq:qualityOverride>
-			<gvq:GVQ_DataQuality>
-				<gmd19157:scope/>
-				<gvq:discoveredIssue/>
-			</gvq:GVQ_DataQuality>
-		</gvq:qualityOverride>
-		<gvq:userComment>
-			<gvq:comment> </gvq:comment>
-			<gvq:mime-type>text/plain</gvq:mime-type>
-		</gvq:userComment>
-		<gvq:rating>
-			<gvq:score>5</gvq:score>
-			<gvq:justification>The data is of very high quality. Metadata record provides quality information.</gvq:justification>
-		</gvq:rating>
-		<gvq:usage>
-			<gvq:reportAspect>
-				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
-			</gvq:reportAspect>
-			<gvq:usageDescription>The dataset was used to monitor farming land use in the UK between June 2010 and July 2013.</gvq:usageDescription>
-			<gvq:discoveredIssue>
-				<gvq:GVQ_DiscoveredIssue>
-					<gvq:target xlink:href="targetUID"/>
-				</gvq:GVQ_DiscoveredIssue>
-			</gvq:discoveredIssue>
-		</gvq:usage>
-	</gvq:item>
-	<gvq:item>
-		<gvq:userRole>
-			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
-		</gvq:userRole>
-		<gvq:user>
-			<gvq:userDetails>
-				<gmd:individualName>
-					<gco:CharacterString>Xavier Pau</gco:CharacterString>
-				</gmd:individualName>
-				<gmd:organisationName>
-					<gco:CharacterString>UAB</gco:CharacterString>
+					<gco:CharacterString>UREAD</gco:CharacterString>
 				</gmd:organisationName>
 				<gmd:contactInfo>
 				</gmd:contactInfo>
@@ -896,18 +843,18 @@ Reconnaissance soil survey; proposed potential pine plantation sites in Kedah.</
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment> We discovered that data for June - August 2011 was missing but, apart from this, the dataset is of good quality.</gvq:comment>
+			<gvq:comment>Overall, the dataset is of good quality.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
 			<gvq:score>4</gvq:score>
-			<gvq:justification>Overall, very good temporal and spatial coverage. Data is missing for Spain region between June and August 2011.</gvq:justification>
+			<gvq:justification>Very good temporal and spatial coverage.</gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>
 				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
 			</gvq:reportAspect>
-			<gvq:usageDescription>The dataset was used for classification of forests cover in Spain between 2010 and 2013.</gvq:usageDescription>
+			<gvq:usageDescription>The dataset was used for classification of forests cover in the UK between in 2013.</gvq:usageDescription>
 			<gvq:discoveredIssue>
 				<gvq:GVQ_DiscoveredIssue>
 					<gvq:target xlink:href="targetUID"/>

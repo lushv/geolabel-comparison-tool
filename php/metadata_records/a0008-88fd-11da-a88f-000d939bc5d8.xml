@@ -162,16 +162,16 @@ Generalized forest types, forest reserves and location of forest industries.</gc
                <gmd:geographicElement>
                   <gmd:EX_GeographicBoundingBox>
                      <gmd:westBoundLongitude>
-                        <gco:Decimal>79.69</gco:Decimal>
+                        <gco:Decimal>-180</gco:Decimal>
                      </gmd:westBoundLongitude>
                      <gmd:eastBoundLongitude>
-                        <gco:Decimal>81.89</gco:Decimal>
+                        <gco:Decimal>180</gco:Decimal>
                      </gmd:eastBoundLongitude>
                      <gmd:southBoundLatitude>
-                        <gco:Decimal>5.91</gco:Decimal>
+                        <gco:Decimal>-90</gco:Decimal>
                      </gmd:southBoundLatitude>
                      <gmd:northBoundLatitude>
-                        <gco:Decimal>9.82</gco:Decimal>
+                        <gco:Decimal>90</gco:Decimal>
                      </gmd:northBoundLatitude>
                   </gmd:EX_GeographicBoundingBox>
                </gmd:geographicElement>

@@ -18,7 +18,7 @@
 				<gmd:citation>
 					<gmd:CI_Citation>
 						<gmd:title>
-							<gco:CharacterString>ASPEN FOREST COVER BY STRATUM/PLOT (SNF)</gco:CharacterString>
+							<gco:CharacterString>FOREST COVER BY STRATUM/PLOT (SNF)</gco:CharacterString>
 						</gmd:title>
 						<gmd:date />
 						<gmd:date>
@@ -61,7 +61,7 @@
 					</gmd:CI_Citation>
 				</gmd:citation>
 				<gmd:abstract>
-					<gco:CharacterString>The purpose of the Superior National Forest (SNF) study was to improve our understanding of the relationship between remotely sensed observations and important biophysical parameters in the boreal forest. A key element of the experiment was the development of methodologies to measure forest stand characteristics to determine values of importance to both remote sensing and ecology. Parameters studied were biomass, leaf area index, above ground net primary productivity, bark area index and ground coverage by vegetation. Thirty two quaking aspen and thirty one black spruce sites were studied. For the aspen sites, in each plot a visual estimation of the percent coverage of the canopy, subcanopy and understory vegetation was made. The site averages of these coverage estimates are presented in this data set.</gco:CharacterString>
+					<gco:CharacterString>The purpose of the Superior National Forest (SNF) study was to improve our understanding of the relationship between remotely sensed observations and important biophysical parameters in the forest areas. A key element of the experiment was the development of methodologies to measure forest stand characteristics to determine values of importance to both remote sensing and ecology. Parameters studied were biomass, leaf area index, above ground net primary productivity, bark area index and ground coverage by vegetation.</gco:CharacterString>
 				</gmd:abstract>
 				<gmd:descriptiveKeywords>
 					<gmd:MD_Keywords>
@@ -77,20 +77,20 @@
 				<gmd:extent>
 					<gmd:EX_Extent>
 						<gmd:geographicElement>
-							<gmd:EX_GeographicBoundingBox>
-								<gmd:westBoundLongitude>
-									<gco:Decimal>-92.5057983398438</gco:Decimal>
-								</gmd:westBoundLongitude>
-								<gmd:eastBoundLongitude>
-									<gco:Decimal>-91.7658004760742</gco:Decimal>
-								</gmd:eastBoundLongitude>
-								<gmd:southBoundLatitude>
-									<gco:Decimal>47.6575012207031</gco:Decimal>
-								</gmd:southBoundLatitude>
-								<gmd:northBoundLatitude>
-									<gco:Decimal>48.1697006225586</gco:Decimal>
-								</gmd:northBoundLatitude>
-							</gmd:EX_GeographicBoundingBox>
+						  <gmd:EX_GeographicBoundingBox>
+							 <gmd:westBoundLongitude>
+								<gco:Decimal>-180</gco:Decimal>
+							 </gmd:westBoundLongitude>
+							 <gmd:eastBoundLongitude>
+								<gco:Decimal>180</gco:Decimal>
+							 </gmd:eastBoundLongitude>
+							 <gmd:southBoundLatitude>
+								<gco:Decimal>-90</gco:Decimal>
+							 </gmd:southBoundLatitude>
+							 <gmd:northBoundLatitude>
+								<gco:Decimal>90</gco:Decimal>
+							 </gmd:northBoundLatitude>
+						  </gmd:EX_GeographicBoundingBox>
 						</gmd:geographicElement>
 						<gmd:geographicElement>
 							<gmd:EX_BoundingPolygon>
@@ -124,7 +124,7 @@
 				<gmd19157:referenceDoc>
 	<gvq:GVQ_Publication>
 		<gmd:title>
-			<gco:CharacterString>ASPEN FOREST COVER BY STRATUM/PLOT</gco:CharacterString>
+			<gco:CharacterString>FOREST COVER BY STRATUM/PLOT</gco:CharacterString>
 		</gmd:title>
 		<gmd:date>
 			<gmd:CI_Date>

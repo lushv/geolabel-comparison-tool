@@ -19,7 +19,7 @@
 				<gmd:citation>
 					<gmd:CI_Citation>
 						<gmd:title>
-							<gco:CharacterString>SAFARI 2000 VEGETATION STRUCTURE OF KATABA FOREST, ZAMBIA, WET SEASON 2000</gco:CharacterString>
+							<gco:CharacterString>VEGETATION STRUCTURE OF FORESTS, WET SEASON</gco:CharacterString>
 						</gmd:title>
 						<gmd:date />
 						<gmd:date>
@@ -62,12 +62,12 @@
 					</gmd:CI_Citation>
 				</gmd:citation>
 				<gmd:abstract>
-					<gco:CharacterString>Tree basal area, percent tree canopy cover, and proportional contribution of main species to canopy cover were measured at 60 sampling points at 50 m intervals along six transects in the vicinity of the MODIS validation site tower in Kataba Forest, near Mongu, Zambia, in late February to early March 2000 as part of the SAFARI 2000 Wet Season Campaign. The aim of the study was to provide a broad description of the tree canopy layer around the tower.Tree and shrub species composition was recorded for each grid and measurements of canopy cover (% and rank) and frequency of occurrence (%) were made. Basal area was estimated at each grid site in a single 360 degree sweep using a basal area prism. Four estimates of canopy cover, oriented north, south, east, and west around the sample point, were taken at each grid site using a spherical densiometer and the data were averaged to give a single value for each grid. Only the canopies of trees and shrubs above 1.5m height were measured.The data are stored in an ASCII file, in csv format. The file lists all tree and shrub species recorded and provides the proportional contribution of these species to canopy cover in each grid. Total tree basal area (m2 ha-1) and overall tree canopy cover (%) in each grid is also provided. The companion file provides additional vegetation data, graphics, long-term meteorological data, a discussion of the study results, and photographs of the study site.</gco:CharacterString>
+					<gco:CharacterString>Tree basal area, percent tree canopy cover, and proportional contribution of main species to canopy cover were measured as part of the Wet Season Campaign. The aim of the study was to provide a broad description of the tree canopy layer.Tree and shrub species composition was recorded and measurements of canopy cover (% and rank) and frequency of occurrence (%) were made. Basal area was estimated. Only the canopies of trees and shrubs above 1.5m height were measured. The dataset lists all tree and shrub species recorded and provides the proportional contribution of these species to canopy cover in each grid. Total tree basal area (m2 ha-1) and overall tree canopy cover (%) in each grid is also provided.</gco:CharacterString>
 				</gmd:abstract>
 				<gmd:descriptiveKeywords>
 					<gmd:MD_Keywords>
 						<gmd:keyword>
-							<gco:CharacterString>EARTH SCIENCE BIOSPHERE TERRESTRIAL ECOSYSTEMS FORESTS; FIELD INVESTIGATION; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; SAFARI 2000 THE SOUTHERN AFRICAN REGIONAL SCIENCE INITIATIVE PROJECT; CWIC CEOS WGISS INTEGRATED CATALOG; Mongu; Eosdis; Shrubs; Dambos; Forests; Basal Area; Grasslands; Tree Canopy; Safari 2000; Tree Species; Canopy Cover; Kataba Forest; Kalahari Sands; Miombo Woodlands; Kalahari Woodlands; Vegetation Structure; Vegetation Composition; BIOTA; ENGLISH;</gco:CharacterString>
+							<gco:CharacterString>ECOSYSTEMS FORESTS; FIELD INVESTIGATION; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; CWIC CEOS WGISS INTEGRATED CATALOG; Forests; Basal Area; Grasslands; Tree Canopy; Tree Species; Canopy Cover; Vegetation Structure; Vegetation Composition; BIOTA; ENGLISH;</gco:CharacterString>
 						</gmd:keyword>
 					</gmd:MD_Keywords>
 				</gmd:descriptiveKeywords>
@@ -78,20 +78,20 @@
 				<gmd:extent>
 					<gmd:EX_Extent>
 						<gmd:geographicElement>
-							<gmd:EX_GeographicBoundingBox>
-								<gmd:westBoundLongitude>
-									<gco:Decimal>22.25</gco:Decimal>
-								</gmd:westBoundLongitude>
-								<gmd:eastBoundLongitude>
-									<gco:Decimal>24.25</gco:Decimal>
-								</gmd:eastBoundLongitude>
-								<gmd:southBoundLatitude>
-									<gco:Decimal>-16.44</gco:Decimal>
-								</gmd:southBoundLatitude>
-								<gmd:northBoundLatitude>
-									<gco:Decimal>-14.44</gco:Decimal>
-								</gmd:northBoundLatitude>
-							</gmd:EX_GeographicBoundingBox>
+						  <gmd:EX_GeographicBoundingBox>
+							 <gmd:westBoundLongitude>
+								<gco:Decimal>-180</gco:Decimal>
+							 </gmd:westBoundLongitude>
+							 <gmd:eastBoundLongitude>
+								<gco:Decimal>180</gco:Decimal>
+							 </gmd:eastBoundLongitude>
+							 <gmd:southBoundLatitude>
+								<gco:Decimal>-90</gco:Decimal>
+							 </gmd:southBoundLatitude>
+							 <gmd:northBoundLatitude>
+								<gco:Decimal>90</gco:Decimal>
+							 </gmd:northBoundLatitude>
+						  </gmd:EX_GeographicBoundingBox>
 						</gmd:geographicElement>
 						<gmd:geographicElement>
 							<gmd:EX_BoundingPolygon>

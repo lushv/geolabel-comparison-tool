@@ -19,7 +19,7 @@
 				<gmd:citation>
 					<gmd:CI_Citation>
 						<gmd:title>
-							<gco:CharacterString>SAFARI LANDSCAPE PHOTOGRAPHS OF KALAHARI TRANSECT, MONGU, SKUKUZA SITES</gco:CharacterString>
+							<gco:CharacterString>LANDSCAPE PHOTOGRAPHS OF THE WORLD</gco:CharacterString>
 						</gmd:title>
 						<gmd:date />
 						<gmd:date>
@@ -62,12 +62,12 @@
 					</gmd:CI_Citation>
 				</gmd:citation>
 				<gmd:abstract>
-					<gco:CharacterString>This data set contains Global Positioning System (GPS) imprinted landscape photographs at 100 m intervals along the Large Grid Transects at Kalahari Transect sites in Botswana and at measurement sites in Kataba Forest, Mongu, Zambia and in the vicinity of the Skukuza flux tower site in Kruger National Park, South Africa. The Kalahari sites visited were Pandamatenga, Maun, Okwa Valley, and Tshane. There are about 30 pictures per site. In a related study, vegetation cover and composition were measured at various locations along the Kalahari Transect and trends in major vegetative cover, including species types and richness, were recorded (Ringrose and Matheson, 2004). The sites visited showed interesting degrees of variability despite the apparent homogeneity of the Kalahari sands and predominantly semi-arid savanna shrub-woodland vegetation cover. In this data set, the photography provides a visual characterization of species composition and vegetation c over along the Kalahari Transect. The photographs are intended to aid in the interpretation of other data sets, and can be used to suggest canopy height, gap fraction, grass, soil, and sky conditions.The photographs are provided as JPEG images. The following information is imprinted across the top of each photograph: camera number; date mode (G=UTC time) and date (YYMMDD format); time (HHMMSS format); locational mode (1 char) and DOP value (A &amp;lt; 1, J &amp;gt; 9.1); longitude (N, S), followed by DDMM.MMM format; latitude (E, W) followed by DDDMM.MMM format; and bearing (degrees) from magnetic north (indicates direction of shot).</gco:CharacterString>
+					<gco:CharacterString>This data set contains Global Positioning System (GPS) imprinted landscape photographs at 100 m intervals There are about 30 pictures per site. In a related study, vegetation cover and composition were measured at various locations and trends in major vegetative cover, including species types and richness, were recorded (Ringrose and Matheson, 2004). The sites visited showed interesting degrees of variability. In this data set, the photography provides a visual characterization of species composition and vegetation cover. The photographs are intended to aid in the interpretation of other data sets, and can be used to suggest canopy height, gap fraction, grass, soil, and sky conditions.The photographs are provided as JPEG images. The following information is imprinted across the top of each photograph: camera number; date mode (G=UTC time) and date (YYMMDD format); time (HHMMSS format); locational mode (1 char) and DOP value (A &amp;lt; 1, J &amp;gt; 9.1); longitude (N, S), followed by DDMM.MMM format; latitude (E, W) followed by DDDMM.MMM format; and bearing (degrees) from magnetic north (indicates direction of shot).</gco:CharacterString>
 				</gmd:abstract>
 				<gmd:descriptiveKeywords>
 					<gmd:MD_Keywords>
 						<gmd:keyword>
-							<gco:CharacterString>EARTH SCIENCE LAND SURFACE LANDSCAPE LANDSCAPE PATTERNS; FIELD INVESTIGATION; CAMERA; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; SAFARI THE SOUTHERN AFRICAN REGIONAL SCIENCE INITIATIVE PROJECT; CWIC CEOS WGISS INTEGRATED CATALOG; Gps; Save; Eosdis; Canopy; Savannas; Vegetation; Photography; SAFARI; Forest Cover; Kalahari Sands; Kalahari Transect; Landscape Photographs; Global Positioning System; GEOSCIENTIFIC INFORMATION; IMAGERY/BASE MAPS/EARTH COVER; ENGLISH;</gco:CharacterString>
+							<gco:CharacterString>EARTH SCIENCE LAND SURFACE LANDSCAPE LANDSCAPE PATTERNS; FIELD INVESTIGATION; Landscape Photographs; Global Positioning System; GEOSCIENTIFIC INFORMATION; IMAGERY/BASE MAPS/EARTH COVER; ENGLISH;</gco:CharacterString>
 						</gmd:keyword>
 					</gmd:MD_Keywords>
 				</gmd:descriptiveKeywords>
@@ -78,20 +78,20 @@
 				<gmd:extent>
 					<gmd:EX_Extent>
 						<gmd:geographicElement>
-							<gmd:EX_GeographicBoundingBox>
-								<gmd:westBoundLongitude>
-									<gco:Decimal>21.6963996887207</gco:Decimal>
-								</gmd:westBoundLongitude>
-								<gmd:eastBoundLongitude>
-									<gco:Decimal>31.4799995422363</gco:Decimal>
-								</gmd:eastBoundLongitude>
-								<gmd:southBoundLatitude>
-									<gco:Decimal>-25.0200004577637</gco:Decimal>
-								</gmd:southBoundLatitude>
-								<gmd:northBoundLatitude>
-									<gco:Decimal>-15.4210996627808</gco:Decimal>
-								</gmd:northBoundLatitude>
-							</gmd:EX_GeographicBoundingBox>
+						  <gmd:EX_GeographicBoundingBox>
+							 <gmd:westBoundLongitude>
+								<gco:Decimal>-180</gco:Decimal>
+							 </gmd:westBoundLongitude>
+							 <gmd:eastBoundLongitude>
+								<gco:Decimal>180</gco:Decimal>
+							 </gmd:eastBoundLongitude>
+							 <gmd:southBoundLatitude>
+								<gco:Decimal>-90</gco:Decimal>
+							 </gmd:southBoundLatitude>
+							 <gmd:northBoundLatitude>
+								<gco:Decimal>90</gco:Decimal>
+							 </gmd:northBoundLatitude>
+						  </gmd:EX_GeographicBoundingBox>
 						</gmd:geographicElement>
 						<gmd:geographicElement>
 							<gmd:EX_BoundingPolygon>

@@ -24,12 +24,12 @@
 				<gmd:citation>
 					<gmd:CI_Citation>
 						<gmd:title>
-							<gco:CharacterString>ALOS PALSAR</gco:CharacterString>
+							<gco:CharacterString>ALOS PALSAR LAND DATA</gco:CharacterString>
 						</gmd:title>
 					</gmd:CI_Citation>
 				</gmd:citation>
 				<gmd:abstract>
-					<gco:CharacterString>ALOS stands for Advanced Land Observing Satellite, which was launched by Japan Aerospace Exploration Agency in January 2006. Its Japanese name is "DAICHI".ALOS has three remote-sensing instruments, PRISM is a panchromatic radiometer with spatial resolution in order to obtain terrain data including elevation. AVNIR-2 is a visible and near-infrared radiometer for observing land and coastal zones and provides better spatial resolution. PALSAR is a phased array type L-band Synthetic Aperture Radar, an active microwave sensor for cloud free and day and night land observation.The size of DAICHI is 3.5m wide x 4.5m long x 6.5m high, with its Solar Battery Paddle is 22m x 3m wide, gross weight is approximately 4 tons, which is one of the largest among Land Observing Satellites.PALSAR instrument :The Phased Array Type L-band Synthetic Aperture Radar (PALSAR) is an active microwave sensor using L-band frequency, which can observe with fine resolution in a conventional mode as well as wider swath with a SAR images.Spatial Resolution : 10m(fine resolution mode)100m(Scan Sar mode)Observation Swath : 70km(fine mode)250-350km(Scan SAR)Center Frequency :    1270 MHz(L-band)Polarization :        HH or VV        HH+HV or VV+VH        HH or VV        HH+HV+VH+VV</gco:CharacterString>
+					<gco:CharacterString>ALOS stands for Advanced Land Observing Satellite, which was launched by Japan Aerospace Exploration Agency in January 1990. Its Japanese name is "DAICHI".ALOS has three remote-sensing instruments, PRISM is a panchromatic radiometer with spatial resolution in order to obtain terrain data including elevation. AVNIR-2 is a visible and near-infrared radiometer for observing land and coastal zones and provides better spatial resolution. PALSAR is a phased array type L-band Synthetic Aperture Radar, an active microwave sensor for cloud free and day and night land observation.The size of DAICHI is 3.5m wide x 4.5m long x 6.5m high, with its Solar Battery Paddle is 22m x 3m wide, gross weight is approximately 4 tons, which is one of the largest among Land Observing Satellites.PALSAR instrument :The Phased Array Type L-band Synthetic Aperture Radar (PALSAR) is an active microwave sensor using L-band frequency, which can observe with fine resolution in a conventional mode as well as wider swath with a SAR images.Spatial Resolution : 10m(fine resolution mode)100m(Scan Sar mode)Observation Swath : 70km(fine mode)250-350km(Scan SAR)Center Frequency :    1270 MHz(L-band)Polarization :        HH or VV        HH+HV or VV+VH        HH or VV        HH+HV+VH+VV</gco:CharacterString>
 				</gmd:abstract>
 				<gmd:pointOfContact>
 					<gmd:CI_ResponsibleParty>
@@ -51,34 +51,7 @@
 				<gmd:descriptiveKeywords>
 					<gmd:MD_Keywords>
 						<gmd:keyword>
-							<gco:CharacterString>DEM</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:keyword>
-							<gco:CharacterString>topography</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:keyword>
-							<gco:CharacterString>biomass</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:keyword>
-							<gco:CharacterString>forest monitoring</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:keyword>
-							<gco:CharacterString>agriculture</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:keyword>
-							<gco:CharacterString>oil spill</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:keyword>
-							<gco:CharacterString>moisture</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:keyword>
-							<gco:CharacterString>Sea-ice</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:keyword>
-							<gco:CharacterString>Snow cover</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:keyword>
-							<gco:CharacterString>albedo</gco:CharacterString>
+							<gco:CharacterString>DEM, topography, biomass, forest monitoring, agriculture, oil spill, moisture, Snow cover, Sea-ice</gco:CharacterString>
 						</gmd:keyword>
 					</gmd:MD_Keywords>
 				</gmd:descriptiveKeywords>

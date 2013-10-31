@@ -19,7 +19,7 @@
 				<gmd:citation>
 					<gmd:CI_Citation>
 						<gmd:title>
-							<gco:CharacterString>BOREAS TGB-05 BIOGENIC SOIL EMISSIONS OF NO AND NITROUS OXIDE</gco:CharacterString>
+							<gco:CharacterString>TGB-05 BIOGENIC SOIL EMISSIONS OF NO AND NITROUS OXIDE</gco:CharacterString>
 						</gmd:title>
 						<gmd:date />
 						<gmd:date>
@@ -62,12 +62,12 @@
 					</gmd:CI_Citation>
 				</gmd:citation>
 				<gmd:abstract>
-					<gco:CharacterString>The BOREAS TGB-05 team made several measurements of trace gas concentrations and fluxes at various NSA sites. This data set contains biogenic soil emissions of nitric oxide and nitrous oxide that were measured over a wide range of spatial and temporal site parameters. Since very little is known about biogenic soil emissions of nitric oxide and nitrous oxide from the Boreal forest, the goal of the measurements was to characterize the biogenic soil fluxes of nitric oxide and nitrous oxide from black spruce and jack pine areas in the boreal forest. The diurnal variation and monthly variation of the emissions was examined as well as the impact of wetting through natural or artificial means. Temporally, the data cover mid-August 1993, June to August 1994, and mid-July 1995.</gco:CharacterString>
+					<gco:CharacterString>The TGB-05 team made several measurements of trace gas concentrations and fluxes at various NSA sites. This data set contains biogenic soil emissions of nitric oxide and nitrous oxide that were measured over a wide range of spatial and temporal site parameters. Since very little is known about biogenic soil emissions of nitric oxide and nitrous oxide from the forestS, the goal of the measurements was to characterize the biogenic soil fluxes of nitric oxide and nitrous oxide from black spruce and jack pine areas in the forestS. The diurnal variation and monthly variation of the emissions was examined as well as the impact of wetting through natural or artificial means.</gco:CharacterString>
 				</gmd:abstract>
 				<gmd:descriptiveKeywords>
 					<gmd:MD_Keywords>
 						<gmd:keyword>
-							<gco:CharacterString>EARTH SCIENCE LAND SURFACE SOILS SOIL GAS/AIR; EARTH SCIENCE LAND SURFACE SOILS SOIL TEMPERATURE; EARTH SCIENCE ATMOSPHERE ATMOSPHERIC TEMPERATURE SURFACE AIR TEMPERATURE; LABORATORY; FIELD INVESTIGATION; CHEMILUMINESCENCE; TEMPERATURE SENSORS; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; BOREAS THE BOREAL ECOSYSTEM-ATMOSPHERE STUDY; CWIC CEOS WGISS INTEGRATED CATALOG; Eosdis; No Flux; N2o Flux; Chamberflux; Soil Gas Flux; GEOSCIENTIFIC INFORMATION; CLIMATOLOGY/METEOROLOGY/ATMOSPHERE; ENGLISH;</gco:CharacterString>
+							<gco:CharacterString>EARTH SCIENCE LAND SURFACE SOILS SOIL GAS/AIR; EARTH SCIENCE LAND SURFACE SOILS SOIL TEMPERATURE; EARTH SCIENCE ATMOSPHERE ATMOSPHERIC TEMPERATURE SURFACE AIR TEMPERATURE; LABORATORY; FIELD INVESTIGATION; CHEMILUMINESCENCE; TEMPERATURE SENSORS; GEOSCIENTIFIC INFORMATION; CLIMATOLOGY/METEOROLOGY/ATMOSPHERE; ENGLISH;</gco:CharacterString>
 						</gmd:keyword>
 					</gmd:MD_Keywords>
 				</gmd:descriptiveKeywords>
@@ -78,20 +78,20 @@
 				<gmd:extent>
 					<gmd:EX_Extent>
 						<gmd:geographicElement>
-							<gmd:EX_GeographicBoundingBox>
-								<gmd:westBoundLongitude>
-									<gco:Decimal>-99.870002746582</gco:Decimal>
-								</gmd:westBoundLongitude>
-								<gmd:eastBoundLongitude>
-									<gco:Decimal>-96.51999664306641</gco:Decimal>
-								</gmd:eastBoundLongitude>
-								<gmd:southBoundLatitude>
-									<gco:Decimal>55.1500015258789</gco:Decimal>
-								</gmd:southBoundLatitude>
-								<gmd:northBoundLatitude>
-									<gco:Decimal>56.1699981689453</gco:Decimal>
-								</gmd:northBoundLatitude>
-							</gmd:EX_GeographicBoundingBox>
+						  <gmd:EX_GeographicBoundingBox>
+							 <gmd:westBoundLongitude>
+								<gco:Decimal>-180</gco:Decimal>
+							 </gmd:westBoundLongitude>
+							 <gmd:eastBoundLongitude>
+								<gco:Decimal>180</gco:Decimal>
+							 </gmd:eastBoundLongitude>
+							 <gmd:southBoundLatitude>
+								<gco:Decimal>-90</gco:Decimal>
+							 </gmd:southBoundLatitude>
+							 <gmd:northBoundLatitude>
+								<gco:Decimal>90</gco:Decimal>
+							 </gmd:northBoundLatitude>
+						  </gmd:EX_GeographicBoundingBox>
 						</gmd:geographicElement>
 						<gmd:geographicElement>
 							<gmd:EX_BoundingPolygon>

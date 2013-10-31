@@ -24,12 +24,12 @@
 				<gmd:citation>
 					<gmd:CI_Citation>
 						<gmd:title>
-							<gco:CharacterString>ALOS PALSAR</gco:CharacterString>
+							<gco:CharacterString>ALOS PALSAR DATA</gco:CharacterString>
 						</gmd:title>
 					</gmd:CI_Citation>
 				</gmd:citation>
 				<gmd:abstract>
-					<gco:CharacterString>ALOS stands for Advanced Land Observing Satellite, which was launched by Japan Aerospace Exploration Agency in January 2006. Its Japanese name is "DAICHI".ALOS has three remote-sensing instruments, PRISM is a panchromatic radiometer with spatial resolution in order to obtain terrain data including elevation. AVNIR-2 is a visible and near-infrared radiometer for observing land and coastal zones and provides better spatial resolution. PALSAR is a phased array type L-band Synthetic Aperture Radar, an active microwave sensor for cloud free and day and night land observation.</gco:CharacterString>
+					<gco:CharacterString>ALOS stands for Advanced Land Observing Satellite, which was launched by Japan Aerospace Exploration Agency in January 1990. Its Japanese name is "DAICHI". ALOS has three remote-sensing instruments, PRISM is a panchromatic radiometer with spatial resolution in order to obtain terrain data including elevation. AVNIR-2 is a visible and near-infrared radiometer for observing land and coastal zones and provides better spatial resolution. PALSAR is a phased array type L-band Synthetic Aperture Radar, an active microwave sensor for cloud free and day and night land observation.</gco:CharacterString>
 				</gmd:abstract>
 				<gmd:pointOfContact>
 					<gmd:CI_ResponsibleParty>

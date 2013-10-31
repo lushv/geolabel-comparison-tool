@@ -19,7 +19,7 @@
 				<gmd:citation>
 					<gmd:CI_Citation>
 						<gmd:title>
-							<gco:CharacterString>BOREAS TE-09 LEAF BIOCHEMISTRY POINT DATA</gco:CharacterString>
+							<gco:CharacterString>TE-09 LEAF BIOCHEMISTRY POINT DATA</gco:CharacterString>
 						</gmd:title>
 						<gmd:date />
 						<gmd:date>
@@ -62,12 +62,12 @@
 					</gmd:CI_Citation>
 				</gmd:citation>
 				<gmd:abstract>
-					<gco:CharacterString>The BOREAS TE-09 team collected several data sets related to chemical and photosynthetic properties of leaves. This data set contains canopy biochemistry data collected in 1994 in the NSA at the YJP, OJP, OBS, BS and OA sites including biochemistry lignin, nitrogen, cellulose, starch, and fiber concentrations. These data were collected to study the spatial and temporal changes in the canopy biochemistry of boreal forest cover types and how a high-resolution radiative transfer model in the mid-infrared could be applied in an effort to obtain better estimates of canopy biochemical properties using remote sensing.</gco:CharacterString>
+					<gco:CharacterString>The TE-09 team collected several data sets related to chemical and photosynthetic properties of leaves. This data set contains canopy biochemistry data including biochemistry lignin, nitrogen, cellulose, starch, and fiber concentrations. These data were collected to study the spatial and temporal changes in the canopy biochemistry of forest cover types and how a high-resolution radiative transfer model in the mid-infrared could be applied in an effort to obtain better estimates of canopy biochemical properties using remote sensing.</gco:CharacterString>
 				</gmd:abstract>
 				<gmd:descriptiveKeywords>
 					<gmd:MD_Keywords>
 						<gmd:keyword>
-							<gco:CharacterString>EARTH SCIENCE BIOSPHERE VEGETATION VEGETATION SPECIES; EARTH SCIENCE BIOSPHERE VEGETATION LEAF CHARACTERISTICS; EARTH SCIENCE BIOSPHERE VEGETATION NITROGEN; LABORATORY; FIELD INVESTIGATION; BALANCE; SPECTROPHOTOMETERS; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; BOREAS THE BOREAL ECOSYSTEM-ATMOSPHERE STUDY; CWIC CEOS WGISS INTEGRATED CATALOG; Eosdis; Percent Fiber; Percent Sugars; Percent Starch; Percent Lignin; Leaf Chemistry; Percent Cellulose; BIOTA; ENGLISH;</gco:CharacterString>
+							<gco:CharacterString>EARTH SCIENCE BIOSPHERE VEGETATION VEGETATION SPECIES; EARTH SCIENCE BIOSPHERE VEGETATION LEAF CHARACTERISTICS; EARTH SCIENCE BIOSPHERE VEGETATION NITROGEN; LABORATORY; FIELD INVESTIGATION; BALANCE; SPECTROPHOTOMETERS; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; ECOSYSTEM-ATMOSPHERE STUDY; Percent Fiber; Percent Sugars; Percent Starch; Percent Lignin; Leaf Chemistry; Percent Cellulose; ENGLISH;</gco:CharacterString>
 						</gmd:keyword>
 					</gmd:MD_Keywords>
 				</gmd:descriptiveKeywords>
@@ -78,20 +78,20 @@
 				<gmd:extent>
 					<gmd:EX_Extent>
 						<gmd:geographicElement>
-							<gmd:EX_GeographicBoundingBox>
-								<gmd:westBoundLongitude>
-									<gco:Decimal>-98.6699981689453</gco:Decimal>
-								</gmd:westBoundLongitude>
-								<gmd:eastBoundLongitude>
-									<gco:Decimal>-98.2900009155273</gco:Decimal>
-								</gmd:eastBoundLongitude>
-								<gmd:southBoundLatitude>
-									<gco:Decimal>55.8400001525879</gco:Decimal>
-								</gmd:southBoundLatitude>
-								<gmd:northBoundLatitude>
-									<gco:Decimal>55.9099998474121</gco:Decimal>
-								</gmd:northBoundLatitude>
-							</gmd:EX_GeographicBoundingBox>
+                  <gmd:EX_GeographicBoundingBox>
+                     <gmd:westBoundLongitude>
+                        <gco:Decimal>-180</gco:Decimal>
+                     </gmd:westBoundLongitude>
+                     <gmd:eastBoundLongitude>
+                        <gco:Decimal>180</gco:Decimal>
+                     </gmd:eastBoundLongitude>
+                     <gmd:southBoundLatitude>
+                        <gco:Decimal>-90</gco:Decimal>
+                     </gmd:southBoundLatitude>
+                     <gmd:northBoundLatitude>
+                        <gco:Decimal>90</gco:Decimal>
+                     </gmd:northBoundLatitude>
+                  </gmd:EX_GeographicBoundingBox>
 						</gmd:geographicElement>
 						<gmd:geographicElement>
 							<gmd:EX_BoundingPolygon>

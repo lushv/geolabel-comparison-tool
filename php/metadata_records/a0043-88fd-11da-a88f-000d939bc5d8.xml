@@ -88,10 +88,11 @@
 				<gmd:citation>
 					<gmd:CI_Citation>
 						<gmd:title>
-							<gco:CharacterString>Geographic distribution of major crops across the world Global Biogeochemical Cycles</gco:CharacterString>
+							<gco:CharacterString>Geographic distribution of forests across the world
+						</gco:CharacterString>
 						</gmd:title>
 						<gmd:alternateTitle>
-							<gco:CharacterString>Geographic distribution of major crops across the world Global Biogeochemical Cycles</gco:CharacterString>
+							<gco:CharacterString>Geographic distribution of forests across the world</gco:CharacterString>
 						</gmd:alternateTitle>
 						<gmd:date>
 							<gmd:CI_Date>
@@ -171,7 +172,7 @@
 					</gmd:CI_Citation>
 				</gmd:citation>
 				<gmd:abstract>
-					<gco:CharacterString>The Center for Sustainability and the Global Environment (SAGE) 18 Major Crops       dataset characterizes the distribution of major crops across the Global      Biogeochemical Cycles.  The data set was developed using data on proportion of      harvested area within each grid cell, and therefore represents, for each grid      cell, the probability of finding a given crop in that location during the year.      Thus, if a crop is multiple cropped during the year, it has a higher      probability of being in a grid cell than those crops that are single cropped,      even if they occupy the same "physical" area. Furthermore, the sum of the 18      major crops and the other crops will yield the original Ramankutty and Foley      (1998) data set. This implies simplisitic assumptions such as the ignoring of      temporary fallow land (also considered cropland), croplands temporarily used as      pastures, etc. In summary, this is a global data set intended to provide very      rough indications of the probability of finding major crops in different      locations across the world in the early 1990s period.            [Summary provided by SAGE.]	  [ This document was provided by NASA's Global Change Master Directory.       For more information on the source of this metadata please visit      http://gcmd.nasa.gov/r/geoss/[GCMD]SAGE_MAJORCROPS ]</gco:CharacterString>
+					<gco:CharacterString>The Center for Sustainability and the Global Environment (SAGE) dataset characterizes the distribution of forests across the world. [ This document was provided by NASA's Global Change Master Directory.       For more information on the source of this metadata please visit      http://gcmd.nasa.gov/r/geoss/[GCMD]]</gco:CharacterString>
 				</gmd:abstract>
 				<gmd:status>
 					<gmd:MD_ProgressCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="onGoing">onGoing</gmd:MD_ProgressCode>
@@ -285,13 +286,10 @@
 				<gmd:descriptiveKeywords>
 					<gmd:MD_Keywords>
 						<gmd:keyword>
-							<gco:CharacterString>Crops</gco:CharacterString>
+							<gco:CharacterString>forest</gco:CharacterString>
 						</gmd:keyword>
 						<gmd:keyword>
-							<gco:CharacterString>Crop Characteristics</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:keyword>
-							<gco:CharacterString>Biogeochemical Cycle</gco:CharacterString>
+							<gco:CharacterString>forest Characteristics</gco:CharacterString>
 						</gmd:keyword>
 					</gmd:MD_Keywords>
 				</gmd:descriptiveKeywords>
@@ -361,7 +359,7 @@
 							<gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
 						</gmd:useConstraints>
 						<gmd:otherConstraints>
-							<gco:CharacterString>This global data set is intended to provide very rough indications of the            probability of finding major crops in different locations across the world in            the early 1990s period. It was developed to be used for global modeling            applications, and should be used with caution.</gco:CharacterString>
+							<gco:CharacterString>This global data set is intended to provide very rough indications of the probability of finding forest area in different locations across the world. It was developed to be used for global modeling            applications, and should be used with caution.</gco:CharacterString>
 						</gmd:otherConstraints>
 					</gmd:MD_LegalConstraints>
 				</gmd:resourceConstraints>
@@ -558,7 +556,7 @@
 						<gmd:onLine>
 							<gmd:CI_OnlineResource>
 								<gmd:linkage>
-									<gmd:URL>http://www.sage.wisc.edu/download/get_info?dl_file_name=majorcrops/ArcASCII_5min.zip</gmd:URL>
+									<gmd:URL>http://www.sage.wisc.edu/download/get_info?dl_file_name=/ArcASCII_5min.zip</gmd:URL>
 								</gmd:linkage>
 								<gmd:protocol>
 									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
@@ -567,14 +565,14 @@
 									<gco:CharacterString>GET DATA</gco:CharacterString>
 								</gmd:name>
 								<gmd:description>
-									<gco:CharacterString>Download the 18 Major Crops Dataset ArcINFO ASCII 5 min (14.8MB).</gco:CharacterString>
+									<gco:CharacterString>Download Dataset ArcINFO ASCII 5 min (14.8MB).</gco:CharacterString>
 								</gmd:description>
 							</gmd:CI_OnlineResource>
 						</gmd:onLine>
 						<gmd:onLine>
 							<gmd:CI_OnlineResource>
 								<gmd:linkage>
-									<gmd:URL>http://www.sage.wisc.edu/download/get_info?dl_file_name=majorcrops/ArcASCII_halfdeg.zip</gmd:URL>
+									<gmd:URL>http://www.sage.wisc.edu/download/get_info?dl_file_name=/ArcASCII_halfdeg.zip</gmd:URL>
 								</gmd:linkage>
 								<gmd:protocol>
 									<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
@@ -583,7 +581,7 @@
 									<gco:CharacterString>GET DATA</gco:CharacterString>
 								</gmd:name>
 								<gmd:description>
-									<gco:CharacterString>Download the 18 Major Crops Dataset ArcINFO ASCII half degree (645K).</gco:CharacterString>
+									<gco:CharacterString>Download Dataset ArcINFO ASCII half degree (645K).</gco:CharacterString>
 								</gmd:description>
 							</gmd:CI_OnlineResource>
 						</gmd:onLine>
@@ -974,7 +972,7 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>Our university used this dataset to monitor changes in the agricultural land use in Spain between 2005 and 2010. We would recommend this dataset for landcover research.</gvq:comment>
+			<gvq:comment>We would recommend this dataset for landcover research.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
@@ -985,7 +983,7 @@
 			<gvq:reportAspect>
 				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
 			</gvq:reportAspect>
-			<gvq:usageDescription></gvq:usageDescription>
+			<gvq:usageDescription>Our university used this dataset to monitor changes in forest cover in Spain between 2005 and 2010. </gvq:usageDescription>
 			<gvq:discoveredIssue>
 				<gvq:GVQ_DiscoveredIssue>
 					<gvq:target xlink:href="targetUID"/>
@@ -1011,7 +1009,7 @@
 					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
 				</gmd:role>
 			</gvq:userDetails>
-			<gvq:applicationDomain>Agriculture</gvq:applicationDomain>
+			<gvq:applicationDomain>Land Use</gvq:applicationDomain>
 			<gvq:expertiseLevel>4</gvq:expertiseLevel>
 			<gvq:userRole>
 				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
@@ -1038,7 +1036,7 @@
 			<gvq:reportAspect>
 				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
 			</gvq:reportAspect>
-			<gvq:usageDescription>The dataset was used to monitor farming land use in the UK between June 2010 and July 2013.</gvq:usageDescription>
+			<gvq:usageDescription>The dataset was used to monitor land use in the UK between June 2010 and July 2013.</gvq:usageDescription>
 			<gvq:discoveredIssue>
 				<gvq:GVQ_DiscoveredIssue>
 					<gvq:target xlink:href="targetUID"/>
@@ -1053,7 +1051,7 @@
 		<gvq:user>
 			<gvq:userDetails>
 				<gmd:individualName>
-					<gco:CharacterString>Xavier Pau</gco:CharacterString>
+					<gco:CharacterString>Luiz Aragao</gco:CharacterString>
 				</gmd:individualName>
 				<gmd:organisationName>
 					<gco:CharacterString>UAB</gco:CharacterString>
@@ -1080,7 +1078,7 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>The dataset was used for classification of forests cover in Spain between 2010 and 2013 . We discovered that data for June - August 2011 was missing.</gvq:comment>
+			<gvq:comment>We discovered that data for June - August 2011 was missing.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
@@ -1091,7 +1089,7 @@
 			<gvq:reportAspect>
 				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
 			</gvq:reportAspect>
-			<gvq:usageDescription></gvq:usageDescription>
+			<gvq:usageDescription>The dataset was used for classification of forests cover in Spain between 2010 and 2013.</gvq:usageDescription>
 			<gvq:discoveredIssue>
 				<gvq:GVQ_DiscoveredIssue>
 					<gvq:target xlink:href="targetUID"/>

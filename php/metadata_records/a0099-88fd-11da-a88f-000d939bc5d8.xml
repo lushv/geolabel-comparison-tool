@@ -82,9 +82,6 @@
          <gmd:abstract>
             <gco:CharacterString>The Food and Agriculture Organization of the United Nations (FAO) with the collaboration of the International Institute for Applied Systems Analysis (IIASA), has developed a system that enables rational land-use planning on the basis of an inventory of land resources and evaluation of biophysical limitations and potentials. This is referred to as the Agro-ecological Zones (AEZ) methodology.</gco:CharacterString>
          </gmd:abstract>
-         <gmd:purpose>
-            <gco:CharacterString>The AEZ methodology for land productivity assessments follows an environmental approach; it provides a framework for establishing a spatial inventory and database of land resources and crop production potentials. This land resources inventory is used to assess, for specified management conditions and levels of inputs, the suitability of crops/LUTs in relation to both rain-fed and irrigated conditions, and to quantify expected production of cropping activities relevant in the specific agro-ecological context.</gco:CharacterString>
-         </gmd:purpose>
          <gmd:status>
             <gmd:MD_ProgressCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ProgressCode" codeListValue="onGoing"/>
          </gmd:status>
@@ -111,7 +108,7 @@
          <gmd:descriptiveKeywords>
             <gmd:MD_Keywords>
                <gmd:keyword>
-                  <gco:CharacterString>LAND USE</gco:CharacterString>
+                  <gco:CharacterString>WORLD, GROWTH PERIOD, CLIMATE, LAND COVER, FOREST, LAND USE</gco:CharacterString>
                </gmd:keyword>
                <gmd:thesaurusName>
                   <gmd:CI_Citation/>

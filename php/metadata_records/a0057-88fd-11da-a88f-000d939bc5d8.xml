@@ -52,7 +52,7 @@
 							</gmd:CI_Date>
 						</gmd:date>
 						<gmd:edition>
-							<gco:CharacterString>Revised November 2000</gco:CharacterString>
+							<gco:CharacterString>Revised November 2013</gco:CharacterString>
 						</gmd:edition>
 						<gmd:identifier>
 							<gmd:MD_Identifier>
@@ -219,7 +219,7 @@
 					</gmd:CI_Citation>
 				</gmd:citation>
 				<gmd:abstract>
-					<gco:CharacterString>This package contains a computerized database used to generate a      global vegetation map of 44 different land ecosystem complexes      comprising seven broad groups.  The database and accompanying map      provides a basis for making improved estimates of vegetation areas      and carbon quantities, of natural biological exchanges of CO2, and,      eventually, of the net historic shifts of carbon between the      biosphere and the atmosphere.  The map is derived from patterns of      preagricultural vegetation, modern areal surveys, and intensive      biomass data from research sites.            The cells of each type in each 0.5 degree latitude band and adding      their areas over latitude bands gave total area estimates for these      ecosystem complexes. Some independent area estimates are brought      together in Olson et al.  (1983) and confirm the thesis that some      earlier estimates of forest area and forest contribution to global      carbon inventories were apparently overestimated.  Current      estimates of the range in density of carbon- per-unit area are      discussed in Olson et al. (1983).  Multiplying the low, medium, and      high-density estimates by ecosystem area gives corresponding      estimates of the global total carbon by ecosystem complexes.            Estimating the inventory of carbon in major world ecosystems and      the exchanges with the atmosphere and other major reservoirs has      been approached in two ways. In the first approach, developing      broad global patterns uses potential vegetation maps, or associates      vegetation types with climatic or other environmental factors      independent of local disturbance.  In the second approach,      developing modern regional or stand-type estimates is based on      analyses of current vegetation and land-use practices.  This method      uses updated resource maps of natural vegetation, forestry surveys,      agricultural yields and human, economic, and geopolitical      considerations.  Both approaches were applied in the development of      the ecosystem map.            In 1980, this data base and the corresponding map were completed after      more than 20 years of field investigations, consultations, and      analyses of published literature. They characterize the use and      vegetative cover of the Earth's land surface with a 0.50 x 0.50 degree      grid. This world-ecosystem-complex data set and the accompanying map      provide a current reference base for interpreting the role of      vegetation in the global cycling of CO2 and other gases and a basis      for improved estimates of vegetation and soil carbon, of natural      exchanges of CO2, and of net historic shifts of carbon between the      biosphere and the atmosphere. The data are presented in two      alternative files: one matrix file of 122 kB, providing latitude,      longitude, and ecosystem code; and one flat file (simpler format and      additional information on ecosystem name; gridcell area; and medium,      revised medium, minimum, and maximum estimates of carbon density) of      16.8 MB uncompressed or 2 MB compressed.	  [ This document was provided by NASA's Global Change Master Directory.       For more information on the source of this metadata please visit      http://gcmd.nasa.gov/r/geoss/[GCMD]CDIAC_NDP17 ]</gco:CharacterString>
+					<gco:CharacterString>This package contains a computerized database used to generate a      global vegetation map of different land ecosystem complexes      comprising seven broad groups.  The database and accompanying map      provides a basis for making improved estimates of vegetation areas      and carbon quantities, of natural biological exchanges of CO2, and,      eventually, of the net historic shifts of carbon between the      biosphere and the atmosphere.  The map is derived from patterns of      preagricultural vegetation, modern areal surveys, and intensive      biomass data from research sites.            The cells of each type in each 0.5 degree latitude band and adding      their areas over latitude bands gave total area estimates for these      ecosystem complexes. Some independent area estimates are brought      together in Olson et al.  (1983) and confirm the thesis that some      earlier estimates of forest area and forest contribution to global      carbon inventories were apparently overestimated.  Current      estimates of the range in density of carbon- per-unit area are      discussed in Olson et al. (1983).  Multiplying the low, medium, and      high-density estimates by ecosystem area gives corresponding      estimates of the global total carbon by ecosystem complexes.            Estimating the inventory of carbon in major world ecosystems and      the exchanges with the atmosphere and other major reservoirs has      been approached in two ways. In the first approach, developing      broad global patterns uses potential vegetation maps, or associates      vegetation types with climatic or other environmental factors      independent of local disturbance.  In the second approach,      developing modern regional or stand-type estimates is based on      analyses of current vegetation and land-use practices.  This method      uses updated resource maps of natural vegetation, forestry surveys,      agricultural yields and human, economic, and geopolitical      considerations.  Both approaches were applied in the development of      the ecosystem map. This data base and the corresponding map were completed after      more than 20 years of field investigations, consultations, and      analyses of published literature. They characterize the use and      vegetative cover of the Earth's land surface with a 0.50 x 0.50 degree      grid. This world-ecosystem-complex data set and the accompanying map      provide a current reference base for interpreting the role of      vegetation in the global cycling of CO2 and other gases and a basis      for improved estimates of vegetation and soil carbon, of natural      exchanges of CO2, and of net historic shifts of carbon between the      biosphere and the atmosphere. The data are presented in two      alternative files: one matrix file of 122 kB, providing latitude,      longitude, and ecosystem code; and one flat file (simpler format and      additional information on ecosystem name; gridcell area; and medium,      revised medium, minimum, and maximum estimates of carbon density) of      16.8 MB uncompressed or 2 MB compressed.	  [ This document was provided by NASA's Global Change Master Directory.       For more information on the source of this metadata please visit      http://gcmd.nasa.gov/r/geoss/[GCMD]CDIAC_NDP17 ]</gco:CharacterString>
 				</gmd:abstract>
 				<gmd:resourceConstraints>
 					<gmd:MD_LegalConstraints id="GDC">
@@ -512,20 +512,20 @@
 				<gmd:extent>
 					<gmd:EX_Extent>
 						<gmd:geographicElement>
-							<gmd:EX_GeographicBoundingBox>
-								<gmd:westBoundLongitude>
-									<gco:Decimal>-180.0</gco:Decimal>
-								</gmd:westBoundLongitude>
-								<gmd:eastBoundLongitude>
-									<gco:Decimal>180.0</gco:Decimal>
-								</gmd:eastBoundLongitude>
-								<gmd:southBoundLatitude>
-									<gco:Decimal>-90.0</gco:Decimal>
-								</gmd:southBoundLatitude>
-								<gmd:northBoundLatitude>
-									<gco:Decimal>90.0</gco:Decimal>
-								</gmd:northBoundLatitude>
-							</gmd:EX_GeographicBoundingBox>
+						  <gmd:EX_GeographicBoundingBox>
+							 <gmd:westBoundLongitude>
+								<gco:Decimal>-180</gco:Decimal>
+							 </gmd:westBoundLongitude>
+							 <gmd:eastBoundLongitude>
+								<gco:Decimal>180</gco:Decimal>
+							 </gmd:eastBoundLongitude>
+							 <gmd:southBoundLatitude>
+								<gco:Decimal>-90</gco:Decimal>
+							 </gmd:southBoundLatitude>
+							 <gmd:northBoundLatitude>
+								<gco:Decimal>90</gco:Decimal>
+							 </gmd:northBoundLatitude>
+						  </gmd:EX_GeographicBoundingBox>
 						</gmd:geographicElement>
 						<gmd:geographicElement>
 							<gmd:EX_GeographicDescription>

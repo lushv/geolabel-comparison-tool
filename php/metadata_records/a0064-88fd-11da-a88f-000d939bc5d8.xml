@@ -166,16 +166,16 @@
                <gmd:geographicElement>
                   <gmd:EX_GeographicBoundingBox>
                      <gmd:westBoundLongitude>
-                        <gco:Decimal>-178.21</gco:Decimal>
+                        <gco:Decimal>-180</gco:Decimal>
                      </gmd:westBoundLongitude>
                      <gmd:eastBoundLongitude>
-                        <gco:Decimal>-68</gco:Decimal>
+                        <gco:Decimal>180</gco:Decimal>
                      </gmd:eastBoundLongitude>
                      <gmd:southBoundLatitude>
-                        <gco:Decimal>18.92</gco:Decimal>
+                        <gco:Decimal>-90</gco:Decimal>
                      </gmd:southBoundLatitude>
                      <gmd:northBoundLatitude>
-                        <gco:Decimal>71.35</gco:Decimal>
+                        <gco:Decimal>90</gco:Decimal>
                      </gmd:northBoundLatitude>
                   </gmd:EX_GeographicBoundingBox>
                </gmd:geographicElement>
@@ -226,12 +226,12 @@
   <gmd19157:referenceDoc>
 	<gvq:GVQ_Publication>
 		<gmd:title>
-			<gco:CharacterString>Validation of Forest Type Groups</gco:CharacterString>
+			<gco:CharacterString>US forest types and predicted percent forest cover</gco:CharacterString>
 		</gmd:title>
 		<gmd:date>
 			<gmd:CI_Date>
 				<gmd:date>
-					<gco:Date>2008-07-01</gco:Date>
+					<gco:Date>2010-05-11</gco:Date>
 				</gmd:date>
 				<gmd:dateType>
 					<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
@@ -275,12 +275,12 @@
 	<gmd19157:referenceDoc>
 		<gvq:GVQ_Publication>
 			<gmd:title>
-				<gco:CharacterString>Forest Type Groups</gco:CharacterString>
+				<gco:CharacterString>Forest resources of the United States, 2008</gco:CharacterString>
 			</gmd:title>
 			<gmd:date>
 				<gmd:CI_Date>
 					<gmd:date>
-						<gco:Date>2005-07-01</gco:Date>
+						<gco:Date>2008-10-01</gco:Date>
 					</gmd:date>
 					<gmd:dateType>
 						<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
@@ -302,7 +302,7 @@
 				</updated19115:MD_Identifier>
 			</gvq:target>
 			<gvq:doi>
-				<gco:CharacterString>10.1109/TGRS.2006.864370</gco:CharacterString>
+				<gco:CharacterString>61.9965/TGRS.2008.864370</gco:CharacterString>
 			</gvq:doi>
 			<gvq:purpose>
 				<gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>

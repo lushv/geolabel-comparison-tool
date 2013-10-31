@@ -141,7 +141,7 @@
 				<gmd:citation>
 					<gmd:CI_Citation>
 						<gmd:title>
-							<gco:CharacterString>Proportion of land salinized due to irrigation</gco:CharacterString>
+							<gco:CharacterString>Land Cover and Use</gco:CharacterString>
 						</gmd:title>
 						<gmd:date>
 							<gmd:CI_Date>
@@ -162,7 +162,7 @@
 					</gmd:CI_Citation>
 				</gmd:citation>
 				<gmd:abstract>
-					<gco:CharacterString>This map represents the spatial distribution of land under irrigation which is affected by some degree of salinization. It was produced by combining FAO AQUASTAT country statistics regarding irrigated areas affected by salinization with spatial information on irrigated areas where precipitation is not sufficient to leach away salt residues that are built up in the soil due to irrigation. It was assumed that the risk of salinization of irrigated areas can occur only in areas with an Aridity Index lower than 0.65 (where the Aridity Index is defined as Yearly Precipitation divided by Yearly Reference Evapotranspiration).</gco:CharacterString>
+					<gco:CharacterString>This map represents the spatial distribution of land cover and. </gco:CharacterString>
 				</gmd:abstract>
 				<gmd:purpose>
 					<gco:CharacterString>Map published in SOLAW Report, Managing Systems at Risk</gco:CharacterString>
@@ -179,7 +179,7 @@
 							<gco:CharacterString>Food and Agriculture Organization of the United Nations - Land and Water Division</gco:CharacterString>
 						</gmd:organisationName>
 						<gmd:positionName>
-							<gco:CharacterString>Water Resources Officer</gco:CharacterString>
+							<gco:CharacterString>Land and Water Resources Officer</gco:CharacterString>
 						</gmd:positionName>
 						<gmd:contactInfo>
 							<gmd:CI_Contact>
@@ -310,38 +310,10 @@
 				<gmd:descriptiveKeywords>
 					<gmd:MD_Keywords>
 						<gmd:keyword>
-							<gco:CharacterString>World</gco:CharacterString>
+							<gco:CharacterString>World, landuse, landcover, Managing Systems at Risk</gco:CharacterString>
 						</gmd:keyword>
 						<gmd:type>
 							<gmd:MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_KeywordTypeCode" codeListValue="place" />
-						</gmd:type>
-					</gmd:MD_Keywords>
-				</gmd:descriptiveKeywords>
-				<gmd:descriptiveKeywords>
-					<gmd:MD_Keywords>
-						<gmd:keyword>
-							<gco:CharacterString>irrigation</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:keyword>
-							<gco:CharacterString>soil</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:keyword>
-							<gco:CharacterString>landuse</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:keyword>
-							<gco:CharacterString>SOLAW</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:keyword>
-							<gco:CharacterString>Managing Systems at Risk</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:keyword>
-							<gco:CharacterString>hydrology</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:keyword>
-							<gco:CharacterString>AQUAMAPS_analyses</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:type>
-							<gmd:MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_KeywordTypeCode" codeListValue="theme" />
 						</gmd:type>
 					</gmd:MD_Keywords>
 				</gmd:descriptiveKeywords>

@@ -121,7 +121,7 @@
             </CI_Citation>
          </citation>
          <abstract>
-            <gco:CharacterString>The map has been based on the Global Forest Cover produced in 2000 by FAO-Forest Resources Assesment Programme. Four main forest classes have been identified: Closed, Open, Other Wooded Land and Other Land.</gco:CharacterString>
+            <gco:CharacterString>The map has been based on the Global Forest Cover produced by FAO-Forest Resources Assesment Programme. Four main forest classes have been identified: Closed, Open, Other Wooded Land and Other Land.</gco:CharacterString>
          </abstract>
          <purpose>
             <gco:CharacterString>The map shows forest cover. The Data set source is FAO-Forest Resources Assesment 2000.</gco:CharacterString>
@@ -301,20 +301,20 @@
          <extent>
             <EX_Extent>
                <geographicElement>
-                  <EX_GeographicBoundingBox>
-                     <westBoundLongitude>
-                        <gco:Decimal>-74.46</gco:Decimal>
-                     </westBoundLongitude>
-                     <eastBoundLongitude>
-                        <gco:Decimal>-71.62</gco:Decimal>
-                     </eastBoundLongitude>
-                     <southBoundLatitude>
-                        <gco:Decimal>18.02</gco:Decimal>
-                     </southBoundLatitude>
-                     <northBoundLatitude>
-                        <gco:Decimal>20.09</gco:Decimal>
-                     </northBoundLatitude>
-                  </EX_GeographicBoundingBox>
+                  <gmd:EX_GeographicBoundingBox>
+                     <gmd:westBoundLongitude>
+                        <gco:Decimal>-180</gco:Decimal>
+                     </gmd:westBoundLongitude>
+                     <gmd:eastBoundLongitude>
+                        <gco:Decimal>180</gco:Decimal>
+                     </gmd:eastBoundLongitude>
+                     <gmd:southBoundLatitude>
+                        <gco:Decimal>-90</gco:Decimal>
+                     </gmd:southBoundLatitude>
+                     <gmd:northBoundLatitude>
+                        <gco:Decimal>90</gco:Decimal>
+                     </gmd:northBoundLatitude>
+                  </gmd:EX_GeographicBoundingBox>
                </geographicElement>
             </EX_Extent>
          </extent>

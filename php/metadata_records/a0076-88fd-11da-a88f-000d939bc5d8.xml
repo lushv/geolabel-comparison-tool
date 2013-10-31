@@ -24,7 +24,7 @@
             <gmd:citation>
                <gmd:CI_Citation>
                   <gmd:title>
-                     <gco:CharacterString>BOREAS RSS-16 LEVEL-3B DC-8 AIRSAR SY IMAGES</gco:CharacterString>
+                     <gco:CharacterString>RSS-16 LEVEL-3B DC-8 AIRSAR SY IMAGES</gco:CharacterString>
                   </gmd:title>
                   <gmd:date />
                   <gmd:date>
@@ -60,19 +60,19 @@
                   <gmd:identifier>
                      <gmd:RS_Identifier>
                         <gmd:code>
-                           <gco:CharacterString>NASA:BOREAS_AIRSSY3B</gco:CharacterString>
+                           <gco:CharacterString>NASA:AIRSSY3B</gco:CharacterString>
                         </gmd:code>
                      </gmd:RS_Identifier>
                   </gmd:identifier>
                </gmd:CI_Citation>
             </gmd:citation>
             <gmd:abstract>
-               <gco:CharacterString>The BOREAS RSS-16 team used satellite and aircraft SAR data in conjunction with various ground measurements to determine the moisture regime of the boreal forest. RSS-16 assisted with the acquisition and ordering of NASA JPL AIRSAR data collected from the NASA DC-8 aircraft. The NASA JPL AIRSAR is a side-looking imaging radar system that utilizes the SAR principle to obtain high resolution images that represent the radar backscatter of the imaged surface at different frequencies and polarizations. The information contained in each pixel of the AIRSAR data represents the radar backscatter for all possible combinations of horizontal and vertical transmit and receive polarizations (i.e., HH, HV, VH, and VV). Geographically, the data cover portions of the BOREAS SSA and NSA. Temporally, the data were acquired from 12-Aug-1993 to 31-Jul-1995. The level-3b AIRSAR SY data are the JPL synoptic product and contain 3 of the 12 total frequency and polarization combinations that are possible.</gco:CharacterString>
+               <gco:CharacterString>The RSS-16 team used satellite and aircraft SAR data in conjunction with various ground measurements to determine the moisture regime of the forests. RSS-16 assisted with the acquisition and ordering of NASA JPL AIRSAR data collected from the NASA DC-8 aircraft. The NASA JPL AIRSAR is a side-looking imaging radar system that utilizes the SAR principle to obtain high resolution images that represent the radar backscatter of the imaged surface at different frequencies and polarizations. The information contained in each pixel of the AIRSAR data represents the radar backscatter for all possible combinations of horizontal and vertical transmit and receive polarizations (i.e., HH, HV, VH, and VV). The level-3b AIRSAR SY data are the JPL synoptic product and contain 3 of the 12 total frequency and polarization combinations that are possible.</gco:CharacterString>
             </gmd:abstract>
             <gmd:descriptiveKeywords>
                <gmd:MD_Keywords>
                   <gmd:keyword>
-                     <gco:CharacterString>EARTH SCIENCE SPECTRAL/ENGINEERING RADAR RADAR BACKSCATTER; DC-8 DOUGLAS DC-8; SAR SYNTHETIC APERTURE RADAR; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; BOREAS THE BOREAL ECOSYSTEM-ATMOSPHERE STUDY; Sar; Jpl; Radar; Airsar; IMAGERY/BASE MAPS/EARTH COVER; ENGLISH;</gco:CharacterString>
+                     <gco:CharacterString>EARTH SCIENCE SPECTRAL/ENGINEERING RADAR RADAR BACKSCATTER; DC-8 DOUGLAS DC-8; SAR SYNTHETIC APERTURE RADAR; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; Sar; Jpl; Radar; Airsar; IMAGERY/BASE MAPS/EARTH COVER; FORESTRY; LAND COVER; ENGLISH;</gco:CharacterString>
                   </gmd:keyword>
                </gmd:MD_Keywords>
             </gmd:descriptiveKeywords>
@@ -83,20 +83,20 @@
             <gmd:extent>
                <gmd:EX_Extent>
                   <gmd:geographicElement>
-                     <gmd:EX_GeographicBoundingBox>
-                        <gmd:westBoundLongitude>
-                           <gco:Decimal>-110.050003051758</gco:Decimal>
-                        </gmd:westBoundLongitude>
-                        <gmd:eastBoundLongitude>
-                           <gco:Decimal>-94.0800018310547</gco:Decimal>
-                        </gmd:eastBoundLongitude>
-                        <gmd:southBoundLatitude>
-                           <gco:Decimal>50.5699996948242</gco:Decimal>
-                        </gmd:southBoundLatitude>
-                        <gmd:northBoundLatitude>
-                           <gco:Decimal>59.3400001525879</gco:Decimal>
-                        </gmd:northBoundLatitude>
-                     </gmd:EX_GeographicBoundingBox>
+					  <gmd:EX_GeographicBoundingBox>
+						 <gmd:westBoundLongitude>
+							<gco:Decimal>-180</gco:Decimal>
+						 </gmd:westBoundLongitude>
+						 <gmd:eastBoundLongitude>
+							<gco:Decimal>180</gco:Decimal>
+						 </gmd:eastBoundLongitude>
+						 <gmd:southBoundLatitude>
+							<gco:Decimal>-90</gco:Decimal>
+						 </gmd:southBoundLatitude>
+						 <gmd:northBoundLatitude>
+							<gco:Decimal>90</gco:Decimal>
+						 </gmd:northBoundLatitude>
+					  </gmd:EX_GeographicBoundingBox>
                   </gmd:geographicElement>
                   <gmd:geographicElement>
                      <gmd:EX_BoundingPolygon>
@@ -179,7 +179,7 @@
 		  <gmd19157:referenceDoc>
 			<gvq:GVQ_Publication>
 				<gmd:title>
-					<gco:CharacterString>BOREAS RSS-16 LEVEL-3B DC-8 AIRSAR SY IMAGES</gco:CharacterString>
+					<gco:CharacterString>Natural forest vegetation zones</gco:CharacterString>
 				</gmd:title>
 				<gmd:date>
 					<gmd:CI_Date>
@@ -218,7 +218,7 @@
 				<gvq:onlineResource>
 					<gmd:CI_OnlineResource>
 						<gmd:linkage>
-							<gmd:URL>http://ieeexplore.ieee.org/</gmd:URL>
+							<gmd:URL>http://www.ingentaconnect.com/</gmd:URL>
 						</gmd:linkage>
 					</gmd:CI_OnlineResource>
 				</gvq:onlineResource>
@@ -227,7 +227,7 @@
 		  <gmd19157:referenceDoc>
 			<gvq:GVQ_Publication>
 				<gmd:title>
-					<gco:CharacterString>Computation with imprecise geospatial data</gco:CharacterString>
+					<gco:CharacterString>The response of some rain forest insect groups to logging and conversion to plantation</gco:CharacterString>
 				</gmd:title>
 				<gmd:date>
 					<gmd:CI_Date>
@@ -266,7 +266,7 @@
 				<gvq:onlineResource>
 					<gmd:CI_OnlineResource>
 						<gmd:linkage>
-							<gmd:URL>http://ieeexplore.ieee.org/</gmd:URL>
+							<gmd:URL>http://rstb.royalsocietypublishing.org/</gmd:URL>
 						</gmd:linkage>
 					</gmd:CI_OnlineResource>
 				</gvq:onlineResource>
@@ -395,13 +395,13 @@
 		</gvq:userComment>
 		<gvq:rating>
 			<gvq:score>5</gvq:score>
-			<gvq:justification>Metadata record is good. Quality information is available.</gvq:justification>
+			<gvq:justification>Metadata record is good. Some quality information is available.</gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>
 				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
 			</gvq:reportAspect>
-			<gvq:usageDescription>We used this dataset to monitor changes in the agricultural land use in Italy between 2008 and 2010.</gvq:usageDescription>
+			<gvq:usageDescription>We used this dataset to monitor changes in land cover in Spain between 2008 and 2010.</gvq:usageDescription>
 			<gvq:discoveredIssue>
 				<gvq:GVQ_DiscoveredIssue>
 					<gvq:target xlink:href="targetUID"/>
@@ -416,7 +416,7 @@
 		<gvq:user>
 			<gvq:userDetails>
 				<gmd:individualName>
-					<gco:CharacterString>Jon Wilkies</gco:CharacterString>
+					<gco:CharacterString>Jane Rowley</gco:CharacterString>
 				</gmd:individualName>
 				<gmd:organisationName>
 					<gco:CharacterString>FAO</gco:CharacterString>
@@ -427,7 +427,7 @@
 					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
 				</gmd:role>
 			</gvq:userDetails>
-			<gvq:applicationDomain>Agriculture</gvq:applicationDomain>
+			<gvq:applicationDomain>Land Cover</gvq:applicationDomain>
 			<gvq:expertiseLevel>4</gvq:expertiseLevel>
 			<gvq:userRole>
 				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
@@ -443,18 +443,18 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>Metadta record provided quality information.</gvq:comment>
+			<gvq:comment>Metadta record provided us with some quality information.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
 			<gvq:score>5</gvq:score>
-			<gvq:justification>The data is of good quality. Metadata record provides quality information.</gvq:justification>
+			<gvq:justification>This dataset is of good quality. Metadata record provides some quality information.</gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>
 				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
 			</gvq:reportAspect>
-			<gvq:usageDescription>The dataset was used to monitor farming land use in Turkey between June 2010 and July 2013.</gvq:usageDescription>
+			<gvq:usageDescription>The dataset was used to monitor land cover changes in the UK between June 2010 and July 2013.</gvq:usageDescription>
 			<gvq:discoveredIssue>
 				<gvq:GVQ_DiscoveredIssue>
 					<gvq:target xlink:href="targetUID"/>
@@ -469,7 +469,7 @@
 		<gvq:user>
 			<gvq:userDetails>
 				<gmd:individualName>
-					<gco:CharacterString>Xavier Pau</gco:CharacterString>
+					<gco:CharacterString>Laura Revierra</gco:CharacterString>
 				</gmd:individualName>
 				<gmd:organisationName>
 					<gco:CharacterString>UAB</gco:CharacterString>
@@ -480,7 +480,7 @@
 					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
 				</gmd:role>
 			</gvq:userDetails>
-			<gvq:applicationDomain>Land Cover</gvq:applicationDomain>
+			<gvq:applicationDomain>Forestry</gvq:applicationDomain>
 			<gvq:expertiseLevel>4</gvq:expertiseLevel>
 			<gvq:userRole>
 				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="ResearchEndUser"/>
@@ -496,124 +496,18 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>We discovered that data for June - August 2011 was missing.</gvq:comment>
+			<gvq:comment>We discovered that data for 2009 is patchy.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
 			<gvq:score>4</gvq:score>
-			<gvq:justification>Overall, dataset provides good temporal and spatial coverage. Data is missing for South Africa region between June and August 2011.</gvq:justification>
+			<gvq:justification>Overall, dataset provides good temporal and spatial coverage. Data for Europe region is patchy for year 2009.</gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>
 				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
 			</gvq:reportAspect>
-			<gvq:usageDescription>The dataset was used for classification of forests cover in South Africa between 2010 and 2013.</gvq:usageDescription>
-			<gvq:discoveredIssue>
-				<gvq:GVQ_DiscoveredIssue>
-					<gvq:target xlink:href="targetUID"/>
-				</gvq:GVQ_DiscoveredIssue>
-			</gvq:discoveredIssue>
-		</gvq:usage>
-	</gvq:item>
-	<gvq:item>
-		<gvq:userRole>
-			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
-		</gvq:userRole>
-		<gvq:user>
-			<gvq:userDetails>
-				<gmd:individualName>
-					<gco:CharacterString>Recardo Reviero</gco:CharacterString>
-				</gmd:individualName>
-				<gmd:organisationName>
-					<gco:CharacterString>UAB</gco:CharacterString>
-				</gmd:organisationName>
-				<gmd:contactInfo>
-				</gmd:contactInfo>
-				<gmd:role>
-					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
-				</gmd:role>
-			</gvq:userDetails>
-			<gvq:applicationDomain>Land Cover</gvq:applicationDomain>
-			<gvq:expertiseLevel>2</gvq:expertiseLevel>
-			<gvq:userRole>
-				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
-			</gvq:userRole>
-		</gvq:user>
-		<gvq:dateStamp>
-			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
-		</gvq:dateStamp>
-		<gvq:qualityOverride>
-			<gvq:GVQ_DataQuality>
-				<gmd19157:scope/>
-				<gvq:discoveredIssue/>
-			</gvq:GVQ_DataQuality>
-		</gvq:qualityOverride>
-		<gvq:userComment>
-			<gvq:comment>The dataset and metadata record are of very high quality. Quality information is available.</gvq:comment>
-			<gvq:mime-type>text/plain</gvq:mime-type>
-		</gvq:userComment>
-		<gvq:rating>
-			<gvq:score>4</gvq:score>
-			<gvq:justification>Quality information is available.</gvq:justification>
-		</gvq:rating>
-		<gvq:usage>
-			<gvq:reportAspect>
-				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
-			</gvq:reportAspect>
-			<gvq:usageDescription>The dataset was used for classification of land cover in Brazil between 2000 and 2007.</gvq:usageDescription>
-			<gvq:discoveredIssue>
-				<gvq:GVQ_DiscoveredIssue>
-					<gvq:target xlink:href="targetUID"/>
-				</gvq:GVQ_DiscoveredIssue>
-			</gvq:discoveredIssue>
-		</gvq:usage>
-	</gvq:item>
-	<gvq:item>
-		<gvq:userRole>
-			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
-		</gvq:userRole>
-		<gvq:user>
-			<gvq:userDetails>
-				<gmd:individualName>
-					<gco:CharacterString>Pinar Boston</gco:CharacterString>
-				</gmd:individualName>
-				<gmd:organisationName>
-					<gco:CharacterString>Middle East Technical University</gco:CharacterString>
-				</gmd:organisationName>
-				<gmd:contactInfo>
-				</gmd:contactInfo>
-				<gmd:role>
-					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
-				</gmd:role>
-			</gvq:userDetails>
-			<gvq:applicationDomain>Ecosystems</gvq:applicationDomain>
-			<gvq:expertiseLevel>3</gvq:expertiseLevel>
-			<gvq:userRole>
-				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="ResearchEndUser"/>
-			</gvq:userRole>
-		</gvq:user>
-		<gvq:dateStamp>
-			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
-		</gvq:dateStamp>
-		<gvq:qualityOverride>
-			<gvq:GVQ_DataQuality>
-				<gmd19157:scope/>
-				<gvq:discoveredIssue/>
-			</gvq:GVQ_DataQuality>
-		</gvq:qualityOverride>
-		<gvq:userComment>
-			<gvq:comment>The dataset provides very good spatial and temporal coverage.</gvq:comment>
-			<gvq:mime-type>text/plain</gvq:mime-type>
-		</gvq:userComment>
-		<gvq:rating>
-			<gvq:score>5</gvq:score>
-			<gvq:justification>Quality information is available.</gvq:justification>
-		</gvq:rating>
-		<gvq:usage>
-			<gvq:reportAspect>
-				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
-			</gvq:reportAspect>
-			<gvq:usageDescription>We used this dataset to classify vegetation cover in Turkey for the year 2011.</gvq:usageDescription>
+			<gvq:usageDescription>The dataset was used for classification of forests cover in Europe between 2000 and 2010.</gvq:usageDescription>
 			<gvq:discoveredIssue>
 				<gvq:GVQ_DiscoveredIssue>
 					<gvq:target xlink:href="targetUID"/>
@@ -655,18 +549,18 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment> We would highly recommend this dataset for landcover research.</gvq:comment>
+			<gvq:comment> We would recommend this dataset for landcover research.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
 			<gvq:score>5</gvq:score>
-			<gvq:justification>Metadata record is extremely good. Quality information is available.</gvq:justification>
+			<gvq:justification>Metadata record is good. Some quality information is available.</gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>
 				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
 			</gvq:reportAspect>
-			<gvq:usageDescription>Our university used this dataset to monitor changes in the agricultural land use in Spain between 2005 and 2010.</gvq:usageDescription>
+			<gvq:usageDescription>Our university used this dataset to observe changes in land cover in Spain between 2005 and 2010.</gvq:usageDescription>
 			<gvq:discoveredIssue>
 				<gvq:GVQ_DiscoveredIssue>
 					<gvq:target xlink:href="targetUID"/>
@@ -681,63 +575,10 @@
 		<gvq:user>
 			<gvq:userDetails>
 				<gmd:individualName>
-					<gco:CharacterString>Jon Wilkies</gco:CharacterString>
+					<gco:CharacterString>Adam Foley</gco:CharacterString>
 				</gmd:individualName>
 				<gmd:organisationName>
-					<gco:CharacterString>FAO</gco:CharacterString>
-				</gmd:organisationName>
-				<gmd:contactInfo>
-				</gmd:contactInfo>
-				<gmd:role>
-					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
-				</gmd:role>
-			</gvq:userDetails>
-			<gvq:applicationDomain>Agriculture</gvq:applicationDomain>
-			<gvq:expertiseLevel>3</gvq:expertiseLevel>
-			<gvq:userRole>
-				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
-			</gvq:userRole>
-		</gvq:user>
-		<gvq:dateStamp>
-			<gco:DateTime>2006-01-31T00:00:00.0Z</gco:DateTime>
-		</gvq:dateStamp>
-		<gvq:qualityOverride>
-			<gvq:GVQ_DataQuality>
-				<gmd19157:scope/>
-				<gvq:discoveredIssue/>
-			</gvq:GVQ_DataQuality>
-		</gvq:qualityOverride>
-		<gvq:userComment>
-			<gvq:comment> </gvq:comment>
-			<gvq:mime-type>text/plain</gvq:mime-type>
-		</gvq:userComment>
-		<gvq:rating>
-			<gvq:score>5</gvq:score>
-			<gvq:justification>The data is of very high quality. Metadata record provides quality information.</gvq:justification>
-		</gvq:rating>
-		<gvq:usage>
-			<gvq:reportAspect>
-				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
-			</gvq:reportAspect>
-			<gvq:usageDescription>The dataset was used to monitor farming land use in the UK between June 2010 and July 2013.</gvq:usageDescription>
-			<gvq:discoveredIssue>
-				<gvq:GVQ_DiscoveredIssue>
-					<gvq:target xlink:href="targetUID"/>
-				</gvq:GVQ_DiscoveredIssue>
-			</gvq:discoveredIssue>
-		</gvq:usage>
-	</gvq:item>
-	<gvq:item>
-		<gvq:userRole>
-			<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue=" ResearchEndUser "/>
-		</gvq:userRole>
-		<gvq:user>
-			<gvq:userDetails>
-				<gmd:individualName>
-					<gco:CharacterString>Xavier Pau</gco:CharacterString>
-				</gmd:individualName>
-				<gmd:organisationName>
-					<gco:CharacterString>UAB</gco:CharacterString>
+					<gco:CharacterString>JRC</gco:CharacterString>
 				</gmd:organisationName>
 				<gmd:contactInfo>
 				</gmd:contactInfo>
@@ -761,18 +602,18 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment> We discovered that data for June - August 2011 was missing but, apart from this, the dataset is of good quality.</gvq:comment>
+			<gvq:comment>Overall, very good temporal and spatial coverage. Data is missing for Italy region between June and October 2011.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
-			<gvq:score>4</gvq:score>
-			<gvq:justification>Overall, very good temporal and spatial coverage. Data is missing for Spain region between June and August 2011.</gvq:justification>
+			<gvq:score>3</gvq:score>
+			<gvq:justification>Data is missing for Italy region between June and October 2011.</gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>
 				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
 			</gvq:reportAspect>
-			<gvq:usageDescription>The dataset was used for classification of forests cover in Spain between 2010 and 2013.</gvq:usageDescription>
+			<gvq:usageDescription>This dataset was used for classification of forests cover in Italy between 2010 and 2013.</gvq:usageDescription>
 			<gvq:discoveredIssue>
 				<gvq:GVQ_DiscoveredIssue>
 					<gvq:target xlink:href="targetUID"/>

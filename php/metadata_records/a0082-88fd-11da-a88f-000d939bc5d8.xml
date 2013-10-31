@@ -24,7 +24,7 @@
 				<gmd:citation>
 					<gmd:CI_Citation>
 						<gmd:title>
-							<gco:CharacterString>BIGFOOT LAND COVER SURFACES, 1993-2013</gco:CharacterString>
+							<gco:CharacterString>BIGFOOT LAND COVER SURFACES, 1980-2013</gco:CharacterString>
 						</gmd:title>
 						<gmd:date />
 						<gmd:date>
@@ -67,12 +67,12 @@
 					</gmd:CI_Citation>
 				</gmd:citation>
 				<gmd:abstract>
-					<gco:CharacterString>The BigFoot project gathered data for nine EOS Land Validation Sites located from Alaska to Brazil from 2000 to 2003. Each site is representative of one or two distinct biomes, including the Arctic tundra; boreal evergreen needleleaf forest; temperate cropland, grassland, evergreen needleleaf forest, and deciduous broadleaf forest; desert grassland and shrubland; and tropical evergreen broadleaf forest. These surfaces were produced from Landsat ETM+ imagery to explicitly characterize the land cover at the BigFoot Sites to provide validation of the MODIS land cover product. The land cover scheme is consistent with the categories defined by the MOD12 IGBP (http://geography.bu.edu/landcover/userguidelc/index.html) strategy. Each BigFoot land cover product covers approximately a 7 x 7 km extent and consists of the land cover surface image in standard geotiff format, an accompanying text file which provides metadata specific to the image (such as projection,data type, class names, etc), and associated auxiliary and world files. For an in depth discussion of methods used to produce these surfaces, please see references. Project Background:Reflectance data from MODIS, the Moderate Resolution Imaging Spectrometer onboard NASA''s Earth Observing System (EOS) satellite Terra ( http://landval.gsfc.nasa.gov/MODIS/index.php ), is used to produce several science products including land cover, leaf area index (LAI) and net primary production (NPP). The overall goal of the BigFoot Project was to provide validation of these products. To do this, BigFoot combined ground measurements, additional high resolution remote sensing data, and ecosystem process models at nine flux tower sites representing different biomes to evaluate the effects of the spatial and temporal patterns of ecosystem characteristics on MODIS products. BigFoot characterized up to a 7 x 7 km area (49 MODIS pixels) surrounding the CO2 flux towers located at each of the nine sites. We collected multi-year, in situ measurements of ecosystem structure and functional characteristics related to the terrestrial carbon cycle. Our sampling design allowed us to examine scales and spatial pattern of these properties, the inter-annual variability and validity of MODIS products, and provided for a field-based ecological characterization of the flux tower footprint. BigFoot was funded by NASA''s Terrestrial Ecology Program.</gco:CharacterString>
+					<gco:CharacterString>The BigFoot project gathered land cover data from 1980 to 2013, including the Arctic tundra; evergreen needleleaf forests; croplands, grasslands, evergreen needleleaf forests, and broadleaf forests; desert grasslands and shrublands; and tropical evergreen broadleaf forests. These surfaces were produced from Landsat ETM+ imagery to explicitly characterize the land cover to provide validation of the MODIS land cover product. The land cover scheme is consistent with the categories defined by the MOD12 IGBP (http://geography.bu.edu/landcover/userguidelc/index.html) strategy. Each BigFoot land cover product covers approximately a 700 x 700 km extent and consists of the land cover surface image in standard geotiff format, an accompanying text file which provides metadata specific to the image (such as projection,data type, class names, etc), and associated auxiliary and world files. For an in depth discussion of methods used to produce these surfaces, please see references. Project Background: Reflectance data from MODIS, the Moderate Resolution Imaging Spectrometer onboard NASA''s Earth Observing System (EOS) satellite Terra ( http://landval.gsfc.nasa.gov/MODIS/index.php ), is used to produce several science products including land cover, leaf area index (LAI) and net primary production (NPP). The overall goal of the BigFoot Project was to provide validation of these products. To do this, BigFoot combined ground measurements, additional high resolution remote sensing data, and ecosystem process models. We collected multi-year, in situ measurements of ecosystem structure and functional characteristics related to the terrestrial carbon cycle. Our sampling design allowed us to examine scales and spatial pattern of these properties, the inter-annual variability and validity of MODIS products, and provided for a field-based ecological characterization of the flux tower footprint. BigFoot was funded by NASA's  Ecology Program.</gco:CharacterString>
 				</gmd:abstract>
 				<gmd:descriptiveKeywords>
 					<gmd:MD_Keywords>
 						<gmd:keyword>
-							<gco:CharacterString>EARTH SCIENCE LAND SURFACE LAND USE/LAND COVER LAND COVER; LANDSAT-7; ETM+ ENHANCED THEMATIC MAPPER PLUS; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; BIGFOOT; CWIC CEOS WGISS INTEGRATED CATALOG; Lai; Agro; Konz; Sevi; Cheq; Metl; Tapa; Harv; Nobs; Tund; Otter; Modis; Canada; Alaksa; Boreas; Desert; Brazil; Barrow; Kansas; Tapajos; Bigfoot; Cropland; Manitoba; Illinois; Metolious; Bondville; Wisconsin; Land Cover; Park Falls; Validation; New Mexico; Vegetation; Arctic Tundra; Massachusetts; Konza Prairie; Boreal Forest; Sevilleta Lter; Leaf Area Index; Oregon Cascades; Tallgrass Prairie; Harvard Forest Lter; Temperate Mixed Forest; Temperate Needleleaf Forest; Tropical Broadleaf Evergreen Forest; GEOSCIENTIFIC INFORMATION; IMAGERY/BASE MAPS/EARTH COVER; ENGLISH;</gco:CharacterString>
+							<gco:CharacterString>EARTH SCIENCE LAND SURFACE LAND USE/LAND COVER LAND COVER; LANDSAT-7; ETM+ ENHANCED THEMATIC MAPPER PLUS; ESIP EARTH SCIENCE INFORMATION PARTNERS PROGRAM; EOSDIS EARTH OBSERVING SYSTEM DATA INFORMATION SYSTEM; BIGFOOT; CWIC CEOS WGISS INTEGRATED CATALOG; Lai; Agro; Konz; Sevi; Cheq; Metl; Tapa; Harv; Nobs; Tund; Otter; Modis; Canada; Alaksa; Boreas; Desert; Brazil; Barrow; Kansas; Tapajos; Bigfoot; Cropland; Manitoba; Illinois; Metolious; Bondville; Wisconsin; Land Cover; Park Falls; Validation; Vegetation; Leaf Area Index; Forest Lter; Mixed Forest; Needleleaf Forest; Broadleaf Evergreen Forest; GEOSCIENTIFIC INFORMATION; IMAGERY/BASE MAPS/EARTH COVER; ENGLISH;</gco:CharacterString>
 						</gmd:keyword>
 					</gmd:MD_Keywords>
 				</gmd:descriptiveKeywords>
@@ -83,20 +83,20 @@
 				<gmd:extent>
 					<gmd:EX_Extent>
 						<gmd:geographicElement>
-							<gmd:EX_GeographicBoundingBox>
-								<gmd:westBoundLongitude>
-									<gco:Decimal>-156.613006591797</gco:Decimal>
-								</gmd:westBoundLongitude>
-								<gmd:eastBoundLongitude>
-									<gco:Decimal>-54.9599990844727</gco:Decimal>
-								</gmd:eastBoundLongitude>
-								<gmd:southBoundLatitude>
-									<gco:Decimal>-2.85999989509583</gco:Decimal>
-								</gmd:southBoundLatitude>
-								<gmd:northBoundLatitude>
-									<gco:Decimal>71.2718963623047</gco:Decimal>
-								</gmd:northBoundLatitude>
-							</gmd:EX_GeographicBoundingBox>
+						  <gmd:EX_GeographicBoundingBox>
+							 <gmd:westBoundLongitude>
+								<gco:Decimal>-180</gco:Decimal>
+							 </gmd:westBoundLongitude>
+							 <gmd:eastBoundLongitude>
+								<gco:Decimal>180</gco:Decimal>
+							 </gmd:eastBoundLongitude>
+							 <gmd:southBoundLatitude>
+								<gco:Decimal>-90</gco:Decimal>
+							 </gmd:southBoundLatitude>
+							 <gmd:northBoundLatitude>
+								<gco:Decimal>90</gco:Decimal>
+							 </gmd:northBoundLatitude>
+						  </gmd:EX_GeographicBoundingBox>
 						</gmd:geographicElement>
 						<gmd:geographicElement>
 							<gmd:EX_BoundingPolygon>
@@ -719,7 +719,7 @@
 		<gvq:user>
 			<gvq:userDetails>
 				<gmd:individualName>
-					<gco:CharacterString>Jon Wilkies</gco:CharacterString>
+					<gco:CharacterString>Adam Wilkies</gco:CharacterString>
 				</gmd:individualName>
 				<gmd:organisationName>
 					<gco:CharacterString>FAO</gco:CharacterString>
@@ -730,7 +730,7 @@
 					<gmd:CI_RoleCode codeList="http://wis.wmo.int/2008/catalogues/draft_version_1-1/WMO_Codelists_ver1_1.xml#CI_RoleCode" codeListValue="user"/>
 				</gmd:role>
 			</gvq:userDetails>
-			<gvq:applicationDomain>Agriculture</gvq:applicationDomain>
+			<gvq:applicationDomain>Forestry</gvq:applicationDomain>
 			<gvq:expertiseLevel>4</gvq:expertiseLevel>
 			<gvq:userRole>
 				<gvq:GVQ_UserRoleCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_UserRoleCode" codeListValue="NonresearchEndUser"/>
@@ -746,12 +746,12 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>The dataset was used to monitor farming land use in the UK between June 2010 and July 2013. Metadta record provided lineage information which allowed traceability.</gvq:comment>
+			<gvq:comment>The dataset was used to observe forest cover in US from 2005 to 2008. Metadta record provided some lineage information which allowed traceability.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
 			<gvq:score>5</gvq:score>
-			<gvq:justification>The data is of good quality. Metadata record provides lineage information.</gvq:justification>
+			<gvq:justification>This dataset is of good quality. Metadata record provides some quality and lineage information.</gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>
@@ -772,7 +772,7 @@
 		<gvq:user>
 			<gvq:userDetails>
 				<gmd:individualName>
-					<gco:CharacterString>Xavier Pau</gco:CharacterString>
+					<gco:CharacterString>Daniel Lima</gco:CharacterString>
 				</gmd:individualName>
 				<gmd:organisationName>
 					<gco:CharacterString>UAB</gco:CharacterString>
@@ -799,18 +799,18 @@
 			</gvq:GVQ_DataQuality>
 		</gvq:qualityOverride>
 		<gvq:userComment>
-			<gvq:comment>The dataset was used for classification of forests cover in Spain between 2010 and 2013 . We discovered that data for June - August 2011 was missing.</gvq:comment>
+			<gvq:comment>The dataset is of good quality.</gvq:comment>
 			<gvq:mime-type>text/plain</gvq:mime-type>
 		</gvq:userComment>
 		<gvq:rating>
-			<gvq:score>4</gvq:score>
-			<gvq:justification>Overall, dataset provides good temporal and spatial coverage. Data is missing for Spain region between June and August 2011.</gvq:justification>
+			<gvq:score>5</gvq:score>
+			<gvq:justification>Overall, dataset provides good temporal and spatial coverage. </gvq:justification>
 		</gvq:rating>
 		<gvq:usage>
 			<gvq:reportAspect>
 				<gvq:GVQ_ReportAspectCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_ReportAspectCode" codeListValue="FitnessForPurpose"/>
 			</gvq:reportAspect>
-			<gvq:usageDescription></gvq:usageDescription>
+			<gvq:usageDescription>This dataset was used for classification of forest cover in Spain between 2010 and 2013.</gvq:usageDescription>
 			<gvq:discoveredIssue>
 				<gvq:GVQ_DiscoveredIssue>
 					<gvq:target xlink:href="targetUID"/>

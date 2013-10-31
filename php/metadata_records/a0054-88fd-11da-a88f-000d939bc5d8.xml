@@ -38,7 +38,7 @@
 				<gmd:citation>
 					<gmd:CI_Citation>
 						<gmd:title>
-							<gco:CharacterString>Agricultural Online Access (AGRICOLA) Database</gco:CharacterString>
+							<gco:CharacterString>Land Use Online Access Database</gco:CharacterString>
 						</gmd:title>
 						<gmd:date>
 							<gmd:CI_Date>
@@ -61,7 +61,7 @@
 					</gmd:CI_Citation>
 				</gmd:citation>
 				<gmd:abstract>
-					<gco:CharacterString>AGRICOLA (AGRICultural OnLine Access) is a bibliographic database of      citations to the agricultural literature created by the National      Agricultural Library and its cooperators. Production of these records      in electronic form began in 1970, but the database covers materials in      all formats, including printed works from the 15th century. The      records describe publications and resources encompassing all aspects      of agriculture and allied disciplines, including animal and veterinary      sciences, entomology, plant sciences, forestry, aquaculture and      fisheries, farming and farming systems, agricultural economics,      extension and education, food and human nutrition, and earth and      environmental sciences. Although AGRICOLA does not contain the      materials, thousands of AGRICOLA records are linked to online      full-text documents, with new links being added every day. AGRICOLA is      searchable on the World Wide Web at:            "http://agricola.nal.usda.gov/"            AGRICOLA can be accessed for a fee through several commercial vendors,      both online and on CD-ROM. Users can also lease the AGRICOLA file from      the National Technical Information Service (NTIS)      ("http://www.ntis.gov/products/types/databases/agricola.asp")	  [ This document was provided by NASA's Global Change Master Directory.       For more information on the source of this metadata please visit      http://gcmd.nasa.gov/r/geoss/[GCMD]USDA_AGRICOLA ]</gco:CharacterString>
+					<gco:CharacterString>Land Use OnLine Access is a bibliographic database of      citations to the agricultural literature created by the National Library and its cooperators. Production of these records      in electronic form began in 1970, but the database covers materials in      all formats, including printed works from the 15th century. The      records describe publications and resources encompassing all aspects      of land use and allied disciplines, including animal and veterinary      sciences, entomology, plant sciences, forestry, aquaculture and      fisheries, farming and farming systems, agricultural economics,      extension and education, food and human nutrition, and earth and      environmental sciences. </gco:CharacterString>
 				</gmd:abstract>
 				<gmd:resourceConstraints>
 					<gmd:MD_LegalConstraints id="GDC">

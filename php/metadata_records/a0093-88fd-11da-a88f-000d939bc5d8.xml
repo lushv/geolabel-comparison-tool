@@ -80,7 +80,7 @@
 				<gmd:citation>
 					<gmd:CI_Citation>
 						<gmd:title>
-							<gco:CharacterString>Dominant Land Cover and Use</gco:CharacterString>
+							<gco:CharacterString>Global Land Cover and Use</gco:CharacterString>
 						</gmd:title>
 						<gmd:date>
 							<gmd:CI_Date>
@@ -101,7 +101,7 @@
 					</gmd:CI_Citation>
 				</gmd:citation>
 				<gmd:abstract>
-					<gco:CharacterString>The map summarizes the status of the land use and land cover at global scale. It was compiled according to the current GAEZ (Global Agro-Ecological Zones) -2009 approach, developed by FAO in collaboration with IIASA (International Institute for Applied Systems Analysis).The current Global AEZ (GAEZ-2009) offers a standardized framework for the characterization of climate, soil and terrain conditions relevant to agricultural production, which can be applied at global to sub-national levels. The map is based on six geographic datasets: - GLC2000 land cover database at 30 arc-sec (http://www-gvm.jrc.it/glc2000), using regional and global legends (JRC, 2006); - an IFPRI global land cover categorization providing 17 land cover classes at 30 arc-sec. (IFPRI, 2002), based on a reinterpretation of the Global Land Cover Characteristics Database (GLCC ver. 2.0), EROS Data Centre (EDC, 2000); - FAO’s Global Forest Resources Assessment 2000 and 2005 (FAO, 2001; FAO, 2006) at 30 arc-sec. resolution; - digital Global Map of Irrigated Areas (GMIA) version 4.0 of (FAO/University of Frankfurt) at 5’ by 5’ latitude/longitude resolution, providing by grid-cell the percentage land area equipped with irrigation infrastructure (Siebert et al., 2007); -  a spatial population density inventory (30-arc seconds) for year 2000 developed by FAO-SDRN, based on spatial data of LANDSCAN 2003, with calibration to UN 2000 population figures. An iterative calculation procedure has been implemented to estimate land cover class weights, consistent with aggregate FAO land statistics and spatial land cover patterns obtained from  remotely sensed data, allowing the quantification of major land use/land cover shares in individual 5’ by 5’ latitude/longitude grid cells.</gco:CharacterString>
+					<gco:CharacterString>The map summarizes the status of the land use and land cover at global scale. It was compiled according to the current GAEZ (Global Ecological Zones) approach, developed by FAO in collaboration with IIASA (International Institute for Applied Systems Analysis).The current Global AEZ (GAEZ-2009) offers a standardized framework for the characterization of climate, soil and terrain conditions relevant to agricultural production, which can be applied at global to sub-national levels. The map is based on six geographic datasets: - GLC land cover database at 30 arc-sec (http://www-gvm.jrc.it/glc2000), using regional and global legends (JRC, 2006); - an IFPRI global land cover categorization providing 17 land cover classes at 30 arc-sec. (IFPRI, 2002), based on a reinterpretation of the Global Land Cover Characteristics Database (GLCC ver. 2.0), EROS Data Centre (EDC, 2000); - FAO’s Global Forest Resources Assessment (FAO, 2001; FAO, 2006) at 30 arc-sec. resolution; - digital Global Map of Irrigated Areas (GMIA) version 4.0 of (FAO/University of Frankfurt) at 5’ by 5’ latitude/longitude resolution, providing by grid-cell the percentage land area equipped with irrigation infrastructure (Siebert et al., 2007); -  a spatial population density inventory (30-arc seconds) for year 2000 developed by FAO-SDRN, based on spatial data of LANDSCAN 2003, with calibration to UN 2000 population figures. An iterative calculation procedure has been implemented to estimate land cover class weights, consistent with aggregate FAO land statistics and spatial land cover patterns obtained from  remotely sensed data, allowing the quantification of major land use/land cover shares in individual 5’ by 5’ latitude/longitude grid cells.</gco:CharacterString>
 				</gmd:abstract>
 				<gmd:purpose>
 					<gco:CharacterString>Map published in the FAO SOLAW Report "Managing Systems at Risk"</gco:CharacterString>
@@ -164,7 +164,7 @@
 				<gmd:graphicOverview>
 					<gmd:MD_BrowseGraphic>
 						<gmd:fileName>
-							<gco:CharacterString>map1_1_dominant_landuse_s.png</gco:CharacterString>
+							<gco:CharacterString>png</gco:CharacterString>
 						</gmd:fileName>
 						<gmd:fileDescription>
 							<gco:CharacterString>thumbnail</gco:CharacterString>
@@ -190,19 +190,7 @@
 				<gmd:descriptiveKeywords>
 					<gmd:MD_Keywords>
 						<gmd:keyword>
-							<gco:CharacterString>landuse</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:keyword>
-							<gco:CharacterString>land use</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:keyword>
-							<gco:CharacterString>land cover</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:keyword>
-							<gco:CharacterString>Managing Systems at Risk</gco:CharacterString>
-						</gmd:keyword>
-						<gmd:keyword>
-							<gco:CharacterString>SOLAW</gco:CharacterString>
+							<gco:CharacterString>World, landuse, land use, land cover, forest cover</gco:CharacterString>
 						</gmd:keyword>
 						<gmd:keyword gco:nilReason="missing">
 							<gco:CharacterString />
@@ -215,7 +203,7 @@
 				<gmd:descriptiveKeywords>
 					<gmd:MD_Keywords>
 						<gmd:keyword>
-							<gco:CharacterString>World</gco:CharacterString>
+							<gco:CharacterString></gco:CharacterString>
 						</gmd:keyword>
 						<gmd:type>
 							<gmd:MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_KeywordTypeCode" codeListValue="place" />
@@ -284,6 +272,294 @@
 				<gmd:supplementalInformation>
 					<gco:CharacterString>The map is published in the SOLAW thematic report 3 (Lead: Hubert George)</gco:CharacterString>
 				</gmd:supplementalInformation>
+		  <gmd19157:referenceDoc>
+			<gvq:GVQ_Publication>
+				<gmd:title>
+					<gco:CharacterString>US forest types and predicted percent forest cover</gco:CharacterString>
+				</gmd:title>
+				<gmd:date>
+					<gmd:CI_Date>
+						<gmd:date>
+							<gco:Date>2000-03-01</gco:Date>
+						</gmd:date>
+						<gmd:dateType>
+							<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+						</gmd:dateType>
+					</gmd:CI_Date>
+				</gmd:date>
+				<gmd:ISSN>
+					<gco:CharacterString>0196-2892</gco:CharacterString>
+				</gmd:ISSN>
+				<gvq:target>
+					<updated19115:MD_Identifier uuid="jrc.europa.eu:GLC2000" id="GLC2000">
+						<!-- the ID is used for xlinking within the document (see 'discoveredIssue'), the UUID for potential outside links -->
+						<gmd:code>
+							<gco:CharacterString></gco:CharacterString>
+						</gmd:code>
+						<updated19115:codeSpace>
+							<gco:CharacterString></gco:CharacterString>
+						</updated19115:codeSpace>
+					</updated19115:MD_Identifier>
+				</gvq:target>
+				<gvq:doi>
+					<gco:CharacterString>01.3340/RSSF.2013.769908</gco:CharacterString>
+				</gvq:doi>
+				<gvq:purpose>
+					<gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>
+				</gvq:purpose>
+				<gvq:scope xlink:href="#datasetScope"/>
+				<gvq:category>
+					<gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+				</gvq:category>
+				<gvq:onlineResource>
+					<gmd:CI_OnlineResource>
+						<gmd:linkage>
+							<gmd:URL>http://cat.inist.fr/</gmd:URL>
+						</gmd:linkage>
+					</gmd:CI_OnlineResource>
+				</gvq:onlineResource>
+			</gvq:GVQ_Publication>
+		</gmd19157:referenceDoc>
+		  <gmd19157:referenceDoc>
+			<gvq:GVQ_Publication>
+				<gmd:title>
+					<gco:CharacterString>Information about old growth for selected forest type groups in the eastern United States</gco:CharacterString>
+				</gmd:title>
+				<gmd:date>
+					<gmd:CI_Date>
+						<gmd:date>
+							<gco:Date>2005-06-22</gco:Date>
+						</gmd:date>
+						<gmd:dateType>
+							<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+						</gmd:dateType>
+					</gmd:CI_Date>
+				</gmd:date>
+				<gmd:ISSN>
+					<gco:CharacterString>0196-2892</gco:CharacterString>
+				</gmd:ISSN>
+				<gvq:target>
+					<updated19115:MD_Identifier uuid="jrc.europa.eu:GLC2000" id="GLC2000">
+						<!-- the ID is used for xlinking within the document (see 'discoveredIssue'), the UUID for potential outside links -->
+						<gmd:code>
+							<gco:CharacterString></gco:CharacterString>
+						</gmd:code>
+						<updated19115:codeSpace>
+							<gco:CharacterString></gco:CharacterString>
+						</updated19115:codeSpace>
+					</updated19115:MD_Identifier>
+				</gvq:target>
+				<gvq:doi>
+					<gco:CharacterString>09.1165/GRSF.2093.769908</gco:CharacterString>
+				</gvq:doi>
+				<gvq:purpose>
+					<gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>
+				</gvq:purpose>
+				<gvq:scope xlink:href="#datasetScope"/>
+				<gvq:category>
+					<gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+				</gvq:category>
+				<gvq:onlineResource>
+					<gmd:CI_OnlineResource>
+						<gmd:linkage>
+							<gmd:URL>http://www.sciencedirect.com/</gmd:URL>
+						</gmd:linkage>
+					</gmd:CI_OnlineResource>
+				</gvq:onlineResource>
+			</gvq:GVQ_Publication>
+		</gmd19157:referenceDoc>
+		  <gmd19157:referenceDoc>
+			<gvq:GVQ_Publication>
+				<gmd:title>
+					<gco:CharacterString>Transforming traditional agriculture</gco:CharacterString>
+				</gmd:title>
+				<gmd:date>
+					<gmd:CI_Date>
+						<gmd:date>
+							<gco:Date>2008-03-01</gco:Date>
+						</gmd:date>
+						<gmd:dateType>
+							<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+						</gmd:dateType>
+					</gmd:CI_Date>
+				</gmd:date>
+				<gmd:ISSN>
+					<gco:CharacterString>0196-2892</gco:CharacterString>
+				</gmd:ISSN>
+				<gvq:target>
+					<updated19115:MD_Identifier uuid="jrc.europa.eu:GLC2000" id="GLC2000">
+						<!-- the ID is used for xlinking within the document (see 'discoveredIssue'), the UUID for potential outside links -->
+						<gmd:code>
+							<gco:CharacterString></gco:CharacterString>
+						</gmd:code>
+						<updated19115:codeSpace>
+							<gco:CharacterString></gco:CharacterString>
+						</updated19115:codeSpace>
+					</updated19115:MD_Identifier>
+				</gvq:target>
+				<gvq:doi>
+					<gco:CharacterString>75.4498/GWST.2013.769908</gco:CharacterString>
+				</gvq:doi>
+				<gvq:purpose>
+					<gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>
+				</gvq:purpose>
+				<gvq:scope xlink:href="#datasetScope"/>
+				<gvq:category>
+					<gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+				</gvq:category>
+				<gvq:onlineResource>
+					<gmd:CI_OnlineResource>
+						<gmd:linkage>
+							<gmd:URL>http://www.tandfonline.com/</gmd:URL>
+						</gmd:linkage>
+					</gmd:CI_OnlineResource>
+				</gvq:onlineResource>
+			</gvq:GVQ_Publication>
+		</gmd19157:referenceDoc>
+		  <gmd19157:referenceDoc>
+			<gvq:GVQ_Publication>
+				<gmd:title>
+					<gco:CharacterString>Separability of tropical rain-forest types in the Tambopata-Candamo Reserved Zone, Peru</gco:CharacterString>
+				</gmd:title>
+				<gmd:date>
+					<gmd:CI_Date>
+						<gmd:date>
+							<gco:Date>2010-09-01</gco:Date>
+						</gmd:date>
+						<gmd:dateType>
+							<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+						</gmd:dateType>
+					</gmd:CI_Date>
+				</gmd:date>
+				<gmd:ISSN>
+					<gco:CharacterString>0196-2892</gco:CharacterString>
+				</gmd:ISSN>
+				<gvq:target>
+					<updated19115:MD_Identifier uuid="jrc.europa.eu:GLC2000" id="GLC2000">
+						<!-- the ID is used for xlinking within the document (see 'discoveredIssue'), the UUID for potential outside links -->
+						<gmd:code>
+							<gco:CharacterString></gco:CharacterString>
+						</gmd:code>
+						<updated19115:codeSpace>
+							<gco:CharacterString></gco:CharacterString>
+						</updated19115:codeSpace>
+					</updated19115:MD_Identifier>
+				</gvq:target>
+				<gvq:doi>
+					<gco:CharacterString>07.3340/GTFF.2013.769908</gco:CharacterString>
+				</gvq:doi>
+				<gvq:purpose>
+					<gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>
+				</gvq:purpose>
+				<gvq:scope xlink:href="#datasetScope"/>
+				<gvq:category>
+					<gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+				</gvq:category>
+				<gvq:onlineResource>
+					<gmd:CI_OnlineResource>
+						<gmd:linkage>
+							<gmd:URL>http://www.tandfonline.com/</gmd:URL>
+						</gmd:linkage>
+					</gmd:CI_OnlineResource>
+				</gvq:onlineResource>
+			</gvq:GVQ_Publication>
+		</gmd19157:referenceDoc>
+		  <gmd19157:referenceDoc>
+			<gvq:GVQ_Publication>
+				<gmd:title>
+					<gco:CharacterString>Review of root dynamics in forest ecosystems grouped by climate, climatic forest type and species</gco:CharacterString>
+				</gmd:title>
+				<gmd:date>
+					<gmd:CI_Date>
+						<gmd:date>
+							<gco:Date>2012-05-27</gco:Date>
+						</gmd:date>
+						<gmd:dateType>
+							<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+						</gmd:dateType>
+					</gmd:CI_Date>
+				</gmd:date>
+				<gmd:ISSN>
+					<gco:CharacterString>0196-2892</gco:CharacterString>
+				</gmd:ISSN>
+				<gvq:target>
+					<updated19115:MD_Identifier uuid="jrc.europa.eu:GLC2000" id="GLC2000">
+						<!-- the ID is used for xlinking within the document (see 'discoveredIssue'), the UUID for potential outside links -->
+						<gmd:code>
+							<gco:CharacterString></gco:CharacterString>
+						</gmd:code>
+						<updated19115:codeSpace>
+							<gco:CharacterString></gco:CharacterString>
+						</updated19115:codeSpace>
+					</updated19115:MD_Identifier>
+				</gvq:target>
+				<gvq:doi>
+					<gco:CharacterString>39.3340/YRTS.2013.769908</gco:CharacterString>
+				</gvq:doi>
+				<gvq:purpose>
+					<gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>
+				</gvq:purpose>
+				<gvq:scope xlink:href="#datasetScope"/>
+				<gvq:category>
+					<gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+				</gvq:category>
+				<gvq:onlineResource>
+					<gmd:CI_OnlineResource>
+						<gmd:linkage>
+							<gmd:URL>http://link.springer.com/</gmd:URL>
+						</gmd:linkage>
+					</gmd:CI_OnlineResource>
+				</gvq:onlineResource>
+			</gvq:GVQ_Publication>
+		</gmd19157:referenceDoc>
+		  <gmd19157:referenceDoc>
+			<gvq:GVQ_Publication>
+				<gmd:title>
+					<gco:CharacterString>Natural forest vegetation zones of New England</gco:CharacterString>
+				</gmd:title>
+				<gmd:date>
+					<gmd:CI_Date>
+						<gmd:date>
+							<gco:Date>2013-03-01</gco:Date>
+						</gmd:date>
+						<gmd:dateType>
+							<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+						</gmd:dateType>
+					</gmd:CI_Date>
+				</gmd:date>
+				<gmd:ISSN>
+					<gco:CharacterString>0196-2892</gco:CharacterString>
+				</gmd:ISSN>
+				<gvq:target>
+					<updated19115:MD_Identifier uuid="jrc.europa.eu:GLC2000" id="GLC2000">
+						<!-- the ID is used for xlinking within the document (see 'discoveredIssue'), the UUID for potential outside links -->
+						<gmd:code>
+							<gco:CharacterString></gco:CharacterString>
+						</gmd:code>
+						<updated19115:codeSpace>
+							<gco:CharacterString></gco:CharacterString>
+						</updated19115:codeSpace>
+					</updated19115:MD_Identifier>
+				</gvq:target>
+				<gvq:doi>
+					<gco:CharacterString>39.3340/JJCW.2013.769908</gco:CharacterString>
+				</gvq:doi>
+				<gvq:purpose>
+					<gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>
+				</gvq:purpose>
+				<gvq:scope xlink:href="#datasetScope"/>
+				<gvq:category>
+					<gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+				</gvq:category>
+				<gvq:onlineResource>
+					<gmd:CI_OnlineResource>
+						<gmd:linkage>
+							<gmd:URL>www.ingentaconnect.com/</gmd:URL>
+						</gmd:linkage>
+					</gmd:CI_OnlineResource>
+				</gvq:onlineResource>
+			</gvq:GVQ_Publication>
+		</gmd19157:referenceDoc>
 			</gmd:MD_DataIdentification>
 		</gmd:identificationInfo>
 		<gmd:distributionInfo>
@@ -449,4 +725,365 @@
 				</gmd:transferOptions>
 			</gmd:MD_Distribution>
 		</gmd:distributionInfo>
+    <gvq:dataQualityInfo>
+        <gvq:GVQ_DataQuality>
+            <gmd19157:scope>
+                <gmd19157:DQ_Scope id="datasetScope">
+                    <gmd19157:level>
+                        <gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode" codeListValue="pixel"/>
+                    </gmd19157:level>
+                    <gmd19157:extent>
+                        <gmd:EX_Extent id="boundingExtent">
+                            <gmd:geographicElement>
+                                <gmd:EX_GeographicBoundingBox id="boundingGeographicBoundingBox">
+                                    <gmd:extentTypeCode>
+                                        <gco:Boolean>true</gco:Boolean>
+                                    </gmd:extentTypeCode>
+                                    <gmd:westBoundLongitude>
+                                        <gco:Decimal>-180</gco:Decimal>
+                                    </gmd:westBoundLongitude>
+                                    <gmd:eastBoundLongitude>
+                                        <gco:Decimal>180</gco:Decimal>
+                                    </gmd:eastBoundLongitude>
+                                    <gmd:southBoundLatitude>
+                                        <gco:Decimal>-90</gco:Decimal>
+                                    </gmd:southBoundLatitude>
+                                    <gmd:northBoundLatitude>
+                                        <gco:Decimal>90</gco:Decimal>
+                                    </gmd:northBoundLatitude>
+                                </gmd:EX_GeographicBoundingBox>
+                            </gmd:geographicElement>
+                        </gmd:EX_Extent>
+                    </gmd19157:extent>
+                    <gmd19157:levelDescription/>
+                </gmd19157:DQ_Scope>
+            </gmd19157:scope>
+            <!-- Report which contains information on an assessment of thematic classification correctness -->
+            <gmd19157:report>
+                <gmd19157:DQ_ThematicClassificationCorrectness id="ThematicValidation1">
+                    <gmd19157:evaluation>
+                        <gvq:GVQ_SampleBasedInspection>
+                            <gmd19157:evaluationMethodDescription>
+                                <gco:CharacterString>Calculation of omission and commission statistics from sample polygons.</gco:CharacterString>
+                            </gmd19157:evaluationMethodDescription>
+                            <gmd19157:referenceDoc>
+                                <gvq:GVQ_Publication>
+                                    <gmd:title>
+                                        <gco:CharacterString>Validation of the global land cover map</gco:CharacterString>
+                                    </gmd:title>
+                                    <gmd:date>
+                                        <gmd:CI_Date>
+                                            <gmd:date>
+                                                <gco:Date>2006-07-01</gco:Date>
+                                            </gmd:date>
+                                            <gmd:dateType>
+                                                <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+                                            </gmd:dateType>
+                                        </gmd:CI_Date>
+                                    </gmd:date>
+                                    <gmd:ISSN>
+                                        <gco:CharacterString>0196-2892</gco:CharacterString>
+                                    </gmd:ISSN>
+                                    <gvq:target>
+                                        <updated19115:MD_Identifier uuid="jrc.europa.eu:GLC" id="GLC">
+                                            <gmd:code>
+                                                <gco:CharacterString>GLC</gco:CharacterString>
+                                            </gmd:code>
+                                            <updated19115:codeSpace>
+                                                <gco:CharacterString>jrc.europa.eu</gco:CharacterString>
+                                            </updated19115:codeSpace>
+                                        </updated19115:MD_Identifier>
+                                    </gvq:target>
+                                    <gvq:doi>
+                                        <gco:CharacterString>10.1109/TGRS.2006.864370</gco:CharacterString>
+                                    </gvq:doi>
+                                    <gvq:purpose>
+                                        <gvq:GVQ_PublicationPurposeCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationPurposeCode" codeListValue="evaluate">evaluate</gvq:GVQ_PublicationPurposeCode>
+                                    </gvq:purpose>
+                                    <gvq:scope xlink:href="#datasetScope"/>
+                                    <gvq:category>
+                                        <gvq:GVQ_PublicationCategoryCode codeList="http://www.geoviqua.org/QualityInformationModel/4.0/resources/codeList.xml#GVQ_PublicationCategoryCode" codeListValue="journalArticle">journalArticle</gvq:GVQ_PublicationCategoryCode>
+                                    </gvq:category>
+                                    <gvq:onlineResource>
+                                        <gmd:CI_OnlineResource>
+                                            <gmd:linkage>
+                                                <gmd:URL>http://ieeexplore.ieee.org/</gmd:URL>
+                                            </gmd:linkage>
+                                        </gmd:CI_OnlineResource>
+                                    </gvq:onlineResource>
+                                </gvq:GVQ_Publication>
+                            </gmd19157:referenceDoc>
+                            <gmd19157:evaluationMethodType>
+                                <gmd19157:DQ_EvaluationMethodTypeCode codeList="http://www.geoviqua.org/gmd19157/resources/codeList.xml#DQ_EvaluationMethodTypeCode" codeListValue="directExternal"/>
+                            </gmd19157:evaluationMethodType>
+                            <gmd19157:samplingScheme>
+                                <gco:CharacterString>Stratified by landcover type.</gco:CharacterString>
+                            </gmd19157:samplingScheme>
+                            <gmd19157:lotDescription/>
+                            <gmd19157:samplingRatio/>
+                            <gvq:referenceDataset>
+                                <updated19115:MD_AssociatedResource>
+                                    <updated19115:associationType>
+                                        <gmd:DS_AssociationTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#DS_AssociationTypeCode" codeListValue="crossReference"/>
+                                    </updated19115:associationType>
+                                    <updated19115:initiativeType>
+                                        <gmd:DS_InitiativeTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#DS_InitiativeTypeCode" codeListValue="study"/>
+                                    </updated19115:initiativeType>
+                                    <updated19115:metadataReference gco:nilReason="unknown"/>
+                                </updated19115:MD_AssociatedResource>
+                            </gvq:referenceDataset>
+                        </gvq:GVQ_SampleBasedInspection>
+                    </gmd19157:evaluation>
+                    <gmd19157:result>
+                        <gmd19157:DQ_QuantitativeResult>
+                            <gmd19157:resultScope xlink:href="#datasetScope"/>
+                            <gmd19157:valueType>
+                                <gco:RecordType xlink:href="urn:ogc:def:uom:UCUM:%25">
+                                    Percentage accuracy
+                                </gco:RecordType>
+                            </gmd19157:valueType>
+                            <gmd19157:valueUnit xlink:href="urn:ogc:def:uom:UCUM:%25"/>
+                            <gmd19157:value>
+                                <gco:Record>68.6</gco:Record>
+                            </gmd19157:value>
+                        </gmd19157:DQ_QuantitativeResult>
+                    </gmd19157:result>
+                    <gmd19157:result>
+                        <gmd19157:DQ_QuantitativeResult>
+                            <gmd19157:resultScope xlink:href="#datasetScope"/>
+                            <gmd19157:valueType>
+                                <gco:RecordType xlink:href="http://www.uncertml.org/statistics/confusion-matrix">
+                                    Confusion matrix recording counts from ground truthing
+                                </gco:RecordType>
+                            </gmd19157:valueType>
+                            <gmd19157:valueUnit/>
+                            <gmd19157:value>
+                                <gco:Record>
+                                    <un:ConfusionMatrix xmlns:un="http://www.uncertml.org/2.0">
+                                        <un:sourceCategories>
+                                            1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21
+                                        </un:sourceCategories>
+                                        <un:targetCategories>
+                                            1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21
+                                        </un:targetCategories>
+                                        <un:counts>
+                                            558 0 7 0 0 0 0 0 10 0 0 0 0 0 0 10 0 0 0 0 0
+                                            0 104 0 0 0 0 0 0 0 0 0 4 0 0 0 0 0 0 0 0 0
+                                            19 56 19 0 0 0 0 0 21 0 10 0 0 0 0 0 0 0 0 0 0
+                                            0 14 0 174 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                                            0 0 0 10 19 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                                            7 50 0 111 10 113 0 0 0 4 10 0 0 0 0 0 0 0 0 0 0
+                                            27 0 0 7 0 0 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                                            10 0 0 0 0 0 0 10 0 0 0 0 0 0 0 0 0 0 0 0 0
+                                            0 0 0 0 0 0 0 0 14 0 0 0 0 0 10 0 0 0 0 0 0
+                                            10 0 0 0 0 0 0 0 10 0 35 14 45 0 16 0 0 0 0 0 0
+                                            0 23 52 7 0 0 0 0 27 0 109 82 95 10 19 0 0 4 0 0 0
+                                            0 10 7 0 0 0 0 0 21 0 44 112 0 0 19 0 31 0 0 0 0
+                                            0 0 0 0 0 0 0 0 0 0 14 62 181 0 14 0 0 22 0 0 0
+                                            10 19 0 10 0 0 0 0 0 0 0 4 0 33 7 0 10 0 0 0 0
+                                            0 0 0 11 0 0 0 0 0 0 0 50 7 0 442 10 21 27 10 0 0
+                                            19 10 10 23 0 7 0 0 0 0 0 0 0 0 39 87 16 14 0 0 0
+                                            0 10 0 0 0 0 0 0 0 0 10 0 0 0 31 0 0 0 0 0 0
+                                            0 0 0 0 0 0 0 0 0 0 0 7 30 0 10 0 4 999 0 0 0
+                                            0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 353 0 0
+                                            0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18 0
+                                            0 0 0 7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                                        </un:counts>
+                                    </un:ConfusionMatrix>
+                                </gco:Record>
+                            </gmd19157:value>
+                        </gmd19157:DQ_QuantitativeResult>
+                    </gmd19157:result>
+                </gmd19157:DQ_ThematicClassificationCorrectness>
+            </gmd19157:report>
+            <!-- Report which contains 'traceability' information about the thematic classification assessment above -->
+            <gmd19157:report>
+                <gvq:GVQ_Traceability>
+                    <gmd19157:evaluation>
+                        <gmd19157:DQ_FullInspection>
+                            <gmd19157:evaluationMethodDescription>
+                                <gco:CharacterString>
+                                    Analysis published in a peer-reviewed journal article with full description of methodology.
+                                </gco:CharacterString>
+                            </gmd19157:evaluationMethodDescription>
+                            <gmd19157:evaluationMethodType>
+                                <gmd19157:DQ_EvaluationMethodTypeCode codeList="http://www.geoviqua.org/gmd19157/resources/codeList.xml#DQ_EvaluationMethodTypeCode" codeListValue="directExternal"/>
+                            </gmd19157:evaluationMethodType>
+                        </gmd19157:DQ_FullInspection>
+                    </gmd19157:evaluation>
+                    <gmd19157:result>
+                        <gmd19157:DQ_DescriptiveResult>
+                            <gmd19157:resultScope xlink:href="#datasetScope"/>
+                            <gmd19157:statement>
+                                <gco:CharacterString>
+                                    The thematic validation procedure was carried out using design-based inference which conforms to the CEOS Cal-Val recommendations.
+                                    The resulting research was published in a peer-reviewed journal, and the component datasets generated for the validation are available online.
+								</gco:CharacterString>
+							</gmd19157:statement>
+                        </gmd19157:DQ_DescriptiveResult>
+                    </gmd19157:result>
+                    <!-- We use an xlink to point to the quality element within this document to which this 'metaquality' refers -->
+                    <gmd19157:relatedElement xlink:href="#ThematicValidation1"/>
+                    <!-- The 'trace' element contains lineage information -->
+                    <gvq:trace>
+                            <gmd19157:LI_Lineage>
+                                <gmd19157:statement>
+                                    <gco:CharacterString>The thematic validation procedure was carried out using design-based inference which conforms to the CEOS Cal-Val recommendations.</gco:CharacterString>
+                                </gmd19157:statement>
+                                <gmd19157:processStep>
+                                    <gmd19157:LI_ProcessStep>
+                                        <gmd19157:description>
+                                            <gco:CharacterString>Stratified sampling of ground truth blocks.</gco:CharacterString>
+                                        </gmd19157:description>
+                                        <gmd19157:rationale>
+                                            <gco:CharacterString>
+                                                Systematic sampling to obtain an irregular stratification with different sampling rates for each stratum.</gco:CharacterString>
+                                        </gmd19157:rationale>
+                                        <gmd19157:processor>
+                                            <gmd:CI_ResponsibleParty id="DrFiction">
+                                                <gmd:individualName>
+                                                    <gco:CharacterString>Dr Fiction</gco:CharacterString>
+                                                </gmd:individualName>
+                                                <gmd:organisationName>
+                                                    <gco:CharacterString>Joint Research Centre of the European Commission</gco:CharacterString>
+                                                </gmd:organisationName>
+                                                <gmd:positionName>
+                                                    <gco:CharacterString>Research Assistant</gco:CharacterString>
+                                                </gmd:positionName>
+                                                <gmd:contactInfo>
+                                                    <gmd:CI_Contact>
+                                                        <gmd:phone>
+                                                            <gmd:CI_Telephone>
+                                                                <gmd:voice gco:nilReason="missing">
+                                                                    <gco:CharacterString/>
+                                                                </gmd:voice>
+                                                                <gmd:facsimile gco:nilReason="missing">
+                                                                    <gco:CharacterString/>
+                                                                </gmd:facsimile>
+                                                            </gmd:CI_Telephone>
+                                                        </gmd:phone>
+                                                        <gmd:address>
+                                                            <gmd:CI_Address>
+                                                                <gmd:deliveryPoint>
+                                                                    <gco:CharacterString>Via Enrico Fermi, Ispra Italy</gco:CharacterString>
+                                                                </gmd:deliveryPoint>
+                                                                <gmd:city>
+                                                                    <gco:CharacterString>Ispra</gco:CharacterString>
+                                                                </gmd:city>
+                                                                <gmd:country>
+                                                                    <gco:CharacterString>Italy</gco:CharacterString>
+                                                                </gmd:country>
+                                                                <gmd:electronicMailAddress>
+                                                                    <gco:CharacterString>drfiction@ec.auropa.eu</gco:CharacterString>
+                                                                </gmd:electronicMailAddress>
+                                                            </gmd:CI_Address>
+                                                        </gmd:address>
+                                                    </gmd:CI_Contact>
+                                                </gmd:contactInfo>
+                                                <gmd:role>
+                                                    <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode" codeListValue="processor"/>
+                                                </gmd:role>
+                                            </gmd:CI_ResponsibleParty>
+                                        </gmd19157:processor>
+                                        <gmd19157:source>
+                                            <gmd19157:LI_Source>
+                                                <gmd19157:description>
+                                                    <gco:CharacterString>Schematic sub-sampling of all landcover categories</gco:CharacterString>
+                                                </gmd19157:description>
+                                                <gmd19157:sourceReferenceSystem>
+                                                    <gmd:MD_ReferenceSystem>
+                                                        <gmd:referenceSystemIdentifier>
+                                                            <gmd:RS_Identifier>
+                                                                <gmd:code gco:nilReason="missing">
+                                                                    <gco:CharacterString/>
+                                                                </gmd:code>
+                                                            </gmd:RS_Identifier>
+                                                        </gmd:referenceSystemIdentifier>
+                                                    </gmd:MD_ReferenceSystem>
+                                                </gmd19157:sourceReferenceSystem>
+                                                <gmd19157:sourceCitation>
+                                                </gmd19157:sourceCitation>
+                                            </gmd19157:LI_Source>
+                                        </gmd19157:source>
+                                    </gmd19157:LI_ProcessStep>
+                                </gmd19157:processStep>
+                                <gmd19157:processStep>
+                                    <gmd19157:LI_ProcessStep>
+                                        <gmd19157:description>
+                                            <gco:CharacterString>Interpretation by regional experts of 3x3km sample boxes at specified sample sites.
+                                                Regional interpreters used ancillary data like aerial photographs, thematic maps and NDVI profiles at coarse resolution in support to the Landsat interpretation.
+											</gco:CharacterString>
+                                        </gmd19157:description>
+                                        <gmd19157:rationale>
+                                            <gco:CharacterString>
+                                                Local knowledge required to verify exact landcovers at each ground truth point.</gco:CharacterString>
+                                        </gmd19157:rationale>
+                                        <gmd19157:processor xlink:href="DrFiction">
+                                        </gmd19157:processor>
+                                        <gmd19157:source>
+                                            <gmd19157:LI_Source>
+                                                <gmd19157:description>
+                                                    <gco:CharacterString>Collected table of landcover categories for all sample sites.</gco:CharacterString>
+                                                </gmd19157:description>
+                                                <gmd19157:sourceReferenceSystem>
+                                                    <gmd:MD_ReferenceSystem>
+                                                        <gmd:referenceSystemIdentifier>
+                                                            <gmd:RS_Identifier>
+                                                                <gmd:code gco:nilReason="missing">
+                                                                    <gco:CharacterString/>
+                                                                </gmd:code>
+                                                            </gmd:RS_Identifier>
+                                                        </gmd:referenceSystemIdentifier>
+                                                    </gmd:MD_ReferenceSystem>
+                                                </gmd19157:sourceReferenceSystem>
+                                            </gmd19157:LI_Source>
+                                        </gmd19157:source>
+                                    </gmd19157:LI_ProcessStep>
+                                </gmd19157:processStep>
+                                 <gmd19157:processStep>
+                                    <gmd19157:LI_ProcessStep>
+                                        <gmd19157:description>
+                                            <gco:CharacterString>Cross-validation of independently interpreted sites against GLC data to generate confusion matrix and Kappa statistic.
+											</gco:CharacterString>
+                                        </gmd19157:description>
+                                        <gmd19157:rationale>
+                                            <gco:CharacterString>
+                                                Identification of classes prone to confusion, and overall assessment of the accuracy of the classification.</gco:CharacterString>
+                                        </gmd19157:rationale>
+                                        <gmd19157:processor xlink:href="DrFiction">
+                                        </gmd19157:processor>
+                                        <gmd19157:source>
+                                            <gmd19157:LI_Source>
+                                                <gmd19157:description>
+                                                    <gco:CharacterString>Confusion matrix and overall accuracy value.</gco:CharacterString>
+                                                </gmd19157:description>
+                                                <gmd19157:sourceReferenceSystem>
+                                                    <gmd:MD_ReferenceSystem>
+                                                        <gmd:referenceSystemIdentifier>
+                                                            <gmd:RS_Identifier>
+                                                                <gmd:code gco:nilReason="missing">
+                                                                    <gco:CharacterString/>
+                                                                </gmd:code>
+                                                            </gmd:RS_Identifier>
+                                                        </gmd:referenceSystemIdentifier>
+                                                    </gmd:MD_ReferenceSystem>
+                                                </gmd19157:sourceReferenceSystem>
+                                            </gmd19157:LI_Source>
+                                        </gmd19157:source>
+                                    </gmd19157:LI_ProcessStep>
+                                </gmd19157:processStep>
+                            </gmd19157:LI_Lineage>
+                    </gvq:trace>
+                </gvq:GVQ_Traceability>
+            </gmd19157:report>
+            <gvq:discoveredIssue>
+                <gvq:GVQ_DiscoveredIssue>
+                    <gvq:target xlink:href="#"/>
+                    <gvq:knownProblem>
+                        <gco:CharacterString>Some legend issues</gco:CharacterString>
+                    </gvq:knownProblem>
+                </gvq:GVQ_DiscoveredIssue>
+            </gvq:discoveredIssue>
+        </gvq:GVQ_DataQuality>
+    </gvq:dataQualityInfo>
 </gvq:GVQ_Metadata>
