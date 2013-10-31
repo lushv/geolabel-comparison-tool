@@ -46,6 +46,8 @@ $(document).ready(function() {
 
 	$("#process-steps-input").val('');
 	$("#process-steps-input").prop('disabled', true);
+	$("#process-steps-min-input").val('');
+	$("#process-steps-min-input").prop('disabled', true);
 	$("#filter-lineage-btn").prop('disabled', true);
 	$("#reset-lineage-btn").prop('disabled', true);
 	
@@ -89,6 +91,7 @@ function enableFilters(){
 	$("#filter-comments-btn").prop('disabled', false);
 
 	$("#process-steps-input").prop('disabled', false);
+	$("#process-steps-min-input").prop('disabled', false);
 	$("#filter-lineage-btn").prop('disabled', false);
 	
 	$("#standard-name-autocomplete").prop('disabled', false);
@@ -368,6 +371,8 @@ function resetFilters(){
 	
 	$("#process-steps-input").val('');
 	$("#process-steps-input").prop('disabled', false);
+	$("#process-steps-min-input").val('');
+	$("#process-steps-min-input").prop('disabled', false);
 	$("#filter-lineage-btn").prop('disabled', false);
 	$("#reset-lineage-btn").prop('disabled', true);
 	
@@ -399,4 +404,14 @@ function resetFilters(){
 	$("#minimum-citations").prop('disabled', false);
 	$("#filter-citations-btn").prop('disabled', false);
 	$("#reset-citations-btn").prop('disabled', true);
+	
+	$("#dataset-details-id").html(" <br> ");
+	$("#dataset-details-title").html(" <br> ");
+	$("#dataset-details-keywords").html(" <br> ");
+	$("#dataset-details-date").html(" <br> ");
+	$("#dataset-details-organisation").html(" <br> ");
+	$("#dataset-details-abstract").html(" <br> ");
+	$("#dataset-details-purpose").html(" <br> ");
+	$("#detailed-geolabel").html(" <br> ");
+
 }

@@ -56,7 +56,7 @@ $(function() {
 					
 					var windowHeight = $(window).height(),
 					windowWidth = $(window).width(),
-					searchAreaHeight = windowHeight - (windowHeight * 0.2 + 100),
+					searchAreaHeight = windowHeight - (windowHeight * 0.2 + 130),
 					serachAreaWidth = windowWidth - 500;
 					
 					var resultsParentSVG = document.getElementById("results_svg");
@@ -73,7 +73,7 @@ $(function() {
 					
 					var availableArea = searchAreaHeight * serachAreaWidth;
 					var areaPerLabel = parseInt(availableArea / JSONObject.dataset.length, 10);
-					var scale = parseFloat(areaPerLabel / 45000).toFixed(2);
+					var scale = parseFloat(areaPerLabel / 47000).toFixed(2);
 					var xOffset = parseInt((250 * scale) + 35, 10);
 					var yOffset = xOffset;
 					var maxLabelsPerRow = parseInt(serachAreaWidth / xOffset, 10);
@@ -331,22 +331,9 @@ $(function() {
 						}
 						
 					}
-					/*
-					resultsParentSVG.appendChild(getZoomPanControl());
-					
-					// Attach zoom and pan functionality
-					$("#zoom_in").click(function() {
-						
-					});
-					// Attach zoom and pan functionality
-					$("#zoom_out").click(function() {
-						
-					});
-					*/
 				}
 				else{
 					$("#search-results").html("An error occurred.");
-					//window.alert("An error occurred.");
 				}
 				
 				// ********************************************************************************************************
@@ -455,6 +442,8 @@ $(function() {
 				
 				// Enable all the filters
 				enableFilters();
+				$("#search-results-count").html("Search Results: Displaying a total of " + JSONObject.dataset.length + " datasets.");
+
 			},
 			error:function(){
 				$("#search-results").html('An error occured.');

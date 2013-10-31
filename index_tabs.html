@@ -78,6 +78,9 @@
 								</div> <!-- end of tab-pane-map -->
 								<!-- =================== TAB 2 SEARCH RESULTS ========================== -->
 								<div id="tab-pane-search-results" class="tab-pane">
+									<div id="search-results-count" class="dataset-details-label">
+										Search Results: 
+									</div>
 									<div id="search-results" contextmenu="mymenu">
 										<!--  Search results will be automatically displayed here  -->
 										<svg version="1.1" id="results_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px">
@@ -770,6 +773,9 @@
 											<div id="lineage-accordion" class="facet-filtering-accordion">
 												<h3>Lineage information filtering options</h3>
 												<div>
+													- Minimum number of process steps<br>
+													<input id="process-steps-min-input" class="process-steps accordion-input numeric" type="text" name="process-steps-min">
+													<br>
 													- Maximum number of process steps<br>
 													<input id="process-steps-input" class="process-steps accordion-input numeric" type="text" name="process-steps">
 													<br>
