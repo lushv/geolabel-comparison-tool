@@ -3,6 +3,7 @@ $(function() {
 	// First of all clear all the previous results and GEO label filtering
 	document.getElementById("zoom_pan_results_svg").innerHTML = '';
 	resetFilters();
+	$("#highlighted-datasets").html("");
 	
 	// switch tabs when the button is clicked
 	$("#map-tab").removeClass("active");
